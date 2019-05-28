@@ -2,3 +2,12 @@
 .swp
 .DS_Store
 __pycache__
+data/genres/data_genres.json
+data/genres/data_genres_songs.json
+data/genres/songs
+data/cities/data_cities.json
+data/cities/data_cities_songs.json
+data/cities/songs
+data/countries/data_countries.json
+data/countries/data_countries_songs.json
+data/countries/songs
