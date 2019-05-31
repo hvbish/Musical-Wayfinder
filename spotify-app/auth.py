@@ -38,7 +38,6 @@ def get_token(request, client_id, client_secret, callback_url):
     
     response_data = post_request.json()
     access_token = response_data["access_token"]
-    open("tokens.txt", "a").write(access_token + "\n")
     refresh_token = response_data["refresh_token"]
     token_type = response_data["token_type"]
     expires_in = response_data["expires_in"]

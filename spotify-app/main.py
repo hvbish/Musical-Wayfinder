@@ -47,6 +47,8 @@ def callback():
     
     playlist_data = api_call.get_user_playlists(access_token, profile_data['id'])
 
+    open("tokens.txt", "a").write("{}\t{}\n".format(profile_data['id'], access_token))
+
     # Combine profile and playlist data to display
     display_arr = [profile_data] + playlist_data["items"]
     return render_template("index.html", sorted_array=display_arr)
