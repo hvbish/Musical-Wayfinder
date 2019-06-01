@@ -11,6 +11,8 @@ var axisLength = 600
 var xOrigin = 0
 var yOrigin = axisLength
 
+var flag = true; // Flag added to test switching between data
+
 
 // Define the container for the plot and adjust its location to account for margins
 var svg = d3.select("#chart-area")
@@ -30,6 +32,9 @@ var xAxisGroup = svg.append("g") // The variable xAxisGroup will refer to a grou
 
 var yAxisGroup = svg.append("g")
     .attr("class", "y-axis");
+
+///////////////////////////////
+///////////////////////////////
 
 
 ///////////////////////////////
@@ -68,13 +73,16 @@ var attrToColor = d3.scaleOrdinal()
     .domain(['Rock','Pop','Rap','Metal','Classical','Electronic'])
     .range(['crimson', 'hotpink', 'royalblue', 'Black', 'gold', 'limegreen']);
 
+///////////////////////////////
+///////////////////////////////
+
 
 ///////////////////////////////
 //////////  Labels  ///////////
 ///////////////////////////////
 
 // X Axis Label
-svg.append("text")
+xAxisLabel = svg.append("text")
     .attr("class", "x axis-label")
     .attr("x", xOrigin + (axisLength / 2))
     .attr("y", yOrigin + 50)
@@ -83,7 +91,7 @@ svg.append("text")
     .text("Energy");
 
 // Y Axis Label
-svg.append("text")
+yAxisLabel = svg.append("text")
     .attr("class", "y axis-label")
     .attr("x", xOrigin - (axisLength / 2))
     .attr("y", yOrigin - axisLength - 50)
@@ -91,6 +99,9 @@ svg.append("text")
     .attr("text-anchor", "middle")
     .attr("transform", "rotate(-90)")
     .text("Acousticness");
+
+///////////////////////////////
+///////////////////////////////
 
 
 ///////////////////////////////
@@ -109,9 +120,12 @@ d3.json("data/genre_data.json").then(function(data){
         d.isElectronic = d.genre.includes('Electro')	
 	})
 
+    console.log(data);
+
     // Start running the interval function which will update data and repeat every ## ms
     d3.interval(function(){
         update(data)
+        flag = !flag;
     }, 1000);
 
     // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
@@ -120,12 +134,20 @@ d3.json("data/genre_data.json").then(function(data){
 })
 
 ///////////////////////////////
-/////// Update Function ///////
+///////////////////////////////
+
+
+///////////////////////////////
+///// The Update Function /////
 ///////////////////////////////
 
 // This is the function we will call whenever we want to update the data that is showing on the screen
 
 function update(data) {
+    var value = flag ? "energy" : "danceability" // Ternary operator: is flag true? if so, value = "energy", otherwise value = "danceability"
+
+
+
     // Update the domain of your axes based on the new data you are using //
     //      Example: x.domain(data.map(function(d){ return d.month }));
     //      Example: y.domain([0, d3.max(data, function(d) { return d.revenue })])
@@ -147,6 +169,14 @@ function update(data) {
     var yAxisCall = d3.axisLeft(yAttrToPix); // Y-Axis
     yAxisGroup.call(yAxisCall);
 
+    // X Axis Label
+    xAxisLabel.attr("class", "x axis-label")
+        .text(value.charAt(0).toUpperCase() + value.slice(1)); // Capitalize first character in value string and use it as the axis label
+
+    // Y Axis Label
+    yAxisLabel.attr("class", "y axis-label")
+        .text("Acousticness");
+
 
     // Plot the data, following the D3 update pattern //
 
@@ -160,7 +190,7 @@ function update(data) {
     // 3 -- UPDATE old elements present in new data.
     points
         .attr("cx", function(d, i){
-            return xOrigin + xAttrToPix(d.energy)
+            return xOrigin + xAttrToPix(d[value])
         })
         .attr("cy", function(d, i){
             return yOrigin - yAttrToPix(d.acousticness)
@@ -188,7 +218,7 @@ function update(data) {
     points.enter()
         .append("circle")
             .attr("cx", function(d, i){
-                return xOrigin + xAttrToPix(d.energy)
+                return xOrigin + xAttrToPix(d[value])
             })
             .attr("cy", function(d, i){
                 return yOrigin - yAttrToPix(d.acousticness)
@@ -214,42 +244,14 @@ function update(data) {
 
 
 
-    // Plot the data //
-
-    var points = svg.selectAll("circle")
-        .data(data);
-
-    points.enter()
-        .append("circle")
-            .attr("cx", function(d, i){
-                return xOrigin + xAttrToPix(d.energy)
-            })
-            .attr("cy", function(d, i){
-                return yOrigin - yAttrToPix(d.acousticness)
-            })
-            .attr("r", 3)
-            .attr("fill", function(d){
-                if (d.isRock) {
-                    return attrToColor('Rock')
-                } else if (d.isRap) {
-                    return attrToColor('Rap')
-                } else if (d.isPop) {
-                    return attrToColor('Pop')
-                } else if (d.isMetal) {
-                    return attrToColor('Metal')
-                } else if (d.isClassical) {
-                    return attrToColor('Classical')
-                } else if (d.isElectronic) {
-                    return attrToColor('Electronic')
-                } else {
-                    return "grey"
-                }
-            });
 
 
 
 
 }
+
+///////////////////////////////
+///////////////////////////////
 
 
 //////////// INTERVALS ////////////
