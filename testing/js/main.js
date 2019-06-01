@@ -122,14 +122,17 @@ d3.json("data/genre_data.json").then(function(data){
 
     console.log(data);
 
+    // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
+    update(data);
+
+
     // Start running the interval function which will update data and repeat every ## ms
     d3.interval(function(){
         update(data)
         flag = !flag;
-    }, 1000);
+    }, 1500);
 
-    // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
-    update(data);
+
 
 })
 
@@ -154,6 +157,61 @@ function update(data) {
 
 
 
+
+
+    // Plot the data, following the D3 update pattern //
+
+    // 1 -- JOIN new data with old elements.
+    var points = svg.selectAll("circle")
+        .data(data, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
+            return d.genre;
+        });
+
+    // 2 -- EXIT old elements not present in new data.
+    points.exit().remove();
+
+    // 3 -- UPDATE old elements present in new data.
+    var update_trans = d3.transition().duration(300) // Define a transition variable with 500ms duration so we can reuse it
+
+    points
+        .attr("cy", function(d, i){
+            return yOrigin - yAttrToPix(d.acousticness)
+        })
+        .attr("r", 3)
+        .transition(update_trans)
+            .attr("cx", function(d, i){
+                return xOrigin + xAttrToPix(d[value])
+            });
+
+    // 4 -- ENTER new elements present in new data.
+    points.enter()
+        .append("circle")
+            .attr("cx", function(d, i){
+                return xOrigin + xAttrToPix(d[value])
+            })
+            .attr("cy", function(d, i){
+                return yOrigin - yAttrToPix(d.acousticness)
+            })
+            .attr("r", 3)
+            .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
+                .attr("fill", function(d){
+                    if (d.isRock) {
+                        return attrToColor('Rock')
+                    } else if (d.isRap) {
+                        return attrToColor('Rap')
+                    } else if (d.isPop) {
+                        return attrToColor('Pop')
+                    } else if (d.isMetal) {
+                        return attrToColor('Metal')
+                    } else if (d.isClassical) {
+                        return attrToColor('Classical')
+                    } else if (d.isElectronic) {
+                        return attrToColor('Electronic')
+                    } else {
+                        return "grey"
+                    }
+                });
+
     // Draw Axes //
     
     // X Axis
@@ -171,80 +229,13 @@ function update(data) {
 
     // X Axis Label
     xAxisLabel.attr("class", "x axis-label")
-        .text(value.charAt(0).toUpperCase() + value.slice(1)); // Capitalize first character in value string and use it as the axis label
+        .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
+        .transition(update_trans)
+            .text(value.charAt(0).toUpperCase() + value.slice(1)); // Capitalize first character in value string and use it as the axis label
 
     // Y Axis Label
     yAxisLabel.attr("class", "y axis-label")
         .text("Acousticness");
-
-
-    // Plot the data, following the D3 update pattern //
-
-    // 1 -- JOIN new data with old elements.
-    var points = svg.selectAll("circle")
-        .data(data, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
-            return d.genre;
-        });
-
-    // 2 -- EXIT old elements not present in new data.
-    points.exit().remove();
-
-    // 3 -- UPDATE old elements present in new data.
-    points
-        .attr("cy", function(d, i){
-            return yOrigin - yAttrToPix(d.acousticness)
-        })
-        .attr("r", 3)
-        .attr("fill", function(d){
-            if (d.isRock) {
-                return attrToColor('Rock')
-            } else if (d.isRap) {
-                return attrToColor('Rap')
-            } else if (d.isPop) {
-                return attrToColor('Pop')
-            } else if (d.isMetal) {
-                return attrToColor('Metal')
-            } else if (d.isClassical) {
-                return attrToColor('Classical')
-            } else if (d.isElectronic) {
-                return attrToColor('Electronic')
-            } else {
-                return "grey"
-            }
-        })
-        .transition(d3.transition().duration(500))  // 500ms transition
-            .attr("cx", function(d, i){
-                return xOrigin + xAttrToPix(d[value])
-            });
-
-    // 4 -- ENTER new elements present in new data.
-    points.enter()
-        .append("circle")
-            .attr("cx", function(d, i){
-                return xOrigin + xAttrToPix(d[value])
-            })
-            .attr("cy", function(d, i){
-                return yOrigin - yAttrToPix(d.acousticness)
-            })
-            .attr("r", 3)
-            .attr("fill", function(d){
-                if (d.isRock) {
-                    return attrToColor('Rock')
-                } else if (d.isRap) {
-                    return attrToColor('Rap')
-                } else if (d.isPop) {
-                    return attrToColor('Pop')
-                } else if (d.isMetal) {
-                    return attrToColor('Metal')
-                } else if (d.isClassical) {
-                    return attrToColor('Classical')
-                } else if (d.isElectronic) {
-                    return attrToColor('Electronic')
-                } else {
-                    return "grey"
-                }
-            });
-
 
 
 
