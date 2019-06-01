@@ -73,8 +73,8 @@ var attrToPixTime = d3.scaleTime()
 // Ordinal scale - no invert function available for this, since multiple values can be mapped to the same color. Can use this to assign colors to categories
 
 // Define genre umbrella labels and corresponding colors to be used for the scale and the legend
-var genre_labels = ['Rock','Pop','Rap','Metal','Classical','Electronic']
-var genre_colors = ['crimson', 'hotpink', 'royalblue', 'Black', 'gold', 'limegreen']
+var genre_labels = ['Pop',    'Rock',   'Rap',      'Electronic','Classical','Metal']
+var genre_colors = ['hotpink','crimson','royalblue','limegreen', 'gold',     'Black']
 
 var attrToColor = d3.scaleOrdinal()
     .domain(genre_labels)
@@ -115,23 +115,30 @@ yAxisLabel = svg.append("text")
 //////////  Legend  ///////////
 ///////////////////////////////
 
+
+// ***** How can we plot cirlces in legend without having those circles get selected when we selectAll("circles") to plot data points? ******
+
+// Append the entire legend and shift it to the desired location
 var legend = svg.append("g")
     .attr("transform", "translate(" + (axisLength + 130) + 
         "," + (axisLength - 125) + ")");
 
+// Loop through all the genre labels and add a legendRow group, shifting their positions so the rows down't overlap
 genre_labels.forEach(function(genre, i){
     var legendRow = legend.append("g")
         .attr("transform", "translate(0, " + (i * 20) + ")");
 
+    // Colored rectangles corresponding to each genre 
     legendRow.append("rect")
         .attr("width", 10)
         .attr("height", 10)
         .attr("fill", attrToColor(genre));
 
+    // Text SVG corresponding to the genre in each row of the legend
     legendRow.append("text")
         .attr("x", -10)
         .attr("y", 10)
-        .attr("text-anchor", "end")
+        .attr("text-anchor", "end") // Appends text to the left of the legend 
         .style("text-transform", "capitalize")
         .text(genre);
 });
