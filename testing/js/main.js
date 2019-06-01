@@ -14,6 +14,8 @@ var yOrigin = axisLength
 var flag = true; // Flag added to test switching between data
 
 
+
+
 // Define the container for the plot and adjust its location to account for margins
 var svg = d3.select("#chart-area")
     .append("svg")
@@ -69,9 +71,14 @@ var attrToPixTime = d3.scaleTime()
     .range([0.,axisLength]);
 */
 // Ordinal scale - no invert function available for this, since multiple values can be mapped to the same color. Can use this to assign colors to categories
+
+// Define genre umbrella labels and corresponding colors to be used for the scale and the legend
+var genre_labels = ['Rock','Pop','Rap','Metal','Classical','Electronic']
+var genre_colors = ['crimson', 'hotpink', 'royalblue', 'Black', 'gold', 'limegreen']
+
 var attrToColor = d3.scaleOrdinal()
-    .domain(['Rock','Pop','Rap','Metal','Classical','Electronic'])
-    .range(['crimson', 'hotpink', 'royalblue', 'Black', 'gold', 'limegreen']);
+    .domain(genre_labels)
+    .range(genre_colors);
 
 ///////////////////////////////
 ///////////////////////////////
@@ -102,6 +109,37 @@ yAxisLabel = svg.append("text")
 
 ///////////////////////////////
 ///////////////////////////////
+
+
+///////////////////////////////
+//////////  Legend  ///////////
+///////////////////////////////
+
+var legend = svg.append("g")
+    .attr("transform", "translate(" + (axisLength + 130) + 
+        "," + (axisLength - 125) + ")");
+
+genre_labels.forEach(function(genre, i){
+    var legendRow = legend.append("g")
+        .attr("transform", "translate(0, " + (i * 20) + ")");
+
+    legendRow.append("rect")
+        .attr("width", 10)
+        .attr("height", 10)
+        .attr("fill", attrToColor(genre));
+
+    legendRow.append("text")
+        .attr("x", -10)
+        .attr("y", 10)
+        .attr("text-anchor", "end")
+        .style("text-transform", "capitalize")
+        .text(genre);
+});
+
+
+///////////////////////////////
+///////////////////////////////
+
 
 
 ///////////////////////////////
