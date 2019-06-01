@@ -27,7 +27,18 @@ def get_profile_data(token):
 def get_user_playlists(token, user_id):
     # Get user playlist data
     playlist_api_endpoint = "{}/users/{}/playlists".format(SPOTIFY_API_URL, user_id)
+    
     playlists_response = get(playlist_api_endpoint, token)
     playlist_data = playlists_response.json()
 
-    return playlist_data
+    all_playlists = []
+    all_playlists.append(playlist_data)
+
+    while playlist_data['next']:
+        playlists_response = get(playlist_data['next'], token)
+        playlist_data = playlists_response.json()
+        all_playlists.append(playlist_data)
+
+    playlists = sum([playlist['items'] for playlist in all_playlists], [])
+
+    return playlists
