@@ -191,9 +191,6 @@ function update(data) {
 
     // 3 -- UPDATE old elements present in new data.
     points
-        .attr("cx", function(d, i){
-            return xOrigin + xAttrToPix(d[value])
-        })
         .attr("cy", function(d, i){
             return yOrigin - yAttrToPix(d.acousticness)
         })
@@ -214,7 +211,11 @@ function update(data) {
             } else {
                 return "grey"
             }
-        });
+        })
+        .transition(d3.transition().duration(500))  // 500ms transition
+            .attr("cx", function(d, i){
+                return xOrigin + xAttrToPix(d[value])
+            });
 
     // 4 -- ENTER new elements present in new data.
     points.enter()
