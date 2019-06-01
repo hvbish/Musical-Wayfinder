@@ -53,7 +53,7 @@ var xAttrToPix = d3.scaleLinear() // This can apply for any of the attributes th
 // Y Scale
 var yAttrToPix = d3.scaleLinear() // We'll keep a separate attribute scale for the Y Axis, since we may want to update X and Y Axes differently
     .domain([0.,1.])
-    .range([0.,axisLength]);
+    .range([axisLength,0.]);
 
 
 /*
@@ -153,33 +153,71 @@ genre_labels.forEach(function(genre, i){
 // Load the data and plot it //
 ///////////////////////////////
 
-// Load data file
-d3.json("data/genre_data.json").then(function(data){
+// Function to classify umbrella genre categories
+// Add function to classify umbrella genre categories here?
+function classifyUmbrellaGenre(genre) {
+    isRock = genre.toLowerCase().includes('rock');
+    isPop = genre.toLowerCase().includes('pop');
+    isRap = genre.toLowerCase().includes('rap');
+    isMetal = genre.toLowerCase().includes('metal');
+    isClassical = genre.toLowerCase().includes('classical');
+    isElectronic = genre.toLowerCase().includes('tro');
+    return {isRock, isPop, isRap, isMetal, isClassical, isElectronic};
+}
+
+// Load general genre data file
+d3.json("data/genre_data.json").then(function(genredata){
     // Do the following for every element in the json file
-	data.forEach(function(d){
-        d.isRock = d.genre.includes('Rock')
-        d.isPop = d.genre.includes('Pop')
-        d.isRap = d.genre.includes('Rap')
-        d.isMetal = d.genre.includes('Metal')
-        d.isClassical = d.genre.includes('Classical')
-        d.isElectronic = d.genre.includes('Electro')	
+	genredata.forEach(function(g){
+        g.isRock = classifyUmbrellaGenre(g.genre).isRock; 
+        g.isPop = classifyUmbrellaGenre(g.genre).isPop; 
+        g.isRap = classifyUmbrellaGenre(g.genre).isRap; 
+        g.isMetal = classifyUmbrellaGenre(g.genre).isMetal; 
+        g.isClassical = classifyUmbrellaGenre(g.genre).isClassical;
+        g.isElectronic = classifyUmbrellaGenre(g.genre).isElectronic;
 	})
 
-    console.log(data);
+    console.log(genredata);
 
     // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
-    update(data);
+    updateGenrePlot(genredata);
 
 
     // Start running the interval function which will update data and repeat every ## ms
     d3.interval(function(){
-        update(data)
+        updateGenrePlot(genredata)
         flag = !flag;
     }, 1500);
-
-
-
 })
+
+// Load user library data file (contains individual songs, date added to library, w/multiple genres associated with each)
+d3.json("data/data_user_library.json").then(function(librarydata){
+    // Do the following for every element in the json file
+    librarydata.forEach(function(s){
+        s.isRock = s.isPop = s.isRap = s.isMetal = s.isClassical = s.isElectronic = Boolean(false) // Initialize all umbrella types to false before you loop through
+        s.genres.forEach(function(g){ // Loop through all genres associated with this song and assign umbrella genres to the song
+            if (classifyUmbrellaGenre(g).isRock) {s.isRock = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isPop) {s.isPop = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isRap) {s.isRap = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isMetal) {s.isMetal = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isClassical) {s.isClassical = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isElectronic) {s.isElectronic = Boolean(true)};
+        })
+    })
+
+    console.log(librarydata);
+
+    // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
+    // updateGenrePlot(librarydata);
+
+
+    // Start running the interval function which will update data and repeat every ## ms
+    // d3.interval(function(){
+    //     updateGenrePlot(librarydata)
+    //     flag = !flag;
+    // }, 1500);
+})
+
 
 ///////////////////////////////
 ///////////////////////////////
@@ -191,7 +229,7 @@ d3.json("data/genre_data.json").then(function(data){
 
 // This is the function we will call whenever we want to update the data that is showing on the screen
 
-function update(data) {
+function updateGenrePlot(data) {
     var value = flag ? "energy" : "danceability" // Ternary operator: is flag true? if so, value = "energy", otherwise value = "danceability"
 
 
@@ -220,7 +258,7 @@ function update(data) {
 
     points
         .attr("cy", function(d, i){
-            return yOrigin - yAttrToPix(d.acousticness)
+            return yAttrToPix(d.acousticness)
         })
         .attr("r", 3)
         .transition(update_trans)
@@ -235,7 +273,7 @@ function update(data) {
                 return xOrigin + xAttrToPix(d[value])
             })
             .attr("cy", function(d, i){
-                return yOrigin - yAttrToPix(d.acousticness)
+                return yAttrToPix(d.acousticness)
             })
             .attr("r", 3)
             .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
