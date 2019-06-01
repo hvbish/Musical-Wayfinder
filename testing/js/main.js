@@ -1,5 +1,8 @@
 // Testing tutorial learnings on our Spotify data
 
+/////////////////////////////////////
+//////////  Chart Set-up  ///////////
+/////////////////////////////////////
 
 // Set margins and the plot origin/size
 var margin = { left:200, right:200, top:200, bottom:200 };
@@ -9,14 +12,34 @@ var xOrigin = 0
 var yOrigin = axisLength
 
 
+// Define the container for the plot and adjust its location to account for margins
+var svg = d3.select("#chart-area")
+    .append("svg")
+        .attr("width", axisLength + margin.left + margin.right)
+        .attr("height", axisLength + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", "translate(" + margin.left 
+        + ", " + margin.top + ")");
 
+
+// Save axes to variables, which we can call later whenever we update their attributes (if we don't do this we'll end up redrawing new axis object on top of the old one)
+var xAxisGroup = svg.append("g") // The variable xAxisGroup will refer to a group ("g") of elements getting appended to the svg container, and will allow us to perform actions on everything in that group at once
+    .attr("class", "x axis")
+    .attr("transform", "translate(0, " + (axisLength) + ")")
+
+
+var yAxisGroup = svg.append("g")
+    .attr("class", "y-axis");
+
+
+///////////////////////////////
 //////////  Scales  ///////////
+///////////////////////////////
 
 // Linear scale
 var attrToPix = d3.scaleLinear()
     .domain([0.,1.])
     .range([0.,axisLength]);
-
 /*
 //Log scale
 var attrToPixLog = d3.scaleLog()
@@ -24,7 +47,6 @@ var attrToPixLog = d3.scaleLog()
     .range([0.,axisLength])
     .base(10);
 */
-
 /*
 //Time scale
 var attrToPixTime = d3.scaleTime()
@@ -32,17 +54,41 @@ var attrToPixTime = d3.scaleTime()
         new Date(2001,0,1)])
     .range([0.,axisLength]);
 */
-
-// Ordinal scale - no invert function available for this, since multiple values can be mapped to the same color
-// Can use this to assign colors to categories
+// Ordinal scale - no invert function available for this, since multiple values can be mapped to the same color. Can use this to assign colors to categories
 var attrToColor = d3.scaleOrdinal()
     .domain(['Rock','Pop','Rap','Metal','Classical','Electronic'])
     .range(['crimson', 'hotpink', 'royalblue', 'Black', 'gold', 'limegreen']);
 
 
 ///////////////////////////////
+//////////  Labels  ///////////
+///////////////////////////////
+
+// X Axis Label
+svg.append("text")
+    .attr("class", "x axis-label")
+    .attr("x", xOrigin + (axisLength / 2))
+    .attr("y", yOrigin + 50)
+    .attr("font-size", "20px")
+    .attr("text-anchor", "middle")
+    .text("Energy");
+
+// Y Axis Label
+svg.append("text")
+    .attr("class", "y axis-label")
+    .attr("x", xOrigin - (axisLength / 2))
+    .attr("y", yOrigin - axisLength - 50)
+    .attr("font-size", "20px")
+    .attr("text-anchor", "middle")
+    .attr("transform", "rotate(-90)")
+    .text("Acousticness");
+
+
+///////////////////////////////
 // Load the data and plot it //
 ///////////////////////////////
+
+// Load data file
 d3.json("data/genre_data.json").then(function(data){
     // Do the following for every element in the json file
 	data.forEach(function(d){
@@ -53,15 +99,6 @@ d3.json("data/genre_data.json").then(function(data){
         d.isClassical = d.genre.includes('Classical')
         d.isElectronic = d.genre.includes('Electro')	
 	})
-
-    // Define the container for the plot and adjust its location to account for margins
-	var svg = d3.select("#chart-area")
-        .append("svg")
-            .attr("width", axisLength + margin.left + margin.right)
-            .attr("height", axisLength + margin.top + margin.bottom)
-        .append("g")
-            .attr("transform", "translate(" + margin.left 
-            + ", " + margin.top + ")");
 
     // Plot the data
     var points = svg.selectAll("circle")
@@ -94,46 +131,41 @@ d3.json("data/genre_data.json").then(function(data){
                 }
             });
 
-    //////////  Draw Axes  ///////////
-    // X-Axis
-    var xAxisCall = d3.axisBottom(attrToPix);
-    svg.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0, " + (axisLength) + ")")
-        .call(xAxisCall)
-    .selectAll("text")
+    //  Draw Axes
+    var xAxisCall = d3.axisBottom(attrToPix); // X-Axis
+    xAxisGroup.call(xAxisCall)
+        .selectAll("text")
         .attr("y", "10")
         .attr("x", "0")
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(0)");
-    // Y-Axis
-    var yAxisCall = d3.axisLeft(attrToPix);
-    svg.append("g")
-        .attr("class", "y-axis")
-        //.attr("transform", "translate(0, " + (margin.top) + ")")
-        .call(yAxisCall);
 
-    // X Label
-    svg.append("text")
-        .attr("class", "x axis-label")
-        .attr("x", xOrigin + (axisLength / 2))
-        .attr("y", yOrigin + 50)
-        .attr("font-size", "20px")
-        .attr("text-anchor", "middle")
-        .text("Energy");
+    var yAxisCall = d3.axisLeft(attrToPix); // Y-Axis
+    yAxisGroup.call(yAxisCall);
 
-    // Y Label
-    svg.append("text")
-        .attr("class", "y axis-label")
-        .attr("x", xOrigin - (axisLength / 2))
-        .attr("y", yOrigin - axisLength - 50)
-        .attr("font-size", "20px")
-        .attr("text-anchor", "middle")
-        .attr("transform", "rotate(-90)")
-        .text("Acousticness");
+
 
 
 })
+
+
+//////////// INTERVALS ////////////
+
+// Define an interval function that performs some action every ## ms (it will also wait ## ms to start the first loop)
+//d3.interval(function(){
+//   console.log("Hello World");
+//}, 1000);
+
+// You can also set a loop and stop it later in your code, like so:
+// Start loop running
+var myInterval = setInterval(function(){
+    console.log("Hello World");
+}, 500)
+// Stop the loop
+clearInterval(myInterval)
+
+// You can use update functions to update a plot or whatever when the input data changes (like when a user makes a selection)
+// Remember to update scales and axes
 
 
 
