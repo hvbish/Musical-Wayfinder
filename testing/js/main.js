@@ -23,7 +23,7 @@ var svg = d3.select("#chart-area")
 
 
 // Save axes to variables, which we can call later whenever we update their attributes (if we don't do this we'll end up redrawing new axis object on top of the old one)
-var xAxisGroup = svg.append("g") // The variable xAxisGroup will refer to a group ("g") of elements getting appended to the svg container, and will allow us to perform actions on everything in that group at once
+var xAxisGroup = svg.append("g") // The variable xAxisGroup will refer to a group ("g") of elements getting appended to the svg container, and will allow us to perform actions on everything in that group at once (in this case, all the x axes on the page?)
     .attr("class", "x axis")
     .attr("transform", "translate(0, " + (axisLength) + ")")
 
@@ -36,10 +36,19 @@ var yAxisGroup = svg.append("g")
 //////////  Scales  ///////////
 ///////////////////////////////
 
-// Linear scale
-var attrToPix = d3.scaleLinear()
+// Linear scales //
+
+// X Scale
+var xAttrToPix = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
     .domain([0.,1.])
     .range([0.,axisLength]);
+
+// Y Scale
+var yAttrToPix = d3.scaleLinear() // We'll keep a separate attribute scale for the Y Axis, since we may want to update X and Y Axes differently
+    .domain([0.,1.])
+    .range([0.,axisLength]);
+
+
 /*
 //Log scale
 var attrToPixLog = d3.scaleLog()
@@ -100,17 +109,89 @@ d3.json("data/genre_data.json").then(function(data){
         d.isElectronic = d.genre.includes('Electro')	
 	})
 
-    // Plot the data
+    // Start running the interval function which will update data and repeat every ## ms
+    d3.interval(function(){
+        update(data)
+    }, 1000);
+
+    // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
+    update(data);
+
+})
+
+///////////////////////////////
+/////// Update Function ///////
+///////////////////////////////
+
+// This is the function we will call whenever we want to update the data that is showing on the screen
+
+function update(data) {
+    // Update the domain of your axes based on the new data you are using //
+    //      Example: x.domain(data.map(function(d){ return d.month }));
+    //      Example: y.domain([0, d3.max(data, function(d) { return d.revenue })])
+
+
+
+    // Draw Axes //
+    
+    // X Axis
+    var xAxisCall = d3.axisBottom(xAttrToPix); // X-Axis
+    xAxisGroup.call(xAxisCall)
+        .selectAll("text")
+        .attr("y", "10")
+        .attr("x", "0")
+        .attr("text-anchor", "middle")
+        .attr("transform", "rotate(0)");
+
+    // Y Axis
+    var yAxisCall = d3.axisLeft(yAttrToPix); // Y-Axis
+    yAxisGroup.call(yAxisCall);
+
+
+    // Plot the data, following the D3 update pattern //
+
+    // 1 -- JOIN new data with old elements.
     var points = svg.selectAll("circle")
         .data(data);
 
+    // 2 -- EXIT old elements not present in new data.
+    points.exit().remove();
+
+    // 3 -- UPDATE old elements present in new data.
+    points
+        .attr("cx", function(d, i){
+            return xOrigin + xAttrToPix(d.energy)
+        })
+        .attr("cy", function(d, i){
+            return yOrigin - yAttrToPix(d.acousticness)
+        })
+        .attr("r", 3)
+        .attr("fill", function(d){
+            if (d.isRock) {
+                return attrToColor('Rock')
+            } else if (d.isRap) {
+                return attrToColor('Rap')
+            } else if (d.isPop) {
+                return attrToColor('Pop')
+            } else if (d.isMetal) {
+                return attrToColor('Metal')
+            } else if (d.isClassical) {
+                return attrToColor('Classical')
+            } else if (d.isElectronic) {
+                return attrToColor('Electronic')
+            } else {
+                return "grey"
+            }
+        });
+
+    // 4 -- ENTER new elements present in new data.
     points.enter()
         .append("circle")
             .attr("cx", function(d, i){
-                return xOrigin + attrToPix(d.energy)
+                return xOrigin + xAttrToPix(d.energy)
             })
             .attr("cy", function(d, i){
-                return yOrigin - attrToPix(d.acousticness)
+                return yOrigin - yAttrToPix(d.acousticness)
             })
             .attr("r", 3)
             .attr("fill", function(d){
@@ -131,30 +212,52 @@ d3.json("data/genre_data.json").then(function(data){
                 }
             });
 
-    //  Draw Axes
-    var xAxisCall = d3.axisBottom(attrToPix); // X-Axis
-    xAxisGroup.call(xAxisCall)
-        .selectAll("text")
-        .attr("y", "10")
-        .attr("x", "0")
-        .attr("text-anchor", "middle")
-        .attr("transform", "rotate(0)");
-
-    var yAxisCall = d3.axisLeft(attrToPix); // Y-Axis
-    yAxisGroup.call(yAxisCall);
 
 
+    // Plot the data //
+
+    var points = svg.selectAll("circle")
+        .data(data);
+
+    points.enter()
+        .append("circle")
+            .attr("cx", function(d, i){
+                return xOrigin + xAttrToPix(d.energy)
+            })
+            .attr("cy", function(d, i){
+                return yOrigin - yAttrToPix(d.acousticness)
+            })
+            .attr("r", 3)
+            .attr("fill", function(d){
+                if (d.isRock) {
+                    return attrToColor('Rock')
+                } else if (d.isRap) {
+                    return attrToColor('Rap')
+                } else if (d.isPop) {
+                    return attrToColor('Pop')
+                } else if (d.isMetal) {
+                    return attrToColor('Metal')
+                } else if (d.isClassical) {
+                    return attrToColor('Classical')
+                } else if (d.isElectronic) {
+                    return attrToColor('Electronic')
+                } else {
+                    return "grey"
+                }
+            });
 
 
-})
+
+
+}
 
 
 //////////// INTERVALS ////////////
 
 // Define an interval function that performs some action every ## ms (it will also wait ## ms to start the first loop)
-//d3.interval(function(){
-//   console.log("Hello World");
-//}, 1000);
+//      d3.interval(function(){
+//         console.log("Hello World");
+//      }, 1000);
 
 // You can also set a loop and stop it later in your code, like so:
 // Start loop running
@@ -163,9 +266,6 @@ var myInterval = setInterval(function(){
 }, 500)
 // Stop the loop
 clearInterval(myInterval)
-
-// You can use update functions to update a plot or whatever when the input data changes (like when a user makes a selection)
-// Remember to update scales and axes
 
 
 
