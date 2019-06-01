@@ -157,7 +157,7 @@ function update(data) {
     // Draw Axes //
     
     // X Axis
-    var xAxisCall = d3.axisBottom(xAttrToPix); // X-Axis
+    var xAxisCall = d3.axisBottom(xAttrToPix);
     xAxisGroup.call(xAxisCall)
         .selectAll("text")
         .attr("y", "10")
@@ -166,7 +166,7 @@ function update(data) {
         .attr("transform", "rotate(0)");
 
     // Y Axis
-    var yAxisCall = d3.axisLeft(yAttrToPix); // Y-Axis
+    var yAxisCall = d3.axisLeft(yAttrToPix);
     yAxisGroup.call(yAxisCall);
 
     // X Axis Label
@@ -182,7 +182,9 @@ function update(data) {
 
     // 1 -- JOIN new data with old elements.
     var points = svg.selectAll("circle")
-        .data(data);
+        .data(data, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
+            return d.genre;
+        });
 
     // 2 -- EXIT old elements not present in new data.
     points.exit().remove();
