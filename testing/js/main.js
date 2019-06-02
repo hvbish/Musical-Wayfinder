@@ -285,7 +285,21 @@ svg.call(tipForGenre);
 var tipForSong = d3.tip().attr('class', 'd3-tip')
     .html(function(d) {
         var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + d.artists + " - " + d.name + nbsp.repeat(0) + "</h4></span><br>";
-        text += "Pop? " + d.isPop + "<br>";
+        if (d.isPop) {text += "Pop? <span style='color:"+attrToColor("Pop")+";text-transform:capitalize'>" + d.isPop + "</span><br>";}
+            else {text += "Pop? <span text-transform:capitalize'>" + d.isPop + "</span><br>";}
+        if (d.isRock) {text += "Rock? <span style='color:"+attrToColor("Rock")+";text-transform:capitalize'>" + d.isRock + "</span><br>";}
+            else {text += "Rock? <span text-transform:capitalize'>" + d.isRock + "</span><br>";}
+        if (d.isRap) {text += "Rap? <span style='color:"+attrToColor("Rap")+";text-transform:capitalize'>" + d.isRap + "</span><br>";}
+            else {text += "Rap? <span text-transform:capitalize'>" + d.isRap + "</span><br>";}
+        if (d.isElectronic) {text += "Electronic? <span style='color:"+attrToColor("Electronic")+";text-transform:capitalize'>" + d.isElectronic + "</span><br>";}
+            else {text += "Electronic? <span text-transform:capitalize'>" + d.isElectronic + "</span><br>";}
+        if (d.isClassical) {text += "Classical? <span style='color:"+attrToColor("Classical")+";text-transform:capitalize'>" + d.isClassical + "</span><br>";}
+            else {text += "Classical? <span text-transform:capitalize'>" + d.isClassical + "</span><br>";}
+        if (d.isMetal) {text += "Metal? <span style='color:"+attrToColor("Metal")+";text-transform:capitalize'>" + d.isMetal + "</span><br>";}
+            else {text += "Metal? <span text-transform:capitalize'>" + d.isMetal + "</span><br>";}
+        if (d.isOther) {text += "Other? <span style='color:"+attrToColor("Other")+";text-transform:capitalize'>" + d.isOther + "</span><br>";}
+            else {text += "Other? <span text-transform:capitalize'>" + d.isOther + "</span><br>";}
+        text += "<br>";
         text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.energy) + "</span><br>";
         text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.liveness) + "</span><br>";
         text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.speechiness) + "</span><br>";

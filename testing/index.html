@@ -14,8 +14,26 @@
 
 <body>
 
+
+
     <!-- Bootstrap grid setup -->
     <div class="container">
+
+        <div class="row">
+            <br> <br> <br>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-sm-3">
+                <button id="play-button" class="btn btn-primary">Play</button>
+                <button id="reset-button" class="btn btn-primary">Reset</button>
+            </div>
+        </div>
+
+
+
         <div class="row">
             <div class="col-md-6">
                 <div id="song-plot-area"></div>
@@ -28,8 +46,9 @@
 
         <div class="row row-no-gutters">
             
-
-            <div class="col-md-6">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-1">
                 <select id="genre-select" class="form-control">
                     <option selected value="all">All</option>
                     <option value="pop">Rock</option>
@@ -42,18 +61,9 @@
             </div>
         </div>
 
-        <div class="row">
-            <br> <br> <br>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-1">
-            </div>
-            <div class="col-sm-3">
-                <button id="play-button" class="btn btn-primary">Play</button>
-                <button id="reset-button" class="btn btn-primary">Reset</button>
-            </div>
-        </div>
+
+
 
 <!-- External JS libraries -->
 <script src="js/jquery.min.js"></script>
