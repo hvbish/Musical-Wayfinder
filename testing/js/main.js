@@ -5,7 +5,7 @@
 /////////////////////////////////////
 
 // Set margins and the plot origin/size
-var margin = { left:100, right:200, top:300, bottom:100 };
+var margin = { left:100, right:200, top:50, bottom:100 };
 
 var axisLength = 500;
 var xOrigin = 0;
@@ -122,7 +122,7 @@ var attrToPixTime = d3.scaleTime()
 
 // Define genre umbrella labels and corresponding colors to be used for the scale and the legend
 var genre_labels = ['Pop',    'Rock',   'Rap',      'Electronic','Classical','Metal',   'Other']
-var genre_colors = ['hotpink','crimson','royalblue','limegreen', 'gold',     'Black',   'grey']
+var genre_colors = ['hotpink','firebrick','royalblue','limegreen', 'goldenrod',     'Black',   'grey']
 
 var attrToColor = d3.scaleOrdinal()
     .domain(genre_labels)
@@ -173,6 +173,23 @@ yAxisLabel1 = svg1.append("text")
     .attr("text-anchor", "middle")
     .attr("transform", "rotate(-90)")
     .text("Acousticness");
+
+// Title
+plotTitle = svg.append("text")
+    .attr("x", (axisLength / 2))
+    .attr("y", 0 - (margin.top / 5))
+    .attr("text-anchor", "middle")
+    .style("font-size", "26px")
+    .style("font-weight", "bold")
+    .text("Genres")
+
+plotTitle1 = svg1.append("text")
+    .attr("x", (axisLength / 2))
+    .attr("y", 0  - (margin.top / 5))
+    .attr("text-anchor", "middle")
+    .style("font-size", "26px")
+    .style("font-weight", "bold")
+    .text("My Songs")
 
 
 
@@ -289,7 +306,7 @@ var tipForGenre = d3.tip().attr('class', 'd3-tip')
         text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.danceability) + "</span><br>";
         text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.loudness) + "</span><br>";
         text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.valence) + "</span><br>";
-        text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.2f")(d.popularity) + "</span><br>";
+        text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(d.popularity) + "</span><br>";
         return text;
     });
 svg.call(tipForGenre);
@@ -320,7 +337,7 @@ var tipForSong = d3.tip().attr('class', 'd3-tip')
         text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.danceability) + "</span><br>";
         text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.loudness) + "</span><br>";
         text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.valence) + "</span><br>";
-        text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.2f")(d.popularity) + "</span><br>";
+        text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(d.popularity) + "</span><br>";
         return text;
     });
 svg1.call(tipForSong);
@@ -743,9 +760,6 @@ function updateSongPlot(data1) {
     var update_trans = d3.transition().duration(300) // Define a transition variable with 500ms duration so we can reuse it
 
         points1
-        .attr("cy", function(d, i){
-            return yAttrToPix(d.acousticness)
-        })
         .attr("r", 3)
         .transition(update_trans)
             .attr("cx", function(d, i){
