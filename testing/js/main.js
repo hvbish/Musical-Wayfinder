@@ -158,12 +158,13 @@ genre_labels.forEach(function(genre, i){
 ///////////////////////////////
 
 // We should make the tooltip color the genre name according to the umbrella genre
+// Also fix triangle extender on tooltip - it is to the left of the box right now (not where your mouse is)
 
 var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space 
 
 var tipForGenre = d3.tip().attr('class', 'd3-tip')
     .html(function(d) {
-        var text = "<strong> Genre:          </strong> <span style='color:"+"Thistle"+";text-transform:capitalize'>" + d.genre + nbsp.repeat(0) + "</span><br>";
+        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + d.genre + nbsp.repeat(0) + "</h4></span><br>";
         text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.energy) + "</span><br>";
         text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.liveness) + "</span><br>";
         text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.speechiness) + "</span><br>";
@@ -172,7 +173,7 @@ var tipForGenre = d3.tip().attr('class', 'd3-tip')
         text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.danceability) + "</span><br>";
         text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.loudness) + "</span><br>";
         text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.valence) + "</span><br>";
-        text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.popularity) + "</span><br>";
+        text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.2f")(d.popularity) + "</span><br>";
         return text;
     });
 svg.call(tipForGenre);
