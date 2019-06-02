@@ -12,6 +12,7 @@ var xOrigin = 0;
 var yOrigin = axisLength;
 
 var interval; // For interval function
+var genreData;
 var flag = true; // Flag added to test switching between data
 
 
@@ -211,6 +212,9 @@ function classifyUmbrellaGenre(genre) {
 
 // Load general genre data file
 d3.json("data/genre_data.json").then(function(genredata){
+
+
+
     // Do the following for every element in the json file
 	genredata.forEach(function(g){
         g.isRock = classifyUmbrellaGenre(g.genre).isRock; 
@@ -223,25 +227,41 @@ d3.json("data/genre_data.json").then(function(genredata){
 
     console.log(genredata);
 
+    genreData = genredata.map(genredata => genredata);
 
+    console.log(genreData);
 
     // Start running the interval function which will update data and repeat every ## ms
     d3.interval(function(){
-        updateGenrePlot(genredata)
+        updateGenrePlot(genreData)
         flag = !flag;
     }, 1500);
 
     // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
-    updateGenrePlot(genredata);
+    updateGenrePlot(genreData);
 })
 
+
+// The data loading takes some time, so if you try to print genreData right away it will be undefined. This prints the data after waiting some period of time.
+setTimeout(function(){
+    console.log('Out of loop');
+    console.log(genreData);
+},300);
+
+
+
+////////////////////////////////
+/////// Play Button Test ///////
+////////////////////////////////
+
+// Define a function to execute when the play button is pressed. This one counts.
 var count = 0;
 function step() {
     console.log(count);
     count += count;
 }
 
-
+// Tells the play button what to do
 $("#play-button")
 .on("click", function(){
     var button = $(this);
