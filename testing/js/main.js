@@ -231,11 +231,11 @@ d3.json("data/genre_data.json").then(function(genredata){
 
     console.log(genreData);
 
-    // Start running the interval function which will update data and repeat every ## ms
+/*    // Start running the interval function which will update data and repeat every ## ms
     d3.interval(function(){
         updateGenrePlot(genreData)
         flag = !flag;
-    }, 1500);
+    }, 1500);*/
 
     // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
     updateGenrePlot(genreData);
@@ -267,7 +267,10 @@ $("#play-button")
     var button = $(this);
     if (button.text() == "Play"){
         button.text("Pause");
-        interval = setInterval(step, 100);            
+        interval = setInterval(function(){
+            updateGenrePlot(genreData)
+            flag = !flag;
+        }, 1500);            
     }
     else {
         button.text("Play");
