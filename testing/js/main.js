@@ -207,7 +207,7 @@ function classifyUmbrellaGenre(genre) {
     isRap = genre.toLowerCase().includes('rap');
     isMetal = genre.toLowerCase().includes('metal');
     isClassical = genre.toLowerCase().includes('classical');
-    isElectronic = genre.toLowerCase().includes('tro');
+    isElectronic = genre.toLowerCase().includes('elect');
     return {isRock, isPop, isRap, isMetal, isClassical, isElectronic};
 }
 
@@ -293,6 +293,8 @@ setTimeout(function(){
 /////// Play Button Test ///////
 ////////////////////////////////
 
+// If you don't want to use a play button, just start the interval as soon as the data is loaded
+
 // Define a test function to execute when the play button is pressed. This one does counting.
 var count = 0;
 function step() {
@@ -348,13 +350,42 @@ $("#reset-button")
 // This is the function we will call whenever we want to update the data that is showing on the screen
 
 function updateGenrePlot(data) {
+
     var value = flag ? "energy" : "danceability" // Ternary operator: is flag true? if so, value = "energy", otherwise value = "danceability"
+
+
+    // Filter data based on user selection //
+
+    var selectedGenre = $("#genre-select").val(); // This is the genre that has been selected by the user
+    
+    var data = data.filter(function(d){           // Filter the data 
+        if (selectedGenre == "all") { return true; }
+        else if (selectedGenre == "pop") {
+            return d.isPop;
+        } else if (selectedGenre == "rock") {
+            return d.isRock;
+        } else if (selectedGenre == "rap") {
+            return d.isRap;
+        } else if (selectedGenre == "electronic") {
+            return d.isElectronic;
+        } else if (selectedGenre == "classical") {
+            return d.isClassical;
+        } else if (selectedGenre == "metal") {
+            return d.isMetal;
+        } else {
+            return false;
+        }
+    })
+
 
 
 
     // Update the domain of your axes based on the new data you are using //
     //      Example: x.domain(data.map(function(d){ return d.month }));
     //      Example: y.domain([0, d3.max(data, function(d) { return d.revenue })])
+
+
+
 
 
 
