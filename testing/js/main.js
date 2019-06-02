@@ -13,6 +13,7 @@ var yOrigin = axisLength;
 
 var interval; // For interval function
 var genreData;
+var libraryData;
 var flag = true; // Flag added to test switching between data
 
 
@@ -242,10 +243,48 @@ d3.json("data/genre_data.json").then(function(genredata){
 })
 
 
+// Load user library data file (contains individual songs, date added to library, w/multiple genres associated with each)
+d3.json("data/data_user_library.json").then(function(librarydata){
+
+    // Do the following for every element in the json file
+    librarydata.forEach(function(s){
+        // Classify each song into umbrella genres
+        s.isRock = s.isPop = s.isRap = s.isMetal = s.isClassical = s.isElectronic = Boolean(false) // Initialize all umbrella types to false before you loop through
+        s.genres.forEach(function(g){ // Loop through all genres associated with this song and assign umbrella genres to the song
+            if (classifyUmbrellaGenre(g).isRock) {s.isRock = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isPop) {s.isPop = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isRap) {s.isRap = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isMetal) {s.isMetal = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isClassical) {s.isClassical = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isElectronic) {s.isElectronic = Boolean(true)};
+        // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
+        s.dateAdded = parseUTCTime(s.date)
+        })
+    })
+
+    console.log(librarydata);
+
+    libraryData = librarydata.map(librarydata => librarydata);
+
+    console.log(libraryData);
+
+    // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
+    // updateGenrePlot(librarydata);
+
+
+    // Start running the interval function which will update data and repeat every ## ms
+    // d3.interval(function(){
+    //     updateGenrePlot(librarydata)
+    //     flag = !flag;
+    // }, 1500);
+})
+
+
 // The data loading takes some time, so if you try to print genreData right away it will be undefined. This prints the data after waiting some period of time.
 setTimeout(function(){
     console.log('Out of loop');
     console.log(genreData);
+    console.log(libraryData);
 },300);
 
 
@@ -293,36 +332,7 @@ $("#reset-button")
     })
 
 
-// Load user library data file (contains individual songs, date added to library, w/multiple genres associated with each)
-d3.json("data/data_user_library.json").then(function(librarydata){
-    // Do the following for every element in the json file
-    librarydata.forEach(function(s){
-        // Classify each song into umbrella genres
-        s.isRock = s.isPop = s.isRap = s.isMetal = s.isClassical = s.isElectronic = Boolean(false) // Initialize all umbrella types to false before you loop through
-        s.genres.forEach(function(g){ // Loop through all genres associated with this song and assign umbrella genres to the song
-            if (classifyUmbrellaGenre(g).isRock) {s.isRock = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isPop) {s.isPop = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isRap) {s.isRap = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isMetal) {s.isMetal = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isClassical) {s.isClassical = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isElectronic) {s.isElectronic = Boolean(true)};
-        // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
-        s.dateAdded = parseUTCTime(s.date)
-        })
-    })
 
-    console.log(librarydata);
-
-    // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
-    // updateGenrePlot(librarydata);
-
-
-    // Start running the interval function which will update data and repeat every ## ms
-    // d3.interval(function(){
-    //     updateGenrePlot(librarydata)
-    //     flag = !flag;
-    // }, 1500);
-})
 
 
 
