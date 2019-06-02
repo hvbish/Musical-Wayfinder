@@ -81,7 +81,7 @@ var xAttrToPix = d3.scaleLinear() // This can apply for any of the attributes th
     .domain([0.,1.])
     .range([0.,axisLength]);
 var xLoudnessToPix = d3.scaleLinear() // This can apply for loudness, which ranges from 0 to -40(?)
-    .domain([0.,-40.])
+    .domain([-40.,0.])
     .range([0.,axisLength]);
 var xPopularityToPix = d3.scaleLinear() // This can apply for popularity, which ranges from 0 to 100
     .domain([0.,100.])
@@ -92,7 +92,7 @@ var yAttrToPix = d3.scaleLinear() // We'll keep a separate attribute scale for t
     .domain([0.,1.])
     .range([axisLength,0.]);
 var yLoudnessToPix = d3.scaleLinear() // This can apply for loudness, which ranges from 0 to -40(?)
-    .domain([0.,-40.])
+    .domain([-40.,0.])
     .range([axisLength,0.]);
 var yPopularityToPix = d3.scaleLinear() // This can apply for popularity, which ranges from 0 to 100
     .domain([0.,100.])
