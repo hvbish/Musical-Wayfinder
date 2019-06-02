@@ -254,7 +254,7 @@ setTimeout(function(){
 /////// Play Button Test ///////
 ////////////////////////////////
 
-// Define a function to execute when the play button is pressed. This one counts.
+// Define a test function to execute when the play button is pressed. This one does counting.
 var count = 0;
 function step() {
     console.log(count);
@@ -268,8 +268,9 @@ $("#play-button")
     if (button.text() == "Play"){
         button.text("Pause");
         interval = setInterval(function(){
-            updateGenrePlot(genreData)
+            updateGenrePlot(genreData);
             flag = !flag;
+            step();
         }, 1500);            
     }
     else {
@@ -277,6 +278,19 @@ $("#play-button")
         clearInterval(interval);
     }
 })
+
+
+/////////////////////////////////
+/////// Reset Button Test ///////
+/////////////////////////////////
+
+// A button to reset back to initial conditions
+$("#reset-button")
+    .on("click", function(){
+        flag = true; // Reset the flag back to what it was at top of code
+        count = 0;
+        updateGenrePlot(genreData);
+    })
 
 
 // Load user library data file (contains individual songs, date added to library, w/multiple genres associated with each)
