@@ -5,9 +5,9 @@
 /////////////////////////////////////
 
 // Set margins and the plot origin/size
-var margin = { left:200, right:200, top:200, bottom:200 };
+var margin = { left:100, right:200, top:100, bottom:100 };
 
-var axisLength = 600;
+var axisLength = 500;
 var xOrigin = 0;
 var yOrigin = axisLength;
 
@@ -20,7 +20,15 @@ var flag = true; // Flag added to test switching between data
 
 
 // Define the container for the plot and adjust its location to account for margins
-var svg = d3.select("#chart-area")
+var svg = d3.select("#genre-plot-area")
+    .append("svg")
+        .attr("width", axisLength + margin.left + margin.right)
+        .attr("height", axisLength + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", "translate(" + margin.left 
+        + ", " + margin.top + ")");
+
+var svg2 = d3.select("#song-plot-area")
     .append("svg")
         .attr("width", axisLength + margin.left + margin.right)
         .attr("height", axisLength + margin.top + margin.bottom)
@@ -33,7 +41,6 @@ var svg = d3.select("#chart-area")
 var xAxisGroup = svg.append("g") // The variable xAxisGroup will refer to a group ("g") of elements getting appended to the svg container, and will allow us to perform actions on everything in that group at once (in this case, all the x axes on the page?)
     .attr("class", "x axis")
     .attr("transform", "translate(0, " + (axisLength) + ")")
-
 
 var yAxisGroup = svg.append("g")
     .attr("class", "y-axis");
@@ -49,7 +56,7 @@ function classifyUmbrellaGenre(genre) {
     isMetal = genre.toLowerCase().includes('metal');
     isClassical = genre.toLowerCase().includes('classical');
     isElectronic = genre.toLowerCase().includes('elect');
-    isOther = !(isRock || isPop || isRap || isMetal || isClassical || isMetal)
+    isOther = !(isRock || isPop || isRap || isElectronic || isClassical || isMetal)
     return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isOther};
 }
 
@@ -173,8 +180,6 @@ genre_labels.forEach(function(genre, i){
         .attr("fill", attrToColor(genre))
         .attr("stroke", attrToColor(genre))
         
-
-
     // Text SVG corresponding to the genre in each row of the legend
     legendRow.append("text")
         .attr("x", -10)
