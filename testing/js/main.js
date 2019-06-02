@@ -80,10 +80,22 @@ function classifyUmbrellaGenre(genre) {
 var xAttrToPix = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
     .domain([0.,1.])
     .range([0.,axisLength]);
+var xLoudnessToPix = d3.scaleLinear() // This can apply for loudness, which ranges from 0 to -40(?)
+    .domain([0.,-40.])
+    .range([0.,axisLength]);
+var xPopularityToPix = d3.scaleLinear() // This can apply for popularity, which ranges from 0 to 100
+    .domain([0.,100.])
+    .range([0.,axisLength]);
 
 // Y Scale
 var yAttrToPix = d3.scaleLinear() // We'll keep a separate attribute scale for the Y Axis, since we may want to update X and Y Axes differently
     .domain([0.,1.])
+    .range([axisLength,0.]);
+var yLoudnessToPix = d3.scaleLinear() // This can apply for loudness, which ranges from 0 to -40(?)
+    .domain([0.,-40.])
+    .range([axisLength,0.]);
+var yPopularityToPix = d3.scaleLinear() // This can apply for popularity, which ranges from 0 to 100
+    .domain([0.,100.])
     .range([axisLength,0.]);
 
 
@@ -461,6 +473,21 @@ $("#genre-select")
         updateSongPlot(libraryData);
     })
 
+$("#x-attribute-select")
+    .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
+/*        setTimeout(function(){
+            updateGenrePlot(genreData);
+        },0);*/
+        updateGenrePlot(genreData);
+        updateSongPlot(libraryData);
+    })
+
+$("#y-attribute-select")
+    .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
+        updateGenrePlot(genreData);
+        updateSongPlot(libraryData);
+    })
+
 
 
 
@@ -478,7 +505,9 @@ function updateGenrePlot(data) {
 
     // Filter data based on user selection //
 
-    var selectedGenre = $("#genre-select").val(); // This is the genre that has been selected by the user
+    //var selectedGenre = $("#genre-select").val(); // This is the genre that has been selected by the user
+    var selectedAttributeX = $("#x-attribute-select").val(); // This is the genre that has been selected by the user
+    var selectedAttributeY = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
     
     /*    var data = data.filter(function(d){           // Filter the data for dropdown
             if (selectedGenre == "all") { return true; }
@@ -537,23 +566,47 @@ function updateGenrePlot(data) {
     var update_trans = d3.transition().duration(300) // Define a transition variable with 500ms duration so we can reuse it
 
     points
-        .attr("cy", function(d, i){
-            return yAttrToPix(d.acousticness)
-        })
         .attr("r", 3)
         .transition(update_trans)
             .attr("cx", function(d, i){
-                return xOrigin + xAttrToPix(d[value])
+                if (selectedAttributeX == 'loudness') {
+                    return xOrigin + xLoudnessToPix(d[selectedAttributeX]);
+                } else if (selectedAttributeX == 'popularity') {
+                    return xOrigin + xPopularityToPix(d[selectedAttributeX]);
+                } else {
+                    return xOrigin + xAttrToPix(d[selectedAttributeX]);
+                }               
+            })
+            .attr("cy", function(d, i){
+            if (selectedAttributeY == 'loudness') {
+                    return yLoudnessToPix(d[selectedAttributeY]);
+                } else if (selectedAttributeY == 'popularity') {
+                    return yPopularityToPix(d[selectedAttributeY]);
+                } else {
+                    return yAttrToPix(d[selectedAttributeY]);
+                }
             });
 
     // 4 -- ENTER new elements present in new data.
     points.enter()
         .append("circle")
             .attr("cx", function(d, i){
-                return xOrigin + xAttrToPix(d[value])
+                if (selectedAttributeX == 'loudness') {
+                    return xOrigin + xLoudnessToPix(d[selectedAttributeX]);
+                } else if (selectedAttributeX == 'popularity') {
+                    return xOrigin + xPopularityToPix(d[selectedAttributeX]);
+                } else {
+                    return xOrigin + xAttrToPix(d[selectedAttributeX]);
+                }               
             })
             .attr("cy", function(d, i){
-                return yAttrToPix(d.acousticness)
+                if (selectedAttributeY == 'loudness') {
+                    return yLoudnessToPix(d[selectedAttributeY]);
+                } else if (selectedAttributeY == 'popularity') {
+                    return yPopularityToPix(d[selectedAttributeY]);
+                } else {
+                    return yAttrToPix(d[selectedAttributeY]);
+                }
             })
             .attr("r", 3)
             .on("mouseover", tipForGenre.show)
@@ -581,7 +634,14 @@ function updateGenrePlot(data) {
     // Draw Axes //
     
     // X Axis
-    var xAxisCall = d3.axisBottom(xAttrToPix);
+    var xAxisCall;
+    if (selectedAttributeX == 'loudness') {
+        xAxisCall = d3.axisBottom(xLoudnessToPix);
+    } else if (selectedAttributeX == 'popularity') {
+        xAxisCall = d3.axisBottom(xPopularityToPix);
+    } else {
+        xAxisCall = d3.axisBottom(xAttrToPix);
+    }
     xAxisGroup.call(xAxisCall)
         .selectAll("text")
         .attr("y", "10")
@@ -590,7 +650,14 @@ function updateGenrePlot(data) {
         .attr("transform", "rotate(0)");
 
     // Y Axis
-    var yAxisCall = d3.axisLeft(yAttrToPix);
+    var yAxisCall;
+    if (selectedAttributeY == 'loudness') {
+        yAxisCall = d3.axisLeft(yLoudnessToPix);
+    } else if (selectedAttributeY == 'popularity') {
+        yAxisCall = d3.axisLeft(yPopularityToPix);
+    } else {
+        yAxisCall = d3.axisLeft(yAttrToPix);
+    }
     yAxisGroup.call(yAxisCall);
 
 
@@ -598,11 +665,13 @@ function updateGenrePlot(data) {
     xAxisLabel.attr("class", "x-axis-label")
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
-            .text(value.charAt(0).toUpperCase() + value.slice(1)); // Capitalize first character in value string and use it as the axis label
+            .text(selectedAttributeX.charAt(0).toUpperCase() + selectedAttributeX.slice(1)); // Capitalize first character in value string and use it as the axis label
 
     // Y Axis Label
     yAxisLabel.attr("class", "y-axis-label")
-        .text("Acousticness");
+        .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
+        .transition(update_trans)
+            .text(selectedAttributeY.charAt(0).toUpperCase() + selectedAttributeY.slice(1)); // Capitalize first character in value string and use it as the axis label
 }
 
 
@@ -616,7 +685,9 @@ function updateSongPlot(data1) {
 
     // Filter data based on user selection //
 
-    var selectedGenre = $("#genre-select").val(); // This is the genre that has been selected by the user
+    // var selectedGenre = $("#genre-select").val(); // This is the genre that has been selected by the user
+    var selectedAttributeX = $("#x-attribute-select").val(); // This is the genre that has been selected by the user
+    var selectedAttributeY = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
     
     /*    var data = data.filter(function(d){           // Filter the data for dropdown
             if (selectedGenre == "all") { return true; }
@@ -671,14 +742,30 @@ function updateSongPlot(data1) {
     // 3 -- UPDATE old elements present in new data.
     var update_trans = d3.transition().duration(300) // Define a transition variable with 500ms duration so we can reuse it
 
-    points1
+        points1
         .attr("cy", function(d, i){
             return yAttrToPix(d.acousticness)
         })
         .attr("r", 3)
         .transition(update_trans)
             .attr("cx", function(d, i){
-                return xOrigin + xAttrToPix(d[value])
+                if (selectedAttributeX == 'loudness') {
+                    return xOrigin + xLoudnessToPix(d[selectedAttributeX]);
+                } else if (selectedAttributeX == 'popularity') {
+                    return xOrigin + xPopularityToPix(d[selectedAttributeX]);
+                } else {
+                    return xOrigin + xAttrToPix(d[selectedAttributeX]);
+                }
+                
+            })
+            .attr("cy", function(d, i){
+            if (selectedAttributeY == 'loudness') {
+                    return yLoudnessToPix(d[selectedAttributeY]);
+                } else if (selectedAttributeY == 'popularity') {
+                    return yPopularityToPix(d[selectedAttributeY]);
+                } else {
+                    return yAttrToPix(d[selectedAttributeY]);
+                }
             });
 
 
@@ -686,10 +773,22 @@ function updateSongPlot(data1) {
     points1.enter()
         .append("circle")
             .attr("cx", function(d, i){
-                return xOrigin + xAttrToPix(d[value])
+                if (selectedAttributeX == 'loudness') {
+                    return xOrigin + xLoudnessToPix(d[selectedAttributeX]);
+                } else if (selectedAttributeX == 'popularity') {
+                    return xOrigin + xPopularityToPix(d[selectedAttributeX]);
+                } else {
+                    return xOrigin + xAttrToPix(d[selectedAttributeX]);
+                }               
             })
             .attr("cy", function(d, i){
-                return yAttrToPix(d.acousticness)
+                if (selectedAttributeY == 'loudness') {
+                    return yLoudnessToPix(d[selectedAttributeY]);
+                } else if (selectedAttributeY == 'popularity') {
+                    return yPopularityToPix(d[selectedAttributeY]);
+                } else {
+                    return yAttrToPix(d[selectedAttributeY]);
+                }
             })
             .attr("r", 3)
             .on("mouseover", tipForSong.show)
@@ -711,12 +810,19 @@ function updateSongPlot(data1) {
                     } else {
                         return "grey"
                     }
-                });
+            });
 
     // Draw Axes //
     
     // X Axis
-    var xAxisCall = d3.axisBottom(xAttrToPix);
+    var xAxisCall;
+    if (selectedAttributeX == 'loudness') {
+        xAxisCall = d3.axisBottom(xLoudnessToPix);
+    } else if (selectedAttributeX == 'popularity') {
+        xAxisCall = d3.axisBottom(xPopularityToPix);
+    } else {
+        xAxisCall = d3.axisBottom(xAttrToPix);
+    }
     xAxisGroup1.call(xAxisCall)
         .selectAll("text")
         .attr("y", "10")
@@ -725,7 +831,14 @@ function updateSongPlot(data1) {
         .attr("transform", "rotate(0)");
 
     // Y Axis
-    var yAxisCall = d3.axisLeft(yAttrToPix);
+    var yAxisCall;
+    if (selectedAttributeY == 'loudness') {
+        yAxisCall = d3.axisLeft(yLoudnessToPix);
+    } else if (selectedAttributeY == 'popularity') {
+        yAxisCall = d3.axisLeft(yPopularityToPix);
+    } else {
+        yAxisCall = d3.axisLeft(yAttrToPix);
+    }
     yAxisGroup1.call(yAxisCall);
 
 
@@ -733,10 +846,16 @@ function updateSongPlot(data1) {
     xAxisLabel1.attr("class", "x-axis-label")
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
-            .text(value.charAt(0).toUpperCase() + value.slice(1)); // Capitalize first character in value string and use it as the axis label
+            .text(selectedAttributeX.charAt(0).toUpperCase() + selectedAttributeX.slice(1)); // Capitalize first character in value string and use it as the axis label
+
     // Y Axis Label
     yAxisLabel1.attr("class", "y-axis-label")
-        .text("Acousticness");
+        .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
+        .transition(update_trans)
+            .text(selectedAttributeY.charAt(0).toUpperCase() + selectedAttributeY.slice(1)); // Capitalize first character in value string and use it as the axis label
+
+
+
 }
 
 ///////////////////////////////
