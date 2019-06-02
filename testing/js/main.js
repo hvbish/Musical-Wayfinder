@@ -153,13 +153,41 @@ genre_labels.forEach(function(genre, i){
 ///////////////////////////////
 
 
+///////////////////////////////
+/////////// Tooltip ///////////
+///////////////////////////////
+
+// We should make the tooltip color the genre name according to the umbrella genre
+
+var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space 
+
+var tipForGenre = d3.tip().attr('class', 'd3-tip')
+    .html(function(d) {
+        var text = "<strong> Genre:          </strong> <span style='color:"+"Thistle"+";text-transform:capitalize'>" + d.genre + nbsp.repeat(0) + "</span><br>";
+        text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.energy) + "</span><br>";
+        text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.liveness) + "</span><br>";
+        text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.speechiness) + "</span><br>";
+        text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.acousticness) + "</span><br>";
+        text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.instrumentalness) + "</span><br>";
+        text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.danceability) + "</span><br>";
+        text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.loudness) + "</span><br>";
+        text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.valence) + "</span><br>";
+        text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.popularity) + "</span><br>";
+        return text;
+    });
+svg.call(tipForGenre);
+
+///////////////////////////////
+///////////////////////////////
+
+
 
 ///////////////////////////////
 // Load the data and plot it //
 ///////////////////////////////
 
-// Function to classify umbrella genre categories
-// Add function to classify umbrella genre categories here?
+// Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
+// Perhaps this function should also return an umbrella variable indicating which umbrella genre it falls into (since many genres will fall into more than one umbrella). This would also make it easier to assign colors to data points
 function classifyUmbrellaGenre(genre) {
     isRock = genre.toLowerCase().includes('rock');
     isPop = genre.toLowerCase().includes('pop');
@@ -184,8 +212,7 @@ d3.json("data/genre_data.json").then(function(genredata){
 
     console.log(genredata);
 
-    // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
-    updateGenrePlot(genredata);
+
 
 
     // Start running the interval function which will update data and repeat every ## ms
@@ -193,10 +220,12 @@ d3.json("data/genre_data.json").then(function(genredata){
         updateGenrePlot(genredata)
         flag = !flag;
     }, 1500);
+
+    // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
+    updateGenrePlot(genredata);
 })
 
 // Load user library data file (contains individual songs, date added to library, w/multiple genres associated with each)
-//      date format: "2019-05-27T04:34:26Z"
 d3.json("data/data_user_library.json").then(function(librarydata){
     // Do the following for every element in the json file
     librarydata.forEach(function(s){
@@ -209,9 +238,8 @@ d3.json("data/data_user_library.json").then(function(librarydata){
             if (classifyUmbrellaGenre(g).isMetal) {s.isMetal = Boolean(true)};
             if (classifyUmbrellaGenre(g).isClassical) {s.isClassical = Boolean(true)};
             if (classifyUmbrellaGenre(g).isElectronic) {s.isElectronic = Boolean(true)};
-        // Take the date string and create a JS Date Object
+        // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
         s.dateAdded = parseUTCTime(s.date)
-        console.log(s.dateAdded)
         })
     })
 
@@ -286,6 +314,8 @@ function updateGenrePlot(data) {
                 return yAttrToPix(d.acousticness)
             })
             .attr("r", 3)
+            .on("mouseover", tipForGenre.show)
+            .on("mouseout", tipForGenre.hide)
             .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
                 .attr("fill", function(d){
                     if (d.isRock) {
