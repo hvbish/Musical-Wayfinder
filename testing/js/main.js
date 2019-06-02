@@ -40,6 +40,21 @@ var yAxisGroup = svg.append("g")
 
 
 
+// Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
+// Perhaps this function should also return an umbrella variable indicating which umbrella genre it falls into (since many genres will fall into more than one umbrella). This would also make it easier to assign colors to data points
+function classifyUmbrellaGenre(genre) {
+    isRock = genre.toLowerCase().includes('rock');
+    isPop = genre.toLowerCase().includes('pop');
+    isRap = genre.toLowerCase().includes('rap');
+    isMetal = genre.toLowerCase().includes('metal');
+    isClassical = genre.toLowerCase().includes('classical');
+    isElectronic = genre.toLowerCase().includes('elect');
+    isOther = !(isRock || isPop || isRap || isMetal || isClassical || isMetal)
+    return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isOther};
+}
+
+
+
 
 
 
@@ -82,8 +97,8 @@ var attrToPixTime = d3.scaleTime()
 // Ordinal scale - no invert function available for this, since multiple values can be mapped to the same color. Can use this to assign colors to categories
 
 // Define genre umbrella labels and corresponding colors to be used for the scale and the legend
-var genre_labels = ['Pop',    'Rock',   'Rap',      'Electronic','Classical','Metal']
-var genre_colors = ['hotpink','crimson','royalblue','limegreen', 'gold',     'Black']
+var genre_labels = ['Pop',    'Rock',   'Rap',      'Electronic','Classical','Metal',   'Other']
+var genre_colors = ['hotpink','crimson','royalblue','limegreen', 'gold',     'Black',   'grey']
 
 var attrToColor = d3.scaleOrdinal()
     .domain(genre_labels)
@@ -131,8 +146,18 @@ yAxisLabel = svg.append("text")
 
 // ***** How can we plot cirlces in legend without having those circles get selected when we selectAll("circles") to plot data points? ******
 
+var plotPop = true;
+var plotRock = true;
+var plotRap = true;
+var plotElectronic = true;
+var plotClassical = true;
+var plotMetal = true;
+var plotOther = true;
+var plotGenre = true;
+
 // Append the entire legend and shift it to the desired location
 var legend = svg.append("g")
+    .attr("id", "legend")
     .attr("transform", "translate(" + (axisLength + 130) + 
         "," + (axisLength - 125) + ")");
 
@@ -142,10 +167,13 @@ genre_labels.forEach(function(genre, i){
         .attr("transform", "translate(0, " + (i * 20) + ")");
 
     // Colored rectangles corresponding to each genre 
-    legendRow.append("rect")
+    var legendMarker = legendRow.append("rect")
         .attr("width", 10)
         .attr("height", 10)
-        .attr("fill", attrToColor(genre));
+        .attr("fill", attrToColor(genre))
+        .attr("stroke", attrToColor(genre))
+        
+
 
     // Text SVG corresponding to the genre in each row of the legend
     legendRow.append("text")
@@ -154,10 +182,47 @@ genre_labels.forEach(function(genre, i){
         .attr("text-anchor", "end") // Appends text to the left of the legend 
         .style("text-transform", "capitalize")
         .text(genre);
+
+    // If user clicks on the legend text or SVG, toggle that genre
+    legendRow.on('click',function(d) { 
+            if (genre == "Pop") {
+                plotPop ? plotPop = false : plotPop = true;
+                plotGenre = plotPop;
+            } else if (genre == "Rock") {
+                plotRock ? plotRock = false : plotRock = true;
+                plotGenre = plotRock;
+            } else if (genre == "Rap") {
+                plotRap ? plotRap = false : plotRap = true;
+                plotGenre = plotRap;
+            } else if (genre == "Electronic") {
+                plotElectronic ? plotElectronic = false : plotElectronic = true;
+                plotGenre = plotElectronic;
+            } else if (genre == "Classical") {
+                plotClassical ? plotClassical = false : plotClassical = true;
+                plotGenre = plotClassical;
+            } else if (genre == "Metal") {
+                plotMetal ? plotMetal = false : plotMetal = true;
+                plotGenre = plotMetal;
+            } else if (genre == "Other") {
+                plotOther ? plotOther = false : plotOther = true;
+                plotGenre = plotOther;
+            }
+            if (plotGenre) {
+                legendRow.attr("fill","black");
+                legendMarker.attr("fill",attrToColor(genre));
+                legendMarker.attr("stroke",attrToColor(genre));
+            } else {
+                legendRow.attr("fill","black");
+                legendMarker.attr("fill","white");
+                legendMarker.attr("stroke","black");
+            };
+            console.log(genre);
+            console.log(plotGenre);
+            updateGenrePlot(genreData);
+
+        });
+
 });
-
-
-
 
 
 
@@ -199,17 +264,7 @@ svg.call(tipForGenre);
 /////// Load & plot data ///////
 ////////////////////////////////
 
-// Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
-// Perhaps this function should also return an umbrella variable indicating which umbrella genre it falls into (since many genres will fall into more than one umbrella). This would also make it easier to assign colors to data points
-function classifyUmbrellaGenre(genre) {
-    isRock = genre.toLowerCase().includes('rock');
-    isPop = genre.toLowerCase().includes('pop');
-    isRap = genre.toLowerCase().includes('rap');
-    isMetal = genre.toLowerCase().includes('metal');
-    isClassical = genre.toLowerCase().includes('classical');
-    isElectronic = genre.toLowerCase().includes('elect');
-    return {isRock, isPop, isRap, isMetal, isClassical, isElectronic};
-}
+
 
 // Load general genre data file
 d3.json("data/genre_data.json").then(function(genredata){
@@ -224,11 +279,12 @@ d3.json("data/genre_data.json").then(function(genredata){
         g.isMetal = classifyUmbrellaGenre(g.genre).isMetal; 
         g.isClassical = classifyUmbrellaGenre(g.genre).isClassical;
         g.isElectronic = classifyUmbrellaGenre(g.genre).isElectronic;
+        g.isOther = classifyUmbrellaGenre(g.genre).isOther;
 	})
 
     console.log(genredata);
 
-    genreData = genredata.map(genredata => genredata);
+    genreData = genredata.map(genredata => genredata); // .map allows you to do something for each element of the list. Not sure how to use it properly yet
 
     console.log(genreData);
 
@@ -249,7 +305,7 @@ d3.json("data/data_user_library.json").then(function(librarydata){
     // Do the following for every element in the json file
     librarydata.forEach(function(s){
         // Classify each song into umbrella genres
-        s.isRock = s.isPop = s.isRap = s.isMetal = s.isClassical = s.isElectronic = Boolean(false) // Initialize all umbrella types to false before you loop through
+        s.isRock = s.isPop = s.isRap = s.isMetal = s.isClassical = s.isElectronic = s.isOther = Boolean(false) // Initialize all umbrella types to false before you loop through
         s.genres.forEach(function(g){ // Loop through all genres associated with this song and assign umbrella genres to the song
             if (classifyUmbrellaGenre(g).isRock) {s.isRock = Boolean(true)};
             if (classifyUmbrellaGenre(g).isPop) {s.isPop = Boolean(true)};
@@ -257,6 +313,7 @@ d3.json("data/data_user_library.json").then(function(librarydata){
             if (classifyUmbrellaGenre(g).isMetal) {s.isMetal = Boolean(true)};
             if (classifyUmbrellaGenre(g).isClassical) {s.isClassical = Boolean(true)};
             if (classifyUmbrellaGenre(g).isElectronic) {s.isElectronic = Boolean(true)};
+            if (classifyUmbrellaGenre(g).isOther) {s.isOther = Boolean(true)};
         // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
         s.dateAdded = parseUTCTime(s.date)
         })
@@ -264,7 +321,7 @@ d3.json("data/data_user_library.json").then(function(librarydata){
 
     console.log(librarydata);
 
-    libraryData = librarydata.map(librarydata => librarydata);
+    libraryData = librarydata.map(librarydata => librarydata); // .map allows you to do something for each element of the list
 
     console.log(libraryData);
 
@@ -334,10 +391,14 @@ $("#reset-button")
     })
 
 
+/////////////////////////////////
+//// Dropdown Selection Test ////
+/////////////////////////////////
 
-
-
-
+$("#genre-select")
+    .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
+        updateGenrePlot(genreData);
+    })
 
 
 
@@ -358,7 +419,7 @@ function updateGenrePlot(data) {
 
     var selectedGenre = $("#genre-select").val(); // This is the genre that has been selected by the user
     
-    var data = data.filter(function(d){           // Filter the data 
+/*    var data = data.filter(function(d){           // Filter the data for dropdown
         if (selectedGenre == "all") { return true; }
         else if (selectedGenre == "pop") {
             return d.isPop;
@@ -376,7 +437,16 @@ function updateGenrePlot(data) {
             return false;
         }
     })
+*/
 
+// Filter the data for interactive legend
+var data = data.filter(function(d){           // Filter the data for dropdown
+        if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) {
+            return true;
+        } else {
+            return false;
+        }
+    })
 
 
 
