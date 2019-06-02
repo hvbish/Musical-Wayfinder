@@ -7,10 +7,11 @@
 // Set margins and the plot origin/size
 var margin = { left:200, right:200, top:200, bottom:200 };
 
-var axisLength = 600
-var xOrigin = 0
-var yOrigin = axisLength
+var axisLength = 600;
+var xOrigin = 0;
+var yOrigin = axisLength;
 
+var interval; // For interval function
 var flag = true; // Flag added to test switching between data
 
 
@@ -35,8 +36,9 @@ var xAxisGroup = svg.append("g") // The variable xAxisGroup will refer to a grou
 var yAxisGroup = svg.append("g")
     .attr("class", "y-axis");
 
-///////////////////////////////
-///////////////////////////////
+
+
+
 
 
 ///////////////////////////////
@@ -85,8 +87,10 @@ var attrToColor = d3.scaleOrdinal()
     .domain(genre_labels)
     .range(genre_colors);
 
-///////////////////////////////
-///////////////////////////////
+
+
+
+
 
 
 ///////////////////////////////
@@ -112,8 +116,10 @@ yAxisLabel = svg.append("text")
     .attr("transform", "rotate(-90)")
     .text("Acousticness");
 
-///////////////////////////////
-///////////////////////////////
+
+
+
+
 
 
 ///////////////////////////////
@@ -149,8 +155,10 @@ genre_labels.forEach(function(genre, i){
 });
 
 
-///////////////////////////////
-///////////////////////////////
+
+
+
+
 
 
 ///////////////////////////////
@@ -178,14 +186,16 @@ var tipForGenre = d3.tip().attr('class', 'd3-tip')
     });
 svg.call(tipForGenre);
 
-///////////////////////////////
-///////////////////////////////
 
 
 
-///////////////////////////////
-// Load the data and plot it //
-///////////////////////////////
+
+
+
+
+////////////////////////////////
+/////// Load & plot data ///////
+////////////////////////////////
 
 // Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
 // Perhaps this function should also return an umbrella variable indicating which umbrella genre it falls into (since many genres will fall into more than one umbrella). This would also make it easier to assign colors to data points
@@ -215,7 +225,6 @@ d3.json("data/genre_data.json").then(function(genredata){
 
 
 
-
     // Start running the interval function which will update data and repeat every ## ms
     d3.interval(function(){
         updateGenrePlot(genredata)
@@ -225,6 +234,27 @@ d3.json("data/genre_data.json").then(function(genredata){
     // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
     updateGenrePlot(genredata);
 })
+
+var count = 0;
+function step() {
+    console.log(count);
+    count += count;
+}
+
+
+$("#play-button")
+.on("click", function(){
+    var button = $(this);
+    if (button.text() == "Play"){
+        button.text("Pause");
+        interval = setInterval(step, 100);            
+    }
+    else {
+        button.text("Play");
+        clearInterval(interval);
+    }
+})
+
 
 // Load user library data file (contains individual songs, date added to library, w/multiple genres associated with each)
 d3.json("data/data_user_library.json").then(function(librarydata){
@@ -258,8 +288,10 @@ d3.json("data/data_user_library.json").then(function(librarydata){
 })
 
 
-///////////////////////////////
-///////////////////////////////
+
+
+
+
 
 
 ///////////////////////////////

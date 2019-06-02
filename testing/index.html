@@ -16,10 +16,29 @@
 
     <!-- Bootstrap grid setup -->
     <div class="container">
+
+
+
         <div class="row">
             <div id="chart-area"></div>
         </div>
     </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <button id="play-button" class="btn btn-primary">Play</button>
+                <button id="reset-button" class="btn btn-primary">Reset</button>
+            </div>
+            <div class="col-md-6">
+                <select id="genre-select" class="form-control">
+                    <option selected value="all">All</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="rap">Rap</option>
+                    <option value="electronic">Electronic</option>
+                </select>
+            </div>
+        </div>
 
 <!-- External JS libraries -->
 <script src="js/jquery.min.js"></script>
