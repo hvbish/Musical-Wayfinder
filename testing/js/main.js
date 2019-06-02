@@ -5,7 +5,7 @@
 /////////////////////////////////////
 
 // Set margins and the plot origin/size
-var margin = { left:100, right:200, top:100, bottom:100 };
+var margin = { left:100, right:200, top:300, bottom:100 };
 
 var axisLength = 500;
 var xOrigin = 0;
@@ -28,7 +28,7 @@ var svg = d3.select("#genre-plot-area")
         .attr("transform", "translate(" + margin.left 
         + ", " + margin.top + ")");
 
-var svg2 = d3.select("#song-plot-area")
+var svg1 = d3.select("#song-plot-area")
     .append("svg")
         .attr("width", axisLength + margin.left + margin.right)
         .attr("height", axisLength + margin.top + margin.bottom)
@@ -39,10 +39,15 @@ var svg2 = d3.select("#song-plot-area")
 
 // Save axes to variables, which we can call later whenever we update their attributes (if we don't do this we'll end up redrawing new axis object on top of the old one)
 var xAxisGroup = svg.append("g") // The variable xAxisGroup will refer to a group ("g") of elements getting appended to the svg container, and will allow us to perform actions on everything in that group at once (in this case, all the x axes on the page?)
-    .attr("class", "x axis")
+    .attr("class", "x-axis")
     .attr("transform", "translate(0, " + (axisLength) + ")")
-
 var yAxisGroup = svg.append("g")
+    .attr("class", "y-axis");
+
+var xAxisGroup1 = svg1.append("g") // The variable xAxisGroup will refer to a group ("g") of elements getting appended to the svg container, and will allow us to perform actions on everything in that group at once (in this case, all the x axes on the page?)
+    .attr("class", "x-axis")
+    .attr("transform", "translate(0, " + (axisLength) + ")")
+var yAxisGroup1 = svg1.append("g")
     .attr("class", "y-axis");
 
 
@@ -123,7 +128,15 @@ var attrToColor = d3.scaleOrdinal()
 
 // X Axis Label
 xAxisLabel = svg.append("text")
-    .attr("class", "x axis-label")
+    .attr("class", "x-axis-label")
+    .attr("x", xOrigin + (axisLength / 2))
+    .attr("y", yOrigin + 50)
+    .attr("font-size", "20px")
+    .attr("text-anchor", "middle")
+    .text("Energy");
+
+xAxisLabel1 = svg1.append("text")
+    .attr("class", "x-axis-label")
     .attr("x", xOrigin + (axisLength / 2))
     .attr("y", yOrigin + 50)
     .attr("font-size", "20px")
@@ -132,6 +145,15 @@ xAxisLabel = svg.append("text")
 
 // Y Axis Label
 yAxisLabel = svg.append("text")
+    .attr("class", "y axis-label")
+    .attr("x", xOrigin - (axisLength / 2))
+    .attr("y", yOrigin - axisLength - 50)
+    .attr("font-size", "20px")
+    .attr("text-anchor", "middle")
+    .attr("transform", "rotate(-90)")
+    .text("Acousticness");
+
+yAxisLabel1 = svg1.append("text")
     .attr("class", "y axis-label")
     .attr("x", xOrigin - (axisLength / 2))
     .attr("y", yOrigin - axisLength - 50)
@@ -224,6 +246,8 @@ genre_labels.forEach(function(genre, i){
             console.log(genre);
             console.log(plotGenre);
             updateGenrePlot(genreData);
+            updateSongPlot(libraryData);
+            //updateSongPlot(libraryData);
 
         });
 
@@ -258,6 +282,23 @@ var tipForGenre = d3.tip().attr('class', 'd3-tip')
     });
 svg.call(tipForGenre);
 
+var tipForSong = d3.tip().attr('class', 'd3-tip')
+    .html(function(d) {
+        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + d.artists + " - " + d.name + nbsp.repeat(0) + "</h4></span><br>";
+        text += "Pop? " + d.isPop + "<br>";
+        text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.energy) + "</span><br>";
+        text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.liveness) + "</span><br>";
+        text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.speechiness) + "</span><br>";
+        text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.acousticness) + "</span><br>";
+        text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.instrumentalness) + "</span><br>";
+        text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.danceability) + "</span><br>";
+        text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.loudness) + "</span><br>";
+        text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.valence) + "</span><br>";
+        text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.2f")(d.popularity) + "</span><br>";
+        return text;
+    });
+svg1.call(tipForSong);
+
 
 
 
@@ -274,8 +315,6 @@ svg.call(tipForGenre);
 // Load general genre data file
 d3.json("data/genre_data.json").then(function(genredata){
 
-
-
     // Do the following for every element in the json file
 	genredata.forEach(function(g){
         g.isRock = classifyUmbrellaGenre(g.genre).isRock; 
@@ -288,9 +327,7 @@ d3.json("data/genre_data.json").then(function(genredata){
 	})
 
     console.log(genredata);
-
     genreData = genredata.map(genredata => genredata); // .map allows you to do something for each element of the list. Not sure how to use it properly yet
-
     console.log(genreData);
 
 /*    // Start running the interval function which will update data and repeat every ## ms
@@ -302,6 +339,10 @@ d3.json("data/genre_data.json").then(function(genredata){
     // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
     updateGenrePlot(genreData);
 })
+
+
+
+
 
 
 // Load user library data file (contains individual songs, date added to library, w/multiple genres associated with each)
@@ -325,13 +366,11 @@ d3.json("data/data_user_library.json").then(function(librarydata){
     })
 
     console.log(librarydata);
-
     libraryData = librarydata.map(librarydata => librarydata); // .map allows you to do something for each element of the list
-
     console.log(libraryData);
 
     // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
-    // updateGenrePlot(librarydata);
+    updateSongPlot(libraryData);
 
 
     // Start running the interval function which will update data and repeat every ## ms
@@ -372,6 +411,7 @@ $("#play-button")
         button.text("Pause");
         interval = setInterval(function(){
             updateGenrePlot(genreData);
+            updateSongPlot(libraryData)
             flag = !flag;
             step();
         }, 1500);            
@@ -393,6 +433,7 @@ $("#reset-button")
         flag = true; // Reset the flag back to what it was at top of code
         count = 0;
         updateGenrePlot(genreData);
+        updateSongPlot(libraryData);
     })
 
 
@@ -403,6 +444,7 @@ $("#reset-button")
 $("#genre-select")
     .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
         updateGenrePlot(genreData);
+        updateSongPlot(libraryData);
     })
 
 
@@ -424,34 +466,34 @@ function updateGenrePlot(data) {
 
     var selectedGenre = $("#genre-select").val(); // This is the genre that has been selected by the user
     
-/*    var data = data.filter(function(d){           // Filter the data for dropdown
-        if (selectedGenre == "all") { return true; }
-        else if (selectedGenre == "pop") {
-            return d.isPop;
-        } else if (selectedGenre == "rock") {
-            return d.isRock;
-        } else if (selectedGenre == "rap") {
-            return d.isRap;
-        } else if (selectedGenre == "electronic") {
-            return d.isElectronic;
-        } else if (selectedGenre == "classical") {
-            return d.isClassical;
-        } else if (selectedGenre == "metal") {
-            return d.isMetal;
-        } else {
-            return false;
-        }
-    })
-*/
+    /*    var data = data.filter(function(d){           // Filter the data for dropdown
+            if (selectedGenre == "all") { return true; }
+            else if (selectedGenre == "pop") {
+                return d.isPop;
+            } else if (selectedGenre == "rock") {
+                return d.isRock;
+            } else if (selectedGenre == "rap") {
+                return d.isRap;
+            } else if (selectedGenre == "electronic") {
+                return d.isElectronic;
+            } else if (selectedGenre == "classical") {
+                return d.isClassical;
+            } else if (selectedGenre == "metal") {
+                return d.isMetal;
+            } else {
+                return false;
+            }
+        })
+    */
 
-// Filter the data for interactive legend
-var data = data.filter(function(d){           // Filter the data for dropdown
-        if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) {
-            return true;
-        } else {
-            return false;
-        }
-    })
+    // Filter the data for interactive legend
+    var data = data.filter(function(d){           // Filter the data for dropdown
+            if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) {
+                return true;
+            } else {
+                return false;
+            }
+        })
 
 
 
@@ -469,7 +511,7 @@ var data = data.filter(function(d){           // Filter the data for dropdown
     // Plot the data, following the D3 update pattern //
 
     // 1 -- JOIN new data with old elements.
-    var points = svg.selectAll("circle")
+    var points = svg.selectAll("circle") // Genre scatterplot
         .data(data, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
             return d.genre;
         });
@@ -521,6 +563,7 @@ var data = data.filter(function(d){           // Filter the data for dropdown
                     }
                 });
 
+
     // Draw Axes //
     
     // X Axis
@@ -536,21 +579,150 @@ var data = data.filter(function(d){           // Filter the data for dropdown
     var yAxisCall = d3.axisLeft(yAttrToPix);
     yAxisGroup.call(yAxisCall);
 
+
     // X Axis Label
-    xAxisLabel.attr("class", "x axis-label")
+    xAxisLabel.attr("class", "x-axis-label")
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
             .text(value.charAt(0).toUpperCase() + value.slice(1)); // Capitalize first character in value string and use it as the axis label
 
     // Y Axis Label
-    yAxisLabel.attr("class", "y axis-label")
+    yAxisLabel.attr("class", "y-axis-label")
         .text("Acousticness");
+}
 
 
 
 
 
+function updateSongPlot(data1) {
 
+    var value = flag ? "energy" : "danceability" // Ternary operator: is flag true? if so, value = "energy", otherwise value = "danceability"
+
+
+    // Filter data based on user selection //
+
+    var selectedGenre = $("#genre-select").val(); // This is the genre that has been selected by the user
+    
+    /*    var data = data.filter(function(d){           // Filter the data for dropdown
+            if (selectedGenre == "all") { return true; }
+            else if (selectedGenre == "pop") {
+                return d.isPop;
+            } else if (selectedGenre == "rock") {
+                return d.isRock;
+            } else if (selectedGenre == "rap") {
+                return d.isRap;
+            } else if (selectedGenre == "electronic") {
+                return d.isElectronic;
+            } else if (selectedGenre == "classical") {
+                return d.isClassical;
+            } else if (selectedGenre == "metal") {
+                return d.isMetal;
+            } else {
+                return false;
+            }
+        })
+    */
+
+    // Filter the data for interactive legend
+    var data1 = data1.filter(function(d){           // Filter the data for dropdown
+            if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) {
+                return true;
+            } else {
+                return false;
+            }
+        })
+
+
+
+    // Update the domain of your axes based on the new data you are using //
+    //      Example: x.domain(data.map(function(d){ return d.month }));
+    //      Example: y.domain([0, d3.max(data, function(d) { return d.revenue })])
+
+
+
+    // Plot the data, following the D3 update pattern //
+
+    // 1 -- JOIN new data with old elements.
+    var points1 = svg1.selectAll("circle") // Song scatterplot
+        .data(data1, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
+            return d.uri;
+        });
+
+
+    // 2 -- EXIT old elements not present in new data.
+    points1.exit().remove();
+
+
+    // 3 -- UPDATE old elements present in new data.
+    var update_trans = d3.transition().duration(300) // Define a transition variable with 500ms duration so we can reuse it
+
+    points1
+        .attr("cy", function(d, i){
+            return yAttrToPix(d.acousticness)
+        })
+        .attr("r", 3)
+        .transition(update_trans)
+            .attr("cx", function(d, i){
+                return xOrigin + xAttrToPix(d[value])
+            });
+
+
+    // 4 -- ENTER new elements present in new data.
+    points1.enter()
+        .append("circle")
+            .attr("cx", function(d, i){
+                return xOrigin + xAttrToPix(d[value])
+            })
+            .attr("cy", function(d, i){
+                return yAttrToPix(d.acousticness)
+            })
+            .attr("r", 3)
+            .on("mouseover", tipForSong.show)
+            .on("mouseout", tipForSong.hide)
+            .merge(points1) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
+                .attr("fill", function(d){
+                    if (d.isRock) {
+                        return attrToColor('Rock')
+                    } else if (d.isRap) {
+                        return attrToColor('Rap')
+                    } else if (d.isPop) {
+                        return attrToColor('Pop')
+                    } else if (d.isMetal) {
+                        return attrToColor('Metal')
+                    } else if (d.isClassical) {
+                        return attrToColor('Classical')
+                    } else if (d.isElectronic) {
+                        return attrToColor('Electronic')
+                    } else {
+                        return "grey"
+                    }
+                });
+
+    // Draw Axes //
+    
+    // X Axis
+    var xAxisCall = d3.axisBottom(xAttrToPix);
+    xAxisGroup1.call(xAxisCall)
+        .selectAll("text")
+        .attr("y", "10")
+        .attr("x", "0")
+        .attr("text-anchor", "middle")
+        .attr("transform", "rotate(0)");
+
+    // Y Axis
+    var yAxisCall = d3.axisLeft(yAttrToPix);
+    yAxisGroup1.call(yAxisCall);
+
+
+    // X Axis Label
+    xAxisLabel1.attr("class", "x-axis-label")
+        .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
+        .transition(update_trans)
+            .text(value.charAt(0).toUpperCase() + value.slice(1)); // Capitalize first character in value string and use it as the axis label
+    // Y Axis Label
+    yAxisLabel1.attr("class", "y-axis-label")
+        .text("Acousticness");
 }
 
 ///////////////////////////////
