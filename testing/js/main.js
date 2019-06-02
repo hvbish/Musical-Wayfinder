@@ -63,13 +63,18 @@ var attrToPixLog = d3.scaleLog()
     .range([0.,axisLength])
     .base(10);
 */
+
+// Time scale //
+
+// This sets how the "date" string will be parsed and converted to JS Date object. (Should convert UTC time given in the string to local time but we may want to double-check this.)
+var parseUTCTime = d3.utcParse("%Y-%m-%dT%H:%M:%SZ")
 /*
-//Time scale
 var attrToPixTime = d3.scaleTime()
     .domain([new Date(2000,0,1),  // Use JS Date objects
         new Date(2001,0,1)])
     .range([0.,axisLength]);
 */
+
 // Ordinal scale - no invert function available for this, since multiple values can be mapped to the same color. Can use this to assign colors to categories
 
 // Define genre umbrella labels and corresponding colors to be used for the scale and the legend
@@ -191,9 +196,11 @@ d3.json("data/genre_data.json").then(function(genredata){
 })
 
 // Load user library data file (contains individual songs, date added to library, w/multiple genres associated with each)
+//      date format: "2019-05-27T04:34:26Z"
 d3.json("data/data_user_library.json").then(function(librarydata){
     // Do the following for every element in the json file
     librarydata.forEach(function(s){
+        // Classify each song into umbrella genres
         s.isRock = s.isPop = s.isRap = s.isMetal = s.isClassical = s.isElectronic = Boolean(false) // Initialize all umbrella types to false before you loop through
         s.genres.forEach(function(g){ // Loop through all genres associated with this song and assign umbrella genres to the song
             if (classifyUmbrellaGenre(g).isRock) {s.isRock = Boolean(true)};
@@ -202,6 +209,9 @@ d3.json("data/data_user_library.json").then(function(librarydata){
             if (classifyUmbrellaGenre(g).isMetal) {s.isMetal = Boolean(true)};
             if (classifyUmbrellaGenre(g).isClassical) {s.isClassical = Boolean(true)};
             if (classifyUmbrellaGenre(g).isElectronic) {s.isElectronic = Boolean(true)};
+        // Take the date string and create a JS Date Object
+        s.dateAdded = parseUTCTime(s.date)
+        console.log(s.dateAdded)
         })
     })
 
