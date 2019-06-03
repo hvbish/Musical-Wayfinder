@@ -312,6 +312,7 @@ genre_labels.forEach(function(genre, i){
 
 // We should make the tooltip color the genre name according to the umbrella genre
 // Also fix triangle extender on tooltip - it is to the left of the box right now (not where your mouse is)
+// Some points aren't showing tooltip on mouseover? Figure out why this is
 
 var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space 
 
@@ -532,6 +533,8 @@ $("#y-attribute-select")
 /////////////////////////////////
 
 
+
+
 $("#time-slider").slider({
     max: 2019,
     min: 2008,
@@ -542,7 +545,27 @@ $("#time-slider").slider({
         times = ui.values;
         updateSongPlot(libraryData);
     }
-})
+});
+
+/*// See http://ghusse.github.io/jQRangeSlider/
+$("#time-slider").dateRangeSlider(
+  "option",
+  { 
+    bounds: {
+      min: new Date(2008, 0, 1),
+      max: new Date(2019, 11, 31)  
+    },
+    enabled: false
+  }
+);
+$("#slider").rangeSlider({
+  bounds: {
+      min: 2008,
+      max: 2019  
+  }
+});
+$("#slider").editRangeSlider({defaultValues:{min: 20, max: 70}});*/
+
 
 ///////////////////////////////
 ///// The Update Function /////
