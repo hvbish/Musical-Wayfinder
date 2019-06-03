@@ -16,7 +16,8 @@ var genreData;
 var libraryData;
 var flag = true; // Flag added to test switching between data
 var time = 2010 // For slider with one value
-var times = [2010,2019] // For slider with a range
+//var times = [new Date(2008, 11, 31),new Date(2019, 11, 31)] // For slider with a range
+var times = [2008,2019] // For slider with a range
 
 
 
@@ -37,6 +38,14 @@ var svg1 = d3.select("#song-plot-area")
     .append("g")
         .attr("transform", "translate(" + margin.left 
         + ", " + margin.top + ")");
+
+var svg_leg = d3.select("#legend")
+    .append("svg")
+        .attr("width", 200)
+        .attr("height", 200)
+    .append("g")
+        .attr("transform", "translate(" + margin.left 
+        + ", " + (margin.top-30) + ")");
 
 
 
@@ -234,10 +243,8 @@ var plotOther = true;
 var plotGenre = true;
 
 // Append the entire legend and shift it to the desired location
-var legend = svg.append("g")
-    .attr("id", "legend")
-    .attr("transform", "translate(" + (axisLength + 130) + 
-        "," + (axisLength - 125) + ")");
+var legend = svg_leg.append("g")
+    .attr("id", "legend");
 
 // Loop through all the genre labels and add a legendRow group, shifting their positions so the rows down't overlap
 genre_labels.forEach(function(genre, i){
@@ -455,7 +462,7 @@ setTimeout(function(){
 
 
 ////////////////////////////////
-/////// Play Button Test ///////
+/// Play & Reset Button Test ///
 ////////////////////////////////
 
 // If you don't want to use a play button, just start the interval as soon as the data is loaded
@@ -487,9 +494,6 @@ $("#play-button")
 })
 
 
-/////////////////////////////////
-/////// Reset Button Test ///////
-/////////////////////////////////
 
 // A button to reset back to initial conditions
 $("#reset-button")
@@ -501,8 +505,11 @@ $("#reset-button")
     })
 
 
+
+
+
 /////////////////////////////////
-//// Dropdown Selection Test ////
+//// Dropdown Axis Selection ////
 /////////////////////////////////
 
 /*$("#genre-select")
@@ -528,13 +535,31 @@ $("#y-attribute-select")
 
 
 
+
+
+
 /////////////////////////////////
 ////////// Time Slider //////////
 /////////////////////////////////
 
 
+// dragslider Slider
+$('#slider').dragslider({
+    //min: new Date(2008, 0, 1),
+    //max: new Date(2012, 11, 31),
+    min: 2008,
+    max: 2019,
+    animate: true,
+    range: true,
+    rangeDrag: true,
+    values: [2010,2019],
+    slide: function(event, ui){
+        times = ui.values;
+        updateSongPlot(libraryData);
+    }    
+});
 
-
+// Original slider with no range handles
 /*$("#time-slider").slider({
     max: 2019,
     min: 2008,
@@ -548,44 +573,6 @@ $("#y-attribute-select")
 });*/
 
 
-
-
-// dragslider Slider
-$('#slider').dragslider({
-    min: 2008,
-    max: 2019,
-    animate: true,
-    range: true,
-    rangeDrag: true,
-    values: [2010,2019],
-    slide: function(event, ui){
-        times = ui.values;
-        updateSongPlot(libraryData);
-    }    
-});
-
-
-
-
-
-/*// See http://ghusse.github.io/jQRangeSlider/
-$("#time-slider").dateRangeSlider(
-  "option",
-  { 
-    bounds: {
-      min: new Date(2008, 0, 1),
-      max: new Date(2019, 11, 31)  
-    },
-    enabled: false
-  }
-);
-$("#slider").rangeSlider({
-  bounds: {
-      min: 2008,
-      max: 2019  
-  }
-});
-$("#slider").editRangeSlider({defaultValues:{min: 20, max: 70}});*/
 
 
 ///////////////////////////////
@@ -803,6 +790,7 @@ function updateSongPlot(data1) {
     var data1 = data1.filter(function(d){       
             if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) { // For interactive legend
                 if ((d.dateAdded.getFullYear() >= times[0]) & (d.dateAdded.getFullYear()  <= times[1])) {
+                //if ((d.dateAdded >= times[0]) & (d.dateAdded  <= times[1])) {
                     return true;
                 } else {
                     return false;
