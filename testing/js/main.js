@@ -15,7 +15,8 @@ var interval; // For interval function
 var genreData;
 var libraryData;
 var flag = true; // Flag added to test switching between data
-var time = 2010 // For slider
+var time = 2010 // For slider with one value
+var times = [2010,2016] // For slider with a range
 
 
 
@@ -193,14 +194,22 @@ plotTitle1 = svg1.append("text")
     .style("font-weight", "bold")
     .text("My Songs")
 
-// Slider
+/*// Label showing time selected in slider, single value
 var timeLabel = svg1.append("text")
     .attr("y", axisLength*0 +100)
     .attr("x", axisLength*0 +100)
     .attr("font-size", "40px")
     .attr("opacity", "0.4")
     .attr("text-anchor", "middle")
-    .text("1800");
+    .text("1800");*/
+// Label showing time selected in slider, range of values
+var timesLabel = svg1.append("text")
+    .attr("y", axisLength*0 -10)
+    .attr("x", axisLength*0 +400)
+    .attr("font-size", "25px")
+    .attr("opacity", "0.4")
+    .attr("text-anchor", "middle")
+    .text("2010 - 2016");
 
 
 
@@ -527,8 +536,10 @@ $("#time-slider").slider({
     max: 2019,
     min: 2008,
     step: 1,
+    range: true,
+    values: [2010,2016],
     slide: function(event, ui){
-        time = ui.value;
+        times = ui.values;
         updateSongPlot(libraryData);
     }
 })
@@ -541,12 +552,8 @@ $("#time-slider").slider({
 
 function updateGenrePlot(data) {
 
-    var value = flag ? "energy" : "danceability" // Ternary operator: is flag true? if so, value = "energy", otherwise value = "danceability"
-
-
     // Filter data based on user selection //
 
-    //var selectedGenre = $("#genre-select").val(); // This is the genre that has been selected by the user
     var selectedAttributeX = $("#x-attribute-select").val(); // This is the genre that has been selected by the user
     var selectedAttributeY = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
     
@@ -723,12 +730,8 @@ function updateGenrePlot(data) {
 
 function updateSongPlot(data1) {
 
-    var value = flag ? "energy" : "danceability" // Ternary operator: is flag true? if so, value = "energy", otherwise value = "danceability"
-
-
     // Filter data based on user selection //
 
-    // var selectedGenre = $("#genre-select").val(); // This is the genre that has been selected by the user
     var selectedAttributeX = $("#x-attribute-select").val(); // This is the genre that has been selected by the user
     var selectedAttributeY = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
     
@@ -752,14 +755,20 @@ function updateSongPlot(data1) {
         })
     */
 
-    // Filter the data for interactive legend
-    var data1 = data1.filter(function(d){           // Filter the data for dropdown
-            if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) {
-                return true;
+    // Filter the data for interactive legend & time slider
+    var data1 = data1.filter(function(d){       
+            if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) { // For interactive legend
+                if ((d.dateAdded.getFullYear() >= times[0]) & (d.dateAdded.getFullYear()  <= times[1])) {
+                    return true;
+                } else {
+                    return false;
+                }
+                
             } else {
                 return false;
             }
         })
+
 
 
 
@@ -895,8 +904,8 @@ function updateSongPlot(data1) {
             .text(selectedAttributeY.charAt(0).toUpperCase() + selectedAttributeY.slice(1)); // Capitalize first character in value string and use it as the axis label
 
     // Update time slider
-    timeLabel.text(+(time))
-    $("#time")[0].innerHTML = +(time)
+    timesLabel.text(times[0] + " - " + times[1])
+    $("#time")[0].innerHTML = times[0] + " - " + times[1]
     //$("#time-slider").slider("value", +(time))
 
 }
