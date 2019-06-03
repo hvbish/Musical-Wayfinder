@@ -8,6 +8,10 @@
 var margin = { left:100, right:200, top:50, bottom:100 };
 
 var axisLength = 500;
+var axisLengthLineX = 500
+var axisLengthLineY = 500
+
+
 var xOrigin = 0;
 var yOrigin = axisLength;
 
@@ -17,10 +21,34 @@ var libraryData;
 var flag = true; // Flag added to test switching between data
 var time = 2010 // For slider with one value
 //var times = [new Date(2008, 11, 31),new Date(2019, 11, 31)] // For slider with a range
-var times = [2008,2019] // For slider with a range
+var times = [2010,2019] // For slider with a range
 
 
 
+
+// Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
+// Perhaps this function should also return an umbrella variable indicating which umbrella genre it falls into (since many genres will fall into more than one umbrella). This would also make it easier to assign colors to data points
+function classifyUmbrellaGenre(genre) {
+    isRock = genre.toLowerCase().includes('rock');
+    isPop = genre.toLowerCase().includes('pop');
+    isRap = genre.toLowerCase().includes('rap');
+    isMetal = genre.toLowerCase().includes('metal');
+    isClassical = genre.toLowerCase().includes('classical');
+    isElectronic = genre.toLowerCase().includes('elect');
+    isOther = !(isRock || isPop || isRap || isElectronic || isClassical || isMetal)
+    return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isOther};
+}
+
+
+
+
+
+
+
+
+///////////////////////////////
+///////////  SVGs  ////////////
+///////////////////////////////
 
 // Define the container for the plot and adjust its location to account for margins
 var svg = d3.select("#genre-plot-area")
@@ -39,6 +67,14 @@ var svg1 = d3.select("#song-plot-area")
         .attr("transform", "translate(" + margin.left 
         + ", " + margin.top + ")");
 
+var svgLine = d3.select("#line-plot-area")
+    .append("svg")
+        .attr("width", axisLengthLineX + margin.left + margin.right)
+        .attr("height", axisLengthLineY + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", "translate(" + margin.left 
+        + ", " + margin.top + ")");
+
 var svg_leg = d3.select("#legend")
     .append("svg")
         .attr("width", 200)
@@ -48,6 +84,11 @@ var svg_leg = d3.select("#legend")
         + ", " + (margin.top-30) + ")");
 
 
+
+
+///////////////////////////////
+///////////  Axes  ////////////
+///////////////////////////////
 
 // Save axes to variables, which we can call later whenever we update their attributes (if we don't do this we'll end up redrawing new axis object on top of the old one)
 var xAxisGroup = svg.append("g") // The variable xAxisGroup will refer to a group ("g") of elements getting appended to the svg container, and will allow us to perform actions on everything in that group at once (in this case, all the x axes on the page?)
@@ -64,18 +105,8 @@ var yAxisGroup1 = svg1.append("g")
 
 
 
-// Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
-// Perhaps this function should also return an umbrella variable indicating which umbrella genre it falls into (since many genres will fall into more than one umbrella). This would also make it easier to assign colors to data points
-function classifyUmbrellaGenre(genre) {
-    isRock = genre.toLowerCase().includes('rock');
-    isPop = genre.toLowerCase().includes('pop');
-    isRap = genre.toLowerCase().includes('rap');
-    isMetal = genre.toLowerCase().includes('metal');
-    isClassical = genre.toLowerCase().includes('classical');
-    isElectronic = genre.toLowerCase().includes('elect');
-    isOther = !(isRock || isPop || isRap || isElectronic || isClassical || isMetal)
-    return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isOther};
-}
+
+
 
 
 
@@ -123,12 +154,12 @@ var attrToPixLog = d3.scaleLog()
 
 // This sets how the "date" string will be parsed and converted to JS Date object. (Should convert UTC time given in the string to local time but we may want to double-check this.)
 var parseUTCTime = d3.utcParse("%Y-%m-%dT%H:%M:%SZ")
-/*
-var attrToPixTime = d3.scaleTime()
-    .domain([new Date(2000,0,1),  // Use JS Date objects
-        new Date(2001,0,1)])
+
+var dateToPix = d3.scaleTime()
+    .domain([new Date(2008,0,1),  // Use JS Date objects
+        new Date(2019,11,31)])
     .range([0.,axisLength]);
-*/
+
 
 // Ordinal scale - no invert function available for this, since multiple values can be mapped to the same color. Can use this to assign colors to categories
 
@@ -141,6 +172,39 @@ var attrToColor = d3.scaleOrdinal()
     .range(genre_colors);
 
 
+
+
+// THIS IS FOR THE LINE CHART - ORGANIZE THIS LATER //
+
+// Scales
+//var x = d3.scaleTime().range([0, axisLengthLineX]);
+//var y = d3.scaleLinear().range([axisLengthLineY, 0]);
+
+// Axis generators
+var xAxisCallLine = d3.axisBottom()
+var yAxisCallLine = d3.axisLeft()
+
+// Axis Groups
+var xAxisGroupLine = svgLine.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + axisLengthLineX + ")");
+var yAxisGroupLine = svgLine.append("g")
+    .attr("class", "y axis")
+
+// Y-Axis label
+yAxisGroupLine.append("text")
+    .attr("class", "axis-title")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 6)
+    .attr("dy", ".71em")
+    .style("text-anchor", "end")
+    .attr("fill", "#5D6971")
+    .text("Population)");
+
+// Line path generator
+var line = d3.line()
+    .x(function(d) { return xAttrToPix(d.speechiness); }) // { return x(d.year); })
+    .y(function(d) { return yAttrToPix(d.acousticness); }); // { return y(d.value); });
 
 
 
@@ -383,7 +447,8 @@ svg1.call(tipForSong);
 
 
 
-// Load general genre data file
+// Load general genre data file //
+
 d3.json("data/genre_data.json").then(function(genredata){
 
     // Do the following for every element in the json file
@@ -416,7 +481,8 @@ d3.json("data/genre_data.json").then(function(genredata){
 
 
 
-// Load user library data file (contains individual songs, date added to library, w/multiple genres associated with each)
+// Load user library data file // 
+
 d3.json("data/data_user_library.json").then(function(librarydata){
 
     // Do the following for every element in the json file
@@ -433,8 +499,11 @@ d3.json("data/data_user_library.json").then(function(librarydata){
             if (classifyUmbrellaGenre(g).isOther) {s.isOther = Boolean(true)};
         // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
         s.dateAdded = parseUTCTime(s.date)
+        // console.log(s.dateAdded)
         })
+
     })
+
 
     console.log(librarydata);
     libraryData = librarydata.map(librarydata => librarydata); // .map allows you to do something for each element of the list
@@ -443,13 +512,32 @@ d3.json("data/data_user_library.json").then(function(librarydata){
     // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
     updateSongPlot(libraryData);
 
-
     // Start running the interval function which will update data and repeat every ## ms
     // d3.interval(function(){
     //     updateGenrePlot(librarydata)
     //     flag = !flag;
     // }, 1500);
+
+
+
+
+    updateLinePlot(libraryData);
+
+    // THIS IS FOR LINE CHART //
+
+    // Add line to chart
+    // Set scale domains
+    //x.domain(d3.extent(data, function(d) { return d.speechiness; }));
+    //y.domain([d3.min(data, function(d) { return d.acousticness; }) / 1.005, 
+    //    d3.max(data, function(d) { return d.acousticness; }) * 1.005]);
+
+
+
+
+
 })
+
+
 
 
 // The data loading takes some time, so if you try to print genreData right away it will be undefined. This prints the data after waiting some period of time.
@@ -757,7 +845,19 @@ function updateGenrePlot(data) {
 
 
 
+function updateLinePlot(dataL) {
+    
 
+    // Generate axes once scales have been set
+    xAxisGroupLine.call(xAxisCallLine.scale(xAttrToPix))
+    yAxisGroupLine.call(yAxisCallLine.scale(yAttrToPix))
+
+    // Add line to chart
+    svgLine.append("path")
+        .attr("class", "line")
+        .attr("d", line(dataL));
+
+}
 
 function updateSongPlot(data1) {
 
