@@ -6,6 +6,10 @@
     <title>testing</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
     <!-- D3 Tooltip CSS -->
     <link rel="stylesheet" href="css/d3-tip.css">
     <!-- Custom styling -->
@@ -23,22 +27,28 @@
             <br> <br> <br>
         </div>      
 
-        <div class="row">
+        <div class="row row-centered">
+
             <div class="col-md-6">
             </div>
-            <div class="col-sm-3">
+
+            <div class="col-sm-2">
+                <!-- Play button -->
                 <button id="play-button" class="btn btn-primary">Play</button>
+                <!-- Reset button -->
                 <button id="reset-button" class="btn btn-primary">Reset</button>
             </div>
         </div>
 
+
         <div class="row">
-            <br> <br> <br>
+            <br> 
         </div> 
 
         <div class="row row-no-gutters">
-            <div class="col-md-5"></div>
+            <div class="col-md-6"></div>
             <div class="col-sm-2">
+                <!-- X Axis dropdown box -->
                 <p text-align:right> X-Axis: </p><select id="x-attribute-select" class="form-control">
                     <option selected value="energy">Energy</option>
                     <option value="liveness">Liveness</option>
@@ -51,7 +61,18 @@
                     <option value="popularity">Popularity</option>
                 </select>
             </div>
+        </div>
+
+        <div class="row">
+            <br> 
+        </div> 
+
+        <div class="row row-no-gutters">
+            <div class="col-md-6">
+            </div>
+
             <div class="col-sm-2">
+                <!-- Y Axis dropdown box -->
                 <p text-align:left> Y-Axis: </p><select id="y-attribute-select" class="form-control">
                     <option value="energy">Energy</option>
                     <option value="liveness">Liveness</option>
@@ -64,6 +85,24 @@
                     <option value="popularity">Popularity</option>
                 </select>
             </div>
+
+            <div class="col-md-3">
+            </div>
+        </div>
+
+        <div class="row">
+            <br> 
+        </div> 
+
+        <div class="row row-no-gutters">
+            <div class="col-md-6"></div>
+            <div class="col-sm-2">
+                <!-- Time slider -->
+                <div id="slider-div">
+                    <label>Time range: <span id="time">xxx</span></label> <!-- set a label and give it an id so you can call it in the JS file -->
+                    <div id="time-slider"></div>
+                </div>
+            </div>
             <div class="col-md-3"></div>
         </div>
 
@@ -71,26 +110,24 @@
 
 
 
-
-
         <div class="row">
 
-            
-
             <div class="col-md-6">
-                <div id="song-plot-area"></div>
+                <div id="song-plot-area">
+                </div>
             </div>
 
             <div class="col-md-6">
             </div>
 
             <div class="col-md-6">
-                <div id="genre-plot-area"></div>
+                <div id="genre-plot-area">
+                </div>
             </div>
         </div>
     </div>
 
-        <div class="row row-no-gutters"><br></div>
+
 
 
 
@@ -100,7 +137,9 @@
 
 <!-- External JS libraries -->
 <script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<!-- <script src="js/jquery-3.4.1.min.js"></script>
+ --><script src="js/bootstrap.min.js"></script>
 <script src="js/d3.min.js"></script>
 <script src="js/d3-tip.js"></script>
 <!-- Custom JS -->

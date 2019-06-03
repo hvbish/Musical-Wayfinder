@@ -15,6 +15,7 @@ var interval; // For interval function
 var genreData;
 var libraryData;
 var flag = true; // Flag added to test switching between data
+var time = 2010 // For slider
 
 
 
@@ -35,6 +36,7 @@ var svg1 = d3.select("#song-plot-area")
     .append("g")
         .attr("transform", "translate(" + margin.left 
         + ", " + margin.top + ")");
+
 
 
 // Save axes to variables, which we can call later whenever we update their attributes (if we don't do this we'll end up redrawing new axis object on top of the old one)
@@ -190,6 +192,15 @@ plotTitle1 = svg1.append("text")
     .style("font-size", "26px")
     .style("font-weight", "bold")
     .text("My Songs")
+
+// Slider
+var timeLabel = svg1.append("text")
+    .attr("y", axisLength*0 +100)
+    .attr("x", axisLength*0 +100)
+    .attr("font-size", "40px")
+    .attr("opacity", "0.4")
+    .attr("text-anchor", "middle")
+    .text("1800");
 
 
 
@@ -484,12 +495,12 @@ $("#reset-button")
 //// Dropdown Selection Test ////
 /////////////////////////////////
 
-$("#genre-select")
+/*$("#genre-select")
     .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
         updateGenrePlot(genreData);
         updateSongPlot(libraryData);
     })
-
+*/
 $("#x-attribute-select")
     .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
 /*        setTimeout(function(){
@@ -507,7 +518,20 @@ $("#y-attribute-select")
 
 
 
+/////////////////////////////////
+////////// Time Slider //////////
+/////////////////////////////////
 
+
+$("#time-slider").slider({
+    max: 2019,
+    min: 2008,
+    step: 1,
+    slide: function(event, ui){
+        time = ui.value;
+        updateSongPlot(libraryData);
+    }
+})
 
 ///////////////////////////////
 ///// The Update Function /////
@@ -689,6 +713,8 @@ function updateGenrePlot(data) {
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
             .text(selectedAttributeY.charAt(0).toUpperCase() + selectedAttributeY.slice(1)); // Capitalize first character in value string and use it as the axis label
+
+
 }
 
 
@@ -868,7 +894,10 @@ function updateSongPlot(data1) {
         .transition(update_trans)
             .text(selectedAttributeY.charAt(0).toUpperCase() + selectedAttributeY.slice(1)); // Capitalize first character in value string and use it as the axis label
 
-
+    // Update time slider
+    timeLabel.text(+(time))
+    $("#time")[0].innerHTML = +(time)
+    //$("#time-slider").slider("value", +(time))
 
 }
 
