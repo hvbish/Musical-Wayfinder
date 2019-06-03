@@ -173,8 +173,9 @@ var attrToColor = d3.scaleOrdinal()
 
 
 
+// ************ LINE PLOT ************* //
 
-// THIS IS FOR THE LINE CHART - ORGANIZE THIS LATER //
+// THIS IS FOR THE LINE PLOT - MOVE THIS TO THE RIGHT PLACE LATER //
 
 // Scales
 //var x = d3.scaleTime().range([0, axisLengthLineX]);
@@ -206,6 +207,7 @@ var line = d3.line()
     .x(function(d) { return xAttrToPix(d.speechiness); }) // { return x(d.year); })
     .y(function(d) { return yAttrToPix(d.acousticness); }); // { return y(d.value); });
 
+// ************************************* //
 
 
 
@@ -529,9 +531,11 @@ d3.json("data/data_user_library.json").then(function(librarydata){
 
 
 
-    updateLinePlot(libraryData);
 
-    // THIS IS FOR LINE CHART //
+
+    // ************ LINE PLOT ************* //
+
+    updateLinePlot(libraryData);
 
     // Add line to chart
     // Set scale domains
@@ -539,7 +543,7 @@ d3.json("data/data_user_library.json").then(function(librarydata){
     //y.domain([d3.min(data, function(d) { return d.acousticness; }) / 1.005, 
     //    d3.max(data, function(d) { return d.acousticness; }) * 1.005]);
 
-
+    // ************************************* //
 
 
 
