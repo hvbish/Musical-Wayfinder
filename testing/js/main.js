@@ -16,7 +16,7 @@ var genreData;
 var libraryData;
 var flag = true; // Flag added to test switching between data
 var time = 2010 // For slider with one value
-var times = [2010,2016] // For slider with a range
+var times = [2010,2019] // For slider with a range
 
 
 
@@ -209,7 +209,7 @@ var timesLabel = svg1.append("text")
     .attr("font-size", "25px")
     .attr("opacity", "0.4")
     .attr("text-anchor", "middle")
-    .text("2010 - 2016");
+    .text("2010 - 2019");
 
 
 
@@ -535,7 +535,7 @@ $("#y-attribute-select")
 
 
 
-$("#time-slider").slider({
+/*$("#time-slider").slider({
     max: 2019,
     min: 2008,
     step: 1,
@@ -545,7 +545,28 @@ $("#time-slider").slider({
         times = ui.values;
         updateSongPlot(libraryData);
     }
+});*/
+
+
+
+
+// dragslider Slider
+$('#slider').dragslider({
+    min: 2008,
+    max: 2019,
+    animate: true,
+    range: true,
+    rangeDrag: true,
+    values: [2010,2019],
+    slide: function(event, ui){
+        times = ui.values;
+        updateSongPlot(libraryData);
+    }    
 });
+
+
+
+
 
 /*// See http://ghusse.github.io/jQRangeSlider/
 $("#time-slider").dateRangeSlider(
