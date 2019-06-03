@@ -267,6 +267,14 @@ plotTitle1 = svg1.append("text")
     .style("font-weight", "bold")
     .text("My Songs")
 
+plotTitleL = svgLine.append("text")
+    .attr("x", (axisLengthLineX / 2))
+    .attr("y", 0  - (margin.top / 5))
+    .attr("text-anchor", "middle")
+    .style("font-size", "26px")
+    .style("font-weight", "bold")
+    .text("My Darkness")
+
 /*// Label showing time selected in slider, single value
 var timeLabel = svg1.append("text")
     .attr("y", axisLength*0 +100)
@@ -730,7 +738,7 @@ function updateGenrePlot(data) {
     points.exit().remove();
 
     // 3 -- UPDATE old elements present in new data.
-    var update_trans = d3.transition().duration(300) // Define a transition variable with 500ms duration so we can reuse it
+    var update_trans = d3.transition().duration(1000) // Define a transition variable with 500ms duration so we can reuse it
 
     points
         .attr("r", 3)
@@ -924,7 +932,7 @@ function updateSongPlot(data1) {
 
 
     // 3 -- UPDATE old elements present in new data.
-    var update_trans = d3.transition().duration(300) // Define a transition variable with 500ms duration so we can reuse it
+    var update_trans = d3.transition().duration(1000) // Define a transition variable with 500ms duration so we can reuse it
 
         points1
         .attr("r", 3)
