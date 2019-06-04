@@ -19,15 +19,10 @@ var legendWidth = 200
 var xOrigin = 0;
 var yOrigin = axisLength;
 
-var interval; // For interval function
-// var genreData;
-var libraryData;
-var allGenreToggle = true; // Flag added to test switching between data. true = user genre data, false = all genre data
-var time = 2010 // For slider with one value
-//var times = [new Date(2008, 11, 31),new Date(2019, 11, 31)] // For slider with a range
+var allGenreToggle = false; // Flag added to test switching between data. true = user genre data, false = all genre data
 var times = [2010,2019] // For slider with a range
-
 var maxGenreCount;
+var defaultMarkerSize = 2.
 
 
 // Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
@@ -159,18 +154,8 @@ var timeScale = d3.scaleLinear() // Time scale
     .range([axisLength,0.]);
 
 
-var genreCountScale = d3.scaleLinear()
-    .domain([0.,160.])
-    .range([0.,6.]);
+var genreCountScale
 
-
-/*
-//Log scale
-var attrToPixLog = d3.scaleLog()
-    .domain([0.,1.])
-    .range([0.,axisLength])
-    .base(10);
-*/
 
 // Time scale //
 
@@ -303,7 +288,7 @@ plotTitle = svg.append("text")
     .attr("text-anchor", "middle")
     .style("font-size", "26px")
     .style("font-weight", "bold")
-    .text("All Genres")
+    .text(allGenreToggle ? "All Genres" : "My Genres")
 
 plotTitle1 = svg1.append("text")
     .attr("x", (axisLength / 2))
@@ -441,6 +426,11 @@ var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space
 var tipForGenre = d3.tip().attr('class', 'd3-tip')
     .html(function(d) {
         var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + d.genre + nbsp.repeat(0) + "</h4></span><br>";
+        if (allGenreToggle) {
+            text += "<strong> In my library: </strong> <span style='color:"+"red"+";text-transform:capitalize'>" + nbsp.repeat(0) + (d.userCountFull) + "</span><br>";
+        } else {
+            text += "<strong> Song Count: </strong> <span style='color:"+"red"+";text-transform:capitalize'>" + nbsp.repeat(0) + (d.userCountFull) + "</span><br>";
+        }
         text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.energy) + "</span><br>";
         text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.liveness) + "</span><br>";
         text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.speechiness) + "</span><br>";
@@ -509,6 +499,8 @@ var genreDataPromise = d3.json("data/genre_data.json").then(function(genredata) 
         g.isElectronic = classifyUmbrellaGenre(g.genre).isElectronic;
         g.isOther = classifyUmbrellaGenre(g.genre).isOther;
         g.userCount = 0;
+        g.userCountFull = 0;
+        g.userFirstAddDate = new Date(2100,0,1);
     })
 
     genreData = genredata.map(genredata => genredata); // .map allows you to do something for each element of the list. Not sure how to use it properly yet
@@ -528,7 +520,9 @@ var genreDataPromise = d3.json("data/genre_data.json").then(function(genredata) 
 var umbrella_genre_counts = {};
 
 genreDataPromise.then(function(genredata) {
-    var genre_counts = {};
+    var genre_counts = {};      // This is the weighted genre count
+    var genre_counts_full = {}  // This is the unweighted genre count
+    var genre_dates = {}        // This is the date the genre first appears in the user's library
     var genre_labels = ["Rock", "Pop", "Rap", "Metal", "Classical", "Electronic", "Other"];
 
     for (var i in genre_labels) {
@@ -553,13 +547,29 @@ genreDataPromise.then(function(genredata) {
                 // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
                 s.dateAdded = parseUTCTime(s.date);
 
+
+
+                // Check the first add date for each of the song's genres, and update it if this song was added before that date
+                if (genre_dates[g]) {
+                    if (s.dateAdded < genre_dates[g]["userFirstAddDate"]) {
+                         genre_dates[g]["userFirstAddDate"] = s.dateAdded
+                    }
+                } else {
+                    genre_dates[g] = {};
+                    genre_dates[g]["userFirstAddDate"] = s.dateAdded
+                }
+
+
                 var weight = 1. / s['genres'].length;
 
                 if (genre_counts[g]) {
                     genre_counts[g]["userCount"] += weight;
+                    genre_counts_full[g]["userCountFull"] += 1;
                 } else {
                     genre_counts[g] = {};
-                    genre_counts[g]["userCount"] = 0
+                    genre_counts[g]["userCount"] = 0; // Steven: Should genre_counts[g]["userCount"] = weight rather than 0? In this condition we are tallying a new genre that isn't in genre_counts yet, right? Or am I confused
+                    genre_counts_full[g] = {};
+                    genre_counts_full[g]["userCountFull"] = 1;
                 }
                 if (s.isRock) {
                     umbrella_genre_counts["Rock"]["userCount"] += weight;
@@ -590,7 +600,11 @@ genreDataPromise.then(function(genredata) {
             genre_in_library = genre_counts[key];
             if (genre_in_library) {
                 genre.userCount = genre_counts[key]["userCount"];
+                genre.userCountFull = genre_counts_full[key]["userCountFull"];
+                genre.userFirstAddDate = genre_dates[key]["userFirstAddDate"];
             }
+
+
         });
 
 
@@ -598,9 +612,7 @@ genreDataPromise.then(function(genredata) {
 
         // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
         updateSongPlot(libraryData);
-
         updateGenrePlot(genreData);
-
         updateLinePlot(libraryData);
 
     });
@@ -608,6 +620,10 @@ genreDataPromise.then(function(genredata) {
 
 
 
+
+setTimeout(function(){
+            console.log(genreData);
+        },5000);
 
 
 /////////////////////////////////
@@ -677,21 +693,10 @@ $('#slider').dragslider({
     slide: function(event, ui){
         times = ui.values;
         updateSongPlot(libraryData);
+        updateGenrePlot(genreData);
     }    
 });
 
-// Original slider with no range handles
-/*$("#time-slider").slider({
-    max: 2019,
-    min: 2008,
-    step: 1,
-    range: true,
-    values: [2010,2016],
-    slide: function(event, ui){
-        times = ui.values;
-        updateSongPlot(libraryData);
-    }
-});*/
 
 
 
@@ -709,11 +714,34 @@ function updateGenrePlot(data) {
     var selectedAttributeX = $("#x-attribute-select").val(); // This is the genre that has been selected by the user
     var selectedAttributeY = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
     
-
+/*
     // Filter the data for interactive legend
     var data = data.filter(function(d){           // Filter the data for dropdown
             if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) {
                 return true;
+            } else {
+                return false;
+            }
+        })*/
+                
+
+    // Filter the data for interactive legend & time slider
+    var data = data.filter(function(d){       
+            if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) { // For interactive legend
+            // Genre is selected in legend
+                if (allGenreToggle){
+                    // AND plotting full set of genres
+                    return true;
+                } else {
+                    // NOT plotting full set of genres
+                    if ((d.userFirstAddDate.getFullYear() >= times[0]) & (d.userFirstAddDate.getFullYear()  <= times[1])) {
+                        // AND add date is within slider time range
+                        return true;
+                    } else {
+                        // NOT within slider time range
+                        return false;
+                    }
+                }    
             } else {
                 return false;
             }
@@ -730,9 +758,15 @@ function updateGenrePlot(data) {
     
     // genreCountScale.domain(0., maxGenreCount).range([0, 1]);
     
-    genreCountScale = d3.scaleLinear()
+/*    genreCountScale = d3.scaleLinear()
+        // .domain([0., Math.log2(maxGenreCount + 1)])
         .domain([0., maxGenreCount])
-        .range([0., 10.]);
+        .range([0., 15.]);*/
+
+    genreCountScale = d3.scaleLog()
+        .domain([1., maxGenreCount])
+        .range([0., 5.])
+        .base(10);
 
 
     // Plot the data, following the D3 update pattern //
@@ -795,9 +829,15 @@ function updateGenrePlot(data) {
             .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements.
                     .attr("r", function(d) {
                         if (allGenreToggle) {
-                            return 3.;
+                            return defaultMarkerSize;
                         } else {
-                            return genreCountScale(d.userCount);
+                            if (d.userCount == 0.) {
+                                return d.userCount;
+                            } else {
+                                // return genreCountScale(Math.log2(d.userCount + 1)); // Hacky workaround to make log scaling work
+                                return genreCountScale(d.userCount + 1);
+                            }
+                            
                         }
                     })
                     .attr("fill", function(d){
@@ -879,13 +919,13 @@ function updateLinePlot(dataL) {
     });
 
     timeScale = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
-    .domain([0, max_date - min_date])
-    .range([0., axisLength]);
+        .domain([0, max_date - min_date])
+        .range([0., axisLength]);
 
     dateToPix = d3.scaleTime()
-    .domain([new Date(min_date),  // Use JS Date objects
-        new Date(max_date)])
-    .range([0.,axisLength]);
+        .domain([new Date(min_date),  // Use JS Date objects
+            new Date(max_date)])
+        .range([0.,axisLength]);
 
     var bin_data = d3.histogram()
                     .value(function(d) {
@@ -950,35 +990,16 @@ function updateLinePlot(dataL) {
 
 }
 
-function updateSongPlot(data1) {
+function updateSongPlot(songdata) {
 
     // Filter data based on user selection //
 
     var selectedAttributeX = $("#x-attribute-select").val(); // This is the genre that has been selected by the user
     var selectedAttributeY = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
-    
-    /*    var data = data.filter(function(d){           // Filter the data for dropdown
-            if (selectedGenre == "all") { return true; }
-            else if (selectedGenre == "pop") {
-                return d.isPop;
-            } else if (selectedGenre == "rock") {
-                return d.isRock;
-            } else if (selectedGenre == "rap") {
-                return d.isRap;
-            } else if (selectedGenre == "electronic") {
-                return d.isElectronic;
-            } else if (selectedGenre == "classical") {
-                return d.isClassical;
-            } else if (selectedGenre == "metal") {
-                return d.isMetal;
-            } else {
-                return false;
-            }
-        })
-    */
+
 
     // Filter the data for interactive legend & time slider
-    var data1 = data1.filter(function(d){       
+    var songdata = songdata.filter(function(d){       
             if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) { // For interactive legend
                 if ((d.dateAdded.getFullYear() >= times[0]) & (d.dateAdded.getFullYear()  <= times[1])) {
                 //if ((d.dateAdded >= times[0]) & (d.dateAdded  <= times[1])) {
@@ -993,26 +1014,16 @@ function updateSongPlot(data1) {
         })
 
 
-
-
-    // Update the domain of your axes based on the new data you are using //
-    //      Example: x.domain(data.map(function(d){ return d.month }));
-    //      Example: y.domain([0, d3.max(data, function(d) { return d.revenue })])
-
-
-
     // Plot the data, following the D3 update pattern //
 
     // 1 -- JOIN new data with old elements.
     var points1 = svg1.selectAll("circle") // Song scatterplot
-        .data(data1, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
+        .data(songdata, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
             return d.uri;
         });
 
-
     // 2 -- EXIT old elements not present in new data.
     points1.exit().remove();
-
 
     // 3 -- UPDATE old elements present in new data.
     var update_trans = d3.transition().duration(1000); // Define a transition variable with 500ms duration so we can reuse it
@@ -1038,7 +1049,6 @@ function updateSongPlot(data1) {
                 }
             });
 
-
     // 4 -- ENTER new elements present in new data.
     points1.enter()
         .append("circle")
@@ -1061,7 +1071,7 @@ function updateSongPlot(data1) {
                 }
             })
             .merge(points1) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
-                .attr("r", 3)
+                .attr("r", defaultMarkerSize)
                 .attr("fill", function(d){
                     if (d.isRock) {
                         return attrToColor('Rock')
@@ -1081,6 +1091,7 @@ function updateSongPlot(data1) {
                 })
                 .on("mouseover", tipForSong.show)
                 .on("mouseout", tipForSong.hide);
+
 
     // Draw Axes //
     
