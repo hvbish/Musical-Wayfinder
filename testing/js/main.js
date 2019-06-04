@@ -18,7 +18,7 @@ var xOrigin = 0;
 var yOrigin = axisLength;
 
 var interval; // For interval function
-var genreData;
+// var genreData;
 var libraryData;
 var flag = true; // Flag added to test switching between data
 var time = 2010 // For slider with one value
@@ -219,10 +219,10 @@ var line = function(attr_name) {
     return d3.line()
         .x(function(d, i) { 
             // if (d['dateAdded']) {
-                // console.log(d['dateAdded']);
-                // console.log(Date.parse(d['dateAdded']));
+                // // console.log(d['dateAdded']);
+                // // console.log(Date.parse(d['dateAdded']));
                 // return Date.parse(d['dateAdded']);   
-            //console.log(dateToPix(new Date(d['dateAdded'])));  
+            // console.log(dateToPix(new Date(d['dateAdded'])));  
             return dateToPix(new Date(d['dateAdded']));
             // }
         }) // { return x(d.year); })
@@ -400,8 +400,8 @@ genre_labels.forEach(function(genre, i){
                 legendMarker.attr("fill","white");
                 legendMarker.attr("stroke","black");
             };
-            console.log(genre);
-            console.log(plotGenre);
+            // console.log(genre);
+            // console.log(plotGenre);
             updateGenrePlot(genreData);
             updateSongPlot(libraryData);
             //updateSongPlot(libraryData);
@@ -482,14 +482,11 @@ svg1.call(tipForSong);
 /////// Load & plot data ///////
 ////////////////////////////////
 
+var genreData;
 
-
-// Load general genre data file //
-
-d3.json("data/genre_data.json").then(function(genredata){
-
+var genreDataPromise = d3.json("data/genre_data.json").then(function(genredata) {
     // Do the following for every element in the json file
-	genredata.forEach(function(g){
+    genredata.forEach(function(g){
         g.isRock = classifyUmbrellaGenre(g.genre).isRock; 
         g.isPop = classifyUmbrellaGenre(g.genre).isPop; 
         g.isRap = classifyUmbrellaGenre(g.genre).isRap; 
@@ -497,11 +494,15 @@ d3.json("data/genre_data.json").then(function(genredata){
         g.isClassical = classifyUmbrellaGenre(g.genre).isClassical;
         g.isElectronic = classifyUmbrellaGenre(g.genre).isElectronic;
         g.isOther = classifyUmbrellaGenre(g.genre).isOther;
-	})
-
-    console.log(genredata);
+        g.userCount = 0;
+    })
+        // console.log('Out of loop');
+        // console.log(genreData);
+        // console.log(libraryData);
+    
+    // console.log(genredata);
     genreData = genredata.map(genredata => genredata); // .map allows you to do something for each element of the list. Not sure how to use it properly yet
-    console.log(genreData);
+    // console.log(genreData);
 
 /*    // Start running the interval function which will update data and repeat every ## ms
     d3.interval(function(){
@@ -510,80 +511,133 @@ d3.json("data/genre_data.json").then(function(genredata){
     }, 1500);*/
 
     // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
+    
     updateGenrePlot(genreData);
-})
+    return genredata;
+});
 
 
 
-
-
+// Load general genre data file //
 
 // Load user library data file // 
 
-d3.json("data/data_user_library.json").then(function(librarydata){
+var umbrella_genre_counts = {};
 
-    // Do the following for every element in the json file
-    librarydata.forEach(function(s){
-        // Classify each song into umbrella genres
-        s.isRock = s.isPop = s.isRap = s.isMetal = s.isClassical = s.isElectronic = s.isOther = Boolean(false) // Initialize all umbrella types to false before you loop through
-        s.genres.forEach(function(g){ // Loop through all genres associated with this song and assign umbrella genres to the song
-            if (classifyUmbrellaGenre(g).isRock) {s.isRock = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isPop) {s.isPop = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isRap) {s.isRap = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isMetal) {s.isMetal = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isClassical) {s.isClassical = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isElectronic) {s.isElectronic = Boolean(true)};
-            if (classifyUmbrellaGenre(g).isOther) {s.isOther = Boolean(true)};
-        // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
-        s.dateAdded = parseUTCTime(s.date)
-        // console.log(s.dateAdded)
+genreDataPromise.then(function(genredata) {
+    console.log("Loaded genre data!");
+    console.log(genredata);
+
+    var genre_counts = {};
+    var genre_labels = ["Rock", "Pop", "Rap", "Metal", "Classical", "Electronic", "Other"];
+
+    for (var i in genre_labels) {
+        umbrella_genre = genre_labels[i];
+        // console.log(umbrella_genre);
+        umbrella_genre_counts[umbrella_genre] = {};
+        umbrella_genre_counts[umbrella_genre]["userCount"] = 0;
+    }
+    // console.log(umbrella_genre_counts);
+
+    d3.json("data/data_user_library.json").then(function(librarydata) {
+        // Do the following for every element in the json file
+        librarydata.forEach(function(s){
+            // Classify each song into umbrella genres
+            s.isRock = s.isPop = s.isRap = s.isMetal = s.isClassical = s.isElectronic = s.isOther = Boolean(false) // Initialize all umbrella types to false before you loop through
+            s.genres.forEach(function(g) { // Loop through all genres associated with this song and assign umbrella genres to the song
+                if (classifyUmbrellaGenre(g).isRock) {s.isRock = Boolean(true)};
+                if (classifyUmbrellaGenre(g).isPop) {s.isPop = Boolean(true)};
+                if (classifyUmbrellaGenre(g).isRap) {s.isRap = Boolean(true)};
+                if (classifyUmbrellaGenre(g).isMetal) {s.isMetal = Boolean(true)};
+                if (classifyUmbrellaGenre(g).isClassical) {s.isClassical = Boolean(true)};
+                if (classifyUmbrellaGenre(g).isElectronic) {s.isElectronic = Boolean(true)};
+                if (classifyUmbrellaGenre(g).isOther) {s.isOther = Boolean(true)};
+                // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
+                s.dateAdded = parseUTCTime(s.date);
+                // // console.log(s.dateAdded)
+
+                var weight = 1. / s['genres'].length;
+
+                // console.log(g);
+                if (genre_counts[g]) {
+                    genre_counts[g]["userCount"] += weight;
+                } else {
+                    genre_counts[g] = {};
+                    genre_counts[g]["userCount"] = 0
+                }
+                if (s.isRock) {
+                    umbrella_genre_counts["Rock"]["userCount"] += weight;
+                }
+                if (s.isPop) {
+                    umbrella_genre_counts["Pop"]["userCount"] += weight;
+                }
+                if  (s.isRap) {
+                    umbrella_genre_counts["Rap"]["userCount"] += weight;
+                }
+                if  (s.isMetal) {
+                    umbrella_genre_counts["Metal"]["userCount"] += weight;
+                }
+                if  (s.isClassical) {
+                    umbrella_genre_counts["Classical"]["userCount"] += weight;
+                }
+                if  (s.isElectronic) {
+                    umbrella_genre_counts["Electronic"]["userCount"] += weight;
+                }
+                if  (s.isOther) {
+                    umbrella_genre_counts["Other"]["userCount"] += weight;
+                }
+            })
         })
+        console.log(genre_counts);
+        console.log(umbrella_genre_counts);
 
-    })
+        console.log(genreData);
+        genreData.forEach(function(genre) {
+            key = genre['genre'].toLowerCase()
+            genre_in_library = genre_counts[key];
+            if (genre_in_library) {
+                genre.userCount = genre_counts[key]["userCount"];
+            }
+        });
 
+        console.log(genreData);
 
-    console.log(librarydata);
-    libraryData = librarydata.map(librarydata => librarydata); // .map allows you to do something for each element of the list
-    console.log(libraryData);
+        // console.log(librarydata);
+        libraryData = librarydata.map(librarydata => librarydata); // .map allows you to do something for each element of the list
+        // console.log(libraryData);
 
-    // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
-    updateSongPlot(libraryData);
+        // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
+        updateSongPlot(libraryData);
 
-    // Start running the interval function which will update data and repeat every ## ms
-    // d3.interval(function(){
-    //     updateGenrePlot(librarydata)
-    //     flag = !flag;
-    // }, 1500);
-
-
-
-
-
-
-    // ************ LINE PLOT ************* //
-
-    updateLinePlot(libraryData);
-
-    // Add line to chart
-    // Set scale domains
-    //x.domain(d3.extent(data, function(d) { return d.speechiness; }));
-    //y.domain([d3.min(data, function(d) { return d.acousticness; }) / 1.005, 
-    //    d3.max(data, function(d) { return d.acousticness; }) * 1.005]);
-
-    // ************************************* //
+        // Start running the interval function which will update data and repeat every ## ms
+        // d3.interval(function(){
+        //     updateGenrePlot(librarydata)
+        //     flag = !flag;
+        // }, 1500);
 
 
 
-})
+
+        updateLinePlot(libraryData);
+
+        // THIS IS FOR LINE CHART //
+        //x.domain(d3.extent(data, function(d) { return d.speechiness; }));
+        //y.domain([d3.min(data, function(d) { return d.acousticness; }) / 1.005, 
+        //    d3.max(data, function(d) { return d.acousticness; }) * 1.005]);
+        console.log("Could not load genre data!");
+    });
+});
+
+
 
 
 
 
 // The data loading takes some time, so if you try to print genreData right away it will be undefined. This prints the data after waiting some period of time.
 setTimeout(function(){
-    console.log('Out of loop');
-    console.log(genreData);
-    console.log(libraryData);
+    // console.log('Out of loop');
+    // console.log(genreData);
+    // console.log(libraryData);
 },300);
 
 
@@ -597,7 +651,7 @@ setTimeout(function(){
 // Define a test function to execute when the play button is pressed. This one does counting.
 var count = 0;
 function step() {
-    console.log(count);
+    // console.log(count);
     count += count;
 }
 
@@ -887,7 +941,7 @@ function updateGenrePlot(data) {
 function updateLinePlot(dataL) {
     
 
-    console.log(Date.parse(dataL[0]['dateAdded']));
+    // console.log(Date.parse(dataL[0]['dateAdded']));
 
     filtered_data = dataL.filter(d => d['dateAdded']);
 
@@ -900,7 +954,7 @@ function updateLinePlot(dataL) {
 
 
 
-    console.log(timeScale)
+    // console.log(timeScale)
     timeScale = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
     .domain([0, max_date - min_date])
     .range([0., axisLength]);
@@ -909,7 +963,7 @@ function updateLinePlot(dataL) {
     .domain([new Date(min_date),  // Use JS Date objects
         new Date(max_date)])
     .range([0.,axisLength]);
-    console.log(timeScale);
+    // console.log(timeScale);
     // Generate axes once scales have been set
     xAxisGroupLine.call(xAxisCallLine.scale(dateToPix))
     yAxisGroupLine.call(yAxisCallLine.scale(yAttrToPix))
@@ -1115,13 +1169,13 @@ function updateSongPlot(data1) {
 
 // Define an interval function that performs some action every ## ms (it will also wait ## ms to start the first loop)
 //      d3.interval(function(){
-//         console.log("Hello World");
+//         // console.log("Hello World");
 //      }, 1000);
 
 // You can also set a loop and stop it later in your code, like so:
 // Start loop running
 var myInterval = setInterval(function(){
-    console.log("Hello World");
+    // console.log("Hello World");
 }, 500)
 // Stop the loop
 clearInterval(myInterval)
@@ -1152,7 +1206,7 @@ d3.json("data/data_top_artists_short_term.json").then(function (artist_data) {
 
 var top_tracks_list = d3.select("#top-tracks")
 d3.json("data/data_top_tracks_short_term.json").then(function (track_data) {
-    console.log(track_data);
+    // console.log(track_data);
     top_tracks_list.selectAll('button')
                     .data(track_data)
                     .enter()
