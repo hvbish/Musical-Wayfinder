@@ -1125,9 +1125,12 @@ d3.json("data/data_top_artists_short_term.json").then(function (artist_data) {
                     .style("outline", "none")
                     .on("click", function(f, i){
                         $that = $(this);
+                        am_active = $that.hasClass('active');
 
                         $that.parent().parent().parent().find('button').removeClass('active');
-                        $that.addClass('active');                                        
+                        if (! am_active) {
+                            $that.addClass('active');   
+                        }                                                                       
                     })
                     .html(function(d, i) {
                         return d['name']
@@ -1148,7 +1151,7 @@ d3.json("data/data_top_tracks_short_term.json").then(function (track_data) {
                         $that = $(this);
                         am_active = $that.hasClass('active');
                         $that.parent().parent().parent().find('button').removeClass('active');
-                        if (am_active) {
+                        if (! am_active) {
                             $that.addClass('active');   
                         }                                     
                     })
