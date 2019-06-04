@@ -10,6 +10,8 @@ var margin = { left:100, right:200, top:50, bottom:100 };
 var axisLength = 500;
 var axisLengthLineX = 500
 var axisLengthLineY = 500
+var axisLengthStatsX = 500
+var axisLengthStatsY = 500
 
 
 var xOrigin = 0;
@@ -18,12 +20,12 @@ var yOrigin = axisLength;
 var interval; // For interval function
 // var genreData;
 var libraryData;
-var flag = true; // Flag added to test switching between data
+var flag = false; // Flag added to test switching between data. true = user genre data, false = all genre data
 var time = 2010 // For slider with one value
 //var times = [new Date(2008, 11, 31),new Date(2019, 11, 31)] // For slider with a range
 var times = [2010,2019] // For slider with a range
 
-
+var maxGenreCount;
 
 
 // Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
@@ -84,6 +86,13 @@ var svg_leg = d3.select("#legend")
         + ", " + (margin.top-30) + ")");
 
 
+var svgStats = d3.select("#stats-area")
+    .append("svg")
+        .attr("width", axisLengthStatsX + margin.left + margin.right)
+        .attr("height", axisLengthStatsY + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", "translate(" + margin.left 
+        + ", " + margin.top + ")")
 
 
 ///////////////////////////////
@@ -146,6 +155,12 @@ var yCountsToPix;
 var timeScale = d3.scaleLinear() // Time scale
     .domain([0.,100.])
     .range([axisLength,0.]);
+
+
+var genreCountScale = d3.scaleLinear()
+    .domain([0.,160.])
+    .range([0.,6.]);
+
 
 /*
 //Log scale
@@ -332,7 +347,6 @@ var timesLabel = svg1.append("text")
 ///////////////////////////////
 
 
-// ***** How can we plot cirlces in legend without having those circles get selected when we selectAll("circles") to plot data points? ******
 
 var plotPop = true;
 var plotRock = true;
@@ -497,15 +511,9 @@ var genreDataPromise = d3.json("data/genre_data.json").then(function(genredata) 
 
     genreData = genredata.map(genredata => genredata); // .map allows you to do something for each element of the list. Not sure how to use it properly yet
 
-/*    // Start running the interval function which will update data and repeat every ## ms
-    d3.interval(function(){
-        updateGenrePlot(genreData)
-        flag = !flag;
-    }, 1500);*/
 
-    // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
-    
-    updateGenrePlot(genreData);
+    genreData = genredata.map(genredata => genredata); // .map allows you to do something for each element of the list. Not sure how to use it properly yet    
+
     return genredata;
 });
 
@@ -589,36 +597,14 @@ genreDataPromise.then(function(genredata) {
         // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
         updateSongPlot(libraryData);
 
-        // Start running the interval function which will update data and repeat every ## ms
-        // d3.interval(function(){
-        //     updateGenrePlot(librarydata)
-        //     flag = !flag;
-        // }, 1500);
-
-
-
+        updateGenrePlot(genreData);
 
         updateLinePlot(libraryData);
 
-        // THIS IS FOR LINE CHART //
-        //x.domain(d3.extent(data, function(d) { return d.speechiness; }));
-        //y.domain([d3.min(data, function(d) { return d.acousticness; }) / 1.005, 
-        //    d3.max(data, function(d) { return d.acousticness; }) * 1.005]);
-        // console.log("Could not load genre data!");
     });
 });
 
 
-
-
-
-
-// The data loading takes some time, so if you try to print genreData right away it will be undefined. This prints the data after waiting some period of time.
-setTimeout(function(){
-    // console.log('Out of loop');
-    // console.log(genreData);
-    // console.log(libraryData);
-},300);
 
 
 
@@ -656,9 +642,10 @@ $("#play-button")
 
 
 // A button to reset back to initial conditions
-$("#reset-button")
+$("#toggle-button")
     .on("click", function(){
-        flag = true; // Reset the flag back to what it was at top of code
+        flag = !flag
+        //flag = true; // Reset the flag back to what it was at top of code
         count = 0;
         updateGenrePlot(genreData);
         updateSongPlot(libraryData);
@@ -748,25 +735,6 @@ function updateGenrePlot(data) {
     var selectedAttributeX = $("#x-attribute-select").val(); // This is the genre that has been selected by the user
     var selectedAttributeY = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
     
-    /*    var data = data.filter(function(d){           // Filter the data for dropdown
-            if (selectedGenre == "all") { return true; }
-            else if (selectedGenre == "pop") {
-                return d.isPop;
-            } else if (selectedGenre == "rock") {
-                return d.isRock;
-            } else if (selectedGenre == "rap") {
-                return d.isRap;
-            } else if (selectedGenre == "electronic") {
-                return d.isElectronic;
-            } else if (selectedGenre == "classical") {
-                return d.isClassical;
-            } else if (selectedGenre == "metal") {
-                return d.isMetal;
-            } else {
-                return false;
-            }
-        })
-    */
 
     // Filter the data for interactive legend
     var data = data.filter(function(d){           // Filter the data for dropdown
@@ -778,16 +746,19 @@ function updateGenrePlot(data) {
         })
 
 
+    // Get the maximum number of counts for all genres so point size can be scaled accordingly
+    maxGenreCount = d3.max(data, function(g) {
+        return g.userCount;
+    })
+
 
     // Update the domain of your axes based on the new data you are using //
-    //      Example: x.domain(data.map(function(d){ return d.month }));
-    //      Example: y.domain([0, d3.max(data, function(d) { return d.revenue })])
-
-
-
-
-
-
+    
+    // genreCountScale.domain(0., maxGenreCount).range([0, 1]);
+    
+    genreCountScale = d3.scaleLinear()
+        .domain([0., maxGenreCount])
+        .range([0., 10.]);
 
 
     // Plot the data, following the D3 update pattern //
@@ -805,7 +776,14 @@ function updateGenrePlot(data) {
     var update_trans = d3.transition().duration(1000); // Define a transition variable with 500ms duration so we can reuse it
 
     points
-        .attr("r", 3)
+        //.attr("r", 3)
+        .attr("r", function(d) {
+            if (flag) {
+                return genreCountScale(d.userCount);
+            } else {
+                return 3.;
+            }
+        })
         .transition(update_trans)
             .attr("cx", function(d, i){
                 if (selectedAttributeX == 'loudness') {
@@ -847,7 +825,14 @@ function updateGenrePlot(data) {
                     return yAttrToPix(d[selectedAttributeY]);
                 }
             })
-            .attr("r", 3)
+            //.attr("r", 3)
+            .attr("r", function(d) {
+                if (flag) {
+                    return genreCountScale(d.userCount);
+                } else {
+                    return 3.;
+                }
+                })
             .on("mouseover", tipForGenre.show)
             .on("mouseout", tipForGenre.hide)
             .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
@@ -1186,19 +1171,6 @@ function updateSongPlot(data1) {
 ///////////////////////////////
 
 
-//////////// INTERVALS ////////////
-
-// Define an interval function that performs some action every ## ms (it will also wait ## ms to start the first loop)
-//      d3.interval(function(){
-//      }, 1000);
-
-// You can also set a loop and stop it later in your code, like so:
-// Start loop running
-var myInterval = setInterval(function(){
-    // console.log("Hello World");
-}, 500)
-// Stop the loop
-clearInterval(myInterval)
 
 
 var top_artists_list = d3.select("#top-artists")
