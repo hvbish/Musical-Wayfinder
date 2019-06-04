@@ -141,6 +141,8 @@ var yPopularityToPix = d3.scaleLinear() // This can apply for popularity, which 
     .domain([0.,100.])
     .range([axisLength,0.]);
 
+var yCountsToPix;
+
 var timeScale = d3.scaleLinear() // Time scale
     .domain([0.,100.])
     .range([axisLength,0.]);
@@ -203,27 +205,34 @@ yAxisGroupLine.append("text")
     .attr("dy", ".71em")
     .style("text-anchor", "end")
     .attr("fill", "#5D6971")
-    .text("Population)");
+    .text("Counts");
 
 // Line path generator
 var line = function(attr_name) {
     return d3.line()
-        .x(function(d, i) { 
-            // if (d['dateAdded']) {
-                // // console.log(d['dateAdded']);
-                // // console.log(Date.parse(d['dateAdded']));
-                // return Date.parse(d['dateAdded']);   
-            // console.log(dateToPix(new Date(d['dateAdded'])));  
-            return dateToPix(new Date(d['dateAdded']));
-            // }
-        }) // { return x(d.year); })
-        .y(function(d) { 
-            if (d['dateAdded']) {
-                return yAttrToPix(d[attr_name]); 
-        }
-    })
+            .x(function(d, i) { 
+                return dateToPix(d['x0']);
+            })
+            .y(function(d) { 
+                var bin_counts = d.length;
+                return yCountsToPix(bin_counts);
+            })
 };
-    // .curve(d3.curveMonotoneX); // { return y(d.value); });
+
+var date_bin_line = function(xScale, yScale, baselines) {
+    return d3.line()
+            .x(function(d, i) {
+                var avg_bin = new Date((d['x0'].getTime() + d['x1'].getTime()) / 2);
+                return xScale(avg_bin);
+            })
+            .y(function(d, i) {
+                var bin_counts = d.length;
+                if (baselines) {
+                    bin_counts += baselines[i];
+                }
+                return yScale(bin_counts);
+            });
+}
 
 // ************************************* //
 
@@ -293,7 +302,7 @@ plotTitleL = svgLine.append("text")
     .attr("text-anchor", "middle")
     .style("font-size", "26px")
     .style("font-weight", "bold")
-    .text("My Darkness")
+    .text("Library Timeline")
 
 /*// Label showing time selected in slider, single value
 var timeLabel = svg1.append("text")
@@ -391,8 +400,6 @@ genre_labels.forEach(function(genre, i){
                 legendMarker.attr("fill","white");
                 legendMarker.attr("stroke","black");
             };
-            // console.log(genre);
-            // console.log(plotGenre);
             updateGenrePlot(genreData);
             updateSongPlot(libraryData);
             //updateSongPlot(libraryData);
@@ -487,13 +494,8 @@ var genreDataPromise = d3.json("data/genre_data.json").then(function(genredata) 
         g.isOther = classifyUmbrellaGenre(g.genre).isOther;
         g.userCount = 0;
     })
-        // console.log('Out of loop');
-        // console.log(genreData);
-        // console.log(libraryData);
-    
-    // console.log(genredata);
+
     genreData = genredata.map(genredata => genredata); // .map allows you to do something for each element of the list. Not sure how to use it properly yet
-    // console.log(genreData);
 
 /*    // Start running the interval function which will update data and repeat every ## ms
     d3.interval(function(){
@@ -516,19 +518,14 @@ var genreDataPromise = d3.json("data/genre_data.json").then(function(genredata) 
 var umbrella_genre_counts = {};
 
 genreDataPromise.then(function(genredata) {
-    console.log("Loaded genre data!");
-    console.log(genredata);
-
     var genre_counts = {};
     var genre_labels = ["Rock", "Pop", "Rap", "Metal", "Classical", "Electronic", "Other"];
 
     for (var i in genre_labels) {
         umbrella_genre = genre_labels[i];
-        // console.log(umbrella_genre);
         umbrella_genre_counts[umbrella_genre] = {};
         umbrella_genre_counts[umbrella_genre]["userCount"] = 0;
     }
-    // console.log(umbrella_genre_counts);
 
     d3.json("data/data_user_library.json").then(function(librarydata) {
         // Do the following for every element in the json file
@@ -545,11 +542,9 @@ genreDataPromise.then(function(genredata) {
                 if (classifyUmbrellaGenre(g).isOther) {s.isOther = Boolean(true)};
                 // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
                 s.dateAdded = parseUTCTime(s.date);
-                // // console.log(s.dateAdded)
 
                 var weight = 1. / s['genres'].length;
 
-                // console.log(g);
                 if (genre_counts[g]) {
                     genre_counts[g]["userCount"] += weight;
                 } else {
@@ -579,10 +574,7 @@ genreDataPromise.then(function(genredata) {
                 }
             })
         })
-        console.log(genre_counts);
-        console.log(umbrella_genre_counts);
 
-        console.log(genreData);
         genreData.forEach(function(genre) {
             key = genre['genre'].toLowerCase()
             genre_in_library = genre_counts[key];
@@ -591,11 +583,8 @@ genreDataPromise.then(function(genredata) {
             }
         });
 
-        console.log(genreData);
 
-        // console.log(librarydata);
         libraryData = librarydata.map(librarydata => librarydata); // .map allows you to do something for each element of the list
-        // console.log(libraryData);
 
         // Run the vis for the first time (otherwise the data won't appear until after the interval of time passes in the interval function above)
         updateSongPlot(libraryData);
@@ -615,7 +604,7 @@ genreDataPromise.then(function(genredata) {
         //x.domain(d3.extent(data, function(d) { return d.speechiness; }));
         //y.domain([d3.min(data, function(d) { return d.acousticness; }) / 1.005, 
         //    d3.max(data, function(d) { return d.acousticness; }) * 1.005]);
-        console.log("Could not load genre data!");
+        // console.log("Could not load genre data!");
     });
 });
 
@@ -642,7 +631,6 @@ setTimeout(function(){
 // Define a test function to execute when the play button is pressed. This one does counting.
 var count = 0;
 function step() {
-    // console.log(count);
     count += count;
 }
 
@@ -930,10 +918,6 @@ function updateGenrePlot(data) {
 
 
 function updateLinePlot(dataL) {
-    
-
-    // console.log(Date.parse(dataL[0]['dateAdded']));
-
     filtered_data = dataL.filter(d => d['dateAdded']);
 
     min_date = d3.min(filtered_data, function(d) {
@@ -943,9 +927,6 @@ function updateLinePlot(dataL) {
         return Date.parse(d['dateAdded']);
     });
 
-
-
-    // console.log(timeScale)
     timeScale = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
     .domain([0, max_date - min_date])
     .range([0., axisLength]);
@@ -954,18 +935,67 @@ function updateLinePlot(dataL) {
     .domain([new Date(min_date),  // Use JS Date objects
         new Date(max_date)])
     .range([0.,axisLength]);
-    // console.log(timeScale);
+
+    var bin_data = d3.histogram()
+                    .value(function(d) {
+                        return Date.parse(d['dateAdded'])
+                    })
+                    .domain(dateToPix.domain())
+                    .thresholds(dateToPix.ticks(30));
+
+    var bins = bin_data(filtered_data);
+
+
+    max_count = d3.max(bins, function(b) { return b.length });
+
+    yCountsToPix = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
+                    .domain([0, max_count])
+                    .range([axisLength, 0.]);
+
     // Generate axes once scales have been set
-    xAxisGroupLine.call(xAxisCallLine.scale(dateToPix))
-    yAxisGroupLine.call(yAxisCallLine.scale(yAttrToPix))
-    
+    xAxisGroupLine.call(xAxisCallLine.scale(dateToPix));
+    yAxisGroupLine.call(yAxisCallLine.scale(yCountsToPix));
+
     // Add line to chart
     svgLine.append("path")
         .attr("class", "line")
-        .attr("d", line("energy")(filtered_data))
+        .attr("d", date_bin_line(dateToPix, yCountsToPix, null)(bins))
         // Remove fill and show the line in black
         .style("fill", "none")
         .style("stroke", "#000000");
+
+    var baselines = null;
+    for (i in genre_labels) {
+        umbrella_genre = genre_labels[i];
+        genre_filtered_data = filtered_data.filter(d => d['is' + umbrella_genre]);
+
+        var genre_bins = bin_data(genre_filtered_data);
+
+        for (j in genre_bins) {
+            if (baselines) {
+                baselines[j] += genre_bins[i].length;
+            } else {
+                baselines = [];
+                for (k in genre_bins) {
+                    baselines[k] = 0;
+                }
+                break;
+            }
+        }
+
+        const color = d3.color(genre_colors[i]);
+        svgLine.append("path")
+            .attr("class", "line")
+            .attr("d", date_bin_line(dateToPix, yCountsToPix, null)(genre_bins))
+            // Remove fill and show the line in black
+            .style("fill", "none")
+            .style("stroke", color.hex());
+        
+    }
+
+    var res = d3.nest()
+                .key(function(d) { return d.length; })
+                .entries(bins);
 
 }
 
@@ -1160,7 +1190,6 @@ function updateSongPlot(data1) {
 
 // Define an interval function that performs some action every ## ms (it will also wait ## ms to start the first loop)
 //      d3.interval(function(){
-//         // console.log("Hello World");
 //      }, 1000);
 
 // You can also set a loop and stop it later in your code, like so:
@@ -1197,7 +1226,6 @@ d3.json("data/data_top_artists_short_term.json").then(function (artist_data) {
 
 var top_tracks_list = d3.select("#top-tracks")
 d3.json("data/data_top_tracks_short_term.json").then(function (track_data) {
-    // console.log(track_data);
     top_tracks_list.selectAll('button')
                     .data(track_data)
                     .enter()
