@@ -1,91 +1,214 @@
-<!DOCTYPE HTML>
-<html xml:lang="en" lang="en">
+<!doctype html>
+<html>
 <head>
-  <title>CSE512 | A3 [Add: title]</title>
-  <style media="all">
-* { padding: 0; margin: 0; }
- body {
-  margin: 0 auto 0 auto;
-  padding: 0;
-  max-width: 1200px;
-  font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
-  font-size: 0.95em;
-}
- a, a:visited { text-decoration: none; color: #7533f4; }
-a:hover { text-decoration: underline; color: #f4b014; }
- h1, h2, h3, h4, h5 {
-  color: #492a7c;
-  background-color: inherit;
-  font-weight: normal;
-  padding: 0 0 5px 0;
-  margin: 15px 0 0 0;
-  border: none;
-  clear: right;
-}
-h1 { font-size: 24pt; margin:  5px 0 10px 0; line-height: 28px; }
-h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
-h3 { font-size: 13pt; }
-h4 { font-size: 12pt; }
-h5 { font-size: 11pt; }
-p { margin: 0 0 10px 0; }
- .content {
-  margin: 0;
-  padding: 15px 20px;
-  background-color: #ffffff;
-}
- .title, .title h1, .title a {
-  color: #492a7c;
-  font-size: 24pt;
-  margin-bottom: 20px;
-  margin-top: 5px;
-}
- .footer {
-  border-top: 1px solid #ccc;
-  margin-top: 30px;
-  padding-top: 4px;
-  text-align: right;
-  font-size: 12px;
-}
-.footer a {
-  color: #21346B;
-}
-.footer a:hover {
-  color: #ce3333;
-}
-  </style>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Musical Wayfinder</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <!-- jQRangeSlider CSS -->
+    <link rel="stylesheet" href="css/iThing.css" type="text/css" />
+    <!-- D3 Tooltip CSS -->
+    <link rel="stylesheet" href="css/d3-tip.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<div class="content">
-   <section class="title">
-    <a href="/">Musical Wayfinder</a>
-  </section>
 
-   <section>
-    <p>
-      <strong>Team Members</strong>: Hannah Bish, Steven Stetzler
-    </p>
-  </section>
 
-   <section>
-    <em>[Add: a summary figure of your project. Be sure to include relevant captions, too.]</em>
-    <p><em>[Add: links to your paper and poster.]</em></p>
-  </section>
 
-  <section>
-    <h2>Abstract</h2>
-    <em>[Add: a short description of your project, ideally within 150 words.]</em>
-  </section>
+    <!-- Bootstrap grid setup -->
+    <div class="container">
 
-  <section>
-    <h2>Running Instructions</h2>
-    <em>[Add: running instructions for the software and other optional materials.]</em>
-  </section>
+        <div class="row">
+            <br> <br> <br>
+        </div>      
 
-  <div class="footer">
-    <a href="https://courses.cs.washington.edu/courses/cse512/19sp/">CSE 512 Data Visualization</a>
-    <a href="http://www.washington.edu">University of Washington</a>
-  </div>
- </div>
+
+        <div class="row row-centered">
+
+            <div class="col-md-1">
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <br> 
+        </div> 
+
+        <div class="row row-no-gutters">
+
+
+            <div class="col-md-5">
+
+                <div class="row">
+                    <br><br><br>
+                </div> 
+
+                <!-- Time slider -->
+                <!-- <div id="slider-div">
+                    <label>Time range: <span id="time"></span></label>
+                    <div id="time-slider"></div>
+                </div> -->
+                <!-- Time slider with range handles? -->
+                <div id="slider-div" z-index=-1>
+                    <label>Time range: <span id="time"></span></label>
+                    <div id="slider"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-1">
+            </div>
+
+            <div class="col-sm-2">
+                <div class="row row-no-gutters">
+                    <!-- X Axis dropdown box -->
+                    <p text-align:right> X-Axis: </p><select id="x-attribute-select" class="form-control">
+                        <option selected value="energy">Energy</option>
+                        <option value="liveness">Liveness</option>
+                        <option value="speechiness">Speechiness</option>
+                        <option value="acousticness">Acousticness</option>
+                        <option value="instrumentalness">Instrumentalness</option>
+                        <option value="danceability">Danceability</option>
+                        <option value="loudness">Loudness</option>
+                        <option value="valence">Valence</option>
+                        <option value="popularity">Popularity</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <br> 
+                </div>
+
+                <div class="row row-no-gutters">
+                    <!-- Y Axis dropdown box -->
+                    <p text-align:left> Y-Axis: </p><select id="y-attribute-select" class="form-control">
+                        <option value="energy">Energy</option>
+                        <option value="liveness">Liveness</option>
+                        <option value="speechiness">Speechiness</option>
+                        <option selected value="acousticness">Acousticness</option>
+                        <option value="instrumentalness">Instrumentalness</option>
+                        <option value="danceability">Danceability</option>
+                        <option value="loudness">Loudness</option>
+                        <option value="valence">Valence</option>
+                        <option value="popularity">Popularity</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div id="legend">
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="row">
+                    <br><br><br> 
+                </div>
+                <!-- Play button -->
+                <!--<button id="play-button" class="btn btn-primary">Play</button>-->
+                <!-- Toggle button -->
+               <button id="toggle-button" class="btn btn-primary">Toggle All/Library Genres</button>
+            </div>
+        </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div id="song-plot-area">
+                </div>
+            </div>
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <div id="genre-plot-area">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div id="line-plot-area">
+                </div>
+            </div>
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <div class="row row-no-gutters" id="stats-area">
+                    <div class="col-lg-6">
+                        <p> <strong>Top Artists</strong> </p>
+                        <ul class="list-group" id="top-artists" style="max-height: 300px; overflow: scroll;">
+                        </ul>     
+                    </div>
+                    <div class="col-lg-6">
+                        <p> <strong>Top Tracks</strong> </p>
+                        <ul class="list-group" id="top-tracks" style="max-height: 300px; overflow: scroll;">
+                        </ul>             
+                    </div>
+                </div>
+                <div class="row row-no-gutters" id="stats-area">
+                    <div class="col-lg-6" id="spotify-track">
+                    </div>
+                    <div class="col-lg-6" id="spotify-playlist">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+<!-- External JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<!-- <script src="js/jquery-3.4.1.min.js"></script>-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+
+<!-- JQRange Slider libraries -->
+<!-- <script src="js/jquery.js"></script>
+<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script src="js/jQDateRangeSlider-min.js"></script> -->
+
+<!-- dragslider libraries -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/dragslider.js"></script>
+<script src="https://d3js.org/d3-color.v1.min.js"></script>
+
+<!-- <script type="text/javascript" src="js/jquery.ui.slider.custom.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.slider.custom.js"></script> -->
+
+
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
 </body>
-</html> 
-
+</html>
