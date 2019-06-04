@@ -12,6 +12,8 @@ var axisLengthLineX = 500
 var axisLengthLineY = 500
 var axisLengthStatsX = 500
 var axisLengthStatsY = 500
+var legendHeight = 200
+var legendWidth = 200
 
 
 var xOrigin = 0;
@@ -20,7 +22,7 @@ var yOrigin = axisLength;
 var interval; // For interval function
 // var genreData;
 var libraryData;
-var flag = false; // Flag added to test switching between data. true = user genre data, false = all genre data
+var allGenreToggle = true; // Flag added to test switching between data. true = user genre data, false = all genre data
 var time = 2010 // For slider with one value
 //var times = [new Date(2008, 11, 31),new Date(2019, 11, 31)] // For slider with a range
 var times = [2010,2019] // For slider with a range
@@ -79,8 +81,8 @@ var svgLine = d3.select("#line-plot-area")
 
 var svg_leg = d3.select("#legend")
     .append("svg")
-        .attr("width", 200)
-        .attr("height", 200)
+        .attr("width", legendWidth)
+        .attr("height", legendHeight)
     .append("g")
         .attr("transform", "translate(" + margin.left 
         + ", " + (margin.top-30) + ")");
@@ -301,7 +303,7 @@ plotTitle = svg.append("text")
     .attr("text-anchor", "middle")
     .style("font-size", "26px")
     .style("font-weight", "bold")
-    .text("Genres")
+    .text("All Genres")
 
 plotTitle1 = svg1.append("text")
     .attr("x", (axisLength / 2))
@@ -608,45 +610,17 @@ genreDataPromise.then(function(genredata) {
 
 
 
-////////////////////////////////
-/// Play & Reset Button Test ///
-////////////////////////////////
-
-// If you don't want to use a play button, just start the interval as soon as the data is loaded
-
-// Define a test function to execute when the play button is pressed. This one does counting.
-var count = 0;
-function step() {
-    count += count;
-}
-
-// Tells the play button what to do
-$("#play-button")
-.on("click", function(){
-    var button = $(this);
-    if (button.text() == "Play"){
-        button.text("Pause");
-        interval = setInterval(function(){
-            updateGenrePlot(genreData);
-            updateSongPlot(libraryData)
-            flag = !flag;
-            step();
-        }, 1500);            
-    }
-    else {
-        button.text("Play");
-        clearInterval(interval);
-    }
-})
+/////////////////////////////////
+//////////// Buttons ////////////
+/////////////////////////////////
 
 
-
-// A button to reset back to initial conditions
+// A button to toggle between the 'All Genre' scatterplot and the 'My Genre' Scatterplot
 $("#toggle-button")
     .on("click", function(){
-        flag = !flag
-        //flag = true; // Reset the flag back to what it was at top of code
-        count = 0;
+        allGenreToggle = !allGenreToggle
+        // Title
+        allGenreToggle ? plotTitle.text("All Genres") : plotTitle.text("My Genres");
         updateGenrePlot(genreData);
         updateSongPlot(libraryData);
     })
@@ -776,14 +750,6 @@ function updateGenrePlot(data) {
     var update_trans = d3.transition().duration(1000); // Define a transition variable with 500ms duration so we can reuse it
 
     points
-        //.attr("r", 3)
-        .attr("r", function(d) {
-            if (flag) {
-                return genreCountScale(d.userCount);
-            } else {
-                return 3.;
-            }
-        })
         .transition(update_trans)
             .attr("cx", function(d, i){
                 if (selectedAttributeX == 'loudness') {
@@ -805,6 +771,7 @@ function updateGenrePlot(data) {
             });
 
     // 4 -- ENTER new elements present in new data.
+    // 4 1/2 -- Set attributes that apply to both old and new elements with .merge()
     points.enter()
         .append("circle")
             .attr("cx", function(d, i){
@@ -825,34 +792,33 @@ function updateGenrePlot(data) {
                     return yAttrToPix(d[selectedAttributeY]);
                 }
             })
-            //.attr("r", 3)
-            .attr("r", function(d) {
-                if (flag) {
-                    return genreCountScale(d.userCount);
-                } else {
-                    return 3.;
-                }
-                })
-            .on("mouseover", tipForGenre.show)
-            .on("mouseout", tipForGenre.hide)
-            .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
-                .attr("fill", function(d){
-                    if (d.isRock) {
-                        return attrToColor('Rock')
-                    } else if (d.isRap) {
-                        return attrToColor('Rap')
-                    } else if (d.isPop) {
-                        return attrToColor('Pop')
-                    } else if (d.isMetal) {
-                        return attrToColor('Metal')
-                    } else if (d.isClassical) {
-                        return attrToColor('Classical')
-                    } else if (d.isElectronic) {
-                        return attrToColor('Electronic')
-                    } else {
-                        return "grey"
-                    }
-                });
+            .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements.
+                    .attr("r", function(d) {
+                        if (allGenreToggle) {
+                            return 3.;
+                        } else {
+                            return genreCountScale(d.userCount);
+                        }
+                    })
+                    .attr("fill", function(d){
+                        if (d.isRock) {
+                            return attrToColor('Rock')
+                        } else if (d.isRap) {
+                            return attrToColor('Rap')
+                        } else if (d.isPop) {
+                            return attrToColor('Pop')
+                        } else if (d.isMetal) {
+                            return attrToColor('Metal')
+                        } else if (d.isClassical) {
+                            return attrToColor('Classical')
+                        } else if (d.isElectronic) {
+                            return attrToColor('Electronic')
+                        } else {
+                            return "grey"
+                        }
+                    })
+                    .on("mouseover", tipForGenre.show)
+                    .on("mouseout", tipForGenre.hide);
 
 
     // Draw Axes //
@@ -1052,8 +1018,7 @@ function updateSongPlot(data1) {
     var update_trans = d3.transition().duration(1000); // Define a transition variable with 500ms duration so we can reuse it
 
         points1
-        .attr("r", 3)
-        .transition(update_trans)
+        .transition(update_trans) // Use transition to update element positions (not needed for new elements)
             .attr("cx", function(d, i){
                 if (selectedAttributeX == 'loudness') {
                     return xOrigin + xLoudnessToPix(d[selectedAttributeX]);
@@ -1061,8 +1026,7 @@ function updateSongPlot(data1) {
                     return xOrigin + xPopularityToPix(d[selectedAttributeX]);
                 } else {
                     return xOrigin + xAttrToPix(d[selectedAttributeX]);
-                }
-                
+                }                
             })
             .attr("cy", function(d, i){
             if (selectedAttributeY == 'loudness') {
@@ -1096,10 +1060,8 @@ function updateSongPlot(data1) {
                     return yAttrToPix(d[selectedAttributeY]);
                 }
             })
-            .attr("r", 3)
-            .on("mouseover", tipForSong.show)
-            .on("mouseout", tipForSong.hide)
             .merge(points1) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
+                .attr("r", 3)
                 .attr("fill", function(d){
                     if (d.isRock) {
                         return attrToColor('Rock')
@@ -1116,7 +1078,9 @@ function updateSongPlot(data1) {
                     } else {
                         return "grey"
                     }
-            });
+                })
+                .on("mouseover", tipForSong.show)
+                .on("mouseout", tipForSong.hide);
 
     // Draw Axes //
     
