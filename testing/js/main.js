@@ -73,7 +73,7 @@ var svgLine = d3.select("#line-plot-area")
         .attr("height", axisLengthLineY + margin.top + margin.bottom)
     .append("g")
         .attr("transform", "translate(" + margin.left 
-        + ", " + margin.top + ")");
+        + ", " + margin.top + ")")
 
 var svg_leg = d3.select("#legend")
     .append("svg")
@@ -141,6 +141,9 @@ var yPopularityToPix = d3.scaleLinear() // This can apply for popularity, which 
     .domain([0.,100.])
     .range([axisLength,0.]);
 
+var timeScale = d3.scaleLinear() // Time scale
+    .domain([0.,100.])
+    .range([axisLength,0.]);
 
 /*
 //Log scale
@@ -202,9 +205,24 @@ yAxisGroupLine.append("text")
     .text("Population)");
 
 // Line path generator
-var line = d3.line()
-    .x(function(d) { return xAttrToPix(d.speechiness); }) // { return x(d.year); })
-    .y(function(d) { return yAttrToPix(d.acousticness); }); // { return y(d.value); });
+var line = function(attr_name) {
+    return d3.line()
+        .x(function(d, i) { 
+            // if (d['dateAdded']) {
+                // console.log(d['dateAdded']);
+                // console.log(Date.parse(d['dateAdded']));
+                // return Date.parse(d['dateAdded']);   
+            console.log(dateToPix(new Date(d['dateAdded'])));  
+            return dateToPix(new Date(d['dateAdded']));
+            // }
+        }) // { return x(d.year); })
+        .y(function(d) { 
+            if (d['dateAdded']) {
+                return yAttrToPix(d[attr_name]); 
+        }
+    })
+};
+    // .curve(d3.curveMonotoneX); // { return y(d.value); });
 
 
 
@@ -856,14 +874,40 @@ function updateGenrePlot(data) {
 function updateLinePlot(dataL) {
     
 
-    // Generate axes once scales have been set
-    xAxisGroupLine.call(xAxisCallLine.scale(xAttrToPix))
-    yAxisGroupLine.call(yAxisCallLine.scale(yAttrToPix))
+    console.log(Date.parse(dataL[0]['dateAdded']));
 
+    filtered_data = dataL.filter(d => d['dateAdded']);
+
+    min_date = d3.min(filtered_data, function(d) {
+        return Date.parse(d['dateAdded']);
+    });
+    max_date = d3.max(filtered_data, function(d) {
+        return Date.parse(d['dateAdded']);
+    });
+
+
+
+    console.log(timeScale)
+    timeScale = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
+    .domain([0, max_date - min_date])
+    .range([0., axisLength]);
+
+    dateToPix = d3.scaleTime()
+    .domain([new Date(min_date),  // Use JS Date objects
+        new Date(max_date)])
+    .range([0.,axisLength]);
+    console.log(timeScale);
+    // Generate axes once scales have been set
+    xAxisGroupLine.call(xAxisCallLine.scale(dateToPix))
+    yAxisGroupLine.call(yAxisCallLine.scale(yAttrToPix))
+    
     // Add line to chart
     svgLine.append("path")
         .attr("class", "line")
-        .attr("d", line(dataL));
+        .attr("d", line("energy")(filtered_data))
+        // Remove fill and show the line in black
+        .style("fill", "none")
+        .style("stroke", "#000000");
 
 }
 
@@ -1070,4 +1114,45 @@ var myInterval = setInterval(function(){
 clearInterval(myInterval)
 
 
+var top_artists_list = d3.select("#top-artists")
+d3.json("data/data_top_artists_short_term.json").then(function (artist_data) {
+    top_artists_list.selectAll('li')
+                    .data(artist_data)
+                    .enter()
+                    .append("button")
+                    .attr("type", "button")
+                    .attr("class", "list-group-item")
+                    .style("outline", "none")
+                    .on("click", function(f, i){
+                        $that = $(this);
 
+                        $that.parent().parent().parent().find('button').removeClass('active');
+                        $that.addClass('active');                                        
+                    })
+                    .html(function(d, i) {
+                        return d['name']
+                    });
+});
+
+var top_tracks_list = d3.select("#top-tracks")
+d3.json("data/data_top_tracks_short_term.json").then(function (track_data) {
+    console.log(track_data);
+    top_tracks_list.selectAll('button')
+                    .data(track_data)
+                    .enter()
+                    .append("button")
+                    .attr("type", "button")
+                    .attr("class", "list-group-item")
+                    .style("outline", "none")
+                    .on("click", function(f, i){
+                        $that = $(this);
+                        am_active = $that.hasClass('active');
+                        $that.parent().parent().parent().find('button').removeClass('active');
+                        if (am_active) {
+                            $that.addClass('active');   
+                        }                                     
+                    })
+                    .html(function(d, i) {
+                        return d['name']
+                    });
+});
