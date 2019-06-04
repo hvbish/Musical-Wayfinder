@@ -742,7 +742,7 @@ function updateGenrePlot(data) {
     points.exit().remove();
 
     // 3 -- UPDATE old elements present in new data.
-    var update_trans = d3.transition().duration(1000) // Define a transition variable with 500ms duration so we can reuse it
+    var update_trans = d3.transition().duration(200) // Define a transition variable with 500ms duration so we can reuse it
 
     points
         .attr("r", 3)
@@ -936,7 +936,7 @@ function updateSongPlot(data1) {
 
 
     // 3 -- UPDATE old elements present in new data.
-    var update_trans = d3.transition().duration(1000) // Define a transition variable with 500ms duration so we can reuse it
+    var update_trans = d3.transition().duration(200) // Define a transition variable with 500ms duration so we can reuse it
 
         points1
         .attr("r", 3)
