@@ -10,6 +10,8 @@ var margin = { left:100, right:200, top:50, bottom:100 };
 var axisLength = 500;
 var axisLengthLineX = 500
 var axisLengthLineY = 500
+var axisLengthStatsX = 500
+var axisLengthStatsY = 500
 
 
 var xOrigin = 0;
@@ -84,6 +86,13 @@ var svg_leg = d3.select("#legend")
         + ", " + (margin.top-30) + ")");
 
 
+var svgStats = d3.select("#stats-area")
+    .append("svg")
+        .attr("width", axisLengthStatsX + margin.left + margin.right)
+        .attr("height", axisLengthStatsY + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", "translate(" + margin.left 
+        + ", " + margin.top + ")")
 
 
 ///////////////////////////////
@@ -213,7 +222,7 @@ var line = function(attr_name) {
                 // console.log(d['dateAdded']);
                 // console.log(Date.parse(d['dateAdded']));
                 // return Date.parse(d['dateAdded']);   
-            console.log(dateToPix(new Date(d['dateAdded'])));  
+            //console.log(dateToPix(new Date(d['dateAdded'])));  
             return dateToPix(new Date(d['dateAdded']));
             // }
         }) // { return x(d.year); })
