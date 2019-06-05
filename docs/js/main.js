@@ -42,9 +42,6 @@ function classifyUmbrellaGenre(genre) {
 
 
 
-
-
-
 ///////////////////////////////
 ///////////  SVGs  ////////////
 ///////////////////////////////
@@ -429,7 +426,7 @@ var tipForGenre = d3.tip().attr('class', 'd3-tip')
         if (allGenreToggle) {
             text += "<strong> In my library: </strong> <span style='color:"+"red"+";text-transform:capitalize'>" + nbsp.repeat(0) + (d.userCountFull) + "</span><br>";
         } else {
-            text += "<strong> Song Count: </strong> <span style='color:"+"red"+";text-transform:capitalize'>" + nbsp.repeat(0) + (d.userCountFull) + "</span><br>";
+            text += "<strong> Song Count: </strong> <span style='color:"+"red"+";text-transform:capitalize'>" + nbsp.repeat(0) + (d.userCountFull) + "</span><br><br>";
         }
         text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.energy) + "</span><br>";
         text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.liveness) + "</span><br>";
@@ -705,9 +702,179 @@ $('#slider').dragslider({
 ///// The Update Function /////
 ///////////////////////////////
 
+
+    // margin and height of entire visualization
+    var zoomMargin = { 
+    top: window.innerHeight * 0.3, 
+    left: 50, 
+    bottom: window.innerHeight * 0.4, 
+    right: 50 
+    }; 
+    var zoomHeight = window.innerHeight - zoomMargin.top - zoomMargin.bottom;
+    // Scale distance between points to pixels on screen
+    var maxDist = 1.0 // d3.max(data, function(d) { return d.distance; });
+    var mapScale = xAttrToPix; 
+
+    // The full width of all elements, even those not visible offscreen when zoomed
+    var chartWidth = 500;//maxDist * mapScale; 
+
+    // svg width will only be as large as screen
+    var screenWidth = 5000;
+
+    // build our svg base: a margin-transformed g element dangling off an svg element
+    var svgZoom = d3.select('#genre-plot-area')
+    .append('svg')
+      .attr('width', screenWidth + zoomMargin.left + zoomMargin.right)
+      .attr('height', zoomHeight + zoomMargin.top + zoomMargin.bottom)
+    .append('g')
+      .attr('class', 'chart')
+      .attr('transform', 'translate(' + zoomMargin.left + ', ' + 1.5*zoomMargin.top + ')');
+
+    // Then we overlay it with a rect element that we’ll use as our seonsor, our zoom base. This rect will listen to all mouse events and gestures
+    var listenerRect = svgZoom
+    .append('rect')
+      .attr('class', 'listener-rect')
+      .attr('x', 0)
+      .attr('y', -zoomMargin.top)
+      .attr('width', screenWidth)
+      .attr('height', zoomHeight + zoomMargin.top + zoomMargin.bottom)
+      .style('opacity', 0);
+
+
+
+
+
+
+
+
 // This is the function we will call whenever we want to update the data that is showing on the screen
 
 function updateGenrePlot(data) {
+
+
+    // mapping two measures to screen coordinates: distance and radius:
+    // mapping userCount to radius
+    var rExtent = d3.extent(data, function(d) { return d.radius; });
+
+    var rScale = d3.scaleLinear()
+        .domain([0, 200])
+        .range([1, zoomHeight/40 * 0.9]);
+
+    // Our second scale is the distance scale: We map the data extent to the full chartWidth (not the screenWidth).
+    var xScale = d3.scaleLinear()
+        .domain([0, 1])
+        .range([0, chartWidth]);
+
+    // build out the axis component:
+    var xAxis = d3.axisBottom(xScale);
+        //.tickSizeOuter(0)
+        //.tickPadding(10)
+        //.tickValues(data.map(function(el) { return el.distance; }))
+        //.tickFormat(function(d, i) { return data[i].planet + ' ' + d3.format(',')(d) + ' km'; });
+
+    // produce the axis' g base and unleash the component on it:
+    // Like our listenerRect, the axis becomes a child of our g.chart element we labelled svg.
+    //Why insert it? We want our zoom base to be on top of all other elements dangling off the svg.
+    // so it can consume all the events. Looking at the DOM it should be the last child element of svg
+    var xAxisDraw = svgZoom.insert('g', ':first-child')
+        .attr('class', 'x axis')
+        .call(xAxis);
+
+
+    // Move the axis-labels and -lines down
+    //var labelHeight = xAxisDraw.select('text').node().getBBox().height;
+    //xAxisDraw.attr('transform', 'translate(0, ' + (zoomHeight + labelHeight * data.length) + ')'); 
+      
+/*      // Position the axis text
+      xAxisDraw.selectAll('text')
+        .attr('y', function(d, i) { return -(i * labelHeight + labelHeight); })
+        .attr('dx', '-0.15em')
+        .attr('dy', '1.15em')
+        .style('text-anchor', 'start');*/
+
+        genreCountScale = d3.scaleLog()
+        .domain([1., maxGenreCount])
+        .range([0., 5.])
+        .base(10);
+
+        // We can now draw our planets
+        // First, we create a group for all our planets and make sure the listenerRect also covers these planets by inserting our g.planet-group before the rect.listener-rect. 
+        // Then we join and enter() the data to our as yet virtual .planet's, which will manifest as circles with the respectively scaled distances as x positions and rScaled radii
+      var gPlanets = svgZoom
+    .insert('g', '.listener-rect')
+    .attr('class', 'planet-group');
+
+  var planets = gPlanets.selectAll('.planet')
+    .data(data).enter()
+    .append('circle')
+      .attr('class', 'planet')
+      .attr('id', function(d) { return d.genre; })
+      .attr('cx', function(d) { return xScale(d.energy); })
+      .attr('cy', function(d) { return -xScale(d.acousticness); })
+      .attr('fill','red')
+      .attr('r', function(d) { 
+        d.scaledRadius = rScale(d.userCountFull); 
+        return d.scaledRadius; 
+      });
+      // Let’s choose our zoom base element first. You can attach the zoom to an svg, g, rect or any other element that your mouse has access to. Note here, that g elements can only register events where they have children with a set fill property. So, if you have a large g element with a circle of radius 1, your zoom gestures will only work on that tiny circle.
+      // As such, it’s often wise to set up a dedicated rect with fill, but 0 opacity. You have to make sure that the zoom base can consume all events. So, it should either be on top of all other elements, or its pointer-events should be set to all while all other elements’ pointer-events are set to none.
+      // In fact, we already totally decided to set up an extra rect element to listen to events. We wisely cached it in the listenerRect variable, which we can refer to upon set-up. 
+
+      //Calling d3.zoom() will return an object and a function.
+      //As with many parts of the D3 API, the object allows us to configure the variables we use in the function.
+      //So what we do up there is configuring the use of the d3.zoom() function with a single method: 
+      //.on() attaches a handler function called zoomed. zoomed will be called every time we zoom.
+      //This is where we’ll make the elements move
+
+      // We store the returned function in the creatively named variable zoom.
+      //Next, we can use this function as zoom(<listener-element>)
+      //or, as it’s more commonly done in D3 <listener-element>.call(zoom) like so
+    var zoom = d3.zoom()
+        .on('zoom', zoomed);
+
+    listenerRect.call(zoom);
+
+      function zoomed() {
+
+      var transform = d3.event.transform;
+
+      // x is never higher than 0 so you can't move the points to the right
+      // transform.x = Math.min(0, transform.x);
+
+      // y will always be 0 so it can't move
+       // transform.y = 0;
+
+
+
+      gPlanets.attr('transform', transform.toString());
+
+      //The main positioning engine behind the axis’ elements — the thing that makes the labels and lines move — is the scale. 
+      //And what does the scale do? The scale maps our data values to the width of our svg element. 
+      //If we want to change a scale with D3 we usually update the scale’s domain and/or range. 
+      //But as rescaling axes is such a common activity for D3 zoom, we have the rescaleX() and rescaleY() methods dangling off the transform object. 
+      //It updates the mapping for us according to the zoom. 
+      //Perfect syntactic sugar we can use to create an updated scale:
+
+      var xScaleNew = transform.rescaleX(xScale);
+
+      // The next section is called Semantic Zoom with SVG and will carelessly open the hood of this rescaleX() method for much more detail.
+      // But for now, let's just use xScaleNew trustingly like so:
+
+    } 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
     // Filter data based on user selection //
 
