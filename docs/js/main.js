@@ -115,7 +115,6 @@ var yAxisGroup1 = svg1.append("g")
 
 
 
-
 ///////////////////////////////
 //////////  Scales  ///////////
 ///////////////////////////////
@@ -319,6 +318,7 @@ var timesLabel = svg1.append("text")
     .attr("opacity", "0.4")
     .attr("text-anchor", "middle")
     .text("2010 - 2019");
+
 
 
 
@@ -703,44 +703,59 @@ $('#slider').dragslider({
 ///////////////////////////////
 
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+
     // margin and height of entire visualization
-    var zoomMargin = { 
+/*    var zoomMargin = { 
     top: window.innerHeight * 0.3, 
     left: 50, 
     bottom: window.innerHeight * 0.4, 
     right: 50 
-    }; 
-    var zoomHeight = window.innerHeight - zoomMargin.top - zoomMargin.bottom;
+    }; */
+    var zoomMargin = { left:100, right:200, top:50, bottom:100 };
+    //var zoomHeight = window.innerHeight - zoomMargin.top - zoomMargin.bottom;
+    var zoomHeight = axisLength - zoomMargin.top - zoomMargin.bottom;
     // Scale distance between points to pixels on screen
     var maxDist = 1.0 // d3.max(data, function(d) { return d.distance; });
     var mapScale = xAttrToPix; 
 
     // The full width of all elements, even those not visible offscreen when zoomed
-    var chartWidth = 500;//maxDist * mapScale; 
+    var chartWidth = window.innerWidth;//maxDist * mapScale; 
 
     // svg width will only be as large as screen
-    var screenWidth = 5000;
+    var screenWidth = axisLength + margin.left*1 + margin.right*1;
 
     // build our svg base: a margin-transformed g element dangling off an svg element
-    var svgZoom = d3.select('#genre-plot-area')
+/*    var svgZoom = d3.select('#zoom-plot-area')
     .append('svg')
       .attr('width', screenWidth + zoomMargin.left + zoomMargin.right)
       .attr('height', zoomHeight + zoomMargin.top + zoomMargin.bottom)
     .append('g')
       .attr('class', 'chart')
-      .attr('transform', 'translate(' + zoomMargin.left + ', ' + 1.5*zoomMargin.top + ')');
+      .attr('transform', 'translate(' + zoomMargin.left + ', ' + 1.5*zoomMargin.top + ')');*/
 
-    // Then we overlay it with a rect element that we’ll use as our seonsor, our zoom base. This rect will listen to all mouse events and gestures
+    var svgZoom = d3.select("#zoom-plot-area")
+    .append("svg")
+        .attr("width", axisLength + margin.left*1 + margin.right*1)
+        .attr("height", axisLength + margin.top*1 + margin.bottom*1)
+    .append("g")
+        .attr("transform", "translate(" + (margin.left*0)
+        + ", " + (axisLength + margin.top) + ")");
+
+    // Then we overlay it with a rect element that we’ll use as our sensor, our zoom base. This rect will listen to all mouse events and gestures
     var listenerRect = svgZoom
     .append('rect')
       .attr('class', 'listener-rect')
       .attr('x', 0)
-      .attr('y', -zoomMargin.top)
-      .attr('width', screenWidth)
-      .attr('height', zoomHeight + zoomMargin.top + zoomMargin.bottom)
+      .attr('y', -axisLength)
+      .attr('width', axisLength + margin.left*0 + margin.right*0)
+      .attr('height', axisLength + margin.top*0 + margin.bottom*0)
       .style('opacity', 0);
-
-
 
 
 
@@ -752,25 +767,112 @@ $('#slider').dragslider({
 function updateGenrePlot(data) {
 
 
+
+        // Filter data based on user selection //
+
+    var selectedAttributeX = $("#x-attribute-select").val(); // This is the genre that has been selected by the user
+    var selectedAttributeY = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
+    
+/*
+    // Filter the data for interactive legend
+    var data = data.filter(function(d){           // Filter the data for dropdown
+            if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) {
+                return true;
+            } else {
+                return false;
+            }
+        })*/
+                
+
+    // Filter the data for interactive legend & time slider
+    var data = data.filter(function(d){       
+            if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) { // For interactive legend
+            // Genre is selected in legend
+                if (allGenreToggle){
+                    // AND plotting full set of genres
+                    return true;
+                } else {
+                    // NOT plotting full set of genres
+                    if ((d.userFirstAddDate.getFullYear() >= times[0]) & (d.userFirstAddDate.getFullYear()  <= times[1])) {
+                        // AND add date is within slider time range
+                        return true;
+                    } else {
+                        // NOT within slider time range
+                        return false;
+                    }
+                }    
+            } else {
+                return false;
+            }
+        })
+
+
+    // Get the maximum number of counts for all genres so point size can be scaled accordingly
+    maxGenreCount = d3.max(data, function(g) {
+        return g.userCount;
+    })
+
+
     // mapping two measures to screen coordinates: distance and radius:
     // mapping userCount to radius
-    var rExtent = d3.extent(data, function(d) { return d.radius; });
+    var rExtent = d3.extent(data, function(d) { return d.userCount; });
 
     var rScale = d3.scaleLinear()
-        .domain([0, 200])
-        .range([1, zoomHeight/40 * 0.9]);
+        .domain([0, rExtent[1]]) // range of user counts
+        .range([1, 2]); // size of circles
 
     // Our second scale is the distance scale: We map the data extent to the full chartWidth (not the screenWidth).
     var xScale = d3.scaleLinear()
         .domain([0, 1])
-        .range([0, chartWidth]);
+        .range([0, axisLength]);
 
-    // build out the axis component:
-    var xAxis = d3.axisBottom(xScale);
-        //.tickSizeOuter(0)
-        //.tickPadding(10)
-        //.tickValues(data.map(function(el) { return el.distance; }))
-        //.tickFormat(function(d, i) { return data[i].planet + ' ' + d3.format(',')(d) + ' km'; });
+    var yScale = d3.scaleLinear()
+        .domain([0, 1])
+        .range([axisLength, 0]);
+
+
+        // X Axis
+    var xAxis;
+    if (selectedAttributeX == 'loudness') {
+        xAxis = d3.axisBottom(xLoudnessToPix);
+    } else if (selectedAttributeX == 'popularity') {
+        xAxis = d3.axisBottom(xPopularityToPix);
+    } else {
+        xAxis = d3.axisBottom(xAttrToPix);
+    }
+    xAxisGroup.call(xAxis)
+        .selectAll("text")
+        .attr("y", "10")
+        .attr("x", "0")
+        .attr("text-anchor", "middle")
+        .attr("transform", "rotate(0)");
+
+    // Y Axis
+    var yAxis;
+    if (selectedAttributeY == 'loudness') {
+        yAxis = d3.axisLeft(yLoudnessToPix);
+    } else if (selectedAttributeY == 'popularity') {
+        yAxis = d3.axisLeft(yPopularityToPix);
+    } else {
+        yAxis = d3.axisLeft(yAttrToPix);
+    }
+    yAxisGroup.call(yAxis);
+
+
+    // X Axis Label
+    xAxisLabel.attr("class", "x-axis-label")
+        .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
+        .transition(update_trans)
+            .text(selectedAttributeX.charAt(0).toUpperCase() + selectedAttributeX.slice(1)); // Capitalize first character in value string and use it as the axis label
+
+    // Y Axis Label
+    yAxisLabel.attr("class", "y-axis-label")
+        .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
+        .transition(update_trans)
+            .text(selectedAttributeY.charAt(0).toUpperCase() + selectedAttributeY.slice(1)); // Capitalize first character in value string and use it as the axis label
+
+
+
 
     // produce the axis' g base and unleash the component on it:
     // Like our listenerRect, the axis becomes a child of our g.chart element we labelled svg.
@@ -780,11 +882,28 @@ function updateGenrePlot(data) {
         .attr('class', 'x axis')
         .call(xAxis);
 
+    var yAxisDraw = svgZoom.insert('g', ':first-child')
+        .attr('class', 'y axis')
+        .call(yAxis);
+
 
     // Move the axis-labels and -lines down
     //var labelHeight = xAxisDraw.select('text').node().getBBox().height;
-    //xAxisDraw.attr('transform', 'translate(0, ' + (zoomHeight + labelHeight * data.length) + ')'); 
-      
+    //xAxisDraw.attr('transform', 'translate(0, ' + (zoomHeight + labelHeight * data.length) + ')');
+
+    // Move the axis-labels and -lines down
+/*  var labelHeight = xAxisDraw.select('text').node().getBBox().height;
+  xAxisDraw.attr('transform', 'translate(0, ' + (axisLength + labelHeight * data.length) + ')'); 
+  
+  // Position the axis text
+  xAxisDraw.selectAll('text')
+    .attr('y', function(d, i) { return -(i * labelHeight + labelHeight); })
+    .attr('dx', '-0.15em')
+    .attr('dy', '1.15em')
+    .style('text-anchor', 'start');
+*/
+
+
 /*      // Position the axis text
       xAxisDraw.selectAll('text')
         .attr('y', function(d, i) { return -(i * labelHeight + labelHeight); })
@@ -804,9 +923,18 @@ function updateGenrePlot(data) {
     .insert('g', '.listener-rect')
     .attr('class', 'planet-group');
 
-  var planets = gPlanets.selectAll('.planet')
-    .data(data).enter()
+
+
+  var planets = gPlanets.selectAll("circle")
+    .data(data, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
+            return d.genre;
+        });
+
+    planets.exit().remove();
+
+    planets.enter()
     .append('circle')
+    .merge(planets)
       .attr('class', 'planet')
       .attr('id', function(d) { return d.genre; })
       .attr('cx', function(d) { return xScale(d.energy); })
@@ -839,13 +967,13 @@ function updateGenrePlot(data) {
       var transform = d3.event.transform;
 
       // x is never higher than 0 so you can't move the points to the right
-      // transform.x = Math.min(0, transform.x);
+       //transform.x = Math.min(0, transform.x);
 
       // y will always be 0 so it can't move
-       // transform.y = 0;
+        //transform.y = Math.max(0, transform.y);
 
 
-
+        // geometric zoom?
       gPlanets.attr('transform', transform.toString());
 
       //The main positioning engine behind the axis’ elements — the thing that makes the labels and lines move — is the scale. 
@@ -857,15 +985,45 @@ function updateGenrePlot(data) {
 
       var xScaleNew = transform.rescaleX(xScale);
 
+      planets
+          .attr('cx', function(d) { return xScaleNew(d.energy); })
+          .attr('cy', function(d) { return xScaleNew(d.acousticness); })
+          .attr('r', function(d) { return d.scaledRadius * transform.k; });
+
+
       // The next section is called Semantic Zoom with SVG and will carelessly open the hood of this rescaleX() method for much more detail.
       // But for now, let's just use xScaleNew trustingly like so:
+
+      xAxis.scale(xScaleNew);
+    xAxisDraw.call(xAxis);
+
+        // We update the scale of our xAxis and redraw the axis with our new axis component.
+    // The last thing we need to do to the axis is stagger our labels and lines again, as we’ve done above
+
+    // Stagger the axis-labels 
+/*  xAxisDraw.selectAll('text')
+    .attr('y', function(d, i) { return -(i * labelHeight + labelHeight); })*/
+
+
+  /*// Stagger the axis-lines
+  xAxisDraw.selectAll('line')
+    .attr('y1', function(d, i) { return -(i * labelHeight + labelHeight); })
+    .attr('y2', function(d, i) { 
+      return -(i * labelHeight + labelHeight + (data.length-1-i) * labelHeight + zoomHeight); 
+    });*/
+
+
+
 
     } 
 
     
 
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
