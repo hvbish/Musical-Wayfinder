@@ -10,10 +10,12 @@ var topArtistsGlobal;
 var topTracksGlobal;
 var recentlyPlayedGlobal;
 
+// The default time range for the jQuery slider
 var defaultTimeRange = [2010, 2019];
 
-// Colors assocated with each umbrella genre
+// The umbrella genre labels we are working with
 var genre_labels = ['Pop',    'Rock',   'Rap',      'Electronic','Classical','Metal',   'Other']
+// Colors assocated with each umbrella genre
 var genre_colors = ['hotpink','firebrick','royalblue','limegreen', 'goldenrod', 'Black',   'grey']
 // Map all of the umbrella genres to a unique color
 var umbrellaGenreToColor = d3.scaleOrdinal()
@@ -21,14 +23,20 @@ var umbrellaGenreToColor = d3.scaleOrdinal()
     .range(genre_colors);
 
 // The div to put the spotify embedded players in
+// TODO: move selection / default styling to loadPage() ?
 var spotify_preview = d3.select("#spotify-preview").style("display", "none");
 
-// This should be a dictionary containing all of our plots
+// This is a dictionary containing all of our plots
+// Each plot has an svg element and an x and y axis
 var plots = {};
-// This should be a dictionary containing all of the selections the user has made
+// This is dictionary containing all of the selections the user has made
 var selectionContext = {};
 
 var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space 
+
+///////////////////////
+// UTILITY FUNCTIONS //
+///////////////////////
 
 // Create a plot to draw things
 // selector should be e.g. "#line-chart" to select a div on the page with id line-chart
@@ -164,6 +172,9 @@ function countGenres(songData, genreData) {
     return [genre_counts, umbrella_genre_counts];
 }
 
+////////////////////////
+// PLOTTING FUNCTIONS //
+////////////////////////
 
 // A function to create the song plot
 // It must be passed the data to plot
@@ -856,6 +867,8 @@ function updateAllPlots() {
     // For example here we check if we want to filter by a top artist and filter the library
     // and genre catalog down to just that artist
     if (selectionContext['selectedTopArtist']) {
+        // clicking on a top artist will set this value to be a specific artist
+        // each top artist has a name, genres, and popularity
         var artist = selectionContext['selectedTopArtist'];
         songDataFilter = songDataFilter.filter(function(song) {
             return song['artists'].includes(artist['name']);
@@ -876,7 +889,7 @@ function updateAllPlots() {
         });
     }
 
-    // Filter the data for interactive legend
+    // Filter the genre data for interactive legend
     genreDataFilter = genreDataFilter.filter(function(genre) {           
         return ((genre.isPop && selectionContext["plotPop"]) || 
                 (genre.isRock && selectionContext["plotRock"]) || 
@@ -887,7 +900,7 @@ function updateAllPlots() {
                 (genre.isOther && selectionContext["plotOther"]));
     })
 
-    // Filter the data for interactive legend & time slider
+    // Filter the song data for interactive legend
     songDataFilter = songDataFilter.filter(function(song) {
         return ((song.isPop && selectionContext['plotPop']) || 
                 (song.isRock && selectionContext['plotRock']) || 
@@ -898,7 +911,8 @@ function updateAllPlots() {
                 (song.isOther && selectionContext['plotOther']));
     });
 
-    // Apply temporal filters
+    // Apply temporal filters from the time slider
+    // TODO: Replace this with extent from time plot brush
     songDataFilter = songDataFilter.filter(function(song) {
         var lowerTimeLimit = selectionContext["timeRange"][0];
         var upperTimeLimit = selectionContext["timeRange"][1];
@@ -906,6 +920,7 @@ function updateAllPlots() {
         return (songYear >= lowerTimeLimit) && (songYear <= upperTimeLimit);
     })
 
+    // Count the genres in the filtered song data given the filtered genre data
     counts = countGenres(songDataFilter, genreDataFilter);
     genreCounts = counts[0];
     umbrellaCounts = counts[1];
@@ -943,11 +958,11 @@ $("#y-attribute-select")
 $("#toggle-button")
     .on("click", function(){
         selectionContext["flag"] = !selectionContext["flag"];
-        //flag = true; // Reset the flag back to what it was at top of code
         count = 0;
         updateAllPlots();
     })
 
+// Add event listener to the jQuery slider
 $('#slider').dragslider({
         min: 2008,
         max: 2019,
@@ -957,13 +972,16 @@ $('#slider').dragslider({
         values: defaultTimeRange,
         slide: function(event, ui) {
             if (event) {
+                // Set the time range to subset data on
                 selectionContext["timeRange"] = ui.values;
+                // After we make our selection, update the plots
                 updateAllPlots();
             }
         }    
     });
     
 
+// Create the umbrella genre selection legend
 function makeGenreLegend() {
     var svg = plots['legend']['svg'];
 
@@ -1030,9 +1048,12 @@ function makeGenreLegend() {
     });
 }
 
+// Create the top artists list on the page
 function makeTopArtistsList() {
     var top_artists_list = d3.select("#top-artists")
     top_artists_list.selectAll('li')
+                    // Here we use artist data from the currently selected time scale
+                    // either "short", "medium", or "long"
                     .data(topArtistsGlobal[selectionContext['timeScale']])
                     .enter()
                     .append("button")
@@ -1044,7 +1065,7 @@ function makeTopArtistsList() {
                         // Check if I am the active button
                         am_active = $that.hasClass('active');
 
-                        // Make all buttons inactive
+                        // Remove all active labels from all buttons
                         $that.parent().parent().parent().find('button').removeClass('active');
                         // If I wasn't active before, make me active now
                         if (! am_active) {
@@ -1064,9 +1085,12 @@ function makeTopArtistsList() {
                     });
 }
 
+// Create the top tracks list on the page
 function makeTopTracksList() {
     var top_tracks_list = d3.select("#top-tracks")
     top_tracks_list.selectAll('button')
+                    // Here we use artist data from the currently selected time scale
+                    // either "short", "medium", or "long"
                     .data(topTracksGlobal[selectionContext['timeScale']])
                     .enter()
                     .append("button")
@@ -1075,7 +1099,10 @@ function makeTopTracksList() {
                     .style("outline", "none")
                     .on("click", function(track, i){
                         $that = $(this);
+                        // Check if I'm actively selected
                         am_active = $that.hasClass('active');
+
+                        // Remove all active labels from all buttons
                         $that.parent().parent().parent().find('button').removeClass('active');
     
                         // If I wasn't active before, make me active now
@@ -1101,11 +1128,16 @@ function makeTopTracksList() {
 function loadPage() {
     // Set all umbrella genres to be plotted
     genre_labels.forEach(function(umbrella_genre) {
+        // This evaluates out to e.g. selectionContext["plotMetal"] = true
         selectionContext["plot" + umbrella_genre] = true;
     })
+    // Start by plotting all genres
     selectionContext['flag'] = false;
+    // We have three time scales to work with for the top artists and track
+    // here we start with the short time scale, but we can make an interaction that changes this option
+    // TODO: makeTopArtistsList() needs to be updateTopArtistsList() and added to updateAllPlots() for this to work
     selectionContext['timeScale'] = 'short';
-
+    // Set the default time range to subset the library over
     selectionContext["timeRange"] = defaultTimeRange;
 
     var margin = { left:100, right:200, top:50, bottom:100 };
@@ -1120,6 +1152,7 @@ function loadPage() {
     var yAxisSongs = plotSongs[2];
     plots['song-chart'] = {"svg" : svgSongs, "xAxis" : xAxisSongs, "yAxis" : yAxisSongs, "margin" : margin};
     
+    // We do this for each of the plots we want to make
     var plotGenres = generateAxes("#genre-plot-area", 500, 500, margin, 0, 500);
     var svgGenres = plotGenres[0];
     var xAxisGenres = plotGenres[1];
@@ -1132,15 +1165,18 @@ function loadPage() {
     var yAxisLine = plotLine[2];
     plots['line-chart'] = {"svg" : svgLine, "xAxis" : xAxisLine, "yAxis" : yAxisLine, "margin" : margin};
 
-    // Replace this with a generate svg function
+    // TODO: Replace this with a "generateSvg" function since we don't care about the axes
     var marginLegend = { left : 100, right : 0, top : 0, bottom : 0};
     var plotLegend = generateAxes("#legend", 100, 200, marginLegend, 0, 200);
     var svgLegend = plotLegend[0];
     plots['legend'] = {"svg" : svgLegend}
     
+    // the makeX() functions will create the genre selection legend and the top artists / tracks
+    // lists from the data that we've loaded
     makeGenreLegend();
     makeTopArtistsList();
     makeTopTracksList();
+    // Plot everything with the default selections set above
     updateAllPlots();
 }
 
