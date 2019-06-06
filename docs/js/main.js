@@ -26,6 +26,8 @@ var maxGenreCount;
 
 var defaultMarkerSize = 3.;
 var defaultAlpha = 0.5;
+myGenreAlpha = 0.8;
+var transitionTime = 500;
 
 
 // Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
@@ -771,7 +773,7 @@ function updateGenrePlot(data) {
     points.exit().remove();
 
     // 3 -- UPDATE old elements present in new data.
-    var update_trans = d3.transition().duration(1000); // Define a transition variable with 500ms duration so we can reuse it
+    var update_trans = d3.transition().duration(transitionTime); // Define a transition variable with 500ms duration so we can reuse it
 
     points
         .transition(update_trans)
@@ -791,6 +793,18 @@ function updateGenrePlot(data) {
                     return yPopularityToPix(d[selectedAttributeY]);
                 } else {
                     return yAttrToPix(d[selectedAttributeY]);
+                }
+            })
+            .attr("r", function(d) {
+                if (allGenreToggle) {
+                    return defaultMarkerSize;
+                } else {
+                    if (d.userCount == 0.) {
+                        return d.userCount;
+                    } else {
+                        return genreCountScale(d.userCount + 1);
+                    }
+                    
                 }
             });
 
@@ -817,39 +831,14 @@ function updateGenrePlot(data) {
                 }
             })
             .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements.
-                .attr("r", function(d) {
+                .attr("fill-opacity", function(d) {
                     if (allGenreToggle) {
-                        return defaultMarkerSize;
+                        return defaultAlpha;
                     } else {
-                        if (d.userCount == 0.) {
-                            return d.userCount;
-                        } else {
-                            console.log(d);
-                            console.log(d.name);
-                            console.log(genreCountScale(d.userCount+1));
-                            // return genreCountScale(Math.log2(d.userCount + 1)); // Hacky workaround to make log scaling work
-                            return genreCountScale(d.userCount + 1);
-                        }
+                        return myGenreAlpha;
+                    }
                         
-                    }
-                })
-                .attr("fill", function(d){
-                    if (d.isRock) {
-                        return attrToColor('Rock')
-                    } else if (d.isRap) {
-                        return attrToColor('Rap')
-                    } else if (d.isPop) {
-                        return attrToColor('Pop')
-                    } else if (d.isMetal) {
-                        return attrToColor('Metal')
-                    } else if (d.isClassical) {
-                        return attrToColor('Classical')
-                    } else if (d.isElectronic) {
-                        return attrToColor('Electronic')
-                    } else {
-                        return "grey"
-                    }
-                })
+                    })
                 .on("mouseover", tipForGenre.show)
                 .on("mouseout", tipForGenre.hide)
                 .on("click", function(genre, i) {
@@ -860,7 +849,37 @@ function updateGenrePlot(data) {
                     spotify_preview.html(
                         '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
                     )
-                });
+                })
+                .transition(update_trans)
+                    .attr("r", function(d) {
+                        if (allGenreToggle) {
+                            return defaultMarkerSize;
+                        } else {
+                            if (d.userCount == 0.) {
+                                return d.userCount;
+                            } else {
+                                return genreCountScale(d.userCount + 1);
+                            }
+                            
+                        }
+                    })
+                    .attr("fill", function(d){
+                        if (d.isRock) {
+                            return attrToColor('Rock')
+                        } else if (d.isRap) {
+                            return attrToColor('Rap')
+                        } else if (d.isPop) {
+                            return attrToColor('Pop')
+                        } else if (d.isMetal) {
+                            return attrToColor('Metal')
+                        } else if (d.isClassical) {
+                            return attrToColor('Classical')
+                        } else if (d.isElectronic) {
+                            return attrToColor('Electronic')
+                        } else {
+                            return "grey"
+                        }
+                    });
 
 
     // Draw Axes //
@@ -1031,7 +1050,7 @@ function updateSongPlot(songdata) {
 
 
     // 3 -- UPDATE old elements present in new data.
-    var update_trans = d3.transition().duration(1000); // Define a transition variable with 500ms duration so we can reuse it
+    var update_trans = d3.transition().duration(transitionTime); // Define a transition variable with 500ms duration so we can reuse it
 
         points1
         .transition(update_trans) // Use transition to update element positions (not needed for new elements)
@@ -1089,6 +1108,7 @@ function updateSongPlot(songdata) {
                 )
             })
             .merge(points1) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
+                .attr("fill-opacity", defaultAlpha)
                 .attr("fill", function(d){
                     if (d.isRock) {
                         return attrToColor('Rock')
