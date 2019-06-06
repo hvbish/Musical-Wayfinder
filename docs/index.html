@@ -53,6 +53,11 @@
                 </div> 
 
                 <!-- Time slider -->
+                <!-- <div id="slider-div">
+                    <label>Time range: <span id="time"></span></label>
+                    <div id="time-slider"></div>
+                </div> -->
+                <!-- Time slider with range handles? -->
                 <div id="slider-div" z-index=-1>
                     <label>Time range: <span id="time"></span></label>
                     <div id="slider"></div>
@@ -133,7 +138,6 @@
             <div class="col-md-6">
             </div>
             <div class="col-md-6">
-                <!-- <div id="zoom-plot-area"> -->
                 <div id="genre-plot-area">
                 </div>
             </div>
@@ -148,7 +152,6 @@
             <div class="col-md-6">
             </div>
             <div class="col-md-6">
-
                 <div class="row row-no-gutters" id="stats-area">
                     <div class="col-lg-6">
                         <p> <strong>Top Artists</strong> </p>
@@ -161,11 +164,8 @@
                         </ul>             
                     </div>
                 </div>
-
                 <div class="row row-no-gutters" id="stats-area">
-                    <div class="col-lg-6" id="spotify-track">
-                    </div>
-                    <div class="col-lg-6" id="spotify-playlist">
+                    <div class="col-lg-6" id="spotify-preview">
                     </div>
                 </div>
             </div>
@@ -187,16 +187,22 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/d3.min.js"></script>
 <script src="js/d3-tip.js"></script>
+
+<!-- JQRange Slider libraries -->
+<!-- <script src="js/jquery.js"></script>
+<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script src="js/jQDateRangeSlider-min.js"></script> -->
+
 <!-- dragslider libraries -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/dragslider.js"></script>
 <script src="https://d3js.org/d3-color.v1.min.js"></script>
 
-
-<!-- For zoom? -->
-<script src="https://d3js.org/d3.v5.min.js"></script>
-
+<!-- <script type="text/javascript" src="js/jquery.ui.slider.custom.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.slider.custom.js"></script> -->
 
 
 <!-- Custom JS -->
