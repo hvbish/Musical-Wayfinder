@@ -12,20 +12,20 @@ var axisLengthLineX = 500
 var axisLengthLineY = 500
 var axisLengthStatsX = 500
 var axisLengthStatsY = 500
+var legendHeight = 200
+var legendWidth = 200
 
 
 var xOrigin = 0;
 var yOrigin = axisLength;
 
-var interval; // For interval function
-// var genreData;
-var libraryData;
-var flag = false; // Flag added to test switching between data. true = user genre data, false = all genre data
-var time = 2010 // For slider with one value
-//var times = [new Date(2008, 11, 31),new Date(2019, 11, 31)] // For slider with a range
+var allGenreToggle = false; // Flag added to test switching between data. true = user genre data, false = all genre data
 var times = [2010,2019] // For slider with a range
-
+var libraryData;
 var maxGenreCount;
+
+var defaultMarkerSize = 3.;
+var defaultAlpha = 0.5;
 
 
 // Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
@@ -75,8 +75,8 @@ var svgLine = d3.select("#line-plot-area")
 
 var svg_leg = d3.select("#legend")
     .append("svg")
-        .attr("width", 200)
-        .attr("height", 200)
+        .attr("width", legendWidth)
+        .attr("height", legendHeight)
     .append("g")
         .attr("transform", "translate(" + margin.left 
         + ", " + (margin.top-30) + ")");
@@ -153,9 +153,7 @@ var timeScale = d3.scaleLinear() // Time scale
     .range([axisLength,0.]);
 
 
-var genreCountScale = d3.scaleLinear()
-    .domain([0.,160.])
-    .range([0.,6.]);
+var genreCountScale;
 
 
 /*
@@ -297,7 +295,7 @@ plotTitle = svg.append("text")
     .attr("text-anchor", "middle")
     .style("font-size", "26px")
     .style("font-weight", "bold")
-    .text("Genres")
+    .text(allGenreToggle ? "All Genres" : "My Genres");
 
 plotTitle1 = svg1.append("text")
     .attr("x", (axisLength / 2))
@@ -305,7 +303,7 @@ plotTitle1 = svg1.append("text")
     .attr("text-anchor", "middle")
     .style("font-size", "26px")
     .style("font-weight", "bold")
-    .text("My Songs")
+    .text("My Songs");
 
 plotTitleL = svgLine.append("text")
     .attr("x", (axisLengthLineX / 2))
@@ -313,7 +311,7 @@ plotTitleL = svgLine.append("text")
     .attr("text-anchor", "middle")
     .style("font-size", "26px")
     .style("font-weight", "bold")
-    .text("Library Timeline")
+    .text("Library Timeline");
 
 /*// Label showing time selected in slider, single value
 var timeLabel = svg1.append("text")
@@ -434,7 +432,12 @@ var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space
 
 var tipForGenre = d3.tip().attr('class', 'd3-tip')
     .html(function(d) {
-        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + d.name + nbsp.repeat(0) + "</h4></span><br>";
+        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + d.genre + nbsp.repeat(0) + "</h4></span><br>";
+        if (allGenreToggle) {
+            text += "<strong> In my library: </strong> <span style='color:"+"red"+";text-transform:capitalize'>" + nbsp.repeat(0) + (d.userCountFull) + "</span><br>";
+        } else {
+            text += "<strong> Song Count: </strong> <span style='color:"+"red"+";text-transform:capitalize'>" + nbsp.repeat(0) + (d.userCountFull) + "</span><br><br>";
+        }
         text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.energy) + "</span><br>";
         text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.liveness) + "</span><br>";
         text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.speechiness) + "</span><br>";
@@ -503,6 +506,8 @@ var genreDataPromise = d3.json("data/genre_data.json").then(function(genredata) 
         g.isElectronic = classifyUmbrellaGenre(g.name).isElectronic;
         g.isOther = classifyUmbrellaGenre(g.name).isOther;
         g.userCount = 0;
+        g.userCountFull = 0;
+        g.userFirstAddDate = new Date(2100,0,1);
     })
 
     genreData = genredata.map(genredata => genredata); // .map allows you to do something for each element of the list. Not sure how to use it properly yet
@@ -522,7 +527,9 @@ var genreDataPromise = d3.json("data/genre_data.json").then(function(genredata) 
 var umbrella_genre_counts = {};
 
 genreDataPromise.then(function(genredata) {
-    var genre_counts = {};
+    var genre_counts = {};      // This is the weighted genre count
+    var genre_counts_full = {}  // This is the unweighted genre count
+    var genre_dates = {}        // This is the date the genre first appears in the user's library
     var genre_labels = ["Rock", "Pop", "Rap", "Metal", "Classical", "Electronic", "Other"];
 
     for (var i in genre_labels) {
@@ -547,13 +554,26 @@ genreDataPromise.then(function(genredata) {
                 // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
                 s.dateAdded = parseUTCTime(s.date);
 
+                // Check the first add date for each of the song's genres, and update it if this song was added before that date
+                if (genre_dates[g]) {
+                    if (s.dateAdded < genre_dates[g]["userFirstAddDate"]) {
+                            genre_dates[g]["userFirstAddDate"] = s.dateAdded
+                    }
+                } else {
+                    genre_dates[g] = {};
+                    genre_dates[g]["userFirstAddDate"] = s.dateAdded
+                }
+
                 var weight = 1. / s['genres'].length;
 
                 if (genre_counts[g]) {
                     genre_counts[g]["userCount"] += weight;
+                    genre_counts_full[g]["userCountFull"] += 1;
                 } else {
                     genre_counts[g] = {};
-                    genre_counts[g]["userCount"] = 0
+                    genre_counts[g]["userCount"] = weight;
+                    genre_counts_full[g] = {};
+                    genre_counts_full[g]["userCountFull"] = 1;
                 }
                 if (s.isRock) {
                     umbrella_genre_counts["Rock"]["userCount"] += weight;
@@ -584,6 +604,8 @@ genreDataPromise.then(function(genredata) {
             genre_in_library = genre_counts[key];
             if (genre_in_library) {
                 genre.userCount = genre_counts[key]["userCount"];
+                genre.userCountFull = genre_counts_full[key]["userCountFull"];
+                genre.userFirstAddDate = genre_dates[key]["userFirstAddDate"];
             }
         });
 
@@ -604,45 +626,21 @@ genreDataPromise.then(function(genredata) {
 
 
 
-////////////////////////////////
-/// Play & Reset Button Test ///
-////////////////////////////////
-
-// If you don't want to use a play button, just start the interval as soon as the data is loaded
-
-// Define a test function to execute when the play button is pressed. This one does counting.
-var count = 0;
-function step() {
-    count += count;
-}
-
-// Tells the play button what to do
-$("#play-button")
-.on("click", function(){
-    var button = $(this);
-    if (button.text() == "Play"){
-        button.text("Pause");
-        interval = setInterval(function(){
-            updateGenrePlot(genreData);
-            updateSongPlot(libraryData)
-            flag = !flag;
-            step();
-        }, 1500);            
-    }
-    else {
-        button.text("Play");
-        clearInterval(interval);
-    }
-})
+/////////////////////////////////
+//////////// Buttons ////////////
+/////////////////////////////////
 
 
 
-// A button to reset back to initial conditions
+
+
+
+// A button to toggle between the 'All Genre' scatterplot and the 'My Genre' Scatterplot
 $("#toggle-button")
     .on("click", function(){
-        flag = !flag
-        //flag = true; // Reset the flag back to what it was at top of code
-        count = 0;
+        allGenreToggle = !allGenreToggle
+        // Title
+        allGenreToggle ? plotTitle.text("All Genres") : plotTitle.text("My Genres");
         updateGenrePlot(genreData);
         updateSongPlot(libraryData);
     })
@@ -699,21 +697,9 @@ $('#slider').dragslider({
     slide: function(event, ui){
         times = ui.values;
         updateSongPlot(libraryData);
+        updateGenrePlot(genreData);
     }    
 });
-
-// Original slider with no range handles
-/*$("#time-slider").slider({
-    max: 2019,
-    min: 2008,
-    step: 1,
-    range: true,
-    values: [2010,2016],
-    slide: function(event, ui){
-        times = ui.values;
-        updateSongPlot(libraryData);
-    }
-});*/
 
 
 
@@ -732,14 +718,27 @@ function updateGenrePlot(data) {
     var selectedAttributeY = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
     
 
-    // Filter the data for interactive legend
-    var data = data.filter(function(d){           // Filter the data for dropdown
-            if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) {
+    // Filter the data for interactive legend & time slider
+    var data = data.filter(function(d){       
+        if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) { // For interactive legend
+        // Genre is selected in legend
+            if (allGenreToggle){
+                // AND plotting full set of genres
                 return true;
             } else {
-                return false;
-            }
-        })
+                // NOT plotting full set of genres
+                if ((d.userFirstAddDate.getFullYear() >= times[0]) & (d.userFirstAddDate.getFullYear()  <= times[1])) {
+                    // AND add date is within slider time range
+                    return true;
+                } else {
+                    // NOT within slider time range
+                    return false;
+                }
+            }    
+        } else {
+            return false;
+        }
+    })
 
 
     // Get the maximum number of counts for all genres so point size can be scaled accordingly
@@ -748,13 +747,16 @@ function updateGenrePlot(data) {
     })
 
 
-    // Update the domain of your axes based on the new data you are using //
+    // Update the domain of your scales based on the new data you are using //
     
-    // genreCountScale.domain(0., maxGenreCount).range([0, 1]);
-    
-    genreCountScale = d3.scaleLinear()
+/*     genreCountScale = d3.scaleLinear()
         .domain([0., maxGenreCount])
-        .range([0., 10.]);
+        .range([0., 10.]); */
+
+     genreCountScale = d3.scaleLog()
+        .domain([1., maxGenreCount+1])
+        .range([0., 6.])
+        .base(10);
 
 
     // Plot the data, following the D3 update pattern //
@@ -772,14 +774,6 @@ function updateGenrePlot(data) {
     var update_trans = d3.transition().duration(1000); // Define a transition variable with 500ms duration so we can reuse it
 
     points
-        //.attr("r", 3)
-        .attr("r", function(d) {
-            if (flag) {
-                return genreCountScale(d.userCount);
-            } else {
-                return 3.;
-            }
-        })
         .transition(update_trans)
             .attr("cx", function(d, i){
                 if (selectedAttributeX == 'loudness') {
@@ -801,6 +795,7 @@ function updateGenrePlot(data) {
             });
 
     // 4 -- ENTER new elements present in new data.
+    // 4 1/2 -- Set attributes that apply to both old and new elements with .merge()
     points.enter()
         .append("circle")
             .attr("cx", function(d, i){
@@ -821,26 +816,23 @@ function updateGenrePlot(data) {
                     return yAttrToPix(d[selectedAttributeY]);
                 }
             })
-            //.attr("r", 3)
-            .attr("r", function(d) {
-                if (flag) {
-                    return genreCountScale(d.userCount);
-                } else {
-                    return 3.;
-                }
+            .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements.
+                .attr("r", function(d) {
+                    if (allGenreToggle) {
+                        return defaultMarkerSize;
+                    } else {
+                        if (d.userCount == 0.) {
+                            return d.userCount;
+                        } else {
+                            console.log(d);
+                            console.log(d.name);
+                            console.log(genreCountScale(d.userCount+1));
+                            // return genreCountScale(Math.log2(d.userCount + 1)); // Hacky workaround to make log scaling work
+                            return genreCountScale(d.userCount + 1);
+                        }
+                        
+                    }
                 })
-            .on("mouseover", tipForGenre.show)
-            .on("mouseout", tipForGenre.hide)
-            .on("click", function(genre, i) {
-                if (spotify_preview.style("display") == "none") {
-                    spotify_preview.style("display", "block");
-                }
-                console.log(genre);
-                spotify_preview.html(
-                    '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
-                )
-            })
-            .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
                 .attr("fill", function(d){
                     if (d.isRock) {
                         return attrToColor('Rock')
@@ -857,6 +849,17 @@ function updateGenrePlot(data) {
                     } else {
                         return "grey"
                     }
+                })
+                .on("mouseover", tipForGenre.show)
+                .on("mouseout", tipForGenre.hide)
+                .on("click", function(genre, i) {
+                    if (spotify_preview.style("display") == "none") {
+                        spotify_preview.style("display", "block");
+                    }
+                    console.log(genre);
+                    spotify_preview.html(
+                        '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
+                    )
                 });
 
 
@@ -989,35 +992,15 @@ function updateLinePlot(dataL) {
 
 }
 
-function updateSongPlot(data1) {
+function updateSongPlot(songdata) {
 
     // Filter data based on user selection //
 
     var selectedAttributeX = $("#x-attribute-select").val(); // This is the genre that has been selected by the user
     var selectedAttributeY = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
-    
-    /*    var data = data.filter(function(d){           // Filter the data for dropdown
-            if (selectedGenre == "all") { return true; }
-            else if (selectedGenre == "pop") {
-                return d.isPop;
-            } else if (selectedGenre == "rock") {
-                return d.isRock;
-            } else if (selectedGenre == "rap") {
-                return d.isRap;
-            } else if (selectedGenre == "electronic") {
-                return d.isElectronic;
-            } else if (selectedGenre == "classical") {
-                return d.isClassical;
-            } else if (selectedGenre == "metal") {
-                return d.isMetal;
-            } else {
-                return false;
-            }
-        })
-    */
 
     // Filter the data for interactive legend & time slider
-    var data1 = data1.filter(function(d){       
+    var songdata = songdata.filter(function(d){       
             if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) { // For interactive legend
                 if ((d.dateAdded.getFullYear() >= times[0]) & (d.dateAdded.getFullYear()  <= times[1])) {
                 //if ((d.dateAdded >= times[0]) & (d.dateAdded  <= times[1])) {
@@ -1034,17 +1017,11 @@ function updateSongPlot(data1) {
 
 
 
-    // Update the domain of your axes based on the new data you are using //
-    //      Example: x.domain(data.map(function(d){ return d.month }));
-    //      Example: y.domain([0, d3.max(data, function(d) { return d.revenue })])
-
-
-
     // Plot the data, following the D3 update pattern //
 
     // 1 -- JOIN new data with old elements.
     var points1 = svg1.selectAll("circle") // Song scatterplot
-        .data(data1, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
+        .data(songdata, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
             return d.uri;
         });
 
@@ -1057,8 +1034,7 @@ function updateSongPlot(data1) {
     var update_trans = d3.transition().duration(1000); // Define a transition variable with 500ms duration so we can reuse it
 
         points1
-        .attr("r", 3)
-        .transition(update_trans)
+        .transition(update_trans) // Use transition to update element positions (not needed for new elements)
             .attr("cx", function(d, i){
                 if (selectedAttributeX == 'loudness') {
                     return xOrigin + xLoudnessToPix(d[selectedAttributeX]);
