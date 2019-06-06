@@ -33,14 +33,15 @@ var transitionTime = 500;
 // Function to classify umbrella genre categories: takes a genre name as input and returns an object with umbrellas category booleans
 // Perhaps this function should also return an umbrella variable indicating which umbrella genre it falls into (since many genres will fall into more than one umbrella). This would also make it easier to assign colors to data points
 function classifyUmbrellaGenre(genre) {
-    isRock = genre.toLowerCase().includes('rock');
+    isRock = (genre.toLowerCase().includes('rock')) || (genre.toLowerCase().includes('punk')) || (genre.toLowerCase().includes('grunge') || (genre.toLowerCase().includes('garage')));
     isPop = genre.toLowerCase().includes('pop');
-    isRap = genre.toLowerCase().includes('rap');
-    isMetal = genre.toLowerCase().includes('metal');
+    isRap = (genre.toLowerCase().includes('rap')) || (genre.toLowerCase().includes('hip hop')) || (genre.toLowerCase().includes('hiphop'));
+    isMetal = (genre.toLowerCase().includes('metal')) || (genre.toLowerCase().includes('death')) || (genre.toLowerCase().includes('hardcore')) || (genre.toLowerCase().includes('thrash'));
     isClassical = genre.toLowerCase().includes('classical');
-    isElectronic = genre.toLowerCase().includes('elect');
-    isOther = !(isRock || isPop || isRap || isElectronic || isClassical || isMetal)
-    return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isOther};
+    isElectronic = ((genre.toLowerCase().includes('electro')) || (genre.toLowerCase().includes('tronica')) || (genre.toLowerCase().includes('house')) || (genre.toLowerCase().includes('techno')) || (genre.toLowerCase().includes('edm')) || (genre.toLowerCase().includes('trance')) || (genre.toLowerCase().includes('dub')) || (genre.toLowerCase().includes('chip')) || (genre.toLowerCase().includes('glitch')) || (genre.toLowerCase().includes('jungle'))) && (!genre.toLowerCase().includes('edmunds')) && (!genre.toLowerCase().includes('edmonton')) && (!genre.toLowerCase().includes('dublin'));
+    isJazz = (genre.toLowerCase().includes('jazz')) || (genre.toLowerCase().includes('ragtime'));
+    isOther = !(isRock || isPop || isRap || isElectronic || isClassical || isMetal || isJazz)
+    return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isJazz, isOther};
 }
 
 var spotify_preview = d3.select("#spotify-preview").style("display", "none");
@@ -180,8 +181,8 @@ var dateToPix = d3.scaleTime()
 // Ordinal scale - no invert function available for this, since multiple values can be mapped to the same color. Can use this to assign colors to categories
 
 // Define genre umbrella labels and corresponding colors to be used for the scale and the legend
-var genre_labels = ['Pop',    'Rock',   'Rap',      'Electronic','Classical','Metal',   'Other']
-var genre_colors = ['hotpink','firebrick','royalblue','limegreen', 'goldenrod',     'Black',   'grey']
+var genre_labels = ['Pop',    'Rock',   'Rap',      'Electronic','Classical','Metal',   'Jazz', 'Other']
+var genre_colors = ['hotpink','firebrick','royalblue','limegreen', 'goldenrod',     'Black',   'darkorange', 'grey']
 
 var attrToColor = d3.scaleOrdinal()
     .domain(genre_labels)
@@ -350,6 +351,7 @@ var plotRap = true;
 var plotElectronic = true;
 var plotClassical = true;
 var plotMetal = true;
+var plotJazz = true;
 var plotOther = true;
 var plotGenre = true;
 
@@ -397,6 +399,9 @@ genre_labels.forEach(function(genre, i){
             } else if (genre == "Metal") {
                 plotMetal ? plotMetal = false : plotMetal = true;
                 plotGenre = plotMetal;
+            } else if (genre == "Jazz") {
+                plotJazz ? plotJazz = false : plotJazz = true;
+                plotGenre = plotJazz;
             } else if (genre == "Other") {
                 plotOther ? plotOther = false : plotOther = true;
                 plotGenre = plotOther;
@@ -468,6 +473,8 @@ var tipForSong = d3.tip().attr('class', 'd3-tip')
             else {text += "Classical? <span text-transform:capitalize'>" + d.isClassical + "</span><br>";}
         if (d.isMetal) {text += "Metal? <span style='color:"+attrToColor("Metal")+";text-transform:capitalize'>" + d.isMetal + "</span><br>";}
             else {text += "Metal? <span text-transform:capitalize'>" + d.isMetal + "</span><br>";}
+        if (d.isJazz) {text += "Jazz? <span style='color:"+attrToColor("Jazz")+";text-transform:capitalize'>" + d.isJazz + "</span><br>";}
+            else {text += "Jazz? <span text-transform:capitalize'>" + d.isJazz + "</span><br>";}
         if (d.isOther) {text += "Other? <span style='color:"+attrToColor("Other")+";text-transform:capitalize'>" + d.isOther + "</span><br>";}
             else {text += "Other? <span text-transform:capitalize'>" + d.isOther + "</span><br>";}
         text += "<br>";
@@ -506,6 +513,7 @@ var genreDataPromise = d3.json("data/genre_data.json").then(function(genredata) 
         g.isMetal = classifyUmbrellaGenre(g.name).isMetal; 
         g.isClassical = classifyUmbrellaGenre(g.name).isClassical;
         g.isElectronic = classifyUmbrellaGenre(g.name).isElectronic;
+        g.isJazz = classifyUmbrellaGenre(g.name).isJazz;
         g.isOther = classifyUmbrellaGenre(g.name).isOther;
         g.userCount = 0;
         g.userCountFull = 0;
@@ -532,7 +540,7 @@ genreDataPromise.then(function(genredata) {
     var genre_counts = {};      // This is the weighted genre count
     var genre_counts_full = {}  // This is the unweighted genre count
     var genre_dates = {}        // This is the date the genre first appears in the user's library
-    var genre_labels = ["Rock", "Pop", "Rap", "Metal", "Classical", "Electronic", "Other"];
+    var genre_labels = ["Rock", "Pop", "Rap", "Metal", "Classical", "Electronic", "Jazz", "Other"];
 
     for (var i in genre_labels) {
         umbrella_genre = genre_labels[i];
@@ -544,7 +552,7 @@ genreDataPromise.then(function(genredata) {
         // Do the following for every element in the json file
         librarydata.forEach(function(s){
             // Classify each song into umbrella genres
-            s.isRock = s.isPop = s.isRap = s.isMetal = s.isClassical = s.isElectronic = s.isOther = Boolean(false) // Initialize all umbrella types to false before you loop through
+            s.isRock = s.isPop = s.isRap = s.isMetal = s.isClassical = s.isElectronic = s.isJazz = s.isOther = Boolean(false) // Initialize all umbrella types to false before you loop through
             s.genres.forEach(function(g) { // Loop through all genres associated with this song and assign umbrella genres to the song
                 if (classifyUmbrellaGenre(g).isRock) {s.isRock = Boolean(true)};
                 if (classifyUmbrellaGenre(g).isPop) {s.isPop = Boolean(true)};
@@ -552,6 +560,7 @@ genreDataPromise.then(function(genredata) {
                 if (classifyUmbrellaGenre(g).isMetal) {s.isMetal = Boolean(true)};
                 if (classifyUmbrellaGenre(g).isClassical) {s.isClassical = Boolean(true)};
                 if (classifyUmbrellaGenre(g).isElectronic) {s.isElectronic = Boolean(true)};
+                if (classifyUmbrellaGenre(g).isJazz) {s.isJazz = Boolean(true)};
                 if (classifyUmbrellaGenre(g).isOther) {s.isOther = Boolean(true)};
                 // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
                 s.dateAdded = parseUTCTime(s.date);
@@ -594,6 +603,9 @@ genreDataPromise.then(function(genredata) {
                 }
                 if  (s.isElectronic) {
                     umbrella_genre_counts["Electronic"]["userCount"] += weight;
+                }
+                if  (s.isJazz) {
+                    umbrella_genre_counts["Jazz"]["userCount"] += weight;
                 }
                 if  (s.isOther) {
                     umbrella_genre_counts["Other"]["userCount"] += weight;
@@ -722,7 +734,7 @@ function updateGenrePlot(data) {
 
     // Filter the data for interactive legend & time slider
     var data = data.filter(function(d){       
-        if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) { // For interactive legend
+        if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isJazz && plotJazz) || (d.isOther && plotOther)) { // For interactive legend
         // Genre is selected in legend
             if (allGenreToggle){
                 // AND plotting full set of genres
@@ -876,6 +888,8 @@ function updateGenrePlot(data) {
                             return attrToColor('Classical')
                         } else if (d.isElectronic) {
                             return attrToColor('Electronic')
+                        } else if (d.isJazz) {
+                            return attrToColor('Jazz')
                         } else {
                             return "grey"
                         }
@@ -1020,7 +1034,7 @@ function updateSongPlot(songdata) {
 
     // Filter the data for interactive legend & time slider
     var songdata = songdata.filter(function(d){       
-            if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isOther && plotOther)) { // For interactive legend
+            if ((d.isPop && plotPop) || (d.isRock && plotRock) || (d.isRap && plotRap) || (d.isElectronic && plotElectronic) || (d.isClassical && plotClassical) || (d.isMetal && plotMetal) || (d.isJazz && plotJazz) || (d.isOther && plotOther)) { // For interactive legend
                 if ((d.dateAdded.getFullYear() >= times[0]) & (d.dateAdded.getFullYear()  <= times[1])) {
                 //if ((d.dateAdded >= times[0]) & (d.dateAdded  <= times[1])) {
                     return true;
@@ -1122,6 +1136,8 @@ function updateSongPlot(songdata) {
                         return attrToColor('Classical')
                     } else if (d.isElectronic) {
                         return attrToColor('Electronic')
+                    } else if (d.isJazz) {
+                        return attrToColor('Jazz')
                     } else {
                         return "grey"
                     }
