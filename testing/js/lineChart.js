@@ -32,7 +32,7 @@ function countGenres(songData, genreData) {
                 genre_counts[genre]["userCount"] += weight;
             } else {
                 genre_counts[genre] = {};
-                genre_counts[genre]["userCount"] = 0
+                genre_counts[genre]["userCount"] = weight;
             }
 
             // Compute the numbre of umbrella genres that each song lies in
@@ -43,7 +43,8 @@ function countGenres(songData, genreData) {
                 }
             });
             var umbrella_weight = 1. / num_umbrella_genres;
-            umbrella_weight = weight;
+            console.log(song['name'] + " " + umbrella_weight);
+            // umbrella_weight = weight;
             // Do the same for the umbrella genres
             if (song.isRock) {
                 umbrella_genre_counts["Rock"]["userCount"] += umbrella_weight;
@@ -143,6 +144,16 @@ function drawLinePlot(songData, svg, xAxis, yAxis) {
         .style("stroke", "#000000");
 }
 
+// function updateStackedLinePlot(xAxis, yAxis, xScale, yScale) {
+//     console.log("Update called!");
+//     console.log(xScale);
+//     console.log(xAxis["call"]);
+//     // Plot the axes using the new scales
+// }
+
+var idleTimeout;
+function idled() { idleTimeout = null; }
+
 function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
     filtered_data = songData.filter(d => d['dateAdded']);
 
@@ -152,12 +163,12 @@ function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
     });
 
     var xScale = d3.scaleTime()
-                   .domain(date_range)
-                   .range([0., xAxis["length"]]);
-
+                    .domain(date_range)
+                    .range([0., xAxis["length"]]);
+                
     // Create a function that will bin data in a consistent way on the date added
     // attribute of any data passed
-    var num_bins = 100;
+    var num_bins = 10;
     var bin_edges = xScale.ticks(num_bins);
 
     var bin_data = d3.histogram()
@@ -183,14 +194,11 @@ function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
         genre_counts = counts[0];
         umbrella_genre_counts = counts[1];
 
-        console.log(umbrella_genre_counts);
-
         genre_labels.forEach(function(umbrella_genre) {
             var last_index = genre_bin_data.length - 1;
             genre_bin_data[last_index][umbrella_genre] = umbrella_genre_counts[umbrella_genre]["userCount"];
         });
     });
-    console.log(genre_bin_data);
 
     // Make a stack that will convert the above data into an array of series
     // where there will be a series for each key given
@@ -204,11 +212,10 @@ function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
     // get the series from stacking the data
     var series = stack(genre_bin_data);
 
-    console.log(series);
-
     // Make a function to compute the area that a datapoint
     // should enclose
-    var area = d3.area()
+    var area = function(xScale, yScale) {
+                return d3.area()
                  .x(function(d) {
                     return xScale(d['data']['date']);
                  })
@@ -218,6 +225,7 @@ function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
                  .y1(function(d) {
                      return yScale(d[1]);
                  })
+            }
 
     // Find the maximum line height among all data points
     // The opaque nesting of d3.max functions and d[1] indexing comes from
@@ -236,25 +244,6 @@ function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
     var yScale = d3.scaleLinear()
                    .domain([0., max_height])
                    .range([yAxis["length"], 0]);
-
-    // Plot the axes using the new scales
-    xAxis["group"].call(xAxis["call"].scale(xScale));
-    yAxis["group"].call(yAxis["call"].scale(yScale));
-
-    svg.selectAll("layers")
-        .data(series)
-        .enter()
-        .append("path")
-            .attr("class", function(d, i) {
-                return "line " + genre_labels[i];
-            })
-            .attr("d", area)
-            // Remove fill and show the line in black
-            .style("fill", function(d, i) {
-                console.log(genre_labels[i] + color(genre_labels[i]));
-                return color(genre_labels[i]);
-            })
-            // .style("stroke", "#000000");
     
     /////////////////////
     // HIGHLIGHT GROUP //
@@ -262,7 +251,6 @@ function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
 
     // What to do when one group is hovered
     var highlight = function(d) {
-        console.log(d)
         // reduce opacity of all groups
         d3.selectAll(".line").style("opacity", .1)
         // expect the one that is hovered
@@ -284,7 +272,7 @@ function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
       .data(genre_labels)
       .enter()
       .append("rect")
-        .attr("x", 400)
+        .attr("x", xAxis["length"])
         .attr("y", function(d,i){ return 10 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("width", size)
         .attr("height", size)
@@ -297,7 +285,7 @@ function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
       .data(genre_labels)
       .enter()
       .append("text")
-        .attr("x", 400 + size*1.2)
+        .attr("x", xAxis["length"] + size*1.2)
         .attr("y", function(d,i){ return 10 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
         .style("fill", function(d){ return color(d)})
         .text(function(d){ return d})
@@ -305,6 +293,180 @@ function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
         .style("alignment-baseline", "middle")
         .on("mouseover", highlight)
         .on("mouseleave", noHighlight)
+
+    xAxis["group"].call(xAxis["call"].scale(xScale));
+    yAxis["group"].call(yAxis["call"].scale(yScale));
+
+    var clip = svg.append("defs").append("svg:clipPath")
+            .attr("id", "clip")
+            .append("svg:rect")
+            .attr("width", xAxis["length"] )
+            .attr("height", yAxis["length"] )
+            .attr("x", 0)
+            .attr("y", 0);
+
+    var lines = svg.append("g")
+                    .attr("clip-path", "url(#clip)");
+
+    lines.selectAll("layers")
+            .data(series)
+            .enter()
+            .append("path")
+                .attr("class", function(d, i) {
+                    return "line " + genre_labels[i];
+                })
+                .attr("d", area(xScale, yScale))
+                // Remove fill and show the line in black
+                .style("fill", function(d, i) {
+                    return color(genre_labels[i]);
+                })
+     
+    // A function that set idleTimeOut to null
+    var idleTimeout
+    function idled() { idleTimeout = null; }
+
+    // Brushing    
+    var brush = d3.brushX()
+                    .extent([[0, 0], 
+                             [xAxis["length"], yAxis["length"]] 
+                            ] 
+                    ).on("end", function() {
+                        var newXScale;
+                        var newYScale;
+                        console.log(series);
+                        extent = d3.event.selection;
+                        if (extent) {
+                            newXScale = d3.scaleTime()
+                                        .domain(extent.map(xScale.invert))
+                                        .range([0, xAxis["length"]]);
+                            
+                            extent_sec = extent.map(xScale.invert).map(Date.parse);
+
+
+                            data = songData.filter(d => (Date.parse(d['dateAdded']) > extent_sec[0]) &&
+                                                        (Date.parse(d['dateAdded']) < extent_sec[1])
+                                                    );
+                            
+                            var binned_data = bin_data(data);
+                            binned_data.forEach(function(bin) {
+                                bin['xMid'] = new Date((Date.parse(bin['x0']) + Date.parse(bin['x1'])) / 2);
+                                bin['x0'] = new Date(bin['x0']);
+                                bin['x1'] = new Date(bin['x1']);
+                            })
+                        
+                            var genre_bin_data = [];
+                            binned_data.forEach(function(bin) {
+                                genre_bin_data.push({"date" : bin['xMid']});
+                        
+                                counts = countGenres(bin, genreDataGlobal);
+                                genre_counts = counts[0];
+                                umbrella_genre_counts = counts[1];
+                        
+                                genre_labels.forEach(function(umbrella_genre) {
+                                    var last_index = genre_bin_data.length - 1;
+                                    genre_bin_data[last_index][umbrella_genre] = umbrella_genre_counts[umbrella_genre]["userCount"];
+                                });
+                            });
+                        
+                            // Make a stack that will convert the above data into an array of series
+                            // where there will be a series for each key given
+                            var stack = d3.stack()
+                                          .keys(genre_labels)
+                        
+                            // get the series from stacking the data
+                            var series = stack(genre_bin_data);
+                        
+                            var max_height = d3.max(series, function(s) { 
+                                return d3.max(s, function(d) {
+                                    return d[1];
+                                }); 
+                            });
+        
+                            // Create a new scale from 0 to the maximum height
+                            newYScale = d3.scaleLinear()
+                                        .domain([0., max_height])
+                                        .range([yAxis["length"], 0]);
+    
+
+                            lines.select(".brush").call(brush.move, null);
+                        } else {
+                            if (!idleTimeout) return idleTimeout = setTimeout(idled, 350); // This allows to wait a little bit
+
+                            // data = songData.filter(d => d['dateAdded']);
+                            // console.log("anti brush");
+                            // console.log(data);
+                            // var binned_data = bin_data(data);
+                            // binned_data.forEach(function(bin) {
+                            //     bin['xMid'] = new Date((Date.parse(bin['x0']) + Date.parse(bin['x1'])) / 2);
+                            //     bin['x0'] = new Date(bin['x0']);
+                            //     bin['x1'] = new Date(bin['x1']);
+                            // })
+                        
+                            // var genre_bin_data = [];
+                            // binned_data.forEach(function(bin) {
+                            //     genre_bin_data.push({"date" : bin['xMid']});
+                        
+                            //     counts = countGenres(bin, genreDataGlobal);
+                            //     genre_counts = counts[0];
+                            //     umbrella_genre_counts = counts[1];
+                        
+                            //     genre_labels.forEach(function(umbrella_genre) {
+                            //         var last_index = genre_bin_data.length - 1;
+                            //         genre_bin_data[last_index][umbrella_genre] = umbrella_genre_counts[umbrella_genre]["userCount"];
+                            //     });
+                            // });
+                        
+                            // // Make a stack that will convert the above data into an array of series
+                            // // where there will be a series for each key given
+                            // var stack = d3.stack()
+                            //               .keys(genre_labels)
+                        
+                            // // get the series from stacking the data
+                            // var series = stack(genre_bin_data);    
+
+                            // // Remove all previously drawn lines
+                            // lines.selectAll("path").remove();
+
+                            // lines.selectAll("layers")
+                            // .data(series)
+                            // .enter()
+                            // .append("path")
+                            //     .attr("class", function(d, i) {
+                            //         return "line " + genre_labels[i];
+                            //     })
+                            //     .attr("d", area(xScale, yScale))
+                            //     // Remove fill and show the line in black
+                            //     .style("fill", function(d, i) {
+                            //         return color(genre_labels[i]);
+                            // })
+
+                            newXScale = xScale;
+                            newYScale = yScale;
+
+                        }
+                        console.log(series);
+                        xAxis["group"].call(d3.axisBottom(newXScale));
+                        yAxis["group"].call(d3.axisLeft(newYScale));
+
+                        // lines.selectAll("path").remove();
+                        lines.selectAll("path")
+                        // .data(series)
+                        // .enter()
+                        // .append("path")
+                        //     .attr("class", function(d, i) {
+                        //         return "line " + genre_labels[i];
+                        //     })
+                            .attr("d", area(newXScale, newYScale))
+                            // // Remove fill and show the line in black
+                            // .style("fill", function(d, i) {
+                            //     return color(genre_labels[i]);
+                            // })
+
+                    });
+    lines.append("g")
+        .attr("class", "brush")
+        .call(brush);
+    // lines.call(brush);
 
 }
 
@@ -319,8 +481,8 @@ function generateAxes(selector, xAxisLength, yAxisLength, margin) {
                     .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
 
     // Axis generators
-    var xAxisCallLine = d3.axisBottom()
-    var yAxisCallLine = d3.axisLeft()
+    var xAxisCallLine = d3.axisBottom();
+    var yAxisCallLine = d3.axisLeft();
 
     // Axis Groups
     var xAxisGroupLine = svg.append("g")

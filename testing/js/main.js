@@ -41,11 +41,7 @@ function classifyUmbrellaGenre(genre) {
     return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isOther};
 }
 
-
-
-
-
-
+var spotify_preview = d3.select("#spotify-preview").style("display", "none");
 
 
 ///////////////////////////////
@@ -86,13 +82,13 @@ var svg_leg = d3.select("#legend")
         + ", " + (margin.top-30) + ")");
 
 
-var svgStats = d3.select("#stats-area")
-    .append("svg")
-        .attr("width", axisLengthStatsX + margin.left + margin.right)
-        .attr("height", axisLengthStatsY + margin.top + margin.bottom)
-    .append("g")
-        .attr("transform", "translate(" + margin.left 
-        + ", " + margin.top + ")")
+// var svgStats = d3.select("#stats-area")
+//     .append("svg")
+//         .attr("width", axisLengthStatsX + margin.left + margin.right)
+//         .attr("height", axisLengthStatsY + margin.top + margin.bottom)
+//     .append("g")
+//         .attr("transform", "translate(" + margin.left 
+//         + ", " + margin.top + ")")
 
 
 ///////////////////////////////
@@ -438,7 +434,7 @@ var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space
 
 var tipForGenre = d3.tip().attr('class', 'd3-tip')
     .html(function(d) {
-        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + d.genre + nbsp.repeat(0) + "</h4></span><br>";
+        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + d.name + nbsp.repeat(0) + "</h4></span><br>";
         text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.energy) + "</span><br>";
         text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.liveness) + "</span><br>";
         text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(d.speechiness) + "</span><br>";
@@ -499,13 +495,13 @@ var genreData;
 var genreDataPromise = d3.json("data/genre_data.json").then(function(genredata) {
     // Do the following for every element in the json file
     genredata.forEach(function(g){
-        g.isRock = classifyUmbrellaGenre(g.genre).isRock; 
-        g.isPop = classifyUmbrellaGenre(g.genre).isPop; 
-        g.isRap = classifyUmbrellaGenre(g.genre).isRap; 
-        g.isMetal = classifyUmbrellaGenre(g.genre).isMetal; 
-        g.isClassical = classifyUmbrellaGenre(g.genre).isClassical;
-        g.isElectronic = classifyUmbrellaGenre(g.genre).isElectronic;
-        g.isOther = classifyUmbrellaGenre(g.genre).isOther;
+        g.isRock = classifyUmbrellaGenre(g.name).isRock; 
+        g.isPop = classifyUmbrellaGenre(g.name).isPop; 
+        g.isRap = classifyUmbrellaGenre(g.name).isRap; 
+        g.isMetal = classifyUmbrellaGenre(g.name).isMetal; 
+        g.isClassical = classifyUmbrellaGenre(g.name).isClassical;
+        g.isElectronic = classifyUmbrellaGenre(g.name).isElectronic;
+        g.isOther = classifyUmbrellaGenre(g.name).isOther;
         g.userCount = 0;
     })
 
@@ -584,7 +580,7 @@ genreDataPromise.then(function(genredata) {
         })
 
         genreData.forEach(function(genre) {
-            key = genre['genre'].toLowerCase()
+            key = genre['name'].toLowerCase()
             genre_in_library = genre_counts[key];
             if (genre_in_library) {
                 genre.userCount = genre_counts[key]["userCount"];
@@ -766,7 +762,7 @@ function updateGenrePlot(data) {
     // 1 -- JOIN new data with old elements.
     var points = svg.selectAll("circle") // Genre scatterplot
         .data(data, function(d){  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
-            return d.genre;
+            return d.name;
         });
 
     // 2 -- EXIT old elements not present in new data.
@@ -835,6 +831,15 @@ function updateGenrePlot(data) {
                 })
             .on("mouseover", tipForGenre.show)
             .on("mouseout", tipForGenre.hide)
+            .on("click", function(genre, i) {
+                if (spotify_preview.style("display") == "none") {
+                    spotify_preview.style("display", "block");
+                }
+                console.log(genre);
+                spotify_preview.html(
+                    '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
+                )
+            })
             .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
                 .attr("fill", function(d){
                     if (d.isRock) {
@@ -1099,6 +1104,14 @@ function updateSongPlot(data1) {
             .attr("r", 3)
             .on("mouseover", tipForSong.show)
             .on("mouseout", tipForSong.hide)
+            .on("click", function(song, i) {
+                if (spotify_preview.style("display") == "none") {
+                    spotify_preview.style("display", "block");
+                }
+                spotify_preview.html(
+                    '<iframe src="https://open.spotify.com/embed/track/track_id" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('track_id', song.uri.split(":")[2])
+                )
+            })
             .merge(points1) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
                 .attr("fill", function(d){
                     if (d.isRock) {
@@ -1170,9 +1183,6 @@ function updateSongPlot(data1) {
 ///////////////////////////////
 ///////////////////////////////
 
-
-
-
 var top_artists_list = d3.select("#top-artists")
 d3.json("data/data_top_artists_short_term.json").then(function (artist_data) {
     top_artists_list.selectAll('li')
@@ -1182,18 +1192,34 @@ d3.json("data/data_top_artists_short_term.json").then(function (artist_data) {
                     .attr("type", "button")
                     .attr("class", "list-group-item")
                     .style("outline", "none")
-                    .on("click", function(f, i){
+                    .on("click", function(artist, i){
+                        console.log(artist);
                         $that = $(this);
                         am_active = $that.hasClass('active');
 
                         $that.parent().parent().parent().find('button').removeClass('active');
                         if (! am_active) {
                             $that.addClass('active');   
-                        }                                                                       
+                        }
+
+                        var artist_name = artist['name'];
+
+                        just_artist_songs = libraryData.filter(function(d) {
+                            return d['artists'].includes(artist_name);
+                        });
+                        updateSongPlot(just_artist_songs);
+
+                        just_artist_genres = genreData.filter(function(genre) {
+                            return artist['genres'].includes(genre['name'].toLowerCase());
+                        });
+
+                        console.log(just_artist_genres);
+                        updateGenrePlot(just_artist_genres);
                     })
-                    .html(function(d, i) {
-                        return d['name']
+                    .html(function(artist, i) {
+                        return artist['name']
                     });
+
 });
 
 var top_tracks_list = d3.select("#top-tracks")
