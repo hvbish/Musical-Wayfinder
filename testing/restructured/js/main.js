@@ -261,9 +261,9 @@ function updateSongPlot(songData, plot) {
     var yScale;
 
     // Choose which xScale to use based on selected attribute
-    if (selectedAttributeX == 'loudness') {
+    if (selectedAttributeY == 'loudness') {
         yScale = yLoudnessToPix;
-    } else if (selectedAttributeX == 'popularity') {
+    } else if (selectedAttributeY == 'popularity') {
         yScale = yPopularityToPix;
     } else {
         yScale = yAttrToPix;
@@ -464,9 +464,9 @@ function updateGenrePlot(genreData, plot) {
     var yScale;
 
     // Choose which xScale to use based on selected attribute
-    if (selectedAttributeX == 'loudness') {
+    if (selectedAttributeY == 'loudness') {
         yScale = yLoudnessToPix;
-    } else if (selectedAttributeX == 'popularity') {
+    } else if (selectedAttributeY == 'popularity') {
         yScale = yPopularityToPix;
     } else {
         yScale = yAttrToPix;
@@ -855,8 +855,10 @@ function resetPlots() {
 // It will look at the selectionContext dictionary and have access to global
 // songData and genreData objects that it will then filter down based on the selection
 function updateAllPlots() {
-    selectionContext['selectedAttributeX'] = $("#x-attribute-select").val(); // This is the genre that has been selected by the user
-    selectionContext['selectedAttributeY'] = $("#y-attribute-select").val(); // This is the genre that has been selected by the user
+    selectionContext['selectedAttributeX'] = $("#x-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
+    selectionContext['selectedAttributeY'] = $("#y-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
+    console.log(selectionContext['selectedAttributeX']);
+    console.log(selectionContext['selectedAttributeY']);
 
     // We want to filter our data through a set of filters
     // Start out with the data in its full state
