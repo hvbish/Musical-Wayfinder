@@ -392,75 +392,17 @@ function drawStackedLinePlot(songData, svg, xAxis, yAxis) {
                         } else {
                             if (!idleTimeout) return idleTimeout = setTimeout(idled, 350); // This allows to wait a little bit
 
-                            // data = songData.filter(d => d['dateAdded']);
-                            // console.log("anti brush");
-                            // console.log(data);
-                            // var binned_data = bin_data(data);
-                            // binned_data.forEach(function(bin) {
-                            //     bin['xMid'] = new Date((Date.parse(bin['x0']) + Date.parse(bin['x1'])) / 2);
-                            //     bin['x0'] = new Date(bin['x0']);
-                            //     bin['x1'] = new Date(bin['x1']);
-                            // })
-                        
-                            // var genre_bin_data = [];
-                            // binned_data.forEach(function(bin) {
-                            //     genre_bin_data.push({"date" : bin['xMid']});
-                        
-                            //     counts = countGenres(bin, genreDataGlobal);
-                            //     genre_counts = counts[0];
-                            //     umbrella_genre_counts = counts[1];
-                        
-                            //     genre_labels.forEach(function(umbrella_genre) {
-                            //         var last_index = genre_bin_data.length - 1;
-                            //         genre_bin_data[last_index][umbrella_genre] = umbrella_genre_counts[umbrella_genre]["userCount"];
-                            //     });
-                            // });
-                        
-                            // // Make a stack that will convert the above data into an array of series
-                            // // where there will be a series for each key given
-                            // var stack = d3.stack()
-                            //               .keys(genre_labels)
-                        
-                            // // get the series from stacking the data
-                            // var series = stack(genre_bin_data);    
-
-                            // // Remove all previously drawn lines
-                            // lines.selectAll("path").remove();
-
-                            // lines.selectAll("layers")
-                            // .data(series)
-                            // .enter()
-                            // .append("path")
-                            //     .attr("class", function(d, i) {
-                            //         return "line " + genre_labels[i];
-                            //     })
-                            //     .attr("d", area(xScale, yScale))
-                            //     // Remove fill and show the line in black
-                            //     .style("fill", function(d, i) {
-                            //         return color(genre_labels[i]);
-                            // })
-
                             newXScale = xScale;
                             newYScale = yScale;
 
                         }
+
                         console.log(series);
                         xAxis["group"].call(d3.axisBottom(newXScale));
                         yAxis["group"].call(d3.axisLeft(newYScale));
 
-                        // lines.selectAll("path").remove();
                         lines.selectAll("path")
-                        // .data(series)
-                        // .enter()
-                        // .append("path")
-                        //     .attr("class", function(d, i) {
-                        //         return "line " + genre_labels[i];
-                        //     })
                             .attr("d", area(newXScale, newYScale))
-                            // // Remove fill and show the line in black
-                            // .style("fill", function(d, i) {
-                            //     return color(genre_labels[i]);
-                            // })
 
                     });
     lines.append("g")
