@@ -434,7 +434,7 @@ var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space
 
 var tipForGenre = d3.tip().attr('class', 'd3-tip')
     .html(function(d) {
-        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + d.genre + nbsp.repeat(0) + "</h4></span><br>";
+        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + d.name + nbsp.repeat(0) + "</h4></span><br>";
         if (allGenreToggle) {
             text += "<strong> In my library: </strong> <span style='color:"+"red"+";text-transform:capitalize'>" + nbsp.repeat(0) + (d.userCountFull) + "</span><br>";
         } else {
