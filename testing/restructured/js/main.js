@@ -889,7 +889,9 @@ function updateLinePlot(songData, genreData, plot) {
         .attr("class", "brush")
         .call(brush);
 
-    yAxis['label'].text("Counts");
+    yAxis['label'].text("Counts")
+        .attr("x", 0)
+        .attr("y",plot['margin']['left']*0.2);
     xAxis['label'].text("Time");
 }
 
@@ -1043,6 +1045,7 @@ $("#toggle-button")
 
 // Add event listener to the jQuery slider
 $('#slider').dragslider({
+        width: 20,
         min: 2008,
         max: 2019,
         animate: true,
@@ -1058,6 +1061,7 @@ $('#slider').dragslider({
             }
         }    
     });
+
     
 
 // Create the umbrella genre selection legend
@@ -1144,7 +1148,7 @@ function makeTopArtistsList() {
                         updateAllPlots();
                     })
                     .html(function(artist, i) {
-                        return (i+1) + ". " + artist['name']
+                        return (i+1) + ". " + artist['name'].bold()
                     });
 }
 
@@ -1182,7 +1186,8 @@ function makeTopTracksList() {
                         updateAllPlots();
                     })
                     .html(function(track, i) {
-                        return track['name']
+                        console.log(track);
+                        return (i+1) + ". " + track['name'].bold() + " -- " + track['artists'].join(", ")
                     });
 }
 
@@ -1215,6 +1220,7 @@ function loadPage() {
     selectionContext['selectedAttributeY'] = $("#y-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
 
     var margin = { left:100, right:200, top:50, bottom:100 };
+    var marginLinePlot = { left:100, right:200, top:50, bottom:0 };
     
     // Generate an svg and a set of x and y axes of length 500 and 500 using the above margin
     // generateAxes takes parameters (selector, xAxisLength, yAxisLength, margin, xOrigin, yOrigin)
@@ -1233,14 +1239,14 @@ function loadPage() {
     var yAxisGenres = plotGenres[2];
     plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : margin};
 
-    var plotLine = generateAxes("#line-plot-area", 1000, 100, margin, 0, 1000);
+    var plotLine = generateAxes("#line-plot-area", 1300, 100, marginLinePlot, 0, 1000);
     var svgLine = plotLine[0];
     var xAxisLine = plotLine[1];
     var yAxisLine = plotLine[2];
-    plots['line-chart'] = {"svg" : svgLine, "xAxis" : xAxisLine, "yAxis" : yAxisLine, "margin" : margin};
+    plots['line-chart'] = {"svg" : svgLine, "xAxis" : xAxisLine, "yAxis" : yAxisLine, "margin" : marginLinePlot};
 
     // TODO: Replace this with a "generateSvg" function since we don't care about the axes
-    var marginLegend = { left : 100, right : 0, top : 0, bottom : 0};
+    var marginLegend = { left : 100, right : 0, top : 0, bottom : 0}; // Doesn't seem to do anything
     var plotLegend = generateAxes("#legend", 100, 200, marginLegend, 0, 200);
     var svgLegend = plotLegend[0];
     plots['legend'] = {"svg" : svgLegend}

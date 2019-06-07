@@ -22,34 +22,31 @@
 
     <!-- Bootstrap grid setup -->
     <div class="container">
-
         <div class="row">
             <br> <br> <br>
         </div>      
 
-
-        <div class="row row-centered">
-
-            <div class="col-md-1">
+        <div class="row row-no-gutters">
+            <div class="col-md-5 text-left">
+                <label style="font-size:30px; justify-content: left;">USERNAME<span id="username"></span>'s Library</label>
+                <br>
             </div>
 
+            <div class="col-md-6">
+            </div>
 
+            <div class="col-md-5 text-right"></div>
+                <!-- Reset button -->
+                <button id="reset-button" class="btn btn-primary" style="justify-content: right">Reset Selection</button> 
+            </div>
         </div>
-
 
         <div class="row">
             <br> 
         </div> 
 
         <div class="row row-no-gutters">
-
-
             <div class="col-md-5">
-
-                <div class="row">
-                    <br><br><br>
-                </div> 
-
                 <!-- Time slider -->
                 <!-- <div id="slider-div">
                     <label>Time range: <span id="time"></span></label>
@@ -57,113 +54,130 @@
                 </div> -->
                 <!-- Time slider with range handles? -->
                 <div id="slider-div" z-index=-1>
-                    <label>Time range: <span id="time"></span></label>
-                    <div id="slider"></div>
-                    <div id="line-plot-area">
-                    </div>
+                    <div id="line-plot-area"></div>
+                    <div id="slider" class="slider" style="width:1280px; margin-top:0px; margin-left:100px; justify-content: left"></div>
+                    <label style="font-size:30px; margin-left:100px"><br>2012-2019<span id="time"></span></label>  
                 </div>
             </div>
+        </div>
 
-            <div class="col-sm-1">
+        
+    </div>
+
+    <div class="row row-no-gutters">
+        <div class="col-md-5">
+        </div>
+
+        <div class="col-md-5 text-right">
+            <!-- Toggle button -->
+            <button id="toggle-button" class="btn btn-default">Current Working Toggle</button>
+            <!-- <button id="toggle-button-library" class="btn btn-default disabled">Library Genres</button> -->
+
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-default active">
+                    <input type="radio" name="options" id="toggle-allgenre" autocomplete="off" checked> All Genres
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="options" id="toggle-librarygenre" autocomplete="off"> My Genres
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <!-- Song Plot -->
+            <div id="song-plot-area">
+            </div>
+        </div>
+
+        <div class="col-sm-1">
+            <div class="row">
+                <br> <br> <br><br> <br>
             </div>
 
-            <div class="col-sm-2">
-                <div class="row row-no-gutters">
-                    <!-- X Axis dropdown box -->
-                    <p text-align:right> X-Axis: </p><select id="x-attribute-select" class="form-control">
-                        <option selected value="energy">Energy</option>
-                        <option value="liveness">Liveness</option>
-                        <option value="speechiness">Speechiness</option>
-                        <option value="acousticness">Acousticness</option>
-                        <option value="instrumentalness">Instrumentalness</option>
-                        <option value="danceability">Danceability</option>
-                        <option value="loudness">Loudness</option>
-                        <option value="valence">Valence</option>
-                        <option value="popularity">Popularity</option>
-                    </select>
-                </div>
-
-                <div class="row">
-                    <br> 
-                </div>
-
-                <div class="row row-no-gutters">
-                    <!-- Y Axis dropdown box -->
-                    <p text-align:left> Y-Axis: </p><select id="y-attribute-select" class="form-control">
-                        <option value="energy">Energy</option>
-                        <option value="liveness">Liveness</option>
-                        <option value="speechiness">Speechiness</option>
-                        <option selected value="acousticness">Acousticness</option>
-                        <option value="instrumentalness">Instrumentalness</option>
-                        <option value="danceability">Danceability</option>
-                        <option value="loudness">Loudness</option>
-                        <option value="valence">Valence</option>
-                        <option value="popularity">Popularity</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="col-md-2">
+    
+            <div class="row">
+                <br> 
                 <div id="legend">
                 </div>
             </div>
 
-            <div class="col-sm-2">
-                <div class="row">
-                    <br><br><br> 
-                </div>
-                <!-- Play button -->
-                <!--<button id="play-button" class="btn btn-primary">Play</button>-->
-                <!-- Toggle button -->
-               <button id="toggle-button" class="btn btn-primary">Toggle All/Library Genres</button>
+            <div class="row">
+                    <br> <br> <br> <br> <br>
             </div>
-        </div>
+
+            <div class="row row-no-gutters">
+                <!-- X Axis dropdown box -->
+                <p text-align:right> X-Axis: </p><select id="x-attribute-select" class="form-control">
+                    <option selected value="energy">Energy</option>
+                    <option value="liveness">Liveness</option>
+                    <option value="speechiness">Speechiness</option>
+                    <option value="acousticness">Acousticness</option>
+                    <option value="instrumentalness">Instrumentalness</option>
+                    <option value="danceability">Danceability</option>
+                    <option value="loudness">Loudness</option>
+                    <option value="valence">Valence</option>
+                    <option value="popularity">Popularity</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <br> 
+            </div>
+
+            <div class="row row-no-gutters">
+                <!-- Y Axis dropdown box -->
+                <p text-align:left> Y-Axis: </p><select id="y-attribute-select" class="form-control">
+                    <option value="energy">Energy</option>
+                    <option value="liveness">Liveness</option>
+                    <option value="speechiness">Speechiness</option>
+                    <option selected value="acousticness">Acousticness</option>
+                    <option value="instrumentalness">Instrumentalness</option>
+                    <option value="danceability">Danceability</option>
+                    <option value="loudness">Loudness</option>
+                    <option value="valence">Valence</option>
+                    <option value="popularity">Popularity</option>
+                </select>
+            </div>
 
 
         </div>
 
-
-        <div class="row">
-            <div class="col-md-6">
-                <div id="song-plot-area">
-                </div>
-            </div>
-            <div class="col-md-6">
-            </div>
-            <div class="col-md-6">
-                <div id="genre-plot-area">
-                </div>
+        <div class="col-md-6">
+            <!-- Genre Plot -->
+            <div id="genre-plot-area">
             </div>
         </div>
-
-
-        <div class="row">
-            <div class="col-md-6">
-                
-            </div>
-            <div class="col-md-6">
-            </div>
-            <div class="col-md-6">
-                <div class="row row-no-gutters" id="stats-area">
-                    <div class="col-lg-6">
-                        <p> <strong>Top Artists</strong> </p>
-                        <ul class="list-group" id="top-artists" style="max-height: 300px; overflow: scroll;">
-                        </ul>     
-                    </div>
-                    <div class="col-lg-6">
-                        <p> <strong>Top Tracks</strong> </p>
-                        <ul class="list-group" id="top-tracks" style="max-height: 300px; overflow: scroll;">
-                        </ul>             
-                    </div>
-                </div>
-                <div class="row row-no-gutters" id="stats-area">
-                    <div class="col-lg-6" id="spotify-preview">
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
+
+    <div class="row">
+
+
+        <div class="col-md-6" style="width:100%; margin-left:100px;">
+            <div class="row" id="stats-area"style="width:90%;">
+                <div class="col" style="width:30%; float:left">
+                    <p style="font-size:25px; text-decoration:underline"> <strong>Top Artists</strong> </p>
+                    <ul class="list-group" id="top-artists" style="max-height: 500px; overflow: scroll; font-size:18px">
+                    </ul>     
+                </div>
+
+                <div class="col" id="spotify-preview" style="float:center">
+                </div>
+                
+                <div class="col" style="width:30%; float:right">
+                    <p style="font-size:25px; text-decoration:underline"> <strong>Top Tracks</strong> </p>
+                    <ul class="list-group" id="top-tracks" style="max-height: 500px; overflow: scroll; font-size:18px">
+                    </ul>             
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</div>
+
 
 
 <!-- External JS libraries -->

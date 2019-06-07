@@ -8,3 +8,7 @@
 button {
   padding: .5em 2em;
 }​
+
+#toggle-button {
+  background-color: #4CAF50;
+}
