@@ -22,7 +22,7 @@ function rgb(r, g, b){
     return ["rgb(",r,",",g,",",b,")"].join("");
   }
 //var genre_colors = ['hotpink',        'firebrick',    'royalblue',     'limegreen',    'goldenrod',       'orange', Black',   'grey'];
-var genre_colors = [rgb(221,158,213), rgb(233, 99, 99), rgb(67,148,179), 	rgb(130, 201, 166), rgb(252,189,116),     rgb(193, 152, 139), rgb(80,80,80),  'lightgray']
+var genre_colors = [rgb(221,158,213), rgb(233, 99, 99), rgb(67,148,179), 	rgb(130, 201, 166), rgb(252,189,116),     rgb(193, 152, 139), rgb(80,80,80),  'silver']
 
 // Takes in a genre name string and returns a dictionary indicating which umbrella genres it belongs to
 var genre_classifiers = {
@@ -1199,8 +1199,16 @@ function loadPage() {
     // We have three time scales to work with for the top artists and track
     // here we start with the short time scale, but we can make an interaction that changes this option
     // TODO: makeTopArtistsList() needs to be updateTopArtistsList() and added to updateAllPlots() for this to work
-    selectionContext['timeScale'] = 'short';
-    // Set the default time range to subset the library over
+    selectionContext['timeScale'] = 'long';
+
+    // Create a Date object with current time so we can set that as the upper limit on the slider
+    now = new Date()
+    // Set the lower limit on the slider to be the date of the earliest song added
+    $('#slider').dragslider({
+        min: d3.min(songDataGlobal, function (s) {return s.dateAdded;}).getFullYear(),
+        max: now.getFullYear(),   
+    });
+    // Set the default slider time range to subset the library over
     selectionContext["timeRange"] = defaultTimeRange;
 
     selectionContext['selectedAttributeX'] = $("#x-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
@@ -1209,7 +1217,7 @@ function loadPage() {
     var margin = { left:100, right:200, top:50, bottom:100 };
     
     // Generate an svg and a set of x and y axes of length 500 and 500 using the above margin
-    // the last two parameters are the xOrigin and yOrigin respectively
+    // generateAxes takes parameters (selector, xAxisLength, yAxisLength, margin, xOrigin, yOrigin)
     // This fully specifies a "plot" that we can drawn on
     // The selector #song-plot-area should reference a div with id song-plot-area
     var plotSongs = generateAxes("#song-plot-area", 500, 500, margin, 0, 500);
