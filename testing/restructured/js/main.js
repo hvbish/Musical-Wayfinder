@@ -16,13 +16,13 @@ var defaultTimeRange = [2010, 2019];
 var parseUTCTime = d3.utcParse("%Y-%m-%dT%H:%M:%SZ")
 
 // The umbrella genre labels we are working with
-var genre_labels = ['Pop',            'Rock',           'Rap',         'Electronic',   'Classical',         'Metal',   'Other'];
+var genre_labels = ['Pop',            'Rock',           'Rap',         'Electronic',   'Classical',         'Jazz', 'Metal',   'Other'];
 // Colors assocated with each umbrella genre
 function rgb(r, g, b){
     return ["rgb(",r,",",g,",",b,")"].join("");
   }
-//var genre_colors = ['hotpink',        'firebrick',    'royalblue',     'limegreen',    'goldenrod',       'Black',   'grey'];
-var genre_colors = [rgb(221,158,213), rgb(233, 99, 99), rgb(67,148,179), 	rgb(130, 201, 166), rgb(252,189,116),     rgb(80,80,80),  'lightgray']
+//var genre_colors = ['hotpink',        'firebrick',    'royalblue',     'limegreen',    'goldenrod',       'orange', Black',   'grey'];
+var genre_colors = [rgb(221,158,213), rgb(233, 99, 99), rgb(67,148,179), 	rgb(130, 201, 166), rgb(252,189,116),     rgb(193, 152, 139), rgb(80,80,80),  'lightgray']
 
 // Takes in a genre name string and returns a dictionary indicating which umbrella genres it belongs to
 var genre_classifiers = {
