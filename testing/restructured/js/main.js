@@ -13,10 +13,76 @@ var recentlyPlayedGlobal;
 // The default time range for the jQuery slider
 var defaultTimeRange = [2010, 2019];
 
+var parseUTCTime = d3.utcParse("%Y-%m-%dT%H:%M:%SZ")
+
 // The umbrella genre labels we are working with
-var genre_labels = ['Pop',    'Rock',   'Rap',      'Electronic','Classical','Metal',   'Other']
+var genre_labels = ['Pop',            'Rock',           'Rap',         'Electronic',   'Classical',         'Metal',   'Other'];
 // Colors assocated with each umbrella genre
-var genre_colors = ['hotpink','firebrick','royalblue','limegreen', 'goldenrod', 'Black',   'grey']
+function rgb(r, g, b){
+    return ["rgb(",r,",",g,",",b,")"].join("");
+  }
+//var genre_colors = ['hotpink',        'firebrick',    'royalblue',     'limegreen',    'goldenrod',       'Black',   'grey'];
+var genre_colors = [rgb(221,158,213), rgb(233, 99, 99), rgb(67,148,179), 	rgb(130, 201, 166), rgb(252,189,116),     rgb(80,80,80),  'lightgray']
+
+// Takes in a genre name string and returns a dictionary indicating which umbrella genres it belongs to
+var genre_classifiers = {
+    "Rock" : function(genre) { 
+        return genre.toLowerCase().includes('rock') || 
+                genre.toLowerCase().includes('punk') || 
+                genre.toLowerCase().includes('grunge') || 
+                genre.toLowerCase().includes('garage');
+    },
+    "Pop" : function(genre) {
+        return genre.toLowerCase().includes('pop')
+    },
+    "Rap" : function(genre) {
+        return ((genre.toLowerCase().includes('rap'))
+         || (genre.toLowerCase().includes('hip hop')) 
+         || (genre.toLowerCase().includes('hiphop')))
+         && (!genre.toLowerCase().includes('traprun'))
+         && (!genre.toLowerCase().includes('electronic trap'))
+         && (!genre.toLowerCase().includes('bass trap'));
+    },
+    "Electronic" : function(genre) {
+        return ((genre.toLowerCase().includes('electro')) || 
+                (genre.toLowerCase().includes('tronica')) || 
+                (genre.toLowerCase().includes('house')) || 
+                (genre.toLowerCase().includes('techno')) || 
+                (genre.toLowerCase().includes('edm')) || 
+                (genre.toLowerCase().includes('trance')) || 
+                (genre.toLowerCase().includes('dub')) || 
+                (genre.toLowerCase().includes('chip')) || 
+                (genre.toLowerCase().includes('glitch')) || 
+                (genre.toLowerCase().includes('jungle')) ||
+                (genre.toLowerCase().includes('traprun')) ||
+                (genre.toLowerCase().includes('bass trap'))) && 
+                (!genre.toLowerCase().includes('edmunds')) && 
+                (!genre.toLowerCase().includes('edmonton')) && 
+                (!genre.toLowerCase().includes('dublin'));
+    },
+    "Classical" : function(genre) {
+        return isClassical = genre.toLowerCase().includes('classical');
+    },
+    "Metal" : function(genre) {
+        return (genre.toLowerCase().includes('metal')) || 
+                (genre.toLowerCase().includes('death')) || 
+                (genre.toLowerCase().includes('hardcore')) || 
+                (genre.toLowerCase().includes('thrash'));
+    },
+    "Jazz" : function(genre) {
+        return (genre.toLowerCase().includes('jazz')) || 
+                (genre.toLowerCase().includes('ragtime'));
+    },
+    "Other" : function(genre) {
+        return !(genre_classifiers["Rock"](genre) || 
+                 genre_classifiers["Pop"](genre) || 
+                 genre_classifiers["Rap"](genre) || 
+                 genre_classifiers["Electronic"](genre) || 
+                 genre_classifiers["Classical"](genre) || 
+                 genre_classifiers["Metal"](genre));
+    }
+}
+
 // Map all of the umbrella genres to a unique color
 var umbrellaGenreToColor = d3.scaleOrdinal()
     .domain(genre_labels)
@@ -25,7 +91,7 @@ var umbrellaGenreToColor = d3.scaleOrdinal()
 // The div to put the spotify embedded players in
 // TODO: move selection / default styling to loadPage() ?
 var spotify_preview = d3.select("#spotify-preview").style("display", "none");
-
+genre_labels
 // This is a dictionary containing all of our plots
 // Each plot has an svg element and an x and y axis
 var plots = {};
@@ -37,6 +103,27 @@ var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space
 ///////////////////////
 // UTILITY FUNCTIONS //
 ///////////////////////
+
+function classifyUmbrellaGenre(genre) {
+    // genre
+    var umbrellas = [];
+    genre_labels.forEach(function(umbrella) {
+        if (genre_classifiers[umbrella](genre)) {
+            umbrellas.push(umbrella);
+        }
+    });
+    return umbrellas;
+    // isRock = genre.toLowerCase().includes('rock');	    isRock = (genre.toLowerCase().includes('rock')) || (genre.toLowerCase().includes('punk')) || (genre.toLowerCase().includes('grunge') || (genre.toLowerCase().includes('garage')));
+    // isPop = genre.toLowerCase().includes('pop');	    isPop = ;
+    // isRap = genre.toLowerCase().includes('rap');	    isRap = ;
+    // isMetal = genre.toLowerCase().includes('metal');	    isMetal = 
+    // isClassical = genre.toLowerCase().includes('classical');	    
+    // isElectronic = genre.toLowerCase().includes('elect');	    isElectronic = 
+    // isOther = 	    isJazz = (genre.toLowerCase().includes('jazz')) || (genre.toLowerCase().includes('ragtime'));
+    // return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isOther};	    isOther = !(isRock || isPop || isRap || isElectronic || isClassical || isMetal || isJazz)
+    // return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isJazz, isOther};
+}
+
 
 // Create a plot to draw things
 // selector should be e.g. "#line-chart" to select a div on the page with id line-chart
@@ -145,27 +232,11 @@ function countGenres(songData, genreData) {
             var umbrella_weight = 1. / num_umbrella_genres;
             // umbrella_weight = weight;
             // Do the same for the umbrella genres
-            if (song.isRock) {
-                umbrella_genre_counts["Rock"]["userCount"] += umbrella_weight;
-            }
-            if (song.isPop) {
-                umbrella_genre_counts["Pop"]["userCount"] += umbrella_weight;
-            }
-            if  (song.isRap) {
-                umbrella_genre_counts["Rap"]["userCount"] += umbrella_weight;
-            }
-            if  (song.isMetal) {
-                umbrella_genre_counts["Metal"]["userCount"] += umbrella_weight;
-            }
-            if  (song.isClassical) {
-                umbrella_genre_counts["Classical"]["userCount"] += umbrella_weight;
-            }
-            if  (song.isElectronic) {
-                umbrella_genre_counts["Electronic"]["userCount"] += umbrella_weight;
-            }
-            if  (song.isOther) {
-                umbrella_genre_counts["Other"]["userCount"] += umbrella_weight;
-            }
+            genre_labels.forEach(function(umbrella) {
+                if (song["is" + umbrella]) {
+                    umbrella_genre_counts[umbrella]["userCount"] += umbrella_weight;
+                }
+            });
         });
     });
 
@@ -189,11 +260,10 @@ function updateSongPlot(songData, plot) {
     // Define the origin of the plot coordinate system
     var xOrigin = xAxis['xOrigin']
     var yOrigin = yAxis['yOrigin'];
-
-    // Filter data based on user selection //
-    var selectedAttributeX = selectionContext['selectedAttributeX']; // This is the genre that has been selected by the user
-    var selectedAttributeY = selectionContext['selectedAttributeY']; // This is the genre that has been selected by the user
     
+    var selectedAttributeX = selectionContext["selectedAttributeX"];
+    var selectedAttributeY = selectionContext["selectedAttributeY"];
+
     // The tooltip for songs
     var tipForSong = d3.tip().attr('class', 'd3-tip')
     .html(function(song) {
@@ -331,7 +401,7 @@ function updateSongPlot(songData, plot) {
                     } else if (song.isElectronic) {
                         return umbrellaGenreToColor('Electronic')
                     } else {
-                        return "grey"
+                        return umbrellaGenreToColor('Other')
                     }
                 });
 
@@ -347,7 +417,6 @@ function updateSongPlot(songData, plot) {
 
     // Y Axis
     yAxis['group'].call(d3.axisLeft(yScale));
-
 
     // X Axis Label
     // Capitalize first character in value string and use it as the axis label
@@ -383,10 +452,9 @@ function updateGenrePlot(genreData, plot) {
     var xOrigin = xAxis['xOrigin'];
     var yOrigin = yAxis['yOrigin'];
 
-    // Filter data based on user selection //
-    var selectedAttributeX = selectionContext["selectedAttributeX"]; // This is the genre that has been selected by the user
-    var selectedAttributeY = selectionContext["selectedAttributeY"]; // This is the genre that has been selected by the user
-
+    var selectedAttributeX = selectionContext["selectedAttributeX"];
+    var selectedAttributeY = selectionContext["selectedAttributeY"];
+    
     // Add tool tips to points in plot
     var tipForGenre = d3.tip()
                         .attr('class', 'd3-tip')
@@ -532,7 +600,7 @@ function updateGenrePlot(genreData, plot) {
                 } else if (genre.isElectronic) {
                     return umbrellaGenreToColor('Electronic')
                 } else {
-                    return "grey"
+                    return umbrellaGenreToColor('Other')
                 }
             });
 
@@ -603,7 +671,6 @@ function updateLinePlot(songData, genreData, plot) {
         bin['x0'] = new Date(bin['x0']);
         bin['x1'] = new Date(bin['x1']);
     })
-
 
     var genre_bin_data = [];
     binned_data.forEach(function(bin) {
@@ -855,10 +922,6 @@ function resetPlots() {
 // It will look at the selectionContext dictionary and have access to global
 // songData and genreData objects that it will then filter down based on the selection
 function updateAllPlots() {
-    selectionContext['selectedAttributeX'] = $("#x-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
-    selectionContext['selectedAttributeY'] = $("#y-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
-    console.log(selectionContext['selectedAttributeX']);
-    console.log(selectionContext['selectedAttributeY']);
 
     // We want to filter our data through a set of filters
     // Start out with the data in its full state
@@ -868,6 +931,7 @@ function updateAllPlots() {
     // Start applying filters to the data based on the state of our application
     // For example here we check if we want to filter by a top artist and filter the library
     // and genre catalog down to just that artist
+
     if (selectionContext['selectedTopArtist']) {
         // clicking on a top artist will set this value to be a specific artist
         // each top artist has a name, genres, and popularity
@@ -892,26 +956,35 @@ function updateAllPlots() {
     }
 
     // Filter the genre data for interactive legend
-    genreDataFilter = genreDataFilter.filter(function(genre) {           
-        return ((genre.isPop && selectionContext["plotPop"]) || 
-                (genre.isRock && selectionContext["plotRock"]) || 
-                (genre.isRap && selectionContext["plotRap"]) || 
-                (genre.isElectronic && selectionContext["plotElectronic"]) ||
-                (genre.isClassical && selectionContext["plotClassical"]) || 
-                (genre.isMetal && selectionContext["plotMetal"]) || 
-                (genre.isOther && selectionContext["plotOther"]));
-    })
+    genreDataFilter = genreDataFilter.filter(function(genre) {   
+        return genre_labels.some(function(umbrella) { 
+            // Each genre has isMetal, isRock etc.
+            // Comapre with the current selectionContext
+            return genre["is" + umbrella] && selectionContext["plot" + umbrella]
+        });
+    });        
 
     // Filter the song data for interactive legend
     songDataFilter = songDataFilter.filter(function(song) {
-        return ((song.isPop && selectionContext['plotPop']) || 
-                (song.isRock && selectionContext['plotRock']) || 
-                (song.isRap && selectionContext['plotRap']) || 
-                (song.isElectronic && selectionContext['plotElectronic']) || 
-                (song.isClassical && selectionContext['plotClassical']) || 
-                (song.isMetal && selectionContext['plotMetal']) || 
-                (song.isOther && selectionContext['plotOther']));
-    });
+        return genre_labels.some(function(umbrella) { 
+            // Each song has isMetal, isRock etc.
+            // Comapre with the current selectionContext
+            return song["is" + umbrella] && selectionContext["plot" + umbrella]
+        });
+    });        
+    
+    // Classified genre filter
+
+    // // Filter the song data for interactive legend
+    // songDataFilter = songDataFilter.filter(function(song) {
+    //     return (((song['classifiedGenre'] == 'Pop') && selectionContext['plotPop']) || 
+    //             (song.isRock && selectionContext['plotRock']) || 
+    //             (song.isRap && selectionContext['plotRap']) || 
+    //             (song.isElectronic && selectionContext['plotElectronic']) || 
+    //             (song.isClassical && selectionContext['plotClassical']) || 
+    //             (song.isMetal && selectionContext['plotMetal']) || 
+    //             (song.isOther && selectionContext['plotOther']));
+    // });
 
     // Apply temporal filters from the time slider
     // TODO: Replace this with extent from time plot brush
@@ -948,13 +1021,17 @@ function updateAllPlots() {
 // The x and y axis drop down menus
 $("#x-attribute-select")
     .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
+        selectionContext['selectedAttributeX'] = $("#x-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
+        console.log(selectionContext['selectedAttributeX']);
         updateAllPlots();
-    })
+    });
 
 $("#y-attribute-select")
     .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
-        updateAllPlots()
-    })
+        selectionContext['selectedAttributeY'] = $("#y-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
+        console.log(selectionContext['selectedAttributeY']);
+        updateAllPlots();
+    });
 
 // A button to reset back to initial conditions
 $("#toggle-button")
@@ -962,7 +1039,7 @@ $("#toggle-button")
         selectionContext["flag"] = !selectionContext["flag"];
         count = 0;
         updateAllPlots();
-    })
+    });
 
 // Add event listener to the jQuery slider
 $('#slider').dragslider({
@@ -1011,42 +1088,26 @@ function makeGenreLegend() {
             .style("text-transform", "capitalize")
             .text(genre);
 
-    // If user clicks on the legend text or SVG, toggle that genre
-    legendRow.on('click', function(d) { 
-            if (genre == "Pop") {
-                selectionContext["plotPop"] ? selectionContext["plotPop"] = false : selectionContext["plotPop"] = true;
-                plotGenre = selectionContext["plotPop"];
-            } else if (genre == "Rock") {
-                selectionContext["plotRock"] ? selectionContext["plotRock"] = false : selectionContext["plotRock"] = true;
-                plotGenre = selectionContext["plotRock"];
-            } else if (genre == "Rap") {
-                selectionContext["plotRap"] ? selectionContext["plotRap"] = false : selectionContext["plotRap"] = true;
-                plotGenre = selectionContext["plotRap"];
-            } else if (genre == "Electronic") {
-                selectionContext["plotElectronic"] ? selectionContext["plotElectronic"] = false : selectionContext["plotElectronic"] = true;
-                plotGenre = selectionContext["plotElectronic"];
-            } else if (genre == "Classical") {
-                selectionContext["plotClassical"] ? selectionContext["plotClassical"] = false : selectionContext["plotClassical"] = true;
-                plotGenre = selectionContext["plotClassical"];
-            } else if (genre == "Metal") {
-                selectionContext["plotMetal"] ? selectionContext["plotMetal"] = false : selectionContext["plotMetal"] = true;
-                plotGenre = selectionContext["plotMetal"];
-            } else if (genre == "Other") {
-                selectionContext["plotOther"] ? selectionContext["plotOther"] = false : selectionContext["plotOther"] = true;
-                plotGenre = selectionContext["plotOther"];
-            }
-            if (plotGenre) {
-                legendRow.attr("fill","black");
-                legendMarker.attr("fill",umbrellaGenreToColor(genre));
-                legendMarker.attr("stroke",umbrellaGenreToColor(genre));
-            } else {
-                legendRow.attr("fill","black");
-                legendMarker.attr("fill","white");
-                legendMarker.attr("stroke","black");
-            };
+        // If user clicks on the legend text or SVG, toggle that genre
+        legendRow.on('click', function() { 
+                // console.log(genre);
+                // if "plotPop" is true, set it to false, if false set it to true
+                selectionContext["plot" + genre] ? selectionContext["plot" + genre] = false : selectionContext["plot" + genre] = true;
 
-            updateAllPlots();
-        });
+                // Change the indicator on the legend for the current genre
+                // If we want to plot Pop, check for "plotPop" 
+                if (selectionContext["plot" + genre]) {
+                    legendRow.attr("fill","black");
+                    legendMarker.attr("fill", umbrellaGenreToColor(genre));
+                    legendMarker.attr("stroke", umbrellaGenreToColor(genre));
+                } else {
+                    legendRow.attr("fill","black");
+                    legendMarker.attr("fill","white");
+                    legendMarker.attr("stroke","black");
+                };
+
+                updateAllPlots();
+            });
     });
 }
 
@@ -1083,7 +1144,7 @@ function makeTopArtistsList() {
                         updateAllPlots();
                     })
                     .html(function(artist, i) {
-                        return artist['name']
+                        return (i+1) + ". " + artist['name']
                     });
 }
 
@@ -1142,6 +1203,9 @@ function loadPage() {
     // Set the default time range to subset the library over
     selectionContext["timeRange"] = defaultTimeRange;
 
+    selectionContext['selectedAttributeX'] = $("#x-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
+    selectionContext['selectedAttributeY'] = $("#y-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
+
     var margin = { left:100, right:200, top:50, bottom:100 };
     
     // Generate an svg and a set of x and y axes of length 500 and 500 using the above margin
@@ -1161,7 +1225,7 @@ function loadPage() {
     var yAxisGenres = plotGenres[2];
     plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : margin};
 
-    var plotLine = generateAxes("#line-plot-area", 500, 500, margin, 0, 500);
+    var plotLine = generateAxes("#line-plot-area", 1000, 100, margin, 0, 1000);
     var svgLine = plotLine[0];
     var xAxisLine = plotLine[1];
     var yAxisLine = plotLine[2];
@@ -1182,6 +1246,59 @@ function loadPage() {
     updateAllPlots();
 }
 
+///////////////////////////////////////////////
+// FUNCTIONS TO PROCESS DATA BEFORE PLOTTING //
+///////////////////////////////////////////////
+
+// A function to process the user library data
+function songDataProcess(songData, genreData) {
+    console.log("In song process!");
+    songData.forEach(function(s) {
+        // Classify each song into umbrella genres
+        // Initialize all isX keys to false
+        genre_labels.forEach(function(umbrella) {
+            s["is" + umbrella] = false;
+        });
+        s.genres.forEach(function(genre) { // Loop through all genres associated with this song and assign umbrella genres to the song
+            // for example this returns ["isRock", "isPop", "isMetal"]
+            var songUmbrellas = classifyUmbrellaGenre(genre);
+            songUmbrellas.forEach(function(umbrella) {
+                s["is" + umbrella] = true;
+            });
+            // this will evaluate to:
+            // s.isRock --> true
+            // s.isPop --> true
+            // s.isMetal --> true
+
+            // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
+            s.dateAdded = parseUTCTime(s.date);
+        })
+    })
+    // Add "closestGenre" key
+    // This is where the distance stuff would go
+
+    // console.log(songData);
+    return songData;
+}
+
+// A function to process the user library data
+function genreDataProcess(songData, genreData) {
+    // Do the following for every element in the json file
+    genreData.forEach(function(g) {
+        genre_labels.forEach(function(umbrella) {
+            g["is" + umbrella] = false;
+        });
+        var songUmbrellas = classifyUmbrellaGenre(g.name);
+        songUmbrellas.forEach(function(umbrella) {
+            g["is" + umbrella] = true;
+        });
+    })
+
+    // console.log(genreData);
+    return genreData;
+}
+
+
 // We create a set of promises for the data we need to generate the plots
 // Only load the page if all of the data loads
 Promise.all([loadSongData(), 
@@ -1198,6 +1315,17 @@ Promise.all([loadSongData(),
     topArtistsGlobal = results[2];
     topTracksGlobal = results[3];
     recentlyPlayedGlobal = results[4];
+
+    // Apply pre-processing of the data before we plot
+    // This will liike like adding keys like "isRock" to the song and genre objects
+    // that we expect to be there when plotting
+    songDataGlobal = songDataProcess(songDataGlobal, genreDataGlobal);
+    genreDataGlobal = genreDataProcess(songDataGlobal, genreDataGlobal);
+
+    // Add a new key to each song in songDataGlobal that corresponds to the *one* genre
+    // that the song should belong to 
+    // ensure song['classifiedGenre'] exists
+    // songDataGlobal = classifySongs(songDataGlobal, genreDataGlobal);
 
     loadPage();
 }, function(error) {
