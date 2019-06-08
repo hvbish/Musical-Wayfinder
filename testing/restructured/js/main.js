@@ -79,7 +79,8 @@ var genre_classifiers = {
                  genre_classifiers["Rap"](genre) || 
                  genre_classifiers["Electronic"](genre) || 
                  genre_classifiers["Classical"](genre) || 
-                 genre_classifiers["Metal"](genre));
+                 genre_classifiers["Metal"](genre)|| 
+                 genre_classifiers["Jazz"](genre));
     }
 }
 
@@ -98,7 +99,7 @@ var plots = {};
 // This is dictionary containing all of the selections the user has made
 var selectionContext = {};
 
-var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space 
+var nbsp = " &nbsp;" // Define a string containing the HTML non-breaking space so you can easily add multiple spaces (with nbsp*10, for example)
 
 ///////////////////////
 // UTILITY FUNCTIONS //
@@ -144,7 +145,7 @@ function generateAxes(selector, xAxisLength, yAxisLength, margin, xOrigin, yOrig
     // Axis Groups
     var xAxisGroup = svg.append("g")
         .attr("class", "x axis")
-        .attr("transform", "translate(0," + xAxisLength + ")");
+        .attr("transform", "translate(0," + yAxisLength + ")");
     var yAxisGroup = svg.append("g")
         .attr("class", "y axis")
 
@@ -236,6 +237,7 @@ function countGenres(songData, genreData) {
                 if (song["is" + umbrella]) {
                     umbrella_genre_counts[umbrella]["userCount"] += umbrella_weight;
                 }
+            
             });
         });
     });
@@ -301,14 +303,14 @@ function updateSongPlot(songData, plot) {
     var xAttrToPix = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
         .domain([0., 1.])
     var xLoudnessToPix = d3.scaleLinear() // This can apply for loudness, which ranges from 0 to -40(?)
-        .domain([-40., 0.])
+        .domain([-60., 0.])
     var xPopularityToPix = d3.scaleLinear() // This can apply for popularity, which ranges from 0 to 100
         .domain([0., 100.])
     
     var yAttrToPix = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
         .domain([0., 1.])
     var yLoudnessToPix = d3.scaleLinear() // This can apply for loudness, which ranges from 0 to -40(?)
-        .domain([-40., 0.])
+        .domain([-60., 0.])
     var yPopularityToPix = d3.scaleLinear() // This can apply for popularity, which ranges from 0 to 100
         .domain([0., 100.])
 
@@ -383,7 +385,7 @@ function updateSongPlot(songData, plot) {
                     spotify_preview.style("display", "block");
                 }
                 spotify_preview.html(
-                    '<iframe src="https://open.spotify.com/embed/track/track_id" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('track_id', song.uri.split(":")[2])
+                    '<iframe src="https://open.spotify.com/embed/track/track_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('track_id', song.uri.split(":")[2])
                 )
             })
             .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
@@ -438,7 +440,9 @@ function updateSongPlot(songData, plot) {
 
     // Update time slider
     // timesLabel.text(times[0] + " - " + times[1])
-    // $("#time")[0].innerHTML = times[0] + " - " + times[1]
+    if (selectionContext["timeRangeBrush"]) {
+        $("#time")[0].innerHTML = selectionContext["timeRangeBrush"][0] + " - " + selectionContext["timeRangeBrush"][1];
+    }
     //$("#time-slider").slider("value", +(time))
 }
 
@@ -502,14 +506,14 @@ function updateGenrePlot(genreData, plot) {
     var xAttrToPix = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
         .domain([0., 1.])
     var xLoudnessToPix = d3.scaleLinear() // This can apply for loudness, which ranges from 0 to -40(?)
-        .domain([-40., 0.])
+        .domain([-60., 0.])
     var xPopularityToPix = d3.scaleLinear() // This can apply for popularity, which ranges from 0 to 100
         .domain([0., 100.])
     
     var yAttrToPix = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
         .domain([0., 1.])
     var yLoudnessToPix = d3.scaleLinear() // This can apply for loudness, which ranges from 0 to -40(?)
-        .domain([-40., 0.])
+        .domain([-60., 0.])
     var yPopularityToPix = d3.scaleLinear() // This can apply for popularity, which ranges from 0 to 100
         .domain([0., 100.])
 
@@ -582,26 +586,18 @@ function updateGenrePlot(genreData, plot) {
                 spotify_preview.style("display", "block");
             }
             spotify_preview.html(
-                '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
+                '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
             )
         })
         .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
             .attr("fill", function(genre) {
-                if (genre.isRock) {
-                    return umbrellaGenreToColor('Rock')
-                } else if (genre.isRap) {
-                    return umbrellaGenreToColor('Rap')
-                } else if (genre.isPop) {
-                    return umbrellaGenreToColor('Pop')
-                } else if (genre.isMetal) {
-                    return umbrellaGenreToColor('Metal')
-                } else if (genre.isClassical) {
-                    return umbrellaGenreToColor('Classical')
-                } else if (genre.isElectronic) {
-                    return umbrellaGenreToColor('Electronic')
-                } else {
-                    return umbrellaGenreToColor('Other')
-                }
+                var genreUmbrella;
+                genre_labels.forEach(function(umbrella) {
+                    if (genre["is" + umbrella]) {
+                        genreUmbrella = umbrella;
+                    }
+                });
+                return umbrellaGenreToColor(genreUmbrella);
             });
 
     // Draw Axes //
@@ -655,7 +651,7 @@ function updateLinePlot(songData, genreData, plot) {
                 
     // Create a function that will bin data in a consistent way on the date added
     // attribute of any data passed
-    var num_bins = 10;
+    var num_bins = 50;
     var bin_edges = xScale.ticks(num_bins);
 
     var bin_data = d3.histogram()
@@ -706,8 +702,9 @@ function updateLinePlot(songData, genreData, plot) {
                  })
                  .y1(function(d) {
                      return yScale(d[1]);
-                 })
+                 }).curve(d3.curveBasis);//.curve(d3.curveCatmullRom.alpha(0.5));
             }
+
 
     // Find the maximum line height among all data points
     // The opaque nesting of d3.max functions and d[1] indexing comes from
@@ -726,7 +723,7 @@ function updateLinePlot(songData, genreData, plot) {
     var yScale = d3.scaleLinear()
                    .domain([0., max_height])
                    .range([yAxis["length"], 0]);
-    
+                       
     /////////////////////
     // HIGHLIGHT GROUP //
     /////////////////////
@@ -776,9 +773,6 @@ function updateLinePlot(songData, genreData, plot) {
         .on("mouseover", highlight)
         .on("mouseleave", noHighlight)
 
-    xAxis["group"].call(xAxis["call"].scale(xScale));
-    yAxis["group"].call(yAxis["call"].scale(yScale));
-
     var clip = svg.append("defs").append("svg:clipPath")
             .attr("id", "clip")
             .append("svg:rect")
@@ -815,84 +809,114 @@ function updateLinePlot(songData, genreData, plot) {
                     ).on("end", function() {
                         var newXScale;
                         var newYScale;
-                        extent = d3.event.selection;
+                        var extent = d3.event.selection;
                         if (extent) {
-                            newXScale = d3.scaleTime()
-                                        .domain(extent.map(xScale.invert))
-                                        .range([0, xAxis["length"]]);
+                            var extentDates = extent.map(xScale.invert);
+                            selectionContext["timeRangeBrush"] = extentDates; 
+
+                            // newXScale = d3.scaleTime()
+                            //             .domain(extentDates)
+                            //             .range([0, xAxis["length"]]);
                             
-                            extent_sec = extent.map(xScale.invert).map(Date.parse);
+                            // extent_sec = extent.map(xScale.invert).map(Date.parse);
 
 
-                            data = songData.filter(d => (Date.parse(d['dateAdded']) > extent_sec[0]) &&
-                                                        (Date.parse(d['dateAdded']) < extent_sec[1])
-                                                    );
+                            // data = songData.filter(d => (Date.parse(d['dateAdded']) > extent_sec[0]) &&
+                            //                             (Date.parse(d['dateAdded']) < extent_sec[1])
+                            //                         );
                             
-                            var binned_data = bin_data(data);
-                            binned_data.forEach(function(bin) {
-                                bin['xMid'] = new Date((Date.parse(bin['x0']) + Date.parse(bin['x1'])) / 2);
-                                bin['x0'] = new Date(bin['x0']);
-                                bin['x1'] = new Date(bin['x1']);
-                            })
+                            // var binned_data = bin_data(data);
+                            // binned_data.forEach(function(bin) {
+                            //     bin['xMid'] = new Date((Date.parse(bin['x0']) + Date.parse(bin['x1'])) / 2);
+                            //     bin['x0'] = new Date(bin['x0']);
+                            //     bin['x1'] = new Date(bin['x1']);
+                            // })
                         
-                            var genre_bin_data = [];
-                            binned_data.forEach(function(bin) {
-                                genre_bin_data.push({"date" : bin['xMid']});
+                            // var genre_bin_data = [];
+                            // binned_data.forEach(function(bin) {
+                            //     genre_bin_data.push({"date" : bin['xMid']});
                         
-                                counts = countGenres(bin, genreDataGlobal);
-                                genre_counts = counts[0];
-                                umbrella_genre_counts = counts[1];
+                            //     counts = countGenres(bin, genreDataGlobal);
+                            //     genre_counts = counts[0];
+                            //     umbrella_genre_counts = counts[1];
                         
-                                genre_labels.forEach(function(umbrella_genre) {
-                                    var last_index = genre_bin_data.length - 1;
-                                    genre_bin_data[last_index][umbrella_genre] = umbrella_genre_counts[umbrella_genre]["userCount"];
-                                });
-                            });
+                            //     genre_labels.forEach(function(umbrella_genre) {
+                            //         var last_index = genre_bin_data.length - 1;
+                            //         genre_bin_data[last_index][umbrella_genre] = umbrella_genre_counts[umbrella_genre]["userCount"];
+                            //     });
+                            // });
                         
-                            // Make a stack that will convert the above data into an array of series
-                            // where there will be a series for each key given
-                            var stack = d3.stack()
-                                          .keys(genre_labels)
+                            // // Make a stack that will convert the above data into an array of series
+                            // // where there will be a series for each key given
+                            // var stack = d3.stack()
+                            //               .keys(genre_labels)
                         
-                            // get the series from stacking the data
-                            var series = stack(genre_bin_data);
+                            // // get the series from stacking the data
+                            // var series = stack(genre_bin_data);
                         
-                            var max_height = d3.max(series, function(s) { 
-                                return d3.max(s, function(d) {
-                                    return d[1];
-                                }); 
-                            });
+                            // var max_height = d3.max(series, function(s) { 
+                            //     return d3.max(s, function(d) {
+                            //         return d[1];
+                            //     }); 
+                            // });
         
-                            // Create a new scale from 0 to the maximum height
-                            newYScale = d3.scaleLinear()
-                                        .domain([0., max_height])
-                                        .range([yAxis["length"], 0]);
+                            // // Create a new scale from 0 to the maximum height
+                            // newYScale = d3.scaleLinear()
+                            //             .domain([0., max_height])
+                            //             .range([yAxis["length"], 0]);
     
 
-                            lines.select(".brush").call(brush.move, null);
-                        } else {
-                            if (!idleTimeout) return idleTimeout = setTimeout(idled, 350); // This allows to wait a little bit
+                            // // lines.select(".brush").call(brush.move, null);
+                            console.log("been called!");
 
-                            newXScale = xScale;
-                            newYScale = yScale;
+                            updateAllPlots();
+                        } else {
+                            selectionContext["timeRangeBrush"] = defaultTimeRange;
+                            // if (!idleTimeout) return idleTimeout = setTimeout(idled, 350); // This allows to wait a little bit
+                            updateAllPlots();
+
+                            // newXScale = xScale;
+                            // newYScale = yScale;
 
                         }
 
-                        xAxis["group"].call(d3.axisBottom(newXScale));
-                        yAxis["group"].call(d3.axisLeft(newYScale));
+                        // xAxis["group"].call(d3.axisBottom(newXScale));
+                        // yAxis["group"].call(d3.axisLeft(newYScale));
 
-                        lines.selectAll("path")
-                            .attr("d", area(newXScale, newYScale))
+                        // lines.selectAll("path")
+                        //     .attr("d", area(newXScale, newYScale))
 
                     });
-    lines.append("g")
-        .attr("class", "brush")
-        .call(brush);
+    
+    var gBrush = lines.append("g")
+                    .attr("class", "brush")
+                    .call(brush);
 
+    var brushResizePath = function(d) {
+        var e = +(d.type == "e"),
+            x = e ? 1 : -1,
+            y = yAxis['length'] / 2;
+        return "M" + (.5 * x) + "," + y + "A6,6 0 0 " + e + " " + (6.5 * x) + "," + (y + 6) + "V" + (2 * y - 6) + "A6,6 0 0 " + e + " " + (.5 * x) + "," + (2 * y) + "Z" + "M" + (2.5 * x) + "," + (y + 8) + "V" + (2 * y - 8) + "M" + (4.5 * x) + "," + (y + 8) + "V" + (2 * y - 8);
+    }
+        
+    gBrush.selectAll(".handle--custom")
+        .data([{type: "w"}, {type: "e"}])
+        .enter().append("path")
+            .attr("class", "handle--custom")
+            .attr("stroke", "#000")
+            .attr("cursor", "ew-resize")
+            .attr("d", brushResizePath);
+
+
+    // Make axes
+    xAxis["group"].call(xAxis["call"].scale(xScale));
+    yAxis["group"].call(yAxis["call"].scale(yScale));
+        
+    // Set labels for axes
     yAxis['label'].text("Counts")
         .attr("x", 0)
-        .attr("y",plot['margin']['left']*0.2);
-    xAxis['label'].text("Time");
+        .attr("y",plot['margin']['left'] * 0.2);
+    xAxis['label'].attr("x", xAxis['length'] / 2).attr("y", yAxis['length'] + plot['margin']['bottom'] * 0.5).text("Time");
 }
 
 //////////////////////////////
@@ -934,46 +958,101 @@ function updateAllPlots() {
     // For example here we check if we want to filter by a top artist and filter the library
     // and genre catalog down to just that artist
 
-    if (selectionContext['selectedTopArtist']) {
-        // clicking on a top artist will set this value to be a specific artist
-        // each top artist has a name, genres, and popularity
-        var artist = selectionContext['selectedTopArtist'];
-        songDataFilter = songDataFilter.filter(function(song) {
-            return song['artists'].includes(artist['name']);
-        });
-        genreDataFilter = genreDataFilter.filter(function(genre) {
-            return artist['genres'].includes(genre['name'].toLowerCase());
-        });
-    }
-    
-    // Filter on top track
-    if (selectionContext['selectedTopTrack']) {
-        var track = selectionContext['selectedTopTrack'];
-        songDataFilter = songDataFilter.filter(function(song) {
-            return song['name'] == track['name'];
-        });
-        genreDataFilter = genreDataFilter.filter(function(genre) {
-            return track['genres'].includes(genre['name'].toLowerCase());
-        });
-    }
+    // var lowerTimeLimit = selectionContext["timeRange"][0];
+    // var upperTimeLimit = selectionContext["timeRange"][1];
+    var artist = selectionContext['selectedTopArtist'];
+    var track = selectionContext['selectedTopTrack'];
 
-    // Filter the genre data for interactive legend
-    genreDataFilter = genreDataFilter.filter(function(genre) {   
-        return genre_labels.some(function(umbrella) { 
-            // Each genre has isMetal, isRock etc.
-            // Comapre with the current selectionContext
-            return genre["is" + umbrella] && selectionContext["plot" + umbrella]
-        });
-    });        
+    var timeRange = selectionContext["timeRangeBrush"];
 
-    // Filter the song data for interactive legend
     songDataFilter = songDataFilter.filter(function(song) {
-        return genre_labels.some(function(umbrella) { 
+        var topArtistFilter = true;
+        var topTrackFilter = true;
+        var plotGenreFilter;
+
+        if (artist) {
+            topArtistFilter = song['artists'].includes(artist['name']);
+        };
+        if (track) {
+            topTrackFilter = song['name'] == track['name'];
+        }
+        plotGenreFilter = genre_labels.some(function(umbrella) { 
             // Each song has isMetal, isRock etc.
             // Comapre with the current selectionContext
-            return song["is" + umbrella] && selectionContext["plot" + umbrella]
+            return song["is" + umbrella] && selectionContext["plot" + umbrella];
         });
-    });        
+
+        // var songYear = song['dateAdded'].getFullYear();
+        // var timeFilter = (songYear >= lowerTimeLimit) && (songYear <= upperTimeLimit);
+        var timeFilter = true;
+        if (timeRange) {
+            timeFilter = (Date.parse(song['dateAdded']) >= Date.parse(timeRange[0])) && 
+                         (Date.parse(song['dateAdded']) <= Date.parse(timeRange[1]));
+        }
+
+        return topArtistFilter && topTrackFilter && plotGenreFilter && timeFilter;
+    });
+
+    genreDataFilter = genreDataFilter.filter(function(genre) {
+        var topArtistFilter = true;
+        var topTrackFilter = true;
+        var plotGenreFilter;
+
+        if (artist) {
+            topArtistFilter = artist['genres'].includes(genre['name'].toLowerCase());
+        }
+        if (track) {
+            topTrackFilter = track['genres'].includes(genre['name'].toLowerCase());
+        }
+        plotGenreFilter = genre_labels.some(function(umbrella) { 
+            // Each song has isMetal, isRock etc.
+            // Comapre with the current selectionContext
+            return genre["is" + umbrella] && selectionContext["plot" + umbrella];
+        });
+
+        return topArtistFilter && topTrackFilter && plotGenreFilter;
+    });
+
+    // if (selectionContext['selectedTopArtist']) {
+    //     // clicking on a top artist will set this value to be a specific artist
+    //     // each top artist has a name, genres, and popularity
+    //     var artist = selectionContext['selectedTopArtist'];
+    //     songDataFilter = songDataFilter.filter(function(song) {
+    //         return song['artists'].includes(artist['name']);
+    //     });
+    //     genreDataFilter = genreDataFilter.filter(function(genre) {
+    //         return artist['genres'].includes(genre['name'].toLowerCase());
+    //     });
+    // }
+    
+    // // Filter on top track
+    // if (selectionContext['selectedTopTrack']) {
+    //     var track = selectionContext['selectedTopTrack'];
+    //     songDataFilter = songDataFilter.filter(function(song) {
+    //         return song['name'] == track['name'];
+    //     });
+    //     genreDataFilter = genreDataFilter.filter(function(genre) {
+    //         return track['genres'].includes(genre['name'].toLowerCase());
+    //     });
+    // }
+
+    // // Filter the genre data for interactive legend
+    // genreDataFilter = genreDataFilter.filter(function(genre) {   
+    //     return genre_labels.some(function(umbrella) { 
+    //         // Each genre has isMetal, isRock etc.
+    //         // Comapre with the current selectionContext
+    //         return genre["is" + umbrella] && selectionContext["plot" + umbrella]
+    //     });
+    // });        
+
+    // // Filter the song data for interactive legend
+    // songDataFilter = songDataFilter.filter(function(song) {
+    //     return genre_labels.some(function(umbrella) { 
+    //         // Each song has isMetal, isRock etc.
+    //         // Comapre with the current selectionContext
+    //         return song["is" + umbrella] && selectionContext["plot" + umbrella]
+    //     });
+    // });        
     
     // Classified genre filter
 
@@ -990,12 +1069,12 @@ function updateAllPlots() {
 
     // Apply temporal filters from the time slider
     // TODO: Replace this with extent from time plot brush
-    songDataFilter = songDataFilter.filter(function(song) {
-        var lowerTimeLimit = selectionContext["timeRange"][0];
-        var upperTimeLimit = selectionContext["timeRange"][1];
-        var songYear = song['dateAdded'].getFullYear();
-        return (songYear >= lowerTimeLimit) && (songYear <= upperTimeLimit);
-    })
+    // songDataFilter = songDataFilter.filter(function(song) {
+    //     var lowerTimeLimit = selectionContext["timeRange"][0];
+    //     var upperTimeLimit = selectionContext["timeRange"][1];
+    //     var songYear = song['dateAdded'].getFullYear();
+    //     return (songYear >= lowerTimeLimit) && (songYear <= upperTimeLimit);
+    // })
 
     // Count the genres in the filtered song data given the filtered genre data
     counts = countGenres(songDataFilter, genreDataFilter);
@@ -1010,14 +1089,14 @@ function updateAllPlots() {
         }
     });
 
-    console.log("Filtered Songs:")
-    console.log(songDataFilter);
-    console.log("Filtered Genres:")
-    console.log(genreDataFilter);
+    // console.log("Filtered Songs:")
+    // console.log(songDataFilter);
+    // console.log("Filtered Genres:")
+    // console.log(genreDataFilter);
     // Update the plots using the **filtered** data
     updateSongPlot(songDataFilter, plots['song-chart']);
     updateGenrePlot(genreDataFilter, plots['genre-chart']);
-    updateLinePlot(songDataFilter, genreDataFilter, plots['line-chart']);
+    // updateLinePlot(songDataFilter, genreDataFilter, plots['line-chart']);
 }
 
 // The x and y axis drop down menus
@@ -1199,7 +1278,7 @@ function loadPage() {
         // This evaluates out to e.g. selectionContext["plotMetal"] = true
         selectionContext["plot" + umbrella_genre] = true;
     })
-    // Start by plotting all genres
+    // Start by plotting all genres (rahter than the user's genres)
     selectionContext['flag'] = false;
     // We have three time scales to work with for the top artists and track
     // here we start with the short time scale, but we can make an interaction that changes this option
@@ -1214,13 +1293,17 @@ function loadPage() {
         max: now.getFullYear(),   
     });
     // Set the default slider time range to subset the library over
-    selectionContext["timeRange"] = defaultTimeRange;
+    defaultTimeRange = d3.extent(songDataGlobal, function(song) {
+        return Date.parse(song['dateAdded']);
+    })
+    defaultTimeRange = defaultTimeRange.map(function(date) { return new Date(date); });
+    selectionContext["timeRangeBrush"] = defaultTimeRange;
 
     selectionContext['selectedAttributeX'] = $("#x-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
     selectionContext['selectedAttributeY'] = $("#y-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
 
-    var margin = { left:100, right:200, top:50, bottom:100 };
-    var marginLinePlot = { left:100, right:200, top:50, bottom:0 };
+    var margin = { left:100, right:20, top:50, bottom:100 };
+    var marginLinePlot = { left:100, right:200, top:50, bottom:100 };
     
     // Generate an svg and a set of x and y axes of length 500 and 500 using the above margin
     // generateAxes takes parameters (selector, xAxisLength, yAxisLength, margin, xOrigin, yOrigin)
@@ -1239,7 +1322,7 @@ function loadPage() {
     var yAxisGenres = plotGenres[2];
     plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : margin};
 
-    var plotLine = generateAxes("#line-plot-area", 1300, 100, marginLinePlot, 0, 1000);
+    var plotLine = generateAxes("#line-plot-area", 1300, 200, marginLinePlot, 0, 1000);
     var svgLine = plotLine[0];
     var xAxisLine = plotLine[1];
     var yAxisLine = plotLine[2];
@@ -1257,6 +1340,8 @@ function loadPage() {
     makeTopArtistsList();
     makeTopTracksList();
     // Plot everything with the default selections set above
+    updateLinePlot(songDataGlobal, genreDataGlobal, plots['line-chart']);
+
     updateAllPlots();
 }
 
@@ -1268,25 +1353,52 @@ function loadPage() {
 function songDataProcess(songData, genreData) {
     console.log("In song process!");
     songData.forEach(function(s) {
+        s.counts = [];
         // Classify each song into umbrella genres
-        // Initialize all isX keys to false
+        // As you classify each genre associated with this song, keep a tally of how many times each umbrella genre is assigned
+        tallySongUmbrellas = [];
+        // Initialize all isX keys to false and set tallies to 0
         genre_labels.forEach(function(umbrella) {
             s["is" + umbrella] = false;
+            s["count" + umbrella] = 0;
+            //tallySongUmbrellas[umbrella] = 0;
+            //tallySongUmbrellas[umbrella] = [];
+            //tallySongUmbrellas[umbrella]["tally"] = 0;
+            tallySongUmbrellas[umbrella] = 0;
         });
+
         s.genres.forEach(function(genre) { // Loop through all genres associated with this song and assign umbrella genres to the song
             // for example this returns ["isRock", "isPop", "isMetal"]
             var songUmbrellas = classifyUmbrellaGenre(genre);
             songUmbrellas.forEach(function(umbrella) {
                 s["is" + umbrella] = true;
+                s["count" + umbrella] += 1; // This will keep a tally of how many times each umbrella genre is assigned to the song
+                //console.log(umbrella, s["count" + umbrella]);
             });
             // this will evaluate to:
             // s.isRock --> true
             // s.isPop --> true
             // s.isMetal --> true
+        });
 
-            // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
-            s.dateAdded = parseUTCTime(s.date);
-        })
+        // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
+        s.dateAdded = parseUTCTime(s.date);
+
+        var maxCount = 0;  // temporary counter
+        s["topUmbrellaMatches"] = []; // This will be an array of the genre(s) that have the highest count
+        genre_labels.forEach(function(umbrella) {
+            if (s["count" + umbrella] > maxCount) { // if the count for this umbrella is the highest so far, set that as the top umbrella
+                maxCount = s["count" + umbrella];
+                s["topUmbrellaMatches"] = [umbrella]
+            } else if (s["count" + umbrella] == maxCount) { // if the count for this umbrella ties with another umbrella, add it to the list of top umbrellas
+                s["topUmbrellaMatches"].push(umbrella);
+            }
+        });
+        // console.log(s["topUmbrellaMatches"],maxCount);
+        // console.log(s);
+
+        // This is where we would calculate closest genre for top umbrellas that are tied
+
     })
     // Add "closestGenre" key
     // This is where the distance stuff would go
