@@ -261,13 +261,13 @@ def scrape_data(token, spotipy_session):
     write_json(user_folder, "recently_played.json".format(time_range), recently_played)
 
     # Compress user data into a single file
-    zip_file = os.path.join(user_folder, "{}.zip".format(user_id))
-    if os.path.exists(zip_file):
-        os.remove(zip_file)
+    # zip_file = os.path.join(user_folder, "{}.zip".format(user_id))
+    # if os.path.exists(zip_file):
+    #     os.remove(zip_file)
     
-    zip_command_list = ["zip", os.path.join(user_folder, "{}.zip".format(user_id)) ] + glob(os.path.join(user_folder, "*.json"))
+    # zip_command_list = ["zip", os.path.join(user_folder, "{}.zip".format(user_id)) ] + glob(os.path.join(user_folder, "*.json"))
     # print("Calling:\n    {}".format(" ".join(zip_command_list)))
-    subprocess.call(zip_command_list)
+    # subprocess.call(zip_command_list)
 
     # Package everything into a dictionary for easy return
     ret_dict = {
