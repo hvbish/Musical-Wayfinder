@@ -26,7 +26,11 @@ else:
     PORT = os.getenv("PORT")
 
 VIZ_PAGE = "/viz"
-CALLBACK_URL = "{}:{}{}".format(BASE_URL, PORT, VIZ_PAGE)
+
+if len(PORT) > 0:
+    CALLBACK_URL = "{}:{}{}".format(BASE_URL, PORT, VIZ_PAGE)
+else:
+    CALLBACK_URL = "{}{}".format(BASE_URL, VIZ_PAGE)
 
 CLIENT_ID, CLIENT_SECRET = auth.get_id_and_secret()
 
