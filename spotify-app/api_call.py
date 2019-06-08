@@ -231,7 +231,7 @@ def scrape_data(token, spotipy_session):
     playlist_data = get_user_playlists(token, user_id)
 
     # Scrape library
-    # library_data = scrape_library(token, spotipy_session, user_id)
+    library_data = scrape_library(token, spotipy_session, user_id)
 
     # Scrape top artists
     top_artists = scrape_top_artists(token, spotipy_session, user_id)
@@ -243,14 +243,14 @@ def scrape_data(token, spotipy_session):
     recently_played = scrape_recently_played(token, spotipy_session, user_id)
 
     # Output data to file
-    user_folder = os.path.join("static", "data", user_id)
+    user_folder = os.path.join("data", user_id)
     if not os.path.exists(user_folder):
         os.makedirs(user_folder)
     
     # Write profile data to disk
     write_json(user_folder, "profile.json", profile_data)
     # Write library data to disk
-    # write_json(user_folder, "library.json", library_data)
+    write_json(user_folder, "library.json", library_data)
     # Write top artist data to disk
     for time_range, top_artists_data in top_artists.items():
         write_json(user_folder, "top_artists_{}.json".format(time_range), top_artists_data)
@@ -270,7 +270,7 @@ def scrape_data(token, spotipy_session):
     ret_dict = {
                 "profile" : profile_data,
                 "playlists" : playlist_data,
-                # "library" : library_data,
+                "library" : library_data,
                 "top_tracks" : top_songs,
                 "top_artists" : top_artists,
                 "recently_played" : recently_played,
