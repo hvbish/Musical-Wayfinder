@@ -66,7 +66,7 @@ def callback():
 
     user_basename = "static/data/{}".format(profile_data['id'])
     
-    return render_template("viz.html", user_id=profile_data['id'])
+    return render_template("viz.html", user_id=profile_data['id'], base_url=BASE_URL)
     # return render_template("index.html", sorted_array=display_arr)
 
 @app.route('/data/<path:filepath>')

@@ -199,13 +199,13 @@
 <script>
     function loadSongData() {
         // Create a promise for the data
-        var songDataPromise = d3.json("/data/{{ user_id }}/library.json");
+        var songDataPromise = d3.json("{{ base_url }}/data/{{ user_id }}/library.json");
         return songDataPromise;
     }
 
     function loadGenreData() {
         // Create a promise for the data
-        var genreDataPromise = d3.json("/data/data_genres_average_features.json");
+        var genreDataPromise = d3.json("{{ base_url }}/data/data_genres_average_features.json");
         return genreDataPromise;
     }
 
@@ -216,9 +216,9 @@
         var top_artists_medium = top_artists_basename.replace("{timeScale}", "medium");
         var top_artists_long = top_artists_basename.replace("{timeScale}", "long");
 
-        return Promise.all([d3.json("/data/{{ user_id }}/" + top_artists_short), 
-                            d3.json("/data/{{ user_id }}/" + top_artists_medium),
-                            d3.json("/data/{{ user_id }}/" + top_artists_long)
+        return Promise.all([d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_short), 
+                            d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_medium),
+                            d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_long)
                         ]).then(function(results) {
                             return {"short" : results[0], "medium" : results[1], "long" : results[2]};
                         }, function(error) {
@@ -234,9 +234,9 @@
         var top_tracks_medium = top_tracks_basename.replace("{timeScale}", "medium");
         var top_tracks_long = top_tracks_basename.replace("{timeScale}", "long");
 
-        return Promise.all([d3.json("/data/{{ user_id }}/" + top_tracks_short), 
-                            d3.json("/data/{{ user_id }}/" + top_tracks_medium),
-                            d3.json("/data/{{ user_id }}/" + top_tracks_long)
+        return Promise.all([d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_short), 
+                            d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_medium),
+                            d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_long)
                         ]).then(function(results) {
                             return {"short" : results[0], "medium" : results[1], "long" : results[2]};
                         }, function(error) {
@@ -246,7 +246,7 @@
     }
 
     function loadRecentlyPlayedData() {
-        return Promise.all([d3.json("/data/{{ user_id }}/recently_played.json")]).then(function(results) {
+        return Promise.all([d3.json("{{ base_url }}/data/{{ user_id }}/recently_played.json")]).then(function(results) {
             return results[0];
         }, function(error) {
             console.log("Trouble loading recently played data!");
