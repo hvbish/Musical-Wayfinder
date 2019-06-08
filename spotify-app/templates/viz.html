@@ -218,58 +218,34 @@
     }
 
     function loadTopArtistsData() {
-        var top_artists_basename = "top_artists_{timeScale}_term.json";
+        return d3.json("{{ base_url }}/data/{{ user_id }}/top_artists.json").then(function(data) {
+            return data;
+        }, function(error) {
+            console.log("Trouble loading top tracks! Trying again...");
+            console.log(error);
+            return d3.json("{{ base_url }}/data/{{ user_id }}/top_artists.json").then(function(data) {
+                return data;
+            }, function(error) {
+                console.log("Trouble loading top tracks!");
+                console.log(error);
+            })
+        });
 
-        var top_artists_short = top_artists_basename.replace("{timeScale}", "short");
-        var top_artists_medium = top_artists_basename.replace("{timeScale}", "medium");
-        var top_artists_long = top_artists_basename.replace("{timeScale}", "long");
-
-        return Promise.all([d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_short), 
-                            d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_medium),
-                            d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_long)
-                        ]).then(function(results) {
-                            return {"short" : results[0], "medium" : results[1], "long" : results[2]};
-                        }, function(error) {
-                            console.log("Trouble loading top artist data! Trying again...");
-                            console.log(error);
-                            return Promise.all([d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_short), 
-                                                d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_medium),
-                                                d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_long)
-                            ]).then(function(results) {
-                                return {"short" : results[0], "medium" : results[1], "long" : results[2]};
-                            }, function(error) {
-                                return 
-                                console.log("Trouble loading top artist data!");
-                                console.log(error);
-                            })
-                        })
     }
 
     function loadTopTracksData() {
-        var top_tracks_basename = "top_tracks_{timeScale}_term.json";
-
-        var top_tracks_short = top_tracks_basename.replace("{timeScale}", "short");
-        var top_tracks_medium = top_tracks_basename.replace("{timeScale}", "medium");
-        var top_tracks_long = top_tracks_basename.replace("{timeScale}", "long");
-
-        return Promise.all([d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_short), 
-                            d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_medium),
-                            d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_long)
-                        ]).then(function(results) {
-                            return {"short" : results[0], "medium" : results[1], "long" : results[2]};
-                        }, function(error) {
-                            console.log("Trouble loading top track data! Trying again...");
-                            console.log(error);
-                            return Promise.all([d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_short), 
-                                                d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_medium),
-                                                d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_long)
-                            ]).then(function(results) {
-                                return {"short" : results[0], "medium" : results[1], "long" : results[2]};
-                            }, function(error) {
-                                console.log("Trouble loading top track data!");
-                                console.log(error);
-                            })
-                        })
+        return d3.json("{{ base_url }}/data/{{ user_id }}/top_tracks.json").then(function(data) {
+            return data;
+        }, function(error) {
+            console.log("Trouble loading top tracks! Trying again...");
+            console.log(error);
+            return d3.json("{{ base_url }}/data/{{ user_id }}/top_tracks.json").then(function(data) {
+                return data;
+            }, function(error) {
+                console.log("Trouble loading top tracks!");
+                console.log(error);
+            })
+        });
     }
 
     function loadRecentlyPlayedData() {

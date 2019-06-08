@@ -5773,8 +5773,7 @@
             "indietronica",
             "metropopolis",
             "modern rock",
-            "pop",
-            "tropical house"
+            "pop"
         ],
         "artists": [
             "Gesaffelstein",
@@ -6542,6 +6541,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop"
         ],
         "artists": [
@@ -10556,7 +10556,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop"
         ],
         "artists": [
@@ -10582,7 +10581,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop"
         ],
         "artists": [
@@ -10608,7 +10606,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop",
             "compositional ambient",
             "dark jazz",
@@ -10638,7 +10635,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop",
             "alternative r&b",
             "escape room",
@@ -10668,7 +10664,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop"
         ],
         "artists": [
@@ -10694,7 +10689,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop"
         ],
         "artists": [
@@ -10720,7 +10714,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop",
             "chicago rap",
             "conscious hip hop",
@@ -10754,7 +10747,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop"
         ],
         "artists": [
@@ -10780,7 +10772,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop",
             "alternative r&b",
             "electropop",
@@ -10813,7 +10804,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop"
         ],
         "artists": [
@@ -14395,12 +14385,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -16624,7 +16614,7 @@
         "loudness": -14.108,
         "valence": 0.521,
         "tempo": 88.388,
-        "popularity": 31.0
+        "popularity": 32.0
     },
     {
         "name": "Electric Candyman",
@@ -22604,8 +22594,7 @@
             "wonky",
             "abstract hip hop",
             "alternative hip hop",
-            "escape room",
-            "underground rap"
+            "escape room"
         ],
         "artists": [
             "Flying Lotus",
@@ -32296,6 +32285,7 @@
             "escape room",
             "folk-pop",
             "indie pop",
+            "indie rock",
             "indietronica",
             "new rave"
         ],
@@ -43089,7 +43079,8 @@
             "alternative hip hop",
             "escape room",
             "experimental hip hop",
-            "hip hop"
+            "hip hop",
+            "new rave"
         ],
         "artists": [
             "Death Grips"
@@ -46290,7 +46281,6 @@
         "uri": "spotify:track:0U0ldCRmgCqhVvD6ksG63j",
         "date": "2017-07-02T03:55:00Z",
         "genres": [
-            "disco house",
             "filter house",
             "new rave"
         ],
@@ -47357,6 +47347,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -50220,6 +50211,7 @@
         "genres": [
             "alternative r&b",
             "conscious hip hop",
+            "escape room",
             "hip hop",
             "pop rap",
             "rap",
@@ -55928,18 +55920,19 @@
             "alternative dance",
             "art pop",
             "chillwave",
+            "dance-punk",
             "dream pop",
             "experimental pop",
             "freak folk",
             "garage psych",
             "grave wave",
+            "indie rock",
             "indietronica",
             "lo-fi",
             "new rave",
             "noise pop",
             "nu gaze",
-            "preverb",
-            "shoegaze"
+            "preverb"
         ],
         "artists": [
             "John Maus"
@@ -56182,6 +56175,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56214,6 +56208,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56246,6 +56241,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56278,6 +56274,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56310,6 +56307,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56342,6 +56340,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56374,6 +56373,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56406,6 +56406,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56438,6 +56439,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56470,6 +56472,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56502,6 +56505,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -56534,6 +56538,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -72171,6 +72176,7 @@
         "date": "2016-06-07T12:22:34Z",
         "genres": [
             "alternative dance",
+            "disco house",
             "filter house",
             "nu disco"
         ],
@@ -73955,8 +73961,7 @@
         "genres": [
             "hamburg electronic",
             "microhouse",
-            "minimal techno",
-            "tech house"
+            "minimal techno"
         ],
         "artists": [
             "Pantha Du Prince"
@@ -74451,6 +74456,7 @@
             "art pop",
             "chamber pop",
             "electronic",
+            "indie rock",
             "oxford indie"
         ],
         "artists": [
@@ -75453,7 +75459,7 @@
         "loudness": -10.075,
         "valence": 0.249,
         "tempo": 86.733,
-        "popularity": 11.0
+        "popularity": 10.0
     },
     {
         "name": "Draft Culture",
@@ -75648,7 +75654,7 @@
         "loudness": -7.415,
         "valence": 0.72,
         "tempo": 143.943,
-        "popularity": 25.0
+        "popularity": 26.0
     },
     {
         "name": "City Star",
@@ -80301,8 +80307,7 @@
             "milwaukee hip hop",
             "abstract hip hop",
             "alternative hip hop",
-            "escape room",
-            "underground rap"
+            "escape room"
         ],
         "artists": [
             "Milo",
@@ -86430,6 +86435,7 @@
         "date": "2016-02-01T23:11:00Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86465,6 +86471,7 @@
         "date": "2016-02-01T23:11:00Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86500,6 +86507,7 @@
         "date": "2016-02-01T23:11:00Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86535,6 +86543,7 @@
         "date": "2016-02-01T23:11:00Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86570,6 +86579,7 @@
         "date": "2016-02-01T23:11:00Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -90593,7 +90603,7 @@
         "loudness": -14.055,
         "valence": 0.0363,
         "tempo": 100.989,
-        "popularity": 25.0
+        "popularity": 26.0
     },
     {
         "name": "Chrome Country",
