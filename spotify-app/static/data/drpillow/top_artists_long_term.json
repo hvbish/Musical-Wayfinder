@@ -1,0 +1,681 @@
+[
+    {
+        "name": "Arca",
+        "genres": [
+            "art pop",
+            "bass music",
+            "chamber psych",
+            "escape room",
+            "experimental pop",
+            "fluxwork",
+            "indie r&b"
+        ],
+        "popularity": 51,
+        "uri": "spotify:artist:4SQdUpG4f7UbkJG3cJ2Iyj"
+    },
+    {
+        "name": "Bj\u00f6rk",
+        "genres": [
+            "alternative dance",
+            "art pop",
+            "chamber pop",
+            "electronic",
+            "electropop",
+            "experimental pop",
+            "folk-pop",
+            "icelandic pop",
+            "metropopolis",
+            "permanent wave",
+            "pop rock",
+            "trip hop"
+        ],
+        "popularity": 65,
+        "uri": "spotify:artist:7w29UYBi0qsHi5RTcv3lmA"
+    },
+    {
+        "name": "Lapalux",
+        "genres": [
+            "bass music",
+            "chillwave",
+            "future garage",
+            "vapor twitch",
+            "wonky"
+        ],
+        "popularity": 49,
+        "uri": "spotify:artist:46Ce0QmI1mE2bl5VQ4P9N8"
+    },
+    {
+        "name": "DJ Koze",
+        "genres": [
+            "alternative dance",
+            "deep house",
+            "electronic",
+            "float house",
+            "german techno",
+            "hamburg electronic",
+            "indietronica",
+            "microhouse",
+            "minimal techno",
+            "tech house"
+        ],
+        "popularity": 62,
+        "uri": "spotify:artist:1kR99O4MgSTasyeJh8UFCg"
+    },
+    {
+        "name": "Flying Lotus",
+        "genres": [
+            "alternative hip hop",
+            "escape room",
+            "experimental hip hop",
+            "glitch",
+            "glitch hop",
+            "hip hop",
+            "indietronica",
+            "intelligent dance music",
+            "wonky"
+        ],
+        "popularity": 72,
+        "uri": "spotify:artist:29XOeO6KIWxGthejQqn793"
+    },
+    {
+        "name": "Jam City",
+        "genres": [
+            "bass music",
+            "fluxwork",
+            "minimal dubstep",
+            "vogue"
+        ],
+        "popularity": 43,
+        "uri": "spotify:artist:4jEa9eTpzzkuDQ9JMr0LT3"
+    },
+    {
+        "name": "Nosaj Thing",
+        "genres": [
+            "bass music",
+            "chillhop",
+            "chillwave",
+            "future garage",
+            "glitch hop",
+            "indietronica",
+            "microhouse",
+            "wonky"
+        ],
+        "popularity": 53,
+        "uri": "spotify:artist:0IVapwlnM3dEOiMsHXsghT"
+    },
+    {
+        "name": "Laurel Halo",
+        "genres": [
+            "ambient",
+            "art pop",
+            "bass music",
+            "chamber psych",
+            "drone",
+            "electra",
+            "escape room",
+            "experimental pop",
+            "float house",
+            "fluxwork",
+            "fourth world",
+            "freak folk",
+            "gauze pop",
+            "grave wave",
+            "hauntology",
+            "intelligent dance music",
+            "mandible",
+            "microhouse",
+            "minimal techno",
+            "outsider house",
+            "vaporwave",
+            "witch house",
+            "wonky"
+        ],
+        "popularity": 40,
+        "uri": "spotify:artist:0sRVVDpgF2sKzPBkDszzUl"
+    },
+    {
+        "name": "Rustie",
+        "genres": [
+            "bass music",
+            "dubstep",
+            "electronic trap",
+            "escape room",
+            "future garage",
+            "hyperpop",
+            "vapor twitch",
+            "wonky"
+        ],
+        "popularity": 45,
+        "uri": "spotify:artist:6YGu0Rv2120wkc4AXZSGgl"
+    },
+    {
+        "name": "Milo",
+        "genres": [
+            "alternative hip hop",
+            "escape room",
+            "milwaukee hip hop"
+        ],
+        "popularity": 53,
+        "uri": "spotify:artist:0J6PhnVD21GSFoJ9HoadLH"
+    },
+    {
+        "name": "Tim Hecker",
+        "genres": [
+            "ambient",
+            "art pop",
+            "art rock",
+            "bass music",
+            "canadian experimental",
+            "chamber pop",
+            "chamber psych",
+            "compositional ambient",
+            "dark jazz",
+            "dream pop",
+            "drift",
+            "drone",
+            "electronic",
+            "escape room",
+            "experimental",
+            "experimental rock",
+            "fluxwork",
+            "fourth world",
+            "freak folk",
+            "intelligent dance music",
+            "mandible",
+            "microhouse",
+            "noise pop",
+            "noise rock",
+            "outsider house",
+            "post-rock",
+            "shoegaze",
+            "slow core",
+            "vaporwave",
+            "warm drone"
+        ],
+        "popularity": 50,
+        "uri": "spotify:artist:1qiwaJwjKod5WhcYZ76O1B"
+    },
+    {
+        "name": "Baths",
+        "genres": [
+            "chillwave",
+            "indietronica",
+            "wonky"
+        ],
+        "popularity": 48,
+        "uri": "spotify:artist:5zS8r5hRRk1jzD41yYS1NO"
+    },
+    {
+        "name": "toe",
+        "genres": [
+            "instrumental math rock",
+            "instrumental post-rock",
+            "japanese math rock",
+            "japanese post-rock",
+            "midwest emo",
+            "post-rock"
+        ],
+        "popularity": 51,
+        "uri": "spotify:artist:0rpKM0MniNkXM1SLSglYUZ"
+    },
+    {
+        "name": "Iglooghost",
+        "genres": [
+            "escape room",
+            "hyperpop",
+            "vaporwave",
+            "wonky"
+        ],
+        "popularity": 44,
+        "uri": "spotify:artist:7LCDnUQYE07fnKbo46SVLB"
+    },
+    {
+        "name": "Oneohtrix Point Never",
+        "genres": [
+            "ambient",
+            "art pop",
+            "art rock",
+            "bass music",
+            "chamber pop",
+            "chamber psych",
+            "chillwave",
+            "compositional ambient",
+            "dream pop",
+            "drone",
+            "electronic",
+            "escape room",
+            "experimental",
+            "experimental pop",
+            "experimental rock",
+            "fluxwork",
+            "fourth world",
+            "freak folk",
+            "hauntology",
+            "indietronica",
+            "intelligent dance music",
+            "mandible",
+            "microhouse",
+            "noise pop",
+            "noise rock",
+            "outsider house",
+            "post-rock",
+            "vaporwave",
+            "wonky"
+        ],
+        "popularity": 52,
+        "uri": "spotify:artist:2wPDbhaGXCqROrVmwDdCrK"
+    },
+    {
+        "name": "Hop Along",
+        "genres": [
+            "alternative emo",
+            "anti-folk",
+            "art pop",
+            "chamber pop",
+            "emo",
+            "folk punk",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie punk",
+            "indie rock",
+            "lo-fi",
+            "modern rock",
+            "philly indie",
+            "preverb",
+            "stomp and holler"
+        ],
+        "popularity": 53,
+        "uri": "spotify:artist:3yYUV3hkJit05YIUEODqgp"
+    },
+    {
+        "name": "Baauer",
+        "genres": [
+            "bass trap",
+            "brostep",
+            "electro house",
+            "electronic trap",
+            "moombahton",
+            "vapor twitch"
+        ],
+        "popularity": 63,
+        "uri": "spotify:artist:25fqWEebq6PoiGQIHIrdtv"
+    },
+    {
+        "name": "Lukid",
+        "genres": [
+            "bass music",
+            "wonky"
+        ],
+        "popularity": 31,
+        "uri": "spotify:artist:3a2bPqijV6I1SBKKK9ikMg"
+    },
+    {
+        "name": "Wild Nothing",
+        "genres": [
+            "alternative dance",
+            "art pop",
+            "chillwave",
+            "dream pop",
+            "electropop",
+            "indie pop",
+            "indie rock",
+            "indie surf",
+            "indietronica",
+            "modern rock",
+            "new rave",
+            "noise pop",
+            "nu gaze",
+            "preverb",
+            "shimmer pop",
+            "shoegaze"
+        ],
+        "popularity": 60,
+        "uri": "spotify:artist:6NrkINd80slV25wkBu9mEB"
+    },
+    {
+        "name": "Ross from Friends",
+        "genres": [
+            "deep house",
+            "float house",
+            "lo-fi house"
+        ],
+        "popularity": 55,
+        "uri": "spotify:artist:1Ma3pJzPIrAyYPNRkp3SUF"
+    },
+    {
+        "name": "Nina Kraviz",
+        "genres": [
+            "deep disco house",
+            "electra",
+            "minimal techno",
+            "russian electronic"
+        ],
+        "popularity": 48,
+        "uri": "spotify:artist:1oZmFNkGAT93yD1xX4vTRE"
+    },
+    {
+        "name": "Tirzah",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "chamber psych",
+            "electra",
+            "electropop",
+            "escape room",
+            "experimental pop",
+            "fluxwork",
+            "indie r&b",
+            "indietronica",
+            "uk contemporary r&b"
+        ],
+        "popularity": 51,
+        "uri": "spotify:artist:6f5lOlSFJw9K79gaNnmWAd"
+    },
+    {
+        "name": "Antwon",
+        "genres": [
+            "underground hip hop"
+        ],
+        "popularity": 39,
+        "uri": "spotify:artist:7sV1sLUCpxr8MVlu0GyVU5"
+    },
+    {
+        "name": "Hudson Mohawke",
+        "genres": [
+            "bass music",
+            "scottish hip hop",
+            "wonky"
+        ],
+        "popularity": 50,
+        "uri": "spotify:artist:6olWbKW2VLhFCHfOi0iEDb"
+    },
+    {
+        "name": "Heathered Pearls",
+        "genres": [],
+        "popularity": 28,
+        "uri": "spotify:artist:1o949goAYc4vD4IqN0zhVV"
+    },
+    {
+        "name": "Outputmessage",
+        "genres": [],
+        "popularity": 17,
+        "uri": "spotify:artist:781g8ZVh8cZw6w6GQgT7hJ"
+    },
+    {
+        "name": "Lorn",
+        "genres": [
+            "bass music",
+            "glitch hop",
+            "wave",
+            "wonky"
+        ],
+        "popularity": 56,
+        "uri": "spotify:artist:1PmVyfIR9KtCxbHWuga8E5"
+    },
+    {
+        "name": "Bullion",
+        "genres": [
+            "wonky"
+        ],
+        "popularity": 33,
+        "uri": "spotify:artist:6vcPgFOkMWBoY6Ks6eMEWj"
+    },
+    {
+        "name": "SOPHIE",
+        "genres": [
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indietronica"
+        ],
+        "popularity": 58,
+        "uri": "spotify:artist:5a2w2tgpLwv26BYJf2qYwu"
+    },
+    {
+        "name": "Machinedrum",
+        "genres": [
+            "bass music",
+            "escape room",
+            "footwork",
+            "future garage",
+            "glitch",
+            "glitch hop",
+            "intelligent dance music",
+            "vapor twitch",
+            "wonky"
+        ],
+        "popularity": 51,
+        "uri": "spotify:artist:06xa1OLBsMQJFXcl2tQkH4"
+    },
+    {
+        "name": "Gus Dapperton",
+        "genres": [
+            "indie poptimism"
+        ],
+        "popularity": 66,
+        "uri": "spotify:artist:6sHCvZe1PHrOAuYlwTLNH4"
+    },
+    {
+        "name": "Flume",
+        "genres": [
+            "australian dance",
+            "australian electropop",
+            "australian indie",
+            "downtempo",
+            "edm",
+            "pop"
+        ],
+        "popularity": 78,
+        "uri": "spotify:artist:6nxWCVXbOlEVRexSbLsTer"
+    },
+    {
+        "name": "Kanye West",
+        "genres": [
+            "chicago rap",
+            "pop rap",
+            "rap"
+        ],
+        "popularity": 92,
+        "uri": "spotify:artist:5K4W6rqBFWDnAN6FQUkS6x"
+    },
+    {
+        "name": "D Tiberio",
+        "genres": [],
+        "popularity": 13,
+        "uri": "spotify:artist:28ffXAtsOs3aKCBWQ6LQo5"
+    },
+    {
+        "name": "Empire of the Sun",
+        "genres": [
+            "alternative dance",
+            "australian dance",
+            "australian electropop",
+            "dance-punk",
+            "indie pop",
+            "indietronica",
+            "modern rock",
+            "neo-synthpop",
+            "new rave",
+            "pop"
+        ],
+        "popularity": 70,
+        "uri": "spotify:artist:67hb7towEyKvt5Z8Bx306c"
+    },
+    {
+        "name": "Sisah",
+        "genres": [
+            "venezuelan indie"
+        ],
+        "popularity": 29,
+        "uri": "spotify:artist:5VMzy5zdlOICmGPTmwyUFe"
+    },
+    {
+        "name": "Darkstar",
+        "genres": [
+            "bass music"
+        ],
+        "popularity": 32,
+        "uri": "spotify:artist:45ALMSzoLNFkaYxyhS4QZ1"
+    },
+    {
+        "name": "Siriusmo",
+        "genres": [
+            "dance-punk",
+            "filter house",
+            "new rave"
+        ],
+        "popularity": 50,
+        "uri": "spotify:artist:22680B8sUdq6bL6nQaJfwg"
+    },
+    {
+        "name": "Vince Staples",
+        "genres": [
+            "conscious hip hop",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "southern hip hop",
+            "underground hip hop"
+        ],
+        "popularity": 76,
+        "uri": "spotify:artist:68kEuyFKyqrdQQLLsmiatm"
+    },
+    {
+        "name": "Jamie xx",
+        "genres": [
+            "electronic",
+            "future garage",
+            "indietronica",
+            "new rave"
+        ],
+        "popularity": 65,
+        "uri": "spotify:artist:7A0awCXkE1FtSU8B0qwOJQ"
+    },
+    {
+        "name": "Mura Masa",
+        "genres": [
+            "channel islands indie",
+            "vapor soul"
+        ],
+        "popularity": 70,
+        "uri": "spotify:artist:5Q81rlcTFh3k6DQJXPdsot"
+    },
+    {
+        "name": "MISOGI",
+        "genres": [
+            "emo rap",
+            "traprun",
+            "vapor twitch",
+            "wave"
+        ],
+        "popularity": 45,
+        "uri": "spotify:artist:778Snztf3N5DXp0kHGFl3g"
+    },
+    {
+        "name": "Houdinne",
+        "genres": [],
+        "popularity": 35,
+        "uri": "spotify:artist:7JLHmeRyMPFuf0O6gqDKOM"
+    },
+    {
+        "name": "Clark",
+        "genres": [
+            "bass music",
+            "drill and bass",
+            "electronic",
+            "intelligent dance music",
+            "microhouse",
+            "minimal techno",
+            "ninja",
+            "trip hop",
+            "wonky"
+        ],
+        "popularity": 44,
+        "uri": "spotify:artist:6kic5bCjlohhDn9KzXbOta"
+    },
+    {
+        "name": "Death Grips",
+        "genres": [
+            "alternative hip hop",
+            "escape room",
+            "experimental hip hop",
+            "hip hop"
+        ],
+        "popularity": 63,
+        "uri": "spotify:artist:5RADpgYLOuS2ZxDq7ggYYH"
+    },
+    {
+        "name": "Neon Indian",
+        "genres": [
+            "alternative dance",
+            "chillwave",
+            "dance-punk",
+            "denton tx indie",
+            "dream pop",
+            "freak folk",
+            "indie pop",
+            "indietronica",
+            "modern rock",
+            "neo-synthpop",
+            "new rave",
+            "nu gaze",
+            "shimmer pop",
+            "vaporwave"
+        ],
+        "popularity": 55,
+        "uri": "spotify:artist:0KydPQPUUoTNhmiHKOg5Er"
+    },
+    {
+        "name": "Nicolas Jaar",
+        "genres": [
+            "downtempo",
+            "electronic",
+            "indietronica",
+            "microhouse"
+        ],
+        "popularity": 59,
+        "uri": "spotify:artist:5a0etAzO5V26gvlbmHzT9W"
+    },
+    {
+        "name": "Shlohmo",
+        "genres": [
+            "bass music",
+            "chillwave",
+            "downtempo",
+            "glitch",
+            "indie r&b",
+            "indietronica",
+            "vapor twitch",
+            "wonky"
+        ],
+        "popularity": 60,
+        "uri": "spotify:artist:6y80I9YZi4DOpbaSUlL725"
+    },
+    {
+        "name": "Shinichi Atobe",
+        "genres": [
+            "detroit techno",
+            "dub techno",
+            "float house",
+            "fluxwork",
+            "japanese electronic",
+            "mandible",
+            "microhouse",
+            "minimal techno",
+            "outsider house"
+        ],
+        "popularity": 43,
+        "uri": "spotify:artist:2n1YSv6tFmLxYalICWxOGv"
+    },
+    {
+        "name": "Blank Banshee",
+        "genres": [
+            "future funk",
+            "vaporwave"
+        ],
+        "popularity": 49,
+        "uri": "spotify:artist:1oR9pQhucVTJyi5lH2Y2iT"
+    }
+]

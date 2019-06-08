@@ -5,6 +5,9 @@ import requests
 from urllib.parse import quote
 import json
 
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+
 def get_id_and_secret():
     secret_data = json.loads(open("secret.txt", "r").read())
     return secret_data['CLIENT_ID'], secret_data['CLIENT_SECRET']
@@ -44,3 +47,7 @@ def get_token(request, client_id, client_secret, callback_url):
 
     return access_token, refresh_token, token_type, expires_in
 
+def create_spotipy_client_session(client_id, client_secret):
+    client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
+    spotipy_session = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+    return spotipy_session
