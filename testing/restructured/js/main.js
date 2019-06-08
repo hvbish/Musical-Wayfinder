@@ -203,12 +203,15 @@ function generateAxes(selector, xAxisLength, yAxisLength, margin, xOrigin, yOrig
 function countGenres(songData, genreData) {
     // Create and initialize temporary umbrella genre counts
     var umbrella_genre_counts = {};
+    var top_umbrella_genre_counts = {}; // Counts including only those songs which have the genre as their topUmbrellaGenre
     var genre_counts = {};
 
     // Initialize the umbrella count genres dictionary with the globally defined genre_labels
     genre_labels.forEach(function(umbrella_genre) {
         umbrella_genre_counts[umbrella_genre] = {};
+        top_umbrella_genre_counts[umbrella_genre] = {};
         umbrella_genre_counts[umbrella_genre]["userCount"] = 0;
+        top_umbrella_genre_counts[umbrella_genre]["userCount"] = 0;
     })
 
     // For each song in the passed library
@@ -253,9 +256,16 @@ function countGenres(songData, genreData) {
             
             });
         });
+        // Count up the number of songs using only their topUmbrella genre
+        genre_labels.forEach(function(umbrella) {
+            if (song["topUmbrellaMatches"][0] == umbrella) {
+                top_umbrella_genre_counts[umbrella]["userCount"] += 1;
+            }
+        
+        });
     });
 
-    return [genre_counts, umbrella_genre_counts];
+    return [genre_counts, umbrella_genre_counts, top_umbrella_genre_counts];
 }
 
 ////////////////////////
@@ -711,10 +721,12 @@ function updateLinePlot(songData, genreData, plot) {
         counts = countGenres(bin, genreData);
         genre_counts = counts[0];
         umbrella_genre_counts = counts[1];
+        top_umbrella_genre_counts = counts[2];
 
         genre_labels.forEach(function(umbrella_genre) {
             var last_index = genre_bin_data.length - 1;
-            genre_bin_data[last_index][umbrella_genre] = umbrella_genre_counts[umbrella_genre]["userCount"];
+            // genre_bin_data[last_index][umbrella_genre] = umbrella_genre_counts[umbrella_genre]["userCount"]; Steven, for now I've replaced the weighted umbrella counts with a count of songs in each top umbrella, those numbers are looking less wonky
+            genre_bin_data[last_index][umbrella_genre] = top_umbrella_genre_counts[umbrella_genre]["userCount"];
         });
     });
 
@@ -1119,6 +1131,7 @@ function updateAllPlots() {
     counts = countGenres(songDataFilter, genreDataFilter);
     genreCounts = counts[0];
     umbrellaCounts = counts[1];
+    topumbrellacounts = counts[2];
     // Update the passed genre data with new user counts.
     genreDataFilter.forEach(function(genre) {
         key = genre['name'].toLowerCase();
@@ -1451,8 +1464,11 @@ function songDataProcess(songData, genreData) {
                 s["topUmbrellaMatches"].push(umbrella);
             }
         });
-        // console.log(s["topUmbrellaMatches"],maxCount);
-        // console.log(s);
+        // Finally, if there is more than one topUmbrellaMatch, don't classify it as "Other"
+        if (s["topUmbrellaMatches"].length > 1) {
+            s["topUmbrellaMatches"] = s["topUmbrellaMatches"].filter(genre => genre != "Other")
+        }
+
 
         // This is where we would calculate closest genre for top umbrellas that are tied
 
@@ -1472,10 +1488,15 @@ function genreDataProcess(songData, genreData) {
             g["is" + umbrella] = false;
         });
         var songUmbrellas = classifyUmbrellaGenre(g.name);
-        g.topUmbrellaMatches = songUmbrellas;
+        g["topUmbrellaMatches"] = songUmbrellas;
         songUmbrellas.forEach(function(umbrella) {
             g["is" + umbrella] = true;
         });
+        // If there is more than one topUmbrellaMatch, don't classify it as "Other"
+        if (g["topUmbrellaMatches"].length > 1) {
+            g["topUmbrellaMatches"] = g["topUmbrellaMatches"].filter(genre => genre != "Other")
+        };
+                
     })
 
     // console.log(genreData);
