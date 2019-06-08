@@ -200,13 +200,21 @@
     function loadSongData() {
         // Create a promise for the data
         var songDataPromise = d3.json("{{ base_url }}/data/{{ user_id }}/library.json");
-        return songDataPromise;
+        return songDataPromise.then(function(data) {
+            return data;
+        }, function(error) {
+            return d3.json("{{ base_url }}/data/{{ user_id }}/library.json");
+        });
     }
 
     function loadGenreData() {
         // Create a promise for the data
         var genreDataPromise = d3.json("{{ base_url }}/data/data_genres_average_features.json");
-        return genreDataPromise;
+        return genreDataPromise.then(function(data) {
+            return data;
+        }, function(error) {
+            return d3.json("{{ base_url }}/data/data_genres_average_features.json");
+        });
     }
 
     function loadTopArtistsData() {
@@ -222,8 +230,18 @@
                         ]).then(function(results) {
                             return {"short" : results[0], "medium" : results[1], "long" : results[2]};
                         }, function(error) {
-                            console.log("Trouble loading top artist data!");
+                            console.log("Trouble loading top artist data! Trying again...");
                             console.log(error);
+                            return Promise.all([d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_short), 
+                                                d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_medium),
+                                                d3.json("{{ base_url }}/data/{{ user_id }}/" + top_artists_long)
+                            ]).then(function(results) {
+                                return {"short" : results[0], "medium" : results[1], "long" : results[2]};
+                            }, function(error) {
+                                return 
+                                console.log("Trouble loading top artist data!");
+                                console.log(error);
+                            })
                         })
     }
 
@@ -240,18 +258,33 @@
                         ]).then(function(results) {
                             return {"short" : results[0], "medium" : results[1], "long" : results[2]};
                         }, function(error) {
-                            console.log("Trouble loading top track data!");
+                            console.log("Trouble loading top track data! Trying again...");
                             console.log(error);
+                            return Promise.all([d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_short), 
+                                                d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_medium),
+                                                d3.json("{{ base_url }}/data/{{ user_id }}/" + top_tracks_long)
+                            ]).then(function(results) {
+                                return {"short" : results[0], "medium" : results[1], "long" : results[2]};
+                            }, function(error) {
+                                console.log("Trouble loading top track data!");
+                                console.log(error);
+                            })
                         })
     }
 
     function loadRecentlyPlayedData() {
-        return Promise.all([d3.json("{{ base_url }}/data/{{ user_id }}/recently_played.json")]).then(function(results) {
-            return results[0];
+        return d3.json("{{ base_url }}/data/{{ user_id }}/recently_played.json").then(function(data) {
+            return data
         }, function(error) {
-            console.log("Trouble loading recently played data!");
+            console.log("Trouble loading recently played data! Trying again...");
             console.log(error);
-        })
+            return d3.json("{{ base_url }}/data/{{ user_id }}/recently_played.json").then(function(data) {
+                return data
+            }, function(error) {
+                console.log("Trouble loading recently played data!");
+                console.log(error);
+            })
+        });
     }
 </script>
 
