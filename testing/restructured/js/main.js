@@ -12,8 +12,21 @@ var recentlyPlayedGlobal;
 
 // The default time range for the jQuery slider
 var defaultTimeRange = [2010, 2019];
+// Default plotting values
+var legendWidth = 100;
+var legendHeight = 200;
+xAxisLengthScatter = 500;
+yAxisLengthScatter = 500;
+var defaultMarkerSize = 3.;
+var defaultAlpha = 0.5;
+var myGenreAlpha = 0.8;
+var transitionTime = 500;
 
-var parseUTCTime = d3.utcParse("%Y-%m-%dT%H:%M:%SZ")
+
+
+// Functions to parse and format Date objects
+var parseUTCTime = d3.utcParse("%Y-%m-%dT%H:%M:%SZ");
+var formatTimeMDY = d3.timeFormat("%B %d, %Y");
 
 // The umbrella genre labels we are working with
 var genre_labels = ['Pop',            'Rock',           'Rap',         'Electronic',   'Classical',         'Jazz', 'Metal',   'Other'];
@@ -356,16 +369,16 @@ function updateSongPlot(songData, plot) {
     points.exit().remove();
 
     // 3 -- UPDATE old elements present in new data.
-    var update_trans = d3.transition().duration(1000); // Define a transition variable with 500ms duration so we can reuse it
+    var update_trans = d3.transition().duration(transitionTime); // Define a transition variable with 500ms duration so we can reuse it
 
-    points.attr("r", 3)
+    points
            .transition(update_trans)
-           .attr("cx", function(song, i) {
-               return xOrigin + xScale(song[selectedAttributeX]);                
-            })
-            .attr("cy", function(song, i){
-                return yScale(song[selectedAttributeY]);                
-            });
+                .attr("cx", function(song, i) {
+                    return xOrigin + xScale(song[selectedAttributeX]);                
+                })
+                .attr("cy", function(song, i){
+                    return yScale(song[selectedAttributeY]);                
+                });
 
     // 4 -- ENTER new elements present in new data.
     points.enter()
@@ -376,7 +389,7 @@ function updateSongPlot(songData, plot) {
             .attr("cy", function(song, i){
                 return yScale(song[selectedAttributeY]);                
             })
-            .attr("r", 3)
+            .attr("r", defaultMarkerSize)
             .on("mouseover", tipForSong.show)
             .on("mouseout", tipForSong.hide)
             // Add click action that changes the embeded song player to the current track
@@ -388,24 +401,30 @@ function updateSongPlot(songData, plot) {
                     '<iframe src="https://open.spotify.com/embed/track/track_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('track_id', song.uri.split(":")[2])
                 )
             })
+            .attr("fill", function(song) {
+                return umbrellaGenreToColor(song.topUmbrellaMatches[0]);
+            })
             .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
-                .attr("fill", function(song) {
-                    if (song.isRock) {
-                        return umbrellaGenreToColor('Rock')
-                    } else if (song.isRap) {
-                        return umbrellaGenreToColor('Rap')
-                    } else if (song.isPop) {
-                        return umbrellaGenreToColor('Pop')
-                    } else if (song.isMetal) {
-                        return umbrellaGenreToColor('Metal')
-                    } else if (song.isClassical) {
-                        return umbrellaGenreToColor('Classical')
-                    } else if (song.isElectronic) {
-                        return umbrellaGenreToColor('Electronic')
-                    } else {
-                        return umbrellaGenreToColor('Other')
-                    }
-                });
+                // .attr("fill", function(song) {
+                //     if (song.isRock) {
+                //         return umbrellaGenreToColor('Rock')
+                //     } else if (song.isRap) {
+                //         return umbrellaGenreToColor('Rap')
+                //     } else if (song.isPop) {
+                //         return umbrellaGenreToColor('Pop')
+                //     } else if (song.isMetal) {
+                //         return umbrellaGenreToColor('Metal')
+                //     } else if (song.isClassical) {
+                //         return umbrellaGenreToColor('Classical')
+                //     } else if (song.isElectronic) {
+                //         return umbrellaGenreToColor('Electronic')
+                //     } else {
+                //         return umbrellaGenreToColor('Other')
+                //     }
+                // })
+                // .attr("fill", function(genre) {
+                //     return umbrellaGenreToColor(genreUmbrella);
+                // }); 
 
     // Draw Axes //
     
@@ -441,7 +460,8 @@ function updateSongPlot(songData, plot) {
     // Update time slider
     // timesLabel.text(times[0] + " - " + times[1])
     if (selectionContext["timeRangeBrush"]) {
-        $("#time")[0].innerHTML = selectionContext["timeRangeBrush"][0] + " - " + selectionContext["timeRangeBrush"][1];
+        $("#time")[0].innerHTML = formatTimeMDY(selectionContext["timeRangeBrush"][0]) + " - " + formatTimeMDY(selectionContext["timeRangeBrush"][1]);
+        console.log(formatTimeMDY(selectionContext["timeRangeBrush"][0]));
     }
     //$("#time-slider").slider("value", +(time))
 }
@@ -458,6 +478,11 @@ function updateGenrePlot(genreData, plot) {
 
     var selectedAttributeX = selectionContext["selectedAttributeX"];
     var selectedAttributeY = selectionContext["selectedAttributeY"];
+
+  
+    selectionContext['genreToggle'] ? genreTitle.text("All Genres") : genreTitle.text("My Genres");
+
+
     
     // Add tool tips to points in plot
     var tipForGenre = d3.tip()
@@ -484,9 +509,13 @@ function updateGenrePlot(genreData, plot) {
 
     // Update the domain of your axes based on the new data you are using //
     
-    var genreCountScale = d3.scaleLinear()
-        .domain([0., maxGenreCount])
-        .range([0., 10.]);
+    // var genreCountScale = d3.scaleLinear()
+    //     .domain([0., maxGenreCount])
+    //     .range([0., 10.]);
+    var genreCountScale = d3.scaleLog()
+        .domain([1., maxGenreCount+1])
+        .range([0., 8.])
+        .base(10);
 
     // Plot the data, following the D3 update pattern //
 
@@ -500,7 +529,7 @@ function updateGenrePlot(genreData, plot) {
     points.exit().remove();
 
     // 3 -- UPDATE old elements present in new data.
-    var update_trans = d3.transition().duration(1000); // Define a transition variable with 500ms duration so we can reuse it
+    var update_trans = d3.transition().duration(transitionTime); // Define a transition variable with 500ms duration so we can reuse it
 
     // Pick which xScale and yScale we are using
     var xAttrToPix = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
@@ -548,13 +577,7 @@ function updateGenrePlot(genreData, plot) {
     yScale.range([yAxis['length'], 0.]);
 
 
-    points.attr("r", function(genre) {
-            if (selectionContext['flag']) {
-                return genreCountScale(genre.userCount);
-            } else {
-                return 3.;
-            }
-        })
+    points
         .transition(update_trans)
             .attr("cx", function(genre, i){
                 return xOrigin + xScale(genre[selectedAttributeX]);
@@ -564,6 +587,7 @@ function updateGenrePlot(genreData, plot) {
             });
 
     // 4 -- ENTER new elements present in new data.
+    // 4 1/2 -- Set attributes that apply to both old and new elements with .merge()
     points.enter()
         .append("circle")
         .attr("cx", function(genre, i){
@@ -572,33 +596,41 @@ function updateGenrePlot(genreData, plot) {
         .attr("cy", function(genre, i){
             return yScale(genre[selectedAttributeY]);
         })
-        .attr("r", function(genre) {
-            if (selectionContext['flag']) {
-                return genreCountScale(genre.userCount);
-            } else {
-                return 3.;
-            }
-            })
-        .on("mouseover", tipForGenre.show)
-        .on("mouseout", tipForGenre.hide)
-        .on("click", function(genre, i) {
-            if (spotify_preview.style("display") == "none") {
-                spotify_preview.style("display", "block");
-            }
-            spotify_preview.html(
-                '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
-            )
+        .attr("fill", function(genre) {
+            return umbrellaGenreToColor(genre.topUmbrellaMatches[0]);
         })
-        .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements. Helps reduce repetition in code if you want both to be updated in the same way
-            .attr("fill", function(genre) {
-                var genreUmbrella;
-                genre_labels.forEach(function(umbrella) {
-                    if (genre["is" + umbrella]) {
-                        genreUmbrella = umbrella;
+        .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements.
+            .attr("r", function(genre) {
+                if (selectionContext['genreToggle']) {
+                    if (genre.userCount == 0.) {
+                        return genre.userCount;
+                    } else {
+                        return genreCountScale(genre.userCount + 1);
                     }
-                });
-                return umbrellaGenreToColor(genreUmbrella);
-            });
+                    //return genreCountScale(genre.userCount);
+                } else {
+                    return defaultMarkerSize;
+                }
+                })
+            .on("mouseover", tipForGenre.show)
+            .on("mouseout", tipForGenre.hide)
+            .on("click", function(genre, i) {
+                if (spotify_preview.style("display") == "none") {
+                    spotify_preview.style("display", "block");
+                }
+                spotify_preview.html(
+                    '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
+                )
+            })
+            // .attr("fill", function(genre) {
+            //     var genreUmbrella;
+            //     genre_labels.forEach(function(umbrella) {
+            //         if (genre["is" + umbrella]) {
+            //             genreUmbrella = umbrella;
+            //         }
+            //     });
+            //     return umbrellaGenreToColor(genreUmbrella);
+            // });
 
     // Draw Axes //
     
@@ -979,7 +1011,8 @@ function updateAllPlots() {
         plotGenreFilter = genre_labels.some(function(umbrella) { 
             // Each song has isMetal, isRock etc.
             // Comapre with the current selectionContext
-            return song["is" + umbrella] && selectionContext["plot" + umbrella];
+            // return song["is" + umbrella] && selectionContext["plot" + umbrella];
+            return (song["topUmbrellaMatches"][0] == umbrella) && (selectionContext["plot" + umbrella]);
         });
 
         // var songYear = song['dateAdded'].getFullYear();
@@ -1007,7 +1040,9 @@ function updateAllPlots() {
         plotGenreFilter = genre_labels.some(function(umbrella) { 
             // Each song has isMetal, isRock etc.
             // Comapre with the current selectionContext
-            return genre["is" + umbrella] && selectionContext["plot" + umbrella];
+            // return genre["is" + umbrella] && selectionContext["plot" + umbrella];
+            return (genre["topUmbrellaMatches"][0] == umbrella) && (selectionContext["plot" + umbrella]);
+            
         });
 
         return topArtistFilter && topTrackFilter && plotGenreFilter;
@@ -1114,13 +1149,20 @@ $("#y-attribute-select")
         updateAllPlots();
     });
 
-// A button to reset back to initial conditions
-$("#toggle-button")
+// A button to toggle All/My Genres
+$("#toggle-genres-button")
     .on("click", function(){
-        selectionContext["flag"] = !selectionContext["flag"];
+        selectionContext["genreToggle"] = !selectionContext["genreToggle"];
         count = 0;
         updateAllPlots();
     });
+// $('input[name="toggle-genres-radio"]:radio')
+//     .on("click", function(){
+//         selectionContext["genreToggle"] = !selectionContext["genreToggle"];
+//         count = 0;
+//         updateAllPlots();
+//         console.log("button toggle");
+//     });
 
 // Add event listener to the jQuery slider
 $('#slider').dragslider({
@@ -1265,7 +1307,7 @@ function makeTopTracksList() {
                         updateAllPlots();
                     })
                     .html(function(track, i) {
-                        console.log(track);
+                        //console.log(track);
                         return (i+1) + ". " + track['name'].bold() + " -- " + track['artists'].join(", ")
                     });
 }
@@ -1278,8 +1320,8 @@ function loadPage() {
         // This evaluates out to e.g. selectionContext["plotMetal"] = true
         selectionContext["plot" + umbrella_genre] = true;
     })
-    // Start by plotting all genres (rahter than the user's genres)
-    selectionContext['flag'] = false;
+    // Start by plotting all genres (rather than the user's genres)
+    selectionContext['genreToggle'] = false; // false = All Genres, true = User Genres
     // We have three time scales to work with for the top artists and track
     // here we start with the short time scale, but we can make an interaction that changes this option
     // TODO: makeTopArtistsList() needs to be updateTopArtistsList() and added to updateAllPlots() for this to work
@@ -1304,22 +1346,31 @@ function loadPage() {
 
     var margin = { left:100, right:20, top:50, bottom:100 };
     var marginLinePlot = { left:100, right:200, top:50, bottom:100 };
-    
+
+        
     // Generate an svg and a set of x and y axes of length 500 and 500 using the above margin
     // generateAxes takes parameters (selector, xAxisLength, yAxisLength, margin, xOrigin, yOrigin)
     // This fully specifies a "plot" that we can drawn on
     // The selector #song-plot-area should reference a div with id song-plot-area
-    var plotSongs = generateAxes("#song-plot-area", 500, 500, margin, 0, 500);
+    var plotSongs = generateAxes("#song-plot-area", xAxisLengthScatter, yAxisLengthScatter, margin, 0, 500);
     var svgSongs = plotSongs[0];
     var xAxisSongs = plotSongs[1];
     var yAxisSongs = plotSongs[2];
     plots['song-chart'] = {"svg" : svgSongs, "xAxis" : xAxisSongs, "yAxis" : yAxisSongs, "margin" : margin};
     
     // We do this for each of the plots we want to make
-    var plotGenres = generateAxes("#genre-plot-area", 500, 500, margin, 0, 500);
+    var plotGenres = generateAxes("#genre-plot-area", xAxisLengthScatter, yAxisLengthScatter, margin, 0, 500);
     var svgGenres = plotGenres[0];
     var xAxisGenres = plotGenres[1];
     var yAxisGenres = plotGenres[2];
+    // Plot Title
+    genreTitle = svgGenres.append("text")
+        .attr("x", (xAxisLengthScatter / 2))
+        .attr("y", 0 - (margin.top / 5))
+        .attr("text-anchor", "middle")
+        .style("font-size", "26px")
+        .style("font-weight", "bold");
+     
     plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : margin};
 
     var plotLine = generateAxes("#line-plot-area", 1300, 200, marginLinePlot, 0, 1000);
@@ -1330,7 +1381,7 @@ function loadPage() {
 
     // TODO: Replace this with a "generateSvg" function since we don't care about the axes
     var marginLegend = { left : 100, right : 0, top : 0, bottom : 0}; // Doesn't seem to do anything
-    var plotLegend = generateAxes("#legend", 100, 200, marginLegend, 0, 200);
+    var plotLegend = generateAxes("#legend", legendWidth, legendHeight, marginLegend, 0, 200);
     var svgLegend = plotLegend[0];
     plots['legend'] = {"svg" : svgLegend}
     
@@ -1415,6 +1466,7 @@ function genreDataProcess(songData, genreData) {
             g["is" + umbrella] = false;
         });
         var songUmbrellas = classifyUmbrellaGenre(g.name);
+        g.topUmbrellaMatches = songUmbrellas;
         songUmbrellas.forEach(function(umbrella) {
             g["is" + umbrella] = true;
         });
