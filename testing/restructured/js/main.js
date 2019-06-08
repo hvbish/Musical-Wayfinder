@@ -12,16 +12,16 @@ var recentlyPlayedGlobal;
 
 // The default time range for the jQuery slider
 var defaultTimeRange = [2010, 2019];
+
 // Default plotting values
 var legendWidth = 100;
 var legendHeight = 200;
-xAxisLengthScatter = 500;
-yAxisLengthScatter = 500;
+var xAxisLengthScatter = 500;
+var yAxisLengthScatter = 500;
 var defaultMarkerSize = 3.;
 var defaultAlpha = 0.5;
 var myGenreAlpha = 0.8;
 var transitionTime = 500;
-
 
 
 // Functions to parse and format Date objects
@@ -514,22 +514,10 @@ function updateGenrePlot(genreData, plot) {
     //     .range([0., 10.]);
     var genreCountScale = d3.scaleLog()
         .domain([1., maxGenreCount+1])
-        .range([0., 8.])
+        .range([2., 8.])
         .base(10);
 
-    // Plot the data, following the D3 update pattern //
-
-    // 1 -- JOIN new data with old elements.
-    var points = svg.selectAll("circle") // Genre scatterplot
-        .data(genreData, function(genre) {  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
-            return genre.name;
-        });
-
-    // 2 -- EXIT old elements not present in new data.
-    points.exit().remove();
-
-    // 3 -- UPDATE old elements present in new data.
-    var update_trans = d3.transition().duration(transitionTime); // Define a transition variable with 500ms duration so we can reuse it
+    
 
     // Pick which xScale and yScale we are using
     var xAttrToPix = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
@@ -576,6 +564,20 @@ function updateGenrePlot(genreData, plot) {
     // Set the range to be from the length of the y axis to 0 
     yScale.range([yAxis['length'], 0.]);
 
+    
+    // Plot the data, following the D3 update pattern //
+
+    // 1 -- JOIN new data with old elements.
+    var points = svg.selectAll("circle") // Genre scatterplot
+        .data(genreData, function(genre) {  // The function being passed to the data method returns a key which matches items between data arrays. So D3 knows that any data element with the same genre name is a match, rather than assuming the data array always contains all genres in the same order
+            return genre.name;
+        });
+
+    // 2 -- EXIT old elements not present in new data.
+    points.exit().remove();
+
+    // 3 -- UPDATE old elements present in new data.
+    var update_trans = d3.transition().duration(transitionTime); // Define a transition variable with 500ms duration so we can reuse it
 
     points
         .transition(update_trans)
@@ -584,10 +586,20 @@ function updateGenrePlot(genreData, plot) {
             })
             .attr("cy", function(genre, i){
                 return yScale(genre[selectedAttributeY]);
+            })
+            .attr("r", function(genre) {
+                if (selectionContext['genreToggle']) {
+                    if (genre.userCount == 0.) {
+                        return genre.userCount;
+                    } else {
+                        return genreCountScale(genre.userCount + 1);
+                    }
+                } else {
+                    return defaultMarkerSize;
+                }
             });
 
     // 4 -- ENTER new elements present in new data.
-    // 4 1/2 -- Set attributes that apply to both old and new elements with .merge()
     points.enter()
         .append("circle")
         .attr("cx", function(genre, i){
@@ -599,6 +611,7 @@ function updateGenrePlot(genreData, plot) {
         .attr("fill", function(genre) {
             return umbrellaGenreToColor(genre.topUmbrellaMatches[0]);
         })
+    // 4 1/2 -- Set attributes that apply to both old and new elements with .merge()
         .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements.
             .attr("r", function(genre) {
                 if (selectionContext['genreToggle']) {
@@ -607,7 +620,6 @@ function updateGenrePlot(genreData, plot) {
                     } else {
                         return genreCountScale(genre.userCount + 1);
                     }
-                    //return genreCountScale(genre.userCount);
                 } else {
                     return defaultMarkerSize;
                 }
@@ -622,15 +634,7 @@ function updateGenrePlot(genreData, plot) {
                     '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
                 )
             })
-            // .attr("fill", function(genre) {
-            //     var genreUmbrella;
-            //     genre_labels.forEach(function(umbrella) {
-            //         if (genre["is" + umbrella]) {
-            //             genreUmbrella = umbrella;
-            //         }
-            //     });
-            //     return umbrellaGenreToColor(genreUmbrella);
-            // });
+
 
     // Draw Axes //
     
@@ -1121,6 +1125,8 @@ function updateAllPlots() {
         genreInLibrary = genreCounts[key];
         if (genreInLibrary) {
             genre.userCount = genreCounts[key]["userCount"];
+        } else {
+            genre.userCount = 0;
         }
     });
 
