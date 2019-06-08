@@ -118,69 +118,61 @@ def scrape_library(token, spotipy_session, user_id, limit=50):
 
     return user_library_data
 
-def scrape_top_artists(token, spotipy_session, user_id, limit=50):
+def scrape_top_artists(token, spotipy_session, user_id, time_range, limit=50):
     # print("Getting top artists for {}".format(user_id))
     assert(limit <= 50)
 
-    top_artists_data_all = {}
-    for time_range in ["short_term", "medium_term", "long_term"]:
-        response = get(top_artists_endpoint + "?time_range={}&limit={}".format(time_range, limit), token)
+    response = get(top_artists_endpoint + "?time_range={}&limit={}".format(time_range, limit), token)
 
-        top_artists = response.json()
-        
-        names = [artist['name'] for artist in top_artists['items']]
-        genres = [artist['genres'] for artist in top_artists['items']]
-        popularities = [artist['popularity'] for artist in top_artists['items']]
-        artist_uris = [artist['uri'] for artist in top_artists['items']]
-        
-        top_artists_data = []
+    top_artists = response.json()
+    
+    names = [artist['name'] for artist in top_artists['items']]
+    genres = [artist['genres'] for artist in top_artists['items']]
+    popularities = [artist['popularity'] for artist in top_artists['items']]
+    artist_uris = [artist['uri'] for artist in top_artists['items']]
+    
+    top_artists_data = []
 
-        for i in range(len(top_artists['items'])):
-            top_artists_data.append({ "name" : names[i],
-                                    "genres" : genres[i],
-                                    "popularity" : popularities[i],
-                                    "uri" : artist_uris[i]
-                                    })
+    for i in range(len(top_artists['items'])):
+        top_artists_data.append({ "name" : names[i],
+                                "genres" : genres[i],
+                                "popularity" : popularities[i],
+                                "uri" : artist_uris[i]
+                                })
 
-        top_artists_data_all[time_range] = top_artists_data
+    return top_artists_data
 
-    return top_artists_data_all
-
-def scrape_top_songs(token, spotipy_session, user_id, limit=50):
+def scrape_top_songs(token, spotipy_session, user_id, time_range, limit=50):
     # print("Getting top songs for {}".format(user_id))
     assert(limit <= 50)
 
-    top_tracks_data_all = {}
-    for time_range in ["short_term", "medium_term", "long_term"]:
-        response = get(top_tracks_endpoint + "?time_range={}&limit={}".format(time_range, limit), token)
+    response = get(top_tracks_endpoint + "?time_range={}&limit={}".format(time_range, limit), token)
 
-        top_tracks = response.json()
-        
-        # print("Featurizing tracks")
-        track_names, track_uris, data = utils.featurize_tracks([{ 'track' : track } for track in top_tracks['items']], spotipy_session, verbose=True)
-        # print("Getting song genres")
-        artist_names, artist_uris, genres = utils.get_song_genres([{ 'track' : track } for track in top_tracks['items']], spotipy_session, verbose=True)
+    top_tracks = response.json()
+    
+    # print("Featurizing tracks")
+    track_names, track_uris, data = utils.featurize_tracks([{ 'track' : track } for track in top_tracks['items']], spotipy_session, verbose=True)
+    # print("Getting song genres")
+    artist_names, artist_uris, genres = utils.get_song_genres([{ 'track' : track } for track in top_tracks['items']], spotipy_session, verbose=True)
 
-        top_tracks_data = []
+    top_tracks_data = []
 
-        num_tracks = len(top_tracks['items'])
-        for i in range(num_tracks):
-            track_name = track_names[i]
-            track_uri = track_uris[i]
-            track_features = data['features'][i]
-            track_genres = genres[i]
-            track_artists = artist_names[i]
-            top_tracks_data.append({ 'name' : track_name,
-                                    'uri' : track_uri,
-                                    'genres' : track_genres, 
-                                    'artists' : track_artists,
-                                })
-            for feature, feature_name in zip(track_features, data['feature_names']):
-                top_tracks_data[-1][feature_name] = feature
+    num_tracks = len(top_tracks['items'])
+    for i in range(num_tracks):
+        track_name = track_names[i]
+        track_uri = track_uris[i]
+        track_features = data['features'][i]
+        track_genres = genres[i]
+        track_artists = artist_names[i]
+        top_tracks_data.append({ 'name' : track_name,
+                                'uri' : track_uri,
+                                'genres' : track_genres, 
+                                'artists' : track_artists,
+                            })
+        for feature, feature_name in zip(track_features, data['feature_names']):
+            top_tracks_data[-1][feature_name] = feature
        
-        top_tracks_data_all[time_range] = top_tracks_data
-
-    return top_tracks_data_all
+    return top_tracks_data
 
 def scrape_recently_played(token, spotipy_session, user_id, limit=50):
     # print("Getting recently played artists for {}".format(user_id))
@@ -217,48 +209,49 @@ def scrape_recently_played(token, spotipy_session, user_id, limit=50):
     
     return recently_played_data
 
-def write_json(folder, file_name, data):
-    out_name = os.path.join(folder, file_name)
-    # print("Writing to {}".format(out_name))
-    open(out_name, "w").write(json.dumps(data, indent=4))
+def write_json(file_name, data):
+    open(file_name, "w").write(json.dumps(data, indent=4))
 
-def scrape_data(token, spotipy_session):
-    # Get profile data
-    profile_data = get_profile_data(token)
-    user_id = profile_data['id']
+def read_json(file_name):
+    return json.loads(open(file_name, "r").read())
 
-    # Get all playlists
-    playlist_data = get_user_playlists(token, user_id)
-
-    # Scrape library
-    library_data = scrape_library(token, spotipy_session, user_id)
-
-    # Scrape top artists
-    top_artists = scrape_top_artists(token, spotipy_session, user_id)
-
-    # Scrape top songs
-    top_songs = scrape_top_songs(token, spotipy_session, user_id)
-
-    # Get recently played
-    recently_played = scrape_recently_played(token, spotipy_session, user_id)
-
+def scrape_data(token, spotipy_session, user_id):
     # Output data to file
     user_folder = os.path.join("data", user_id)
     if not os.path.exists(user_folder):
         os.makedirs(user_folder)
     
-    # Write profile data to disk
-    write_json(user_folder, "profile.json", profile_data)
-    # Write library data to disk
-    write_json(user_folder, "library.json", library_data)
-    # Write top artist data to disk
-    for time_range, top_artists_data in top_artists.items():
-        write_json(user_folder, "top_artists_{}.json".format(time_range), top_artists_data)
-    # Write top tracks data to disk
-    for time_range, top_songs_data in top_songs.items():
-        write_json(user_folder, "top_tracks_{}.json".format(time_range), top_songs_data)
-    # Write recently played data to disk
-    write_json(user_folder, "recently_played.json".format(time_range), recently_played)
+    time_ranges = ["short_term", "medium_term", "long_term"]
+    profile_file = os.path.join(user_folder, "profile.json")
+    playlists_file = os.path.join(user_folder, "playlists.json")
+    library_file = os.path.join(user_folder, "library.json")
+    top_artists_files = [os.path.join(user_folder, "top_artists_{}.json".format(time_range)) for time_range in time_ranges]
+    top_tracks_files = [os.path.join(user_folder, "top_tracks_{}.json".format(time_range)) for time_range in time_ranges]
+    recently_played_file = os.path.join(user_folder, "recently_played.json")
+
+    def scrape_if_not_cached(file_name, scraper, *args):
+        if not os.path.exists(file_name):
+            data = scraper(*args)
+            write_json(file_name, data)
+        else:
+            data = read_json(file_name)
+        
+        return data
+
+    profile_data = scrape_if_not_cached(profile_file, get_profile_data, token)
+    user_id = profile_data['id']
+
+    playlists_data = scrape_if_not_cached(playlists_file, get_user_playlists, token, user_id)
+    library_data = scrape_if_not_cached(library_file, scrape_library, token, spotipy_session, user_id)
+    recently_played = scrape_if_not_cached(recently_played_file, scrape_recently_played, token, spotipy_session, user_id)
+    top_artists = {}
+    for time_range, top_artists_file in zip(time_ranges, top_artists_files):
+        top_artists_time_range = scrape_if_not_cached(top_artists_file, scrape_top_artists, token, spotipy_session, user_id, time_range)
+        top_artists[time_range] = top_artists_time_range
+    top_songs = {}
+    for time_range, top_tracks_file in zip(time_ranges, top_tracks_files):
+        top_songs_time_range = scrape_if_not_cached(top_tracks_file, scrape_top_songs, token, spotipy_session, user_id, time_range)
+        top_songs[time_range] = top_songs_time_range
 
     # Compress user data into a single file
     # zip_file = os.path.join(user_folder, "{}.zip".format(user_id))
@@ -272,7 +265,7 @@ def scrape_data(token, spotipy_session):
     # Package everything into a dictionary for easy return
     ret_dict = {
                 "profile" : profile_data,
-                "playlists" : playlist_data,
+                "playlists" : playlists_data,
                 "library" : library_data,
                 "top_tracks" : top_songs,
                 "top_artists" : top_artists,

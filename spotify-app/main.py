@@ -52,8 +52,11 @@ def callback():
     # Create a spotipy session for scraping data
     spotipy_session = auth.create_spotipy_client_session(CLIENT_ID, CLIENT_SECRET)
 
+    profile_data = api_call.get_profile_data(access_token)
+    user_id = profile_data['id']
+
     # Scrape all of the relevant data for this user
-    scrape = api_call.scrape_data(access_token, spotipy_session)    
+    scrape = api_call.scrape_data(access_token, spotipy_session, user_id)    
 
     # Combine profile and playlist data to display
     profile_data = scrape["profile"]
