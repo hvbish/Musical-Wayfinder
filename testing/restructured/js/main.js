@@ -292,7 +292,7 @@ function updateSongPlot(songData, plot) {
     // The tooltip for songs
     var tipForSong = d3.tip().attr('class', 'd3-tip')
     .html(function(song) {
-        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + song.artists + " - " + song.name + nbsp.repeat(0) + "</h4></span><br>";
+        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + song.artists.join(", ") + " - " + song.name.bold() + nbsp.repeat(0) + "</h4></span><br>";
         if (song.isPop) {text += "Pop? <span style='color:"+umbrellaGenreToColor("Pop")+";text-transform:capitalize'>" + song.isPop + "</span><br>";}
             else {text += "Pop? <span text-transform:capitalize'>" + song.isPop + "</span><br>";}
         if (song.isRock) {text += "Rock? <span style='color:"+umbrellaGenreToColor("Rock")+";text-transform:capitalize'>" + song.isRock + "</span><br>";}
