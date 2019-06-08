@@ -205,7 +205,7 @@
         "loudness": -8.807,
         "valence": 0.461,
         "tempo": 108.99,
-        "popularity": 23.0
+        "popularity": 22.0
     },
     {
         "name": "Professor 3",
@@ -354,6 +354,7 @@
         "name": "Caramel",
         "uri": "spotify:track:0EXHTAsw6JyWpx0nPskVYS",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -385,6 +386,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -409,7 +411,7 @@
         "loudness": -6.613,
         "valence": 0.38,
         "tempo": 96.749,
-        "popularity": 36.0
+        "popularity": 35.0
     },
     {
         "name": "Jelly",
@@ -485,7 +487,7 @@
         "loudness": -10.241,
         "valence": 0.342,
         "tempo": 89.918,
-        "popularity": 38.0
+        "popularity": 39.0
     },
     {
         "name": "Crisis",
@@ -1078,6 +1080,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -1118,6 +1121,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -1247,7 +1251,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",

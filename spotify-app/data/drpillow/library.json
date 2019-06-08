@@ -74,6 +74,7 @@
         "date": "2019-05-26T16:58:34Z",
         "genres": [
             "art pop",
+            "drone",
             "fluxwork",
             "hyperpop",
             "industrial",
@@ -844,7 +845,7 @@
         "loudness": -7.69,
         "valence": 0.475,
         "tempo": 81.245,
-        "popularity": 57.0
+        "popularity": 58.0
     },
     {
         "name": "Land Of Honey",
@@ -910,7 +911,7 @@
         "loudness": -5.852,
         "valence": 0.187,
         "tempo": 112.079,
-        "popularity": 52.0
+        "popularity": 53.0
     },
     {
         "name": "Hot Oct.",
@@ -1254,7 +1255,7 @@
         "loudness": -10.63,
         "valence": 0.0431,
         "tempo": 83.082,
-        "popularity": 12.0
+        "popularity": 13.0
     },
     {
         "name": "Frailty",
@@ -1338,7 +1339,7 @@
         "loudness": -12.509,
         "valence": 0.262,
         "tempo": 68.783,
-        "popularity": 11.0
+        "popularity": 12.0
     },
     {
         "name": "Fear O The Light",
@@ -1527,7 +1528,7 @@
         "loudness": -16.02,
         "valence": 0.0288,
         "tempo": 61.656,
-        "popularity": 9.0
+        "popularity": 10.0
     },
     {
         "name": "More",
@@ -1558,7 +1559,7 @@
         "loudness": -5.589,
         "valence": 0.359,
         "tempo": 96.983,
-        "popularity": 62.0
+        "popularity": 61.0
     },
     {
         "name": "Shimmer",
@@ -1744,7 +1745,7 @@
         "loudness": -12.645,
         "valence": 0.488,
         "tempo": 134.01,
-        "popularity": 16.0
+        "popularity": 15.0
     },
     {
         "name": "Angel",
@@ -1774,6 +1775,7 @@
         "uri": "spotify:track:6TorRujeZsG4jdoHxKrHId",
         "date": "2019-05-13T17:43:52Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -1800,6 +1802,7 @@
         "genres": [
             "bass music",
             "hyperpop",
+            "indie r&b",
             "wonky",
             "bass music",
             "escape room",
@@ -2040,7 +2043,7 @@
         "loudness": -17.174,
         "valence": 0.0647,
         "tempo": 115.255,
-        "popularity": 19.0
+        "popularity": 18.0
     },
     {
         "name": "That's How City Life Goes",
@@ -2206,6 +2209,7 @@
             "dream pop",
             "experimental pop",
             "indie pop",
+            "indie rock",
             "indietronica",
             "neo-psychedelic",
             "new rave",
@@ -2358,7 +2362,7 @@
         "loudness": -11.319,
         "valence": 0.44,
         "tempo": 98.027,
-        "popularity": 34.0
+        "popularity": 33.0
     },
     {
         "name": "Faygo",
@@ -2402,7 +2406,7 @@
         "loudness": -18.216,
         "valence": 0.489,
         "tempo": 163.961,
-        "popularity": 14.0
+        "popularity": 15.0
     },
     {
         "name": "Faking It",
@@ -2730,7 +2734,7 @@
         "loudness": -8.031,
         "valence": 0.039,
         "tempo": 114.485,
-        "popularity": 31.0
+        "popularity": 30.0
     },
     {
         "name": "Takashi",
@@ -2759,7 +2763,7 @@
         "loudness": -6.912,
         "valence": 0.268,
         "tempo": 142.389,
-        "popularity": 25.0
+        "popularity": 24.0
     },
     {
         "name": "Best of Times",
@@ -3671,7 +3675,7 @@
         "loudness": -7.909,
         "valence": 0.696,
         "tempo": 80.015,
-        "popularity": 48.0
+        "popularity": 47.0
     },
     {
         "name": "Curls",
@@ -4781,7 +4785,8 @@
             "icelandic electronic",
             "intelligent dance music",
             "microhouse",
-            "minimal techno"
+            "minimal techno",
+            "neo-classical"
         ],
         "artists": [
             "Yagya"
@@ -4808,7 +4813,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -4835,7 +4841,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -4862,7 +4869,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -4889,7 +4897,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -4916,7 +4925,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -4943,7 +4953,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -4970,7 +4981,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -4997,7 +5009,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -5024,7 +5037,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -5051,7 +5065,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -5078,7 +5093,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -5105,7 +5121,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -5119,7 +5136,7 @@
         "loudness": -17.865,
         "valence": 0.0389,
         "tempo": 69.392,
-        "popularity": 37.0
+        "popularity": 36.0
     },
     {
         "name": "Meridian - Mixed",
@@ -5254,7 +5271,7 @@
         "loudness": -9.266,
         "valence": 0.698,
         "tempo": 119.974,
-        "popularity": 28.0
+        "popularity": 29.0
     },
     {
         "name": "Timelapse (Walrus) - Mixed",
@@ -6215,6 +6232,7 @@
         "date": "2019-04-03T01:12:39Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -6400,7 +6418,6 @@
             "lo-fi house",
             "outsider house",
             "art pop",
-            "chamber psych",
             "escape room",
             "experimental pop",
             "fluxwork",
@@ -6552,6 +6569,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "noise pop",
             "noise rock",
             "nu gaze"
@@ -6611,7 +6629,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -6953,7 +6972,7 @@
         "loudness": -14.327,
         "valence": 0.558,
         "tempo": 126.017,
-        "popularity": 26.0
+        "popularity": 25.0
     },
     {
         "name": "Cricoid Pressure - Mixed",
@@ -7038,7 +7057,7 @@
         "loudness": -11.093,
         "valence": 0.0759,
         "tempo": 129.102,
-        "popularity": 24.0
+        "popularity": 23.0
     },
     {
         "name": "Plastic PQ - Mixed",
@@ -7513,7 +7532,7 @@
         "loudness": -8.866,
         "valence": 0.214,
         "tempo": 134.014,
-        "popularity": 19.0
+        "popularity": 18.0
     },
     {
         "name": "Ntu - Mixed",
@@ -8093,7 +8112,7 @@
         "loudness": -2.425,
         "valence": 0.62,
         "tempo": 80.328,
-        "popularity": 11.0
+        "popularity": 12.0
     },
     {
         "name": "\u30b5\u30f3\u30e9\u30a4\u30ba",
@@ -8690,7 +8709,8 @@
             "alternative hip hop",
             "escape room",
             "experimental hip hop",
-            "hip hop"
+            "hip hop",
+            "new rave"
         ],
         "artists": [
             "Death Grips"
@@ -8881,7 +8901,7 @@
         "loudness": -8.786,
         "valence": 0.162,
         "tempo": 112.012,
-        "popularity": 39.0
+        "popularity": 38.0
     },
     {
         "name": "Fine Again",
@@ -9230,6 +9250,7 @@
         "uri": "spotify:track:2E6ky4IRgosfwbJPSkMIma",
         "date": "2019-03-18T23:21:17Z",
         "genres": [
+            "escape room",
             "fluxwork",
             "hyperpop"
         ],
@@ -9252,6 +9273,7 @@
         "uri": "spotify:track:6lUC7qK9Wz3ED5EX9xxrU6",
         "date": "2019-03-18T23:21:17Z",
         "genres": [
+            "escape room",
             "fluxwork",
             "hyperpop"
         ],
@@ -9274,6 +9296,7 @@
         "uri": "spotify:track:028LtHc1S5Nu4qg6FXMQJE",
         "date": "2019-03-18T23:21:17Z",
         "genres": [
+            "escape room",
             "fluxwork",
             "hyperpop"
         ],
@@ -9296,6 +9319,7 @@
         "uri": "spotify:track:5brGrmJ5PjD9Yv7OJPN2Jy",
         "date": "2019-03-18T23:21:17Z",
         "genres": [
+            "escape room",
             "fluxwork",
             "hyperpop"
         ],
@@ -9318,6 +9342,7 @@
         "uri": "spotify:track:4RoGFLg1wBfA7fzmfe1fyH",
         "date": "2019-03-18T23:21:17Z",
         "genres": [
+            "escape room",
             "fluxwork",
             "hyperpop"
         ],
@@ -9340,6 +9365,7 @@
         "uri": "spotify:track:4xbsfQj7cmfGCkdh4mxjTh",
         "date": "2019-03-18T23:21:17Z",
         "genres": [
+            "escape room",
             "fluxwork",
             "hyperpop"
         ],
@@ -9381,6 +9407,7 @@
         "uri": "spotify:track:088jxbKsO8V7gQZv1qpNhC",
         "date": "2019-03-18T23:11:02Z",
         "genres": [
+            "escape room",
             "fluxwork",
             "hyperpop",
             "escape room",
@@ -9708,6 +9735,7 @@
         "genres": [
             "art pop",
             "indie punk",
+            "indie rock",
             "modern rock",
             "noise pop",
             "preverb"
@@ -9840,7 +9868,7 @@
         "loudness": -9.559,
         "valence": 0.258,
         "tempo": 141.663,
-        "popularity": 40.0
+        "popularity": 41.0
     },
     {
         "name": "Am I Demon",
@@ -10757,6 +10785,7 @@
             "alternative r&b",
             "electropop",
             "indie r&b",
+            "neo r&b",
             "neo soul",
             "soul"
         ],
@@ -11906,6 +11935,7 @@
         "uri": "spotify:track:0KXzxqD4R5MtGPOiLMU5N1",
         "date": "2019-02-26T02:37:35Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -11929,6 +11959,7 @@
         "uri": "spotify:track:07ahbydCmD0CLoN2zIx8bR",
         "date": "2019-02-26T02:37:35Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -11952,6 +11983,7 @@
         "uri": "spotify:track:0PUfgUefFikS4Cx8EUTRss",
         "date": "2019-02-26T02:37:35Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -11975,6 +12007,7 @@
         "uri": "spotify:track:6JGgcKtyLgFAQNgog8GQSm",
         "date": "2019-02-26T02:37:35Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -11998,6 +12031,7 @@
         "uri": "spotify:track:1okp2TxO5NIJp2HCYG1FD4",
         "date": "2019-02-26T02:37:35Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -12021,6 +12055,7 @@
         "uri": "spotify:track:4DvJIVKyGYaNiN1zgOlSHs",
         "date": "2019-02-26T02:37:35Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -12044,6 +12079,7 @@
         "uri": "spotify:track:7GqtIs4xDmdWmWvENv3lpp",
         "date": "2019-02-26T02:37:35Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -12060,13 +12096,14 @@
         "loudness": -19.205,
         "valence": 0.0292,
         "tempo": 60.641,
-        "popularity": 19.0
+        "popularity": 20.0
     },
     {
         "name": "It's Your Body 4",
         "uri": "spotify:track:7AMduDUJBLXE0UG8SI64tI",
         "date": "2019-02-26T02:37:35Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -12090,6 +12127,7 @@
         "uri": "spotify:track:6jW0IhYuWU9j6gfqvaIzAn",
         "date": "2019-02-26T02:37:35Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -12113,6 +12151,7 @@
         "uri": "spotify:track:5yUCiGd42OdY1yWQK9PMx1",
         "date": "2019-02-26T02:37:35Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -12189,6 +12228,7 @@
             "dream pop",
             "experimental pop",
             "indie pop",
+            "indie rock",
             "indietronica",
             "neo-psychedelic",
             "new rave",
@@ -12215,6 +12255,7 @@
         "uri": "spotify:track:0EXHTAsw6JyWpx0nPskVYS",
         "date": "2019-02-23T21:54:52Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -12554,6 +12595,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -12586,6 +12628,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -12618,6 +12661,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -12650,6 +12694,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -12682,6 +12727,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -12714,6 +12760,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -12746,6 +12793,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -12778,6 +12826,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -12810,6 +12859,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -12842,6 +12892,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -12874,6 +12925,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -13327,12 +13379,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13371,12 +13423,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13415,12 +13467,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13459,12 +13511,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13492,7 +13544,7 @@
         "loudness": -6.767,
         "valence": 0.967,
         "tempo": 121.975,
-        "popularity": 27.0
+        "popularity": 28.0
     },
     {
         "name": "Dedicated To Bobby Jameson",
@@ -13503,12 +13555,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13547,12 +13599,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13591,12 +13643,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13635,12 +13687,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13679,12 +13731,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13723,12 +13775,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13767,12 +13819,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13811,12 +13863,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -13855,12 +13907,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -14175,7 +14227,7 @@
         "loudness": -16.603,
         "valence": 0.036,
         "tempo": 119.986,
-        "popularity": 18.0
+        "popularity": 17.0
     },
     {
         "name": "Boom Bye Bye",
@@ -14585,7 +14637,7 @@
         "loudness": -12.919,
         "valence": 0.14,
         "tempo": 173.894,
-        "popularity": 2.0
+        "popularity": 1.0
     },
     {
         "name": "Photoburn",
@@ -14604,7 +14656,7 @@
         "loudness": -11.34,
         "valence": 0.612,
         "tempo": 119.927,
-        "popularity": 2.0
+        "popularity": 3.0
     },
     {
         "name": "Receiver",
@@ -14807,7 +14859,7 @@
         "loudness": -8.127,
         "valence": 0.275,
         "tempo": 187.922,
-        "popularity": 38.0
+        "popularity": 39.0
     },
     {
         "name": "The Vapors",
@@ -15460,6 +15512,7 @@
             "chamber pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "quebec indie",
             "stomp and holler"
         ],
@@ -15485,6 +15538,7 @@
             "chamber pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "quebec indie",
             "stomp and holler"
         ],
@@ -15510,6 +15564,7 @@
             "chamber pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "quebec indie",
             "stomp and holler"
         ],
@@ -15535,6 +15590,7 @@
             "chamber pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "quebec indie",
             "stomp and holler"
         ],
@@ -15622,7 +15678,6 @@
             "alternative pop",
             "alternative rock",
             "anti-folk",
-            "chamber pop",
             "dance rock",
             "dream pop",
             "e6fi",
@@ -15668,7 +15723,6 @@
             "alternative pop",
             "alternative rock",
             "anti-folk",
-            "chamber pop",
             "dance rock",
             "dream pop",
             "e6fi",
@@ -16042,7 +16096,7 @@
         "loudness": -9.567,
         "valence": 0.273,
         "tempo": 82.532,
-        "popularity": 2.0
+        "popularity": 3.0
     },
     {
         "name": "Flower",
@@ -16080,7 +16134,7 @@
         "loudness": -11.13,
         "valence": 0.198,
         "tempo": 74.952,
-        "popularity": 2.0
+        "popularity": 3.0
     },
     {
         "name": "Broke",
@@ -16099,7 +16153,7 @@
         "loudness": -16.262,
         "valence": 0.0864,
         "tempo": 108.886,
-        "popularity": 2.0
+        "popularity": 3.0
     },
     {
         "name": "Chagall",
@@ -16167,7 +16221,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop"
         ],
         "artists": [
@@ -16183,7 +16236,7 @@
         "loudness": -10.691,
         "valence": 0.312,
         "tempo": 139.929,
-        "popularity": 53.0
+        "popularity": 54.0
     },
     {
         "name": "All In",
@@ -16590,6 +16643,7 @@
             "art pop",
             "chamber pop",
             "electronic",
+            "indie rock",
             "oxford indie"
         ],
         "artists": [
@@ -18563,7 +18617,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18598,7 +18651,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18633,7 +18685,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18668,7 +18719,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18703,7 +18753,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18738,7 +18787,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18773,7 +18821,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18808,7 +18855,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18843,7 +18889,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18878,7 +18923,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18913,7 +18957,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -18948,7 +18991,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -19242,7 +19284,7 @@
         "loudness": -11.682,
         "valence": 0.196,
         "tempo": 146.17,
-        "popularity": 19.0
+        "popularity": 20.0
     },
     {
         "name": "Vault - Moby Remix",
@@ -19269,7 +19311,7 @@
         "loudness": -4.71,
         "valence": 0.383,
         "tempo": 173.978,
-        "popularity": 38.0
+        "popularity": 39.0
     },
     {
         "name": "Kerberos Revisited - Solomun & Johannes Brecht Remix",
@@ -19687,6 +19729,7 @@
             "digital hardcore",
             "electro house",
             "electropop",
+            "indie rock",
             "indietronica",
             "neo-synthpop",
             "new rave",
@@ -19717,6 +19760,7 @@
             "digital hardcore",
             "electro house",
             "electropop",
+            "indie rock",
             "indietronica",
             "neo-synthpop",
             "new rave",
@@ -19747,6 +19791,7 @@
             "digital hardcore",
             "electro house",
             "electropop",
+            "indie rock",
             "indietronica",
             "neo-synthpop",
             "new rave",
@@ -20161,7 +20206,7 @@
         "loudness": -14.115,
         "valence": 0.395,
         "tempo": 117.043,
-        "popularity": 3.0
+        "popularity": 4.0
     },
     {
         "name": "Gerla",
@@ -20435,7 +20480,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Sufjan Stevens",
@@ -20590,7 +20636,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Sufjan Stevens",
@@ -20814,6 +20861,7 @@
         "date": "2018-12-02T08:55:55Z",
         "genres": [
             "bass music",
+            "escape room",
             "fluxwork",
             "footwork",
             "ghettotech",
@@ -20965,6 +21013,7 @@
             "minimal techno",
             "tech house",
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -21023,7 +21072,7 @@
         "loudness": -16.182,
         "valence": 0.404,
         "tempo": 117.999,
-        "popularity": 29.0
+        "popularity": 30.0
     },
     {
         "name": "Das Wort",
@@ -21407,7 +21456,7 @@
         "loudness": -9.844,
         "valence": 0.362,
         "tempo": 90.333,
-        "popularity": 31.0
+        "popularity": 30.0
     },
     {
         "name": "Adam Copies",
@@ -21753,7 +21802,7 @@
         "loudness": -8.677,
         "valence": 0.326,
         "tempo": 137.992,
-        "popularity": 24.0
+        "popularity": 23.0
     },
     {
         "name": "La Bouche",
@@ -22107,7 +22156,6 @@
             "minimal tech house",
             "minimal techno",
             "outsider house",
-            "tech house",
             "techno",
             "uk garage",
             "wonky"
@@ -22221,6 +22269,7 @@
         "date": "2018-11-25T05:21:41Z",
         "genres": [
             "bass music",
+            "escape room",
             "fluxwork",
             "footwork",
             "ghettotech",
@@ -22305,7 +22354,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop",
             "alternative hip hop",
             "escape room",
@@ -22629,7 +22677,7 @@
         "loudness": -9.03,
         "valence": 0.104,
         "tempo": 127.972,
-        "popularity": 9.0
+        "popularity": 10.0
     },
     {
         "name": "Beautiful Undertow",
@@ -22671,7 +22719,7 @@
         "loudness": -7.623,
         "valence": 0.175,
         "tempo": 106.985,
-        "popularity": 12.0
+        "popularity": 13.0
     },
     {
         "name": "Birthday Beat",
@@ -23132,7 +23180,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -23173,7 +23220,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -23214,7 +23260,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -23255,7 +23300,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -23296,7 +23340,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -23337,7 +23380,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -23378,7 +23420,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -23419,7 +23460,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -23460,7 +23500,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -23501,7 +23540,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -23976,6 +24014,7 @@
         "genres": [
             "indie jazz",
             "neo r&b",
+            "alternative r&b",
             "indie r&b",
             "uk contemporary r&b"
         ],
@@ -25611,7 +25650,7 @@
         "loudness": -2.828,
         "valence": 0.0897,
         "tempo": 108.766,
-        "popularity": 18.0
+        "popularity": 17.0
     },
     {
         "name": "Good House",
@@ -25815,6 +25854,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -25847,6 +25887,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -25879,6 +25920,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -25911,6 +25953,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -25943,6 +25986,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -25975,6 +26019,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -26007,6 +26052,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -26039,6 +26085,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -27723,7 +27770,7 @@
         "loudness": -9.217,
         "valence": 0.446,
         "tempo": 104.995,
-        "popularity": 15.0
+        "popularity": 14.0
     },
     {
         "name": "Paging Mr. Bill Nunn",
@@ -28073,7 +28120,7 @@
         "loudness": -9.786,
         "valence": 0.224,
         "tempo": 78.76,
-        "popularity": 2.0
+        "popularity": 3.0
     },
     {
         "name": "Sivulivinivut",
@@ -28117,7 +28164,7 @@
         "loudness": -8.879,
         "valence": 0.118,
         "tempo": 92.056,
-        "popularity": 1.0
+        "popularity": 2.0
     },
     {
         "name": "Rape Me",
@@ -28169,7 +28216,7 @@
         "loudness": -13.699,
         "valence": 0.258,
         "tempo": 116.892,
-        "popularity": 53.0
+        "popularity": 54.0
     },
     {
         "name": "Bonfire",
@@ -28607,7 +28654,7 @@
         "loudness": -10.089,
         "valence": 0.938,
         "tempo": 96.02,
-        "popularity": 33.0
+        "popularity": 34.0
     },
     {
         "name": "Seeing Aliens",
@@ -28829,7 +28876,6 @@
             "noise rock",
             "nu gaze",
             "post-rock",
-            "preverb",
             "shoegaze",
             "slow core",
             "warm drone"
@@ -28903,6 +28949,7 @@
         "date": "2018-10-14T06:52:36Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -28994,7 +29041,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -30146,7 +30192,7 @@
         "loudness": -8.346,
         "valence": 0.0445,
         "tempo": 132.003,
-        "popularity": 6.0
+        "popularity": 7.0
     },
     {
         "name": "I'm Gonna Get You - Original Mix",
@@ -30618,7 +30664,8 @@
             "edm",
             "electro house",
             "electropop",
-            "filter house"
+            "filter house",
+            "pop edm"
         ],
         "artists": [
             "Porter Robinson",
@@ -31592,7 +31639,6 @@
         "genres": [
             "chicago rap",
             "drill",
-            "hip hop",
             "pop rap",
             "rap",
             "southern hip hop",
@@ -31689,18 +31735,19 @@
             "alternative dance",
             "art pop",
             "chillwave",
+            "dance-punk",
             "dream pop",
             "experimental pop",
             "freak folk",
             "garage psych",
             "grave wave",
+            "indie rock",
             "indietronica",
             "lo-fi",
             "new rave",
             "noise pop",
             "nu gaze",
-            "preverb",
-            "shoegaze"
+            "preverb"
         ],
         "artists": [
             "John Maus"
@@ -31976,7 +32023,7 @@
         "loudness": -6.734,
         "valence": 0.0544,
         "tempo": 136.162,
-        "popularity": 10.0
+        "popularity": 11.0
     },
     {
         "name": "Solace",
@@ -32178,7 +32225,7 @@
         "loudness": -5.369,
         "valence": 0.0577,
         "tempo": 180.09,
-        "popularity": 10.0
+        "popularity": 9.0
     },
     {
         "name": "Jewelry",
@@ -32361,7 +32408,7 @@
         "loudness": -6.443,
         "valence": 0.974,
         "tempo": 117.627,
-        "popularity": 3.0
+        "popularity": 2.0
     },
     {
         "name": "Blissing Me",
@@ -32377,6 +32424,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -32417,6 +32465,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -32457,6 +32506,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -32497,6 +32547,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -32537,6 +32588,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -32569,6 +32621,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -32609,6 +32662,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -32649,6 +32703,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -32689,6 +32744,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -32729,6 +32785,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -32769,6 +32826,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -32801,6 +32859,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -32841,6 +32900,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -33632,7 +33692,7 @@
         "loudness": -7.218,
         "valence": 0.673,
         "tempo": 112.98,
-        "popularity": 10.0
+        "popularity": 9.0
     },
     {
         "name": "Magical Boy",
@@ -34065,7 +34125,7 @@
         "loudness": -5.219,
         "valence": 0.648,
         "tempo": 140.001,
-        "popularity": 29.0
+        "popularity": 30.0
     },
     {
         "name": "It's Okay To Cry",
@@ -34319,7 +34379,7 @@
         "loudness": -8.392,
         "valence": 0.808,
         "tempo": 156.089,
-        "popularity": 24.0
+        "popularity": 25.0
     },
     {
         "name": "Prism",
@@ -35129,7 +35189,8 @@
         "uri": "spotify:track:0M3rOCvL9UpoVXTTBWoO2E",
         "date": "2018-06-05T04:55:03Z",
         "genres": [
-            "dance-punk"
+            "dance-punk",
+            "new rave"
         ],
         "artists": [
             "Holy Fuck"
@@ -35294,7 +35355,7 @@
         "loudness": -7.009,
         "valence": 0.0703,
         "tempo": 96.469,
-        "popularity": 12.0
+        "popularity": 13.0
     },
     {
         "name": "Ezra",
@@ -35884,7 +35945,7 @@
         "loudness": -8.559,
         "valence": 0.352,
         "tempo": 164.236,
-        "popularity": 9.0
+        "popularity": 8.0
     },
     {
         "name": "No Mistakes",
@@ -35984,7 +36045,7 @@
         "loudness": -5.439,
         "valence": 0.159,
         "tempo": 101.508,
-        "popularity": 27.0
+        "popularity": 26.0
     },
     {
         "name": "AAA Powerline",
@@ -36685,6 +36746,7 @@
         "date": "2018-04-22T03:20:45Z",
         "genres": [
             "conscious hip hop",
+            "escape room",
             "hip hop",
             "pop rap",
             "rap",
@@ -36718,7 +36780,6 @@
             "indie rock",
             "indietronica",
             "modern rock",
-            "new rave",
             "rock"
         ],
         "artists": [
@@ -36882,7 +36943,7 @@
         "loudness": -4.137,
         "valence": 0.294,
         "tempo": 99.445,
-        "popularity": 60.0
+        "popularity": 61.0
     },
     {
         "name": "One Kiss (with Dua Lipa)",
@@ -37161,7 +37222,8 @@
             "alternative hip hop",
             "escape room",
             "experimental hip hop",
-            "hip hop"
+            "hip hop",
+            "new rave"
         ],
         "artists": [
             "Death Grips"
@@ -37185,7 +37247,8 @@
             "alternative hip hop",
             "escape room",
             "experimental hip hop",
-            "hip hop"
+            "hip hop",
+            "new rave"
         ],
         "artists": [
             "Death Grips"
@@ -37209,7 +37272,8 @@
             "alternative hip hop",
             "escape room",
             "experimental hip hop",
-            "hip hop"
+            "hip hop",
+            "new rave"
         ],
         "artists": [
             "Death Grips"
@@ -37233,7 +37297,8 @@
             "alternative hip hop",
             "escape room",
             "experimental hip hop",
-            "hip hop"
+            "hip hop",
+            "new rave"
         ],
         "artists": [
             "Death Grips"
@@ -37681,7 +37746,7 @@
         "loudness": -11.251,
         "valence": 0.128,
         "tempo": 137.554,
-        "popularity": 3.0
+        "popularity": 4.0
     },
     {
         "name": "God Knows Me",
@@ -37719,7 +37784,7 @@
         "loudness": -6.961,
         "valence": 0.779,
         "tempo": 130.01,
-        "popularity": 12.0
+        "popularity": 13.0
     },
     {
         "name": "Her Eyes",
@@ -37757,7 +37822,7 @@
         "loudness": -10.098,
         "valence": 0.591,
         "tempo": 160.714,
-        "popularity": 2.0
+        "popularity": 3.0
     },
     {
         "name": "Transmission 5",
@@ -37822,7 +37887,6 @@
             "experimental rock",
             "folk-pop",
             "freak folk",
-            "garage psych",
             "indie folk",
             "indie pop",
             "indie rock",
@@ -38111,7 +38175,7 @@
         "loudness": -8.807,
         "valence": 0.461,
         "tempo": 108.99,
-        "popularity": 23.0
+        "popularity": 22.0
     },
     {
         "name": "Just",
@@ -38177,7 +38241,7 @@
         "loudness": -13.988,
         "valence": 0.0389,
         "tempo": 127.99,
-        "popularity": 32.0
+        "popularity": 31.0
     },
     {
         "name": "I Can't Go for That (No Can Do) - Remastered",
@@ -38253,6 +38317,7 @@
             "alternative dance",
             "indie pop",
             "indie poptimism",
+            "indie rock",
             "indietronica",
             "la indie",
             "modern rock",
@@ -38279,6 +38344,7 @@
         "date": "2018-02-15T23:35:37Z",
         "genres": [
             "conscious hip hop",
+            "escape room",
             "hip hop",
             "pop rap",
             "rap",
@@ -38351,6 +38417,7 @@
         "date": "2018-02-11T20:39:03Z",
         "genres": [
             "conscious hip hop",
+            "escape room",
             "hip hop",
             "pop rap",
             "rap",
@@ -38379,6 +38446,7 @@
             "alternative dance",
             "indie pop",
             "indie poptimism",
+            "indie rock",
             "indietronica",
             "la indie",
             "modern rock",
@@ -38612,6 +38680,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop",
@@ -38636,7 +38705,7 @@
         "loudness": -6.613,
         "valence": 0.38,
         "tempo": 96.749,
-        "popularity": 36.0
+        "popularity": 35.0
     },
     {
         "name": "Glorious Warrior",
@@ -38646,6 +38715,7 @@
             "alternative dance",
             "indie pop",
             "indie poptimism",
+            "indie rock",
             "indietronica",
             "la indie",
             "modern rock",
@@ -38741,8 +38811,7 @@
             "indie pop",
             "indie poptimism",
             "indietronica",
-            "modern rock",
-            "pop"
+            "modern rock"
         ],
         "artists": [
             "Bleachers"
@@ -38839,6 +38908,7 @@
         "date": "2017-12-29T04:06:09Z",
         "genres": [
             "conscious hip hop",
+            "escape room",
             "hip hop",
             "pop rap",
             "rap",
@@ -39266,6 +39336,7 @@
             "indietronica",
             "metropopolis",
             "modern rock",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -39300,6 +39371,7 @@
             "indietronica",
             "metropopolis",
             "modern rock",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -39364,7 +39436,7 @@
         "loudness": -9.218,
         "valence": 0.168,
         "tempo": 87.013,
-        "popularity": 13.0
+        "popularity": 14.0
     },
     {
         "name": "Pepsi/Coke Suicide",
@@ -39550,7 +39622,7 @@
         "loudness": -10.471,
         "valence": 0.471,
         "tempo": 147.041,
-        "popularity": 23.0
+        "popularity": 24.0
     },
     {
         "name": "Zen Champ",
@@ -40818,6 +40890,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -40963,6 +41036,7 @@
             "ambient",
             "art pop",
             "chamber psych",
+            "compositional ambient",
             "drone",
             "electra",
             "experimental ambient",
@@ -41412,13 +41486,11 @@
             "pop edm",
             "progressive electro house",
             "progressive house",
-            "tech house",
             "vocal house",
             "bass house",
             "brostep",
             "electro house",
-            "electronic trap",
-            "moombahton"
+            "electronic trap"
         ],
         "artists": [
             "Chocolate Puma",
@@ -42028,7 +42100,7 @@
         "loudness": -10.241,
         "valence": 0.342,
         "tempo": 89.918,
-        "popularity": 38.0
+        "popularity": 39.0
     },
     {
         "name": "On The Low",
@@ -42457,7 +42529,7 @@
         "loudness": -11.257,
         "valence": 0.464,
         "tempo": 94.108,
-        "popularity": 10.0
+        "popularity": 9.0
     },
     {
         "name": "IOIO",
@@ -42625,7 +42697,7 @@
         "loudness": -18.729,
         "valence": 0.0759,
         "tempo": 68.572,
-        "popularity": 9.0
+        "popularity": 8.0
     },
     {
         "name": "Us",
@@ -42990,6 +43062,7 @@
         "date": "2017-09-09T18:29:02Z",
         "genres": [
             "complextro",
+            "edm",
             "electro house",
             "new french touch",
             "vapor twitch"
@@ -43043,7 +43116,6 @@
             "indie rock",
             "indietronica",
             "modern rock",
-            "new rave",
             "rock"
         ],
         "artists": [
@@ -43071,7 +43143,6 @@
             "indie rock",
             "indietronica",
             "modern rock",
-            "new rave",
             "rock"
         ],
         "artists": [
@@ -43152,6 +43223,7 @@
             "chamber pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "quebec indie",
             "stomp and holler"
         ],
@@ -43259,7 +43331,7 @@
         "loudness": -5.359,
         "valence": 0.279,
         "tempo": 107.994,
-        "popularity": 48.0
+        "popularity": 49.0
     },
     {
         "name": "Bounce",
@@ -43537,6 +43609,7 @@
         "genres": [
             "alternative r&b",
             "indie r&b",
+            "electronic trap",
             "vapor twitch"
         ],
         "artists": [
@@ -44038,8 +44111,7 @@
             "pop rap",
             "rap",
             "southern hip hop",
-            "trap music",
-            "underground hip hop"
+            "trap music"
         ],
         "artists": [
             "Chance the Rapper",
@@ -44326,8 +44398,7 @@
             "future garage",
             "lo-fi house",
             "microhouse",
-            "minimal tech house",
-            "tech house"
+            "minimal tech house"
         ],
         "artists": [
             "Youandewan"
@@ -44497,8 +44568,7 @@
             "frankfurt electronic",
             "microhouse",
             "minimal tech house",
-            "nu disco",
-            "tech house"
+            "nu disco"
         ],
         "artists": [
             "Lauer"
@@ -45043,6 +45113,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -45081,13 +45152,14 @@
         "loudness": -4.633,
         "valence": 0.594,
         "tempo": 115.019,
-        "popularity": 26.0
+        "popularity": 25.0
     },
     {
         "name": "Forever Dolphin Love - Erol Alkan's Extended Rework Version 2",
         "uri": "spotify:track:2iRDG8283qKezSYQFw6m1S",
         "date": "2017-07-27T00:37:56Z",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -45757,7 +45829,7 @@
         "loudness": -5.137,
         "valence": 0.473,
         "tempo": 95.011,
-        "popularity": 17.0
+        "popularity": 16.0
     },
     {
         "name": "Broken Clouds",
@@ -45779,7 +45851,7 @@
         "loudness": -18.581,
         "valence": 0.198,
         "tempo": 171.383,
-        "popularity": 38.0
+        "popularity": 39.0
     },
     {
         "name": "Sea World - Original Mix",
@@ -45906,7 +45978,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop"
         ],
         "artists": [
@@ -46193,7 +46264,7 @@
         "loudness": -7.16,
         "valence": 0.305,
         "tempo": 127.865,
-        "popularity": 17.0
+        "popularity": 16.0
     },
     {
         "name": "CC101",
@@ -46648,7 +46719,7 @@
         "loudness": -10.91,
         "valence": 0.0397,
         "tempo": 96.46,
-        "popularity": 21.0
+        "popularity": 20.0
     },
     {
         "name": "Petty Passion",
@@ -47595,6 +47666,7 @@
             "trip hop",
             "turntablism",
             "future garage",
+            "house",
             "nu disco",
             "portland hip hop"
         ],
@@ -47646,7 +47718,6 @@
         "date": "2017-06-06T14:38:34Z",
         "genres": [
             "bass music",
-            "chamber psych",
             "deep house",
             "electronic",
             "float house",
@@ -49063,8 +49134,7 @@
             "float house",
             "fluxwork",
             "lo-fi house",
-            "outsider house",
-            "tech house"
+            "outsider house"
         ],
         "artists": [
             "Project Pablo"
@@ -49588,7 +49658,7 @@
         "loudness": -14.887,
         "valence": 0.786,
         "tempo": 99.202,
-        "popularity": 22.0
+        "popularity": 21.0
     },
     {
         "name": "Aus - Original Mix",
@@ -49727,15 +49797,13 @@
         "loudness": -7.109,
         "valence": 0.362,
         "tempo": 136.01,
-        "popularity": 3.0
+        "popularity": 2.0
     },
     {
         "name": "Stalker Ha",
         "uri": "spotify:track:2dFLF41EpMdxzONSf8H0Z8",
         "date": "2017-03-14T07:09:55Z",
-        "genres": [
-            "bass music"
-        ],
+        "genres": [],
         "artists": [
             "Kingdom"
         ],
@@ -49892,7 +49960,7 @@
         "loudness": -7.269,
         "valence": 0.0791,
         "tempo": 125.958,
-        "popularity": 6.0
+        "popularity": 7.0
     },
     {
         "name": "Hyatt Park Nights Pt. 1",
@@ -50037,7 +50105,7 @@
         "loudness": -10.712,
         "valence": 0.161,
         "tempo": 107.243,
-        "popularity": 12.0
+        "popularity": 13.0
     },
     {
         "name": "Body Horror",
@@ -50300,7 +50368,7 @@
         "loudness": -5.56,
         "valence": 0.272,
         "tempo": 159.946,
-        "popularity": 7.0
+        "popularity": 6.0
     },
     {
         "name": "Kilometer",
@@ -50444,6 +50512,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "noise pop",
             "noise rock",
             "nu gaze"
@@ -50996,7 +51065,7 @@
         "loudness": -5.657,
         "valence": 0.312,
         "tempo": 158.981,
-        "popularity": 15.0
+        "popularity": 16.0
     },
     {
         "name": "Gratitud",
@@ -51185,7 +51254,7 @@
         "loudness": -19.337,
         "valence": 0.336,
         "tempo": 63.302,
-        "popularity": 10.0
+        "popularity": 11.0
     },
     {
         "name": "Capricorn",
@@ -51891,7 +51960,7 @@
         "loudness": -17.653,
         "valence": 0.118,
         "tempo": 95.085,
-        "popularity": 10.0
+        "popularity": 11.0
     },
     {
         "name": "Nightmarket",
@@ -52201,8 +52270,7 @@
             "future garage",
             "lo-fi house",
             "microhouse",
-            "minimal tech house",
-            "tech house"
+            "minimal tech house"
         ],
         "artists": [
             "Youandewan"
@@ -52363,7 +52431,7 @@
         "loudness": -15.197,
         "valence": 0.174,
         "tempo": 139.785,
-        "popularity": 10.0
+        "popularity": 11.0
     },
     {
         "name": "Escalator",
@@ -52389,7 +52457,7 @@
         "loudness": -8.521,
         "valence": 0.773,
         "tempo": 123.0,
-        "popularity": 5.0
+        "popularity": 4.0
     },
     {
         "name": "Call On Me - Radio Edit",
@@ -52538,8 +52606,7 @@
         "uri": "spotify:track:3DDhZsxBMOOvWCePIA4PHG",
         "date": "2017-01-12T22:33:22Z",
         "genres": [
-            "deep house",
-            "disco house"
+            "deep house"
         ],
         "artists": [
             "Honey Dijon",
@@ -52882,7 +52949,7 @@
         "loudness": -10.829,
         "valence": 0.811,
         "tempo": 142.839,
-        "popularity": 7.0
+        "popularity": 8.0
     },
     {
         "name": "Esco Freestyle",
@@ -53392,6 +53459,7 @@
             "hip pop",
             "indietronica",
             "lgbtq+ hip hop",
+            "new rave",
             "pop",
             "post-teen pop",
             "r&b",
@@ -53450,7 +53518,6 @@
         "date": "2016-12-30T09:27:17Z",
         "genres": [
             "electropop",
-            "indie electro-pop",
             "indie poptimism",
             "indietronica",
             "vapor soul",
@@ -53527,7 +53594,6 @@
             "noise rock",
             "nu gaze",
             "post-rock",
-            "preverb",
             "shoegaze",
             "slow core",
             "warm drone"
@@ -53723,7 +53789,6 @@
             "microhouse",
             "minimal tech house",
             "outsider house",
-            "tech house",
             "uk house"
         ],
         "artists": [
@@ -54595,9 +54660,7 @@
         "name": "Adrians Rhythm",
         "uri": "spotify:track:4kd6SdT87Q4u5sVRnHFah6",
         "date": "2016-12-18T11:27:53Z",
-        "genres": [
-            "wonky"
-        ],
+        "genres": [],
         "artists": [
             "Two Fingers"
         ],
@@ -54929,7 +54992,7 @@
         "loudness": -8.154,
         "valence": 0.857,
         "tempo": 124.995,
-        "popularity": 17.0
+        "popularity": 18.0
     },
     {
         "name": "Leftovers",
@@ -55280,7 +55343,6 @@
         "date": "2016-12-11T17:10:13Z",
         "genres": [
             "bass music",
-            "chamber psych",
             "deep house",
             "electronic",
             "float house",
@@ -55312,7 +55374,6 @@
         "date": "2016-12-11T16:47:20Z",
         "genres": [
             "bass music",
-            "chamber psych",
             "deep house",
             "electronic",
             "float house",
@@ -55344,7 +55405,6 @@
         "date": "2016-12-11T16:23:37Z",
         "genres": [
             "bass music",
-            "chamber psych",
             "deep house",
             "electronic",
             "float house",
@@ -55648,7 +55708,7 @@
         "loudness": -10.7,
         "valence": 0.0349,
         "tempo": 112.901,
-        "popularity": 45.0
+        "popularity": 46.0
     },
     {
         "name": "Let Go - Extended Edit",
@@ -55809,7 +55869,6 @@
         "date": "2016-11-29T04:41:16Z",
         "genres": [
             "bass music",
-            "chamber psych",
             "deep house",
             "electronic",
             "float house",
@@ -56069,7 +56128,7 @@
         "loudness": -4.473,
         "valence": 0.397,
         "tempo": 122.018,
-        "popularity": 5.0
+        "popularity": 4.0
     },
     {
         "name": "Swore",
@@ -56714,7 +56773,7 @@
         "loudness": -13.133,
         "valence": 0.276,
         "tempo": 115.106,
-        "popularity": 1.0
+        "popularity": 2.0
     },
     {
         "name": "Feeling",
@@ -56998,7 +57057,7 @@
         "loudness": -8.09,
         "valence": 0.265,
         "tempo": 116.206,
-        "popularity": 31.0
+        "popularity": 30.0
     },
     {
         "name": "XXXX",
@@ -57931,7 +57990,7 @@
         "loudness": -11.252,
         "valence": 0.681,
         "tempo": 119.972,
-        "popularity": 2.0
+        "popularity": 1.0
     },
     {
         "name": "Core",
@@ -58504,7 +58563,7 @@
         "loudness": -11.584,
         "valence": 0.497,
         "tempo": 129.016,
-        "popularity": 45.0
+        "popularity": 46.0
     },
     {
         "name": "Demo",
@@ -58553,7 +58612,7 @@
         "loudness": -9.788,
         "valence": 0.027,
         "tempo": 95.945,
-        "popularity": 19.0
+        "popularity": 20.0
     },
     {
         "name": "Morphogene",
@@ -58892,7 +58951,7 @@
         "loudness": -9.103,
         "valence": 0.171,
         "tempo": 112.406,
-        "popularity": 14.0
+        "popularity": 15.0
     },
     {
         "name": "Dos Puertas",
@@ -59024,6 +59083,7 @@
             "electronic trap",
             "moombahton",
             "conscious hip hop",
+            "escape room",
             "hip hop",
             "pop rap",
             "rap",
@@ -59991,7 +60051,7 @@
         "loudness": -9.617,
         "valence": 0.305,
         "tempo": 134.009,
-        "popularity": 22.0
+        "popularity": 21.0
     },
     {
         "name": "Follow It Up",
@@ -60003,8 +60063,7 @@
             "float house",
             "fluxwork",
             "lo-fi house",
-            "outsider house",
-            "tech house"
+            "outsider house"
         ],
         "artists": [
             "Project Pablo"
@@ -60222,6 +60281,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60256,6 +60316,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60290,6 +60351,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60324,6 +60386,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60358,6 +60421,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60392,6 +60456,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60426,6 +60491,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60460,6 +60526,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60494,6 +60561,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60528,6 +60596,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60562,6 +60631,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60596,6 +60666,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60630,6 +60701,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -60694,7 +60766,7 @@
         "loudness": -15.408,
         "valence": 0.0284,
         "tempo": 106.434,
-        "popularity": 28.0
+        "popularity": 27.0
     },
     {
         "name": "Passion",
@@ -61224,7 +61296,7 @@
         "loudness": -7.405,
         "valence": 0.412,
         "tempo": 123.017,
-        "popularity": 54.0
+        "popularity": 55.0
     },
     {
         "name": "The Chord March - Original Mix",
@@ -61425,6 +61497,7 @@
         "date": "2016-09-08T16:16:50Z",
         "genres": [
             "chillwave",
+            "intelligent dance music",
             "ninja",
             "nu jazz",
             "trip hop",
@@ -61739,7 +61812,8 @@
         "genres": [
             "bass trap",
             "brostep",
-            "electronic trap"
+            "electronic trap",
+            "zapstep"
         ],
         "artists": [
             "Buku"
@@ -62199,7 +62273,6 @@
             "microhouse",
             "minimal tech house",
             "outsider house",
-            "tech house",
             "uk house"
         ],
         "artists": [
@@ -62627,7 +62700,7 @@
         "loudness": -10.195,
         "valence": 0.387,
         "tempo": 89.389,
-        "popularity": 4.0
+        "popularity": 3.0
     },
     {
         "name": "Crime Riddim",
@@ -63542,7 +63615,7 @@
         "loudness": -6.495,
         "valence": 0.457,
         "tempo": 167.543,
-        "popularity": 8.0
+        "popularity": 9.0
     },
     {
         "name": "Fluctuate",
@@ -63686,7 +63759,6 @@
             "canadian electronic",
             "edm",
             "electro house",
-            "moombahton",
             "canadian electronic"
         ],
         "artists": [
@@ -64323,7 +64395,7 @@
         "loudness": -8.058,
         "valence": 0.0866,
         "tempo": 139.949,
-        "popularity": 13.0
+        "popularity": 12.0
     },
     {
         "name": "Komije",
@@ -64826,7 +64898,7 @@
         "loudness": -7.983,
         "valence": 0.548,
         "tempo": 80.545,
-        "popularity": 34.0
+        "popularity": 35.0
     },
     {
         "name": "Evil Twin",
@@ -64980,7 +65052,7 @@
         "loudness": -6.885,
         "valence": 0.606,
         "tempo": 139.978,
-        "popularity": 10.0
+        "popularity": 9.0
     },
     {
         "name": "Mexicans - Original Mix",
@@ -65228,7 +65300,6 @@
             "canadian modern jazz",
             "dark jazz",
             "escape room",
-            "funk",
             "hip hop"
         ],
         "artists": [
@@ -65311,6 +65382,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",
@@ -65388,6 +65460,7 @@
             "indietronica",
             "metropopolis",
             "modern rock",
+            "new rave",
             "shimmer pop"
         ],
         "artists": [
@@ -65523,6 +65596,7 @@
         "date": "2016-07-21T00:50:50Z",
         "genres": [
             "alternative dance",
+            "disco house",
             "filter house",
             "nu disco"
         ],
@@ -65578,6 +65652,7 @@
             "indie rock",
             "indietronica",
             "modern rock",
+            "new rave",
             "shimmer pop",
             "stomp and holler"
         ],
@@ -66097,7 +66172,7 @@
         "loudness": -7.731,
         "valence": 0.483,
         "tempo": 103.98,
-        "popularity": 53.0
+        "popularity": 52.0
     },
     {
         "name": "Lollipop",
@@ -66774,7 +66849,7 @@
         "loudness": -9.193,
         "valence": 0.695,
         "tempo": 77.006,
-        "popularity": 24.0
+        "popularity": 25.0
     },
     {
         "name": "Don't Speak - Manila Killa Remix",
@@ -67281,7 +67356,7 @@
         "loudness": -8.428,
         "valence": 0.448,
         "tempo": 126.025,
-        "popularity": 17.0
+        "popularity": 18.0
     },
     {
         "name": "Lucifer",
@@ -68040,7 +68115,8 @@
         "uri": "spotify:track:2OhygFTHlWuoF6VwQdAciK",
         "date": "2016-06-27T06:28:14Z",
         "genres": [
-            "chillhop"
+            "chillhop",
+            "new french touch"
         ],
         "artists": [
             "The Geek x Vrv"
@@ -68485,7 +68561,7 @@
         "loudness": -6.462,
         "valence": 0.663,
         "tempo": 99.961,
-        "popularity": 13.0
+        "popularity": 14.0
     },
     {
         "name": "1 Million Limos",
@@ -68942,7 +69018,7 @@
         "loudness": -7.413,
         "valence": 0.151,
         "tempo": 119.464,
-        "popularity": 39.0
+        "popularity": 38.0
     },
     {
         "name": "Let Go",
@@ -68992,7 +69068,7 @@
         "loudness": -6.959,
         "valence": 0.775,
         "tempo": 97.502,
-        "popularity": 43.0
+        "popularity": 44.0
     },
     {
         "name": "It's Good To Be In Love",
@@ -69782,7 +69858,7 @@
         "loudness": -3.493,
         "valence": 0.732,
         "tempo": 127.991,
-        "popularity": 10.0
+        "popularity": 11.0
     },
     {
         "name": "Workship",
@@ -69929,7 +70005,7 @@
         "loudness": -5.134,
         "valence": 0.413,
         "tempo": 137.007,
-        "popularity": 22.0
+        "popularity": 23.0
     },
     {
         "name": "Attak (feat. Danny Brown)",
@@ -70209,7 +70285,7 @@
         "loudness": -13.13,
         "valence": 0.0753,
         "tempo": 139.545,
-        "popularity": 7.0
+        "popularity": 8.0
     },
     {
         "name": "Breach",
@@ -70441,7 +70517,7 @@
         "loudness": -7.527,
         "valence": 0.841,
         "tempo": 99.192,
-        "popularity": 42.0
+        "popularity": 41.0
     },
     {
         "name": "Tumblr Girl",
@@ -70752,7 +70828,8 @@
         "uri": "spotify:track:3jbhlLKiYlXkPGh1NQPZG9",
         "date": "2016-06-17T12:54:27Z",
         "genres": [
-            "dance-punk"
+            "dance-punk",
+            "new rave"
         ],
         "artists": [
             "Holy Fuck"
@@ -70773,7 +70850,8 @@
         "uri": "spotify:track:5KJExcmo2S9Vx42pGmpNrq",
         "date": "2016-06-17T12:54:27Z",
         "genres": [
-            "dance-punk"
+            "dance-punk",
+            "new rave"
         ],
         "artists": [
             "Holy Fuck"
@@ -70794,7 +70872,8 @@
         "uri": "spotify:track:3R5PLqBUpQoTwZGAtNOxar",
         "date": "2016-06-17T12:54:27Z",
         "genres": [
-            "dance-punk"
+            "dance-punk",
+            "new rave"
         ],
         "artists": [
             "Holy Fuck"
@@ -70815,7 +70894,8 @@
         "uri": "spotify:track:4PtzXOyj0Rnmh5fOdLuiN6",
         "date": "2016-06-17T12:54:27Z",
         "genres": [
-            "dance-punk"
+            "dance-punk",
+            "new rave"
         ],
         "artists": [
             "Holy Fuck"
@@ -70836,7 +70916,8 @@
         "uri": "spotify:track:4Rq2tK8cVFyAg6h4p5KzpD",
         "date": "2016-06-17T12:54:27Z",
         "genres": [
-            "dance-punk"
+            "dance-punk",
+            "new rave"
         ],
         "artists": [
             "Holy Fuck"
@@ -70857,7 +70938,8 @@
         "uri": "spotify:track:74nwYCQmTF1S4mFT3nJEl6",
         "date": "2016-06-17T12:54:27Z",
         "genres": [
-            "dance-punk"
+            "dance-punk",
+            "new rave"
         ],
         "artists": [
             "Holy Fuck"
@@ -70878,7 +70960,8 @@
         "uri": "spotify:track:0d6MlVUsirPb9pv4U4r5KO",
         "date": "2016-06-17T12:54:27Z",
         "genres": [
-            "dance-punk"
+            "dance-punk",
+            "new rave"
         ],
         "artists": [
             "Holy Fuck"
@@ -71334,7 +71417,6 @@
             "microhouse",
             "minimal tech house",
             "outsider house",
-            "tech house",
             "uk house"
         ],
         "artists": [
@@ -71527,7 +71609,7 @@
         "loudness": -5.776,
         "valence": 0.492,
         "tempo": 139.884,
-        "popularity": 16.0
+        "popularity": 15.0
     },
     {
         "name": "Cynical",
@@ -71796,7 +71878,6 @@
         "date": "2016-06-08T15:30:24Z",
         "genres": [
             "chillstep",
-            "substep",
             "vapor twitch",
             "wave"
         ],
@@ -71923,7 +72004,9 @@
         "name": "Fade",
         "uri": "spotify:track:2lfPecqFbH8X4lHSpTxt8l",
         "date": "2016-06-08T03:12:54Z",
-        "genres": [],
+        "genres": [
+            "tropical house"
+        ],
         "artists": [
             "Alan Walker"
         ],
@@ -71945,6 +72028,7 @@
         "genres": [
             "escape room",
             "conscious hip hop",
+            "escape room",
             "hip hop",
             "pop rap",
             "rap",
@@ -72493,7 +72577,7 @@
         "loudness": -9.665,
         "valence": 0.296,
         "tempo": 125.227,
-        "popularity": 4.0
+        "popularity": 3.0
     },
     {
         "name": "Heavenly Father",
@@ -72888,6 +72972,7 @@
             "edm",
             "pop",
             "conscious hip hop",
+            "escape room",
             "hip hop",
             "pop rap",
             "rap",
@@ -73445,7 +73530,7 @@
         "loudness": -8.762,
         "valence": 0.0622,
         "tempo": 116.002,
-        "popularity": 13.0
+        "popularity": 12.0
     },
     {
         "name": "Daybreak",
@@ -73685,7 +73770,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -73712,7 +73798,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -73743,6 +73830,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -75012,7 +75100,7 @@
         "loudness": -4.875,
         "valence": 0.397,
         "tempo": 99.248,
-        "popularity": 22.0
+        "popularity": 23.0
     },
     {
         "name": "Sunset Over Manaan",
@@ -75114,7 +75202,7 @@
         "loudness": -4.34,
         "valence": 0.551,
         "tempo": 142.041,
-        "popularity": 31.0
+        "popularity": 32.0
     },
     {
         "name": "C-3P0's Plight",
@@ -75124,7 +75212,6 @@
             "big room",
             "chicago house",
             "dance pop",
-            "disco house",
             "edm",
             "electro house",
             "house",
@@ -75323,7 +75410,7 @@
         "loudness": -7.202,
         "valence": 0.31,
         "tempo": 149.896,
-        "popularity": 10.0
+        "popularity": 9.0
     },
     {
         "name": "Laplander",
@@ -75617,7 +75704,7 @@
         "loudness": -4.702,
         "valence": 0.381,
         "tempo": 118.007,
-        "popularity": 23.0
+        "popularity": 24.0
     },
     {
         "name": "First Mythz",
@@ -76028,7 +76115,7 @@
         "loudness": -5.78,
         "valence": 0.806,
         "tempo": 109.126,
-        "popularity": 10.0
+        "popularity": 11.0
     },
     {
         "name": "Close",
@@ -76201,6 +76288,7 @@
             "edm",
             "electro house",
             "electronic trap",
+            "moombahton",
             "pop edm",
             "vapor twitch"
         ],
@@ -76651,7 +76739,7 @@
         "loudness": -11.543,
         "valence": 0.293,
         "tempo": 107.986,
-        "popularity": 7.0
+        "popularity": 6.0
     },
     {
         "name": "Cloud Rap (Clouds)",
@@ -76692,7 +76780,7 @@
         "loudness": -10.273,
         "valence": 0.44,
         "tempo": 140.013,
-        "popularity": 15.0
+        "popularity": 14.0
     },
     {
         "name": "Eclairage",
@@ -76766,7 +76854,6 @@
             "drill and bass",
             "glitch",
             "intelligent dance music",
-            "microhouse",
             "ninja",
             "trip hop",
             "turntablism",
@@ -76777,7 +76864,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Prefuse 73",
@@ -76872,6 +76960,7 @@
             "float house",
             "microhouse",
             "minimal techno",
+            "new rave",
             "nu disco",
             "deep disco house",
             "deep house",
@@ -77313,8 +77402,7 @@
             "milwaukee hip hop",
             "abstract hip hop",
             "alternative hip hop",
-            "escape room",
-            "underground rap"
+            "escape room"
         ],
         "artists": [
             "Milo",
@@ -77658,7 +77746,7 @@
         "loudness": -8.657,
         "valence": 0.435,
         "tempo": 84.992,
-        "popularity": 18.0
+        "popularity": 17.0
     },
     {
         "name": "Resistance",
@@ -77671,7 +77759,6 @@
             "alternative r&b",
             "dance pop",
             "deep pop r&b",
-            "hip pop",
             "pop",
             "pop rap",
             "r&b",
@@ -77898,6 +77985,7 @@
         "date": "2016-04-17T07:01:19Z",
         "genres": [
             "bass music",
+            "escape room",
             "fluxwork",
             "footwork",
             "ghettotech",
@@ -77995,6 +78083,7 @@
         "date": "2016-04-14T04:48:44Z",
         "genres": [
             "bass music",
+            "escape room",
             "fluxwork",
             "footwork",
             "ghettotech",
@@ -78103,7 +78192,7 @@
         "loudness": -9.459,
         "valence": 0.24,
         "tempo": 127.984,
-        "popularity": 22.0
+        "popularity": 21.0
     },
     {
         "name": "A*I",
@@ -78227,7 +78316,6 @@
             "chicago house",
             "deep house",
             "detroit techno",
-            "disco house",
             "float house",
             "indie jazz",
             "microhouse",
@@ -79489,7 +79577,7 @@
         "loudness": -8.436,
         "valence": 0.141,
         "tempo": 86.83,
-        "popularity": 2.0
+        "popularity": 1.0
     },
     {
         "name": "Camels",
@@ -81304,12 +81392,10 @@
             "new wave",
             "no wave",
             "noise pop",
-            "noise rock",
             "nu gaze",
             "post-punk",
             "post-rock",
             "preverb",
-            "shibuya-kei",
             "slow core",
             "uk post-punk"
         ],
@@ -81353,6 +81439,7 @@
         "uri": "spotify:track:5tRWwHe7ZXYv7L8EoIdgex",
         "date": "2016-03-19T05:38:23Z",
         "genres": [
+            "new rave",
             "alternative hip hop"
         ],
         "artists": [
@@ -82280,7 +82367,7 @@
         "loudness": -7.46,
         "valence": 0.161,
         "tempo": 135.022,
-        "popularity": 31.0
+        "popularity": 32.0
     },
     {
         "name": "Astoria",
@@ -83871,7 +83958,7 @@
         "loudness": -8.855,
         "valence": 0.329,
         "tempo": 140.028,
-        "popularity": 31.0
+        "popularity": 32.0
     },
     {
         "name": "Made To Stray",
@@ -83954,7 +84041,7 @@
         "loudness": -9.523,
         "valence": 0.0734,
         "tempo": 139.614,
-        "popularity": 6.0
+        "popularity": 5.0
     },
     {
         "name": "Softpretty",
@@ -84008,6 +84095,7 @@
             "abstract beats",
             "alternative hip hop",
             "chillhop",
+            "indie jazz",
             "underground hip hop",
             "wonky"
         ],
@@ -84224,7 +84312,7 @@
         "loudness": -10.044,
         "valence": 0.368,
         "tempo": 88.002,
-        "popularity": 33.0
+        "popularity": 34.0
     },
     {
         "name": "Magic Drops",
@@ -84440,7 +84528,7 @@
         "loudness": -10.301,
         "valence": 0.0769,
         "tempo": 137.319,
-        "popularity": 1.0
+        "popularity": 0.0
     },
     {
         "name": "Aqua Box",
@@ -84536,7 +84624,7 @@
         "loudness": -7.75,
         "valence": 0.37,
         "tempo": 129.962,
-        "popularity": 0.0
+        "popularity": 1.0
     },
     {
         "name": "Waterfalls",
@@ -84751,7 +84839,7 @@
         "loudness": -15.222,
         "valence": 0.0382,
         "tempo": 132.002,
-        "popularity": 25.0
+        "popularity": 26.0
     },
     {
         "name": "DNA",
@@ -86292,7 +86380,7 @@
         "loudness": -5.085,
         "valence": 0.447,
         "tempo": 144.06,
-        "popularity": 13.0
+        "popularity": 12.0
     },
     {
         "name": "Foe Paw",
@@ -86404,7 +86492,7 @@
         "loudness": -8.637,
         "valence": 0.661,
         "tempo": 79.975,
-        "popularity": 43.0
+        "popularity": 44.0
     },
     {
         "name": "All I Ever Need",
@@ -86517,6 +86605,7 @@
         "date": "2016-02-01T23:11:00Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86552,6 +86641,7 @@
         "date": "2016-02-01T23:11:00Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86587,6 +86677,7 @@
         "date": "2016-02-01T23:11:00Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86622,6 +86713,7 @@
         "date": "2016-02-01T23:11:00Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86657,6 +86749,7 @@
         "date": "2016-02-01T23:11:00Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86692,6 +86785,7 @@
         "date": "2016-02-01T23:10:54Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86727,6 +86821,7 @@
         "date": "2016-02-01T23:10:54Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86762,6 +86857,7 @@
         "date": "2016-02-01T23:10:54Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86797,6 +86893,7 @@
         "date": "2016-02-01T23:10:54Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86832,6 +86929,7 @@
         "date": "2016-02-01T23:10:54Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86867,6 +86965,7 @@
         "date": "2016-02-01T23:10:54Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86902,6 +87001,7 @@
         "date": "2016-02-01T23:10:54Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86937,6 +87037,7 @@
         "date": "2016-02-01T23:10:54Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -86972,6 +87073,7 @@
         "date": "2016-02-01T23:10:54Z",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -88441,7 +88543,7 @@
         "loudness": -15.977,
         "valence": 0.221,
         "tempo": 95.178,
-        "popularity": 25.0
+        "popularity": 24.0
     },
     {
         "name": "Rain Song (feat. Lil Ugly Mane)",
@@ -88508,7 +88610,7 @@
         "loudness": -4.682,
         "valence": 0.636,
         "tempo": 91.021,
-        "popularity": 14.0
+        "popularity": 13.0
     },
     {
         "name": "Don't Care (feat. Sad Andy)",
@@ -88660,7 +88762,7 @@
         "loudness": -7.235,
         "valence": 0.86,
         "tempo": 112.006,
-        "popularity": 11.0
+        "popularity": 12.0
     },
     {
         "name": "Break Yo Back",
@@ -89513,7 +89615,7 @@
         "loudness": -11.437,
         "valence": 0.234,
         "tempo": 101.921,
-        "popularity": 29.0
+        "popularity": 28.0
     },
     {
         "name": "I Wanna Know - Seven Davis Jr Midnight Remix",
@@ -89555,7 +89657,6 @@
             "experimental rock",
             "folk-pop",
             "freak folk",
-            "garage psych",
             "indie folk",
             "indie pop",
             "indie rock",
@@ -89580,7 +89681,7 @@
         "loudness": -6.159,
         "valence": 0.242,
         "tempo": 109.59,
-        "popularity": 1.0
+        "popularity": 0.0
     },
     {
         "name": "I Wanna Know - dBridge Remix",
@@ -90198,7 +90299,7 @@
         "loudness": -10.635,
         "valence": 0.407,
         "tempo": 73.831,
-        "popularity": 28.0
+        "popularity": 27.0
     },
     {
         "name": "Inside World",
@@ -90794,7 +90895,7 @@
         "loudness": -8.21,
         "valence": 0.0556,
         "tempo": 145.285,
-        "popularity": 23.0
+        "popularity": 22.0
     },
     {
         "name": "Heart Entire",
@@ -91986,6 +92087,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -92029,6 +92131,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -92072,6 +92175,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -92115,6 +92219,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -92158,6 +92263,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -92201,6 +92307,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -92244,6 +92351,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -92287,6 +92395,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -92330,6 +92439,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -93632,7 +93742,7 @@
         "loudness": -7.632,
         "valence": 0.511,
         "tempo": 138.904,
-        "popularity": 37.0
+        "popularity": 38.0
     },
     {
         "name": "Meditation",
@@ -94170,9 +94280,7 @@
         "name": "Cashew Rhythm",
         "uri": "spotify:track:7hi2Z4SQ3uhxi9JPASkjDS",
         "date": "2016-02-01T14:38:00Z",
-        "genres": [
-            "wonky"
-        ],
+        "genres": [],
         "artists": [
             "Two Fingers"
         ],
@@ -94361,7 +94469,6 @@
             "drill and bass",
             "glitch",
             "intelligent dance music",
-            "microhouse",
             "ninja",
             "trip hop",
             "turntablism",
@@ -94500,7 +94607,6 @@
         "uri": "spotify:track:7aGl2MlOrP3QL6Soxv8wrW",
         "date": "2016-02-01T02:33:09Z",
         "genres": [
-            "bass music",
             "future garage"
         ],
         "artists": [
@@ -94735,7 +94841,7 @@
         "loudness": -8.889,
         "valence": 0.415,
         "tempo": 109.96,
-        "popularity": 9.0
+        "popularity": 10.0
     },
     {
         "name": "The Stars Below",
@@ -95222,7 +95328,7 @@
         "loudness": -9.781,
         "valence": 0.415,
         "tempo": 86.969,
-        "popularity": 28.0
+        "popularity": 29.0
     },
     {
         "name": "Make You Feel",
@@ -96324,6 +96430,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96355,6 +96462,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96386,6 +96494,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96417,6 +96526,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96448,6 +96558,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96479,6 +96590,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96510,6 +96622,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96541,6 +96654,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96572,6 +96686,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96603,6 +96718,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96634,6 +96750,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96665,6 +96782,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96696,6 +96814,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96727,6 +96846,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -96758,6 +96878,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "pop"
         ],
         "artists": [
@@ -97693,6 +97814,7 @@
         "genres": [
             "alternative dance",
             "dance-punk",
+            "disco house",
             "filter house",
             "new rave"
         ],
@@ -97738,6 +97860,7 @@
         "genres": [
             "alternative dance",
             "dance-punk",
+            "disco house",
             "filter house",
             "new rave"
         ],
@@ -97769,6 +97892,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -97801,6 +97925,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -97833,6 +97958,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -97865,6 +97991,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -97897,6 +98024,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -97929,6 +98057,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -97961,6 +98090,7 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
@@ -98127,6 +98257,6 @@
         "loudness": -7.174,
         "valence": 0.241,
         "tempo": 101.531,
-        "popularity": 24.0
+        "popularity": 25.0
     }
 ]

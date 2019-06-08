@@ -3,6 +3,7 @@
         "name": "Caramel",
         "uri": "spotify:track:0EXHTAsw6JyWpx0nPskVYS",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -180,12 +181,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -227,12 +228,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -467,7 +468,7 @@
         "loudness": -8.786,
         "valence": 0.162,
         "tempo": 112.012,
-        "popularity": 39.0
+        "popularity": 38.0
     },
     {
         "name": "Cerroverb",
@@ -476,7 +477,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -655,6 +655,7 @@
         "name": "Friendless - Sega Bodega Piano Version",
         "uri": "spotify:track:088jxbKsO8V7gQZv1qpNhC",
         "genres": [
+            "escape room",
             "fluxwork",
             "hyperpop",
             "escape room",
@@ -736,7 +737,7 @@
         "loudness": -9.266,
         "valence": 0.698,
         "tempo": 119.974,
-        "popularity": 28.0
+        "popularity": 29.0
     },
     {
         "name": "Ditch",
@@ -989,7 +990,8 @@
             "icelandic electronic",
             "intelligent dance music",
             "microhouse",
-            "minimal techno"
+            "minimal techno",
+            "neo-classical"
         ],
         "artists": [
             "Yagya"
@@ -1015,7 +1017,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "artists": [
             "Helado Negro"
@@ -1048,7 +1051,7 @@
         "loudness": -12.919,
         "valence": 0.14,
         "tempo": 173.894,
-        "popularity": 2.0
+        "popularity": 1.0
     },
     {
         "name": "Coraje",

@@ -66,12 +66,17 @@ def callback():
 
     user_basename = "static/data/{}".format(profile_data['id'])
     
-    return render_template("viz.html", user_id=profile_data['id'], base_url=BASE_URL)
+    if len(PORT) > 0:
+        base_url = BASE_URL + ":" + PORT
+    else:
+        base_url = BASE_URL
+
+    return render_template("viz.html", user_id=profile_data['id'], base_url=base_url)
     # return render_template("index.html", sorted_array=display_arr)
 
 @app.route('/data/<path:filepath>')
 def data(filepath):
-    print(filepath)
+    # print(filepath)
     return send_from_directory('data', filepath)
 
 if __name__ == "__main__":

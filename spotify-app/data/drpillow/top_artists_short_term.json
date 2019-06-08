@@ -149,7 +149,7 @@
             "abstract beats",
             "gauze pop"
         ],
-        "popularity": 14,
+        "popularity": 15,
         "uri": "spotify:artist:1hNxk945iX3Be2EhTV6BrV"
     },
     {
@@ -173,6 +173,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -217,11 +218,12 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
         ],
-        "popularity": 65,
+        "popularity": 66,
         "uri": "spotify:artist:7w29UYBi0qsHi5RTcv3lmA"
     },
     {
@@ -404,7 +406,6 @@
             "ambient",
             "art pop",
             "bass music",
-            "chamber psych",
             "detroit techno",
             "dub techno",
             "electronic",
@@ -444,7 +445,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "popularity": 54,
         "uri": "spotify:artist:69qhRLDvsWJOhWGXXQ0lQQ"
@@ -532,7 +534,7 @@
     {
         "name": "D Tiberio",
         "genres": [],
-        "popularity": 13,
+        "popularity": 14,
         "uri": "spotify:artist:28ffXAtsOs3aKCBWQ6LQo5"
     },
     {
@@ -651,6 +653,7 @@
             "chamber pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "quebec indie",
             "stomp and holler"
         ],

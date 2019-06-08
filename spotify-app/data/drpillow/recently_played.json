@@ -1,5 +1,324 @@
 [
     {
+        "name": "zzz pt.\u2170i",
+        "uri": "spotify:track:7qfM88W6tTa7VtAAoDZ90j",
+        "date": "2019-06-08T07:38:59.470Z",
+        "genres": [
+            "escape room",
+            "hyperpop"
+        ],
+        "artists": [
+            "harunemuri"
+        ],
+        "energy": 0.839,
+        "liveness": 0.187,
+        "speechiness": 0.0507,
+        "acousticness": 0.0493,
+        "instrumentalness": 0.889,
+        "danceability": 0.65,
+        "loudness": -13.665,
+        "valence": 0.594,
+        "tempo": 100.084,
+        "popularity": 28.0
+    },
+    {
+        "name": "Not Abel",
+        "uri": "spotify:track:4Wlc4HWWvOmsJrF8a4rRqK",
+        "date": "2019-06-08T07:37:20.285Z",
+        "genres": [
+            "alternative emo",
+            "anti-folk",
+            "art pop",
+            "chamber pop",
+            "emo",
+            "folk punk",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie punk",
+            "indie rock",
+            "lo-fi",
+            "modern rock",
+            "philly indie",
+            "preverb",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Hop Along"
+        ],
+        "energy": 0.519,
+        "liveness": 0.084,
+        "speechiness": 0.0357,
+        "acousticness": 0.294,
+        "instrumentalness": 3.2e-06,
+        "danceability": 0.467,
+        "loudness": -8.38,
+        "valence": 0.461,
+        "tempo": 120.958,
+        "popularity": 39.0
+    },
+    {
+        "name": "I, U, Us - Murlo Remix",
+        "uri": "spotify:track:3HROuMG2ldbH3rYSyLnh1y",
+        "date": "2019-06-08T07:32:42.659Z",
+        "genres": [
+            "dance pop",
+            "house",
+            "indie r&b",
+            "pop",
+            "post-teen pop",
+            "tropical house",
+            "uk contemporary r&b",
+            "uk pop",
+            "bass music",
+            "escape room",
+            "fluxwork",
+            "future garage",
+            "hyperpop"
+        ],
+        "artists": [
+            "RAYE",
+            "Murlo"
+        ],
+        "energy": 0.745,
+        "liveness": 0.101,
+        "speechiness": 0.0614,
+        "acousticness": 0.194,
+        "instrumentalness": 0.134,
+        "danceability": 0.789,
+        "loudness": -6.577,
+        "valence": 0.682,
+        "tempo": 130.07,
+        "popularity": 2.0
+    },
+    {
+        "name": "Brain Fritta",
+        "uri": "spotify:track:5Q0rDlHjwuev5OoO7E97Ab",
+        "date": "2019-06-08T07:23:17.548Z",
+        "genres": [
+            "escape room",
+            "fluxwork",
+            "hyperpop"
+        ],
+        "artists": [
+            "Kai Whiston"
+        ],
+        "energy": 0.871,
+        "liveness": 0.168,
+        "speechiness": 0.195,
+        "acousticness": 0.0107,
+        "instrumentalness": 0.0268,
+        "danceability": 0.566,
+        "loudness": -6.99,
+        "valence": 0.441,
+        "tempo": 140.902,
+        "popularity": 20.0
+    },
+    {
+        "name": "Yellow Gum",
+        "uri": "spotify:track:0v6HVaWCMdZUeJVw72E4Zn",
+        "date": "2019-06-08T07:20:13.594Z",
+        "genres": [
+            "escape room",
+            "hyperpop",
+            "vaporwave",
+            "wonky"
+        ],
+        "artists": [
+            "Iglooghost"
+        ],
+        "energy": 0.939,
+        "liveness": 0.363,
+        "speechiness": 0.212,
+        "acousticness": 0.0418,
+        "instrumentalness": 0.0804,
+        "danceability": 0.589,
+        "loudness": -7.035,
+        "valence": 0.599,
+        "tempo": 160.157,
+        "popularity": 14.0
+    },
+    {
+        "name": "Hyperballad (feat. Jana Hunter)",
+        "uri": "spotify:track:10nhAlPLkUVSCce5evsZWn",
+        "date": "2019-06-08T07:17:43.027Z",
+        "genres": [
+            "bass music",
+            "future garage",
+            "vapor house",
+            "freak folk",
+            "new weird america"
+        ],
+        "artists": [
+            "Jim-E Stack",
+            "Jana Hunter"
+        ],
+        "energy": 0.715,
+        "liveness": 0.0852,
+        "speechiness": 0.0456,
+        "acousticness": 0.159,
+        "instrumentalness": 0.00323,
+        "danceability": 0.618,
+        "loudness": -6.579,
+        "valence": 0.195,
+        "tempo": 141.019,
+        "popularity": 14.0
+    },
+    {
+        "name": "Galaxy Wars",
+        "uri": "spotify:track:1FRnIWyCmEk38q1TsZhlCA",
+        "date": "2019-06-08T07:14:18.907Z",
+        "genres": [
+            "vapor twitch"
+        ],
+        "artists": [
+            "Evil Needle"
+        ],
+        "energy": 0.9,
+        "liveness": 0.0779,
+        "speechiness": 0.0387,
+        "acousticness": 0.000539,
+        "instrumentalness": 0.902,
+        "danceability": 0.48,
+        "loudness": -6.756,
+        "valence": 0.523,
+        "tempo": 142.049,
+        "popularity": 28.0
+    },
+    {
+        "name": "Tempest",
+        "uri": "spotify:track:1vVTkRROkvHBPfvvypB4DM",
+        "date": "2019-06-08T07:10:15.112Z",
+        "genres": [
+            "bass music",
+            "dubstep",
+            "electronic trap",
+            "escape room",
+            "future garage",
+            "hyperpop",
+            "vapor twitch",
+            "wonky"
+        ],
+        "artists": [
+            "Rustie"
+        ],
+        "energy": 0.597,
+        "liveness": 0.101,
+        "speechiness": 0.0495,
+        "acousticness": 2.26e-05,
+        "instrumentalness": 0.0166,
+        "danceability": 0.192,
+        "loudness": -6.492,
+        "valence": 0.213,
+        "tempo": 122.167,
+        "popularity": 14.0
+    },
+    {
+        "name": "Water Music",
+        "uri": "spotify:track:6PN8bVP6kjAW6UwqileVWR",
+        "date": "2019-06-08T07:08:30.897Z",
+        "genres": [
+            "ambient",
+            "art pop",
+            "chamber psych",
+            "drone",
+            "electra",
+            "fluxwork",
+            "mandible",
+            "new isolationism"
+        ],
+        "artists": [
+            "Kelly Moran"
+        ],
+        "energy": 0.403,
+        "liveness": 0.0852,
+        "speechiness": 0.037,
+        "acousticness": 0.837,
+        "instrumentalness": 0.945,
+        "danceability": 0.258,
+        "loudness": -13.751,
+        "valence": 0.0395,
+        "tempo": 99.589,
+        "popularity": 34.0
+    },
+    {
+        "name": "Mcfunk",
+        "uri": "spotify:track:0DMAStPjIelPgx34AgCs1Y",
+        "date": "2019-06-08T06:59:53.436Z",
+        "genres": [
+            "brostep",
+            "filthstep"
+        ],
+        "artists": [
+            "Culprate"
+        ],
+        "energy": 0.663,
+        "liveness": 0.182,
+        "speechiness": 0.424,
+        "acousticness": 0.0664,
+        "instrumentalness": 0.0277,
+        "danceability": 0.761,
+        "loudness": -6.362,
+        "valence": 0.332,
+        "tempo": 125.046,
+        "popularity": 15.0
+    },
+    {
+        "name": "Oh Devil",
+        "uri": "spotify:track:1kcfGBb6kSrGqNIMW7rAlB",
+        "date": "2019-06-08T06:49:43.672Z",
+        "genres": [
+            "alternative dance",
+            "indie pop",
+            "indie poptimism",
+            "indie rock",
+            "indietronica",
+            "la indie",
+            "modern rock",
+            "shimmer pop",
+            "vapor soul"
+        ],
+        "artists": [
+            "Electric Guest"
+        ],
+        "energy": 0.532,
+        "liveness": 0.176,
+        "speechiness": 0.0593,
+        "acousticness": 0.122,
+        "instrumentalness": 0.0345,
+        "danceability": 0.903,
+        "loudness": -7.188,
+        "valence": 0.701,
+        "tempo": 96.991,
+        "popularity": 58.0
+    },
+    {
+        "name": "Before This",
+        "uri": "spotify:track:5lRWyOsxfxutsWjivp5VDf",
+        "date": "2019-06-08T06:46:04.610Z",
+        "genres": [
+            "grime",
+            "uk alternative hip hop",
+            "uk drill",
+            "uk garage",
+            "uk hip hop"
+        ],
+        "artists": [
+            "LATER",
+            "CASISDEAD"
+        ],
+        "energy": 0.618,
+        "liveness": 0.103,
+        "speechiness": 0.116,
+        "acousticness": 0.0334,
+        "instrumentalness": 1.78e-05,
+        "danceability": 0.795,
+        "loudness": -7.546,
+        "valence": 0.556,
+        "tempo": 93.983,
+        "popularity": 43.0
+    },
+    {
         "name": "Stadiums And Shrines II",
         "uri": "spotify:track:13bKFLHeZwhWPXzGkq5dWe",
         "date": "2019-06-08T06:40:27.181Z",
@@ -7,6 +326,7 @@
             "chamber pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "quebec indie",
             "stomp and holler"
         ],
@@ -1025,305 +1345,6 @@
         "loudness": -8.854,
         "valence": 0.472,
         "tempo": 130.0,
-        "popularity": 28.0
-    },
-    {
-        "name": "R\u00e9plica",
-        "uri": "spotify:track:7HcRgXpySelknwL1yrwDiL",
-        "date": "2019-06-07T06:30:49.619Z",
-        "genres": [
-            "latin alternative",
-            "latin rock",
-            "mexican indie",
-            "mexican rock"
-        ],
-        "artists": [
-            "CLUBZ"
-        ],
-        "energy": 0.711,
-        "liveness": 0.108,
-        "speechiness": 0.0488,
-        "acousticness": 0.221,
-        "instrumentalness": 0.00347,
-        "danceability": 0.738,
-        "loudness": -8.418,
-        "valence": 0.706,
-        "tempo": 101.0,
-        "popularity": 41.0
-    },
-    {
-        "name": "Racehorse: Get Married!",
-        "uri": "spotify:track:3QKzIG6RKyDTHLrxdTOCsP",
-        "date": "2019-06-07T06:26:36.899Z",
-        "genres": [
-            "small room"
-        ],
-        "artists": [
-            "Jordaan Mason & The Horse Museum"
-        ],
-        "energy": 0.275,
-        "liveness": 0.109,
-        "speechiness": 0.0413,
-        "acousticness": 0.627,
-        "instrumentalness": 0.0,
-        "danceability": 0.508,
-        "loudness": -8.511,
-        "valence": 0.223,
-        "tempo": 118.17,
-        "popularity": 29.0
-    },
-    {
-        "name": "Faygo",
-        "uri": "spotify:track:0XS1riaCn2QiYhSxmVkPd5",
-        "date": "2019-06-07T06:20:05.460Z",
-        "genres": [],
-        "artists": [
-            "Juicethegod"
-        ],
-        "energy": 0.677,
-        "liveness": 0.226,
-        "speechiness": 0.328,
-        "acousticness": 0.0708,
-        "instrumentalness": 0.0,
-        "danceability": 0.691,
-        "loudness": -6.829,
-        "valence": 0.539,
-        "tempo": 160.106,
-        "popularity": 18.0
-    },
-    {
-        "name": "Always Crashing",
-        "uri": "spotify:track:0u0k3qKihoGqoD3OBLMeFA",
-        "date": "2019-06-06T23:46:04.200Z",
-        "genres": [
-            "abstractro"
-        ],
-        "artists": [
-            "Acre"
-        ],
-        "energy": 0.726,
-        "liveness": 0.359,
-        "speechiness": 0.0665,
-        "acousticness": 0.714,
-        "instrumentalness": 0.0356,
-        "danceability": 0.77,
-        "loudness": -6.925,
-        "valence": 0.278,
-        "tempo": 130.046,
-        "popularity": 2.0
-    },
-    {
-        "name": "Nausica\u00e4 of the Valley of the Winds - Nausica\u00e4 Symphonic Poem: First Movement",
-        "uri": "spotify:track:7qriEg4jEubyLc1e2oOMX4",
-        "date": "2019-06-06T23:00:56.316Z",
-        "genres": [
-            "anime",
-            "anime score",
-            "japanese classical",
-            "japanese soundtrack",
-            "scorecore",
-            "soundtrack"
-        ],
-        "artists": [
-            "Joe Hisaishi"
-        ],
-        "energy": 0.152,
-        "liveness": 0.0966,
-        "speechiness": 0.0369,
-        "acousticness": 0.918,
-        "instrumentalness": 0.914,
-        "danceability": 0.247,
-        "loudness": -17.351,
-        "valence": 0.111,
-        "tempo": 138.244,
-        "popularity": 39.0
-    },
-    {
-        "name": "Andromeda",
-        "uri": "spotify:track:46yEQPrtCsPMS3YuVy4XHv",
-        "date": "2019-06-06T22:42:56.759Z",
-        "genres": [
-            "alternative hip hop",
-            "escape room",
-            "experimental hip hop",
-            "glitch",
-            "glitch hop",
-            "hip hop",
-            "indietronica",
-            "intelligent dance music",
-            "wonky"
-        ],
-        "artists": [
-            "Flying Lotus"
-        ],
-        "energy": 0.788,
-        "liveness": 0.12,
-        "speechiness": 0.0413,
-        "acousticness": 0.541,
-        "instrumentalness": 0.927,
-        "danceability": 0.442,
-        "loudness": -8.2,
-        "valence": 0.226,
-        "tempo": 78.406,
-        "popularity": 54.0
-    },
-    {
-        "name": "Actually Virtual",
-        "uri": "spotify:track:4K7mFTcBw6G4rWAIt7hdU3",
-        "date": "2019-06-06T22:41:28.172Z",
-        "genres": [
-            "alternative hip hop",
-            "escape room",
-            "experimental hip hop",
-            "glitch",
-            "glitch hop",
-            "hip hop",
-            "indietronica",
-            "intelligent dance music",
-            "wonky",
-            "alternative hip hop",
-            "escape room",
-            "experimental hip hop",
-            "freak folk",
-            "hip hop",
-            "wonky"
-        ],
-        "artists": [
-            "Flying Lotus",
-            "Shabazz Palaces"
-        ],
-        "energy": 0.93,
-        "liveness": 0.271,
-        "speechiness": 0.133,
-        "acousticness": 0.103,
-        "instrumentalness": 0.423,
-        "danceability": 0.541,
-        "loudness": -5.88,
-        "valence": 0.348,
-        "tempo": 103.082,
-        "popularity": 54.0
-    },
-    {
-        "name": "Post Requisite",
-        "uri": "spotify:track:5l25WurqQFTmdBqCLqLZ4Z",
-        "date": "2019-06-06T22:38:55.663Z",
-        "genres": [
-            "alternative hip hop",
-            "escape room",
-            "experimental hip hop",
-            "glitch",
-            "glitch hop",
-            "hip hop",
-            "indietronica",
-            "intelligent dance music",
-            "wonky"
-        ],
-        "artists": [
-            "Flying Lotus"
-        ],
-        "energy": 0.718,
-        "liveness": 0.114,
-        "speechiness": 0.205,
-        "acousticness": 0.0597,
-        "instrumentalness": 0.0205,
-        "danceability": 0.598,
-        "loudness": -6.447,
-        "valence": 0.794,
-        "tempo": 85.403,
-        "popularity": 59.0
-    },
-    {
-        "name": "Do the Astral Plane",
-        "uri": "spotify:track:2Yz2Jw8URpBPvksswjJQnT",
-        "date": "2019-06-06T22:36:17.681Z",
-        "genres": [
-            "indie jazz"
-        ],
-        "artists": [
-            "TOSHIO MATSUURA GROUP"
-        ],
-        "energy": 0.557,
-        "liveness": 0.135,
-        "speechiness": 0.0565,
-        "acousticness": 0.00678,
-        "instrumentalness": 0.45,
-        "danceability": 0.438,
-        "loudness": -10.723,
-        "valence": 0.717,
-        "tempo": 118.046,
-        "popularity": 28.0
-    },
-    {
-        "name": "Have You Been To Salford Shopping Centre, Have You Seen Argos?",
-        "uri": "spotify:track:2JlvnV3VYABx8nOfXQhAT4",
-        "date": "2019-06-06T10:09:50.552Z",
-        "genres": [
-            "electra",
-            "outsider house",
-            "russian electronic"
-        ],
-        "artists": [
-            "Machine Woman"
-        ],
-        "energy": 0.672,
-        "liveness": 0.365,
-        "speechiness": 0.116,
-        "acousticness": 0.00588,
-        "instrumentalness": 0.871,
-        "danceability": 0.807,
-        "loudness": -14.457,
-        "valence": 0.338,
-        "tempo": 135.029,
-        "popularity": 37.0
-    },
-    {
-        "name": "Lamborghini (Petrol 1982) - Mixed",
-        "uri": "spotify:track:7HDhcFhQn2bvLTFMd9YKSh",
-        "date": "2019-06-06T10:07:35.552Z",
-        "genres": [
-            "ebm",
-            "experimental",
-            "industrial",
-            "industrial rock",
-            "minimal wave"
-        ],
-        "artists": [
-            "Severed Heads"
-        ],
-        "energy": 0.846,
-        "liveness": 0.507,
-        "speechiness": 0.0577,
-        "acousticness": 6.59e-05,
-        "instrumentalness": 0.68,
-        "danceability": 0.627,
-        "loudness": -9.658,
-        "valence": 0.569,
-        "tempo": 125.021,
-        "popularity": 28.0
-    },
-    {
-        "name": "Lamborghini (Petrol 1982) - Mixed",
-        "uri": "spotify:track:7HDhcFhQn2bvLTFMd9YKSh",
-        "date": "2019-06-06T10:07:35.551Z",
-        "genres": [
-            "ebm",
-            "experimental",
-            "industrial",
-            "industrial rock",
-            "minimal wave"
-        ],
-        "artists": [
-            "Severed Heads"
-        ],
-        "energy": 0.846,
-        "liveness": 0.507,
-        "speechiness": 0.0577,
-        "acousticness": 6.59e-05,
-        "instrumentalness": 0.68,
-        "danceability": 0.627,
-        "loudness": -9.658,
-        "valence": 0.569,
-        "tempo": 125.021,
         "popularity": 28.0
     }
 ]

@@ -25,11 +25,12 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
         ],
-        "popularity": 65,
+        "popularity": 66,
         "uri": "spotify:artist:7w29UYBi0qsHi5RTcv3lmA"
     },
     {
@@ -483,7 +484,7 @@
     {
         "name": "D Tiberio",
         "genres": [],
-        "popularity": 13,
+        "popularity": 14,
         "uri": "spotify:artist:28ffXAtsOs3aKCBWQ6LQo5"
     },
     {
@@ -500,7 +501,7 @@
             "new rave",
             "pop"
         ],
-        "popularity": 70,
+        "popularity": 71,
         "uri": "spotify:artist:67hb7towEyKvt5Z8Bx306c"
     },
     {
@@ -601,9 +602,10 @@
             "alternative hip hop",
             "escape room",
             "experimental hip hop",
-            "hip hop"
+            "hip hop",
+            "new rave"
         ],
-        "popularity": 63,
+        "popularity": 64,
         "uri": "spotify:artist:5RADpgYLOuS2ZxDq7ggYYH"
     },
     {
@@ -616,6 +618,7 @@
             "dream pop",
             "freak folk",
             "indie pop",
+            "indie rock",
             "indietronica",
             "modern rock",
             "neo-synthpop",

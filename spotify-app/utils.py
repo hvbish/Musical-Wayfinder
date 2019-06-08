@@ -27,8 +27,8 @@ def featurize_tracks(tracks, spotipy_session, chunk_size=100, verbose=False):
 
             chunk_track_features = spotipy_session.audio_features(uris)      
             all_features += [extract_features(features) for features in chunk_track_features]
-            if verbose:
-                print(f"{((i + 1) / num_chunks)*100:.1f}% done", end="\r")
+            # if verbose:
+                # print(f"{((i + 1) / num_chunks)*100:.1f}% done", end="\r")
 
         # Finish the last chunk
         if remainder != 0:
@@ -106,8 +106,8 @@ def get_artists_genres(artists, spotipy_session, chunk_size=50, verbose=False):
 
         artist_information = spotipy_session.artists(uris)['artists']      
         all_genres += [artist['genres'] for artist in artist_information]
-        if verbose:
-            print(f"{((i + 1) / num_chunks)*100:.1f}% done", end="\r")
+        # if verbose:
+            # print(f"{((i + 1) / num_chunks)*100:.1f}% done", end="\r")
 
     # Finish the last chunk
     if remainder != 0:

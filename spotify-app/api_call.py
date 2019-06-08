@@ -37,7 +37,7 @@ def get(endpoint, token, max_retries=10, delay=4):
     if response.status_code != 200:
         if reponse.status_code == 429:
             if max_retries > 0:
-                print("Hit rate limit! Sleeping for {} seconds before retrying...".format(delay))
+                # print("Hit rate limit! Sleeping for {} seconds before retrying...".format(delay))
                 time.sleep(delay)
                 return get(endpoint, token, max_retries=max_retries - 1, delay=delay + 1)
             else:
@@ -54,7 +54,7 @@ def get_profile_data(token):
     return profile_data
 
 def get_user_playlists(token, user_id):
-    print("Getting playlists for  {}".format(user_id))
+    # print("Getting playlists for  {}".format(user_id))
 
     # Get user playlist data
     playlist_api_endpoint = "{}/users/{}/playlists".format(SPOTIFY_API_URL, user_id)
@@ -75,7 +75,7 @@ def get_user_playlists(token, user_id):
     return playlists
 
 def scrape_library(token, spotipy_session, user_id, limit=50):
-    print("Scraping library of {}".format(user_id))
+    # print("Scraping library of {}".format(user_id))
     assert(limit <= 50)
 
     # Scrape entire library
@@ -83,7 +83,7 @@ def scrape_library(token, spotipy_session, user_id, limit=50):
     all_library_data = []
     all_library_data.append(library_data)    
     while library_data['next']:
-        print(library_data['next'])
+        # print(library_data['next'])
         library_data = get(library_data['next'], token).json()
         all_library_data.append(library_data)
         
@@ -91,9 +91,9 @@ def scrape_library(token, spotipy_session, user_id, limit=50):
     user_tracks = sum([data['items'] for data in all_library_data], [])
 
     # Get information about each track
-    print("Featurizing tracks")
+    # print("Featurizing tracks")
     track_names, track_uris, data = utils.featurize_tracks(user_tracks, spotipy_session, verbose=True)
-    print("Getting song genres")
+    # print("Getting song genres")
     artist_names, artist_uris, genres = utils.get_song_genres(user_tracks, spotipy_session, verbose=True)
     dates = utils.get_dates_added(user_tracks)
 
@@ -119,7 +119,7 @@ def scrape_library(token, spotipy_session, user_id, limit=50):
     return user_library_data
 
 def scrape_top_artists(token, spotipy_session, user_id, limit=50):
-    print("Getting top artists for {}".format(user_id))
+    # print("Getting top artists for {}".format(user_id))
     assert(limit <= 50)
 
     top_artists_data_all = {}
@@ -147,7 +147,7 @@ def scrape_top_artists(token, spotipy_session, user_id, limit=50):
     return top_artists_data_all
 
 def scrape_top_songs(token, spotipy_session, user_id, limit=50):
-    print("Getting top songs for {}".format(user_id))
+    # print("Getting top songs for {}".format(user_id))
     assert(limit <= 50)
 
     top_tracks_data_all = {}
@@ -156,9 +156,9 @@ def scrape_top_songs(token, spotipy_session, user_id, limit=50):
 
         top_tracks = response.json()
         
-        print("Featurizing tracks")
+        # print("Featurizing tracks")
         track_names, track_uris, data = utils.featurize_tracks([{ 'track' : track } for track in top_tracks['items']], spotipy_session, verbose=True)
-        print("Getting song genres")
+        # print("Getting song genres")
         artist_names, artist_uris, genres = utils.get_song_genres([{ 'track' : track } for track in top_tracks['items']], spotipy_session, verbose=True)
 
         top_tracks_data = []
@@ -183,16 +183,16 @@ def scrape_top_songs(token, spotipy_session, user_id, limit=50):
     return top_tracks_data_all
 
 def scrape_recently_played(token, spotipy_session, user_id, limit=50):
-    print("Getting recently played artists for {}".format(user_id))
+    # print("Getting recently played artists for {}".format(user_id))
     assert(limit <= 50)
 
     response = get(recently_played_endpoint + "?limit={}".format(limit), token)
 
     recently_played = response.json()
     
-    print("Featurizing tracks")
+    # print("Featurizing tracks")
     track_names, track_uris, data = utils.featurize_tracks(recently_played['items'], spotipy_session, verbose=True)
-    print("Getting song genres")
+    # print("Getting song genres")
     artist_names, artist_uris, genres = utils.get_song_genres(recently_played['items'], spotipy_session, verbose=True)
 
     dates = [track['played_at'] for track in recently_played['items']]
@@ -219,7 +219,7 @@ def scrape_recently_played(token, spotipy_session, user_id, limit=50):
 
 def write_json(folder, file_name, data):
     out_name = os.path.join(folder, file_name)
-    print("Writing to {}".format(out_name))
+    # print("Writing to {}".format(out_name))
     open(out_name, "w").write(json.dumps(data, indent=4))
 
 def scrape_data(token, spotipy_session):
@@ -263,7 +263,7 @@ def scrape_data(token, spotipy_session):
     # Compress user data into a single file
 
     zip_command_list = ["zip", os.path.join(user_folder, "{}.zip".format(user_id)) ] + glob(os.path.join(user_folder, "*.json"))
-    print("Calling:\n    {}".format(" ".join(zip_command_list)))
+    # print("Calling:\n    {}".format(" ".join(zip_command_list)))
     subprocess.call(zip_command_list)
 
     # Package everything into a dictionary for easy return

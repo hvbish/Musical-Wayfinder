@@ -86,11 +86,12 @@
             "folk-pop",
             "icelandic pop",
             "metropopolis",
+            "new rave",
             "permanent wave",
             "pop rock",
             "trip hop"
         ],
-        "popularity": 65,
+        "popularity": 66,
         "uri": "spotify:artist:7w29UYBi0qsHi5RTcv3lmA"
     },
     {
@@ -142,7 +143,7 @@
             "abstract beats",
             "gauze pop"
         ],
-        "popularity": 14,
+        "popularity": 15,
         "uri": "spotify:artist:1hNxk945iX3Be2EhTV6BrV"
     },
     {
@@ -151,7 +152,6 @@
             "ambient",
             "bass music",
             "chamber psych",
-            "dub techno",
             "electronic",
             "float house",
             "fluxwork",
@@ -392,12 +392,12 @@
             "alternative rock",
             "art pop",
             "chillwave",
-            "dance-punk",
             "dream pop",
             "experimental pop",
             "folk-pop",
             "freak folk",
             "garage psych",
+            "indie folk",
             "indie garage rock",
             "indie pop",
             "indie rock",
@@ -413,7 +413,7 @@
             "nu gaze",
             "preverb"
         ],
-        "popularity": 60,
+        "popularity": 61,
         "uri": "spotify:artist:5H0YoDsPDi9fObFmJtTjfN"
     },
     {
@@ -430,7 +430,7 @@
             "new rave",
             "pop"
         ],
-        "popularity": 70,
+        "popularity": 71,
         "uri": "spotify:artist:67hb7towEyKvt5Z8Bx306c"
     },
     {
@@ -554,6 +554,7 @@
             "indietronica",
             "lo-fi",
             "modern rock",
+            "new rave",
             "noise pop",
             "preverb",
             "slow core",
@@ -566,6 +567,7 @@
     {
         "name": "Connan Mockasin",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
@@ -645,7 +647,8 @@
             "deep latin alternative",
             "folk-pop",
             "freak folk",
-            "indie pop"
+            "indie pop",
+            "indie rock"
         ],
         "popularity": 54,
         "uri": "spotify:artist:69qhRLDvsWJOhWGXXQ0lQQ"
@@ -743,6 +746,7 @@
         "name": "Caribou",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",

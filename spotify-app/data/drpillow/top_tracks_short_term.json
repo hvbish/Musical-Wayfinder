@@ -421,6 +421,7 @@
         "genres": [
             "bass music",
             "hyperpop",
+            "indie r&b",
             "wonky",
             "bass music",
             "escape room",
@@ -690,6 +691,7 @@
         "name": "Friendless - Sega Bodega Piano Version",
         "uri": "spotify:track:088jxbKsO8V7gQZv1qpNhC",
         "genres": [
+            "escape room",
             "fluxwork",
             "hyperpop",
             "escape room",
@@ -1053,6 +1055,7 @@
         "uri": "spotify:track:3u8TzKOhFnPoNnbzgaOfza",
         "genres": [
             "alternative dance",
+            "art pop",
             "chillwave",
             "dance-punk",
             "dream pop",
@@ -1080,7 +1083,7 @@
         "loudness": -12.704,
         "valence": 0.145,
         "tempo": 119.994,
-        "popularity": 28.0
+        "popularity": 27.0
     },
     {
         "name": "L.A. LOOKS",
@@ -1092,6 +1095,7 @@
             "grave wave",
             "indietronica",
             "metropopolis",
+            "new rave",
             "noise pop",
             "noise rock",
             "nu gaze"
@@ -1132,6 +1136,7 @@
         "name": "Bad Boys",
         "uri": "spotify:track:6TorRujeZsG4jdoHxKrHId",
         "genres": [
+            "chillwave",
             "indietronica",
             "kiwi rock",
             "neo-psychedelic"
