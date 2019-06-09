@@ -14,15 +14,17 @@ var recentlyPlayedGlobal;
 var defaultTimeRange = [2010, 2019];
 
 // Default plotting values
-var legendWidth = 100;
-var legendHeight = 200;
+var legendWidth = 200;
+var legendHeight = 300;
 var xAxisLengthScatter = 500;
 var yAxisLengthScatter = 500;
+var xAxisLengthLine = 1300;
+var yAxisLengthLine = 200;
+
 var defaultMarkerSize = 3.;
 var defaultAlpha = 0.5;
 var myGenreAlpha = 0.8;
 var transitionTime = 500;
-
 
 // Functions to parse and format Date objects
 var parseUTCTime = d3.utcParse("%Y-%m-%dT%H:%M:%SZ");
@@ -106,6 +108,7 @@ var umbrellaGenreToColor = d3.scaleOrdinal()
 // TODO: move selection / default styling to loadPage() ?
 var spotify_preview = d3.select("#spotify-preview").style("display", "none");
 genre_labels
+var maxTopUmbrellaCounts;
 // This is a dictionary containing all of our plots
 // Each plot has an svg element and an x and y axis
 var plots = {};
@@ -793,6 +796,12 @@ function updateLinePlot(songData, genreData, plot) {
     // LEGEND //
     ////////////
 
+    // Get genre counts for filtered data
+    counts = countGenres(filtered_data, genreData);
+    genre_counts = counts[0];
+    umbrella_genre_counts = counts[1];
+    top_umbrella_genre_counts = counts[2];
+
     // Add one dot in the legend for each name.
     var size = 20
     svg.selectAll("myrect")
@@ -801,13 +810,13 @@ function updateLinePlot(songData, genreData, plot) {
       .append("rect")
         .attr("x", xAxis["length"])
         .attr("y", function(d, i){ return 10 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
-        .attr("width", size)
+        .attr("width", function(d, i){ return (top_umbrella_genre_counts[d]["userCount"]/10.)})
         .attr("height", size)
         .style("fill", function(genre){ return umbrellaGenreToColor(genre)})
         .on("mouseover", highlight)
-        .on("mouseleave", noHighlight)
+        .on("mouseleave", noHighlight);
 
-    // Add one dot in the legend for each name.
+    // Add one label in the legend for each name.
     svg.selectAll("mylabels")
       .data(genre_labels)
       .enter()
@@ -1212,25 +1221,85 @@ function makeGenreLegend() {
     var legend = svg.append("g")
                     .attr("id", "legend");
 
+    // Get genre counts for filtered data so you can set bar length
+    genre_labels.forEach(function(g) {
+        counts = countGenres(songDataGlobal, genreDataGlobal);
+        genre_counts = counts[0];
+        umbrella_genre_counts = counts[1];
+        top_umbrella_genre_counts = counts[2];
+        console.log(top_umbrella_genre_counts);
+    });
+
+    // Find the highest topUmbrella count for the genres so you can scale the legend bars
+    maxTopUmbrellaCounts = 0
+    genre_labels.forEach(function(g) {
+        //console.log(g);
+        if (top_umbrella_genre_counts[g]["userCount"] > maxTopUmbrellaCounts) {
+            maxTopUmbrellaCounts = top_umbrella_genre_counts[g]["userCount"];
+        }
+    });
+
     // Loop through all the genre labels and add a legendRow group, shifting their positions so the rows down't overlap
     genre_labels.forEach(function(genre, i){
         var legendRow = legend.append("g")
-            .attr("transform", "translate(0, " + (i * 20) + ")");
+            .attr("transform", "translate(0, " + (i*(legendHeight*0.9)/genre_labels.length) + ")");
+
+
+
+        /////////////////////
+        // HIGHLIGHT GROUP //
+        /////////////////////
+
+        // What to do when one group is hovered
+        var highlight = function(d) {
+            // reduce opacity of all groups
+            d3.selectAll(".line").style("opacity", .1)
+            // expect the one that is hovered
+            d3.select("." + d).style("opacity", 1)
+        }
+    
+        // And when it is not hovered anymore
+        var noHighlight = function(d) {
+            d3.selectAll(".line").style("opacity", 1)
+        }
 
         // Colored rectangles corresponding to each genre 
+        var legendBarSize = 20
+        console.log(maxTopUmbrellaCounts);
         var legendMarker = legendRow.append("rect")
-            .attr("width", 10)
-            .attr("height", 10)
+            .attr("width", 0.8*legendWidth*(top_umbrella_genre_counts[genre]["userCount"]/maxTopUmbrellaCounts))
+            .attr("height", legendBarSize)
             .attr("fill", umbrellaGenreToColor(genre))
             .attr("stroke", umbrellaGenreToColor(genre))
-            
+            .on("mouseover", highlight)
+            .on("mouseleave", noHighlight);
+
         // Text SVG corresponding to the genre in each row of the legend
-        legendRow.append("text")
-            .attr("x", -10)
-            .attr("y", 10)
+        var legendText = legendRow.append("text")
+            .attr("x", -0.1*legendWidth)
+            .attr("y", 15)
             .attr("text-anchor", "end") // Appends text to the left of the legend 
             .style("text-transform", "capitalize")
-            .text(genre);
+            .text(genre)
+            .style("font-size", "18px")
+            .style("font-weight", "bold")
+            .style("fill", umbrellaGenreToColor(genre))
+            .on("mouseover", highlight)
+            .on("mouseleave", noHighlight);
+
+    //             // Add one label in the legend for each name.
+    // svg.selectAll("mylabels")
+    // .data(genre_labels)
+    // .enter()
+    // .append("text")
+    //   .attr("x", xAxis["length"] + size*1.2)
+    //   .attr("y", function(d, i){ return 10 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+    //   .style("fill", function(genre) { return umbrellaGenreToColor(genre);})
+    //   .text(function(d) { return d;})
+    //   .attr("text-anchor", "left")
+    //   .style("alignment-baseline", "middle")
+    //   .on("mouseover", highlight)
+    //   .on("mouseleave", noHighlight)
 
         // If user clicks on the legend text or SVG, toggle that genre
         legendRow.on('click', function() { 
@@ -1244,13 +1313,73 @@ function makeGenreLegend() {
                     legendRow.attr("fill","black");
                     legendMarker.attr("fill", umbrellaGenreToColor(genre));
                     legendMarker.attr("stroke", umbrellaGenreToColor(genre));
+                    legendText.style("font-weight", "bold");
                 } else {
                     legendRow.attr("fill","black");
                     legendMarker.attr("fill","white");
                     legendMarker.attr("stroke","black");
+                    legendText.style("font-weight", "normal");
                 };
 
                 updateAllPlots();
+            });
+    });
+}
+
+// Update genre selection legend for new filter
+function updateGenreLegend() {
+    var svg = plots['legend']['svg'];
+
+    // Append the entire legend and shift it to the desired location
+    var legend = svg.append("g")
+                    .attr("id", "legend");
+
+    // Loop through all the genre labels and add a legendRow group, shifting their positions so the rows down't overlap
+    genre_labels.forEach(function(genre, i){
+        var legendRow = legend.append("g")
+            .attr("transform", "translate(0, " + (i * 20) + ")");
+
+    // Get genre counts for filtered data so you can set bar length
+    counts = countGenres(songData, genreData);
+    genre_counts = counts[0];
+    umbrella_genre_counts = counts[1];
+    top_umbrella_genre_counts = counts[2];
+
+    // Colored rectangles corresponding to each genre 
+    var legendMarker = legendRow.append("rect")
+        .attr("width", legendWidth*(top_umbrella_genre_counts[genre]["userCount"])/10.)
+        .attr("height", 10)
+        .attr("fill", umbrellaGenreToColor(genre))
+        .attr("stroke", umbrellaGenreToColor(genre))
+
+    // Text SVG corresponding to the genre in each row of the legend
+    legendRow.append("text")
+        .attr("x", -10)
+        .attr("y", 10)
+        .attr("text-anchor", "end") // Appends text to the left of the legend 
+        .style("text-transform", "capitalize")
+        .text(genre);
+
+    // If user clicks on the legend text or SVG, toggle that genre
+    legendRow.on('click', function() { 
+            // console.log(genre);
+            // if "plotPop" is true, set it to false, if false set it to true
+            selectionContext["plot" + genre] ? selectionContext["plot" + genre] = false : selectionContext["plot" + genre] = true;
+
+            // Change the indicator on the legend for the current genre
+            // If we want to plot Pop, check for "plotPop" 
+            if (selectionContext["plot" + genre]) {
+                legendRow.attr("fill","black");
+                legendMarker.attr("fill", umbrellaGenreToColor(genre));
+                legendMarker.attr("stroke", umbrellaGenreToColor(genre));
+            } else {
+                legendRow.attr("fill","black");
+                legendMarker.attr("fill","white");
+                legendMarker.attr("stroke","black");
+                legendMarker.attr("stroke-width",15);
+            };
+
+            updateAllPlots();
             });
     });
 }
@@ -1392,14 +1521,14 @@ function loadPage() {
      
     plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : margin};
 
-    var plotLine = generateAxes("#line-plot-area", 1300, 200, marginLinePlot, 0, 1000);
+    var plotLine = generateAxes("#line-plot-area", xAxisLengthLine, yAxisLengthLine, marginLinePlot, 0, 1000);
     var svgLine = plotLine[0];
     var xAxisLine = plotLine[1];
     var yAxisLine = plotLine[2];
     plots['line-chart'] = {"svg" : svgLine, "xAxis" : xAxisLine, "yAxis" : yAxisLine, "margin" : marginLinePlot};
 
     // TODO: Replace this with a "generateSvg" function since we don't care about the axes
-    var marginLegend = { left : 100, right : 0, top : 0, bottom : 0}; // Doesn't seem to do anything
+    var marginLegend = { left : 110, right : 0, top : 0, bottom : 0}; // Doesn't seem to do anything
     var plotLegend = generateAxes("#legend", legendWidth, legendHeight, marginLegend, 0, 200);
     var svgLegend = plotLegend[0];
     plots['legend'] = {"svg" : svgLegend}
