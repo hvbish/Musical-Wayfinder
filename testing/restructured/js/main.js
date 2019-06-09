@@ -458,8 +458,8 @@ function updateSongPlot(songData, plot) {
             .on("mouseout", tipForSong.hide)
             // Add click action that changes the embeded song player to the current track
             .on("click", function(song, i) {
-                // shift click == fliter
-                if (d3.event.ctrlKey) {
+                // ctrl-click or cmd-click to filter
+                if (d3.event.ctrlKey || d3.event.metaKey) {
                     selectionContext["selectedTrack"] = song;
                     updateAllPlots();
                 } else {
@@ -695,8 +695,8 @@ function updateGenrePlot(genreData, plot) {
             .on("mouseover", tipForGenre.show)
             .on("mouseout", tipForGenre.hide)
             .on("click", function(genre, i) {
-                // shift click == fliter
-                if (d3.event.ctrlKey) {
+                // ctrl-click or cmd-click to filter
+                if (d3.event.ctrlKey || d3.event.metaKey) {
                     selectionContext["selectedGenre"] = genre;
                     console.log(genre);
                     updateAllPlots();
