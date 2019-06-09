@@ -304,33 +304,64 @@ function updateSongPlot(songData, plot) {
     // The tooltip for songs
     var tipForSong = d3.tip().attr('class', 'd3-tip')
     .html(function(song) {
-        var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + song.artists.join(", ") + " - " + song.name.bold() + nbsp.repeat(0) + "</h4></span><br>";
-        if (song.isPop) {text += "Pop? <span style='color:"+umbrellaGenreToColor("Pop")+";text-transform:capitalize'>" + song.isPop + "</span><br>";}
-            else {text += "Pop? <span text-transform:capitalize'>" + song.isPop + "</span><br>";}
-        if (song.isRock) {text += "Rock? <span style='color:"+umbrellaGenreToColor("Rock")+";text-transform:capitalize'>" + song.isRock + "</span><br>";}
-            else {text += "Rock? <span text-transform:capitalize'>" + song.isRock + "</span><br>";}
-        if (song.isRap) {text += "Rap? <span style='color:"+umbrellaGenreToColor("Rap")+";text-transform:capitalize'>" + song.isRap + "</span><br>";}
-            else {text += "Rap? <span text-transform:capitalize'>" + song.isRap + "</span><br>";}
-        if (song.isElectronic) {text += "Electronic? <span style='color:"+umbrellaGenreToColor("Electronic")+";text-transform:capitalize'>" + song.isElectronic + "</span><br>";}
-            else {text += "Electronic? <span text-transform:capitalize'>" + song.isElectronic + "</span><br>";}
-        if (song.isClassical) {text += "Classical? <span style='color:"+umbrellaGenreToColor("Classical")+";text-transform:capitalize'>" + song.isClassical + "</span><br>";}
-            else {text += "Classical? <span text-transform:capitalize'>" + song.isClassical + "</span><br>";}
-        if (song.isMetal) {text += "Metal? <span style='color:"+umbrellaGenreToColor("Metal")+";text-transform:capitalize'>" + song.isMetal + "</span><br>";}
-            else {text += "Metal? <span text-transform:capitalize'>" + song.isMetal + "</span><br>";}
-        if (song.isOther) {text += "Other? <span style='color:"+umbrellaGenreToColor("Other")+";text-transform:capitalize'>" + song.isOther + "</span><br>";}
-            else {text += "Other? <span text-transform:capitalize'>" + song.isOther + "</span><br>";}
+        if (song.topUmbrellaMatches[0] == "Rap") {
+            var text = "<h4> Song:    <span style='color:"+rgb(143, 194, 214)+";text-transform:capitalize'>" + " " + song.name.bold() + "</h4></span>"; // Original color: "Thistle"
+            text += "<h4>  Artist:    <span style='color:"+rgb(143, 194, 214)+";text-transform:capitalize'>" + " " + song.artists.join(", ").bold() + "</h4></span><br>";
+        } else if (song.topUmbrellaMatches[0] == "Metal") {
+            var text = "<h4> Song:    <span style='color:"+rgb(255, 255, 255)+";text-transform:capitalize'>" + " " + song.name.bold() + "</h4></span>"; // Original color: "Thistle"
+            text += "<h4>  Artist:    <span style='color:"+rgb(255, 255, 255)+";text-transform:capitalize'>" + " " + song.artists.join(", ").bold() + "</h4></span><br>";
+            //var text = "<strong>  Song:           </strong> <span style='color:"+rgb(242, 242, 242)+";text-transform:capitalize'><h4>" + song.artists.join(", ") + " - " + song.name.bold() + nbsp.repeat(0) + "</h4></span><br>"; // Original color: "Thistle"
+        } else {
+            var text = "<h4> Song:    <span style='color:"+umbrellaGenreToColor(song.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + song.name.bold() + "</h4></span>"; // Original color: "Thistle"
+            text += "<h4>  Artist:    <span style='color:"+umbrellaGenreToColor(song.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + song.artists.join(", ").bold() + "</h4></span><br>";
+            //var text = "<strong>  Song:           </strong> <span style='color:"+umbrellaGenreToColor(song.topUmbrellaMatches[0])+";text-transform:capitalize'><h4>" + song.artists.join(", ") + " - " + song.name.bold() + nbsp.repeat(0) + "</h4></span><br>"; // Original color: "Thistle"
+        }
+        // if (song.isPop) {text += "Pop? <span style='color:"+umbrellaGenreToColor("Pop")+";text-transform:capitalize'>" + song.isPop + "</span><br>";}
+        //     else {text += "Pop? <span text-transform:capitalize'>" + song.isPop + "</span><br>";}
+        // if (song.isRock) {text += "Rock? <span style='color:"+umbrellaGenreToColor("Rock")+";text-transform:capitalize'>" + song.isRock + "</span><br>";}
+        //     else {text += "Rock? <span text-transform:capitalize'>" + song.isRock + "</span><br>";}
+        // if (song.isRap) {text += "Rap? <span style='color:"+umbrellaGenreToColor("Rap")+";text-transform:capitalize'>" + song.isRap + "</span><br>";}
+        //     else {text += "Rap? <span text-transform:capitalize'>" + song.isRap + "</span><br>";}
+        // if (song.isElectronic) {text += "Electronic? <span style='color:"+umbrellaGenreToColor("Electronic")+";text-transform:capitalize'>" + song.isElectronic + "</span><br>";}
+        //     else {text += "Electronic? <span text-transform:capitalize'>" + song.isElectronic + "</span><br>";}
+        // if (song.isClassical) {text += "Classical? <span style='color:"+umbrellaGenreToColor("Classical")+";text-transform:capitalize'>" + song.isClassical + "</span><br>";}
+        //     else {text += "Classical? <span text-transform:capitalize'>" + song.isClassical + "</span><br>";}
+        // if (song.isMetal) {text += "Metal? <span style='color:"+umbrellaGenreToColor("Metal")+";text-transform:capitalize'>" + song.isMetal + "</span><br>";}
+        //     else {text += "Metal? <span text-transform:capitalize'>" + song.isMetal + "</span><br>";}
+        // if (song.isOther) {text += "Other? <span style='color:"+umbrellaGenreToColor("Other")+";text-transform:capitalize'>" + song.isOther + "</span><br>";}
+        //     else {text += "Other? <span text-transform:capitalize'>" + song.isOther + "</span><br>";}
+        //text += "<br>";
+        text += "<strong>  Date Added:           </strong> <span style='color:"+rgb(163, 194, 194)+";text-transform:capitalize'>" + nbsp.repeat(0) + formatTimeMDY(song.dateAdded) + "</span><br>";
         text += "<br>";
-        text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.energy) + "</span><br>";
-        text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.liveness) + "</span><br>";
-        text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.speechiness) + "</span><br>";
-        text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.acousticness) + "</span><br>";
-        text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.instrumentalness) + "</span><br>";
-        text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.danceability) + "</span><br>";
-        text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.loudness) + "</span><br>";
-        text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.valence) + "</span><br>";
-        text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(song.popularity) + "</span><br>";
+        if ((selectionContext.selectedAttributeX == "energy") || (selectionContext.selectedAttributeY == "energy")) {
+            text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.energy) + "</span><br>";
+            };
+        if ((selectionContext.selectedAttributeX == "liveness") || (selectionContext.selectedAttributeY == "liveness")) {
+            text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.liveness) + "</span><br>";
+            };
+        if ((selectionContext.selectedAttributeX == "speechiness") || (selectionContext.selectedAttributeY == "speechiness")) {
+            text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.speechiness) + "</span><br>";
+            };
+        if ((selectionContext.selectedAttributeX == "acousticness") || (selectionContext.selectedAttributeY == "acousticness")) {
+            text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.acousticness) + "</span><br>";
+            };
+        if ((selectionContext.selectedAttributeX == "instrumentalness") || (selectionContext.selectedAttributeY == "instrumentalness")) {
+            text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.instrumentalness) + "</span><br>";
+            };
+        if ((selectionContext.selectedAttributeX == "danceability") || (selectionContext.selectedAttributeY == "danceability")) {
+            text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.danceability) + "</span><br>";
+            };
+        if ((selectionContext.selectedAttributeX == "loudness") || (selectionContext.selectedAttributeY == "loudness")) {
+            text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.loudness) + "</span><br>";
+            };
+        if ((selectionContext.selectedAttributeX == "valence") || (selectionContext.selectedAttributeY == "valence")) {
+            text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.valence) + "</span><br>";
+            };
+        if ((selectionContext.selectedAttributeX == "popularity") || (selectionContext.selectedAttributeY == "popularity")) {
+            text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(song.popularity) + "</span><br>";
+            };
         return text;
-    });
+        });
 
     svg.call(tipForSong);
 
@@ -504,24 +535,48 @@ function updateGenrePlot(genreData, plot) {
   
     selectionContext['genreToggle'] ? genreTitle.text("My Genres") : genreTitle.text("All Genres");
 
-
     
     // Add tool tips to points in plot
-    var tipForGenre = d3.tip()
-                        .attr('class', 'd3-tip')
-                        .html(function(genre) {
-                            var text = "<span style='color:"+"Thistle"+";text-transform:capitalize'><h4>" + genre.name + nbsp.repeat(0) + "</h4></span><br>";
-                            text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.energy) + "</span><br>";
-                            text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.liveness) + "</span><br>";
-                            text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.speechiness) + "</span><br>";
-                            text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.acousticness) + "</span><br>";
-                            text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.instrumentalness) + "</span><br>";
-                            text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.danceability) + "</span><br>";
-                            text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.loudness) + "</span><br>";
-                            text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.valence) + "</span><br>";
-                            text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(genre.popularity) + "</span><br>";
-                            return text;
-                        });
+    var tipForGenre = d3.tip().attr('class', 'd3-tip')
+        .html(function(genre) {
+            if (genre.topUmbrellaMatches[0] == "Rap") {
+                var text = "<h4><span style='color:"+rgb(143, 194, 214)+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
+            } else if (genre.topUmbrellaMatches[0] == "Metal") {
+                var text = "<h4><span style='color:"+rgb(255, 255, 255)+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
+            } else {
+                var text = "<h4><span style='color:"+umbrellaGenreToColor(genre.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
+            }
+            text += "<strong>  Songs in Library:           </strong> <span style='color:"+ rgb(163, 194, 194) + ";text-transform:capitalize'>" + nbsp.repeat(0) + genre["userCount"] + "</span><br>";
+            text += "<br>";
+            if ((selectionContext.selectedAttributeX == "energy") || (selectionContext.selectedAttributeY == "energy")) {
+                text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.energy) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "liveness") || (selectionContext.selectedAttributeY == "liveness")) {
+                text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.liveness) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "speechiness") || (selectionContext.selectedAttributeY == "speechiness")) {
+                text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.speechiness) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "acousticness") || (selectionContext.selectedAttributeY == "acousticness")) {
+                text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.acousticness) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "instrumentalness") || (selectionContext.selectedAttributeY == "instrumentalness")) {
+                text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.instrumentalness) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "danceability") || (selectionContext.selectedAttributeY == "danceability")) {
+                text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.danceability) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "loudness") || (selectionContext.selectedAttributeY == "loudness")) {
+                text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.loudness) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "valence") || (selectionContext.selectedAttributeY == "valence")) {
+                text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.valence) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "popularity") || (selectionContext.selectedAttributeY == "popularity")) {
+                text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(genre.popularity) + "</span><br>";
+                };
+            return text;
+        });
     svg.call(tipForGenre);
 
     // Get the maximum number of counts for all genres so point size can be scaled accordingly
@@ -688,6 +743,8 @@ function updateGenrePlot(genreData, plot) {
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
             .text(yAxisLabelText); // Capitalize first character in value string and use it as the axis label
+
+    console.log(svg.selectAll("rect").data(genreDataGlobal));
 }
 
 function updateLinePlot(songData, genreData, plot) {
@@ -1320,7 +1377,7 @@ function makeGenreLegend() {
                     legendRow.attr("fill","black");
                     legendMarker.attr("fill","white");
                     legendMarker.attr("stroke","black");
-                    legendText.style("font-weight", 100);
+                    legendText.style("font-weight", 200);
                 };
 
                 updateAllPlots();
