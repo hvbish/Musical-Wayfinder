@@ -716,7 +716,6 @@ function updateGenrePlot(genreData, plot) {
         .transition(update_trans)
             .text(yAxisLabelText); // Capitalize first character in value string and use it as the axis label
 
-    // console.log(svg.selectAll("rect").data(genreDataGlobal));
 }
 
 function updateLinePlot(songData, genreData, plot) {
@@ -733,7 +732,7 @@ function updateLinePlot(songData, genreData, plot) {
     });
 
     var xScale = d3.scaleTime()
-                    .domain(date_range)
+                    .domain(defaultTimeRange)
                     .range([0., xAxis["length"]]);
                 
     // Create a function that will bin data in a consistent way on the date added
@@ -1065,10 +1064,6 @@ function updateAllPlots() {
         }
     });
 
-    // console.log("Filtered Songs:")
-    // console.log(songDataFilter);
-    // console.log("Filtered Genres:")
-    // console.log(genreDataFilter);
     // Update the plots using the **filtered** data
     updateGenreLegend(topUmbrellaCounts);
     updateSongPlot(songDataTimeFilter, plots['song-chart']);
@@ -1081,29 +1076,18 @@ function updateAllPlots() {
 $("#x-attribute-select")
     .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
         selectionContext['selectedAttributeX'] = $("#x-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
-        console.log(selectionContext['selectedAttributeX']);
         updateAllPlots();
     });
 
 $("#y-attribute-select")
     .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
         selectionContext['selectedAttributeY'] = $("#y-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
-        console.log(selectionContext['selectedAttributeY']);
         updateAllPlots();
     });
-
-// // A button to toggle All/My Genres
-// $("#toggle-genres-button")
-//     .on("click", function(){
-//         selectionContext["genreToggle"] = !selectionContext["genreToggle"];
-//         count = 0;
-//         updateAllPlots();
-//     });
 
 // A button to just show my genres
 $("#toggle-genres-library")
     .on("click", function() {
-        console.log("clicked");
         selectionContext["genreToggle"] = true;
         updateAllPlots();
     });
@@ -1165,18 +1149,6 @@ function updateGenreLegend(top_umbrella_genre_counts) {
     var legendBarSize = 20
     // console.log(maxTopUmbrellaCounts);
 
-    // Append the entire legend and shift it to the desired location
-    // var legend = 
-
-    // // Get genre counts for filtered data so you can set bar length
-    // genre_labels.forEach(function(g) {
-    //     counts = countGenres(songDataGlobal, genreDataGlobal);
-    //     genre_counts = counts[0];
-    //     umbrella_genre_counts = counts[1];
-    //     top_umbrella_genre_counts = counts[2];
-    //     console.log(top_umbrella_genre_counts);
-    // });
-
     // 1 -- JOIN new data with old elements.
     var legendRows = svg.selectAll("g")
                         .data(genre_labels, function(genre) {
@@ -1185,9 +1157,7 @@ function updateGenreLegend(top_umbrella_genre_counts) {
     // 2 -- EXIT old elements not present in new data.
     legendRows.exit().remove();
 
-    // 3 -- UPDATE old elements present in new data
-    
-    console.log(legendRows);
+    // 3 -- UPDATE old elements present in new data    
     legendRows.selectAll("rect").attr("width", function(genre) {
                     return 0.8*legendWidth*(top_umbrella_genre_counts[genre]["userCount"]/maxTopUmbrellaCounts);
                 })
@@ -1280,149 +1250,7 @@ function updateGenreLegend(top_umbrella_genre_counts) {
             })
             .on("mouseover", highlight)
             .on("mouseleave", noHighlight);
-    
-    // Change the indicator on the legend for the current genre
-    // If we want to plot Pop, check for "plotPop" 
-    // if (selectionContext["plot" + genre]) {
-    //     legendMarker.attr("fill", umbrellaGenreToColor(genre));
-    //     legendMarker.attr("stroke", umbrellaGenreToColor(genre));
-        
-    // } else {
-    //     legendMarker.attr("fill","white");
-    //     legendMarker.attr("stroke","black");
-    //     legendText.style("font-weight", 100);
-    // };
-
-    // // Loop through all the genre labels and add a legendRow group, shifting their positions so the rows down't overlap
-    // genre_labels.forEach(function(genre, i){
-    //     var legendRow = legend.append("g")
-    //         .attr("transform", "translate(0, " + (i*(legendHeight*0.9)/genre_labels.length) + ")");
-
-
-    //     /////////////////////
-    //     // HIGHLIGHT GROUP //
-    //     /////////////////////
-
-    //     // What to do when one group is hovered
-    //     var highlight = function(d) {
-    //         // reduce opacity of all groups
-    //         d3.selectAll(".line").style("opacity", .1)
-    //         // expect the one that is hovered
-    //         d3.select("." + genre).style("opacity", 1);
-    //     }
-    
-    //     // And when it is not hovered anymore
-    //     var noHighlight = function() {
-    //         d3.selectAll(".line").style("opacity", 1)
-    //     }
-
-    //     // Colored rectangles corresponding to each genre 
-    //     var legendBarSize = 20
-    //     console.log(maxTopUmbrellaCounts);
-    //     var legendMarker = legendRow.append("rect")
-    //         .attr("width", 0.8*legendWidth*(top_umbrella_genre_counts[genre]["userCount"]/maxTopUmbrellaCounts))
-    //         .attr("height", legendBarSize)
-    //         .attr("fill", umbrellaGenreToColor(genre))
-    //         .attr("stroke", umbrellaGenreToColor(genre))
-    //         .on("mouseover", highlight)
-    //         .on("mouseleave", noHighlight);
-
-    //     // Text SVG corresponding to the genre in each row of the legend
-    //     var legendText = legendRow.append("text")
-    //         .attr("x", -0.1*legendWidth)
-    //         .attr("y", 15)
-    //         .attr("text-anchor", "end") // Appends text to the left of the legend 
-    //         .style("text-transform", "capitalize")
-    //         .text(genre)
-    //         .style("font-size", "18px")
-    //         .style("font-weight", "bold")
-    //         .style("fill", umbrellaGenreToColor(genre))
-    //         .on("mouseover", highlight)
-    //         .on("mouseleave", noHighlight);
-
-    //     // If user clicks on the legend text or SVG, toggle that genre
-    //     legendRow.on('click', function() { 
-    //             // console.log(genre);
-    //             // if "plotPop" is true, set it to false, if false set it to true
-    //             selectionContext["plot" + genre] ? selectionContext["plot" + genre] = false : selectionContext["plot" + genre] = true;
-
-    //             // Change the indicator on the legend for the current genre
-    //             // If we want to plot Pop, check for "plotPop" 
-    //             if (selectionContext["plot" + genre]) {
-    //                 legendRow.attr("fill","black");
-    //                 legendMarker.attr("fill", umbrellaGenreToColor(genre));
-    //                 legendMarker.attr("stroke", umbrellaGenreToColor(genre));
-    //                 legendText.style("font-weight", "bold");
-    //             } else {
-    //                 console.log(d3.select("." + genre));
-    //                 legendRow.attr("fill","black");
-    //                 legendMarker.attr("fill","white");
-    //                 legendMarker.attr("stroke","black");
-    //                 legendText.style("font-weight", 100);
-    //             };
-
-    //             updateAllPlots();
-    //         });
-    // });
-}
-
-// Update genre selection legend for new filter
-// function updateGenreLegend() {
-//     var svg = plots['legend']['svg'];
-
-//     // Append the entire legend and shift it to the desired location
-//     var legend = svg.append("g")
-//                     .attr("id", "legend");
-
-//     // Loop through all the genre labels and add a legendRow group, shifting their positions so the rows down't overlap
-//     genre_labels.forEach(function(genre, i){
-//         var legendRow = legend.append("g")
-//             .attr("transform", "translate(0, " + (i * 20) + ")");
-
-//     // Get genre counts for filtered data so you can set bar length
-//     counts = countGenres(songData, genreData);
-//     genre_counts = counts[0];
-//     umbrella_genre_counts = counts[1];
-//     top_umbrella_genre_counts = counts[2];
-
-//     // Colored rectangles corresponding to each genre 
-//     var legendMarker = legendRow.append("rect")
-//         .attr("width", legendWidth*(top_umbrella_genre_counts[genre]["userCount"])/10.)
-//         .attr("height", 10)
-//         .attr("fill", umbrellaGenreToColor(genre))
-//         .attr("stroke", umbrellaGenreToColor(genre))
-
-//     // Text SVG corresponding to the genre in each row of the legend
-//     legendRow.append("text")
-//         .attr("x", -10)
-//         .attr("y", 10)
-//         .attr("text-anchor", "end") // Appends text to the left of the legend 
-//         .style("text-transform", "capitalize")
-//         .text(genre);
-
-//     // If user clicks on the legend text or SVG, toggle that genre
-//     legendRow.on('click', function() { 
-//             // console.log(genre);
-//             // if "plotPop" is true, set it to false, if false set it to true
-//             selectionContext["plot" + genre] ? selectionContext["plot" + genre] = false : selectionContext["plot" + genre] = true;
-
-//             // Change the indicator on the legend for the current genre
-//             // If we want to plot Pop, check for "plotPop" 
-//             if (selectionContext["plot" + genre]) {
-//                 legendRow.attr("fill","black");
-//                 legendMarker.attr("fill", umbrellaGenreToColor(genre));
-//                 legendMarker.attr("stroke", umbrellaGenreToColor(genre));
-//             } else {
-//                 legendRow.attr("fill","black");
-//                 legendMarker.attr("fill","white");
-//                 legendMarker.attr("stroke","black");
-//                 legendMarker.attr("stroke-width",15);
-//             };
-
-//             updateAllPlots();
-//             });
-//     });
-// }
+}    
 
 // Create the top artists list on the page
 function makeTopArtistsList() {
@@ -1495,7 +1323,6 @@ function makeTopTracksList() {
                         updateAllPlots();
                     })
                     .html(function(track, i) {
-                        //console.log(track);
                         return (i+1) + ". " + track['name'].bold() + " -- " + track['artists'].join(", ")
                     });
 }
@@ -1526,6 +1353,10 @@ function setDefaults() {
     })
     defaultTimeRange = defaultTimeRange.map(function(date) { return new Date(date); });
     selectionContext["timeRangeBrush"] = defaultTimeRange;
+
+    // Default axes are energy and acousticness
+    $("#x-attribute-select").val("energy");
+    $("#y-attribute-select").val("acousticness");
 
     selectionContext['selectedAttributeX'] = $("#x-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
     selectionContext['selectedAttributeY'] = $("#y-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
@@ -1608,7 +1439,6 @@ function loadPage() {
 
 // A function to process the user library data
 function songDataProcess(songData, genreData) {
-    console.log("In song process!");
     songData.forEach(function(s) {
         s.counts = [];
         // Classify each song into umbrella genres
@@ -1630,7 +1460,6 @@ function songDataProcess(songData, genreData) {
             songUmbrellas.forEach(function(umbrella) {
                 s["is" + umbrella] = true;
                 s["count" + umbrella] += 1; // This will keep a tally of how many times each umbrella genre is assigned to the song
-                //console.log(umbrella, s["count" + umbrella]);
             });
             // this will evaluate to:
             // s.isRock --> true
@@ -1663,7 +1492,6 @@ function songDataProcess(songData, genreData) {
     // Add "closestGenre" key
     // This is where the distance stuff would go
 
-    // console.log(songData);
     return songData;
 }
 
@@ -1686,7 +1514,6 @@ function genreDataProcess(songData, genreData) {
                 
     })
 
-    // console.log(genreData);
     return genreData;
 }
 
