@@ -268,6 +268,15 @@ function countGenres(songData, genreData) {
         });
     });
 
+    // Find the highest topUmbrella count for the genres so you can scale the legend bars
+    maxTopUmbrellaCounts = 0
+    genre_labels.forEach(function(g) {
+        //console.log(g);
+        if (top_umbrella_genre_counts[g]["userCount"] > maxTopUmbrellaCounts) {
+            maxTopUmbrellaCounts = top_umbrella_genre_counts[g]["userCount"];
+        }
+    });
+
     return [genre_counts, umbrella_genre_counts, top_umbrella_genre_counts];
 }
 
@@ -493,7 +502,7 @@ function updateGenrePlot(genreData, plot) {
     var selectedAttributeY = selectionContext["selectedAttributeY"];
 
   
-    selectionContext['genreToggle'] ? genreTitle.text("All Genres") : genreTitle.text("My Genres");
+    selectionContext['genreToggle'] ? genreTitle.text("My Genres") : genreTitle.text("All Genres");
 
 
     
@@ -1230,14 +1239,7 @@ function makeGenreLegend() {
         console.log(top_umbrella_genre_counts);
     });
 
-    // Find the highest topUmbrella count for the genres so you can scale the legend bars
-    maxTopUmbrellaCounts = 0
-    genre_labels.forEach(function(g) {
-        //console.log(g);
-        if (top_umbrella_genre_counts[g]["userCount"] > maxTopUmbrellaCounts) {
-            maxTopUmbrellaCounts = top_umbrella_genre_counts[g]["userCount"];
-        }
-    });
+
 
     // Loop through all the genre labels and add a legendRow group, shifting their positions so the rows down't overlap
     genre_labels.forEach(function(genre, i){
@@ -1318,7 +1320,7 @@ function makeGenreLegend() {
                     legendRow.attr("fill","black");
                     legendMarker.attr("fill","white");
                     legendMarker.attr("stroke","black");
-                    legendText.style("font-weight", "normal");
+                    legendText.style("font-weight", 100);
                 };
 
                 updateAllPlots();
@@ -1511,13 +1513,21 @@ function loadPage() {
     var svgGenres = plotGenres[0];
     var xAxisGenres = plotGenres[1];
     var yAxisGenres = plotGenres[2];
-    // Plot Title
+    // Genre Plot Title (gets updated)
     genreTitle = svgGenres.append("text")
         .attr("x", (xAxisLengthScatter / 2))
         .attr("y", 0 - (margin.top / 5))
         .attr("text-anchor", "middle")
-        .style("font-size", "26px")
+        .style("font-size", "30px")
         .style("font-weight", "bold");
+    // Song Plot Title (static)
+    songTitle = svgSongs.append("text")
+        .attr("x", (xAxisLengthScatter / 2))
+        .attr("y", 0 - (margin.top / 5))
+        .attr("text-anchor", "middle")
+        .style("font-size", "30px")
+        .style("font-weight", "bold")
+        .text("My Songs");
      
     plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : margin};
 
