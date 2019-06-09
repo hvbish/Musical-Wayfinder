@@ -13,6 +13,7 @@ var countsGlobal;
 var genreCountsGlobal;
 var umbrellaCountsGlobal;
 var topUmbrellaCountsGlobal;
+var userProfileGlobal;
 
 // The default time range for the jQuery slider
 var defaultTimeRange = [2010, 2019];
@@ -22,7 +23,7 @@ var lineChartBrush;
 
 // Default plotting values
 var legendWidth = 200;
-var legendHeight = 200;
+var legendHeight = 250;
 var xAxisLengthScatter = 500;
 var yAxisLengthScatter = 500;
 var xAxisLengthLine = 1700;
@@ -493,11 +494,6 @@ function updateSongPlot(songData, plot) {
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
             .text(yAxisLabelText); // Capitalize first character in value string and use it as the axis label
-
-    // Update time slider
-    if (selectionContext["timeRangeBrush"]) {
-        $("#time")[0].innerHTML = formatTimeMDY(selectionContext["timeRangeBrush"][0]) + " - " + formatTimeMDY(selectionContext["timeRangeBrush"][1]);
-    }
 }
 
 function updateGenrePlot(genreData, plot) {
@@ -795,8 +791,9 @@ function updateLinePlot(songData, genreData, plot) {
                  })
                  .y1(function(d) {
                      return yScale(d[1]);
-                 })//.curve(d3.curveBasis);
-                 .curve(d3.curveCatmullRom.alpha(0.5));
+                 })
+                 .curve(d3.curveBasis);
+                //  .curve(d3.curveCatmullRom.alpha(0.5));
             }
 
     // Find the maximum line height among all data points
@@ -911,7 +908,7 @@ function updateLinePlot(songData, genreData, plot) {
         
     // Set labels for axes
     yAxis['label'].attr("class", "y-axis-label")
-                  .attr("y", - plot['margin']['left'] / 2)
+                  .attr("y", - plot['margin']['left'] * 0.25)
                   .attr("x", - yAxis['length'] / 2)
                   .text("Number of Songs");
     xAxis['label'].attr("class", "x-axis-label")
@@ -1004,7 +1001,7 @@ function updateAllPlots() {
                          (Date.parse(song['dateAdded']) <= Date.parse(timeRange[1]));
         }
         return timeFilter;
-    })
+    });
 
     genreDataFilter = genreDataFilter.filter(function(genre) {
         var topArtistFilter = true;
@@ -1043,6 +1040,22 @@ function updateAllPlots() {
         } else {
             genre.userCount = 0;
             genre.userCountWeighted = 0;
+        }
+    });
+
+    // Update time slider
+    if (selectionContext["timeRangeBrush"]) {
+        $("#time")[0].innerHTML = formatTimeMDY(selectionContext["timeRangeBrush"][0]) + " - " + formatTimeMDY(selectionContext["timeRangeBrush"][1]);
+    }
+    console.log(songDataFilter.length);
+    // Count up number of songs in filter
+    $("#songs")[0].innerHTML = songDataTimeFilter.length;
+    // Count up number of unique genres in filter
+    $("#genres")[0].innerHTML = d3.sum(genreDataFilter, function(genre) {
+        if (genre.userCount != 0) { 
+            return 1;
+        } else {
+            return 0;
         }
     });
 
@@ -1488,7 +1501,7 @@ function setDefaults() {
         selectionContext["plot" + umbrella_genre] = true;
     })
     // Start by plotting all genres (rather than the user's genres)
-    selectionContext['genreToggle'] = false; // false = All Genres, true = User Genres
+    selectionContext['genreToggle'] = true; // false = All Genres, true = User Genres
     // We have three time scales to work with for the top artists and track
     // here we start with the short time scale, but we can make an interaction that changes this option
     // TODO: makeTopArtistsList() needs to be updateTopArtistsList() and added to updateAllPlots() for this to work
@@ -1515,42 +1528,45 @@ function setDefaults() {
 // A function to perform on page load
 // This should initialize all global variables and create the plots to plot on 
 function loadPage() {
+    $("#user-id")[0].innerHTML = userProfileGlobal['display_name'];
+
     setDefaults();
-    var margin = { left:100, right:0, top:50, bottom:100 };
-    var marginLinePlot = { left:100, right:0, top:20, bottom:100 };
+    var marginSongPlot = { left:200, right:0, top:50, bottom:100 };
+    var marginGenrePlot = { left:100, right:100, top:50, bottom:100 };
+    var marginLinePlot = { left:220, right:0, top:20, bottom:100 };
 
     // Generate an svg and a set of x and y axes of length 500 and 500 using the above margin
     // generateAxes takes parameters (selector, xAxisLength, yAxisLength, margin, xOrigin, yOrigin)
     // This fully specifies a "plot" that we can drawn on
     // The selector #song-plot-area should reference a div with id song-plot-area
-    var plotSongs = generateAxes("#song-plot-area", xAxisLengthScatter, yAxisLengthScatter, margin, 0, 500);
+    var plotSongs = generateAxes("#song-plot-area", xAxisLengthScatter, yAxisLengthScatter, marginSongPlot, 0, 500);
     var svgSongs = plotSongs[0];
     var xAxisSongs = plotSongs[1];
     var yAxisSongs = plotSongs[2];
-    plots['song-chart'] = {"svg" : svgSongs, "xAxis" : xAxisSongs, "yAxis" : yAxisSongs, "margin" : margin};
+    // Song Plot Title (static)
+    songTitle = svgSongs.append("text")
+        .attr("x", (xAxisLengthScatter / 2))
+        .attr("y", 0 - (marginSongPlot.top / 5))
+        .attr("text-anchor", "middle")
+        .style("font-size", "30px")
+        .style("font-weight", "bold")
+        .text("My Songs");
+    plots['song-chart'] = {"svg" : svgSongs, "xAxis" : xAxisSongs, "yAxis" : yAxisSongs, "margin" : marginSongPlot, "title" : songTitle};
     
     // We do this for each of the plots we want to make
-    var plotGenres = generateAxes("#genre-plot-area", xAxisLengthScatter, yAxisLengthScatter, margin, 0, 500);
+    var plotGenres = generateAxes("#genre-plot-area", xAxisLengthScatter, yAxisLengthScatter, marginGenrePlot, 0, 500);
     var svgGenres = plotGenres[0];
     var xAxisGenres = plotGenres[1];
     var yAxisGenres = plotGenres[2];
     // Genre Plot Title (gets updated)
     genreTitle = svgGenres.append("text")
         .attr("x", (xAxisLengthScatter / 2))
-        .attr("y", 0 - (margin.top / 5))
+        .attr("y", 0 - (marginGenrePlot.top / 5))
         .attr("text-anchor", "middle")
         .style("font-size", "30px")
         .style("font-weight", "bold");
-    // Song Plot Title (static)
-    songTitle = svgSongs.append("text")
-        .attr("x", (xAxisLengthScatter / 2))
-        .attr("y", 0 - (margin.top / 5))
-        .attr("text-anchor", "middle")
-        .style("font-size", "30px")
-        .style("font-weight", "bold")
-        .text("My Songs");
      
-    plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : margin};
+    plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : marginGenrePlot, "title" : genreTitle};
 
     var plotLine = generateAxes("#line-plot-area", xAxisLengthLine, yAxisLengthLine, marginLinePlot, 0, 1000);
     var svgLine = plotLine[0];
@@ -1676,6 +1692,7 @@ Promise.all([loadSongData(),
              loadTopArtistsData(), 
              loadTopTracksData(), 
              loadRecentlyPlayedData(),
+             loadUserProfile()
             ]).then(function(results) {
                  
     console.log("Finished loading Song and Genre Data!");
@@ -1685,6 +1702,7 @@ Promise.all([loadSongData(),
     topArtistsGlobal = results[2];
     topTracksGlobal = results[3];
     recentlyPlayedGlobal = results[4];
+    userProfileGlobal = results[5];
 
     // Apply pre-processing of the data before we plot
     // This will liike like adding keys like "isRock" to the song and genre objects
