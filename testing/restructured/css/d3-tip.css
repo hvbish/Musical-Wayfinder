@@ -1,4 +1,17 @@
-.d3-tip {
+.d3-tip-song {
+  line-height: 1;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+  text-align: right;
+  z-index: 100;
+}
+
+.d3-tip-genre {
   line-height: 1;
   font-weight: bold;
   font-size: 16px;
