@@ -75,3 +75,7 @@ function loadRecentlyPlayedData() {
         console.log(error);
     })
 }
+
+function loadUserProfile() {
+    return d3.json("data/steven/profile.json");
+}

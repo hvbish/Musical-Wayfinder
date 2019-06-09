@@ -9,16 +9,26 @@ var genreDataGlobal;
 var topArtistsGlobal;
 var topTracksGlobal;
 var recentlyPlayedGlobal;
+var countsGlobal;
+var genreCountsGlobal;
+var umbrellaCountsGlobal;
+var topUmbrellaCountsGlobal;
+var userProfileGlobal;
 
 // The default time range for the jQuery slider
 var defaultTimeRange = [2010, 2019];
 
+// Interactive brush that we need global access to in order to reset
+var lineChartBrush;
+var tipForGenre;
+var tipForSong;
+
 // Default plotting values
 var legendWidth = 200;
-var legendHeight = 200;
+var legendHeight = 250;
 var xAxisLengthScatter = 500;
 var yAxisLengthScatter = 500;
-var xAxisLengthLine = 1500;
+var xAxisLengthLine = 1700;
 var yAxisLengthLine = 200;
 
 var defaultMarkerSize = 3.;
@@ -36,7 +46,6 @@ var genre_labels = ['Pop',            'Rock',           'Rap',         'Electron
 function rgb(r, g, b){
     return ["rgb(",r,",",g,",",b,")"].join("");
   }
-//var genre_colors = ['hotpink',        'firebrick',    'royalblue',     'limegreen',    'goldenrod',       'orange', Black',   'grey'];
 var genre_colors = [rgb(221,158,213), rgb(233, 99, 99), rgb(67,148,179), 	rgb(130, 201, 166), rgb(252,189,116),     rgb(193, 152, 139), rgb(80,80,80),  'silver']
 
 // Takes in a genre name string and returns a dictionary indicating which umbrella genres it belongs to
@@ -107,7 +116,7 @@ var umbrellaGenreToColor = d3.scaleOrdinal()
 // The div to put the spotify embedded players in
 // TODO: move selection / default styling to loadPage() ?
 var spotify_preview = d3.select("#spotify-preview").style("display", "none");
-genre_labels
+
 var maxTopUmbrellaCounts;
 // This is a dictionary containing all of our plots
 // Each plot has an svg element and an x and y axis
@@ -130,17 +139,7 @@ function classifyUmbrellaGenre(genre) {
         }
     });
     return umbrellas;
-    // isRock = genre.toLowerCase().includes('rock');	    isRock = (genre.toLowerCase().includes('rock')) || (genre.toLowerCase().includes('punk')) || (genre.toLowerCase().includes('grunge') || (genre.toLowerCase().includes('garage')));
-    // isPop = genre.toLowerCase().includes('pop');	    isPop = ;
-    // isRap = genre.toLowerCase().includes('rap');	    isRap = ;
-    // isMetal = genre.toLowerCase().includes('metal');	    isMetal = 
-    // isClassical = genre.toLowerCase().includes('classical');	    
-    // isElectronic = genre.toLowerCase().includes('elect');	    isElectronic = 
-    // isOther = 	    isJazz = (genre.toLowerCase().includes('jazz')) || (genre.toLowerCase().includes('ragtime'));
-    // return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isOther};	    isOther = !(isRock || isPop || isRap || isElectronic || isClassical || isMetal || isJazz)
-    // return {isRock, isPop, isRap, isMetal, isClassical, isElectronic, isJazz, isOther};
 }
-
 
 // Create a plot to draw things
 // selector should be e.g. "#line-chart" to select a div on the page with id line-chart
@@ -161,9 +160,11 @@ function generateAxes(selector, xAxisLength, yAxisLength, margin, xOrigin, yOrig
     // Axis Groups
     var xAxisGroup = svg.append("g")
         .attr("class", "x axis")
-        .attr("transform", "translate(0," + yAxisLength + ")");
+        .attr("transform", "translate(0," + yAxisLength + ")")
+        .style("font-size", "18px");
     var yAxisGroup = svg.append("g")
         .attr("class", "y axis")
+        .style("font-size", "18px");
 
     // Create the label
     var xAxisLabel = svg.append("text")
@@ -214,7 +215,9 @@ function countGenres(songData, genreData) {
         umbrella_genre_counts[umbrella_genre] = {};
         top_umbrella_genre_counts[umbrella_genre] = {};
         umbrella_genre_counts[umbrella_genre]["userCount"] = 0;
+        umbrella_genre_counts[umbrella_genre]["userCountWeighted"] = 0;
         top_umbrella_genre_counts[umbrella_genre]["userCount"] = 0;
+        top_umbrella_genre_counts[umbrella_genre]["userCountWeighted"] = 0;
     })
 
     // For each song in the passed library
@@ -236,10 +239,12 @@ function countGenres(songData, genreData) {
             // If the key doesn't exist, genre_counts[genre] resolves to undefined which is similar to "false"
             // In that case, we need to make an entry that holds the "userCount" attribute 
             if (genre_counts[genre]) {
-                genre_counts[genre]["userCount"] += weight;
+                genre_counts[genre]["userCountWeighted"] += weight;
+                genre_counts[genre]["userCount"] += 1;
             } else {
                 genre_counts[genre] = {};
-                genre_counts[genre]["userCount"] = weight;
+                genre_counts[genre]["userCountWeighted"] = weight;
+                genre_counts[genre]["userCount"] = 1;
             }
 
             // Compute the numbre of umbrella genres that each song lies in
@@ -254,6 +259,7 @@ function countGenres(songData, genreData) {
             // Do the same for the umbrella genres
             genre_labels.forEach(function(umbrella) {
                 if (song["is" + umbrella]) {
+                    umbrella_genre_counts[umbrella]["userCountWeighted"] += umbrella_weight;
                     umbrella_genre_counts[umbrella]["userCount"] += umbrella_weight;
                 }
             
@@ -263,6 +269,7 @@ function countGenres(songData, genreData) {
         genre_labels.forEach(function(umbrella) {
             if (song["topUmbrellaMatches"][0] == umbrella) {
                 top_umbrella_genre_counts[umbrella]["userCount"] += 1;
+                top_umbrella_genre_counts[umbrella]["userCountWeighted"] += 1;
             }
         
         });
@@ -302,68 +309,72 @@ function updateSongPlot(songData, plot) {
     var selectedAttributeY = selectionContext["selectedAttributeY"];
 
     // The tooltip for songs
-    var tipForSong = d3.tip().attr('class', 'd3-tip')
-    .html(function(song) {
-        if (song.topUmbrellaMatches[0] == "Rap") {
-            var text = "<h4> Song:    <span style='color:"+rgb(143, 194, 214)+";text-transform:capitalize'>" + " " + song.name.bold() + "</h4></span>"; // Original color: "Thistle"
-            text += "<h4>  Artist:    <span style='color:"+rgb(143, 194, 214)+";text-transform:capitalize'>" + " " + song.artists.join(", ").bold() + "</h4></span><br>";
-        } else if (song.topUmbrellaMatches[0] == "Metal") {
-            var text = "<h4> Song:    <span style='color:"+rgb(255, 255, 255)+";text-transform:capitalize'>" + " " + song.name.bold() + "</h4></span>"; // Original color: "Thistle"
-            text += "<h4>  Artist:    <span style='color:"+rgb(255, 255, 255)+";text-transform:capitalize'>" + " " + song.artists.join(", ").bold() + "</h4></span><br>";
-            //var text = "<strong>  Song:           </strong> <span style='color:"+rgb(242, 242, 242)+";text-transform:capitalize'><h4>" + song.artists.join(", ") + " - " + song.name.bold() + nbsp.repeat(0) + "</h4></span><br>"; // Original color: "Thistle"
-        } else {
-            var text = "<h4> Song:    <span style='color:"+umbrellaGenreToColor(song.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + song.name.bold() + "</h4></span>"; // Original color: "Thistle"
-            text += "<h4>  Artist:    <span style='color:"+umbrellaGenreToColor(song.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + song.artists.join(", ").bold() + "</h4></span><br>";
-            //var text = "<strong>  Song:           </strong> <span style='color:"+umbrellaGenreToColor(song.topUmbrellaMatches[0])+";text-transform:capitalize'><h4>" + song.artists.join(", ") + " - " + song.name.bold() + nbsp.repeat(0) + "</h4></span><br>"; // Original color: "Thistle"
-        }
-        // if (song.isPop) {text += "Pop? <span style='color:"+umbrellaGenreToColor("Pop")+";text-transform:capitalize'>" + song.isPop + "</span><br>";}
-        //     else {text += "Pop? <span text-transform:capitalize'>" + song.isPop + "</span><br>";}
-        // if (song.isRock) {text += "Rock? <span style='color:"+umbrellaGenreToColor("Rock")+";text-transform:capitalize'>" + song.isRock + "</span><br>";}
-        //     else {text += "Rock? <span text-transform:capitalize'>" + song.isRock + "</span><br>";}
-        // if (song.isRap) {text += "Rap? <span style='color:"+umbrellaGenreToColor("Rap")+";text-transform:capitalize'>" + song.isRap + "</span><br>";}
-        //     else {text += "Rap? <span text-transform:capitalize'>" + song.isRap + "</span><br>";}
-        // if (song.isElectronic) {text += "Electronic? <span style='color:"+umbrellaGenreToColor("Electronic")+";text-transform:capitalize'>" + song.isElectronic + "</span><br>";}
-        //     else {text += "Electronic? <span text-transform:capitalize'>" + song.isElectronic + "</span><br>";}
-        // if (song.isClassical) {text += "Classical? <span style='color:"+umbrellaGenreToColor("Classical")+";text-transform:capitalize'>" + song.isClassical + "</span><br>";}
-        //     else {text += "Classical? <span text-transform:capitalize'>" + song.isClassical + "</span><br>";}
-        // if (song.isMetal) {text += "Metal? <span style='color:"+umbrellaGenreToColor("Metal")+";text-transform:capitalize'>" + song.isMetal + "</span><br>";}
-        //     else {text += "Metal? <span text-transform:capitalize'>" + song.isMetal + "</span><br>";}
-        // if (song.isOther) {text += "Other? <span style='color:"+umbrellaGenreToColor("Other")+";text-transform:capitalize'>" + song.isOther + "</span><br>";}
-        //     else {text += "Other? <span text-transform:capitalize'>" + song.isOther + "</span><br>";}
-        //text += "<br>";
-        text += "<strong>  Date Added:           </strong> <span style='color:"+rgb(163, 194, 194)+";text-transform:capitalize'>" + nbsp.repeat(0) + formatTimeMDY(song.dateAdded) + "</span><br>";
-        text += "<br>";
-        if ((selectionContext.selectedAttributeX == "energy") || (selectionContext.selectedAttributeY == "energy")) {
-            text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.energy) + "</span><br>";
-            };
-        if ((selectionContext.selectedAttributeX == "liveness") || (selectionContext.selectedAttributeY == "liveness")) {
-            text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.liveness) + "</span><br>";
-            };
-        if ((selectionContext.selectedAttributeX == "speechiness") || (selectionContext.selectedAttributeY == "speechiness")) {
-            text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.speechiness) + "</span><br>";
-            };
-        if ((selectionContext.selectedAttributeX == "acousticness") || (selectionContext.selectedAttributeY == "acousticness")) {
-            text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.acousticness) + "</span><br>";
-            };
-        if ((selectionContext.selectedAttributeX == "instrumentalness") || (selectionContext.selectedAttributeY == "instrumentalness")) {
-            text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.instrumentalness) + "</span><br>";
-            };
-        if ((selectionContext.selectedAttributeX == "danceability") || (selectionContext.selectedAttributeY == "danceability")) {
-            text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.danceability) + "</span><br>";
-            };
-        if ((selectionContext.selectedAttributeX == "loudness") || (selectionContext.selectedAttributeY == "loudness")) {
-            text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.loudness) + "</span><br>";
-            };
-        if ((selectionContext.selectedAttributeX == "valence") || (selectionContext.selectedAttributeY == "valence")) {
-            text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.valence) + "</span><br>";
-            };
-        if ((selectionContext.selectedAttributeX == "popularity") || (selectionContext.selectedAttributeY == "popularity")) {
-            text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(song.popularity) + "</span><br>";
-            };
-        return text;
-        });
+    if (tipForSong) {
+        // d3.selectAll(".d3-tip-song").remove();
+    } else {
+        tipForSong = d3.tip().attr('class', 'd3-tip-song')
+        .html(function(song) {
+            if (song.topUmbrellaMatches[0] == "Rap") {
+                var text = "<h4> Song:    <span style='color:"+rgb(143, 194, 214)+";text-transform:capitalize'>" + " " + song.name.bold() + "</h4></span>"; // Original color: "Thistle"
+                text += "<h4>  Artist:    <span style='color:"+rgb(143, 194, 214)+";text-transform:capitalize'>" + " " + song.artists.join(", ").bold() + "</h4></span><br>";
+            } else if (song.topUmbrellaMatches[0] == "Metal") {
+                var text = "<h4> Song:    <span style='color:"+rgb(255, 255, 255)+";text-transform:capitalize'>" + " " + song.name.bold() + "</h4></span>"; // Original color: "Thistle"
+                text += "<h4>  Artist:    <span style='color:"+rgb(255, 255, 255)+";text-transform:capitalize'>" + " " + song.artists.join(", ").bold() + "</h4></span><br>";
+                //var text = "<strong>  Song:           </strong> <span style='color:"+rgb(242, 242, 242)+";text-transform:capitalize'><h4>" + song.artists.join(", ") + " - " + song.name.bold() + nbsp.repeat(0) + "</h4></span><br>"; // Original color: "Thistle"
+            } else {
+                var text = "<h4> Song:    <span style='color:"+umbrellaGenreToColor(song.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + song.name.bold() + "</h4></span>"; // Original color: "Thistle"
+                text += "<h4>  Artist:    <span style='color:"+umbrellaGenreToColor(song.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + song.artists.join(", ").bold() + "</h4></span><br>";
+                //var text = "<strong>  Song:           </strong> <span style='color:"+umbrellaGenreToColor(song.topUmbrellaMatches[0])+";text-transform:capitalize'><h4>" + song.artists.join(", ") + " - " + song.name.bold() + nbsp.repeat(0) + "</h4></span><br>"; // Original color: "Thistle"
+            }
+            // if (song.isPop) {text += "Pop? <span style='color:"+umbrellaGenreToColor("Pop")+";text-transform:capitalize'>" + song.isPop + "</span><br>";}
+            //     else {text += "Pop? <span text-transform:capitalize'>" + song.isPop + "</span><br>";}
+            // if (song.isRock) {text += "Rock? <span style='color:"+umbrellaGenreToColor("Rock")+";text-transform:capitalize'>" + song.isRock + "</span><br>";}
+            //     else {text += "Rock? <span text-transform:capitalize'>" + song.isRock + "</span><br>";}
+            // if (song.isRap) {text += "Rap? <span style='color:"+umbrellaGenreToColor("Rap")+";text-transform:capitalize'>" + song.isRap + "</span><br>";}
+            //     else {text += "Rap? <span text-transform:capitalize'>" + song.isRap + "</span><br>";}
+            // if (song.isElectronic) {text += "Electronic? <span style='color:"+umbrellaGenreToColor("Electronic")+";text-transform:capitalize'>" + song.isElectronic + "</span><br>";}
+            //     else {text += "Electronic? <span text-transform:capitalize'>" + song.isElectronic + "</span><br>";}
+            // if (song.isClassical) {text += "Classical? <span style='color:"+umbrellaGenreToColor("Classical")+";text-transform:capitalize'>" + song.isClassical + "</span><br>";}
+            //     else {text += "Classical? <span text-transform:capitalize'>" + song.isClassical + "</span><br>";}
+            // if (song.isMetal) {text += "Metal? <span style='color:"+umbrellaGenreToColor("Metal")+";text-transform:capitalize'>" + song.isMetal + "</span><br>";}
+            //     else {text += "Metal? <span text-transform:capitalize'>" + song.isMetal + "</span><br>";}
+            // if (song.isOther) {text += "Other? <span style='color:"+umbrellaGenreToColor("Other")+";text-transform:capitalize'>" + song.isOther + "</span><br>";}
+            //     else {text += "Other? <span text-transform:capitalize'>" + song.isOther + "</span><br>";}
+            //text += "<br>";
+            text += "<strong>  Date Added:           </strong> <span style='color:"+rgb(163, 194, 194)+";text-transform:capitalize'>" + nbsp.repeat(0) + formatTimeMDY(song.dateAdded) + "</span><br>";
+            text += "<br>";
+            if ((selectionContext.selectedAttributeX == "energy") || (selectionContext.selectedAttributeY == "energy")) {
+                text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.energy) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "liveness") || (selectionContext.selectedAttributeY == "liveness")) {
+                text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.liveness) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "speechiness") || (selectionContext.selectedAttributeY == "speechiness")) {
+                text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.speechiness) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "acousticness") || (selectionContext.selectedAttributeY == "acousticness")) {
+                text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.acousticness) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "instrumentalness") || (selectionContext.selectedAttributeY == "instrumentalness")) {
+                text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.instrumentalness) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "danceability") || (selectionContext.selectedAttributeY == "danceability")) {
+                text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.danceability) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "loudness") || (selectionContext.selectedAttributeY == "loudness")) {
+                text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.loudness) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "valence") || (selectionContext.selectedAttributeY == "valence")) {
+                text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.valence) + "</span><br>";
+                };
+            if ((selectionContext.selectedAttributeX == "popularity") || (selectionContext.selectedAttributeY == "popularity")) {
+                text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(song.popularity) + "</span><br>";
+                };
+            return text;
+            });
 
-    svg.call(tipForSong);
+        svg.call(tipForSong);
+    }
 
     // Pick which xScale and yScale we are using
     var xAttrToPix = d3.scaleLinear() // This can apply for any of the attributes that range from 0 to 1
@@ -447,12 +458,18 @@ function updateSongPlot(songData, plot) {
             .on("mouseout", tipForSong.hide)
             // Add click action that changes the embeded song player to the current track
             .on("click", function(song, i) {
-                if (spotify_preview.style("display") == "none") {
-                    spotify_preview.style("display", "block");
+                // shift click == fliter
+                if (d3.event.ctrlKey) {
+                    selectionContext["selectedTrack"] = song;
+                    updateAllPlots();
+                } else {
+                    if (spotify_preview.style("display") == "none") {
+                        spotify_preview.style("display", "block");
+                    }
+                    spotify_preview.html(
+                        '<iframe src="https://open.spotify.com/embed/track/track_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('track_id', song.uri.split(":")[2])
+                    )
                 }
-                spotify_preview.html(
-                    '<iframe src="https://open.spotify.com/embed/track/track_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('track_id', song.uri.split(":")[2])
-                )
             })
             .attr("fill", function(song) {
                 return umbrellaGenreToColor(song.topUmbrellaMatches[0]);
@@ -489,14 +506,6 @@ function updateSongPlot(songData, plot) {
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
             .text(yAxisLabelText); // Capitalize first character in value string and use it as the axis label
-
-    // Update time slider
-    // timesLabel.text(times[0] + " - " + times[1])
-    if (selectionContext["timeRangeBrush"]) {
-        $("#time")[0].innerHTML = formatTimeMDY(selectionContext["timeRangeBrush"][0]) + " - " + formatTimeMDY(selectionContext["timeRangeBrush"][1]);
-        console.log(formatTimeMDY(selectionContext["timeRangeBrush"][0]));
-    }
-    //$("#time-slider").slider("value", +(time))
 }
 
 function updateGenrePlot(genreData, plot) {
@@ -512,54 +521,56 @@ function updateGenrePlot(genreData, plot) {
     var selectedAttributeX = selectionContext["selectedAttributeX"];
     var selectedAttributeY = selectionContext["selectedAttributeY"];
 
-
-    console.log(selectionContext['genreToggle']);
     var title = selectionContext['genreToggle'] ? "My Genres" : "All Genres";
     genreTitle.text(title);
 
-    
     // Add tool tips to points in plot
-    var tipForGenre = d3.tip().attr('class', 'd3-tip')
-        .html(function(genre) {
-            if (genre.topUmbrellaMatches[0] == "Rap") {
-                var text = "<h4><span style='color:"+rgb(143, 194, 214)+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
-            } else if (genre.topUmbrellaMatches[0] == "Metal") {
-                var text = "<h4><span style='color:"+rgb(255, 255, 255)+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
-            } else {
-                var text = "<h4><span style='color:"+umbrellaGenreToColor(genre.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
-            }
-            text += "<strong>  Songs in Library:           </strong> <span style='color:"+ rgb(163, 194, 194) + ";text-transform:capitalize'>" + nbsp.repeat(0) + genre["userCount"] + "</span><br>";
-            text += "<br>";
-            if ((selectionContext.selectedAttributeX == "energy") || (selectionContext.selectedAttributeY == "energy")) {
-                text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.energy) + "</span><br>";
-                };
-            if ((selectionContext.selectedAttributeX == "liveness") || (selectionContext.selectedAttributeY == "liveness")) {
-                text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.liveness) + "</span><br>";
-                };
-            if ((selectionContext.selectedAttributeX == "speechiness") || (selectionContext.selectedAttributeY == "speechiness")) {
-                text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.speechiness) + "</span><br>";
-                };
-            if ((selectionContext.selectedAttributeX == "acousticness") || (selectionContext.selectedAttributeY == "acousticness")) {
-                text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.acousticness) + "</span><br>";
-                };
-            if ((selectionContext.selectedAttributeX == "instrumentalness") || (selectionContext.selectedAttributeY == "instrumentalness")) {
-                text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.instrumentalness) + "</span><br>";
-                };
-            if ((selectionContext.selectedAttributeX == "danceability") || (selectionContext.selectedAttributeY == "danceability")) {
-                text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.danceability) + "</span><br>";
-                };
-            if ((selectionContext.selectedAttributeX == "loudness") || (selectionContext.selectedAttributeY == "loudness")) {
-                text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.loudness) + "</span><br>";
-                };
-            if ((selectionContext.selectedAttributeX == "valence") || (selectionContext.selectedAttributeY == "valence")) {
-                text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.valence) + "</span><br>";
-                };
-            if ((selectionContext.selectedAttributeX == "popularity") || (selectionContext.selectedAttributeY == "popularity")) {
-                text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(genre.popularity) + "</span><br>";
-                };
-            return text;
-        });
-    svg.call(tipForGenre);
+    
+    if (tipForGenre) {
+        // d3.selectAll(".d3-tip-genre").remove();
+    } else {
+        tipForGenre = d3.tip().attr('class', 'd3-tip-genre')
+            .html(function(genre) {
+                if (genre.topUmbrellaMatches[0] == "Rap") {
+                    var text = "<h4><span style='color:"+rgb(143, 194, 214)+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
+                } else if (genre.topUmbrellaMatches[0] == "Metal") {
+                    var text = "<h4><span style='color:"+rgb(255, 255, 255)+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
+                } else {
+                    var text = "<h4><span style='color:"+umbrellaGenreToColor(genre.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
+                }
+                text += "<strong>  Songs in Library:           </strong> <span style='color:"+ rgb(163, 194, 194) + ";text-transform:capitalize'>" + nbsp.repeat(0) + genre["userCount"] + "</span><br>";
+                text += "<br>";
+                if ((selectionContext.selectedAttributeX == "energy") || (selectionContext.selectedAttributeY == "energy")) {
+                    text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.energy) + "</span><br>";
+                    };
+                if ((selectionContext.selectedAttributeX == "liveness") || (selectionContext.selectedAttributeY == "liveness")) {
+                    text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.liveness) + "</span><br>";
+                    };
+                if ((selectionContext.selectedAttributeX == "speechiness") || (selectionContext.selectedAttributeY == "speechiness")) {
+                    text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.speechiness) + "</span><br>";
+                    };
+                if ((selectionContext.selectedAttributeX == "acousticness") || (selectionContext.selectedAttributeY == "acousticness")) {
+                    text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.acousticness) + "</span><br>";
+                    };
+                if ((selectionContext.selectedAttributeX == "instrumentalness") || (selectionContext.selectedAttributeY == "instrumentalness")) {
+                    text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.instrumentalness) + "</span><br>";
+                    };
+                if ((selectionContext.selectedAttributeX == "danceability") || (selectionContext.selectedAttributeY == "danceability")) {
+                    text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.danceability) + "</span><br>";
+                    };
+                if ((selectionContext.selectedAttributeX == "loudness") || (selectionContext.selectedAttributeY == "loudness")) {
+                    text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.loudness) + "</span><br>";
+                    };
+                if ((selectionContext.selectedAttributeX == "valence") || (selectionContext.selectedAttributeY == "valence")) {
+                    text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.valence) + "</span><br>";
+                    };
+                if ((selectionContext.selectedAttributeX == "popularity") || (selectionContext.selectedAttributeY == "popularity")) {
+                    text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(genre.popularity) + "</span><br>";
+                    };
+                return text;
+            });
+        svg.call(tipForGenre);
+    }
 
     // Get the maximum number of counts for all genres so point size can be scaled accordingly
     var maxGenreCount = d3.max(genreData, function(genre) {
@@ -684,12 +695,19 @@ function updateGenrePlot(genreData, plot) {
             .on("mouseover", tipForGenre.show)
             .on("mouseout", tipForGenre.hide)
             .on("click", function(genre, i) {
-                if (spotify_preview.style("display") == "none") {
-                    spotify_preview.style("display", "block");
+                // shift click == fliter
+                if (d3.event.ctrlKey) {
+                    selectionContext["selectedGenre"] = genre;
+                    console.log(genre);
+                    updateAllPlots();
+                } else {
+                    if (spotify_preview.style("display") == "none") {
+                        spotify_preview.style("display", "block");
+                    }
+                    spotify_preview.html(
+                        '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
+                    )
                 }
-                spotify_preview.html(
-                    '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
-                )
             })
 
     // Draw Axes //
@@ -722,7 +740,6 @@ function updateGenrePlot(genreData, plot) {
         .transition(update_trans)
             .text(yAxisLabelText); // Capitalize first character in value string and use it as the axis label
 
-    console.log(svg.selectAll("rect").data(genreDataGlobal));
 }
 
 function updateLinePlot(songData, genreData, plot) {
@@ -739,7 +756,7 @@ function updateLinePlot(songData, genreData, plot) {
     });
 
     var xScale = d3.scaleTime()
-                    .domain(date_range)
+                    .domain(defaultTimeRange)
                     .range([0., xAxis["length"]]);
                 
     // Create a function that will bin data in a consistent way on the date added
@@ -759,11 +776,11 @@ function updateLinePlot(songData, genreData, plot) {
         bin['xMid'] = new Date((Date.parse(bin['x0']) + Date.parse(bin['x1'])) / 2);
         bin['x0'] = new Date(bin['x0']);
         bin['x1'] = new Date(bin['x1']);
-    })
+    });
 
     var genre_bin_data = [];
     binned_data.forEach(function(bin) {
-        genre_bin_data.push({"date" : bin['xMid']});
+        genre_bin_data.push({"date" : bin['x1']});
 
         counts = countGenres(bin, genreData);
         genre_counts = counts[0];
@@ -797,7 +814,9 @@ function updateLinePlot(songData, genreData, plot) {
                  })
                  .y1(function(d) {
                      return yScale(d[1]);
-                 }).curve(d3.curveBasis);//.curve(d3.curveCatmullRom.alpha(0.5));
+                 })
+                 .curve(d3.curveBasis);
+                //  .curve(d3.curveCatmullRom.alpha(0.5));
             }
 
     // Find the maximum line height among all data points
@@ -824,22 +843,41 @@ function updateLinePlot(songData, genreData, plot) {
     umbrella_genre_counts = counts[1];
     top_umbrella_genre_counts = counts[2];
 
-    var clip = svg.append("defs").append("svg:clipPath")
-            .attr("id", "clip")
-            .append("svg:rect")
-            .attr("width", xAxis["length"] )
-            .attr("height", yAxis["length"] )
-            .attr("x", 0)
-            .attr("y", 0);
+    // var clip = svg.append("defs").append("svg:clipPath")
+    //         .attr("id", "clip")
+    //         .append("svg:rect")
+    //         .attr("width", xAxis["length"] )
+    //         .attr("height", yAxis["length"] )
+    //         .attr("x", 0)
+    //         .attr("y", 0);
 
-    var lines = svg.append("g")
-                    .attr("clip-path", "url(#clip)");
+    // var lines = svg.append("g")
+    //                 .attr("clip-path", "url(#clip)");
 
-    svg.selectAll("layers")
-            .data(series, function(d) {
+    var layers = svg.selectAll(".line")
+                .data(series)
 
+    // Remove old elements
+    layers.exit().remove()
+    // Update old data
+    layers.attr("class", function(d, i) {
+                    return "line " + genre_labels[i];
             })
-            .enter()
+            .attr("d", area(xScale, yScale))
+            // Remove fill and show the line in black
+            .style("fill", function(d, i) {
+                return umbrellaGenreToColor(genre_labels[i]);
+            })
+            .style("opacity", function(d, i) { 
+                if (selectionContext["plot" + genre_labels[i]]) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            });
+
+    // New data
+    layers.enter()
             .append("path")
                 .attr("class", function(d, i) {
                     return "line " + genre_labels[i];
@@ -862,27 +900,37 @@ function updateLinePlot(songData, genreData, plot) {
     function idled() { idleTimeout = null; }
 
     // Brushing    
+    // Create the brush
     var brush = d3.brushX()
-                    .extent([[0, 0], 
-                             [xAxis["length"], yAxis["length"]] 
-                            ] 
-                    ).on("end", function() {
-                        var newXScale;
-                        var newYScale;
-                        var extent = d3.event.selection;
-                        if (extent) {
-                            var extentDates = extent.map(xScale.invert);
-                            selectionContext["timeRangeBrush"] = extentDates; 
-                            updateAllPlots();
-                        } else {
-                            selectionContext["timeRangeBrush"] = defaultTimeRange;
-                            updateAllPlots();
-                        }
-                    });
-    
-    var gBrush = svg.append("g")
-                    .attr("class", "brush")
-                    .call(brush);
+    .extent([[0, 0], 
+            [xAxis["length"], yAxis["length"]] 
+            ] 
+    ).on("end", function() {
+        var newXScale;
+        var newYScale;
+        var extent = d3.event.selection;
+        if (extent) {
+            var extentDates = extent.map(xScale.invert);
+            selectionContext["timeRangeBrush"] = extentDates; 
+            updateAllPlots();
+        } else {
+            selectionContext["timeRangeBrush"] = defaultTimeRange;
+            updateAllPlots();
+        }
+    });
+
+    // If global brush not initialized, make it
+    if (! lineChartBrush) {
+        lineChartBrush = {};
+        // Create the brush group for the first time
+        lineChartBrush['element'] = svg.append("g").attr("class", "line-brush");
+        lineChartBrush['brush'] = brush;
+        lineChartBrush['element'].call(lineChartBrush['brush']);
+    } else {
+        // Update with new brush
+        lineChartBrush['brush'] = brush;
+        lineChartBrush['element'].call(lineChartBrush['brush'])
+    }
 
     // Make axes
     xAxis["group"].call(xAxis["call"].scale(xScale));
@@ -890,7 +938,7 @@ function updateLinePlot(songData, genreData, plot) {
         
     // Set labels for axes
     yAxis['label'].attr("class", "y-axis-label")
-                  .attr("y", - plot['margin']['left'] / 2)
+                  .attr("y", - plot['margin']['left'] * 0.25)
                   .attr("x", - yAxis['length'] / 2)
                   .text("Number of Songs");
     xAxis['label'].attr("class", "x-axis-label")
@@ -914,7 +962,13 @@ function resetGenrePlot() {
 }
 
 function resetLinePlot() {
+    // Remove the brush on reset
+    lineChartBrush['element'].call(lineChartBrush['brush'].move, null);
     updateLinePlot(songDataGlobal, genreDataGlobal, plots['line-chart']);
+}
+
+function resetGenreLegend() {
+    updateGenreLegend(topUmbrellaCountsGlobal);
 }
 
 // This will reset all of the plots we've made to their standard state
@@ -929,7 +983,6 @@ function resetAllPlots() {
 // It will look at the selectionContext dictionary and have access to global
 // songData and genreData objects that it will then filter down based on the selection
 function updateAllPlots() {
-
     // We want to filter our data through a set of filters
     // Start out with the data in its full state
     var songDataFilter = songDataGlobal;
@@ -941,22 +994,33 @@ function updateAllPlots() {
 
     // var lowerTimeLimit = selectionContext["timeRange"][0];
     // var upperTimeLimit = selectionContext["timeRange"][1];
-    var artist = selectionContext['selectedTopArtist'];
-    var track = selectionContext['selectedTopTrack'];
+    var topArtist = selectionContext['selectedTopArtist'];
+    var topTrack = selectionContext['selectedTopTrack'];
+    var selectedTrack = selectionContext['selectedTrack'];
+    var selectedGenre = selectionContext['selectedGenre'];
 
     var timeRange = selectionContext["timeRangeBrush"];
 
     songDataFilter = songDataFilter.filter(function(song) {
         var topArtistFilter = true;
         var topTrackFilter = true;
+        var selectedTrackFilter = true;
+        var selectedGenreFilter = true;
         var plotGenreFilter;
 
-        if (artist) {
-            topArtistFilter = song['artists'].includes(artist['name']);
+        if (topArtist) {
+            topArtistFilter = song['artists'].includes(topArtist['name']);
         };
-        if (track) {
-            topTrackFilter = song['name'] == track['name'];
+        if (topTrack) {
+            topTrackFilter = song['name'] == topTrack['name'];
         }
+        if (selectedTrack) {
+            selectedTrackFilter = song['name'] == selectedTrack['name'];
+        }
+        if (selectedGenre) {
+            selectedGenreFilter = song['genres'].includes(selectedGenre['name'].toLowerCase());
+        }
+
         plotGenreFilter = genre_labels.some(function(umbrella) { 
             // Each song has isMetal, isRock etc.
             // Comapre with the current selectionContext
@@ -966,155 +1030,106 @@ function updateAllPlots() {
 
         // var songYear = song['dateAdded'].getFullYear();
         // var timeFilter = (songYear >= lowerTimeLimit) && (songYear <= upperTimeLimit);
+
+        return topArtistFilter && topTrackFilter && plotGenreFilter && selectedTrackFilter && selectedGenreFilter;
+    });
+
+    // Filter separately on time so we can update the line plot in a different way
+    songDataTimeFilter = songDataFilter.filter(function(song) {
         var timeFilter = true;
         if (timeRange) {
             timeFilter = (Date.parse(song['dateAdded']) >= Date.parse(timeRange[0])) && 
                          (Date.parse(song['dateAdded']) <= Date.parse(timeRange[1]));
         }
-
-        return topArtistFilter && topTrackFilter && plotGenreFilter && timeFilter;
+        return timeFilter;
     });
 
     genreDataFilter = genreDataFilter.filter(function(genre) {
         var topArtistFilter = true;
         var topTrackFilter = true;
+        var selectedTrackFilter = true;
+        var selectedGenreFilter = true;
         var plotGenreFilter;
 
-        if (artist) {
-            topArtistFilter = artist['genres'].includes(genre['name'].toLowerCase());
+        if (topArtist) {
+            topArtistFilter = topArtist['genres'].includes(genre['name'].toLowerCase());
         }
-        if (track) {
-            topTrackFilter = track['genres'].includes(genre['name'].toLowerCase());
+        if (topTrack) {
+            topTrackFilter = topTrack['genres'].includes(genre['name'].toLowerCase());
+        }
+        if (selectedTrack) {
+            selectedTrackFilter = selectedTrack['genres'].includes(genre['name'].toLowerCase());
+        }
+        if (selectedGenre) {
+            selectedGenreFilter = genre['name'] == selectedGenre['name'];
         }
         plotGenreFilter = genre_labels.some(function(umbrella) { 
             // Each song has isMetal, isRock etc.
             // Comapre with the current selectionContext
             // return genre["is" + umbrella] && selectionContext["plot" + umbrella];
             return (genre["topUmbrellaMatches"][0] == umbrella) && (selectionContext["plot" + umbrella]);
-            
         });
 
-        return topArtistFilter && topTrackFilter && plotGenreFilter;
+        return topArtistFilter && topTrackFilter && plotGenreFilter && selectedTrackFilter && selectedGenreFilter;
     });
 
-    // if (selectionContext['selectedTopArtist']) {
-    //     // clicking on a top artist will set this value to be a specific artist
-    //     // each top artist has a name, genres, and popularity
-    //     var artist = selectionContext['selectedTopArtist'];
-    //     songDataFilter = songDataFilter.filter(function(song) {
-    //         return song['artists'].includes(artist['name']);
-    //     });
-    //     genreDataFilter = genreDataFilter.filter(function(genre) {
-    //         return artist['genres'].includes(genre['name'].toLowerCase());
-    //     });
-    // }
-    
-    // // Filter on top track
-    // if (selectionContext['selectedTopTrack']) {
-    //     var track = selectionContext['selectedTopTrack'];
-    //     songDataFilter = songDataFilter.filter(function(song) {
-    //         return song['name'] == track['name'];
-    //     });
-    //     genreDataFilter = genreDataFilter.filter(function(genre) {
-    //         return track['genres'].includes(genre['name'].toLowerCase());
-    //     });
-    // }
-
-    // // Filter the genre data for interactive legend
-    // genreDataFilter = genreDataFilter.filter(function(genre) {   
-    //     return genre_labels.some(function(umbrella) { 
-    //         // Each genre has isMetal, isRock etc.
-    //         // Comapre with the current selectionContext
-    //         return genre["is" + umbrella] && selectionContext["plot" + umbrella]
-    //     });
-    // });        
-
-    // // Filter the song data for interactive legend
-    // songDataFilter = songDataFilter.filter(function(song) {
-    //     return genre_labels.some(function(umbrella) { 
-    //         // Each song has isMetal, isRock etc.
-    //         // Comapre with the current selectionContext
-    //         return song["is" + umbrella] && selectionContext["plot" + umbrella]
-    //     });
-    // });        
-    
-    // Classified genre filter
-
-    // // Filter the song data for interactive legend
-    // songDataFilter = songDataFilter.filter(function(song) {
-    //     return (((song['classifiedGenre'] == 'Pop') && selectionContext['plotPop']) || 
-    //             (song.isRock && selectionContext['plotRock']) || 
-    //             (song.isRap && selectionContext['plotRap']) || 
-    //             (song.isElectronic && selectionContext['plotElectronic']) || 
-    //             (song.isClassical && selectionContext['plotClassical']) || 
-    //             (song.isMetal && selectionContext['plotMetal']) || 
-    //             (song.isOther && selectionContext['plotOther']));
-    // });
-
-    // Apply temporal filters from the time slider
-    // TODO: Replace this with extent from time plot brush
-    // songDataFilter = songDataFilter.filter(function(song) {
-    //     var lowerTimeLimit = selectionContext["timeRange"][0];
-    //     var upperTimeLimit = selectionContext["timeRange"][1];
-    //     var songYear = song['dateAdded'].getFullYear();
-    //     return (songYear >= lowerTimeLimit) && (songYear <= upperTimeLimit);
-    // })
-
     // Count the genres in the filtered song data given the filtered genre data
-    counts = countGenres(songDataFilter, genreDataFilter);
-    genreCounts = counts[0];
-    umbrellaCounts = counts[1];
-    topumbrellacounts = counts[2];
+    var counts = countGenres(songDataTimeFilter, genreDataFilter);
+    var genreCounts = counts[0];
+    var umbrellaCounts = counts[1];
+    var topUmbrellaCounts = counts[2];
     // Update the passed genre data with new user counts.
     genreDataFilter.forEach(function(genre) {
         key = genre['name'].toLowerCase();
         genreInLibrary = genreCounts[key];
         if (genreInLibrary) {
             genre.userCount = genreCounts[key]["userCount"];
+            genre.userCountWeighted = genreCounts[key]["userCountWeighted"];
         } else {
             genre.userCount = 0;
+            genre.userCountWeighted = 0;
         }
     });
 
-    // console.log("Filtered Songs:")
-    // console.log(songDataFilter);
-    // console.log("Filtered Genres:")
-    // console.log(genreDataFilter);
+    // Update time slider
+    if (selectionContext["timeRangeBrush"]) {
+        $("#time")[0].innerHTML = formatTimeMDY(selectionContext["timeRangeBrush"][0]) + " - " + formatTimeMDY(selectionContext["timeRangeBrush"][1]);
+    }
+    // Count up number of songs in filter
+    $("#songs")[0].innerHTML = songDataTimeFilter.length;
+    // Count up number of unique genres in filter
+    $("#genres")[0].innerHTML = d3.sum(genreDataFilter, function(genre) {
+        if (genre.userCount != 0) { 
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+
     // Update the plots using the **filtered** data
-    updateGenreLegend(topumbrellacounts);
-    updateSongPlot(songDataFilter, plots['song-chart']);
+    updateGenreLegend(topUmbrellaCounts);
+    updateSongPlot(songDataTimeFilter, plots['song-chart']);
     updateGenrePlot(genreDataFilter, plots['genre-chart']);
     // updateLinePlot(songDataGlobal, genreDataGlobal, plots['line-chart']);
-    // updateLinePlot(songDataFilter, genreDataFilter, plots['line-chart']);
+    updateLinePlot(songDataFilter, genreDataFilter, plots['line-chart']);
 }
 
 // The x and y axis drop down menus
 $("#x-attribute-select")
     .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
         selectionContext['selectedAttributeX'] = $("#x-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
-        console.log(selectionContext['selectedAttributeX']);
         updateAllPlots();
     });
 
 $("#y-attribute-select")
     .on("change", function(){ // This ensures that the visualization is updated whenever the dropdown selection changes, even if animation is paused and interval is not running
         selectionContext['selectedAttributeY'] = $("#y-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
-        console.log(selectionContext['selectedAttributeY']);
         updateAllPlots();
     });
-
-// // A button to toggle All/My Genres
-// $("#toggle-genres-button")
-//     .on("click", function(){
-//         selectionContext["genreToggle"] = !selectionContext["genreToggle"];
-//         count = 0;
-//         updateAllPlots();
-//     });
 
 // A button to just show my genres
 $("#toggle-genres-library")
     .on("click", function() {
-        console.log("clicked");
         selectionContext["genreToggle"] = true;
         updateAllPlots();
     });
@@ -1156,245 +1171,128 @@ $('#slider').dragslider({
 function updateGenreLegend(top_umbrella_genre_counts) {
     var svg = plots['legend']['svg'];
 
-    // Append the entire legend and shift it to the desired location
-    // var legend = 
-
-    // // Get genre counts for filtered data so you can set bar length
-    // genre_labels.forEach(function(g) {
-    //     counts = countGenres(songDataGlobal, genreDataGlobal);
-    //     genre_counts = counts[0];
-    //     umbrella_genre_counts = counts[1];
-    //     top_umbrella_genre_counts = counts[2];
-    //     console.log(top_umbrella_genre_counts);
-    // });
-
-    var legendRows = svg.selectAll("g")
-                            .data(genre_labels, function(genre) {
-                                return genre;
-                            })
-                            .enter()
-                            // Represents a single umbrella
-                            .append("g")
-                            .attr("transform", function(genre, i) {
-                                return "translate(0, " + (i*(legendHeight*0.9)/genre_labels.length) + ")";
-                            })
-                            .attr("fill", function(genre) {
-                                if (selectionContext["plot" + genre]) {
-                                    return "black";
-                                } else {
-                                    return "black"
-                                }
-                            })
-                            .on('click', function(genre) { 
-                                // if "plotPop" is true, set it to false, if false set it to true
-                                selectionContext["plot" + genre] ? selectionContext["plot" + genre] = false : selectionContext["plot" + genre] = true;
-                                // makeGenreLegend();
-                                updateAllPlots();
-                            });
-
-    // What to do when one group is hovered
+    // When a genre is hovered, change its opacity to 1
+    // and lower all others to highlight just that genre
     var highlight = function(genre) {
-        // reduce opacity of all groups
-        d3.selectAll(".line").style("opacity", .1)
-        // expect the one that is hovered
-        d3.select("." + genre).style("opacity", 1);
+        if (selectionContext["plot" + genre]) {
+            // reduce opacity of all groups
+            d3.selectAll(".line").style("opacity", .1)
+            // expect the one that is hovered
+            d3.select("." + genre).style("opacity", 1);
+        }
     }
 
-    // And when it is not hovered anymore
+    // And when it is not hovered anymore change its opacity back to 1
     var noHighlight = function() {
         d3.selectAll(".line").style("opacity", 1)
     }
 
     // Colored rectangles corresponding to each genre 
     var legendBarSize = 20
-    console.log(maxTopUmbrellaCounts);
-    var legendMarkers = legendRows.append("rect")
-                                    .attr("width", function(genre) {
-                                        return 0.8*legendWidth*(top_umbrella_genre_counts[genre]["userCount"]/maxTopUmbrellaCounts);
-                                    })
-                                    .attr("height", legendBarSize)
-                                    .attr("fill", function(genre) {
-                                        if (selectionContext['plot' + genre]) {
-                                            return umbrellaGenreToColor(genre);
-                                        } else {
-                                            return "white";
-                                        }
-                                    })
-                                    .attr("stroke", function(genre) {
-                                        if (selectionContext['plot' + genre]) {
-                                            return umbrellaGenreToColor(genre);
-                                        } else {
-                                            return "black";
-                                        }
-                                    })
-                                    .on("mouseover", highlight)
-                                    .on("mouseleave", noHighlight);
+    // console.log(maxTopUmbrellaCounts);
+
+    // 1 -- JOIN new data with old elements.
+    var legendRows = svg.selectAll("g")
+                        .data(genre_labels, function(genre) {
+                            return genre;
+                        });
+    // 2 -- EXIT old elements not present in new data.
+    legendRows.exit().remove();
+
+    // 3 -- UPDATE old elements present in new data    
+    legendRows.selectAll("rect").attr("width", function(genre) {
+                    return 0.8*legendWidth*(top_umbrella_genre_counts[genre]["userCount"]/maxTopUmbrellaCounts);
+                })
+                .attr("fill", function(genre) {
+                    if (selectionContext['plot' + genre]) {
+                        return umbrellaGenreToColor(genre);
+                    } else {
+                        return "white";
+                    }
+                })
+                .attr("stroke", function(genre) {
+                    if (selectionContext['plot' + genre]) {
+                        return umbrellaGenreToColor(genre);
+                    } else {
+                        return "black";
+                    }
+                })
+    
+    legendRows.selectAll("text").text(function(genre) {
+                    return genre;
+                })
+                .style("fill", function(genre) {
+                    return umbrellaGenreToColor(genre)
+                })
+                .style("font-weight", function(genre) {
+                    if (selectionContext['plot' + genre]) {
+                        return "bold";
+                    } else {
+                        return 100;
+                    }
+                })
+
+    // 4 -- ENTER new elements present in new data.
+    var newRows = legendRows.enter()
+                // Add the row
+                .append("g")
+                // Position the row in the legend
+                .attr("transform", function(genre, i) {
+                    return "translate(0, " + (i*(legendHeight*0.9)/genre_labels.length) + ")";
+                })
+                // Add on click functionality to interact with other plots
+                .on('click', function(genre) { 
+                    // if "plotPop" is true, set it to false, if false set it to true
+                    selectionContext["plot" + genre] ? selectionContext["plot" + genre] = false : selectionContext["plot" + genre] = true;
+                    // makeGenreLegend();
+                    updateAllPlots();
+                });
+
+    newRows.append("rect")
+            .attr("width", function(genre) {
+                return 0.8*legendWidth*(top_umbrella_genre_counts[genre]["userCount"]/maxTopUmbrellaCounts);
+            })
+            .attr("height", legendBarSize)
+            .attr("fill", function(genre) {
+                if (selectionContext['plot' + genre]) {
+                    return umbrellaGenreToColor(genre);
+                } else {
+                    return "white";
+                }
+            })
+            .attr("stroke", function(genre) {
+                if (selectionContext['plot' + genre]) {
+                    return umbrellaGenreToColor(genre);
+                } else {
+                    return "black";
+                }
+            })
+            .on("mouseover", highlight)
+            .on("mouseleave", noHighlight);
 
     // Text SVG corresponding to the genre in each row of the legend
-    var legendTexts = legendRows.append("text")
-                                .attr("x", -0.1*legendWidth)
-                                .attr("y", 15)
-                                .attr("text-anchor", "end") // Appends text to the left of the legend 
-                                .style("text-transform", "capitalize")
-                                .text(function(genre) {
-                                    return genre;
-                                })
-                                .style("font-size", "18px")
-                                .style("fill", function(genre) {
-                                    return umbrellaGenreToColor(genre)
-                                })
-                                .style("font-weight", function(genre) {
-                                    if (selectionContext['plot' + genre]) {
-                                        return "bold";
-                                    } else {
-                                        return 100;
-                                    }
-                                })
-                                .on("mouseover", highlight)
-                                .on("mouseleave", noHighlight);
-                
-    // Change the indicator on the legend for the current genre
-    // If we want to plot Pop, check for "plotPop" 
-    // if (selectionContext["plot" + genre]) {
-    //     legendMarker.attr("fill", umbrellaGenreToColor(genre));
-    //     legendMarker.attr("stroke", umbrellaGenreToColor(genre));
-        
-    // } else {
-    //     legendMarker.attr("fill","white");
-    //     legendMarker.attr("stroke","black");
-    //     legendText.style("font-weight", 100);
-    // };
-
-    // // Loop through all the genre labels and add a legendRow group, shifting their positions so the rows down't overlap
-    // genre_labels.forEach(function(genre, i){
-    //     var legendRow = legend.append("g")
-    //         .attr("transform", "translate(0, " + (i*(legendHeight*0.9)/genre_labels.length) + ")");
-
-
-    //     /////////////////////
-    //     // HIGHLIGHT GROUP //
-    //     /////////////////////
-
-    //     // What to do when one group is hovered
-    //     var highlight = function(d) {
-    //         // reduce opacity of all groups
-    //         d3.selectAll(".line").style("opacity", .1)
-    //         // expect the one that is hovered
-    //         d3.select("." + genre).style("opacity", 1);
-    //     }
-    
-    //     // And when it is not hovered anymore
-    //     var noHighlight = function() {
-    //         d3.selectAll(".line").style("opacity", 1)
-    //     }
-
-    //     // Colored rectangles corresponding to each genre 
-    //     var legendBarSize = 20
-    //     console.log(maxTopUmbrellaCounts);
-    //     var legendMarker = legendRow.append("rect")
-    //         .attr("width", 0.8*legendWidth*(top_umbrella_genre_counts[genre]["userCount"]/maxTopUmbrellaCounts))
-    //         .attr("height", legendBarSize)
-    //         .attr("fill", umbrellaGenreToColor(genre))
-    //         .attr("stroke", umbrellaGenreToColor(genre))
-    //         .on("mouseover", highlight)
-    //         .on("mouseleave", noHighlight);
-
-    //     // Text SVG corresponding to the genre in each row of the legend
-    //     var legendText = legendRow.append("text")
-    //         .attr("x", -0.1*legendWidth)
-    //         .attr("y", 15)
-    //         .attr("text-anchor", "end") // Appends text to the left of the legend 
-    //         .style("text-transform", "capitalize")
-    //         .text(genre)
-    //         .style("font-size", "18px")
-    //         .style("font-weight", "bold")
-    //         .style("fill", umbrellaGenreToColor(genre))
-    //         .on("mouseover", highlight)
-    //         .on("mouseleave", noHighlight);
-
-    //     // If user clicks on the legend text or SVG, toggle that genre
-    //     legendRow.on('click', function() { 
-    //             // console.log(genre);
-    //             // if "plotPop" is true, set it to false, if false set it to true
-    //             selectionContext["plot" + genre] ? selectionContext["plot" + genre] = false : selectionContext["plot" + genre] = true;
-
-    //             // Change the indicator on the legend for the current genre
-    //             // If we want to plot Pop, check for "plotPop" 
-    //             if (selectionContext["plot" + genre]) {
-    //                 legendRow.attr("fill","black");
-    //                 legendMarker.attr("fill", umbrellaGenreToColor(genre));
-    //                 legendMarker.attr("stroke", umbrellaGenreToColor(genre));
-    //                 legendText.style("font-weight", "bold");
-    //             } else {
-    //                 console.log(d3.select("." + genre));
-    //                 legendRow.attr("fill","black");
-    //                 legendMarker.attr("fill","white");
-    //                 legendMarker.attr("stroke","black");
-    //                 legendText.style("font-weight", 100);
-    //             };
-
-    //             updateAllPlots();
-    //         });
-    // });
-}
-
-// Update genre selection legend for new filter
-// function updateGenreLegend() {
-//     var svg = plots['legend']['svg'];
-
-//     // Append the entire legend and shift it to the desired location
-//     var legend = svg.append("g")
-//                     .attr("id", "legend");
-
-//     // Loop through all the genre labels and add a legendRow group, shifting their positions so the rows down't overlap
-//     genre_labels.forEach(function(genre, i){
-//         var legendRow = legend.append("g")
-//             .attr("transform", "translate(0, " + (i * 20) + ")");
-
-//     // Get genre counts for filtered data so you can set bar length
-//     counts = countGenres(songData, genreData);
-//     genre_counts = counts[0];
-//     umbrella_genre_counts = counts[1];
-//     top_umbrella_genre_counts = counts[2];
-
-//     // Colored rectangles corresponding to each genre 
-//     var legendMarker = legendRow.append("rect")
-//         .attr("width", legendWidth*(top_umbrella_genre_counts[genre]["userCount"])/10.)
-//         .attr("height", 10)
-//         .attr("fill", umbrellaGenreToColor(genre))
-//         .attr("stroke", umbrellaGenreToColor(genre))
-
-//     // Text SVG corresponding to the genre in each row of the legend
-//     legendRow.append("text")
-//         .attr("x", -10)
-//         .attr("y", 10)
-//         .attr("text-anchor", "end") // Appends text to the left of the legend 
-//         .style("text-transform", "capitalize")
-//         .text(genre);
-
-//     // If user clicks on the legend text or SVG, toggle that genre
-//     legendRow.on('click', function() { 
-//             // console.log(genre);
-//             // if "plotPop" is true, set it to false, if false set it to true
-//             selectionContext["plot" + genre] ? selectionContext["plot" + genre] = false : selectionContext["plot" + genre] = true;
-
-//             // Change the indicator on the legend for the current genre
-//             // If we want to plot Pop, check for "plotPop" 
-//             if (selectionContext["plot" + genre]) {
-//                 legendRow.attr("fill","black");
-//                 legendMarker.attr("fill", umbrellaGenreToColor(genre));
-//                 legendMarker.attr("stroke", umbrellaGenreToColor(genre));
-//             } else {
-//                 legendRow.attr("fill","black");
-//                 legendMarker.attr("fill","white");
-//                 legendMarker.attr("stroke","black");
-//                 legendMarker.attr("stroke-width",15);
-//             };
-
-//             updateAllPlots();
-//             });
-//     });
-// }
+    newRows.append("text")
+            .attr("x", -0.1*legendWidth)
+            .attr("y", 15)
+            .attr("text-anchor", "end") // Appends text to the left of the legend 
+            .style("text-transform", "capitalize")
+            .text(function(genre) {
+                return genre;
+            })
+            .style("font-size", "18px")
+            .style("fill", function(genre) {
+                return umbrellaGenreToColor(genre)
+            })
+            .style("font-weight", function(genre) {
+                if (selectionContext['plot' + genre]) {
+                    return "bold";
+                } else {
+                    return 100;
+                }
+            })
+            .on("mouseover", highlight)
+            .on("mouseleave", noHighlight);
+}    
 
 // Create the top artists list on the page
 function makeTopArtistsList() {
@@ -1467,7 +1365,6 @@ function makeTopTracksList() {
                         updateAllPlots();
                     })
                     .html(function(track, i) {
-                        //console.log(track);
                         return (i+1) + ". " + track['name'].bold() + " -- " + track['artists'].join(", ")
                     });
 }
@@ -1479,7 +1376,7 @@ function setDefaults() {
         selectionContext["plot" + umbrella_genre] = true;
     })
     // Start by plotting all genres (rather than the user's genres)
-    selectionContext['genreToggle'] = false; // false = All Genres, true = User Genres
+    selectionContext['genreToggle'] = true; // false = All Genres, true = User Genres
     // We have three time scales to work with for the top artists and track
     // here we start with the short time scale, but we can make an interaction that changes this option
     // TODO: makeTopArtistsList() needs to be updateTopArtistsList() and added to updateAllPlots() for this to work
@@ -1499,49 +1396,67 @@ function setDefaults() {
     defaultTimeRange = defaultTimeRange.map(function(date) { return new Date(date); });
     selectionContext["timeRangeBrush"] = defaultTimeRange;
 
+    // Default axes are energy and acousticness
+    $("#x-attribute-select").val("energy");
+    $("#y-attribute-select").val("acousticness");
+
     selectionContext['selectedAttributeX'] = $("#x-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
     selectionContext['selectedAttributeY'] = $("#y-attribute-select").val().toLowerCase(); // This is the genre that has been selected by the user
+
+    // By default no single artist or genres selected
+    selectionContext['selectedTopArtist'] = null;
+    selectionContext['selectedTopTrack'] = null;
+    selectionContext['selectedTrack'] = null;
+    selectionContext['selectedGenre'] = null;
+
+    // Deselect artists / tracks in list
+    // d3.select("#top-artists").selectAll("button").classed()
+    $("#top-artists>button.active").removeClass("active");
+    $("#top-tracks>button.active").removeClass("active");
 }
 
 // A function to perform on page load
 // This should initialize all global variables and create the plots to plot on 
 function loadPage() {
+    $("#user-id")[0].innerHTML = userProfileGlobal['display_name'];
+
     setDefaults();
-    var margin = { left:100, right:0, top:50, bottom:100 };
-    var marginLinePlot = { left:100, right:0, top:0, bottom:100 };
+    var marginSongPlot = { left:200, right:0, top:50, bottom:100 };
+    var marginGenrePlot = { left:100, right:100, top:50, bottom:100 };
+    var marginLinePlot = { left:220, right:0, top:20, bottom:100 };
 
     // Generate an svg and a set of x and y axes of length 500 and 500 using the above margin
     // generateAxes takes parameters (selector, xAxisLength, yAxisLength, margin, xOrigin, yOrigin)
     // This fully specifies a "plot" that we can drawn on
     // The selector #song-plot-area should reference a div with id song-plot-area
-    var plotSongs = generateAxes("#song-plot-area", xAxisLengthScatter, yAxisLengthScatter, margin, 0, 500);
+    var plotSongs = generateAxes("#song-plot-area", xAxisLengthScatter, yAxisLengthScatter, marginSongPlot, 0, 500);
     var svgSongs = plotSongs[0];
     var xAxisSongs = plotSongs[1];
     var yAxisSongs = plotSongs[2];
-    plots['song-chart'] = {"svg" : svgSongs, "xAxis" : xAxisSongs, "yAxis" : yAxisSongs, "margin" : margin};
+    // Song Plot Title (static)
+    songTitle = svgSongs.append("text")
+        .attr("x", (xAxisLengthScatter / 2))
+        .attr("y", 0 - (marginSongPlot.top / 5))
+        .attr("text-anchor", "middle")
+        .style("font-size", "30px")
+        .style("font-weight", "bold")
+        .text("My Songs");
+    plots['song-chart'] = {"svg" : svgSongs, "xAxis" : xAxisSongs, "yAxis" : yAxisSongs, "margin" : marginSongPlot, "title" : songTitle};
     
     // We do this for each of the plots we want to make
-    var plotGenres = generateAxes("#genre-plot-area", xAxisLengthScatter, yAxisLengthScatter, margin, 0, 500);
+    var plotGenres = generateAxes("#genre-plot-area", xAxisLengthScatter, yAxisLengthScatter, marginGenrePlot, 0, 500);
     var svgGenres = plotGenres[0];
     var xAxisGenres = plotGenres[1];
     var yAxisGenres = plotGenres[2];
     // Genre Plot Title (gets updated)
     genreTitle = svgGenres.append("text")
         .attr("x", (xAxisLengthScatter / 2))
-        .attr("y", 0 - (margin.top / 5))
+        .attr("y", 0 - (marginGenrePlot.top / 5))
         .attr("text-anchor", "middle")
         .style("font-size", "30px")
         .style("font-weight", "bold");
-    // Song Plot Title (static)
-    songTitle = svgSongs.append("text")
-        .attr("x", (xAxisLengthScatter / 2))
-        .attr("y", 0 - (margin.top / 5))
-        .attr("text-anchor", "middle")
-        .style("font-size", "30px")
-        .style("font-weight", "bold")
-        .text("My Songs");
      
-    plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : margin};
+    plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : marginGenrePlot, "title" : genreTitle};
 
     var plotLine = generateAxes("#line-plot-area", xAxisLengthLine, yAxisLengthLine, marginLinePlot, 0, 1000);
     var svgLine = plotLine[0];
@@ -1550,11 +1465,16 @@ function loadPage() {
     plots['line-chart'] = {"svg" : svgLine, "xAxis" : xAxisLine, "yAxis" : yAxisLine, "margin" : marginLinePlot};
 
     // TODO: Replace this with a "generateSvg" function since we don't care about the axes
-    var marginLegend = { left : 110, right : 0, top : 0, bottom : 0}; // Doesn't seem to do anything
+    var marginLegend = { left : 120, right : 0, top : 0, bottom : 0}; // Doesn't seem to do anything
     var plotLegend = generateAxes("#legend", legendWidth, legendHeight, marginLegend, 0, 200);
     var svgLegend = plotLegend[0];
     plots['legend'] = {"svg" : svgLegend}
     
+    countsGlobal = countGenres(songDataGlobal, genreDataGlobal);
+    genreCountsGlobal = countsGlobal[0];
+    umbrellaCountsGlobal = countsGlobal[1];
+    topUmbrellaCountsGlobal = countsGlobal[2];
+
     // the makeX() functions will create the genre selection legend and the top artists / tracks
     // lists from the data that we've loaded
     // makeGenreLegend();
@@ -1572,7 +1492,6 @@ function loadPage() {
 
 // A function to process the user library data
 function songDataProcess(songData, genreData) {
-    console.log("In song process!");
     songData.forEach(function(s) {
         s.counts = [];
         // Classify each song into umbrella genres
@@ -1594,7 +1513,6 @@ function songDataProcess(songData, genreData) {
             songUmbrellas.forEach(function(umbrella) {
                 s["is" + umbrella] = true;
                 s["count" + umbrella] += 1; // This will keep a tally of how many times each umbrella genre is assigned to the song
-                //console.log(umbrella, s["count" + umbrella]);
             });
             // this will evaluate to:
             // s.isRock --> true
@@ -1627,7 +1545,6 @@ function songDataProcess(songData, genreData) {
     // Add "closestGenre" key
     // This is where the distance stuff would go
 
-    // console.log(songData);
     return songData;
 }
 
@@ -1650,7 +1567,6 @@ function genreDataProcess(songData, genreData) {
                 
     })
 
-    // console.log(genreData);
     return genreData;
 }
 
@@ -1662,6 +1578,7 @@ Promise.all([loadSongData(),
              loadTopArtistsData(), 
              loadTopTracksData(), 
              loadRecentlyPlayedData(),
+             loadUserProfile()
             ]).then(function(results) {
                  
     console.log("Finished loading Song and Genre Data!");
@@ -1671,6 +1588,7 @@ Promise.all([loadSongData(),
     topArtistsGlobal = results[2];
     topTracksGlobal = results[3];
     recentlyPlayedGlobal = results[4];
+    userProfileGlobal = results[5];
 
     // Apply pre-processing of the data before we plot
     // This will liike like adding keys like "isRock" to the song and genre objects
