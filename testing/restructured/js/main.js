@@ -753,11 +753,11 @@ function updateLinePlot(songData, genreData, plot) {
         bin['xMid'] = new Date((Date.parse(bin['x0']) + Date.parse(bin['x1'])) / 2);
         bin['x0'] = new Date(bin['x0']);
         bin['x1'] = new Date(bin['x1']);
-    })
+    });
 
     var genre_bin_data = [];
     binned_data.forEach(function(bin) {
-        genre_bin_data.push({"date" : bin['xMid']});
+        genre_bin_data.push({"date" : bin['x1']});
 
         counts = countGenres(bin, genreData);
         genre_counts = counts[0];
@@ -876,30 +876,37 @@ function updateLinePlot(songData, genreData, plot) {
     var idleTimeout
     function idled() { idleTimeout = null; }
 
-    
+    // Brushing    
+    // Create the brush
+    var brush = d3.brushX()
+    .extent([[0, 0], 
+            [xAxis["length"], yAxis["length"]] 
+            ] 
+    ).on("end", function() {
+        var newXScale;
+        var newYScale;
+        var extent = d3.event.selection;
+        if (extent) {
+            var extentDates = extent.map(xScale.invert);
+            selectionContext["timeRangeBrush"] = extentDates; 
+            updateAllPlots();
+        } else {
+            selectionContext["timeRangeBrush"] = defaultTimeRange;
+            updateAllPlots();
+        }
+    });
+
+    // If global brush not initialized, make it
     if (! lineChartBrush) {
-        // Brushing    
-        var brush = d3.brushX()
-        .extent([[0, 0], 
-                [xAxis["length"], yAxis["length"]] 
-                ] 
-        ).on("end", function() {
-            var newXScale;
-            var newYScale;
-            var extent = d3.event.selection;
-            if (extent) {
-                var extentDates = extent.map(xScale.invert);
-                selectionContext["timeRangeBrush"] = extentDates; 
-                updateAllPlots();
-            } else {
-                selectionContext["timeRangeBrush"] = defaultTimeRange;
-                updateAllPlots();
-            }
-        });
         lineChartBrush = {};
-        lineChartBrush['element'] = svg.append("g").attr("class", "brush");
+        // Create the brush group for the first time
+        lineChartBrush['element'] = svg.append("g").attr("class", "line-brush");
         lineChartBrush['brush'] = brush;
         lineChartBrush['element'].call(lineChartBrush['brush']);
+    } else {
+        // Update with new brush
+        lineChartBrush['brush'] = brush;
+        lineChartBrush['element'].call(lineChartBrush['brush'])
     }
 
     // Make axes
@@ -1047,7 +1054,6 @@ function updateAllPlots() {
     if (selectionContext["timeRangeBrush"]) {
         $("#time")[0].innerHTML = formatTimeMDY(selectionContext["timeRangeBrush"][0]) + " - " + formatTimeMDY(selectionContext["timeRangeBrush"][1]);
     }
-    console.log(songDataFilter.length);
     // Count up number of songs in filter
     $("#songs")[0].innerHTML = songDataTimeFilter.length;
     // Count up number of unique genres in filter
