@@ -48,6 +48,7 @@ function rgb(r, g, b){
     return ["rgb(",r,",",g,",",b,")"].join("");
   }
 var genre_colors = [rgb(221,158,213), rgb(233, 99, 99), rgb(67,148,179), 	rgb(130, 201, 166), rgb(252,189,116),     rgb(193, 152, 139), rgb(80,80,80),  'silver']
+var attributeDescriptors = {'energy': ['low energy','high energy'], 'liveness': ['XXX','XXX'], 'speechiness': ['no speech','spoken words'], 'acousticness': ['less acoustic','more acoustic'], 'instrumentalness': ['more vocals','only instruments'], 'danceability': ['less danceable','more danceable'], 'loudness': ['quiet','loud'], 'valence': ['less happy','more happy'], 'popularity': ['less popular','more popular']};
 
 // Takes in a genre name string and returns a dictionary indicating which umbrella genres it belongs to
 var genre_classifiers = {
@@ -511,7 +512,10 @@ function updateSongPlot(songData, plot) {
     xAxis['label'].attr("class", "x-axis-label")
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
-            .text(xAxisLabelText); 
+            .text(xAxisLabelText)
+            .style("font-weight","bold")
+            .style("font-weight","bold")
+            .attr("y", yAxis['length']+75); 
 
     // Y Axis Label
     // Capitalize first character in value string and use it as the axis label
@@ -520,7 +524,61 @@ function updateSongPlot(songData, plot) {
     yAxis['label'].attr("class", "y-axis-label")
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
-            .text(yAxisLabelText); // Capitalize first character in value string and use it as the axis label
+            .text(yAxisLabelText)
+            .style("font-weight","bold")
+            .attr("y", -75); // Capitalize first character in value string and use it as the axis label
+
+    // Attribute descriptions for the label
+    svg.selectAll(".y-axis-descriptor").remove();
+    // Lower descriptor
+    svg.append("text")
+        .attr("class", "y-axis-descriptor")
+        .attr("text-anchor", "start")
+        .attr("x",- yAxis['length'])
+        .attr("y", -50)
+        .attr("transform", "rotate(-90)")
+        .style("font-weight",300)
+        .style("font-size","16px")
+        .data(selectedAttributeY)
+        .transition(update_trans)
+        .text(attributeDescriptors[selectedAttributeY][0]);
+    // Upper descriptor
+    svg.append("text")
+        .attr("class", "y-axis-descriptor")
+        .attr("text-anchor", "end")
+        .attr("x",- 0)
+        .attr("y", -50)
+        .attr("transform", "rotate(-90)")
+        .style("font-weight",300)
+        .style("font-size","16px")
+        .data(selectedAttributeY)
+        .transition(update_trans)
+        .text(attributeDescriptors[selectedAttributeY][1]);
+    // Attribute descriptions for the label
+    svg.selectAll(".x-axis-descriptor").remove();
+    // Lower descriptor
+    svg.append("text")
+        .attr("class", "x-axis-descriptor")
+        .attr("text-anchor", "start")
+        .attr("x", 0)
+        .attr("y", yAxis['length'] + 50)
+        .style("font-weight",300)
+        .style("font-size","16px")
+        .data(selectedAttributeY)
+        .transition(update_trans)
+        .text(attributeDescriptors[selectedAttributeX][0]);
+    // Upper descriptor
+    svg.append("text")
+        .attr("class", "x-axis-descriptor")
+        .attr("text-anchor", "end")
+        .attr("x", xAxis['length'])
+        .attr("y", yAxis['length'] + 50)
+        .style("font-weight",300)
+        .style("font-size","16px")
+        .data(selectedAttributeY)
+        .transition(update_trans)
+        .text(attributeDescriptors[selectedAttributeX][1]);
+    
 }
 
 function updateGenrePlot(genreData, plot) {
@@ -755,15 +813,73 @@ function updateGenrePlot(genreData, plot) {
     xAxis['label'].attr("class", "x-axis-label")
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
-            .text(xAxisLabelText); 
+            .text(xAxisLabelText)
+            .style("font-weight","bold")
+            .style("font-weight","bold")
+            .attr("y", yAxis['length']+75); 
 
     // Y Axis Label
+    // Capitalize first character in value string and use it as the axis label
     var yAxisLabelText = selectedAttributeY.charAt(0).toUpperCase() + selectedAttributeY.slice(1);
     // Change the label to the currently selected attribute
     yAxis['label'].attr("class", "y-axis-label")
         .transition(d3.transition().duration(300)) // Here I am chaining multiple transitions together so that the axis label doesn't update until after the points have finished their transition
         .transition(update_trans)
-            .text(yAxisLabelText); // Capitalize first character in value string and use it as the axis label
+            .text(yAxisLabelText)
+            .style("font-weight","bold")
+            .attr("y", -75); // Capitalize first character in value string and use it as the axis label
+
+    // Attribute descriptions for the label
+    svg.selectAll(".y-axis-descriptor").remove();
+    // Lower descriptor
+    svg.append("text")
+        .attr("class", "y-axis-descriptor")
+        .attr("text-anchor", "start")
+        .attr("x",- yAxis['length'])
+        .attr("y", -50)
+        .attr("transform", "rotate(-90)")
+        .style("font-weight",300)
+        .style("font-size","16px")
+        .data(selectedAttributeY)
+        .transition(update_trans)
+        .text(attributeDescriptors[selectedAttributeY][0]);
+    // Upper descriptor
+    svg.append("text")
+        .attr("class", "y-axis-descriptor")
+        .attr("text-anchor", "end")
+        .attr("x",- 0)
+        .attr("y", -50)
+        .attr("transform", "rotate(-90)")
+        .style("font-weight",300)
+        .style("font-size","16px")
+        .data(selectedAttributeY)
+        .transition(update_trans)
+        .text(attributeDescriptors[selectedAttributeY][1]);
+    // Attribute descriptions for the label
+    svg.selectAll(".x-axis-descriptor").remove();
+    // Lower descriptor
+    svg.append("text")
+        .attr("class", "x-axis-descriptor")
+        .attr("text-anchor", "start")
+        .attr("x", 0)
+        .attr("y", yAxis['length'] + 50)
+        .style("font-weight",300)
+        .style("font-size","16px")
+        .data(selectedAttributeY)
+        .transition(update_trans)
+        .text(attributeDescriptors[selectedAttributeX][0]);
+    // Upper descriptor
+    svg.append("text")
+        .attr("class", "x-axis-descriptor")
+        .attr("text-anchor", "end")
+        .attr("x", xAxis['length'])
+        .attr("y", yAxis['length'] + 50)
+        .style("font-weight",300)
+        .style("font-size","16px")
+        .data(selectedAttributeY)
+        .transition(update_trans)
+        .text(attributeDescriptors[selectedAttributeX][1]);
+    
 
 }
 
@@ -960,16 +1076,13 @@ function updateLinePlot(songData, genreData, plot) {
     }
 
     // Make axes
-
-    
-
+    // Emphasize tick labels that are years
     xAxis["group"].call(xAxis["call"].scale(xScale));
     xAxis["group"].selectAll("text")
         .attr('font-size', function(d) {
             if (d.getMonth() == "0") {
                 return "25";
             } else{
-                console.log(d);
                 return "15";
             }
         })
@@ -977,7 +1090,6 @@ function updateLinePlot(songData, genreData, plot) {
             if (d.getMonth() == "0") {
                 return "normal";
             } else{
-                console.log(d);
                 return "light";
             }
         })
@@ -985,11 +1097,9 @@ function updateLinePlot(songData, genreData, plot) {
             if (d.getMonth() == "0") {
                 return "translate(0,10)";
             } else{
-                console.log(d);
                 return "translate(0,0)";
             }
         });
-
     // If one song is the only thing being plotted, don't show axis ticks (because curve interpolation is making them appear to be < 1)
     if ((selectionContext.selectedTrack) || (selectionContext.selectedTopTrack)) {
         yAxis["group"].call(yAxis["call"].scale(yScale).ticks(0));
@@ -997,31 +1107,18 @@ function updateLinePlot(songData, genreData, plot) {
         yAxis["group"].call(yAxis["call"].scale(yScale));
     }
 
-        
-    // const longFormat = d3.timeFormat('%b');
-    // const shortFormat = d3.timeFormat('%d');
-    // const axis = d3.axisBottom(x);
-    // axis.tickFormat((d, i) => {
-    //     const ticks = axis.scale().ticks();
-
-    //     if (i > 0 && ticks[i - 1].getMonth() === d.getMonth()) {
-    //         return shortFormat(d);
-    //     }
-    //     else {
-    //         return longFormat(d);
-    //     }
-    // });
-
 
     // Set labels for axes
     yAxis['label'].attr("class", "y-axis-label")
                   .attr("y", - plot['margin']['left'] * 0.3)
                   .attr("x", - yAxis['length'] / 2)
-                  .text("Number of Songs");
+                  .text("Number of Songs")
+                  .style('font-weight',"bold");
     xAxis['label'].attr("class", "x-axis-label")
                   .attr("x", xAxis['length'] / 2)
                   .attr("y", yAxis['length'] + plot['margin']['bottom'] * 0.7)
-                  .text("Date Added");
+                  .text("Date Added")
+                  .style('font-weight',"bold");
 }
 
 //////////////////////////////
@@ -1310,15 +1407,7 @@ function updateGenreLegend(top_umbrella_genre_counts) {
                     
                 })
 
-    // legendButtons = svg.append("rect")
-    //             .attr("x",-120)
-    //             .attr("y",-3)
-    //             .attr("width",105)
-    //             .attr("height",25)
-    //             .style("rx",5)
-    //             .style("ry",5)
-    //             .style("fill","none")
-    //             .style("stroke",rgb(221,158,213));
+
                 
 
     // 4 -- ENTER new elements present in new data.
@@ -1360,7 +1449,7 @@ function updateGenreLegend(top_umbrella_genre_counts) {
             .on("mouseleave", noHighlight);
 
     // Text SVG corresponding to the genre in each row of the legend
-    newRows.append("text")
+    text = newRows.append("text")
             .attr("x", -0.1*legendWidth)
             .attr("y", 15)
             .attr("text-anchor", "end") // Appends text to the left of the legend 
@@ -1379,8 +1468,29 @@ function updateGenreLegend(top_umbrella_genre_counts) {
                     return 100;
                 }
             })
-            .on("mouseover", highlight)
+            .on("mouseenter", highlight)
             .on("mouseleave", noHighlight);
+     
+    // // Clickable buttons around the text        
+    // legendButtons = legendRows.enter().append("rect")
+    //     .attr("id","legendbuttons")
+    //     // Position the row in the legend
+    //     .attr("transform", function(genre, i) {
+    //         return "translate(0, " + (i*(legendHeight*0.9)/genre_labels.length) + ")";
+    //     })
+    //     .attr("x",-120)
+    //     .attr("y",-2)
+    //     .attr("width",105)
+    //     .attr("height",22)
+    //     .style("rx",5)
+    //     .style("ry",5)
+    //     .style("stroke",function(genre) {return umbrellaGenreToColor(genre);})
+    //     .style("stroke-width",2)
+    //     .attr("fill","white")
+    //     .on("mouseenter", highlight)
+    //     .on("mouseleave", noHighlight);
+
+
 }    
 
 // Create the top artists list on the page
@@ -1469,6 +1579,7 @@ function setDefaults() {
     genre_labels.forEach(function(umbrella_genre) {
         // This evaluates out to e.g. selectionContext["plotMetal"] = true
         selectionContext["plot" + umbrella_genre] = true;
+        selectionContext["plotOther"] = false;
     })
     // Start by plotting all genres (rather than the user's genres)
     selectionContext['genreToggle'] = true; // false = All Genres, true = User Genres
@@ -1668,7 +1779,6 @@ function genreDataProcess(songData, genreData) {
         })
     })
 
-    console.log(genre_dates);
 
     // Do the following for every element in the json file
     genreData.forEach(function(g) {
