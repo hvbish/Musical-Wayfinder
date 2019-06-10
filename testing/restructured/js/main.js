@@ -39,6 +39,7 @@ var transitionTime = 500;
 // Functions to parse and format Date objects
 var parseUTCTime = d3.utcParse("%Y-%m-%dT%H:%M:%SZ");
 var formatTimeMDY = d3.timeFormat("%B %d, %Y");
+var formatTimeTooltip = d3.timeFormat("%d %b %Y");
 
 // The umbrella genre labels we are working with
 var genre_labels = ['Pop',            'Rock',           'Rap',         'Electronic',   'Classical',         'Jazz', 'Metal',   'Other'];
@@ -348,34 +349,34 @@ function updateSongPlot(songData, plot) {
             // if (song.isOther) {text += "Other? <span style='color:"+umbrellaGenreToColor("Other")+";text-transform:capitalize'>" + song.isOther + "</span><br>";}
             //     else {text += "Other? <span text-transform:capitalize'>" + song.isOther + "</span><br>";}
             //text += "<br>";
-            text += "<strong>  Date Added:           </strong> <span style='color:"+rgb(163, 194, 194)+";text-transform:capitalize'>" + nbsp.repeat(0) + formatTimeMDY(song.dateAdded) + "</span><br>";
+            text += "  Date Added:            <span style='color:"+rgb(163, 194, 194)+";text-transform:capitalize'>" + nbsp.repeat(0) + formatTimeTooltip(song.dateAdded) + "</span><br>";
             text += "<br>";
             if ((selectionContext.selectedAttributeX == "energy") || (selectionContext.selectedAttributeY == "energy")) {
-                text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.energy) + "</span><br>";
+                text += "<strong>  Energy:           </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.energy) + "</span><br>";
                 };
             if ((selectionContext.selectedAttributeX == "liveness") || (selectionContext.selectedAttributeY == "liveness")) {
-                text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.liveness) + "</span><br>";
+                text += "<strong>  Liveness:         </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.liveness) + "</span><br>";
                 };
             if ((selectionContext.selectedAttributeX == "speechiness") || (selectionContext.selectedAttributeY == "speechiness")) {
-                text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.speechiness) + "</span><br>";
+                text += "<strong>  Speechiness:      </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.speechiness) + "</span><br>";
                 };
             if ((selectionContext.selectedAttributeX == "acousticness") || (selectionContext.selectedAttributeY == "acousticness")) {
-                text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.acousticness) + "</span><br>";
+                text += "<strong>  Acousticness:     </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.acousticness) + "</span><br>";
                 };
             if ((selectionContext.selectedAttributeX == "instrumentalness") || (selectionContext.selectedAttributeY == "instrumentalness")) {
-                text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.instrumentalness) + "</span><br>";
+                text += "<strong>  Instrumentalness: </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.instrumentalness) + "</span><br>";
                 };
             if ((selectionContext.selectedAttributeX == "danceability") || (selectionContext.selectedAttributeY == "danceability")) {
-                text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.danceability) + "</span><br>";
+                text += "<strong>  Danceability:     </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.danceability) + "</span><br>";
                 };
             if ((selectionContext.selectedAttributeX == "loudness") || (selectionContext.selectedAttributeY == "loudness")) {
-                text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.loudness) + "</span><br>";
+                text += "<strong>  Loudness:         </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.loudness) + "</span><br>";
                 };
             if ((selectionContext.selectedAttributeX == "valence") || (selectionContext.selectedAttributeY == "valence")) {
-                text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.valence) + "</span><br>";
+                text += "<strong>  Valence:          </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(song.valence) + "</span><br>";
                 };
             if ((selectionContext.selectedAttributeX == "popularity") || (selectionContext.selectedAttributeY == "popularity")) {
-                text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(song.popularity) + "</span><br>";
+                text += "<strong>  Popularity:       </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(song.popularity) + "</span><br>";
                 };
             return text;
             });
@@ -552,34 +553,37 @@ function updateGenrePlot(genreData, plot) {
                 } else {
                     var text = "<h4><span style='color:"+umbrellaGenreToColor(genre.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
                 }
+                if (selectionContext.genreToggle) {
+                    text += "<strong>  Date Added:           </strong> <span style='line-height:150%; color:"+ rgb(163, 194, 194) + ";text-transform:capitalize'>" + nbsp.repeat(0) + formatTimeTooltip(genre["userFirstAddDate"]) + "</span><br>";
+                }
                 text += "<strong>  Songs in Selection:           </strong> <span style='color:"+ rgb(163, 194, 194) + ";text-transform:capitalize'>" + nbsp.repeat(0) + genre["userCount"] + "</span><br>";
                 text += "<br>";
                 if ((selectionContext.selectedAttributeX == "energy") || (selectionContext.selectedAttributeY == "energy")) {
-                    text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.energy) + "</span><br>";
+                    text += "<strong>  Energy:           </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.energy) + "</span><br>";
                     };
                 if ((selectionContext.selectedAttributeX == "liveness") || (selectionContext.selectedAttributeY == "liveness")) {
-                    text += "<strong>  Liveness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.liveness) + "</span><br>";
+                    text += "<strong>  Liveness:         </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.liveness) + "</span><br>";
                     };
                 if ((selectionContext.selectedAttributeX == "speechiness") || (selectionContext.selectedAttributeY == "speechiness")) {
-                    text += "<strong>  Speechiness:      </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.speechiness) + "</span><br>";
+                    text += "<strong>  Speechiness:      </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.speechiness) + "</span><br>";
                     };
                 if ((selectionContext.selectedAttributeX == "acousticness") || (selectionContext.selectedAttributeY == "acousticness")) {
-                    text += "<strong>  Acousticness:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.acousticness) + "</span><br>";
+                    text += "<strong>  Acousticness:     </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.acousticness) + "</span><br>";
                     };
                 if ((selectionContext.selectedAttributeX == "instrumentalness") || (selectionContext.selectedAttributeY == "instrumentalness")) {
-                    text += "<strong>  Instrumentalness: </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.instrumentalness) + "</span><br>";
+                    text += "<strong>  Instrumentalness: </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.instrumentalness) + "</span><br>";
                     };
                 if ((selectionContext.selectedAttributeX == "danceability") || (selectionContext.selectedAttributeY == "danceability")) {
-                    text += "<strong>  Danceability:     </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.danceability) + "</span><br>";
+                    text += "<strong>  Danceability:     </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.danceability) + "</span><br>";
                     };
                 if ((selectionContext.selectedAttributeX == "loudness") || (selectionContext.selectedAttributeY == "loudness")) {
-                    text += "<strong>  Loudness:         </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.loudness) + "</span><br>";
+                    text += "<strong>  Loudness:         </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.loudness) + "</span><br>";
                     };
                 if ((selectionContext.selectedAttributeX == "valence") || (selectionContext.selectedAttributeY == "valence")) {
-                    text += "<strong>  Valence:          </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.valence) + "</span><br>";
+                    text += "<strong>  Valence:          </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.valence) + "</span><br>";
                     };
                 if ((selectionContext.selectedAttributeX == "popularity") || (selectionContext.selectedAttributeY == "popularity")) {
-                    text += "<strong>  Popularity:       </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(genre.popularity) + "</span><br>";
+                    text += "<strong>  Popularity:       </strong> <span style='line-height:120%; color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format(" 2.0f")(genre.popularity) + "</span><br>";
                     };
                 return text;
             });
@@ -1610,13 +1614,13 @@ function genreDataProcess(songData, genreData) {
     console.log(genre_dates);
 
     // Do the following for every element in the json file
-    genreData.forEach(function(genre) {
+    genreData.forEach(function(g) {
         
-        key = genre['name'].toLowerCase()
+        key = g['name'].toLowerCase()
         genre_in_library = genre_dates[key];
         if (genre_in_library) {
-            genre.userFirstAddDate = genre_dates[key]["userFirstAddDate"];
-            genre.userLastAddDate = genre_dates[key]["userLastAddDate"];
+            g.userFirstAddDate = genre_dates[key]["userFirstAddDate"];
+            g.userLastAddDate = genre_dates[key]["userLastAddDate"];
         }
 
 
