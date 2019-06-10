@@ -755,8 +755,32 @@ function updateGenrePlot(genreData, plot) {
         .attr("fill", function(genre) {
             return umbrellaGenreToColor(genre.topUmbrellaMatches[0]);
         })
+        .on("mouseover", tipForGenre.show)
+        .on("mouseout", tipForGenre.hide)
+        .on("click", function(genre, i) {
+            // ctrl-click or cmd-click to filter
+            if (d3.event.ctrlKey || d3.event.metaKey) {
+                if (selectionContext["selectedGenre"]) {
+                    if (selectionContext["selectedGenre"]['name'] == genre['name']) {
+                        selectionContext["selectedGenre"] = null;  
+                    }
+                } else {
+                    selectionContext["selectedGenre"] = genre;
+                }
+                selectionContext["selectedTrack"] = null;
+                console.log(genre);
+                updateAllPlots();
+            } else {
+                if (spotify_preview.style("display") == "none") {
+                    spotify_preview.style("display", "block");
+                }
+                spotify_preview.html(
+                    '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
+                )
+            }
+        })
     // 4 1/2 -- Set attributes that apply to both old and new elements with .merge()
-        .merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements.
+        //.merge(points) // Anything after this merge command will apply to all elements in points - not just new ENTER elements but also old UPDATE elements.
             .attr("r", function(genre) {
                 if (selectionContext['genreToggle']) {
                     if (genre.userCount == 0.) {
@@ -768,30 +792,7 @@ function updateGenrePlot(genreData, plot) {
                     return defaultMarkerSize;
                 }
                 })
-            .on("mouseover", tipForGenre.show)
-            .on("mouseout", tipForGenre.hide)
-            .on("click", function(genre, i) {
-                // ctrl-click or cmd-click to filter
-                if (d3.event.ctrlKey || d3.event.metaKey) {
-                    if (selectionContext["selectedGenre"]) {
-                        if (selectionContext["selectedGenre"]['name'] == genre['name']) {
-                            selectionContext["selectedGenre"] = null;  
-                        }
-                    } else {
-                        selectionContext["selectedGenre"] = genre;
-                    }
-                    selectionContext["selectedTrack"] = null;
-                    console.log(genre);
-                    updateAllPlots();
-                } else {
-                    if (spotify_preview.style("display") == "none") {
-                        spotify_preview.style("display", "block");
-                    }
-                    spotify_preview.html(
-                        '<iframe src="https://open.spotify.com/embed/playlist/playlist_id" width="100%" height="550" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'.replace('playlist_id', genre.uri.split(":")[2])
-                    )
-                }
-            })
+            
 
     // Draw Axes //
     
@@ -1003,9 +1004,11 @@ function updateLinePlot(songData, genreData, plot) {
     // Remove old elements
     layers.exit().remove()
     // Update old data
+    var update_trans = d3.transition().duration(transitionTime); // Define a transition variable with 500ms duration so we can reuse it 
     layers.attr("class", function(d, i) {
                     return "line " + genre_labels[i];
             })
+            .transition(update_trans)
             .attr("d", area(xScale, yScale))
             // Remove fill and show the line in black
             .style("fill", function(d, i) {
@@ -1373,8 +1376,11 @@ function updateGenreLegend(top_umbrella_genre_counts) {
     // 2 -- EXIT old elements not present in new data.
     legendRows.exit().remove();
 
-    // 3 -- UPDATE old elements present in new data    
-    legendRows.selectAll("rect").attr("width", function(genre) {
+    // 3 -- UPDATE old elements present in new data   
+    var update_trans = d3.transition().duration(transitionTime); // Define a transition variable with 500ms duration so we can reuse it 
+    legendRows.selectAll("rect")
+                .transition(update_trans)
+                .attr("width", function(genre) {
                     return 0.8*legendWidth*(top_umbrella_genre_counts[genre]["userCount"]/maxTopUmbrellaCounts);
                 })
                 .attr("fill", function(genre) {
@@ -1470,6 +1476,8 @@ function updateGenreLegend(top_umbrella_genre_counts) {
             })
             .on("mouseenter", highlight)
             .on("mouseleave", noHighlight);
+
+
      
     // // Clickable buttons around the text        
     // legendButtons = legendRows.enter().append("rect")
@@ -1489,6 +1497,22 @@ function updateGenreLegend(top_umbrella_genre_counts) {
     //     .attr("fill","white")
     //     .on("mouseenter", highlight)
     //     .on("mouseleave", noHighlight);
+
+    // svg.insert('rect','text')
+    //     .attr("transform", function(genre, i) {
+    //             return "translate(0, " + (i*(legendHeight*0.9)/genre_labels.length) + ")";
+    //         })
+    //         .attr("x",-120)
+    //         .attr("y",-2)
+    //         .attr("width",105)
+    //         .attr("height",22)
+    //         .style("rx",5)
+    //         .style("ry",5)
+    //         .style("stroke",function(genre) {return umbrellaGenreToColor(genre);})
+    //         .style("stroke-width",2)
+    //         .attr("fill","white")
+    //         .on("mouseenter", highlight)
+    //         .on("mouseleave", noHighlight);
 
 
 }    
@@ -1579,7 +1603,7 @@ function setDefaults() {
     genre_labels.forEach(function(umbrella_genre) {
         // This evaluates out to e.g. selectionContext["plotMetal"] = true
         selectionContext["plot" + umbrella_genre] = true;
-        selectionContext["plotOther"] = false;
+        // selectionContext["plotOther"] = false;
     })
     // Start by plotting all genres (rather than the user's genres)
     selectionContext['genreToggle'] = true; // false = All Genres, true = User Genres
@@ -1625,6 +1649,21 @@ function setDefaults() {
 // This should initialize all global variables and create the plots to plot on 
 function loadPage() {
     $("#user-id")[0].innerHTML = userProfileGlobal['display_name'];
+
+    // Outline the area where Spotify playlist will appear
+    // var svg = d3.select(selector)
+    //             .append("svg")
+    //             .attr("width", xAxisLength + margin.left + margin.right)
+    //             .attr("height", yAxisLength + margin.top + margin.bottom)
+    //             .append("g")
+    //                 .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
+    $('#spotify-preview').append("svg").append("g").attr("width",100)
+    .attr("height",100).append("rect")
+    .attr("x",20)
+    .attr("y",-20)
+        .attr("width",200)
+        .attr("height",200)
+        .attr("fill","red")
 
     setDefaults();
     var marginSongPlot = { left:200, right:50, top:50, bottom:100 };
