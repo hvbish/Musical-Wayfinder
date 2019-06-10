@@ -460,7 +460,14 @@ function updateSongPlot(songData, plot) {
             .on("click", function(song, i) {
                 // ctrl-click or cmd-click to filter
                 if (d3.event.ctrlKey || d3.event.metaKey) {
-                    selectionContext["selectedTrack"] = song;
+                    if (selectionContext["selectedTrack"]) {
+                        if (selectionContext["selectedTrack"]['name'] == song['name']) {
+                            selectionContext["selectedTrack"] = null;
+                        }
+                    } else {
+                        selectionContext["selectedTrack"] = song;
+                        selectionContext["selectedGenre"] = null;
+                    }
                     updateAllPlots();
                 } else {
                     if (spotify_preview.style("display") == "none") {
@@ -697,7 +704,14 @@ function updateGenrePlot(genreData, plot) {
             .on("click", function(genre, i) {
                 // ctrl-click or cmd-click to filter
                 if (d3.event.ctrlKey || d3.event.metaKey) {
-                    selectionContext["selectedGenre"] = genre;
+                    if (selectionContext["selectedGenre"]) {
+                        if (selectionContext["selectedGenre"]['name'] == genre['name']) {
+                            selectionContext["selectedGenre"] = null;  
+                        }
+                    } else {
+                        selectionContext["selectedGenre"] = genre;
+                    }
+                    selectionContext["selectedTrack"] = null;
                     console.log(genre);
                     updateAllPlots();
                 } else {
