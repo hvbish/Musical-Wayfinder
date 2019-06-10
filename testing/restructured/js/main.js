@@ -458,9 +458,16 @@ function updateSongPlot(songData, plot) {
             .on("mouseout", tipForSong.hide)
             // Add click action that changes the embeded song player to the current track
             .on("click", function(song, i) {
-                // shift click == fliter
-                if (d3.event.ctrlKey) {
-                    selectionContext["selectedTrack"] = song;
+                // ctrl-click or cmd-click to filter
+                if (d3.event.ctrlKey || d3.event.metaKey) {
+                    if (selectionContext["selectedTrack"]) {
+                        if (selectionContext["selectedTrack"]['name'] == song['name']) {
+                            selectionContext["selectedTrack"] = null;
+                        }
+                    } else {
+                        selectionContext["selectedTrack"] = song;
+                        selectionContext["selectedGenre"] = null;
+                    }
                     updateAllPlots();
                 } else {
                     if (spotify_preview.style("display") == "none") {
@@ -695,9 +702,16 @@ function updateGenrePlot(genreData, plot) {
             .on("mouseover", tipForGenre.show)
             .on("mouseout", tipForGenre.hide)
             .on("click", function(genre, i) {
-                // shift click == fliter
-                if (d3.event.ctrlKey) {
-                    selectionContext["selectedGenre"] = genre;
+                // ctrl-click or cmd-click to filter
+                if (d3.event.ctrlKey || d3.event.metaKey) {
+                    if (selectionContext["selectedGenre"]) {
+                        if (selectionContext["selectedGenre"]['name'] == genre['name']) {
+                            selectionContext["selectedGenre"] = null;  
+                        }
+                    } else {
+                        selectionContext["selectedGenre"] = genre;
+                    }
+                    selectionContext["selectedTrack"] = null;
                     console.log(genre);
                     updateAllPlots();
                 } else {
@@ -935,7 +949,7 @@ function updateLinePlot(songData, genreData, plot) {
     // Make axes
     xAxis["group"].call(xAxis["call"].scale(xScale));
     yAxis["group"].call(yAxis["call"].scale(yScale));
-        
+
     // Set labels for axes
     yAxis['label'].attr("class", "y-axis-label")
                   .attr("y", - plot['margin']['left'] * 0.25)
