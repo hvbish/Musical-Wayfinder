@@ -54,6 +54,7 @@ var genre_classifiers = {
         return genre.toLowerCase().includes('rock') || 
                 genre.toLowerCase().includes('punk') || 
                 genre.toLowerCase().includes('grunge') || 
+                genre.toLowerCase().includes('indie') || 
                 genre.toLowerCase().includes('garage');
     },
     "Pop" : function(genre) {
@@ -78,7 +79,10 @@ var genre_classifiers = {
                 (genre.toLowerCase().includes('chip')) || 
                 (genre.toLowerCase().includes('glitch')) || 
                 (genre.toLowerCase().includes('jungle')) ||
+                (genre.toLowerCase().includes('idm')) ||
                 (genre.toLowerCase().includes('traprun')) ||
+                (genre.toLowerCase().includes('chillstep')) ||
+                (genre.toLowerCase().includes('chillwave')) ||
                 (genre.toLowerCase().includes('bass trap'))) && 
                 (!genre.toLowerCase().includes('edmunds')) && 
                 (!genre.toLowerCase().includes('edmonton')) && 
@@ -209,6 +213,7 @@ function countGenres(songData, genreData) {
     var umbrella_genre_counts = {};
     var top_umbrella_genre_counts = {}; // Counts including only those songs which have the genre as their topUmbrellaGenre
     var genre_counts = {};
+
 
     // Initialize the umbrella count genres dictionary with the globally defined genre_labels
     genre_labels.forEach(function(umbrella_genre) {
@@ -831,6 +836,7 @@ function updateLinePlot(songData, genreData, plot) {
                  })
                  .curve(d3.curveBasis);
                 //  .curve(d3.curveCatmullRom.alpha(0.5));
+                // .curve(d3.curveBasis);
             }
 
     // Find the maximum line height among all data points
@@ -1447,7 +1453,7 @@ function loadPage() {
     $("#user-id")[0].innerHTML = userProfileGlobal['display_name'];
 
     setDefaults();
-    var marginSongPlot = { left:200, right:0, top:50, bottom:100 };
+    var marginSongPlot = { left:200, right:50, top:50, bottom:100 };
     var marginGenrePlot = { left:100, right:100, top:50, bottom:100 };
     var marginLinePlot = { left:220, right:0, top:20, bottom:100 };
 
@@ -1481,7 +1487,6 @@ function loadPage() {
         .attr("text-anchor", "middle")
         .style("font-size", "30px")
         .style("font-weight", "bold");
-     
     plots['genre-chart'] = {"svg" : svgGenres, "xAxis" : xAxisGenres, "yAxis" : yAxisGenres, "margin" : marginGenrePlot, "title" : genreTitle};
 
     var plotLine = generateAxes("#line-plot-area", xAxisLengthLine, yAxisLengthLine, marginLinePlot, 0, 1000);
