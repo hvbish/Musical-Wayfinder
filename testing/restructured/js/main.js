@@ -935,7 +935,7 @@ function updateLinePlot(songData, genreData, plot) {
     // Make axes
     xAxis["group"].call(xAxis["call"].scale(xScale));
     yAxis["group"].call(yAxis["call"].scale(yScale));
-        
+
     // Set labels for axes
     yAxis['label'].attr("class", "y-axis-label")
                   .attr("y", - plot['margin']['left'] * 0.25)
