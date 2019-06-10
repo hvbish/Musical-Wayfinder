@@ -840,6 +840,7 @@ function updateLinePlot(songData, genreData, plot) {
                  .y1(function(d) {
                      return yScale(d[1]);
                  })
+                 //.interpolate("basis");
                  .curve(d3.curveBasis);
                 //  .curve(d3.curveCatmullRom.alpha(0.5));
                 // .curve(d3.curveBasis);
@@ -960,7 +961,13 @@ function updateLinePlot(songData, genreData, plot) {
 
     // Make axes
     xAxis["group"].call(xAxis["call"].scale(xScale));
-    yAxis["group"].call(yAxis["call"].scale(yScale));
+    // If one song is the only thing being plotted, don't show axis ticks (because curve interpolation is making them appear to be < 1)
+    if ((selectionContext.selectedTrack) || (selectionContext.selectedTopTrack)) {
+        yAxis["group"].call(yAxis["call"].scale(yScale).ticks(0));
+    } else {
+        yAxis["group"].call(yAxis["call"].scale(yScale));
+    }
+
 
     // Set labels for axes
     yAxis['label'].attr("class", "y-axis-label")
@@ -1357,6 +1364,9 @@ function makeTopArtistsList() {
                             selectionContext['selectedTopArtist'] = artist;
                             // We can either select a top artist or a top track
                             selectionContext['selectedTopTrack'] = null;
+                            selectionContext['selectedTrack'] = null;
+                            selectionContext['selectedArtist'] = null;
+                            selectionContext['selectedGenre'] = null;
                         } else {
                             // If I was active before and I've been selected again, that means we want to remove filtering by artist
                             selectionContext['selectedTopArtist'] = null;
@@ -1395,6 +1405,9 @@ function makeTopTracksList() {
                             selectionContext['selectedTopTrack'] = track;
                             // We can either select a top artist or a top track
                             selectionContext['selectedTopArtist'] = null;
+                            selectionContext['selectedTrack'] = null;
+                            selectionContext['selectedArtist'] = null;
+                            selectionContext['selectedGenre'] = null;
                         } else {
                             // If I was active before and I've been selected again, that means we want to remove filtering by artist
                             selectionContext['selectedTopTrack'] = null;
