@@ -206,8 +206,8 @@ function generateAxes(selector, xAxisLength, yAxisLength, margin, xOrigin, yOrig
 }
 
 // A function to count the number of songs from the songData object in each genre as provided by the genreData object
-// returns two dictionaries with genres as keys containing counts
-// first dictionary is over all genres and second dictionary is over all umbrella genres
+// returns three dictionaries with genres as keys containing counts
+// first dictionary is over all genres, second dictionary is over all umbrella genres, third is top umbrella genres, fourth is date first/last added to library
 function countGenres(songData, genreData) {
     // Create and initialize temporary umbrella genre counts
     var umbrella_genre_counts = {};
@@ -224,6 +224,8 @@ function countGenres(songData, genreData) {
         top_umbrella_genre_counts[umbrella_genre]["userCount"] = 0;
         top_umbrella_genre_counts[umbrella_genre]["userCountWeighted"] = 0;
     })
+
+    
 
     // For each song in the passed library
     songData.forEach(function(song) {
@@ -1581,8 +1583,44 @@ function songDataProcess(songData, genreData) {
 
 // A function to process the user library data
 function genreDataProcess(songData, genreData) {
+    var genre_dates = {}        // Date the genre is first/last added to user's library
+
+    // Check each song to get first & last add dates for each genre
+    songData.forEach(function(s){
+        s.genres.forEach(function(g) { 
+            // Take the date string and create a JS Date Object (date string format is "2019-05-27T04:34:26Z")
+            s.dateAdded = parseUTCTime(s.date);
+            // Check the first/last add date for each of the song's genres, and update it if this song was added before that date
+            if (genre_dates[g]) {
+                if (s.dateAdded < genre_dates[g]["userFirstAddDate"]) {
+                    genre_dates[g]["userFirstAddDate"] = s.dateAdded
+                }
+                if (s.dateAdded > genre_dates[g]["userLastAddDate"]) {
+                    genre_dates[g]["userLastAddDate"] = s.dateAdded
+                }
+            } else {
+                genre_dates[g] = {};
+                genre_dates[g]["userFirstAddDate"] = s.dateAdded
+                genre_dates[g]["userLastAddDate"] = s.dateAdded
+            }
+
+        })
+    })
+
+    console.log(genre_dates);
+
     // Do the following for every element in the json file
-    genreData.forEach(function(g) {
+    genreData.forEach(function(genre) {
+        
+        key = genre['name'].toLowerCase()
+        genre_in_library = genre_dates[key];
+        if (genre_in_library) {
+            genre.userFirstAddDate = genre_dates[key]["userFirstAddDate"];
+            genre.userLastAddDate = genre_dates[key]["userLastAddDate"];
+        }
+
+
+        // Identify umbrella genres and top umbrella matches
         genre_labels.forEach(function(umbrella) {
             g["is" + umbrella] = false;
         });
@@ -1594,9 +1632,11 @@ function genreDataProcess(songData, genreData) {
         // If there is more than one topUmbrellaMatch, don't classify it as "Other"
         if (g["topUmbrellaMatches"].length > 1) {
             g["topUmbrellaMatches"] = g["topUmbrellaMatches"].filter(genre => genre != "Other")
-        };
-                
-    })
+        };            
+    });
+
+
+
 
     return genreData;
 }
