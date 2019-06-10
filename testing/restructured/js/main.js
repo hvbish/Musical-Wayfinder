@@ -960,7 +960,36 @@ function updateLinePlot(songData, genreData, plot) {
     }
 
     // Make axes
+
+    
+
     xAxis["group"].call(xAxis["call"].scale(xScale));
+    xAxis["group"].selectAll("text")
+        .attr('font-size', function(d) {
+            if (d.getMonth() == "0") {
+                return "25";
+            } else{
+                console.log(d);
+                return "15";
+            }
+        })
+        .style('font-weight', function(d) {
+            if (d.getMonth() == "0") {
+                return "normal";
+            } else{
+                console.log(d);
+                return "light";
+            }
+        })
+        .attr('transform', function(d) {
+            if (d.getMonth() == "0") {
+                return "translate(0,10)";
+            } else{
+                console.log(d);
+                return "translate(0,0)";
+            }
+        });
+
     // If one song is the only thing being plotted, don't show axis ticks (because curve interpolation is making them appear to be < 1)
     if ((selectionContext.selectedTrack) || (selectionContext.selectedTopTrack)) {
         yAxis["group"].call(yAxis["call"].scale(yScale).ticks(0));
@@ -968,15 +997,30 @@ function updateLinePlot(songData, genreData, plot) {
         yAxis["group"].call(yAxis["call"].scale(yScale));
     }
 
+        
+    // const longFormat = d3.timeFormat('%b');
+    // const shortFormat = d3.timeFormat('%d');
+    // const axis = d3.axisBottom(x);
+    // axis.tickFormat((d, i) => {
+    //     const ticks = axis.scale().ticks();
+
+    //     if (i > 0 && ticks[i - 1].getMonth() === d.getMonth()) {
+    //         return shortFormat(d);
+    //     }
+    //     else {
+    //         return longFormat(d);
+    //     }
+    // });
+
 
     // Set labels for axes
     yAxis['label'].attr("class", "y-axis-label")
-                  .attr("y", - plot['margin']['left'] * 0.25)
+                  .attr("y", - plot['margin']['left'] * 0.3)
                   .attr("x", - yAxis['length'] / 2)
                   .text("Number of Songs");
     xAxis['label'].attr("class", "x-axis-label")
                   .attr("x", xAxis['length'] / 2)
-                  .attr("y", yAxis['length'] + plot['margin']['bottom'] * 0.5)
+                  .attr("y", yAxis['length'] + plot['margin']['bottom'] * 0.7)
                   .text("Date Added");
 }
 
