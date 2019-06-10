@@ -538,7 +538,7 @@ function updateGenrePlot(genreData, plot) {
                 } else {
                     var text = "<h4><span style='color:"+umbrellaGenreToColor(genre.topUmbrellaMatches[0])+";text-transform:capitalize'>" + " " + genre.name.bold() + "</h4></span><br>"; // Original color: "Thistle"
                 }
-                text += "<strong>  Songs in Library:           </strong> <span style='color:"+ rgb(163, 194, 194) + ";text-transform:capitalize'>" + nbsp.repeat(0) + genre["userCount"] + "</span><br>";
+                text += "<strong>  Songs in Selection:           </strong> <span style='color:"+ rgb(163, 194, 194) + ";text-transform:capitalize'>" + nbsp.repeat(0) + genre["userCount"] + "</span><br>";
                 text += "<br>";
                 if ((selectionContext.selectedAttributeX == "energy") || (selectionContext.selectedAttributeY == "energy")) {
                     text += "<strong>  Energy:           </strong> <span style='color:"+"LemonChiffon"+";text-transform:capitalize'>" + nbsp.repeat(0) + d3.format("1.2f")(genre.energy) + "</span><br>";
@@ -1230,7 +1230,19 @@ function updateGenreLegend(top_umbrella_genre_counts) {
                     } else {
                         return 100;
                     }
+                    
                 })
+
+    // legendButtons = svg.append("rect")
+    //             .attr("x",-120)
+    //             .attr("y",-3)
+    //             .attr("width",105)
+    //             .attr("height",25)
+    //             .style("rx",5)
+    //             .style("ry",5)
+    //             .style("fill","none")
+    //             .style("stroke",rgb(221,158,213));
+                
 
     // 4 -- ENTER new elements present in new data.
     var newRows = legendRows.enter()

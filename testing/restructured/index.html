@@ -32,18 +32,11 @@
         <div class="row">
             <div class="col-md-1">
             </div>
-<<<<<<< HEAD
-            <div class="col-md-5 text-left">
-                <label style="font-size:30px; justify-content: left;">
-                        <label style="font-size:40px; font-weight:bold">USERNAME<span id="username"></span>'s Library
-                    <label style="font-size:30px; font-weight:normal"><span id="time"></span></label> 
-=======
             <div class="col-md-7 text-left">
                 <span id="user-id"></span>'s Spotify Library from <strong><span id="time"></span></strong>
                 <!-- <label style="font-size:30px; justify-content: left;">
                     USERNAME<span id="username"></span>'s Library:
                     <label style="font-size:30px;"></label> 
->>>>>>> 24778d9f031970dda94fbdfc3ef74124ba4a315b
                 </label>
                 <br> -->
             </div>
@@ -114,18 +107,24 @@
                             </select>
                         </div>
                     </form>
+                    <br>
                 </div>
 
                 <!-- Button Controls -->
-                <div class="row", style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="row", style="margin-top: 20px; margin-bottom: 20px; justify-content: center;">
+                    <div id="reset-button" class="btn btn-primary">Reset Scatterplots</div>
+                    <div class="row">
+                        <br>
+                    </div>
+                    <div class="row">
+                    </div>
                     <div class="btn-group">
-                        <div id="reset-button" class="btn btn-primary">Reset Scatterplots</div>
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-default active" id="toggle-genres-library">
+                                    <input type="radio" name="toggle-genres-radio" autocomplete="off"> My Genres
+                            </label>
                             <label class="btn btn-default" id="toggle-genres-all">
                                 <input type="radio" name="toggle-genres-radio"  autocomplete="off" checked> All Genres
-                            </label>
-                            <label class="btn btn-default active" id="toggle-genres-library">
-                                <input type="radio" name="toggle-genres-radio" autocomplete="off"> My Genres
                             </label>
                         </div>
                     </div>
