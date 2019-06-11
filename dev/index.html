@@ -5,21 +5,21 @@
     <meta name="description" content="">
     <title>Musical Wayfinder</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <!-- jQuery UI CSS -->
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="static/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="static/css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="static/css/jquery-ui.theme.min.css">
     <!-- jQRangeSlider CSS -->
-    <link rel="stylesheet" href="css/iThing.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/iThing.css" type="text/css" />
     <!-- D3 Tooltip CSS -->
-    <link rel="stylesheet" href="css/d3-tip.css">
+    <link rel="stylesheet" href="static/css/d3-tip.css">
     <!-- Custom styling -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
     <!-- Fonts -->
     <!--<link href='css/fonts/montserrat-font-family-styles.css' rel='stylesheet'> Montserrat -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"><!-- Montserrat -->
-    <link rel="stylesheet" type="text/css" href="css/fonts/fonts.min.css" /><!-- minified Proxima Nova -->
+    <link rel="stylesheet" type="text/css" href="static/css/fonts/fonts.min.css" /><!-- minified Proxima Nova -->
 </head>
 
 <body>
@@ -193,34 +193,114 @@
 
 
 <!-- External JS libraries -->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<!-- <script src="js/jquery-3.4.1.min.js"></script>-->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/d3.min.js"></script>
-<script src="js/d3-tip.js"></script>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery-ui.min.js"></script>
+<!-- <script src="static/js/jquery-3.4.1.min.js"></script>-->
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/d3.min.js"></script>
+<script src="static/js/d3-tip.js"></script>
 
 <!-- JQRange Slider libraries -->
-<!-- <script src="js/jquery.js"></script>
-<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
-<script src="js/jQDateRangeSlider-min.js"></script> -->
+<!-- <script src="static/js/jquery.js"></script>
+<script src="static/js/jquery-ui-1.8.16.custom.min.js"></script>
+<script src="static/js/jQDateRangeSlider-min.js"></script> -->
 
 <!-- dragslider libraries -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/dragslider.js"></script>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="static/js/dragslider.js"></script>
 <script src="https://d3js.org/d3-color.v1.min.js"></script>
 
-<!-- <script type="text/javascript" src="js/jquery.ui.slider.custom.js"></script> -->
-<!-- <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js"></script>
-<script type="text/javascript" src="js/jquery.ui.slider.custom.js"></script> -->
+<!-- <script type="text/javascript" src="static/js/jquery.ui.slider.custom.js"></script> -->
+<!-- <script type="text/javascript" src="static/js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="static/js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.ui.slider.custom.js"></script> -->
 
 
 <!-- Custom JS -->
+<!-- Load the data -->
+<!-- For each file, we try loading twice -->
+<script>
+    function loadSongData() {
+        // Create a promise for the data
+        var songDataPromise = d3.json("data/drpillow/library.json");
+        return songDataPromise.then(function(data) {
+            return data;
+        }, function(error) {
+            return d3.json("data/drpillow/library.json");
+        });
+    }
 
-<script src="js/loadData.js"></script>
-<script src="js/main.js"></script>
+    function loadGenreData() {
+        // Create a promise for the data
+        var genreDataPromise = d3.json("data/data_genres_average_features.json");
+        return genreDataPromise.then(function(data) {
+            return data;
+        }, function(error) {
+            return d3.json("data/data_genres_average_features.json");
+        });
+    }
+
+    function loadTopArtistsData() {
+        return d3.json("data/drpillow/top_artists.json").then(function(data) {
+            return data;
+        }, function(error) {
+            console.log("Trouble loading top tracks! Trying again...");
+            console.log(error);
+            return d3.json("data/drpillow/top_artists.json").then(function(data) {
+                return data;
+            }, function(error) {
+                console.log("Trouble loading top tracks!");
+                console.log(error);
+            })
+        });
+
+    }
+
+    function loadTopTracksData() {
+        return d3.json("data/drpillow/top_tracks.json").then(function(data) {
+            return data;
+        }, function(error) {
+            console.log("Trouble loading top tracks! Trying again...");
+            console.log(error);
+            return d3.json("data/drpillow/top_tracks.json").then(function(data) {
+                return data;
+            }, function(error) {
+                console.log("Trouble loading top tracks!");
+                console.log(error);
+            })
+        });
+    }
+
+    function loadRecentlyPlayedData() {
+        return d3.json("data/drpillow/recently_played.json").then(function(data) {
+            return data
+        }, function(error) {
+            console.log("Trouble loading recently played data! Trying again...");
+            console.log(error);
+            return d3.json("data/drpillow/recently_played.json").then(function(data) {
+                return data
+            }, function(error) {
+                console.log("Trouble loading recently played data!");
+                console.log(error);
+            })
+        });
+    }
+    
+    function loadUserProfile() {
+        return d3.json("data/drpillow/profile.json").then(function(data) {
+            return data;
+        }, function(error) {
+            return d3.json("data/drpillow/profile.json").then(function(data) {
+                return data;
+            }, function(error) {
+                console.log(error);
+            })
+        });
+    }
+</script>
+<!-- Load our scripts for making plots -->
+<script src="static/js/main.js"></script>
 
 </body>
 </html>

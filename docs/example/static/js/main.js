@@ -1614,7 +1614,7 @@ function setDefaults() {
     // We have three time scales to work with for the top artists and track
     // here we start with the short time scale, but we can make an interaction that changes this option
     // TODO: makeTopArtistsList() needs to be updateTopArtistsList() and added to updateAllPlots() for this to work
-    selectionContext['timeScale'] = 'long';
+    selectionContext['timeScale'] = 'long_term';
 
     // Create a Date object with current time so we can set that as the upper limit on the slider
     now = new Date()
