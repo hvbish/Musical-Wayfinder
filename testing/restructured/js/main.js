@@ -1381,7 +1381,11 @@ function updateGenreLegend(top_umbrella_genre_counts) {
     legendRows.selectAll("rect")
                 .transition(update_trans)
                 .attr("width", function(genre) {
-                    return 0.8*legendWidth*(top_umbrella_genre_counts[genre]["userCount"]/maxTopUmbrellaCounts);
+                    if (top_umbrella_genre_counts[genre]["userCount"]) {
+                        return 0.8*legendWidth*(top_umbrella_genre_counts[genre]["userCount"]/maxTopUmbrellaCounts);
+                    } else {
+                        return 0;
+                    }
                 })
                 .attr("fill", function(genre) {
                     if (selectionContext['plot' + genre]) {
