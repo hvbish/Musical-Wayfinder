@@ -1,0 +1,952 @@
+[
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZMthVIHWet5"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZMthVIHWet5",
+        "id": "37i9dQZF1DWZMthVIHWet5",
+        "images": [
+            {
+                "height": null,
+                "url": "https://pl.scdn.co/images/pl/default/76e5c540cc48ea1079633973fbbdad9f3cfb7545",
+                "width": null
+            }
+        ],
+        "name": "Forr\u00f3 at\u00e9 o Amanhecer",
+        "owner": {
+            "display_name": "Spotify",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+            },
+            "href": "https://api.spotify.com/v1/users/spotify",
+            "id": "spotify",
+            "type": "user",
+            "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTU1ODA2Njk2MywwMDAwMDAyZTAwMDAwMTZhYzQwNzIzNmUwMDAwMDE2ODk5OWQ3M2Mx",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZMthVIHWet5/tracks",
+            "total": 65
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWZMthVIHWet5"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5O5m2ypWiqa"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5O5m2ypWiqa",
+        "id": "37i9dQZF1DX5O5m2ypWiqa",
+        "images": [
+            {
+                "height": null,
+                "url": "https://pl.scdn.co/images/pl/default/592e5d05cb83318e9565bace2136e88c1e2fbbbf",
+                "width": null
+            }
+        ],
+        "name": "Cl\u00e1sicas de Banda",
+        "owner": {
+            "display_name": "Spotify",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+            },
+            "href": "https://api.spotify.com/v1/users/spotify",
+            "id": "spotify",
+            "type": "user",
+            "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTU2MDI4NzY4OCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5O5m2ypWiqa/tracks",
+            "total": 64
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX5O5m2ypWiqa"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/27wNFnyJ1FwJPH1tHRlZUe"
+        },
+        "href": "https://api.spotify.com/v1/playlists/27wNFnyJ1FwJPH1tHRlZUe",
+        "id": "27wNFnyJ1FwJPH1tHRlZUe",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/5d6296e45ce540774713b30bc4e74a87df6604f2",
+                "width": 640
+            }
+        ],
+        "name": "Fleetwood Mac",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTMsODIzODRiODAzMjhhZDJlODNkM2UyZWZjMDYyYTYzN2U1NGUxYzFhNg==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/27wNFnyJ1FwJPH1tHRlZUe/tracks",
+            "total": 12
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:27wNFnyJ1FwJPH1tHRlZUe"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/0zHkISuEcNr2Zav2X4TXCQ"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0zHkISuEcNr2Zav2X4TXCQ",
+        "id": "0zHkISuEcNr2Zav2X4TXCQ",
+        "images": [
+            {
+                "height": null,
+                "url": "https://pl.scdn.co/images/pl/default/966996b5733e90a9aabef13c545dd08275412950",
+                "width": null
+            }
+        ],
+        "name": "Someone Great Soundtrack (2019) Netflix",
+        "owner": {
+            "display_name": "wokbeatz",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/wokbeatz"
+            },
+            "href": "https://api.spotify.com/v1/users/wokbeatz",
+            "id": "wokbeatz",
+            "type": "user",
+            "uri": "spotify:user:wokbeatz"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NDI0LDdkOWJlNTdlM2ZiYjkxMTgwMjZhMmYwODAxNGNkYzY3YzE4MjZhODk=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/0zHkISuEcNr2Zav2X4TXCQ/tracks",
+            "total": 93
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0zHkISuEcNr2Zav2X4TXCQ"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1PadBm"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO1PadBm",
+        "id": "37i9dQZF1DZ06evO1PadBm",
+        "images": [
+            {
+                "height": null,
+                "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO1PadBm-default.jpg",
+                "width": null
+            }
+        ],
+        "name": "This Is Sylvan Esso",
+        "owner": {
+            "display_name": "Spotify",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+            },
+            "href": "https://api.spotify.com/v1/users/spotify",
+            "id": "spotify",
+            "type": "user",
+            "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MjYwMDMwMzgsMDAwMDAwMDBlOTBkZGM1OThlZmFhN2QwMjRlYmNmNjE4ZTFmZjQzZA==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO1PadBm/tracks",
+            "total": 23
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DZ06evO1PadBm"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/7FBaQxUCf8U7jdUMoeGLl3"
+        },
+        "href": "https://api.spotify.com/v1/playlists/7FBaQxUCf8U7jdUMoeGLl3",
+        "id": "7FBaQxUCf8U7jdUMoeGLl3",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/1f68b69e2fdbb7659575b402525285206c68dbf83fe606ee0c0bd62492628687b83b63c4d0d6bcf6c947cfbe049297107022da73b6350256d181e912cc0cef8a5643ca06a060d23958db19188a2ae2ce",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/1f68b69e2fdbb7659575b402525285206c68dbf83fe606ee0c0bd62492628687b83b63c4d0d6bcf6c947cfbe049297107022da73b6350256d181e912cc0cef8a5643ca06a060d23958db19188a2ae2ce",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/1f68b69e2fdbb7659575b402525285206c68dbf83fe606ee0c0bd62492628687b83b63c4d0d6bcf6c947cfbe049297107022da73b6350256d181e912cc0cef8a5643ca06a060d23958db19188a2ae2ce",
+                "width": 60
+            }
+        ],
+        "name": "Sylvan Esso",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTUsNjE0ZjBjMDFkNjgwMDgzN2ViYWMzYWQzZGU5YTYyZDgxZmIwOWQ5NA==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/7FBaQxUCf8U7jdUMoeGLl3/tracks",
+            "total": 13
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:7FBaQxUCf8U7jdUMoeGLl3"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/4BKacebm8B29eGRga1Jgsa"
+        },
+        "href": "https://api.spotify.com/v1/playlists/4BKacebm8B29eGRga1Jgsa",
+        "id": "4BKacebm8B29eGRga1Jgsa",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/16f89c74762ea6625adb6bef1c7873e8981430dd4b953fe485c5128596c19c103a85fe7043b2a6584e4910b36decadd39489b47a0e19500a031d7a908aae108b817e672ade315a09b0104e1b20bf7c78",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/16f89c74762ea6625adb6bef1c7873e8981430dd4b953fe485c5128596c19c103a85fe7043b2a6584e4910b36decadd39489b47a0e19500a031d7a908aae108b817e672ade315a09b0104e1b20bf7c78",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/16f89c74762ea6625adb6bef1c7873e8981430dd4b953fe485c5128596c19c103a85fe7043b2a6584e4910b36decadd39489b47a0e19500a031d7a908aae108b817e672ade315a09b0104e1b20bf7c78",
+                "width": 60
+            }
+        ],
+        "name": "Bachata - Female Artists",
+        "owner": {
+            "display_name": "Avian Noowin",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1251543198"
+            },
+            "href": "https://api.spotify.com/v1/users/1251543198",
+            "id": "1251543198",
+            "type": "user",
+            "uri": "spotify:user:1251543198"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MzQsZjc4NmFmNGM2ZmU0ZDJhMzc5ZjQ5NjUwNWY2YThlZjRjMTUzNDE3MQ==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/4BKacebm8B29eGRga1Jgsa/tracks",
+            "total": 32
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:4BKacebm8B29eGRga1Jgsa"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/4IOSNTvu2rJt37ykxUnSvF"
+        },
+        "href": "https://api.spotify.com/v1/playlists/4IOSNTvu2rJt37ykxUnSvF",
+        "id": "4IOSNTvu2rJt37ykxUnSvF",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/86e9ede44999b23b6d8635b21ad0a1c987d133ef8ec84bcbf087032279208fdf1d1626d467af334dbd8aa66b45aff7af97553281d78032ec56f5a8b4e773a91005bcc2cd416f47dddb016ed3d73bbd99",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/86e9ede44999b23b6d8635b21ad0a1c987d133ef8ec84bcbf087032279208fdf1d1626d467af334dbd8aa66b45aff7af97553281d78032ec56f5a8b4e773a91005bcc2cd416f47dddb016ed3d73bbd99",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/86e9ede44999b23b6d8635b21ad0a1c987d133ef8ec84bcbf087032279208fdf1d1626d467af334dbd8aa66b45aff7af97553281d78032ec56f5a8b4e773a91005bcc2cd416f47dddb016ed3d73bbd99",
+                "width": 60
+            }
+        ],
+        "name": "Bachata - Phase IV",
+        "owner": {
+            "display_name": "Avian Noowin",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1251543198"
+            },
+            "href": "https://api.spotify.com/v1/users/1251543198",
+            "id": "1251543198",
+            "type": "user",
+            "uri": "spotify:user:1251543198"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MzYsZjdkNjcxYWZmMWFmMGIwY2UyOWU3MDU4MWI5NDlhNjE3OTI5MjlkMw==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/4IOSNTvu2rJt37ykxUnSvF/tracks",
+            "total": 35
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:4IOSNTvu2rJt37ykxUnSvF"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/4zLlRaIg6JIU3HF5P5Q5ds"
+        },
+        "href": "https://api.spotify.com/v1/playlists/4zLlRaIg6JIU3HF5P5Q5ds",
+        "id": "4zLlRaIg6JIU3HF5P5Q5ds",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/3d5903e924490b59b12676432a0c5301361cb30c542b39218394c45a31b2c27573aae0ff0b8d37b2620cfccdb1fd0a20ef93b885ea34e9608f8c8969973e75655e7dbb4bba07a2fdb0685a12cd4ed22e",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/3d5903e924490b59b12676432a0c5301361cb30c542b39218394c45a31b2c27573aae0ff0b8d37b2620cfccdb1fd0a20ef93b885ea34e9608f8c8969973e75655e7dbb4bba07a2fdb0685a12cd4ed22e",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/3d5903e924490b59b12676432a0c5301361cb30c542b39218394c45a31b2c27573aae0ff0b8d37b2620cfccdb1fd0a20ef93b885ea34e9608f8c8969973e75655e7dbb4bba07a2fdb0685a12cd4ed22e",
+                "width": 60
+            }
+        ],
+        "name": "Bachata - Phase III Comedown",
+        "owner": {
+            "display_name": "Avian Noowin",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1251543198"
+            },
+            "href": "https://api.spotify.com/v1/users/1251543198",
+            "id": "1251543198",
+            "type": "user",
+            "uri": "spotify:user:1251543198"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTIzLDQ1MDUxZGE1NTFlOGY0OTc3ODQyNzFhNjVkZTRjZDZiYmExNzNhNGI=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/4zLlRaIg6JIU3HF5P5Q5ds/tracks",
+            "total": 119
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:4zLlRaIg6JIU3HF5P5Q5ds"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/2vkzmVMzmKTZpOGh4rltaO"
+        },
+        "href": "https://api.spotify.com/v1/playlists/2vkzmVMzmKTZpOGh4rltaO",
+        "id": "2vkzmVMzmKTZpOGh4rltaO",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/6094b329c278cd8e285dcbe61a97d1d6c74583ca949b799731448f7a13e7b5ea53b40638ba39ba63e860e34557bf576efdf4ee061953e2eb50ba36afec0180705708b47318808772e078af19f69536a1",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/6094b329c278cd8e285dcbe61a97d1d6c74583ca949b799731448f7a13e7b5ea53b40638ba39ba63e860e34557bf576efdf4ee061953e2eb50ba36afec0180705708b47318808772e078af19f69536a1",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/6094b329c278cd8e285dcbe61a97d1d6c74583ca949b799731448f7a13e7b5ea53b40638ba39ba63e860e34557bf576efdf4ee061953e2eb50ba36afec0180705708b47318808772e078af19f69536a1",
+                "width": 60
+            }
+        ],
+        "name": "Bachata - Phase II - Thumpers",
+        "owner": {
+            "display_name": "Avian Noowin",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1251543198"
+            },
+            "href": "https://api.spotify.com/v1/users/1251543198",
+            "id": "1251543198",
+            "type": "user",
+            "uri": "spotify:user:1251543198"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTQyLGMxOTUzNmZlNWMwYjcyOTc2ODRiMmEwZmEzMzBmZGQ1NTkzY2Y4ZDM=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/2vkzmVMzmKTZpOGh4rltaO/tracks",
+            "total": 139
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:2vkzmVMzmKTZpOGh4rltaO"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/7uQVkql0nWKmGMpg93ZSmo"
+        },
+        "href": "https://api.spotify.com/v1/playlists/7uQVkql0nWKmGMpg93ZSmo",
+        "id": "7uQVkql0nWKmGMpg93ZSmo",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/2a10a8986a9125ded23f068c89b5d0473de5eb4e8690a26c06cb46f3d44fd62f5921b9de49ca7c5d874aea896f49d716205e99c59c6efa73b97266a2e860e34557bf576efdf4ee061953e2eb50ba36af",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/2a10a8986a9125ded23f068c89b5d0473de5eb4e8690a26c06cb46f3d44fd62f5921b9de49ca7c5d874aea896f49d716205e99c59c6efa73b97266a2e860e34557bf576efdf4ee061953e2eb50ba36af",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/2a10a8986a9125ded23f068c89b5d0473de5eb4e8690a26c06cb46f3d44fd62f5921b9de49ca7c5d874aea896f49d716205e99c59c6efa73b97266a2e860e34557bf576efdf4ee061953e2eb50ba36af",
+                "width": 60
+            }
+        ],
+        "name": "Bachata - Phase I - Ramp Up",
+        "owner": {
+            "display_name": "Avian Noowin",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1251543198"
+            },
+            "href": "https://api.spotify.com/v1/users/1251543198",
+            "id": "1251543198",
+            "type": "user",
+            "uri": "spotify:user:1251543198"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTY2LGRhMmY5MDdkNjExMWEwZWY3ZjU5YWViMGNkMDI4NWUwZjE3YjViYWI=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/7uQVkql0nWKmGMpg93ZSmo/tracks",
+            "total": 168
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:7uQVkql0nWKmGMpg93ZSmo"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/3WSBJIcsTqmrvPuDUj6ri9"
+        },
+        "href": "https://api.spotify.com/v1/playlists/3WSBJIcsTqmrvPuDUj6ri9",
+        "id": "3WSBJIcsTqmrvPuDUj6ri9",
+        "images": [
+            {
+                "height": null,
+                "url": "https://pl.scdn.co/images/pl/default/0e2f0f528f2fd3eb0d621132e0397c385eef2cc8",
+                "width": null
+            }
+        ],
+        "name": "Everything... Hozier",
+        "owner": {
+            "display_name": "Hozier",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/hozierb"
+            },
+            "href": "https://api.spotify.com/v1/users/hozierb",
+            "id": "hozierb",
+            "type": "user",
+            "uri": "spotify:user:hozierb"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MjMzLGNlNDhhMzU1NDE1Zjg3MTdlNDIxNTc0OGYyZWM1Y2ZlMmE2ZWZlMDQ=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/3WSBJIcsTqmrvPuDUj6ri9/tracks",
+            "total": 41
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:3WSBJIcsTqmrvPuDUj6ri9"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/7uIQRIkO1t0YUWrY2kF4nK"
+        },
+        "href": "https://api.spotify.com/v1/playlists/7uIQRIkO1t0YUWrY2kF4nK",
+        "id": "7uIQRIkO1t0YUWrY2kF4nK",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/7572ec4bb0371e2b7f78448ade9d61697d9b5c70",
+                "width": 640
+            }
+        ],
+        "name": "Hozier",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "OCw2M2RiZDliMmRmMjc0YTQzZDI0OWRiY2ZlNjMxZTUzNWU5MDA4MGNm",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/7uIQRIkO1t0YUWrY2kF4nK/tracks",
+            "total": 13
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:7uIQRIkO1t0YUWrY2kF4nK"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/4VP66zR9GqASqDgVfnya5s"
+        },
+        "href": "https://api.spotify.com/v1/playlists/4VP66zR9GqASqDgVfnya5s",
+        "id": "4VP66zR9GqASqDgVfnya5s",
+        "images": [
+            {
+                "height": null,
+                "url": "https://pl.scdn.co/images/pl/default/e97f254627207e0d7e354a3a2b6ad48163b72abc",
+                "width": null
+            }
+        ],
+        "name": "Kasey Musgraves - Golden Hour \ud83d\ude34 Country Sleep Playlist",
+        "owner": {
+            "display_name": "Jose Gomez",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1217796051"
+            },
+            "href": "https://api.spotify.com/v1/users/1217796051",
+            "id": "1217796051",
+            "type": "user",
+            "uri": "spotify:user:1217796051"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NDYzLDc2ZjE4YmE3ZDEyYmU4MzIwNjVjNzFkZjliMmE3YTcxNTRlOTIyOGM=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/4VP66zR9GqASqDgVfnya5s/tracks",
+            "total": 68
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:4VP66zR9GqASqDgVfnya5s"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/0EVsqCb18TqVZibciE3QrS"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0EVsqCb18TqVZibciE3QrS",
+        "id": "0EVsqCb18TqVZibciE3QrS",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/99dc121a3c7727f1e28f3b0575d5167f8784dd1b9e780cedf7b9d0e386881bd17ffb3d8621b75514af9c485050cf71a3ccd452946972e9ae8be69514be7255db75ff41ee65dd95c58ef431959fad4020",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/99dc121a3c7727f1e28f3b0575d5167f8784dd1b9e780cedf7b9d0e386881bd17ffb3d8621b75514af9c485050cf71a3ccd452946972e9ae8be69514be7255db75ff41ee65dd95c58ef431959fad4020",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/99dc121a3c7727f1e28f3b0575d5167f8784dd1b9e780cedf7b9d0e386881bd17ffb3d8621b75514af9c485050cf71a3ccd452946972e9ae8be69514be7255db75ff41ee65dd95c58ef431959fad4020",
+                "width": 60
+            }
+        ],
+        "name": "Clave",
+        "owner": {
+            "display_name": "jazztronomy",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/jazztronomy"
+            },
+            "href": "https://api.spotify.com/v1/users/jazztronomy",
+            "id": "jazztronomy",
+            "type": "user",
+            "uri": "spotify:user:jazztronomy"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MjU5LDk0YmM4MDA4NjNiOTA4MmZhYjA1ZDRlMGE5YmNlYjJiOTU0YjdlZjY=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/0EVsqCb18TqVZibciE3QrS/tracks",
+            "total": 208
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0EVsqCb18TqVZibciE3QrS"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/14S9XPyOhrNLkgsYapWO4R"
+        },
+        "href": "https://api.spotify.com/v1/playlists/14S9XPyOhrNLkgsYapWO4R",
+        "id": "14S9XPyOhrNLkgsYapWO4R",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/3603b1603c99572f381b9d68fb93f3d36f35915c3998dd78f8289d4847f5e6a5f975f014d351601a51788420d6919eb034c448975c7fedf5c8bf84287f482a14489c5b33cd6657de2b4a38eb99b6b58a",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/3603b1603c99572f381b9d68fb93f3d36f35915c3998dd78f8289d4847f5e6a5f975f014d351601a51788420d6919eb034c448975c7fedf5c8bf84287f482a14489c5b33cd6657de2b4a38eb99b6b58a",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/3603b1603c99572f381b9d68fb93f3d36f35915c3998dd78f8289d4847f5e6a5f975f014d351601a51788420d6919eb034c448975c7fedf5c8bf84287f482a14489c5b33cd6657de2b4a38eb99b6b58a",
+                "width": 60
+            }
+        ],
+        "name": "Bachata",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "ODAsMzcwZDM1ZjVkNjY4YmMyMmM3MTU2NjdkMWIxYzUxOTcyZGQ1ZTgzOQ==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/14S9XPyOhrNLkgsYapWO4R/tracks",
+            "total": 23
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:14S9XPyOhrNLkgsYapWO4R"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/5H8z9z10AdFscu3zgFMtUs"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5H8z9z10AdFscu3zgFMtUs",
+        "id": "5H8z9z10AdFscu3zgFMtUs",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/24138579eae01fad78c54cbaa22901ded90c806649e3ae91c86a8d939d565b08c9d0fbbe5c1488467141681d8caa9016998072da17543d05e3f007357a5055664f8306a2c87b918b14ba4c5c62301605",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/24138579eae01fad78c54cbaa22901ded90c806649e3ae91c86a8d939d565b08c9d0fbbe5c1488467141681d8caa9016998072da17543d05e3f007357a5055664f8306a2c87b918b14ba4c5c62301605",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/24138579eae01fad78c54cbaa22901ded90c806649e3ae91c86a8d939d565b08c9d0fbbe5c1488467141681d8caa9016998072da17543d05e3f007357a5055664f8306a2c87b918b14ba4c5c62301605",
+                "width": 60
+            }
+        ],
+        "name": "Pop Heaven",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTg1LDMzNTY1ZGEyZTVkMzJlY2VkM2FlM2I5MGUzMzA2ZTZjNzk4MTViNzM=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/5H8z9z10AdFscu3zgFMtUs/tracks",
+            "total": 28
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5H8z9z10AdFscu3zgFMtUs"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/6SbmenMKRbXDLbzV9cpmMB"
+        },
+        "href": "https://api.spotify.com/v1/playlists/6SbmenMKRbXDLbzV9cpmMB",
+        "id": "6SbmenMKRbXDLbzV9cpmMB",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/7e0c70ec19bcfaf07ad9204ef4a2b425aa0dc99f",
+                "width": 640
+            }
+        ],
+        "name": "Graceland",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "OSxhM2VmNzZhYjQ2ZDBiZWE4NWZkNmFmNWU4Mjc3ZmVhMTYwYzYzNzQz",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/6SbmenMKRbXDLbzV9cpmMB/tracks",
+            "total": 11
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:6SbmenMKRbXDLbzV9cpmMB"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/6NPJ9oT2yzb22ki3Tpycjs"
+        },
+        "href": "https://api.spotify.com/v1/playlists/6NPJ9oT2yzb22ki3Tpycjs",
+        "id": "6NPJ9oT2yzb22ki3Tpycjs",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/a072558e09be3cda4db32fb7581adca9d547c415",
+                "width": 640
+            }
+        ],
+        "name": "Cardi",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MjAsMTEzZjVmODY1Nzg2YTNjY2FiNWJkMzg5NWZlYjBmN2UxYjg3ZTJlMg==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/6NPJ9oT2yzb22ki3Tpycjs/tracks",
+            "total": 11
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:6NPJ9oT2yzb22ki3Tpycjs"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/0A56BgwQ88zncNov5jkNyS"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0A56BgwQ88zncNov5jkNyS",
+        "id": "0A56BgwQ88zncNov5jkNyS",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/e92546597695e27639cc50c875905b9e1f7c0922",
+                "width": 640
+            }
+        ],
+        "name": "Moana",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTMsODgyNGVmYjRkNjdlNmVlNWNlZDViOWRmMzlkZGMyNjU4NDU1NzZiOA==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/0A56BgwQ88zncNov5jkNyS/tracks",
+            "total": 7
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0A56BgwQ88zncNov5jkNyS"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/77q8oR42Cznwj1rPWjEmkt"
+        },
+        "href": "https://api.spotify.com/v1/playlists/77q8oR42Cznwj1rPWjEmkt",
+        "id": "77q8oR42Cznwj1rPWjEmkt",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/7a5055664f8306a2c87b918b14ba4c5c62301605",
+                "width": 640
+            }
+        ],
+        "name": "Nowadays",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "NjUsYWNiYzM2MDE3YmUzODEwMTRmZDliYjg4MzgzNWRmZGY4ZTRiZjVjMg==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/77q8oR42Cznwj1rPWjEmkt/tracks",
+            "total": 5
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:77q8oR42Cznwj1rPWjEmkt"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/5luEQGYWcAlNAMfoyEk20P"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5luEQGYWcAlNAMfoyEk20P",
+        "id": "5luEQGYWcAlNAMfoyEk20P",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/575285695527d56c550b3b9b82c2b285e1b1cc89",
+                "width": 640
+            }
+        ],
+        "name": "Mamma Mia",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTksMGI0MjE3MzE1OGE0NWI2MWFlYWY0NGU2MjJjNmQzNmNjMzQwMGQzMQ==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/5luEQGYWcAlNAMfoyEk20P/tracks",
+            "total": 11
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5luEQGYWcAlNAMfoyEk20P"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/3SvoQlsPLcEusOWsL4FBfQ"
+        },
+        "href": "https://api.spotify.com/v1/playlists/3SvoQlsPLcEusOWsL4FBfQ",
+        "id": "3SvoQlsPLcEusOWsL4FBfQ",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/3aa37254a41cf96e81572524ec523cb870f2bb897572ec4bb0371e2b7f78448ade9d61697d9b5c70a41e0fdc763ec7b7e4cad6d4ae7ccc1116936a12e29507975aac2afafe5e5be5d1744723f799c745",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/3aa37254a41cf96e81572524ec523cb870f2bb897572ec4bb0371e2b7f78448ade9d61697d9b5c70a41e0fdc763ec7b7e4cad6d4ae7ccc1116936a12e29507975aac2afafe5e5be5d1744723f799c745",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/3aa37254a41cf96e81572524ec523cb870f2bb897572ec4bb0371e2b7f78448ade9d61697d9b5c70a41e0fdc763ec7b7e4cad6d4ae7ccc1116936a12e29507975aac2afafe5e5be5d1744723f799c745",
+                "width": 60
+            }
+        ],
+        "name": "Consent",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "NTAsNWFkZDdlM2NhYzU5MWZhNGRkZjUzNDRlMzUyNDBlMWE4NWJjYWJiMg==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/3SvoQlsPLcEusOWsL4FBfQ/tracks",
+            "total": 10
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:3SvoQlsPLcEusOWsL4FBfQ"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37x1zx2ouQZamBgqlUbkhE"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37x1zx2ouQZamBgqlUbkhE",
+        "id": "37x1zx2ouQZamBgqlUbkhE",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/4b35bd1ce16b8bf1aa68d416d598c026f5935145699818ea7635b25d277861b9ec40602965efd1a3a54c9b23830ae356954fd22971897cd058f6cc80cbc95e81b0bfdb4301ccada5ca56b998d2d8355b",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/4b35bd1ce16b8bf1aa68d416d598c026f5935145699818ea7635b25d277861b9ec40602965efd1a3a54c9b23830ae356954fd22971897cd058f6cc80cbc95e81b0bfdb4301ccada5ca56b998d2d8355b",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/4b35bd1ce16b8bf1aa68d416d598c026f5935145699818ea7635b25d277861b9ec40602965efd1a3a54c9b23830ae356954fd22971897cd058f6cc80cbc95e81b0bfdb4301ccada5ca56b998d2d8355b",
+                "width": 60
+            }
+        ],
+        "name": "K Pop",
+        "owner": {
+            "display_name": "Leah",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+            },
+            "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+            "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+            "type": "user",
+            "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTMsZGM5YjljY2Q3N2NiNWQ1NGNiZjU4NDY0ZDdmYzk2OGZmMTMxNzRmOA==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/37x1zx2ouQZamBgqlUbkhE/tracks",
+            "total": 5
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37x1zx2ouQZamBgqlUbkhE"
+    }
+]

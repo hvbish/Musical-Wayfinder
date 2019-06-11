@@ -1,0 +1,1346 @@
+[
+    {
+        "name": "Nices W\u00f6lkchen",
+        "uri": "spotify:track:78WXbs2VMEGYXoGPyokKXZ",
+        "date": "2019-06-08T08:59:28.357Z",
+        "genres": [
+            "alternative dance",
+            "deep house",
+            "electronic",
+            "float house",
+            "german techno",
+            "hamburg electronic",
+            "indietronica",
+            "microhouse",
+            "minimal techno",
+            "tech house",
+            "chamber pop",
+            "electronic",
+            "glitch",
+            "indietronica",
+            "microhouse",
+            "minimal techno"
+        ],
+        "artists": [
+            "DJ Koze",
+            "Apparat"
+        ],
+        "energy": 0.387,
+        "liveness": 0.219,
+        "speechiness": 0.0566,
+        "acousticness": 0.24,
+        "instrumentalness": 0.891,
+        "danceability": 0.7,
+        "loudness": -12.855,
+        "valence": 0.165,
+        "tempo": 120.008,
+        "popularity": 43.0
+    },
+    {
+        "name": "harutosyura",
+        "uri": "spotify:track:3Gqon3Og4agJcIzjwzs2o9",
+        "date": "2019-06-08T08:53:56.811Z",
+        "genres": [
+            "escape room",
+            "hyperpop"
+        ],
+        "artists": [
+            "harunemuri"
+        ],
+        "energy": 0.706,
+        "liveness": 0.333,
+        "speechiness": 0.0851,
+        "acousticness": 0.0417,
+        "instrumentalness": 0.0363,
+        "danceability": 0.249,
+        "loudness": -4.197,
+        "valence": 0.552,
+        "tempo": 187.779,
+        "popularity": 34.0
+    },
+    {
+        "name": "Strings of Light",
+        "uri": "spotify:track:5qvWkedmBEzaM4C5Sxpsqm",
+        "date": "2019-06-08T08:47:49.624Z",
+        "genres": [
+            "contemporary jazz",
+            "indie jazz"
+        ],
+        "artists": [
+            "Yussef Kamaal"
+        ],
+        "energy": 0.792,
+        "liveness": 0.342,
+        "speechiness": 0.0662,
+        "acousticness": 0.00407,
+        "instrumentalness": 0.792,
+        "danceability": 0.359,
+        "loudness": -8.921,
+        "valence": 0.442,
+        "tempo": 144.967,
+        "popularity": 38.0
+    },
+    {
+        "name": "\u30e2\u30b9\u30ad\u30fc\u30c8\u30f3\u306f\u3082\u3046\u805e\u3053\u3048\u306a\u3044#2",
+        "uri": "spotify:track:7wY4Q5xH36mFdN4xAQ5Vyd",
+        "date": "2019-06-08T08:38:34.579Z",
+        "genres": [
+            "instrumental math rock",
+            "instrumental post-rock",
+            "japanese math rock",
+            "japanese post-rock",
+            "midwest emo",
+            "post-rock"
+        ],
+        "artists": [
+            "toe"
+        ],
+        "energy": 0.69,
+        "liveness": 0.299,
+        "speechiness": 0.029,
+        "acousticness": 0.224,
+        "instrumentalness": 0.623,
+        "danceability": 0.441,
+        "loudness": -10.17,
+        "valence": 0.421,
+        "tempo": 149.947,
+        "popularity": 29.0
+    },
+    {
+        "name": "Clock Catcher",
+        "uri": "spotify:track:3C1z7AyGWhSNITaiz5tgws",
+        "date": "2019-06-08T08:35:13.026Z",
+        "genres": [
+            "alternative hip hop",
+            "escape room",
+            "experimental hip hop",
+            "glitch",
+            "glitch hop",
+            "hip hop",
+            "indietronica",
+            "intelligent dance music",
+            "wonky"
+        ],
+        "artists": [
+            "Flying Lotus"
+        ],
+        "energy": 0.708,
+        "liveness": 0.596,
+        "speechiness": 0.221,
+        "acousticness": 0.192,
+        "instrumentalness": 0.148,
+        "danceability": 0.423,
+        "loudness": -5.876,
+        "valence": 0.149,
+        "tempo": 93.7,
+        "popularity": 39.0
+    },
+    {
+        "name": "Oracle",
+        "uri": "spotify:track:6tXJ00czWVqCFUvWiBv7wX",
+        "date": "2019-06-08T08:31:30.282Z",
+        "genres": [
+            "fremantle indie"
+        ],
+        "artists": [
+            "Lower Spectrum"
+        ],
+        "energy": 0.423,
+        "liveness": 0.134,
+        "speechiness": 0.0342,
+        "acousticness": 0.726,
+        "instrumentalness": 0.856,
+        "danceability": 0.381,
+        "loudness": -8.09,
+        "valence": 0.265,
+        "tempo": 116.206,
+        "popularity": 30.0
+    },
+    {
+        "name": "Broken Clouds",
+        "uri": "spotify:track:7q0OGG60Em2wwPNDpBFPGy",
+        "date": "2019-06-08T08:27:12.771Z",
+        "genres": [
+            "float house",
+            "shoegaze"
+        ],
+        "artists": [
+            "Gaussian Curve"
+        ],
+        "energy": 0.196,
+        "liveness": 0.0737,
+        "speechiness": 0.0289,
+        "acousticness": 0.973,
+        "instrumentalness": 0.927,
+        "danceability": 0.481,
+        "loudness": -18.581,
+        "valence": 0.198,
+        "tempo": 171.383,
+        "popularity": 39.0
+    },
+    {
+        "name": "Alive",
+        "uri": "spotify:track:0dFu3OwW6GGO0MrkNeuN66",
+        "date": "2019-06-08T08:20:58.539Z",
+        "genres": [
+            "art pop",
+            "bass music",
+            "chamber psych",
+            "escape room",
+            "experimental pop",
+            "fluxwork",
+            "indie r&b"
+        ],
+        "artists": [
+            "Arca"
+        ],
+        "energy": 0.848,
+        "liveness": 0.303,
+        "speechiness": 0.121,
+        "acousticness": 0.0408,
+        "instrumentalness": 0.118,
+        "danceability": 0.405,
+        "loudness": -6.958,
+        "valence": 0.353,
+        "tempo": 120.0,
+        "popularity": 20.0
+    },
+    {
+        "name": "Dropp",
+        "uri": "spotify:track:0dg5pMLb7Ce0Dww4ZG8bop",
+        "date": "2019-06-08T08:17:01.367Z",
+        "genres": [
+            "underground hip hop",
+            "vapor twitch",
+            "vaporwave",
+            "wave"
+        ],
+        "artists": [
+            "Suicideyear"
+        ],
+        "energy": 0.641,
+        "liveness": 0.206,
+        "speechiness": 0.0261,
+        "acousticness": 0.00206,
+        "instrumentalness": 0.928,
+        "danceability": 0.553,
+        "loudness": -8.002,
+        "valence": 0.156,
+        "tempo": 134.981,
+        "popularity": 14.0
+    },
+    {
+        "name": "Whip",
+        "uri": "spotify:track:29BE4bBrio1O4BD5FQkvTz",
+        "date": "2019-06-08T08:12:55.546Z",
+        "genres": [
+            "art pop",
+            "bass music",
+            "chamber psych",
+            "escape room",
+            "experimental pop",
+            "fluxwork",
+            "indie r&b"
+        ],
+        "artists": [
+            "Arca"
+        ],
+        "energy": 0.573,
+        "liveness": 0.343,
+        "speechiness": 0.496,
+        "acousticness": 0.0894,
+        "instrumentalness": 0.659,
+        "danceability": 0.564,
+        "loudness": -11.451,
+        "valence": 0.153,
+        "tempo": 139.612,
+        "popularity": 27.0
+    },
+    {
+        "name": "Dragonflies to Sew You Up",
+        "uri": "spotify:track:2yr8zjsYtBAeZwpvQYC66k",
+        "date": "2019-06-08T08:11:34.290Z",
+        "genres": [
+            "noise",
+            "power electronics"
+        ],
+        "artists": [
+            "Prurient"
+        ],
+        "energy": 0.995,
+        "liveness": 0.221,
+        "speechiness": 0.0493,
+        "acousticness": 0.00802,
+        "instrumentalness": 0.177,
+        "danceability": 0.498,
+        "loudness": -6.11,
+        "valence": 0.339,
+        "tempo": 148.241,
+        "popularity": 17.0
+    },
+    {
+        "name": "zzz pt.\u2170i",
+        "uri": "spotify:track:7qfM88W6tTa7VtAAoDZ90j",
+        "date": "2019-06-08T07:38:59.470Z",
+        "genres": [
+            "escape room",
+            "hyperpop"
+        ],
+        "artists": [
+            "harunemuri"
+        ],
+        "energy": 0.839,
+        "liveness": 0.187,
+        "speechiness": 0.0507,
+        "acousticness": 0.0493,
+        "instrumentalness": 0.889,
+        "danceability": 0.65,
+        "loudness": -13.665,
+        "valence": 0.594,
+        "tempo": 100.084,
+        "popularity": 28.0
+    },
+    {
+        "name": "Not Abel",
+        "uri": "spotify:track:4Wlc4HWWvOmsJrF8a4rRqK",
+        "date": "2019-06-08T07:37:20.285Z",
+        "genres": [
+            "alternative emo",
+            "anti-folk",
+            "art pop",
+            "chamber pop",
+            "emo",
+            "folk punk",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie punk",
+            "indie rock",
+            "lo-fi",
+            "modern rock",
+            "philly indie",
+            "preverb",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Hop Along"
+        ],
+        "energy": 0.519,
+        "liveness": 0.084,
+        "speechiness": 0.0357,
+        "acousticness": 0.294,
+        "instrumentalness": 3.2e-06,
+        "danceability": 0.467,
+        "loudness": -8.38,
+        "valence": 0.461,
+        "tempo": 120.958,
+        "popularity": 39.0
+    },
+    {
+        "name": "I, U, Us - Murlo Remix",
+        "uri": "spotify:track:3HROuMG2ldbH3rYSyLnh1y",
+        "date": "2019-06-08T07:32:42.659Z",
+        "genres": [
+            "dance pop",
+            "house",
+            "indie r&b",
+            "pop",
+            "post-teen pop",
+            "tropical house",
+            "uk contemporary r&b",
+            "uk pop",
+            "bass music",
+            "escape room",
+            "fluxwork",
+            "future garage",
+            "hyperpop"
+        ],
+        "artists": [
+            "RAYE",
+            "Murlo"
+        ],
+        "energy": 0.745,
+        "liveness": 0.101,
+        "speechiness": 0.0614,
+        "acousticness": 0.194,
+        "instrumentalness": 0.134,
+        "danceability": 0.789,
+        "loudness": -6.577,
+        "valence": 0.682,
+        "tempo": 130.07,
+        "popularity": 2.0
+    },
+    {
+        "name": "Brain Fritta",
+        "uri": "spotify:track:5Q0rDlHjwuev5OoO7E97Ab",
+        "date": "2019-06-08T07:23:17.548Z",
+        "genres": [
+            "escape room",
+            "fluxwork",
+            "hyperpop"
+        ],
+        "artists": [
+            "Kai Whiston"
+        ],
+        "energy": 0.871,
+        "liveness": 0.168,
+        "speechiness": 0.195,
+        "acousticness": 0.0107,
+        "instrumentalness": 0.0268,
+        "danceability": 0.566,
+        "loudness": -6.99,
+        "valence": 0.441,
+        "tempo": 140.902,
+        "popularity": 20.0
+    },
+    {
+        "name": "Yellow Gum",
+        "uri": "spotify:track:0v6HVaWCMdZUeJVw72E4Zn",
+        "date": "2019-06-08T07:20:13.594Z",
+        "genres": [
+            "escape room",
+            "hyperpop",
+            "vaporwave",
+            "wonky"
+        ],
+        "artists": [
+            "Iglooghost"
+        ],
+        "energy": 0.939,
+        "liveness": 0.363,
+        "speechiness": 0.212,
+        "acousticness": 0.0418,
+        "instrumentalness": 0.0804,
+        "danceability": 0.589,
+        "loudness": -7.035,
+        "valence": 0.599,
+        "tempo": 160.157,
+        "popularity": 14.0
+    },
+    {
+        "name": "Hyperballad (feat. Jana Hunter)",
+        "uri": "spotify:track:10nhAlPLkUVSCce5evsZWn",
+        "date": "2019-06-08T07:17:43.027Z",
+        "genres": [
+            "bass music",
+            "future garage",
+            "vapor house",
+            "freak folk",
+            "new weird america"
+        ],
+        "artists": [
+            "Jim-E Stack",
+            "Jana Hunter"
+        ],
+        "energy": 0.715,
+        "liveness": 0.0852,
+        "speechiness": 0.0456,
+        "acousticness": 0.159,
+        "instrumentalness": 0.00323,
+        "danceability": 0.618,
+        "loudness": -6.579,
+        "valence": 0.195,
+        "tempo": 141.019,
+        "popularity": 14.0
+    },
+    {
+        "name": "Galaxy Wars",
+        "uri": "spotify:track:1FRnIWyCmEk38q1TsZhlCA",
+        "date": "2019-06-08T07:14:18.907Z",
+        "genres": [
+            "vapor twitch"
+        ],
+        "artists": [
+            "Evil Needle"
+        ],
+        "energy": 0.9,
+        "liveness": 0.0779,
+        "speechiness": 0.0387,
+        "acousticness": 0.000539,
+        "instrumentalness": 0.902,
+        "danceability": 0.48,
+        "loudness": -6.756,
+        "valence": 0.523,
+        "tempo": 142.049,
+        "popularity": 28.0
+    },
+    {
+        "name": "Tempest",
+        "uri": "spotify:track:1vVTkRROkvHBPfvvypB4DM",
+        "date": "2019-06-08T07:10:15.112Z",
+        "genres": [
+            "bass music",
+            "dubstep",
+            "electronic trap",
+            "escape room",
+            "future garage",
+            "hyperpop",
+            "vapor twitch",
+            "wonky"
+        ],
+        "artists": [
+            "Rustie"
+        ],
+        "energy": 0.597,
+        "liveness": 0.101,
+        "speechiness": 0.0495,
+        "acousticness": 2.26e-05,
+        "instrumentalness": 0.0166,
+        "danceability": 0.192,
+        "loudness": -6.492,
+        "valence": 0.213,
+        "tempo": 122.167,
+        "popularity": 14.0
+    },
+    {
+        "name": "Water Music",
+        "uri": "spotify:track:6PN8bVP6kjAW6UwqileVWR",
+        "date": "2019-06-08T07:08:30.897Z",
+        "genres": [
+            "ambient",
+            "art pop",
+            "chamber psych",
+            "drone",
+            "electra",
+            "fluxwork",
+            "mandible",
+            "new isolationism"
+        ],
+        "artists": [
+            "Kelly Moran"
+        ],
+        "energy": 0.403,
+        "liveness": 0.0852,
+        "speechiness": 0.037,
+        "acousticness": 0.837,
+        "instrumentalness": 0.945,
+        "danceability": 0.258,
+        "loudness": -13.751,
+        "valence": 0.0395,
+        "tempo": 99.589,
+        "popularity": 34.0
+    },
+    {
+        "name": "Mcfunk",
+        "uri": "spotify:track:0DMAStPjIelPgx34AgCs1Y",
+        "date": "2019-06-08T06:59:53.436Z",
+        "genres": [
+            "brostep",
+            "filthstep"
+        ],
+        "artists": [
+            "Culprate"
+        ],
+        "energy": 0.663,
+        "liveness": 0.182,
+        "speechiness": 0.424,
+        "acousticness": 0.0664,
+        "instrumentalness": 0.0277,
+        "danceability": 0.761,
+        "loudness": -6.362,
+        "valence": 0.332,
+        "tempo": 125.046,
+        "popularity": 15.0
+    },
+    {
+        "name": "Oh Devil",
+        "uri": "spotify:track:1kcfGBb6kSrGqNIMW7rAlB",
+        "date": "2019-06-08T06:49:43.672Z",
+        "genres": [
+            "alternative dance",
+            "indie pop",
+            "indie poptimism",
+            "indie rock",
+            "indietronica",
+            "la indie",
+            "modern rock",
+            "shimmer pop",
+            "vapor soul"
+        ],
+        "artists": [
+            "Electric Guest"
+        ],
+        "energy": 0.532,
+        "liveness": 0.176,
+        "speechiness": 0.0593,
+        "acousticness": 0.122,
+        "instrumentalness": 0.0345,
+        "danceability": 0.903,
+        "loudness": -7.188,
+        "valence": 0.701,
+        "tempo": 96.991,
+        "popularity": 58.0
+    },
+    {
+        "name": "Before This",
+        "uri": "spotify:track:5lRWyOsxfxutsWjivp5VDf",
+        "date": "2019-06-08T06:46:04.610Z",
+        "genres": [
+            "grime",
+            "uk alternative hip hop",
+            "uk drill",
+            "uk garage",
+            "uk hip hop"
+        ],
+        "artists": [
+            "LATER",
+            "CASISDEAD"
+        ],
+        "energy": 0.618,
+        "liveness": 0.103,
+        "speechiness": 0.116,
+        "acousticness": 0.0334,
+        "instrumentalness": 1.78e-05,
+        "danceability": 0.795,
+        "loudness": -7.546,
+        "valence": 0.556,
+        "tempo": 93.983,
+        "popularity": 43.0
+    },
+    {
+        "name": "Stadiums And Shrines II",
+        "uri": "spotify:track:13bKFLHeZwhWPXzGkq5dWe",
+        "date": "2019-06-08T06:40:27.181Z",
+        "genres": [
+            "chamber pop",
+            "freak folk",
+            "indie pop",
+            "indie rock",
+            "quebec indie",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sunset Rubdown",
+            "Spencer Krug of Wolf Parade"
+        ],
+        "energy": 0.667,
+        "liveness": 0.279,
+        "speechiness": 0.0363,
+        "acousticness": 0.0759,
+        "instrumentalness": 0.00189,
+        "danceability": 0.195,
+        "loudness": -5.377,
+        "valence": 0.197,
+        "tempo": 165.228,
+        "popularity": 31.0
+    },
+    {
+        "name": "Whale",
+        "uri": "spotify:track:6lYdogFQrBBmByBqgkr0jW",
+        "date": "2019-06-08T06:36:29.487Z",
+        "genres": [
+            "alternative rock",
+            "anti-folk",
+            "art pop",
+            "dream pop",
+            "freak folk",
+            "garage psych",
+            "indie folk",
+            "indie garage rock",
+            "indie punk",
+            "indie rock",
+            "lo-fi",
+            "noise pop",
+            "philly indie",
+            "preverb",
+            "slow core"
+        ],
+        "artists": [
+            "(Sandy) Alex G"
+        ],
+        "energy": 0.39,
+        "liveness": 0.125,
+        "speechiness": 0.0481,
+        "acousticness": 0.902,
+        "instrumentalness": 0.942,
+        "danceability": 0.76,
+        "loudness": -10.151,
+        "valence": 0.47,
+        "tempo": 112.76,
+        "popularity": 28.0
+    },
+    {
+        "name": "Ted (Bibio Remix)",
+        "uri": "spotify:track:1EQuf1dflSSt3HfUNIOzDM",
+        "date": "2019-06-08T06:31:05.202Z",
+        "genres": [
+            "bass music",
+            "drill and bass",
+            "electronic",
+            "intelligent dance music",
+            "microhouse",
+            "minimal techno",
+            "ninja",
+            "trip hop",
+            "wonky",
+            "ambient folk",
+            "chamber pop",
+            "chillwave",
+            "downtempo",
+            "folktronica",
+            "indie folk",
+            "indie pop",
+            "indietronica"
+        ],
+        "artists": [
+            "Clark",
+            "Bibio"
+        ],
+        "energy": 0.626,
+        "liveness": 0.187,
+        "speechiness": 0.0336,
+        "acousticness": 0.839,
+        "instrumentalness": 0.933,
+        "danceability": 0.395,
+        "loudness": -9.942,
+        "valence": 0.435,
+        "tempo": 110.822,
+        "popularity": 35.0
+    },
+    {
+        "name": "Nose Art",
+        "uri": "spotify:track:1yPmVRjVjyJ9CPVlXx5Wfb",
+        "date": "2019-06-08T06:26:37.493Z",
+        "genres": [
+            "alternative hip hop",
+            "escape room",
+            "experimental hip hop",
+            "glitch",
+            "glitch hop",
+            "hip hop",
+            "indietronica",
+            "intelligent dance music",
+            "wonky"
+        ],
+        "artists": [
+            "Flying Lotus"
+        ],
+        "energy": 0.989,
+        "liveness": 0.0991,
+        "speechiness": 0.317,
+        "acousticness": 0.000613,
+        "instrumentalness": 0.00167,
+        "danceability": 0.685,
+        "loudness": -3.211,
+        "valence": 0.522,
+        "tempo": 76.972,
+        "popularity": 38.0
+    },
+    {
+        "name": "Naomi",
+        "uri": "spotify:track:64uuKDv6dm6PuUOA3PBQaS",
+        "date": "2019-06-08T06:24:17.510Z",
+        "genres": [
+            "alternative rock",
+            "anti-folk",
+            "athens indie",
+            "chamber pop",
+            "e6fi",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "lo-fi",
+            "modern rock",
+            "noise pop",
+            "rock",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Neutral Milk Hotel"
+        ],
+        "energy": 0.481,
+        "liveness": 0.253,
+        "speechiness": 0.0361,
+        "acousticness": 0.0202,
+        "instrumentalness": 3.1e-06,
+        "danceability": 0.122,
+        "loudness": -11.713,
+        "valence": 0.316,
+        "tempo": 175.238,
+        "popularity": 40.0
+    },
+    {
+        "name": "Jaz (Kosi Edit) - mixed",
+        "uri": "spotify:track:4DE7QZ0PGMmwsvofw1txUa",
+        "date": "2019-06-08T06:16:02.158Z",
+        "genres": [
+            "german techno",
+            "minimal dub"
+        ],
+        "artists": [
+            "Marcel Fengler"
+        ],
+        "energy": 0.738,
+        "liveness": 0.143,
+        "speechiness": 0.0564,
+        "acousticness": 0.0582,
+        "instrumentalness": 0.892,
+        "danceability": 0.63,
+        "loudness": -12.683,
+        "valence": 0.403,
+        "tempo": 126.016,
+        "popularity": 25.0
+    },
+    {
+        "name": "First Rain",
+        "uri": "spotify:track:3RoMEppHj4Q80lHLwFx0lp",
+        "date": "2019-06-08T06:09:47.805Z",
+        "genres": [
+            "chillwave",
+            "indie dream pop",
+            "indietronica",
+            "nu gaze",
+            "vancouver indie",
+            "chamber pop",
+            "folk-pop",
+            "indie anthem-folk",
+            "indie folk",
+            "indie pop",
+            "new americana",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Teen Daze",
+            "S. Carey"
+        ],
+        "energy": 0.151,
+        "liveness": 0.307,
+        "speechiness": 0.0352,
+        "acousticness": 0.964,
+        "instrumentalness": 0.503,
+        "danceability": 0.225,
+        "loudness": -16.13,
+        "valence": 0.0517,
+        "tempo": 147.697,
+        "popularity": 34.0
+    },
+    {
+        "name": "Porch Song",
+        "uri": "spotify:track:2HYpEGM5dHSB7nS8zflmnB",
+        "date": "2019-06-08T06:04:56.472Z",
+        "genres": [
+            "preverb"
+        ],
+        "artists": [
+            "Orchid Mantis"
+        ],
+        "energy": 0.749,
+        "liveness": 0.135,
+        "speechiness": 0.0365,
+        "acousticness": 0.0132,
+        "instrumentalness": 0.864,
+        "danceability": 0.492,
+        "loudness": -7.04,
+        "valence": 0.391,
+        "tempo": 79.913,
+        "popularity": 28.0
+    },
+    {
+        "name": "Time Is An Illusion",
+        "uri": "spotify:track:2fCHJlMOE41gB4OcyFjqAN",
+        "date": "2019-06-08T05:58:28.819Z",
+        "genres": [],
+        "artists": [
+            "sage nebulous"
+        ],
+        "energy": 0.81,
+        "liveness": 0.163,
+        "speechiness": 0.0294,
+        "acousticness": 0.217,
+        "instrumentalness": 0.863,
+        "danceability": 0.611,
+        "loudness": -5.247,
+        "valence": 0.0759,
+        "tempo": 119.972,
+        "popularity": 17.0
+    },
+    {
+        "name": "Kieron",
+        "uri": "spotify:track:77HO0pSzi4PqkVWGH8ghQY",
+        "date": "2019-06-08T05:50:11.130Z",
+        "genres": [
+            "abstract beats",
+            "gauze pop"
+        ],
+        "artists": [
+            "Alphabets Heaven"
+        ],
+        "energy": 0.174,
+        "liveness": 0.116,
+        "speechiness": 0.159,
+        "acousticness": 0.984,
+        "instrumentalness": 0.969,
+        "danceability": 0.498,
+        "loudness": -16.99,
+        "valence": 0.225,
+        "tempo": 84.373,
+        "popularity": 1.0
+    },
+    {
+        "name": "Plantasia",
+        "uri": "spotify:track:4CyTrR4c13d57jCVstfS8T",
+        "date": "2019-06-08T05:48:08.384Z",
+        "genres": [
+            "moog",
+            "space age pop"
+        ],
+        "artists": [
+            "Mort Garson"
+        ],
+        "energy": 0.264,
+        "liveness": 0.0975,
+        "speechiness": 0.0375,
+        "acousticness": 0.824,
+        "instrumentalness": 0.0151,
+        "danceability": 0.319,
+        "loudness": -12.552,
+        "valence": 0.214,
+        "tempo": 175.387,
+        "popularity": 48.0
+    },
+    {
+        "name": "Infatuation",
+        "uri": "spotify:track:6pGXRnDKQj7s3uJpjlUaCi",
+        "date": "2019-06-08T05:44:24.642Z",
+        "genres": [
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indietronica"
+        ],
+        "artists": [
+            "SOPHIE"
+        ],
+        "energy": 0.335,
+        "liveness": 0.122,
+        "speechiness": 0.0357,
+        "acousticness": 0.195,
+        "instrumentalness": 0.0208,
+        "danceability": 0.355,
+        "loudness": -10.414,
+        "valence": 0.0395,
+        "tempo": 74.533,
+        "popularity": 34.0
+    },
+    {
+        "name": "With U - Saint Wave Remix",
+        "uri": "spotify:track:4XBcgSTo2tTaKvmG4vfjiI",
+        "date": "2019-06-08T05:12:27.392Z",
+        "genres": [
+            "venezuelan indie"
+        ],
+        "artists": [
+            "Sisah",
+            "Saint Wave"
+        ],
+        "energy": 0.762,
+        "liveness": 0.11,
+        "speechiness": 0.103,
+        "acousticness": 0.1,
+        "instrumentalness": 0.136,
+        "danceability": 0.863,
+        "loudness": -8.885,
+        "valence": 0.436,
+        "tempo": 126.006,
+        "popularity": 1.0
+    },
+    {
+        "name": "Jelly",
+        "uri": "spotify:track:7GMg22u7WN9kVUVFXMOK9N",
+        "date": "2019-06-07T20:14:59.363Z",
+        "genres": [
+            "ambient",
+            "art pop",
+            "bass music",
+            "chamber psych",
+            "drone",
+            "electra",
+            "escape room",
+            "experimental pop",
+            "float house",
+            "fluxwork",
+            "fourth world",
+            "freak folk",
+            "gauze pop",
+            "grave wave",
+            "hauntology",
+            "intelligent dance music",
+            "mandible",
+            "microhouse",
+            "minimal techno",
+            "outsider house",
+            "vaporwave",
+            "witch house",
+            "wonky"
+        ],
+        "artists": [
+            "Laurel Halo"
+        ],
+        "energy": 0.356,
+        "liveness": 0.115,
+        "speechiness": 0.264,
+        "acousticness": 0.698,
+        "instrumentalness": 0.0389,
+        "danceability": 0.649,
+        "loudness": -11.721,
+        "valence": 0.519,
+        "tempo": 119.596,
+        "popularity": 19.0
+    },
+    {
+        "name": "Proud",
+        "uri": "spotify:track:4KR63gvXkWXu0ldCcCAUJC",
+        "date": "2019-06-07T20:07:40.071Z",
+        "genres": [
+            "bass music",
+            "fluxwork",
+            "minimal dubstep",
+            "vogue"
+        ],
+        "artists": [
+            "Jam City"
+        ],
+        "energy": 0.252,
+        "liveness": 0.108,
+        "speechiness": 0.0313,
+        "acousticness": 0.643,
+        "instrumentalness": 0.855,
+        "danceability": 0.526,
+        "loudness": -12.158,
+        "valence": 0.145,
+        "tempo": 80.01,
+        "popularity": 24.0
+    },
+    {
+        "name": "Bonfire",
+        "uri": "spotify:track:3cD60ehaYbqG5wd86xWPeG",
+        "date": "2019-06-07T20:02:38.925Z",
+        "genres": [
+            "alternative dance",
+            "deep house",
+            "electronic",
+            "float house",
+            "german techno",
+            "hamburg electronic",
+            "indietronica",
+            "microhouse",
+            "minimal techno",
+            "tech house"
+        ],
+        "artists": [
+            "DJ Koze"
+        ],
+        "energy": 0.459,
+        "liveness": 0.251,
+        "speechiness": 0.0783,
+        "acousticness": 0.0849,
+        "instrumentalness": 0.093,
+        "danceability": 0.594,
+        "loudness": -10.061,
+        "valence": 0.461,
+        "tempo": 120.94,
+        "popularity": 41.0
+    },
+    {
+        "name": "White Fire",
+        "uri": "spotify:track:7CoF39jL1rsYdbzsqNfRna",
+        "date": "2019-06-07T19:57:13.440Z",
+        "genres": [
+            "alternative americana",
+            "art pop",
+            "chamber pop",
+            "dream pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "lo-fi",
+            "modern rock",
+            "preverb",
+            "slow core",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Angel Olsen"
+        ],
+        "energy": 0.0694,
+        "liveness": 0.111,
+        "speechiness": 0.0413,
+        "acousticness": 0.882,
+        "instrumentalness": 0.000204,
+        "danceability": 0.243,
+        "loudness": -18.86,
+        "valence": 0.0873,
+        "tempo": 173.305,
+        "popularity": 37.0
+    },
+    {
+        "name": "Setsuko",
+        "uri": "spotify:track:2KwmBHJmKzCKvSJwOwNBdB",
+        "date": "2019-06-07T19:50:17.142Z",
+        "genres": [
+            "grimewave"
+        ],
+        "artists": [
+            "Odeko"
+        ],
+        "energy": 0.481,
+        "liveness": 0.0842,
+        "speechiness": 0.0587,
+        "acousticness": 0.00895,
+        "instrumentalness": 0.583,
+        "danceability": 0.525,
+        "loudness": -9.919,
+        "valence": 0.0372,
+        "tempo": 119.883,
+        "popularity": 14.0
+    },
+    {
+        "name": "Rhapsody in Green",
+        "uri": "spotify:track:0e6CAQsSJ7wneNwVtG4rOX",
+        "date": "2019-06-07T19:43:48.532Z",
+        "genres": [
+            "moog",
+            "space age pop"
+        ],
+        "artists": [
+            "Mort Garson"
+        ],
+        "energy": 0.157,
+        "liveness": 0.0781,
+        "speechiness": 0.0444,
+        "acousticness": 0.966,
+        "instrumentalness": 0.874,
+        "danceability": 0.207,
+        "loudness": -18.271,
+        "valence": 0.116,
+        "tempo": 64.386,
+        "popularity": 42.0
+    },
+    {
+        "name": "A sodium codec haze",
+        "uri": "spotify:track:2OWGL3eh5zZs3DYCdXak2W",
+        "date": "2019-06-07T19:40:20.493Z",
+        "genres": [
+            "ambient",
+            "art pop",
+            "art rock",
+            "bass music",
+            "canadian experimental",
+            "chamber pop",
+            "chamber psych",
+            "compositional ambient",
+            "dark jazz",
+            "dream pop",
+            "drift",
+            "drone",
+            "electronic",
+            "escape room",
+            "experimental",
+            "experimental rock",
+            "fluxwork",
+            "fourth world",
+            "freak folk",
+            "intelligent dance music",
+            "mandible",
+            "microhouse",
+            "noise pop",
+            "noise rock",
+            "outsider house",
+            "post-rock",
+            "shoegaze",
+            "slow core",
+            "vaporwave",
+            "warm drone"
+        ],
+        "artists": [
+            "Tim Hecker"
+        ],
+        "energy": 0.526,
+        "liveness": 0.0859,
+        "speechiness": 0.0485,
+        "acousticness": 0.535,
+        "instrumentalness": 0.949,
+        "danceability": 0.0633,
+        "loudness": -11.903,
+        "valence": 0.0349,
+        "tempo": 60.837,
+        "popularity": 27.0
+    },
+    {
+        "name": "Break Yo Back",
+        "uri": "spotify:track:7syPRSG3Pf0PhXHqQdBLkO",
+        "date": "2019-06-07T08:11:58.057Z",
+        "genres": [
+            "underground hip hop"
+        ],
+        "artists": [
+            "Antwon"
+        ],
+        "energy": 0.796,
+        "liveness": 0.559,
+        "speechiness": 0.385,
+        "acousticness": 0.0856,
+        "instrumentalness": 0.000136,
+        "danceability": 0.586,
+        "loudness": -6.616,
+        "valence": 0.802,
+        "tempo": 93.085,
+        "popularity": 9.0
+    },
+    {
+        "name": "Hi-Five",
+        "uri": "spotify:track:7inu1HpHj5t18npErmMVld",
+        "date": "2019-06-07T08:05:11.971Z",
+        "genres": [
+            "alternative americana",
+            "art pop",
+            "chamber pop",
+            "dream pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "lo-fi",
+            "modern rock",
+            "preverb",
+            "slow core",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Angel Olsen"
+        ],
+        "energy": 0.574,
+        "liveness": 0.142,
+        "speechiness": 0.0467,
+        "acousticness": 0.0443,
+        "instrumentalness": 0.00826,
+        "danceability": 0.514,
+        "loudness": -7.224,
+        "valence": 0.369,
+        "tempo": 125.389,
+        "popularity": 39.0
+    },
+    {
+        "name": "Le belv\u00e9d\u00e8re",
+        "uri": "spotify:track:0ztTnwHnyIqU1KfeHnvWMS",
+        "date": "2019-06-07T08:02:13.965Z",
+        "genres": [],
+        "artists": [
+            "PAVANE"
+        ],
+        "energy": 0.696,
+        "liveness": 0.288,
+        "speechiness": 0.0434,
+        "acousticness": 0.469,
+        "instrumentalness": 0.656,
+        "danceability": 0.661,
+        "loudness": -9.252,
+        "valence": 0.0944,
+        "tempo": 119.98,
+        "popularity": 30.0
+    },
+    {
+        "name": "Slow Jam",
+        "uri": "spotify:track:6bRycYKCjJ2GeIsMJWgSg4",
+        "date": "2019-06-07T07:56:40.960Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "chamber psych",
+            "electra",
+            "electropop",
+            "escape room",
+            "experimental pop",
+            "fluxwork",
+            "indie r&b",
+            "indietronica",
+            "uk contemporary r&b"
+        ],
+        "artists": [
+            "Tirzah"
+        ],
+        "energy": 0.455,
+        "liveness": 0.151,
+        "speechiness": 0.147,
+        "acousticness": 0.756,
+        "instrumentalness": 0.0581,
+        "danceability": 0.452,
+        "loudness": -8.244,
+        "valence": 0.441,
+        "tempo": 92.994,
+        "popularity": 30.0
+    },
+    {
+        "name": "Maiden Voyage",
+        "uri": "spotify:track:7q0HsAuyuwHNvwHaBCt29Z",
+        "date": "2019-06-07T07:52:24.750Z",
+        "genres": [
+            "art pop",
+            "bass music",
+            "chamber psych",
+            "escape room",
+            "experimental pop",
+            "fluxwork",
+            "indie r&b"
+        ],
+        "artists": [
+            "Arca"
+        ],
+        "energy": 0.461,
+        "liveness": 0.0956,
+        "speechiness": 0.194,
+        "acousticness": 0.309,
+        "instrumentalness": 0.000297,
+        "danceability": 0.415,
+        "loudness": -15.262,
+        "valence": 0.251,
+        "tempo": 83.572,
+        "popularity": 26.0
+    },
+    {
+        "name": "About You",
+        "uri": "spotify:track:4V89IXbcngfalUVUm21GNM",
+        "date": "2019-06-07T07:46:18.004Z",
+        "genres": [
+            "wonky"
+        ],
+        "artists": [
+            "xxyyxx"
+        ],
+        "energy": 0.082,
+        "liveness": 0.111,
+        "speechiness": 0.0412,
+        "acousticness": 0.612,
+        "instrumentalness": 0.202,
+        "danceability": 0.374,
+        "loudness": -11.402,
+        "valence": 0.037,
+        "tempo": 91.428,
+        "popularity": 54.0
+    },
+    {
+        "name": "dutty dancin",
+        "uri": "spotify:track:109RDc1JiuuP4Y2e7HfTf9",
+        "date": "2019-06-07T07:39:14.876Z",
+        "genres": [],
+        "artists": [
+            "Isaacjacuzzi"
+        ],
+        "energy": 0.525,
+        "liveness": 0.143,
+        "speechiness": 0.0629,
+        "acousticness": 0.241,
+        "instrumentalness": 4.22e-05,
+        "danceability": 0.764,
+        "loudness": -7.736,
+        "valence": 0.131,
+        "tempo": 125.056,
+        "popularity": 25.0
+    }
+]

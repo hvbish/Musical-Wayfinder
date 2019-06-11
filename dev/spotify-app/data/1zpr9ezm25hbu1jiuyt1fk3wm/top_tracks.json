@@ -1,0 +1,3655 @@
+{
+    "short_term": [
+        {
+            "name": "Bambina",
+            "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.538,
+            "liveness": 0.203,
+            "speechiness": 0.124,
+            "acousticness": 0.266,
+            "instrumentalness": 0.000187,
+            "danceability": 0.511,
+            "loudness": -6.185,
+            "valence": 0.425,
+            "tempo": 148.648,
+            "popularity": 68.0
+        },
+        {
+            "name": "Harmony Hall",
+            "uri": "spotify:track:39exKIvycQDgs4T6uXdyu0",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.76,
+            "liveness": 0.0917,
+            "speechiness": 0.0479,
+            "acousticness": 0.475,
+            "instrumentalness": 0.000129,
+            "danceability": 0.653,
+            "loudness": -6.086,
+            "valence": 0.6,
+            "tempo": 98.008,
+            "popularity": 72.0
+        },
+        {
+            "name": "This Life",
+            "uri": "spotify:track:4dRqYKhLVujxiBXcq50YzG",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.712,
+            "liveness": 0.0561,
+            "speechiness": 0.1,
+            "acousticness": 0.228,
+            "instrumentalness": 3.39e-06,
+            "danceability": 0.62,
+            "loudness": -6.434,
+            "valence": 0.83,
+            "tempo": 170.234,
+            "popularity": 73.0
+        },
+        {
+            "name": "How Long?",
+            "uri": "spotify:track:5jd6XPyXSY4jQVG3SlXP1b",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.39,
+            "liveness": 0.127,
+            "speechiness": 0.0392,
+            "acousticness": 0.502,
+            "instrumentalness": 4.81e-05,
+            "danceability": 0.864,
+            "loudness": -7.438,
+            "valence": 0.811,
+            "tempo": 103.948,
+            "popularity": 68.0
+        },
+        {
+            "name": "Que Venga Otra Mujer / Me Gusta Esa Hembra",
+            "uri": "spotify:track:34UzmMdpfYxgglZJVsw4k9",
+            "genres": [],
+            "artists": [
+                "Froilan Jay"
+            ],
+            "energy": 0.666,
+            "liveness": 0.07,
+            "speechiness": 0.0412,
+            "acousticness": 0.169,
+            "instrumentalness": 6.24e-06,
+            "danceability": 0.804,
+            "loudness": -7.206,
+            "valence": 0.966,
+            "tempo": 132.022,
+            "popularity": 5.0
+        },
+        {
+            "name": "Boy With Luv (feat. Halsey)",
+            "uri": "spotify:track:5KawlOMHjWeUjQtnuRs22c",
+            "genres": [
+                "k-pop",
+                "k-pop boy group",
+                "dance pop",
+                "electropop",
+                "etherpop",
+                "indie poptimism",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "BTS",
+                "Halsey"
+            ],
+            "energy": 0.862,
+            "liveness": 0.192,
+            "speechiness": 0.0965,
+            "acousticness": 0.0923,
+            "instrumentalness": 0.0,
+            "danceability": 0.645,
+            "loudness": -4.757,
+            "valence": 0.798,
+            "tempo": 119.991,
+            "popularity": 92.0
+        },
+        {
+            "name": "If You're Over Me",
+            "uri": "spotify:track:01k24g94i1JvkFLQmVEdCd",
+            "genres": [
+                "dance pop",
+                "gauze pop",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "uk pop"
+            ],
+            "artists": [
+                "Years & Years"
+            ],
+            "energy": 0.853,
+            "liveness": 0.062,
+            "speechiness": 0.0904,
+            "acousticness": 0.0615,
+            "instrumentalness": 0.0,
+            "danceability": 0.647,
+            "loudness": -4.516,
+            "valence": 0.618,
+            "tempo": 103.846,
+            "popularity": 74.0
+        },
+        {
+            "name": "Polaroid",
+            "uri": "spotify:track:1wsLHgXJ4SKIfd5ePSX1hD",
+            "genres": [
+                "dance pop",
+                "edm",
+                "pop",
+                "tropical house",
+                "uk dance",
+                "dance pop",
+                "edm",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "canadian pop",
+                "dance pop",
+                "electropop",
+                "indie cafe pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Jonas Blue",
+                "Liam Payne",
+                "Lennon Stella"
+            ],
+            "energy": 0.897,
+            "liveness": 0.0722,
+            "speechiness": 0.036,
+            "acousticness": 0.293,
+            "instrumentalness": 0.0,
+            "danceability": 0.652,
+            "loudness": -4.481,
+            "valence": 0.475,
+            "tempo": 114.033,
+            "popularity": 80.0
+        },
+        {
+            "name": "Big Blue",
+            "uri": "spotify:track:3VORkvig6GJheAu4x3I3oC",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.306,
+            "liveness": 0.0992,
+            "speechiness": 0.0631,
+            "acousticness": 0.818,
+            "instrumentalness": 0.00798,
+            "danceability": 0.691,
+            "loudness": -9.65,
+            "valence": 0.413,
+            "tempo": 149.965,
+            "popularity": 67.0
+        },
+        {
+            "name": "Te Vas",
+            "uri": "spotify:track:4jcMbI9Im6joR0L64QjnYc",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.81,
+            "liveness": 0.195,
+            "speechiness": 0.0339,
+            "acousticness": 0.327,
+            "instrumentalness": 0.0,
+            "danceability": 0.75,
+            "loudness": -3.636,
+            "valence": 0.84,
+            "tempo": 143.91,
+            "popularity": 47.0
+        },
+        {
+            "name": "Sucker",
+            "uri": "spotify:track:4y3OI86AEP6PQoDE6olYhO",
+            "genres": [
+                "boy band",
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Jonas Brothers"
+            ],
+            "energy": 0.734,
+            "liveness": 0.106,
+            "speechiness": 0.0588,
+            "acousticness": 0.0427,
+            "instrumentalness": 0.0,
+            "danceability": 0.842,
+            "loudness": -5.065,
+            "valence": 0.952,
+            "tempo": 137.958,
+            "popularity": 94.0
+        },
+        {
+            "name": "Criminal",
+            "uri": "spotify:track:6Za3190Sbw39BBC77WSS1C",
+            "genres": [
+                "latin",
+                "reggaeton",
+                "tropical",
+                "reggaeton",
+                "trap latino"
+            ],
+            "artists": [
+                "Natti Natasha",
+                "Ozuna"
+            ],
+            "energy": 0.813,
+            "liveness": 0.255,
+            "speechiness": 0.0561,
+            "acousticness": 0.03,
+            "instrumentalness": 9.33e-05,
+            "danceability": 0.814,
+            "loudness": -3.023,
+            "valence": 0.839,
+            "tempo": 79.997,
+            "popularity": 79.0
+        },
+        {
+            "name": "Press",
+            "uri": "spotify:track:6dPyzkyZwoj9LqjQXOFdVv",
+            "genres": [
+                "pop",
+                "rap"
+            ],
+            "artists": [
+                "Cardi B"
+            ],
+            "energy": 0.525,
+            "liveness": 0.137,
+            "speechiness": 0.305,
+            "acousticness": 0.029,
+            "instrumentalness": 5.68e-06,
+            "danceability": 0.888,
+            "loudness": -5.665,
+            "valence": 0.243,
+            "tempo": 133.983,
+            "popularity": 82.0
+        },
+        {
+            "name": "Tia Tamera (feat. Rico Nasty)",
+            "uri": "spotify:track:6mbWdNBDGL4joR1EHRUZg1",
+            "genres": [
+                "alternative r&b",
+                "electropop",
+                "escape room",
+                "la indie",
+                "pop",
+                "dmv rap",
+                "escape room",
+                "pop",
+                "trap queen"
+            ],
+            "artists": [
+                "Doja Cat",
+                "Rico Nasty"
+            ],
+            "energy": 0.675,
+            "liveness": 0.182,
+            "speechiness": 0.0931,
+            "acousticness": 0.017,
+            "instrumentalness": 0.0,
+            "danceability": 0.814,
+            "loudness": -4.594,
+            "valence": 0.407,
+            "tempo": 119.867,
+            "popularity": 68.0
+        },
+        {
+            "name": "bad guy",
+            "uri": "spotify:track:2Fxmhks0bxGSBdJ92vM42m",
+            "genres": [
+                "electropop",
+                "pop"
+            ],
+            "artists": [
+                "Billie Eilish"
+            ],
+            "energy": 0.425,
+            "liveness": 0.1,
+            "speechiness": 0.375,
+            "acousticness": 0.328,
+            "instrumentalness": 0.13,
+            "danceability": 0.701,
+            "loudness": -10.965,
+            "valence": 0.562,
+            "tempo": 135.128,
+            "popularity": 100.0
+        },
+        {
+            "name": "Bartier Cardi (feat. 21 Savage)",
+            "uri": "spotify:track:0dIoGTQXDh1wVnhIiSyYEa",
+            "genres": [
+                "pop",
+                "rap",
+                "atl hip hop",
+                "rap",
+                "trap music"
+            ],
+            "artists": [
+                "Cardi B",
+                "21 Savage"
+            ],
+            "energy": 0.524,
+            "liveness": 0.383,
+            "speechiness": 0.181,
+            "acousticness": 0.00111,
+            "instrumentalness": 0.000678,
+            "danceability": 0.908,
+            "loudness": -7.955,
+            "valence": 0.109,
+            "tempo": 138.015,
+            "popularity": 73.0
+        },
+        {
+            "name": "TRAPCHATA",
+            "uri": "spotify:track:0sFvANVCB08GDLjjUx7NDm",
+            "genres": [
+                "ccm",
+                "christian hip hop",
+                "christian trap",
+                "miami hip hop",
+                "rap cristiano"
+            ],
+            "artists": [
+                "GAWVI"
+            ],
+            "energy": 0.514,
+            "liveness": 0.326,
+            "speechiness": 0.0337,
+            "acousticness": 0.594,
+            "instrumentalness": 0.0,
+            "danceability": 0.679,
+            "loudness": -7.512,
+            "valence": 0.611,
+            "tempo": 127.039,
+            "popularity": 45.0
+        },
+        {
+            "name": "Photograph",
+            "uri": "spotify:track:1HNkqx9Ahdgi1Ixy2xkKkL",
+            "genres": [
+                "pop",
+                "uk pop"
+            ],
+            "artists": [
+                "Ed Sheeran"
+            ],
+            "energy": 0.379,
+            "liveness": 0.0986,
+            "speechiness": 0.0476,
+            "acousticness": 0.607,
+            "instrumentalness": 0.000464,
+            "danceability": 0.614,
+            "loudness": -10.48,
+            "valence": 0.201,
+            "tempo": 107.989,
+            "popularity": 84.0
+        },
+        {
+            "name": "Rich Man",
+            "uri": "spotify:track:2WaaqcSdsLliuWTnmY4rLC",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.397,
+            "liveness": 0.129,
+            "speechiness": 0.0675,
+            "acousticness": 0.795,
+            "instrumentalness": 0.00138,
+            "danceability": 0.499,
+            "loudness": -9.957,
+            "valence": 0.187,
+            "tempo": 176.12,
+            "popularity": 66.0
+        },
+        {
+            "name": "Juicy",
+            "uri": "spotify:track:4cTm3Ev9bUvy4ChJjB1nhl",
+            "genres": [
+                "alternative r&b",
+                "electropop",
+                "escape room",
+                "la indie",
+                "pop"
+            ],
+            "artists": [
+                "Doja Cat"
+            ],
+            "energy": 0.697,
+            "liveness": 0.0663,
+            "speechiness": 0.0607,
+            "acousticness": 0.0817,
+            "instrumentalness": 0.0,
+            "danceability": 0.77,
+            "loudness": -2.644,
+            "valence": 0.428,
+            "tempo": 170.084,
+            "popularity": 69.0
+        },
+        {
+            "name": "Donde Estara",
+            "uri": "spotify:track:7oJ5gMtXIjVyx9plzoFkHU",
+            "genres": [
+                "bachata",
+                "dominican pop",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Anthony Santos"
+            ],
+            "energy": 0.503,
+            "liveness": 0.118,
+            "speechiness": 0.0429,
+            "acousticness": 0.3,
+            "instrumentalness": 0.000107,
+            "danceability": 0.697,
+            "loudness": -9.147,
+            "valence": 0.951,
+            "tempo": 145.093,
+            "popularity": 49.0
+        },
+        {
+            "name": "Hold You Now (feat. Danielle Haim)",
+            "uri": "spotify:track:15E2P2ToSLNnZvcOEQra6a",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend",
+                "Danielle Haim"
+            ],
+            "energy": 0.457,
+            "liveness": 0.413,
+            "speechiness": 0.0382,
+            "acousticness": 0.0817,
+            "instrumentalness": 0.0,
+            "danceability": 0.284,
+            "loudness": -9.239,
+            "valence": 0.293,
+            "tempo": 86.88,
+            "popularity": 68.0
+        },
+        {
+            "name": "Unbearably White",
+            "uri": "spotify:track:2FjoCQaBoiEKs3FCvD0HkR",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.422,
+            "liveness": 0.0608,
+            "speechiness": 0.0571,
+            "acousticness": 0.219,
+            "instrumentalness": 0.0198,
+            "danceability": 0.531,
+            "loudness": -7.081,
+            "valence": 0.579,
+            "tempo": 188.056,
+            "popularity": 67.0
+        },
+        {
+            "name": "She Bad",
+            "uri": "spotify:track:0CfmNX2TXk7yoJqHJiixnp",
+            "genres": [
+                "pop",
+                "rap",
+                "cali rap",
+                "hip hop",
+                "pop",
+                "pop rap",
+                "rap",
+                "southern hip hop",
+                "trap music"
+            ],
+            "artists": [
+                "Cardi B",
+                "YG"
+            ],
+            "energy": 0.504,
+            "liveness": 0.0963,
+            "speechiness": 0.266,
+            "acousticness": 0.0183,
+            "instrumentalness": 0.0,
+            "danceability": 0.791,
+            "loudness": -7.864,
+            "valence": 0.355,
+            "tempo": 159.949,
+            "popularity": 67.0
+        },
+        {
+            "name": "Culpa al Coraz\u00f3n",
+            "uri": "spotify:track:0Kt035u0yJBkOnM1BYPpI6",
+            "genres": [
+                "bachata",
+                "latin",
+                "latin pop",
+                "pop",
+                "tropical"
+            ],
+            "artists": [
+                "Prince Royce"
+            ],
+            "energy": 0.649,
+            "liveness": 0.0973,
+            "speechiness": 0.0372,
+            "acousticness": 0.465,
+            "instrumentalness": 0.0,
+            "danceability": 0.839,
+            "loudness": -6.121,
+            "valence": 0.904,
+            "tempo": 122.99,
+            "popularity": 61.0
+        },
+        {
+            "name": "Hoy Se Bebe - Bachata Version",
+            "uri": "spotify:track:1HZoz1TYEyPbSD2Sn5nE3N",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.809,
+            "liveness": 0.0736,
+            "speechiness": 0.0401,
+            "acousticness": 0.0436,
+            "instrumentalness": 0.0,
+            "danceability": 0.733,
+            "loudness": -3.906,
+            "valence": 0.908,
+            "tempo": 159.886,
+            "popularity": 42.0
+        },
+        {
+            "name": "Traicionera - Bachata Radio Edit",
+            "uri": "spotify:track:1O0bPqavv3jS2NffplRMi1",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.696,
+            "liveness": 0.173,
+            "speechiness": 0.0426,
+            "acousticness": 0.387,
+            "instrumentalness": 0.0,
+            "danceability": 0.852,
+            "loudness": -4.533,
+            "valence": 0.885,
+            "tempo": 115.076,
+            "popularity": 48.0
+        },
+        {
+            "name": "3 Nights",
+            "uri": "spotify:track:1tNJrcVe6gwLEiZCtprs1u",
+            "genres": [
+                "alternative pop rock"
+            ],
+            "artists": [
+                "Dominic Fike"
+            ],
+            "energy": 0.518,
+            "liveness": 0.104,
+            "speechiness": 0.0897,
+            "acousticness": 0.223,
+            "instrumentalness": 0.0,
+            "danceability": 0.815,
+            "loudness": -6.594,
+            "valence": 0.877,
+            "tempo": 151.891,
+            "popularity": 88.0
+        },
+        {
+            "name": "Sympathy",
+            "uri": "spotify:track:2YegRTu9IjiUg4VWfnXyM3",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.777,
+            "liveness": 0.193,
+            "speechiness": 0.0568,
+            "acousticness": 0.0199,
+            "instrumentalness": 0.0023,
+            "danceability": 0.708,
+            "loudness": -5.507,
+            "valence": 0.661,
+            "tempo": 119.968,
+            "popularity": 67.0
+        },
+        {
+            "name": "Bad Liar",
+            "uri": "spotify:track:2fZQIJew3nkNe99s2PKzul",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Selena Gomez"
+            ],
+            "energy": 0.414,
+            "liveness": 0.0767,
+            "speechiness": 0.0713,
+            "acousticness": 0.189,
+            "instrumentalness": 0.0,
+            "danceability": 0.965,
+            "loudness": -6.408,
+            "valence": 0.728,
+            "tempo": 121.032,
+            "popularity": 74.0
+        },
+        {
+            "name": "you should see me in a crown",
+            "uri": "spotify:track:3XF5xLJHOQQRbWya6hBp7d",
+            "genres": [
+                "electropop",
+                "pop"
+            ],
+            "artists": [
+                "Billie Eilish"
+            ],
+            "energy": 0.533,
+            "liveness": 0.139,
+            "speechiness": 0.186,
+            "acousticness": 0.462,
+            "instrumentalness": 0.219,
+            "danceability": 0.678,
+            "loudness": -10.485,
+            "valence": 0.323,
+            "tempo": 150.455,
+            "popularity": 87.0
+        },
+        {
+            "name": "I Feel It Coming",
+            "uri": "spotify:track:3dhjNA0jGA8vHBQ1VdD6vV",
+            "genres": [
+                "canadian contemporary r&b",
+                "canadian pop",
+                "pop",
+                "rap",
+                "electro",
+                "electronic",
+                "filter house"
+            ],
+            "artists": [
+                "The Weeknd",
+                "Daft Punk"
+            ],
+            "energy": 0.819,
+            "liveness": 0.0679,
+            "speechiness": 0.118,
+            "acousticness": 0.426,
+            "instrumentalness": 0.0,
+            "danceability": 0.773,
+            "loudness": -5.946,
+            "valence": 0.585,
+            "tempo": 92.99,
+            "popularity": 79.0
+        },
+        {
+            "name": "Love Like Woe",
+            "uri": "spotify:track:4XRZbiVdsA5qv6f6qP70lS",
+            "genres": [
+                "alternative pop rock",
+                "neon pop punk",
+                "pixie",
+                "pop emo",
+                "pop punk",
+                "post-teen pop"
+            ],
+            "artists": [
+                "The Ready Set"
+            ],
+            "energy": 0.775,
+            "liveness": 0.0737,
+            "speechiness": 0.0636,
+            "acousticness": 0.139,
+            "instrumentalness": 0.0,
+            "danceability": 0.697,
+            "loudness": -4.106,
+            "valence": 0.822,
+            "tempo": 90.015,
+            "popularity": 54.0
+        },
+        {
+            "name": "Young Dumb & Broke",
+            "uri": "spotify:track:5Z3GHaZ6ec9bsiI5BenrbY",
+            "genres": [
+                "pop"
+            ],
+            "artists": [
+                "Khalid"
+            ],
+            "energy": 0.539,
+            "liveness": 0.165,
+            "speechiness": 0.0421,
+            "acousticness": 0.199,
+            "instrumentalness": 1.66e-05,
+            "danceability": 0.798,
+            "loudness": -6.351,
+            "valence": 0.394,
+            "tempo": 136.949,
+            "popularity": 83.0
+        },
+        {
+            "name": "Con Calma",
+            "uri": "spotify:track:5w9c2J52mkdntKOmRLeM2m",
+            "genres": [
+                "latin",
+                "latin hip hop",
+                "pop",
+                "reggaeton",
+                "tropical",
+                "reggae fusion"
+            ],
+            "artists": [
+                "Daddy Yankee",
+                "Snow"
+            ],
+            "energy": 0.86,
+            "liveness": 0.0574,
+            "speechiness": 0.0593,
+            "acousticness": 0.11,
+            "instrumentalness": 1.94e-06,
+            "danceability": 0.737,
+            "loudness": -2.652,
+            "valence": 0.656,
+            "tempo": 93.989,
+            "popularity": 95.0
+        },
+        {
+            "name": "Wait",
+            "uri": "spotify:track:6AvfZXpbb6r35DfF7gHPRq",
+            "genres": [
+                "pop"
+            ],
+            "artists": [
+                "Maroon 5"
+            ],
+            "energy": 0.603,
+            "liveness": 0.107,
+            "speechiness": 0.0555,
+            "acousticness": 0.0959,
+            "instrumentalness": 0.0,
+            "danceability": 0.655,
+            "loudness": -5.014,
+            "valence": 0.452,
+            "tempo": 126.088,
+            "popularity": 69.0
+        },
+        {
+            "name": "Dura",
+            "uri": "spotify:track:6KuqAtoeVzxAYOaMveLNpH",
+            "genres": [
+                "latin",
+                "latin hip hop",
+                "pop",
+                "reggaeton",
+                "tropical"
+            ],
+            "artists": [
+                "Daddy Yankee"
+            ],
+            "energy": 0.848,
+            "liveness": 0.409,
+            "speechiness": 0.0506,
+            "acousticness": 0.183,
+            "instrumentalness": 0.0,
+            "danceability": 0.791,
+            "loudness": -3.456,
+            "valence": 0.828,
+            "tempo": 95.0,
+            "popularity": 77.0
+        },
+        {
+            "name": "Ojala - Bachata Version",
+            "uri": "spotify:track:6VH1zYYo1CX6MgW2RpvTcE",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.774,
+            "liveness": 0.186,
+            "speechiness": 0.0303,
+            "acousticness": 0.287,
+            "instrumentalness": 0.0,
+            "danceability": 0.744,
+            "loudness": -4.953,
+            "valence": 0.964,
+            "tempo": 130.022,
+            "popularity": 45.0
+        },
+        {
+            "name": "Go To Town",
+            "uri": "spotify:track:6iOvnACn4ChlAw4lWUU4dd",
+            "genres": [
+                "alternative r&b",
+                "electropop",
+                "escape room",
+                "la indie",
+                "pop"
+            ],
+            "artists": [
+                "Doja Cat"
+            ],
+            "energy": 0.71,
+            "liveness": 0.206,
+            "speechiness": 0.0579,
+            "acousticness": 0.0716,
+            "instrumentalness": 1.07e-06,
+            "danceability": 0.71,
+            "loudness": -2.474,
+            "valence": 0.7,
+            "tempo": 169.944,
+            "popularity": 65.0
+        },
+        {
+            "name": "Bailemos",
+            "uri": "spotify:track:14sspPKCM3FeYPXR5TLJae",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.712,
+            "liveness": 0.13,
+            "speechiness": 0.0341,
+            "acousticness": 0.263,
+            "instrumentalness": 0.0,
+            "danceability": 0.832,
+            "loudness": -5.397,
+            "valence": 0.916,
+            "tempo": 129.94,
+            "popularity": 50.0
+        },
+        {
+            "name": "My Mistake",
+            "uri": "spotify:track:2G5ZpNvgSOOcBCpLcOfvJy",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.326,
+            "liveness": 0.366,
+            "speechiness": 0.0652,
+            "acousticness": 0.847,
+            "instrumentalness": 0.0279,
+            "danceability": 0.522,
+            "loudness": -11.17,
+            "valence": 0.108,
+            "tempo": 79.79,
+            "popularity": 64.0
+        },
+        {
+            "name": "Married in a Gold Rush (feat. Danielle Haim)",
+            "uri": "spotify:track:4Ww4jdVXTyvSnryNTtReRJ",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend",
+                "Danielle Haim"
+            ],
+            "energy": 0.439,
+            "liveness": 0.139,
+            "speechiness": 0.0942,
+            "acousticness": 0.829,
+            "instrumentalness": 0.000213,
+            "danceability": 0.733,
+            "loudness": -8.109,
+            "valence": 0.686,
+            "tempo": 104.882,
+            "popularity": 66.0
+        },
+        {
+            "name": "El Papel Part 1 (Versi\u00f3n Amante)",
+            "uri": "spotify:track:4uUxCpAWzNxpMXoUYCoERX",
+            "genres": [
+                "bachata",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Romeo Santos"
+            ],
+            "energy": 0.693,
+            "liveness": 0.278,
+            "speechiness": 0.0749,
+            "acousticness": 0.625,
+            "instrumentalness": 0.0,
+            "danceability": 0.817,
+            "loudness": -6.457,
+            "valence": 0.837,
+            "tempo": 125.042,
+            "popularity": 58.0
+        },
+        {
+            "name": "You Come First (feat. Saweetie)",
+            "uri": "spotify:track:5Ef2noaxqTAfa5gLVw05OJ",
+            "genres": [
+                "indie anthem-folk",
+                "indie cafe pop",
+                "tropical house",
+                "uk contemporary r&b",
+                "uk pop",
+                "cali rap",
+                "deep pop r&b",
+                "pop",
+                "r&b",
+                "trap queen"
+            ],
+            "artists": [
+                "Zak Abel",
+                "Saweetie"
+            ],
+            "energy": 0.719,
+            "liveness": 0.0639,
+            "speechiness": 0.19,
+            "acousticness": 0.0352,
+            "instrumentalness": 0.0,
+            "danceability": 0.745,
+            "loudness": -4.291,
+            "valence": 0.611,
+            "tempo": 99.962,
+            "popularity": 69.0
+        },
+        {
+            "name": "Una Vuelta",
+            "uri": "spotify:track:5zLHwFSoGvK5AUbma0pQDS",
+            "genres": [
+                "reggaeton flow"
+            ],
+            "artists": [
+                "Pinto Picasso"
+            ],
+            "energy": 0.683,
+            "liveness": 0.153,
+            "speechiness": 0.0376,
+            "acousticness": 0.122,
+            "instrumentalness": 0.0,
+            "danceability": 0.712,
+            "loudness": -6.002,
+            "valence": 0.616,
+            "tempo": 132.022,
+            "popularity": 44.0
+        },
+        {
+            "name": "I Don't Care (with Justin Bieber)",
+            "uri": "spotify:track:3HVWdVOQ0ZA45FuZGSfvns",
+            "genres": [
+                "pop",
+                "uk pop",
+                "canadian pop",
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Ed Sheeran",
+                "Justin Bieber"
+            ],
+            "energy": 0.675,
+            "liveness": 0.0894,
+            "speechiness": 0.0442,
+            "acousticness": 0.0912,
+            "instrumentalness": 0.0,
+            "danceability": 0.798,
+            "loudness": -5.041,
+            "valence": 0.842,
+            "tempo": 101.956,
+            "popularity": 99.0
+        },
+        {
+            "name": "What I Like About You (feat. Theresa Rex)",
+            "uri": "spotify:track:4NSW0Km5ZG60L8FthUebPJ",
+            "genres": [
+                "dance pop",
+                "edm",
+                "pop",
+                "tropical house",
+                "uk dance",
+                "scandipop"
+            ],
+            "artists": [
+                "Jonas Blue",
+                "Theresa Rex"
+            ],
+            "energy": 0.8,
+            "liveness": 0.121,
+            "speechiness": 0.05,
+            "acousticness": 0.289,
+            "instrumentalness": 6.16e-06,
+            "danceability": 0.46,
+            "loudness": -3.584,
+            "valence": 0.553,
+            "tempo": 102.46,
+            "popularity": 86.0
+        },
+        {
+            "name": "Mine",
+            "uri": "spotify:track:7uzmGiiJyRfuViKKK3lVmR",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Bazzi"
+            ],
+            "energy": 0.789,
+            "liveness": 0.451,
+            "speechiness": 0.0722,
+            "acousticness": 0.0161,
+            "instrumentalness": 2.77e-06,
+            "danceability": 0.71,
+            "loudness": -3.874,
+            "valence": 0.717,
+            "tempo": 142.929,
+            "popularity": 82.0
+        },
+        {
+            "name": "If You're Over Me",
+            "uri": "spotify:track:0p3rzYD9XEIyBBx1QTwg4z",
+            "genres": [
+                "dance pop",
+                "gauze pop",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "uk pop"
+            ],
+            "artists": [
+                "Years & Years"
+            ],
+            "energy": 0.853,
+            "liveness": 0.0602,
+            "speechiness": 0.0884,
+            "acousticness": 0.0622,
+            "instrumentalness": 0.0,
+            "danceability": 0.67,
+            "loudness": -4.515,
+            "valence": 0.615,
+            "tempo": 103.843,
+            "popularity": 67.0
+        },
+        {
+            "name": "Love Lies (with Normani)",
+            "uri": "spotify:track:45Egmo7icyopuzJN0oMEdk",
+            "genres": [
+                "pop",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "artists": [
+                "Khalid",
+                "Normani"
+            ],
+            "energy": 0.648,
+            "liveness": 0.134,
+            "speechiness": 0.0449,
+            "acousticness": 0.0956,
+            "instrumentalness": 0.0,
+            "danceability": 0.708,
+            "loudness": -5.626,
+            "valence": 0.338,
+            "tempo": 143.955,
+            "popularity": 81.0
+        }
+    ],
+    "medium_term": [
+        {
+            "name": "Sunflower - Spider-Man: Into the Spider-Verse",
+            "uri": "spotify:track:3KkXRkHbMCARz0aVfEt68P",
+            "genres": [
+                "pop",
+                "rap",
+                "trap music"
+            ],
+            "artists": [
+                "Post Malone",
+                "Swae Lee"
+            ],
+            "energy": 0.479,
+            "liveness": 0.0703,
+            "speechiness": 0.0466,
+            "acousticness": 0.556,
+            "instrumentalness": 0.0,
+            "danceability": 0.76,
+            "loudness": -5.574,
+            "valence": 0.913,
+            "tempo": 89.911,
+            "popularity": 94.0
+        },
+        {
+            "name": "Mine",
+            "uri": "spotify:track:7uzmGiiJyRfuViKKK3lVmR",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Bazzi"
+            ],
+            "energy": 0.789,
+            "liveness": 0.451,
+            "speechiness": 0.0722,
+            "acousticness": 0.0161,
+            "instrumentalness": 2.77e-06,
+            "danceability": 0.71,
+            "loudness": -3.874,
+            "valence": 0.717,
+            "tempo": 142.929,
+            "popularity": 82.0
+        },
+        {
+            "name": "Deja vu",
+            "uri": "spotify:track:46HdsiK0uR26B2dY9QPzda",
+            "genres": [
+                "bachata",
+                "latin",
+                "latin pop",
+                "pop",
+                "tropical",
+                "colombian pop",
+                "dance pop",
+                "latin",
+                "latin pop",
+                "mexican pop",
+                "pop"
+            ],
+            "artists": [
+                "Prince Royce",
+                "Shakira"
+            ],
+            "energy": 0.801,
+            "liveness": 0.31,
+            "speechiness": 0.0327,
+            "acousticness": 0.39,
+            "instrumentalness": 0.0,
+            "danceability": 0.732,
+            "loudness": -3.859,
+            "valence": 0.824,
+            "tempo": 123.981,
+            "popularity": 69.0
+        },
+        {
+            "name": "Bambina",
+            "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.538,
+            "liveness": 0.203,
+            "speechiness": 0.124,
+            "acousticness": 0.266,
+            "instrumentalness": 0.000187,
+            "danceability": 0.511,
+            "loudness": -6.185,
+            "valence": 0.425,
+            "tempo": 148.648,
+            "popularity": 68.0
+        },
+        {
+            "name": "Boy With Luv (feat. Halsey)",
+            "uri": "spotify:track:5KawlOMHjWeUjQtnuRs22c",
+            "genres": [
+                "k-pop",
+                "k-pop boy group",
+                "dance pop",
+                "electropop",
+                "etherpop",
+                "indie poptimism",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "BTS",
+                "Halsey"
+            ],
+            "energy": 0.862,
+            "liveness": 0.192,
+            "speechiness": 0.0965,
+            "acousticness": 0.0923,
+            "instrumentalness": 0.0,
+            "danceability": 0.645,
+            "loudness": -4.757,
+            "valence": 0.798,
+            "tempo": 119.991,
+            "popularity": 92.0
+        },
+        {
+            "name": "If You're Over Me",
+            "uri": "spotify:track:01k24g94i1JvkFLQmVEdCd",
+            "genres": [
+                "dance pop",
+                "gauze pop",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "uk pop"
+            ],
+            "artists": [
+                "Years & Years"
+            ],
+            "energy": 0.853,
+            "liveness": 0.062,
+            "speechiness": 0.0904,
+            "acousticness": 0.0615,
+            "instrumentalness": 0.0,
+            "danceability": 0.647,
+            "loudness": -4.516,
+            "valence": 0.618,
+            "tempo": 103.846,
+            "popularity": 74.0
+        },
+        {
+            "name": "Que Venga Otra Mujer / Me Gusta Esa Hembra",
+            "uri": "spotify:track:34UzmMdpfYxgglZJVsw4k9",
+            "genres": [],
+            "artists": [
+                "Froilan Jay"
+            ],
+            "energy": 0.666,
+            "liveness": 0.07,
+            "speechiness": 0.0412,
+            "acousticness": 0.169,
+            "instrumentalness": 6.24e-06,
+            "danceability": 0.804,
+            "loudness": -7.206,
+            "valence": 0.966,
+            "tempo": 132.022,
+            "popularity": 5.0
+        },
+        {
+            "name": "Hoy Se Bebe - Bachata Version",
+            "uri": "spotify:track:1HZoz1TYEyPbSD2Sn5nE3N",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.809,
+            "liveness": 0.0736,
+            "speechiness": 0.0401,
+            "acousticness": 0.0436,
+            "instrumentalness": 0.0,
+            "danceability": 0.733,
+            "loudness": -3.906,
+            "valence": 0.908,
+            "tempo": 159.886,
+            "popularity": 42.0
+        },
+        {
+            "name": "Traicionera - Bachata Radio Edit",
+            "uri": "spotify:track:1O0bPqavv3jS2NffplRMi1",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.696,
+            "liveness": 0.173,
+            "speechiness": 0.0426,
+            "acousticness": 0.387,
+            "instrumentalness": 0.0,
+            "danceability": 0.852,
+            "loudness": -4.533,
+            "valence": 0.885,
+            "tempo": 115.076,
+            "popularity": 48.0
+        },
+        {
+            "name": "Harmony Hall",
+            "uri": "spotify:track:39exKIvycQDgs4T6uXdyu0",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.76,
+            "liveness": 0.0917,
+            "speechiness": 0.0479,
+            "acousticness": 0.475,
+            "instrumentalness": 0.000129,
+            "danceability": 0.653,
+            "loudness": -6.086,
+            "valence": 0.6,
+            "tempo": 98.008,
+            "popularity": 72.0
+        },
+        {
+            "name": "Polaroid",
+            "uri": "spotify:track:1wsLHgXJ4SKIfd5ePSX1hD",
+            "genres": [
+                "dance pop",
+                "edm",
+                "pop",
+                "tropical house",
+                "uk dance",
+                "dance pop",
+                "edm",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "canadian pop",
+                "dance pop",
+                "electropop",
+                "indie cafe pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Jonas Blue",
+                "Liam Payne",
+                "Lennon Stella"
+            ],
+            "energy": 0.897,
+            "liveness": 0.0722,
+            "speechiness": 0.036,
+            "acousticness": 0.293,
+            "instrumentalness": 0.0,
+            "danceability": 0.652,
+            "loudness": -4.481,
+            "valence": 0.475,
+            "tempo": 114.033,
+            "popularity": 80.0
+        },
+        {
+            "name": "Una Vuelta",
+            "uri": "spotify:track:5zLHwFSoGvK5AUbma0pQDS",
+            "genres": [
+                "reggaeton flow"
+            ],
+            "artists": [
+                "Pinto Picasso"
+            ],
+            "energy": 0.683,
+            "liveness": 0.153,
+            "speechiness": 0.0376,
+            "acousticness": 0.122,
+            "instrumentalness": 0.0,
+            "danceability": 0.712,
+            "loudness": -6.002,
+            "valence": 0.616,
+            "tempo": 132.022,
+            "popularity": 44.0
+        },
+        {
+            "name": "Tia Tamera (feat. Rico Nasty)",
+            "uri": "spotify:track:6mbWdNBDGL4joR1EHRUZg1",
+            "genres": [
+                "alternative r&b",
+                "electropop",
+                "escape room",
+                "la indie",
+                "pop",
+                "dmv rap",
+                "escape room",
+                "pop",
+                "trap queen"
+            ],
+            "artists": [
+                "Doja Cat",
+                "Rico Nasty"
+            ],
+            "energy": 0.675,
+            "liveness": 0.182,
+            "speechiness": 0.0931,
+            "acousticness": 0.017,
+            "instrumentalness": 0.0,
+            "danceability": 0.814,
+            "loudness": -4.594,
+            "valence": 0.407,
+            "tempo": 119.867,
+            "popularity": 68.0
+        },
+        {
+            "name": "Bailemos",
+            "uri": "spotify:track:14sspPKCM3FeYPXR5TLJae",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.712,
+            "liveness": 0.13,
+            "speechiness": 0.0341,
+            "acousticness": 0.263,
+            "instrumentalness": 0.0,
+            "danceability": 0.832,
+            "loudness": -5.397,
+            "valence": 0.916,
+            "tempo": 129.94,
+            "popularity": 50.0
+        },
+        {
+            "name": "Ojala - Bachata Version",
+            "uri": "spotify:track:6VH1zYYo1CX6MgW2RpvTcE",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.774,
+            "liveness": 0.186,
+            "speechiness": 0.0303,
+            "acousticness": 0.287,
+            "instrumentalness": 0.0,
+            "danceability": 0.744,
+            "loudness": -4.953,
+            "valence": 0.964,
+            "tempo": 130.022,
+            "popularity": 45.0
+        },
+        {
+            "name": "Jackie and Wilson",
+            "uri": "spotify:track:4JpazKcfOhbwqZrsYhzHee",
+            "genres": [
+                "folk-pop",
+                "irish singer-songwriter",
+                "pop"
+            ],
+            "artists": [
+                "Hozier"
+            ],
+            "energy": 0.727,
+            "liveness": 0.0937,
+            "speechiness": 0.0388,
+            "acousticness": 0.0579,
+            "instrumentalness": 7.52e-06,
+            "danceability": 0.555,
+            "loudness": -4.202,
+            "valence": 0.739,
+            "tempo": 82.142,
+            "popularity": 64.0
+        },
+        {
+            "name": "PARAD(w/m)E",
+            "uri": "spotify:track:1edOSqQG1mP9hcrI0EDNhw",
+            "genres": [
+                "art pop",
+                "chamber pop",
+                "electropop",
+                "etherpop",
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indietronica",
+                "shimmer pop"
+            ],
+            "artists": [
+                "Sylvan Esso"
+            ],
+            "energy": 0.366,
+            "liveness": 0.0819,
+            "speechiness": 0.11,
+            "acousticness": 0.321,
+            "instrumentalness": 1.4e-05,
+            "danceability": 0.956,
+            "loudness": -9.748,
+            "valence": 0.772,
+            "tempo": 116.052,
+            "popularity": 47.0
+        },
+        {
+            "name": "Take Me to Church",
+            "uri": "spotify:track:1CS7Sd1u5tWkstBhpssyjP",
+            "genres": [
+                "folk-pop",
+                "irish singer-songwriter",
+                "pop"
+            ],
+            "artists": [
+                "Hozier"
+            ],
+            "energy": 0.664,
+            "liveness": 0.116,
+            "speechiness": 0.0464,
+            "acousticness": 0.634,
+            "instrumentalness": 0.0,
+            "danceability": 0.566,
+            "loudness": -5.303,
+            "valence": 0.437,
+            "tempo": 128.945,
+            "popularity": 74.0
+        },
+        {
+            "name": "This Life",
+            "uri": "spotify:track:4dRqYKhLVujxiBXcq50YzG",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.712,
+            "liveness": 0.0561,
+            "speechiness": 0.1,
+            "acousticness": 0.228,
+            "instrumentalness": 3.39e-06,
+            "danceability": 0.62,
+            "loudness": -6.434,
+            "valence": 0.83,
+            "tempo": 170.234,
+            "popularity": 73.0
+        },
+        {
+            "name": "You Come First (feat. Saweetie)",
+            "uri": "spotify:track:5Ef2noaxqTAfa5gLVw05OJ",
+            "genres": [
+                "indie anthem-folk",
+                "indie cafe pop",
+                "tropical house",
+                "uk contemporary r&b",
+                "uk pop",
+                "cali rap",
+                "deep pop r&b",
+                "pop",
+                "r&b",
+                "trap queen"
+            ],
+            "artists": [
+                "Zak Abel",
+                "Saweetie"
+            ],
+            "energy": 0.719,
+            "liveness": 0.0639,
+            "speechiness": 0.19,
+            "acousticness": 0.0352,
+            "instrumentalness": 0.0,
+            "danceability": 0.745,
+            "loudness": -4.291,
+            "valence": 0.611,
+            "tempo": 99.962,
+            "popularity": 69.0
+        },
+        {
+            "name": "Strip That Down",
+            "uri": "spotify:track:4Ro98RCK90oHqqSZUnTFq5",
+            "genres": [
+                "dance pop",
+                "edm",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "atl hip hop",
+                "hip hop",
+                "pop",
+                "pop rap",
+                "rap",
+                "southern hip hop",
+                "trap music"
+            ],
+            "artists": [
+                "Liam Payne",
+                "Quavo"
+            ],
+            "energy": 0.497,
+            "liveness": 0.0761,
+            "speechiness": 0.0562,
+            "acousticness": 0.22,
+            "instrumentalness": 0.0,
+            "danceability": 0.874,
+            "loudness": -5.484,
+            "valence": 0.542,
+            "tempo": 106.023,
+            "popularity": 79.0
+        },
+        {
+            "name": "Love Like Woe",
+            "uri": "spotify:track:4XRZbiVdsA5qv6f6qP70lS",
+            "genres": [
+                "alternative pop rock",
+                "neon pop punk",
+                "pixie",
+                "pop emo",
+                "pop punk",
+                "post-teen pop"
+            ],
+            "artists": [
+                "The Ready Set"
+            ],
+            "energy": 0.775,
+            "liveness": 0.0737,
+            "speechiness": 0.0636,
+            "acousticness": 0.139,
+            "instrumentalness": 0.0,
+            "danceability": 0.697,
+            "loudness": -4.106,
+            "valence": 0.822,
+            "tempo": 90.015,
+            "popularity": 54.0
+        },
+        {
+            "name": "How Long?",
+            "uri": "spotify:track:5jd6XPyXSY4jQVG3SlXP1b",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.39,
+            "liveness": 0.127,
+            "speechiness": 0.0392,
+            "acousticness": 0.502,
+            "instrumentalness": 4.81e-05,
+            "danceability": 0.864,
+            "loudness": -7.438,
+            "valence": 0.811,
+            "tempo": 103.948,
+            "popularity": 68.0
+        },
+        {
+            "name": "bad guy",
+            "uri": "spotify:track:2Fxmhks0bxGSBdJ92vM42m",
+            "genres": [
+                "electropop",
+                "pop"
+            ],
+            "artists": [
+                "Billie Eilish"
+            ],
+            "energy": 0.425,
+            "liveness": 0.1,
+            "speechiness": 0.375,
+            "acousticness": 0.328,
+            "instrumentalness": 0.13,
+            "danceability": 0.701,
+            "loudness": -10.965,
+            "valence": 0.562,
+            "tempo": 135.128,
+            "popularity": 100.0
+        },
+        {
+            "name": "One Kiss (with Dua Lipa)",
+            "uri": "spotify:track:7ef4DlsgrMEH11cDZd32M6",
+            "genres": [
+                "edm",
+                "electro house",
+                "house",
+                "pop",
+                "progressive house",
+                "uk dance",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "uk pop"
+            ],
+            "artists": [
+                "Calvin Harris",
+                "Dua Lipa"
+            ],
+            "energy": 0.862,
+            "liveness": 0.0814,
+            "speechiness": 0.11,
+            "acousticness": 0.037,
+            "instrumentalness": 2.19e-05,
+            "danceability": 0.791,
+            "loudness": -3.24,
+            "valence": 0.592,
+            "tempo": 123.994,
+            "popularity": 85.0
+        },
+        {
+            "name": "Criminal",
+            "uri": "spotify:track:6Za3190Sbw39BBC77WSS1C",
+            "genres": [
+                "latin",
+                "reggaeton",
+                "tropical",
+                "reggaeton",
+                "trap latino"
+            ],
+            "artists": [
+                "Natti Natasha",
+                "Ozuna"
+            ],
+            "energy": 0.813,
+            "liveness": 0.255,
+            "speechiness": 0.0561,
+            "acousticness": 0.03,
+            "instrumentalness": 9.33e-05,
+            "danceability": 0.814,
+            "loudness": -3.023,
+            "valence": 0.839,
+            "tempo": 79.997,
+            "popularity": 79.0
+        },
+        {
+            "name": "you should see me in a crown",
+            "uri": "spotify:track:3XF5xLJHOQQRbWya6hBp7d",
+            "genres": [
+                "electropop",
+                "pop"
+            ],
+            "artists": [
+                "Billie Eilish"
+            ],
+            "energy": 0.533,
+            "liveness": 0.139,
+            "speechiness": 0.186,
+            "acousticness": 0.462,
+            "instrumentalness": 0.219,
+            "danceability": 0.678,
+            "loudness": -10.485,
+            "valence": 0.323,
+            "tempo": 150.455,
+            "popularity": 87.0
+        },
+        {
+            "name": "Sin Censura",
+            "uri": "spotify:track:4Oy5FqJIImmQQAtjo9E0L2",
+            "genres": [
+                "bachata",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Kewin Cosmos"
+            ],
+            "energy": 0.785,
+            "liveness": 0.097,
+            "speechiness": 0.0342,
+            "acousticness": 0.527,
+            "instrumentalness": 0.0,
+            "danceability": 0.776,
+            "loudness": -5.013,
+            "valence": 0.902,
+            "tempo": 130.006,
+            "popularity": 45.0
+        },
+        {
+            "name": "3 Nights",
+            "uri": "spotify:track:1tNJrcVe6gwLEiZCtprs1u",
+            "genres": [
+                "alternative pop rock"
+            ],
+            "artists": [
+                "Dominic Fike"
+            ],
+            "energy": 0.518,
+            "liveness": 0.104,
+            "speechiness": 0.0897,
+            "acousticness": 0.223,
+            "instrumentalness": 0.0,
+            "danceability": 0.815,
+            "loudness": -6.594,
+            "valence": 0.877,
+            "tempo": 151.891,
+            "popularity": 88.0
+        },
+        {
+            "name": "Te Vas",
+            "uri": "spotify:track:22RH51kjgasqnk9b0Zl74r",
+            "genres": [],
+            "artists": [
+                "Circharles"
+            ],
+            "energy": 0.774,
+            "liveness": 0.161,
+            "speechiness": 0.0278,
+            "acousticness": 0.0479,
+            "instrumentalness": 0.0,
+            "danceability": 0.732,
+            "loudness": -4.778,
+            "valence": 0.909,
+            "tempo": 115.991,
+            "popularity": 17.0
+        },
+        {
+            "name": "Besos a Escondidas",
+            "uri": "spotify:track:2Xhlix5Adgb9GOavFElFcq",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.669,
+            "liveness": 0.127,
+            "speechiness": 0.0328,
+            "acousticness": 0.675,
+            "instrumentalness": 1.1e-05,
+            "danceability": 0.779,
+            "loudness": -4.553,
+            "valence": 0.867,
+            "tempo": 129.978,
+            "popularity": 50.0
+        },
+        {
+            "name": "Young Dumb & Broke",
+            "uri": "spotify:track:5Z3GHaZ6ec9bsiI5BenrbY",
+            "genres": [
+                "pop"
+            ],
+            "artists": [
+                "Khalid"
+            ],
+            "energy": 0.539,
+            "liveness": 0.165,
+            "speechiness": 0.0421,
+            "acousticness": 0.199,
+            "instrumentalness": 1.66e-05,
+            "danceability": 0.798,
+            "loudness": -6.351,
+            "valence": 0.394,
+            "tempo": 136.949,
+            "popularity": 83.0
+        },
+        {
+            "name": "17",
+            "uri": "spotify:track:15DwFznkBJir7AK9PyMyRR",
+            "genres": [
+                "deep groove house",
+                "house",
+                "pop",
+                "tropical house"
+            ],
+            "artists": [
+                "MK"
+            ],
+            "energy": 0.832,
+            "liveness": 0.0696,
+            "speechiness": 0.0689,
+            "acousticness": 0.00149,
+            "instrumentalness": 0.127,
+            "danceability": 0.703,
+            "loudness": -7.202,
+            "valence": 0.667,
+            "tempo": 122.029,
+            "popularity": 69.0
+        },
+        {
+            "name": "Broccoli",
+            "uri": "spotify:track:0qy5D3OJre7SPJNMOL9I71",
+            "genres": [
+                "pop rap",
+                "rap",
+                "trap music",
+                "atl hip hop",
+                "pop rap",
+                "rap",
+                "southern hip hop",
+                "trap music"
+            ],
+            "artists": [
+                "DRAM",
+                "Lil Yachty"
+            ],
+            "energy": 0.525,
+            "liveness": 0.057,
+            "speechiness": 0.132,
+            "acousticness": 0.236,
+            "instrumentalness": 0.0,
+            "danceability": 0.886,
+            "loudness": -7.39,
+            "valence": 0.708,
+            "tempo": 145.99,
+            "popularity": 68.0
+        },
+        {
+            "name": "Havana - Remix",
+            "uri": "spotify:track:3whrwq4DtvucphBPUogRuJ",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b",
+                "latin",
+                "latin hip hop",
+                "pop",
+                "reggaeton",
+                "tropical"
+            ],
+            "artists": [
+                "Camila Cabello",
+                "Daddy Yankee"
+            ],
+            "energy": 0.579,
+            "liveness": 0.133,
+            "speechiness": 0.0321,
+            "acousticness": 0.398,
+            "instrumentalness": 2.28e-05,
+            "danceability": 0.751,
+            "loudness": -4.036,
+            "valence": 0.349,
+            "tempo": 105.031,
+            "popularity": 70.0
+        },
+        {
+            "name": "There's Nothing Holdin' Me Back - NOTD Remix",
+            "uri": "spotify:track:4HA1wCYfjenjFjYnlaXMf4",
+            "genres": [
+                "canadian pop",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "viral pop",
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "pop edm",
+                "post-teen pop",
+                "tropical house"
+            ],
+            "artists": [
+                "Shawn Mendes",
+                "NOTD"
+            ],
+            "energy": 0.665,
+            "liveness": 0.0892,
+            "speechiness": 0.0487,
+            "acousticness": 0.0618,
+            "instrumentalness": 0.0,
+            "danceability": 0.737,
+            "loudness": -4.663,
+            "valence": 0.718,
+            "tempo": 122.061,
+            "popularity": 49.0
+        },
+        {
+            "name": "Wait",
+            "uri": "spotify:track:6AvfZXpbb6r35DfF7gHPRq",
+            "genres": [
+                "pop"
+            ],
+            "artists": [
+                "Maroon 5"
+            ],
+            "energy": 0.603,
+            "liveness": 0.107,
+            "speechiness": 0.0555,
+            "acousticness": 0.0959,
+            "instrumentalness": 0.0,
+            "danceability": 0.655,
+            "loudness": -5.014,
+            "valence": 0.452,
+            "tempo": 126.088,
+            "popularity": 69.0
+        },
+        {
+            "name": "BDZ",
+            "uri": "spotify:track:4tMqTWDGI8qiYaAUT4qy4p",
+            "genres": [
+                "k-pop",
+                "k-pop girl group"
+            ],
+            "artists": [
+                "TWICE"
+            ],
+            "energy": 0.862,
+            "liveness": 0.108,
+            "speechiness": 0.0444,
+            "acousticness": 0.0113,
+            "instrumentalness": 0.0,
+            "danceability": 0.715,
+            "loudness": -2.718,
+            "valence": 0.668,
+            "tempo": 137.93,
+            "popularity": 49.0
+        },
+        {
+            "name": "Quien Sabe",
+            "uri": "spotify:track:4vOWNHRx4FGlQhs0pyxgJl",
+            "genres": [
+                "latin",
+                "reggaeton",
+                "tropical"
+            ],
+            "artists": [
+                "Natti Natasha"
+            ],
+            "energy": 0.817,
+            "liveness": 0.0877,
+            "speechiness": 0.0274,
+            "acousticness": 0.356,
+            "instrumentalness": 4.19e-05,
+            "danceability": 0.713,
+            "loudness": -2.898,
+            "valence": 0.758,
+            "tempo": 127.933,
+            "popularity": 55.0
+        },
+        {
+            "name": "X (feat. Zendaya)",
+            "uri": "spotify:track:58Lj1OJrwR3huIt1xNMvkr",
+            "genres": [
+                "bachata",
+                "latin",
+                "latin pop",
+                "pop",
+                "tropical",
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Prince Royce",
+                "Zendaya"
+            ],
+            "energy": 0.643,
+            "liveness": 0.0742,
+            "speechiness": 0.0324,
+            "acousticness": 0.509,
+            "instrumentalness": 0.0,
+            "danceability": 0.712,
+            "loudness": -7.455,
+            "valence": 0.682,
+            "tempo": 127.024,
+            "popularity": 48.0
+        },
+        {
+            "name": "Dos Locos",
+            "uri": "spotify:track:1ePEbbeWx3scydfir7HBcq",
+            "genres": [
+                "bachata",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Monchy & Alexandra"
+            ],
+            "energy": 0.664,
+            "liveness": 0.0729,
+            "speechiness": 0.0502,
+            "acousticness": 0.0878,
+            "instrumentalness": 0.00026,
+            "danceability": 0.918,
+            "loudness": -4.767,
+            "valence": 0.827,
+            "tempo": 129.998,
+            "popularity": 62.0
+        },
+        {
+            "name": "Lil Bebe",
+            "uri": "spotify:track:0rj3snMN7CFiYaLIVSegml",
+            "genres": [
+                "deep pop r&b",
+                "pop",
+                "r&b"
+            ],
+            "artists": [
+                "DaniLeigh"
+            ],
+            "energy": 0.511,
+            "liveness": 0.11,
+            "speechiness": 0.0719,
+            "acousticness": 0.0353,
+            "instrumentalness": 1.19e-06,
+            "danceability": 0.835,
+            "loudness": -4.431,
+            "valence": 0.0792,
+            "tempo": 136.021,
+            "popularity": 58.0
+        },
+        {
+            "name": "Go To Town",
+            "uri": "spotify:track:6iOvnACn4ChlAw4lWUU4dd",
+            "genres": [
+                "alternative r&b",
+                "electropop",
+                "escape room",
+                "la indie",
+                "pop"
+            ],
+            "artists": [
+                "Doja Cat"
+            ],
+            "energy": 0.71,
+            "liveness": 0.206,
+            "speechiness": 0.0579,
+            "acousticness": 0.0716,
+            "instrumentalness": 1.07e-06,
+            "danceability": 0.71,
+            "loudness": -2.474,
+            "valence": 0.7,
+            "tempo": 169.944,
+            "popularity": 65.0
+        },
+        {
+            "name": "Shake Senora",
+            "uri": "spotify:track:1LomM3L6atrf79ZL7nHDp4",
+            "genres": [
+                "dance pop",
+                "latin",
+                "miami hip hop",
+                "pop",
+                "pop rap",
+                "dance pop",
+                "hip hop",
+                "pop",
+                "pop rap",
+                "r&b",
+                "rap",
+                "southern hip hop",
+                "trap music",
+                "urban contemporary",
+                "dance pop",
+                "dancehall",
+                "pop"
+            ],
+            "artists": [
+                "Pitbull",
+                "T-Pain",
+                "Sean Paul"
+            ],
+            "energy": 0.944,
+            "liveness": 0.362,
+            "speechiness": 0.34,
+            "acousticness": 0.134,
+            "instrumentalness": 0.0,
+            "danceability": 0.685,
+            "loudness": -5.19,
+            "valence": 0.543,
+            "tempo": 128.013,
+            "popularity": 58.0
+        },
+        {
+            "name": "YES or YES",
+            "uri": "spotify:track:1S6zXoXhfalX2ETKo337Md",
+            "genres": [
+                "k-pop",
+                "k-pop girl group"
+            ],
+            "artists": [
+                "TWICE"
+            ],
+            "energy": 0.913,
+            "liveness": 0.166,
+            "speechiness": 0.0374,
+            "acousticness": 0.0514,
+            "instrumentalness": 3.71e-06,
+            "danceability": 0.702,
+            "loudness": -2.977,
+            "valence": 0.735,
+            "tempo": 137.982,
+            "popularity": 53.0
+        },
+        {
+            "name": "Killer Queen",
+            "uri": "spotify:track:0SA903LGHxe4ExdRY2SqVH",
+            "genres": [
+                "boy band",
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "5 Seconds of Summer"
+            ],
+            "energy": 0.789,
+            "liveness": 0.325,
+            "speechiness": 0.123,
+            "acousticness": 0.00422,
+            "instrumentalness": 0.0,
+            "danceability": 0.262,
+            "loudness": -4.548,
+            "valence": 0.487,
+            "tempo": 171.009,
+            "popularity": 66.0
+        },
+        {
+            "name": "Sucker",
+            "uri": "spotify:track:4y3OI86AEP6PQoDE6olYhO",
+            "genres": [
+                "boy band",
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Jonas Brothers"
+            ],
+            "energy": 0.734,
+            "liveness": 0.106,
+            "speechiness": 0.0588,
+            "acousticness": 0.0427,
+            "instrumentalness": 0.0,
+            "danceability": 0.842,
+            "loudness": -5.065,
+            "valence": 0.952,
+            "tempo": 137.958,
+            "popularity": 94.0
+        },
+        {
+            "name": "Dura",
+            "uri": "spotify:track:6KuqAtoeVzxAYOaMveLNpH",
+            "genres": [
+                "latin",
+                "latin hip hop",
+                "pop",
+                "reggaeton",
+                "tropical"
+            ],
+            "artists": [
+                "Daddy Yankee"
+            ],
+            "energy": 0.848,
+            "liveness": 0.409,
+            "speechiness": 0.0506,
+            "acousticness": 0.183,
+            "instrumentalness": 0.0,
+            "danceability": 0.791,
+            "loudness": -3.456,
+            "valence": 0.828,
+            "tempo": 95.0,
+            "popularity": 77.0
+        },
+        {
+            "name": "Waterloo",
+            "uri": "spotify:track:1kGfDyrtmvU7lVaBXiWSbJ",
+            "genres": [
+                "dance pop",
+                "hollywood",
+                "new wave pop",
+                "pop"
+            ],
+            "artists": [
+                "Cher"
+            ],
+            "energy": 0.902,
+            "liveness": 0.151,
+            "speechiness": 0.0301,
+            "acousticness": 0.0192,
+            "instrumentalness": 0.0,
+            "danceability": 0.538,
+            "loudness": -3.718,
+            "valence": 0.826,
+            "tempo": 147.033,
+            "popularity": 47.0
+        },
+        {
+            "name": "Bad Liar",
+            "uri": "spotify:track:2fZQIJew3nkNe99s2PKzul",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Selena Gomez"
+            ],
+            "energy": 0.414,
+            "liveness": 0.0767,
+            "speechiness": 0.0713,
+            "acousticness": 0.189,
+            "instrumentalness": 0.0,
+            "danceability": 0.965,
+            "loudness": -6.408,
+            "valence": 0.728,
+            "tempo": 121.032,
+            "popularity": 74.0
+        }
+    ],
+    "long_term": [
+        {
+            "name": "Lil Bebe",
+            "uri": "spotify:track:7esO3L3DP7bM2OOd0Rdb4W",
+            "genres": [
+                "deep pop r&b",
+                "pop",
+                "r&b"
+            ],
+            "artists": [
+                "DaniLeigh"
+            ],
+            "energy": 0.485,
+            "liveness": 0.111,
+            "speechiness": 0.086,
+            "acousticness": 0.0479,
+            "instrumentalness": 0.0,
+            "danceability": 0.832,
+            "loudness": -4.521,
+            "valence": 0.0721,
+            "tempo": 136.039,
+            "popularity": 18.0
+        },
+        {
+            "name": "Sunflower - Spider-Man: Into the Spider-Verse",
+            "uri": "spotify:track:3KkXRkHbMCARz0aVfEt68P",
+            "genres": [
+                "pop",
+                "rap",
+                "trap music"
+            ],
+            "artists": [
+                "Post Malone",
+                "Swae Lee"
+            ],
+            "energy": 0.479,
+            "liveness": 0.0703,
+            "speechiness": 0.0466,
+            "acousticness": 0.556,
+            "instrumentalness": 0.0,
+            "danceability": 0.76,
+            "loudness": -5.574,
+            "valence": 0.913,
+            "tempo": 89.911,
+            "popularity": 94.0
+        },
+        {
+            "name": "Dance The Night Away",
+            "uri": "spotify:track:5ilOXZ0vqTX69rjRubPivH",
+            "genres": [
+                "k-pop",
+                "k-pop girl group"
+            ],
+            "artists": [
+                "TWICE"
+            ],
+            "energy": 0.861,
+            "liveness": 0.112,
+            "speechiness": 0.0924,
+            "acousticness": 0.106,
+            "instrumentalness": 4.4e-05,
+            "danceability": 0.711,
+            "loudness": -2.905,
+            "valence": 0.78,
+            "tempo": 118.004,
+            "popularity": 49.0
+        },
+        {
+            "name": "Deja vu",
+            "uri": "spotify:track:46HdsiK0uR26B2dY9QPzda",
+            "genres": [
+                "bachata",
+                "latin",
+                "latin pop",
+                "pop",
+                "tropical",
+                "colombian pop",
+                "dance pop",
+                "latin",
+                "latin pop",
+                "mexican pop",
+                "pop"
+            ],
+            "artists": [
+                "Prince Royce",
+                "Shakira"
+            ],
+            "energy": 0.801,
+            "liveness": 0.31,
+            "speechiness": 0.0327,
+            "acousticness": 0.39,
+            "instrumentalness": 0.0,
+            "danceability": 0.732,
+            "loudness": -3.859,
+            "valence": 0.824,
+            "tempo": 123.981,
+            "popularity": 69.0
+        },
+        {
+            "name": "Mine",
+            "uri": "spotify:track:7uzmGiiJyRfuViKKK3lVmR",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Bazzi"
+            ],
+            "energy": 0.789,
+            "liveness": 0.451,
+            "speechiness": 0.0722,
+            "acousticness": 0.0161,
+            "instrumentalness": 2.77e-06,
+            "danceability": 0.71,
+            "loudness": -3.874,
+            "valence": 0.717,
+            "tempo": 142.929,
+            "popularity": 82.0
+        },
+        {
+            "name": "Strip That Down",
+            "uri": "spotify:track:4Ro98RCK90oHqqSZUnTFq5",
+            "genres": [
+                "dance pop",
+                "edm",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "atl hip hop",
+                "hip hop",
+                "pop",
+                "pop rap",
+                "rap",
+                "southern hip hop",
+                "trap music"
+            ],
+            "artists": [
+                "Liam Payne",
+                "Quavo"
+            ],
+            "energy": 0.497,
+            "liveness": 0.0761,
+            "speechiness": 0.0562,
+            "acousticness": 0.22,
+            "instrumentalness": 0.0,
+            "danceability": 0.874,
+            "loudness": -5.484,
+            "valence": 0.542,
+            "tempo": 106.023,
+            "popularity": 79.0
+        },
+        {
+            "name": "Andante, Andante",
+            "uri": "spotify:track:4pKTaU9Vm7nC5tC0mxjxfI",
+            "genres": [
+                "hollywood"
+            ],
+            "artists": [
+                "Lily James"
+            ],
+            "energy": 0.392,
+            "liveness": 0.0745,
+            "speechiness": 0.0242,
+            "acousticness": 0.609,
+            "instrumentalness": 7.8e-05,
+            "danceability": 0.635,
+            "loudness": -9.46,
+            "valence": 0.455,
+            "tempo": 102.02,
+            "popularity": 65.0
+        },
+        {
+            "name": "Bambina",
+            "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.538,
+            "liveness": 0.203,
+            "speechiness": 0.124,
+            "acousticness": 0.266,
+            "instrumentalness": 0.000187,
+            "danceability": 0.511,
+            "loudness": -6.185,
+            "valence": 0.425,
+            "tempo": 148.648,
+            "popularity": 68.0
+        },
+        {
+            "name": "thank u, next",
+            "uri": "spotify:track:2rPE9A1vEgShuZxxzR2tZH",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Ariana Grande"
+            ],
+            "energy": 0.647,
+            "liveness": 0.102,
+            "speechiness": 0.0658,
+            "acousticness": 0.28,
+            "instrumentalness": 0.0,
+            "danceability": 0.724,
+            "loudness": -5.642,
+            "valence": 0.435,
+            "tempo": 106.96,
+            "popularity": 61.0
+        },
+        {
+            "name": "Boy With Luv (feat. Halsey)",
+            "uri": "spotify:track:5KawlOMHjWeUjQtnuRs22c",
+            "genres": [
+                "k-pop",
+                "k-pop boy group",
+                "dance pop",
+                "electropop",
+                "etherpop",
+                "indie poptimism",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "BTS",
+                "Halsey"
+            ],
+            "energy": 0.862,
+            "liveness": 0.192,
+            "speechiness": 0.0965,
+            "acousticness": 0.0923,
+            "instrumentalness": 0.0,
+            "danceability": 0.645,
+            "loudness": -4.757,
+            "valence": 0.798,
+            "tempo": 119.991,
+            "popularity": 92.0
+        },
+        {
+            "name": "If You're Over Me",
+            "uri": "spotify:track:01k24g94i1JvkFLQmVEdCd",
+            "genres": [
+                "dance pop",
+                "gauze pop",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "uk pop"
+            ],
+            "artists": [
+                "Years & Years"
+            ],
+            "energy": 0.853,
+            "liveness": 0.062,
+            "speechiness": 0.0904,
+            "acousticness": 0.0615,
+            "instrumentalness": 0.0,
+            "danceability": 0.647,
+            "loudness": -4.516,
+            "valence": 0.618,
+            "tempo": 103.846,
+            "popularity": 74.0
+        },
+        {
+            "name": "Que Venga Otra Mujer / Me Gusta Esa Hembra",
+            "uri": "spotify:track:34UzmMdpfYxgglZJVsw4k9",
+            "genres": [],
+            "artists": [
+                "Froilan Jay"
+            ],
+            "energy": 0.666,
+            "liveness": 0.07,
+            "speechiness": 0.0412,
+            "acousticness": 0.169,
+            "instrumentalness": 6.24e-06,
+            "danceability": 0.804,
+            "loudness": -7.206,
+            "valence": 0.966,
+            "tempo": 132.022,
+            "popularity": 5.0
+        },
+        {
+            "name": "Why Did It Have To Be Me?",
+            "uri": "spotify:track:6rekLbbb3i42gCgFIXOFvE",
+            "genres": [
+                "hollywood",
+                "movie tunes"
+            ],
+            "artists": [
+                "Josh Dylan",
+                "Lily James",
+                "Hugh Skinner"
+            ],
+            "energy": 0.78,
+            "liveness": 0.132,
+            "speechiness": 0.0356,
+            "acousticness": 0.129,
+            "instrumentalness": 1.85e-06,
+            "danceability": 0.55,
+            "loudness": -5.55,
+            "valence": 0.794,
+            "tempo": 117.654,
+            "popularity": 66.0
+        },
+        {
+            "name": "Hoy Se Bebe - Bachata Version",
+            "uri": "spotify:track:1HZoz1TYEyPbSD2Sn5nE3N",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.809,
+            "liveness": 0.0736,
+            "speechiness": 0.0401,
+            "acousticness": 0.0436,
+            "instrumentalness": 0.0,
+            "danceability": 0.733,
+            "loudness": -3.906,
+            "valence": 0.908,
+            "tempo": 159.886,
+            "popularity": 42.0
+        },
+        {
+            "name": "Traicionera - Bachata Radio Edit",
+            "uri": "spotify:track:1O0bPqavv3jS2NffplRMi1",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.696,
+            "liveness": 0.173,
+            "speechiness": 0.0426,
+            "acousticness": 0.387,
+            "instrumentalness": 0.0,
+            "danceability": 0.852,
+            "loudness": -4.533,
+            "valence": 0.885,
+            "tempo": 115.076,
+            "popularity": 48.0
+        },
+        {
+            "name": "Harmony Hall",
+            "uri": "spotify:track:39exKIvycQDgs4T6uXdyu0",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.76,
+            "liveness": 0.0917,
+            "speechiness": 0.0479,
+            "acousticness": 0.475,
+            "instrumentalness": 0.000129,
+            "danceability": 0.653,
+            "loudness": -6.086,
+            "valence": 0.6,
+            "tempo": 98.008,
+            "popularity": 72.0
+        },
+        {
+            "name": "Una Flor",
+            "uri": "spotify:track:03lziG35E9nVvpJJrCuIjH",
+            "genres": [
+                "colombian pop",
+                "cumbia",
+                "dance pop",
+                "latin",
+                "latin pop",
+                "mexican pop",
+                "pop",
+                "rock en espanol",
+                "tropical"
+            ],
+            "artists": [
+                "Juanes"
+            ],
+            "energy": 0.867,
+            "liveness": 0.0806,
+            "speechiness": 0.0358,
+            "acousticness": 0.0598,
+            "instrumentalness": 0.0,
+            "danceability": 0.574,
+            "loudness": -5.686,
+            "valence": 0.813,
+            "tempo": 162.956,
+            "popularity": 47.0
+        },
+        {
+            "name": "Mystery of Love (From the Original Motion Picture \u201cCall Me by Your Name\u201d)",
+            "uri": "spotify:track:0oTtnnedK0C4unALxVTPhz",
+            "genres": [
+                "chamber pop",
+                "folk-pop",
+                "freak folk",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock",
+                "singer-songwriter",
+                "stomp and holler"
+            ],
+            "artists": [
+                "Sufjan Stevens"
+            ],
+            "energy": 0.273,
+            "liveness": 0.109,
+            "speechiness": 0.038,
+            "acousticness": 0.94,
+            "instrumentalness": 0.431,
+            "danceability": 0.365,
+            "loudness": -16.526,
+            "valence": 0.238,
+            "tempo": 132.285,
+            "popularity": 57.0
+        },
+        {
+            "name": "Havana - Remix",
+            "uri": "spotify:track:3whrwq4DtvucphBPUogRuJ",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b",
+                "latin",
+                "latin hip hop",
+                "pop",
+                "reggaeton",
+                "tropical"
+            ],
+            "artists": [
+                "Camila Cabello",
+                "Daddy Yankee"
+            ],
+            "energy": 0.579,
+            "liveness": 0.133,
+            "speechiness": 0.0321,
+            "acousticness": 0.398,
+            "instrumentalness": 2.28e-05,
+            "danceability": 0.751,
+            "loudness": -4.036,
+            "valence": 0.349,
+            "tempo": 105.031,
+            "popularity": 70.0
+        },
+        {
+            "name": "What is Love?",
+            "uri": "spotify:track:5m95gCTAiHshTaajznt5fA",
+            "genres": [
+                "k-pop",
+                "k-pop girl group"
+            ],
+            "artists": [
+                "TWICE"
+            ],
+            "energy": 0.91,
+            "liveness": 0.266,
+            "speechiness": 0.064,
+            "acousticness": 0.0846,
+            "instrumentalness": 0.0,
+            "danceability": 0.573,
+            "loudness": -1.578,
+            "valence": 0.602,
+            "tempo": 169.982,
+            "popularity": 50.0
+        },
+        {
+            "name": "When I Kissed The Teacher",
+            "uri": "spotify:track:1WOBzx0R3hyphrI1AUv4Zu",
+            "genres": [
+                "hollywood",
+                "hollywood",
+                "show tunes",
+                "show tunes",
+                "movie tunes"
+            ],
+            "artists": [
+                "Lily James",
+                "Jessica Keenan Wynn",
+                "Alexa Davies",
+                "Celia Imrie"
+            ],
+            "energy": 0.846,
+            "liveness": 0.047,
+            "speechiness": 0.0558,
+            "acousticness": 0.332,
+            "instrumentalness": 0.0,
+            "danceability": 0.536,
+            "loudness": -4.661,
+            "valence": 0.79,
+            "tempo": 154.744,
+            "popularity": 66.0
+        },
+        {
+            "name": "Sunday Candy",
+            "uri": "spotify:track:201lkGkc5A0kQzq9cBYMJX",
+            "genres": [
+                "channel pop"
+            ],
+            "artists": [
+                "Emily Jean"
+            ],
+            "energy": 0.241,
+            "liveness": 0.113,
+            "speechiness": 0.0882,
+            "acousticness": 0.802,
+            "instrumentalness": 0.0,
+            "danceability": 0.815,
+            "loudness": -12.271,
+            "valence": 0.469,
+            "tempo": 129.908,
+            "popularity": 31.0
+        },
+        {
+            "name": "Bad Liar",
+            "uri": "spotify:track:2fZQIJew3nkNe99s2PKzul",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Selena Gomez"
+            ],
+            "energy": 0.414,
+            "liveness": 0.0767,
+            "speechiness": 0.0713,
+            "acousticness": 0.189,
+            "instrumentalness": 0.0,
+            "danceability": 0.965,
+            "loudness": -6.408,
+            "valence": 0.728,
+            "tempo": 121.032,
+            "popularity": 74.0
+        },
+        {
+            "name": "Self Care",
+            "uri": "spotify:track:3WbRb9sb4ZBtrxvn7iJ5Q0",
+            "genres": [
+                "canadian contemporary r&b"
+            ],
+            "artists": [
+                "Emmalyn"
+            ],
+            "energy": 0.413,
+            "liveness": 0.131,
+            "speechiness": 0.154,
+            "acousticness": 0.427,
+            "instrumentalness": 1.91e-05,
+            "danceability": 0.497,
+            "loudness": -10.448,
+            "valence": 0.23,
+            "tempo": 124.261,
+            "popularity": 32.0
+        },
+        {
+            "name": "Polaroid",
+            "uri": "spotify:track:1wsLHgXJ4SKIfd5ePSX1hD",
+            "genres": [
+                "dance pop",
+                "edm",
+                "pop",
+                "tropical house",
+                "uk dance",
+                "dance pop",
+                "edm",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "canadian pop",
+                "dance pop",
+                "electropop",
+                "indie cafe pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Jonas Blue",
+                "Liam Payne",
+                "Lennon Stella"
+            ],
+            "energy": 0.897,
+            "liveness": 0.0722,
+            "speechiness": 0.036,
+            "acousticness": 0.293,
+            "instrumentalness": 0.0,
+            "danceability": 0.652,
+            "loudness": -4.481,
+            "valence": 0.475,
+            "tempo": 114.033,
+            "popularity": 80.0
+        },
+        {
+            "name": "End of Time",
+            "uri": "spotify:track:3FPUFltTjg6ClUL2wr9ux6",
+            "genres": [
+                "dance pop",
+                "pop",
+                "r&b"
+            ],
+            "artists": [
+                "Beyonc\u00e9"
+            ],
+            "energy": 0.811,
+            "liveness": 0.0649,
+            "speechiness": 0.219,
+            "acousticness": 0.0328,
+            "instrumentalness": 0.000517,
+            "danceability": 0.711,
+            "loudness": -7.503,
+            "valence": 0.785,
+            "tempo": 117.999,
+            "popularity": 64.0
+        },
+        {
+            "name": "Una Vuelta",
+            "uri": "spotify:track:5zLHwFSoGvK5AUbma0pQDS",
+            "genres": [
+                "reggaeton flow"
+            ],
+            "artists": [
+                "Pinto Picasso"
+            ],
+            "energy": 0.683,
+            "liveness": 0.153,
+            "speechiness": 0.0376,
+            "acousticness": 0.122,
+            "instrumentalness": 0.0,
+            "danceability": 0.712,
+            "loudness": -6.002,
+            "valence": 0.616,
+            "tempo": 132.022,
+            "popularity": 44.0
+        },
+        {
+            "name": "Tia Tamera (feat. Rico Nasty)",
+            "uri": "spotify:track:6mbWdNBDGL4joR1EHRUZg1",
+            "genres": [
+                "alternative r&b",
+                "electropop",
+                "escape room",
+                "la indie",
+                "pop",
+                "dmv rap",
+                "escape room",
+                "pop",
+                "trap queen"
+            ],
+            "artists": [
+                "Doja Cat",
+                "Rico Nasty"
+            ],
+            "energy": 0.675,
+            "liveness": 0.182,
+            "speechiness": 0.0931,
+            "acousticness": 0.017,
+            "instrumentalness": 0.0,
+            "danceability": 0.814,
+            "loudness": -4.594,
+            "valence": 0.407,
+            "tempo": 119.867,
+            "popularity": 68.0
+        },
+        {
+            "name": "Bailemos",
+            "uri": "spotify:track:14sspPKCM3FeYPXR5TLJae",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.712,
+            "liveness": 0.13,
+            "speechiness": 0.0341,
+            "acousticness": 0.263,
+            "instrumentalness": 0.0,
+            "danceability": 0.832,
+            "loudness": -5.397,
+            "valence": 0.916,
+            "tempo": 129.94,
+            "popularity": 50.0
+        },
+        {
+            "name": "Radio Ga Ga",
+            "uri": "spotify:track:2jAc9KIQ9XoZxkydXh3MVh",
+            "genres": [
+                "glam rock",
+                "rock"
+            ],
+            "artists": [
+                "Queen"
+            ],
+            "energy": 0.379,
+            "liveness": 0.19,
+            "speechiness": 0.0359,
+            "acousticness": 0.134,
+            "instrumentalness": 0.000615,
+            "danceability": 0.75,
+            "loudness": -12.904,
+            "valence": 0.659,
+            "tempo": 112.406,
+            "popularity": 47.0
+        },
+        {
+            "name": "BDZ",
+            "uri": "spotify:track:4tMqTWDGI8qiYaAUT4qy4p",
+            "genres": [
+                "k-pop",
+                "k-pop girl group"
+            ],
+            "artists": [
+                "TWICE"
+            ],
+            "energy": 0.862,
+            "liveness": 0.108,
+            "speechiness": 0.0444,
+            "acousticness": 0.0113,
+            "instrumentalness": 0.0,
+            "danceability": 0.715,
+            "loudness": -2.718,
+            "valence": 0.668,
+            "tempo": 137.93,
+            "popularity": 49.0
+        },
+        {
+            "name": "Knowing Me, Knowing You",
+            "uri": "spotify:track:7jicciytVTNBXYrIXHs3Hv",
+            "genres": [
+                "movie tunes",
+                "hollywood",
+                "hollywood",
+                "hollywood",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Jeremy Irvine",
+                "Lily James",
+                "Pierce Brosnan",
+                "Amanda Seyfried"
+            ],
+            "energy": 0.658,
+            "liveness": 0.0617,
+            "speechiness": 0.0282,
+            "acousticness": 0.083,
+            "instrumentalness": 0.0,
+            "danceability": 0.677,
+            "loudness": -7.909,
+            "valence": 0.681,
+            "tempo": 107.97,
+            "popularity": 62.0
+        },
+        {
+            "name": "DDU-DU DDU-DU",
+            "uri": "spotify:track:7b8YOVV5quZcSKEijDgyWB",
+            "genres": [
+                "k-pop",
+                "k-pop girl group"
+            ],
+            "artists": [
+                "BLACKPINK"
+            ],
+            "energy": 0.859,
+            "liveness": 0.267,
+            "speechiness": 0.0833,
+            "acousticness": 0.0323,
+            "instrumentalness": 0.0,
+            "danceability": 0.671,
+            "loudness": -3.922,
+            "valence": 0.389,
+            "tempo": 139.931,
+            "popularity": 73.0
+        },
+        {
+            "name": "Smoke Break (feat. Future)",
+            "uri": "spotify:track:1Uq3IOIy1CUlHUgP6vWpum",
+            "genres": [
+                "chicago rap",
+                "conscious hip hop",
+                "hip hop",
+                "pop",
+                "pop rap",
+                "rap",
+                "atl hip hop",
+                "hip hop",
+                "pop",
+                "pop rap",
+                "rap",
+                "southern hip hop",
+                "trap music"
+            ],
+            "artists": [
+                "Chance the Rapper",
+                "Future"
+            ],
+            "energy": 0.453,
+            "liveness": 0.143,
+            "speechiness": 0.196,
+            "acousticness": 0.257,
+            "instrumentalness": 0.0,
+            "danceability": 0.705,
+            "loudness": -8.174,
+            "valence": 0.283,
+            "tempo": 124.942,
+            "popularity": 65.0
+        },
+        {
+            "name": "The Weekend",
+            "uri": "spotify:track:6gU9OKjOE7ghfEd55oRO57",
+            "genres": [
+                "hip hop",
+                "pop",
+                "pop rap",
+                "r&b",
+                "rap"
+            ],
+            "artists": [
+                "SZA"
+            ],
+            "energy": 0.366,
+            "liveness": 0.126,
+            "speechiness": 0.0531,
+            "acousticness": 0.241,
+            "instrumentalness": 0.0,
+            "danceability": 0.487,
+            "loudness": -9.405,
+            "valence": 0.161,
+            "tempo": 68.191,
+            "popularity": 73.0
+        },
+        {
+            "name": "APESHIT",
+            "uri": "spotify:track:0E6PsO3ymCfUh7pJQjBgkj",
+            "genres": [
+                "pop",
+                "r&b",
+                "urban contemporary"
+            ],
+            "artists": [
+                "The Carters"
+            ],
+            "energy": 0.784,
+            "liveness": 0.168,
+            "speechiness": 0.271,
+            "acousticness": 0.0133,
+            "instrumentalness": 0.0,
+            "danceability": 0.705,
+            "loudness": -6.477,
+            "valence": 0.377,
+            "tempo": 160.035,
+            "popularity": 67.0
+        },
+        {
+            "name": "Ojala - Bachata Version",
+            "uri": "spotify:track:6VH1zYYo1CX6MgW2RpvTcE",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "artists": [
+                "Grupo Extra"
+            ],
+            "energy": 0.774,
+            "liveness": 0.186,
+            "speechiness": 0.0303,
+            "acousticness": 0.287,
+            "instrumentalness": 0.0,
+            "danceability": 0.744,
+            "loudness": -4.953,
+            "valence": 0.964,
+            "tempo": 130.022,
+            "popularity": 45.0
+        },
+        {
+            "name": "All Will Be Well",
+            "uri": "spotify:track:64rMBgXnYB3zU2oOvlxrc2",
+            "genres": [
+                "acoustic pop",
+                "indiecoustica",
+                "neo mellow",
+                "piano rock"
+            ],
+            "artists": [
+                "Gabe Dixon"
+            ],
+            "energy": 0.392,
+            "liveness": 0.279,
+            "speechiness": 0.0262,
+            "acousticness": 0.68,
+            "instrumentalness": 0.0,
+            "danceability": 0.651,
+            "loudness": -10.281,
+            "valence": 0.442,
+            "tempo": 108.952,
+            "popularity": 44.0
+        },
+        {
+            "name": "Jackie and Wilson",
+            "uri": "spotify:track:4JpazKcfOhbwqZrsYhzHee",
+            "genres": [
+                "folk-pop",
+                "irish singer-songwriter",
+                "pop"
+            ],
+            "artists": [
+                "Hozier"
+            ],
+            "energy": 0.727,
+            "liveness": 0.0937,
+            "speechiness": 0.0388,
+            "acousticness": 0.0579,
+            "instrumentalness": 7.52e-06,
+            "danceability": 0.555,
+            "loudness": -4.202,
+            "valence": 0.739,
+            "tempo": 82.142,
+            "popularity": 64.0
+        },
+        {
+            "name": "PARAD(w/m)E",
+            "uri": "spotify:track:1edOSqQG1mP9hcrI0EDNhw",
+            "genres": [
+                "art pop",
+                "chamber pop",
+                "electropop",
+                "etherpop",
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indietronica",
+                "shimmer pop"
+            ],
+            "artists": [
+                "Sylvan Esso"
+            ],
+            "energy": 0.366,
+            "liveness": 0.0819,
+            "speechiness": 0.11,
+            "acousticness": 0.321,
+            "instrumentalness": 1.4e-05,
+            "danceability": 0.956,
+            "loudness": -9.748,
+            "valence": 0.772,
+            "tempo": 116.052,
+            "popularity": 47.0
+        },
+        {
+            "name": "Take Me to Church",
+            "uri": "spotify:track:1CS7Sd1u5tWkstBhpssyjP",
+            "genres": [
+                "folk-pop",
+                "irish singer-songwriter",
+                "pop"
+            ],
+            "artists": [
+                "Hozier"
+            ],
+            "energy": 0.664,
+            "liveness": 0.116,
+            "speechiness": 0.0464,
+            "acousticness": 0.634,
+            "instrumentalness": 0.0,
+            "danceability": 0.566,
+            "loudness": -5.303,
+            "valence": 0.437,
+            "tempo": 128.945,
+            "popularity": 74.0
+        },
+        {
+            "name": "This Life",
+            "uri": "spotify:track:4dRqYKhLVujxiBXcq50YzG",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.712,
+            "liveness": 0.0561,
+            "speechiness": 0.1,
+            "acousticness": 0.228,
+            "instrumentalness": 3.39e-06,
+            "danceability": 0.62,
+            "loudness": -6.434,
+            "valence": 0.83,
+            "tempo": 170.234,
+            "popularity": 73.0
+        },
+        {
+            "name": "You Come First (feat. Saweetie)",
+            "uri": "spotify:track:5Ef2noaxqTAfa5gLVw05OJ",
+            "genres": [
+                "indie anthem-folk",
+                "indie cafe pop",
+                "tropical house",
+                "uk contemporary r&b",
+                "uk pop",
+                "cali rap",
+                "deep pop r&b",
+                "pop",
+                "r&b",
+                "trap queen"
+            ],
+            "artists": [
+                "Zak Abel",
+                "Saweetie"
+            ],
+            "energy": 0.719,
+            "liveness": 0.0639,
+            "speechiness": 0.19,
+            "acousticness": 0.0352,
+            "instrumentalness": 0.0,
+            "danceability": 0.745,
+            "loudness": -4.291,
+            "valence": 0.611,
+            "tempo": 99.962,
+            "popularity": 69.0
+        },
+        {
+            "name": "Love Like Woe",
+            "uri": "spotify:track:4XRZbiVdsA5qv6f6qP70lS",
+            "genres": [
+                "alternative pop rock",
+                "neon pop punk",
+                "pixie",
+                "pop emo",
+                "pop punk",
+                "post-teen pop"
+            ],
+            "artists": [
+                "The Ready Set"
+            ],
+            "energy": 0.775,
+            "liveness": 0.0737,
+            "speechiness": 0.0636,
+            "acousticness": 0.139,
+            "instrumentalness": 0.0,
+            "danceability": 0.697,
+            "loudness": -4.106,
+            "valence": 0.822,
+            "tempo": 90.015,
+            "popularity": 54.0
+        },
+        {
+            "name": "How Long?",
+            "uri": "spotify:track:5jd6XPyXSY4jQVG3SlXP1b",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "artists": [
+                "Vampire Weekend"
+            ],
+            "energy": 0.39,
+            "liveness": 0.127,
+            "speechiness": 0.0392,
+            "acousticness": 0.502,
+            "instrumentalness": 4.81e-05,
+            "danceability": 0.864,
+            "loudness": -7.438,
+            "valence": 0.811,
+            "tempo": 103.948,
+            "popularity": 68.0
+        },
+        {
+            "name": "bad guy",
+            "uri": "spotify:track:2Fxmhks0bxGSBdJ92vM42m",
+            "genres": [
+                "electropop",
+                "pop"
+            ],
+            "artists": [
+                "Billie Eilish"
+            ],
+            "energy": 0.425,
+            "liveness": 0.1,
+            "speechiness": 0.375,
+            "acousticness": 0.328,
+            "instrumentalness": 0.13,
+            "danceability": 0.701,
+            "loudness": -10.965,
+            "valence": 0.562,
+            "tempo": 135.128,
+            "popularity": 100.0
+        },
+        {
+            "name": "Waterloo",
+            "uri": "spotify:track:0KGOBUQSvFzufIGbQabIxr",
+            "genres": [
+                "movie tunes",
+                "hollywood"
+            ],
+            "artists": [
+                "Hugh Skinner",
+                "Lily James"
+            ],
+            "energy": 0.855,
+            "liveness": 0.114,
+            "speechiness": 0.0356,
+            "acousticness": 0.0906,
+            "instrumentalness": 0.0,
+            "danceability": 0.645,
+            "loudness": -5.63,
+            "valence": 0.649,
+            "tempo": 147.007,
+            "popularity": 64.0
+        },
+        {
+            "name": "XO",
+            "uri": "spotify:track:40xhyfAPDoMtv494MfPevP",
+            "genres": [
+                "dance pop",
+                "pop",
+                "r&b"
+            ],
+            "artists": [
+                "Beyonc\u00e9"
+            ],
+            "energy": 0.792,
+            "liveness": 0.313,
+            "speechiness": 0.26,
+            "acousticness": 0.171,
+            "instrumentalness": 1.28e-06,
+            "danceability": 0.47,
+            "loudness": -8.932,
+            "valence": 0.214,
+            "tempo": 170.085,
+            "popularity": 65.0
+        },
+        {
+            "name": "One Kiss (with Dua Lipa)",
+            "uri": "spotify:track:7ef4DlsgrMEH11cDZd32M6",
+            "genres": [
+                "edm",
+                "electro house",
+                "house",
+                "pop",
+                "progressive house",
+                "uk dance",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "uk pop"
+            ],
+            "artists": [
+                "Calvin Harris",
+                "Dua Lipa"
+            ],
+            "energy": 0.862,
+            "liveness": 0.0814,
+            "speechiness": 0.11,
+            "acousticness": 0.037,
+            "instrumentalness": 2.19e-05,
+            "danceability": 0.791,
+            "loudness": -3.24,
+            "valence": 0.592,
+            "tempo": 123.994,
+            "popularity": 85.0
+        },
+        {
+            "name": "Sorry - Latino Remix",
+            "uri": "spotify:track:3grxgV6Ot8KqtysApjYLs1",
+            "genres": [
+                "canadian pop",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "latin",
+                "pop",
+                "reggaeton"
+            ],
+            "artists": [
+                "Justin Bieber",
+                "J Balvin"
+            ],
+            "energy": 0.755,
+            "liveness": 0.306,
+            "speechiness": 0.0431,
+            "acousticness": 0.162,
+            "instrumentalness": 0.0,
+            "danceability": 0.667,
+            "loudness": -3.773,
+            "valence": 0.513,
+            "tempo": 99.994,
+            "popularity": 59.0
+        }
+    ]
+}

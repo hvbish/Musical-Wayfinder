@@ -1,0 +1,3751 @@
+{
+    "short_term": [
+        {
+            "name": "Sweet but Psycho",
+            "uri": "spotify:track:25sgk305KZfyuqVBQIahim",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Ava Max"
+            ],
+            "energy": 0.704,
+            "liveness": 0.166,
+            "speechiness": 0.0476,
+            "acousticness": 0.0691,
+            "instrumentalness": 0.0,
+            "danceability": 0.719,
+            "loudness": -4.724,
+            "valence": 0.628,
+            "tempo": 133.002,
+            "popularity": 91.0
+        },
+        {
+            "name": "\u00c9lan",
+            "uri": "spotify:track:1yQdozAHO0cK9OFIsrCs0S",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.582,
+            "liveness": 0.139,
+            "speechiness": 0.0301,
+            "acousticness": 0.0103,
+            "instrumentalness": 0.000178,
+            "danceability": 0.575,
+            "loudness": -9.476,
+            "valence": 0.297,
+            "tempo": 127.94,
+            "popularity": 55.0
+        },
+        {
+            "name": "Gimme Sympathy",
+            "uri": "spotify:track:1blxMGAKo9uttR9bHsXCOV",
+            "genres": [
+                "alternative dance",
+                "canadian indie",
+                "canadian pop",
+                "canadian rock",
+                "dance-punk",
+                "electropop",
+                "folk-pop",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "metropopolis",
+                "modern rock",
+                "neo-synthpop",
+                "new rave",
+                "shimmer pop"
+            ],
+            "artists": [
+                "Metric"
+            ],
+            "energy": 0.886,
+            "liveness": 0.11,
+            "speechiness": 0.0752,
+            "acousticness": 0.00832,
+            "instrumentalness": 0.00164,
+            "danceability": 0.47,
+            "loudness": -6.147,
+            "valence": 0.119,
+            "tempo": 139.046,
+            "popularity": 50.0
+        },
+        {
+            "name": "Bed Intruder Song",
+            "uri": "spotify:track:0NC8RcLp8ibhwsvUDn7wW1",
+            "genres": [
+                "antiviral pop",
+                "comic"
+            ],
+            "artists": [
+                "Antoine dodson & The Gregory Brothers",
+                "Antoine Dodson",
+                "The Gregory Brothers"
+            ],
+            "energy": 0.783,
+            "liveness": 0.244,
+            "speechiness": 0.224,
+            "acousticness": 0.687,
+            "instrumentalness": 0.0,
+            "danceability": 0.692,
+            "loudness": -4.271,
+            "valence": 0.879,
+            "tempo": 75.998,
+            "popularity": 33.0
+        },
+        {
+            "name": "Mona Lisa",
+            "uri": "spotify:track:3sR7ZJLhTV28FJku2Wz37K",
+            "genres": [
+                "comic"
+            ],
+            "artists": [
+                "The Lonely Island"
+            ],
+            "energy": 0.885,
+            "liveness": 0.387,
+            "speechiness": 0.11,
+            "acousticness": 0.0123,
+            "instrumentalness": 0.0,
+            "danceability": 0.618,
+            "loudness": -4.322,
+            "valence": 0.731,
+            "tempo": 131.862,
+            "popularity": 50.0
+        },
+        {
+            "name": "Finest Girl (Bin Laden Song)",
+            "uri": "spotify:track:1LpjlPR8Gv52B04UQNLZAw",
+            "genres": [
+                "comic"
+            ],
+            "artists": [
+                "The Lonely Island"
+            ],
+            "energy": 0.765,
+            "liveness": 0.282,
+            "speechiness": 0.263,
+            "acousticness": 0.297,
+            "instrumentalness": 0.0,
+            "danceability": 0.711,
+            "loudness": -4.85,
+            "valence": 0.47,
+            "tempo": 98.627,
+            "popularity": 60.0
+        },
+        {
+            "name": "Starboy",
+            "uri": "spotify:track:7MXVkk9YMctZqd1Srtv4MB",
+            "genres": [
+                "canadian contemporary r&b",
+                "canadian pop",
+                "pop",
+                "rap",
+                "electro",
+                "electronic",
+                "filter house"
+            ],
+            "artists": [
+                "The Weeknd",
+                "Daft Punk"
+            ],
+            "energy": 0.588,
+            "liveness": 0.137,
+            "speechiness": 0.276,
+            "acousticness": 0.141,
+            "instrumentalness": 6.35e-06,
+            "danceability": 0.678,
+            "loudness": -7.015,
+            "valence": 0.486,
+            "tempo": 186.005,
+            "popularity": 82.0
+        },
+        {
+            "name": "High Hopes",
+            "uri": "spotify:track:1rqqCSm0Qe4I9rUvWncaom",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "artists": [
+                "Panic! At The Disco"
+            ],
+            "energy": 0.904,
+            "liveness": 0.064,
+            "speechiness": 0.0618,
+            "acousticness": 0.193,
+            "instrumentalness": 0.0,
+            "danceability": 0.579,
+            "loudness": -2.729,
+            "valence": 0.681,
+            "tempo": 82.014,
+            "popularity": 89.0
+        },
+        {
+            "name": "Wish I Had An Angel",
+            "uri": "spotify:track:65TsSPodEw6Q98WkJHdLsH",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.949,
+            "liveness": 0.457,
+            "speechiness": 0.0582,
+            "acousticness": 8.57e-06,
+            "instrumentalness": 0.0338,
+            "danceability": 0.423,
+            "loudness": -6.053,
+            "valence": 0.482,
+            "tempo": 159.037,
+            "popularity": 43.0
+        },
+        {
+            "name": "Shudder Before The Beautiful",
+            "uri": "spotify:track:4cPmpSjTkx6ZS0NXZzMf5F",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.79,
+            "liveness": 0.19,
+            "speechiness": 0.032,
+            "acousticness": 4.55e-05,
+            "instrumentalness": 0.000261,
+            "danceability": 0.459,
+            "loudness": -8.674,
+            "valence": 0.45,
+            "tempo": 94.852,
+            "popularity": 50.0
+        },
+        {
+            "name": "Blank Space",
+            "uri": "spotify:track:1kHEuJRasudLhjvnbfc4yS",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Taylor Swift"
+            ],
+            "energy": 0.703,
+            "liveness": 0.0913,
+            "speechiness": 0.054,
+            "acousticness": 0.103,
+            "instrumentalness": 0.0,
+            "danceability": 0.76,
+            "loudness": -5.412,
+            "valence": 0.57,
+            "tempo": 95.997,
+            "popularity": 67.0
+        },
+        {
+            "name": "Alpenglow",
+            "uri": "spotify:track:6IdUW6lMEPbTctblst3IrZ",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.742,
+            "liveness": 0.0782,
+            "speechiness": 0.037,
+            "acousticness": 0.00029,
+            "instrumentalness": 0.000326,
+            "danceability": 0.514,
+            "loudness": -9.192,
+            "valence": 0.484,
+            "tempo": 148.031,
+            "popularity": 49.0
+        },
+        {
+            "name": "Extreme Ways",
+            "uri": "spotify:track:1RoV2hHbjzFbo9uKe2cvGs",
+            "genres": [
+                "downtempo",
+                "electronic"
+            ],
+            "artists": [
+                "Moby"
+            ],
+            "energy": 0.782,
+            "liveness": 0.11,
+            "speechiness": 0.057,
+            "acousticness": 0.00112,
+            "instrumentalness": 0.000858,
+            "danceability": 0.511,
+            "loudness": -7.934,
+            "valence": 0.538,
+            "tempo": 100.015,
+            "popularity": 48.0
+        },
+        {
+            "name": "Dark Saturday",
+            "uri": "spotify:track:2To65cyzznTCitc9X9qfKi",
+            "genres": [
+                "alternative dance",
+                "canadian indie",
+                "canadian pop",
+                "canadian rock",
+                "dance-punk",
+                "electropop",
+                "folk-pop",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "metropopolis",
+                "modern rock",
+                "neo-synthpop",
+                "new rave",
+                "shimmer pop"
+            ],
+            "artists": [
+                "Metric"
+            ],
+            "energy": 0.917,
+            "liveness": 0.392,
+            "speechiness": 0.0801,
+            "acousticness": 0.000171,
+            "instrumentalness": 0.187,
+            "danceability": 0.512,
+            "loudness": -3.688,
+            "valence": 0.243,
+            "tempo": 133.477,
+            "popularity": 45.0
+        },
+        {
+            "name": "Amaranth",
+            "uri": "spotify:track:5YFbRuegMoaId2ngVqzP6G",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.864,
+            "liveness": 0.0625,
+            "speechiness": 0.0423,
+            "acousticness": 0.00445,
+            "instrumentalness": 0.00313,
+            "danceability": 0.559,
+            "loudness": -3.989,
+            "valence": 0.291,
+            "tempo": 127.983,
+            "popularity": 43.0
+        },
+        {
+            "name": "Endless Forms Most Beautiful",
+            "uri": "spotify:track:5w2bKYh0qbMlxVWceynd0s",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.879,
+            "liveness": 0.126,
+            "speechiness": 0.0424,
+            "acousticness": 6.35e-05,
+            "instrumentalness": 0.000629,
+            "danceability": 0.488,
+            "loudness": -8.476,
+            "valence": 0.416,
+            "tempo": 153.944,
+            "popularity": 46.0
+        },
+        {
+            "name": "Weak Fantasy",
+            "uri": "spotify:track:6xW1OabXA9RkWanO7jHH4y",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.885,
+            "liveness": 0.152,
+            "speechiness": 0.0588,
+            "acousticness": 0.00053,
+            "instrumentalness": 0.00408,
+            "danceability": 0.483,
+            "loudness": -8.443,
+            "valence": 0.263,
+            "tempo": 125.36,
+            "popularity": 45.0
+        },
+        {
+            "name": "Pray For Me (with Kendrick Lamar)",
+            "uri": "spotify:track:77UjLW8j5UAGAGVGhR5oUK",
+            "genres": [
+                "canadian contemporary r&b",
+                "canadian pop",
+                "pop",
+                "rap",
+                "conscious hip hop",
+                "hip hop",
+                "pop rap",
+                "rap",
+                "west coast rap"
+            ],
+            "artists": [
+                "The Weeknd",
+                "Kendrick Lamar"
+            ],
+            "energy": 0.677,
+            "liveness": 0.111,
+            "speechiness": 0.093,
+            "acousticness": 0.0762,
+            "instrumentalness": 2.17e-05,
+            "danceability": 0.735,
+            "loudness": -4.979,
+            "valence": 0.188,
+            "tempo": 100.584,
+            "popularity": 77.0
+        },
+        {
+            "name": "The Hills",
+            "uri": "spotify:track:7fBv7CLKzipRk6EC6TWHOB",
+            "genres": [
+                "canadian contemporary r&b",
+                "canadian pop",
+                "pop",
+                "rap"
+            ],
+            "artists": [
+                "The Weeknd"
+            ],
+            "energy": 0.565,
+            "liveness": 0.135,
+            "speechiness": 0.0488,
+            "acousticness": 0.0671,
+            "instrumentalness": 0.0,
+            "danceability": 0.58,
+            "loudness": -7.065,
+            "valence": 0.138,
+            "tempo": 112.986,
+            "popularity": 80.0
+        },
+        {
+            "name": "My Walden",
+            "uri": "spotify:track:1offZL22XzOW4AKGlu8SPq",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.734,
+            "liveness": 0.337,
+            "speechiness": 0.0397,
+            "acousticness": 0.0041,
+            "instrumentalness": 0.00996,
+            "danceability": 0.313,
+            "loudness": -9.659,
+            "valence": 0.287,
+            "tempo": 141.053,
+            "popularity": 45.0
+        },
+        {
+            "name": "Mad World",
+            "uri": "spotify:track:0tUWRioloZrqmq95DAMsOK",
+            "genres": [
+                "dutch metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Within Temptation"
+            ],
+            "energy": 0.824,
+            "liveness": 0.132,
+            "speechiness": 0.0323,
+            "acousticness": 0.00203,
+            "instrumentalness": 2.66e-05,
+            "danceability": 0.572,
+            "loudness": -5.464,
+            "valence": 0.531,
+            "tempo": 119.982,
+            "popularity": 49.0
+        },
+        {
+            "name": "ME! (feat. Brendon Urie of Panic! At The Disco)",
+            "uri": "spotify:track:4MsUsFfWseB9M2plGJyuIw",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "pop",
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "artists": [
+                "Taylor Swift",
+                "Brendon Urie",
+                "Panic! At The Disco"
+            ],
+            "energy": 0.839,
+            "liveness": 0.112,
+            "speechiness": 0.0702,
+            "acousticness": 0.0291,
+            "instrumentalness": 0.0,
+            "danceability": 0.614,
+            "loudness": -4.143,
+            "valence": 0.657,
+            "tempo": 182.123,
+            "popularity": 89.0
+        },
+        {
+            "name": "Dark Chest Of Wonders",
+            "uri": "spotify:track:5lHxXhs51Mz8nXMxaxDBQs",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.879,
+            "liveness": 0.0688,
+            "speechiness": 0.0548,
+            "acousticness": 1.28e-05,
+            "instrumentalness": 0.255,
+            "danceability": 0.489,
+            "loudness": -5.729,
+            "valence": 0.49,
+            "tempo": 94.98,
+            "popularity": 37.0
+        },
+        {
+            "name": "In the End",
+            "uri": "spotify:track:60a0Rd6pjrkxjPbaKzXjfq",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "post-grunge",
+                "rap metal"
+            ],
+            "artists": [
+                "Linkin Park"
+            ],
+            "energy": 0.853,
+            "liveness": 0.108,
+            "speechiness": 0.0498,
+            "acousticness": 0.0103,
+            "instrumentalness": 0.0,
+            "danceability": 0.542,
+            "loudness": -6.407,
+            "valence": 0.37,
+            "tempo": 105.256,
+            "popularity": 82.0
+        },
+        {
+            "name": "Nemo",
+            "uri": "spotify:track:0tbbaYdhiFLFH0YUvvajI8",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.744,
+            "liveness": 0.325,
+            "speechiness": 0.0351,
+            "acousticness": 0.000158,
+            "instrumentalness": 0.000102,
+            "danceability": 0.491,
+            "loudness": -6.306,
+            "valence": 0.375,
+            "tempo": 125.058,
+            "popularity": 45.0
+        },
+        {
+            "name": "Collect Call",
+            "uri": "spotify:track:3gNynXzWWUBDm9u4FLywaC",
+            "genres": [
+                "alternative dance",
+                "canadian indie",
+                "canadian pop",
+                "canadian rock",
+                "dance-punk",
+                "electropop",
+                "folk-pop",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "metropopolis",
+                "modern rock",
+                "neo-synthpop",
+                "new rave",
+                "shimmer pop"
+            ],
+            "artists": [
+                "Metric"
+            ],
+            "energy": 0.565,
+            "liveness": 0.111,
+            "speechiness": 0.0413,
+            "acousticness": 0.687,
+            "instrumentalness": 0.801,
+            "danceability": 0.585,
+            "loudness": -9.713,
+            "valence": 0.132,
+            "tempo": 129.026,
+            "popularity": 40.0
+        },
+        {
+            "name": "Shake It Off",
+            "uri": "spotify:track:1CiVz2WkmZRwhU3A6J2Gjz",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Taylor Swift"
+            ],
+            "energy": 0.8,
+            "liveness": 0.334,
+            "speechiness": 0.165,
+            "acousticness": 0.0647,
+            "instrumentalness": 0.0,
+            "danceability": 0.647,
+            "loudness": -5.384,
+            "valence": 0.942,
+            "tempo": 160.078,
+            "popularity": 65.0
+        },
+        {
+            "name": "The Greatest Show On Earth - Remastered",
+            "uri": "spotify:track:4IulwSXqZFvnpM4tbmvjbN",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.627,
+            "liveness": 0.174,
+            "speechiness": 0.0588,
+            "acousticness": 0.0247,
+            "instrumentalness": 0.0179,
+            "danceability": 0.237,
+            "loudness": -11.445,
+            "valence": 0.0725,
+            "tempo": 136.01,
+            "popularity": 27.0
+        },
+        {
+            "name": "Endless War",
+            "uri": "spotify:track:5uDWqYSiWqWTXK9CbAKIA8",
+            "genres": [
+                "dutch metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Within Temptation"
+            ],
+            "energy": 0.865,
+            "liveness": 0.281,
+            "speechiness": 0.0511,
+            "acousticness": 0.00212,
+            "instrumentalness": 0.0,
+            "danceability": 0.452,
+            "loudness": -4.502,
+            "valence": 0.26,
+            "tempo": 144.988,
+            "popularity": 53.0
+        },
+        {
+            "name": "Now or Never Now",
+            "uri": "spotify:track:6gSNEJjZm0DrGRRypBm24k",
+            "genres": [
+                "alternative dance",
+                "canadian indie",
+                "canadian pop",
+                "canadian rock",
+                "dance-punk",
+                "electropop",
+                "folk-pop",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "metropopolis",
+                "modern rock",
+                "neo-synthpop",
+                "new rave",
+                "shimmer pop"
+            ],
+            "artists": [
+                "Metric"
+            ],
+            "energy": 0.863,
+            "liveness": 0.0932,
+            "speechiness": 0.0275,
+            "acousticness": 0.00731,
+            "instrumentalness": 0.263,
+            "danceability": 0.53,
+            "loudness": -7.489,
+            "valence": 0.574,
+            "tempo": 118.0,
+            "popularity": 50.0
+        },
+        {
+            "name": "Hey Look Ma, I Made It",
+            "uri": "spotify:track:22oEJW6r2rMb9z4IntfyEa",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "artists": [
+                "Panic! At The Disco"
+            ],
+            "energy": 0.833,
+            "liveness": 0.121,
+            "speechiness": 0.0695,
+            "acousticness": 0.0137,
+            "instrumentalness": 0.0,
+            "danceability": 0.577,
+            "loudness": -3.337,
+            "valence": 0.58,
+            "tempo": 107.936,
+            "popularity": 84.0
+        },
+        {
+            "name": "Devil & The Deep Dark Ocean - Remastered",
+            "uri": "spotify:track:0kZV4OSmojELIxePv0PGIX",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.941,
+            "liveness": 0.0886,
+            "speechiness": 0.0422,
+            "acousticness": 4.91e-05,
+            "instrumentalness": 0.00304,
+            "danceability": 0.469,
+            "loudness": -7.311,
+            "valence": 0.421,
+            "tempo": 89.338,
+            "popularity": 23.0
+        },
+        {
+            "name": "Ghost Love Score - Remastered",
+            "uri": "spotify:track:0kc4Bh5XrexsUbQw8kojrp",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.671,
+            "liveness": 0.198,
+            "speechiness": 0.0341,
+            "acousticness": 0.0262,
+            "instrumentalness": 0.000271,
+            "danceability": 0.45,
+            "loudness": -8.932,
+            "valence": 0.203,
+            "tempo": 100.997,
+            "popularity": 30.0
+        },
+        {
+            "name": "Nightwish - Demo, Remastered",
+            "uri": "spotify:track:0lNSIZQZ85FtQG2cL1abr2",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.374,
+            "liveness": 0.115,
+            "speechiness": 0.0346,
+            "acousticness": 0.503,
+            "instrumentalness": 0.000737,
+            "danceability": 0.589,
+            "loudness": -12.863,
+            "valence": 0.0444,
+            "tempo": 121.236,
+            "popularity": 20.0
+        },
+        {
+            "name": "The Carpenter - Remastered",
+            "uri": "spotify:track:0ozbxbhUkifqaEwlqzjqS1",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.717,
+            "liveness": 0.308,
+            "speechiness": 0.0319,
+            "acousticness": 0.00343,
+            "instrumentalness": 0.00352,
+            "danceability": 0.588,
+            "loudness": -7.597,
+            "valence": 0.222,
+            "tempo": 120.394,
+            "popularity": 21.0
+        },
+        {
+            "name": "Seven Rules",
+            "uri": "spotify:track:2LgspYqwlPCIFbWdacEDVG",
+            "genres": [
+                "alternative dance",
+                "canadian indie",
+                "canadian pop",
+                "canadian rock",
+                "dance-punk",
+                "electropop",
+                "folk-pop",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "metropopolis",
+                "modern rock",
+                "neo-synthpop",
+                "new rave",
+                "shimmer pop"
+            ],
+            "artists": [
+                "Metric"
+            ],
+            "energy": 0.467,
+            "liveness": 0.0894,
+            "speechiness": 0.0266,
+            "acousticness": 0.167,
+            "instrumentalness": 0.681,
+            "danceability": 0.568,
+            "loudness": -8.4,
+            "valence": 0.336,
+            "tempo": 125.022,
+            "popularity": 39.0
+        },
+        {
+            "name": "The Poet And The Pendulum - Remastered",
+            "uri": "spotify:track:393092IwCWc14V0rSuIRG3",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.615,
+            "liveness": 0.0985,
+            "speechiness": 0.0399,
+            "acousticness": 0.0102,
+            "instrumentalness": 0.0339,
+            "danceability": 0.394,
+            "loudness": -10.507,
+            "valence": 0.188,
+            "tempo": 144.956,
+            "popularity": 26.0
+        },
+        {
+            "name": "The Kinslayer - Remastered",
+            "uri": "spotify:track:3QshcFLiGJQYbDApfwyuL5",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.905,
+            "liveness": 0.374,
+            "speechiness": 0.0645,
+            "acousticness": 0.000531,
+            "instrumentalness": 0.0226,
+            "danceability": 0.463,
+            "loudness": -8.841,
+            "valence": 0.645,
+            "tempo": 177.581,
+            "popularity": 31.0
+        },
+        {
+            "name": "Amaranth - Remastered",
+            "uri": "spotify:track:3pTXEp42uxDv63KP3yqYch",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.77,
+            "liveness": 0.0602,
+            "speechiness": 0.0345,
+            "acousticness": 0.00491,
+            "instrumentalness": 3.26e-05,
+            "danceability": 0.572,
+            "loudness": -7.806,
+            "valence": 0.381,
+            "tempo": 127.986,
+            "popularity": 31.0
+        },
+        {
+            "name": "Elvenpath - Remastered",
+            "uri": "spotify:track:4Z7y5b6W61YeuJKdYIQSvU",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.912,
+            "liveness": 0.106,
+            "speechiness": 0.098,
+            "acousticness": 0.000392,
+            "instrumentalness": 0.102,
+            "danceability": 0.461,
+            "loudness": -7.15,
+            "valence": 0.223,
+            "tempo": 145.537,
+            "popularity": 28.0
+        },
+        {
+            "name": "Wish I Had An Angel - Remastered",
+            "uri": "spotify:track:4ZYj3JIoxgEKm7aKyY9Djb",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.922,
+            "liveness": 0.549,
+            "speechiness": 0.051,
+            "acousticness": 6.13e-05,
+            "instrumentalness": 0.000169,
+            "danceability": 0.423,
+            "loudness": -8.59,
+            "valence": 0.492,
+            "tempo": 159.06,
+            "popularity": 29.0
+        },
+        {
+            "name": "Nemo - Remastered",
+            "uri": "spotify:track:4yvTUvWmClCcAOb2mrQUC1",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.673,
+            "liveness": 0.0508,
+            "speechiness": 0.0325,
+            "acousticness": 0.00291,
+            "instrumentalness": 1.1e-05,
+            "danceability": 0.492,
+            "loudness": -8.673,
+            "valence": 0.456,
+            "tempo": 125.048,
+            "popularity": 30.0
+        },
+        {
+            "name": "Dead Boy's Poem - Remastered",
+            "uri": "spotify:track:5KxD3rMaCPcjhBsxUHmZBl",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.484,
+            "liveness": 0.099,
+            "speechiness": 0.0358,
+            "acousticness": 0.00589,
+            "instrumentalness": 0.00051,
+            "danceability": 0.302,
+            "loudness": -10.734,
+            "valence": 0.287,
+            "tempo": 133.904,
+            "popularity": 28.0
+        },
+        {
+            "name": "My Walden - Remastered",
+            "uri": "spotify:track:5PuRm0yUeDNLBkvGF5TjRG",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.721,
+            "liveness": 0.344,
+            "speechiness": 0.0381,
+            "acousticness": 0.00134,
+            "instrumentalness": 0.0422,
+            "danceability": 0.312,
+            "loudness": -9.736,
+            "valence": 0.332,
+            "tempo": 141.055,
+            "popularity": 25.0
+        },
+        {
+            "name": "End Of All Hope - Remastered",
+            "uri": "spotify:track:5RHeFlk3jhjMXhsrd3Dl3Y",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.918,
+            "liveness": 0.0746,
+            "speechiness": 0.0597,
+            "acousticness": 0.00032,
+            "instrumentalness": 0.0403,
+            "danceability": 0.481,
+            "loudness": -8.846,
+            "valence": 0.271,
+            "tempo": 80.028,
+            "popularity": 31.0
+        },
+        {
+            "name": "Sacrament Of Wilderness - Remastered",
+            "uri": "spotify:track:62IJmBOh1kH0iALRGPJ5Ei",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.921,
+            "liveness": 0.167,
+            "speechiness": 0.0472,
+            "acousticness": 6.24e-06,
+            "instrumentalness": 0.0587,
+            "danceability": 0.427,
+            "loudness": -7.121,
+            "valence": 0.488,
+            "tempo": 145.498,
+            "popularity": 23.0
+        },
+        {
+            "name": "I Want My Tears Back - Remastered",
+            "uri": "spotify:track:6JxYOkpnsIisMBcHoGgJFW",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.867,
+            "liveness": 0.0517,
+            "speechiness": 0.0436,
+            "acousticness": 0.000781,
+            "instrumentalness": 0.000102,
+            "danceability": 0.5,
+            "loudness": -8.78,
+            "valence": 0.609,
+            "tempo": 140.013,
+            "popularity": 27.0
+        },
+        {
+            "name": "\u00c9lan - Remastered",
+            "uri": "spotify:track:6iTcS4M55bGkrBEs4ryerv",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.596,
+            "liveness": 0.149,
+            "speechiness": 0.0297,
+            "acousticness": 0.0108,
+            "instrumentalness": 0.0001,
+            "danceability": 0.582,
+            "loudness": -10.017,
+            "valence": 0.359,
+            "tempo": 127.995,
+            "popularity": 28.0
+        },
+        {
+            "name": "Storytime - Remastered",
+            "uri": "spotify:track:71Mwl2xXEZiDq49Vy9EZcd",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.9,
+            "liveness": 0.0903,
+            "speechiness": 0.0422,
+            "acousticness": 0.00129,
+            "instrumentalness": 0.075,
+            "danceability": 0.47,
+            "loudness": -9.218,
+            "valence": 0.617,
+            "tempo": 156.195,
+            "popularity": 28.0
+        },
+        {
+            "name": "Sleeping Sun - Remastered",
+            "uri": "spotify:track:7abBdgoy9TvSWhYm4fhpYC",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.496,
+            "liveness": 0.107,
+            "speechiness": 0.0291,
+            "acousticness": 0.00238,
+            "instrumentalness": 0.0,
+            "danceability": 0.382,
+            "loudness": -10.579,
+            "valence": 0.0739,
+            "tempo": 110.489,
+            "popularity": 30.0
+        }
+    ],
+    "medium_term": [
+        {
+            "name": "Sweet but Psycho",
+            "uri": "spotify:track:25sgk305KZfyuqVBQIahim",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Ava Max"
+            ],
+            "energy": 0.704,
+            "liveness": 0.166,
+            "speechiness": 0.0476,
+            "acousticness": 0.0691,
+            "instrumentalness": 0.0,
+            "danceability": 0.719,
+            "loudness": -4.724,
+            "valence": 0.628,
+            "tempo": 133.002,
+            "popularity": 91.0
+        },
+        {
+            "name": "High Hopes",
+            "uri": "spotify:track:1rqqCSm0Qe4I9rUvWncaom",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "artists": [
+                "Panic! At The Disco"
+            ],
+            "energy": 0.904,
+            "liveness": 0.064,
+            "speechiness": 0.0618,
+            "acousticness": 0.193,
+            "instrumentalness": 0.0,
+            "danceability": 0.579,
+            "loudness": -2.729,
+            "valence": 0.681,
+            "tempo": 82.014,
+            "popularity": 89.0
+        },
+        {
+            "name": "That Green Gentleman (Things Have Changed)",
+            "uri": "spotify:track:2d1D1E8M48hHE99u6BO8RN",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "artists": [
+                "Panic! At The Disco"
+            ],
+            "energy": 0.796,
+            "liveness": 0.177,
+            "speechiness": 0.0333,
+            "acousticness": 0.103,
+            "instrumentalness": 0.0,
+            "danceability": 0.536,
+            "loudness": -6.32,
+            "valence": 0.397,
+            "tempo": 95.98,
+            "popularity": 55.0
+        },
+        {
+            "name": "Bed Intruder Song",
+            "uri": "spotify:track:0NC8RcLp8ibhwsvUDn7wW1",
+            "genres": [
+                "antiviral pop",
+                "comic"
+            ],
+            "artists": [
+                "Antoine dodson & The Gregory Brothers",
+                "Antoine Dodson",
+                "The Gregory Brothers"
+            ],
+            "energy": 0.783,
+            "liveness": 0.244,
+            "speechiness": 0.224,
+            "acousticness": 0.687,
+            "instrumentalness": 0.0,
+            "danceability": 0.692,
+            "loudness": -4.271,
+            "valence": 0.879,
+            "tempo": 75.998,
+            "popularity": 33.0
+        },
+        {
+            "name": "God Only Knows",
+            "uri": "spotify:track:4ElNxglBjcrASiGn58t9Jm",
+            "genres": [
+                "anthem worship",
+                "ccm",
+                "christian alternative rock",
+                "christian indie",
+                "christian music",
+                "world worship",
+                "worship"
+            ],
+            "artists": [
+                "for KING & COUNTRY"
+            ],
+            "energy": 0.417,
+            "liveness": 0.128,
+            "speechiness": 0.0502,
+            "acousticness": 0.395,
+            "instrumentalness": 8.35e-06,
+            "danceability": 0.597,
+            "loudness": -7.952,
+            "valence": 0.263,
+            "tempo": 143.839,
+            "popularity": 67.0
+        },
+        {
+            "name": "Gimme Sympathy",
+            "uri": "spotify:track:1blxMGAKo9uttR9bHsXCOV",
+            "genres": [
+                "alternative dance",
+                "canadian indie",
+                "canadian pop",
+                "canadian rock",
+                "dance-punk",
+                "electropop",
+                "folk-pop",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "metropopolis",
+                "modern rock",
+                "neo-synthpop",
+                "new rave",
+                "shimmer pop"
+            ],
+            "artists": [
+                "Metric"
+            ],
+            "energy": 0.886,
+            "liveness": 0.11,
+            "speechiness": 0.0752,
+            "acousticness": 0.00832,
+            "instrumentalness": 0.00164,
+            "danceability": 0.47,
+            "loudness": -6.147,
+            "valence": 0.119,
+            "tempo": 139.046,
+            "popularity": 50.0
+        },
+        {
+            "name": "Mona Lisa",
+            "uri": "spotify:track:3sR7ZJLhTV28FJku2Wz37K",
+            "genres": [
+                "comic"
+            ],
+            "artists": [
+                "The Lonely Island"
+            ],
+            "energy": 0.885,
+            "liveness": 0.387,
+            "speechiness": 0.11,
+            "acousticness": 0.0123,
+            "instrumentalness": 0.0,
+            "danceability": 0.618,
+            "loudness": -4.322,
+            "valence": 0.731,
+            "tempo": 131.862,
+            "popularity": 50.0
+        },
+        {
+            "name": "Get over Yourself",
+            "uri": "spotify:track:0sr84SDJ9VN4EB7p2mWGur",
+            "genres": [
+                "contemporary country",
+                "indonesian jazz",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Kelsea Ballerini"
+            ],
+            "energy": 0.787,
+            "liveness": 0.154,
+            "speechiness": 0.0778,
+            "acousticness": 0.0307,
+            "instrumentalness": 0.0,
+            "danceability": 0.523,
+            "loudness": -7.909,
+            "valence": 0.505,
+            "tempo": 84.072,
+            "popularity": 52.0
+        },
+        {
+            "name": "Speechless",
+            "uri": "spotify:track:2PjDWdGvvbLQfRRTQIZPmv",
+            "genres": [
+                "dance pop",
+                "pop"
+            ],
+            "artists": [
+                "Lady Gaga"
+            ],
+            "energy": 0.724,
+            "liveness": 0.355,
+            "speechiness": 0.0416,
+            "acousticness": 0.398,
+            "instrumentalness": 0.0,
+            "danceability": 0.302,
+            "loudness": -4.034,
+            "valence": 0.394,
+            "tempo": 144.235,
+            "popularity": 51.0
+        },
+        {
+            "name": "Finest Girl (Bin Laden Song)",
+            "uri": "spotify:track:1LpjlPR8Gv52B04UQNLZAw",
+            "genres": [
+                "comic"
+            ],
+            "artists": [
+                "The Lonely Island"
+            ],
+            "energy": 0.765,
+            "liveness": 0.282,
+            "speechiness": 0.263,
+            "acousticness": 0.297,
+            "instrumentalness": 0.0,
+            "danceability": 0.711,
+            "loudness": -4.85,
+            "valence": 0.47,
+            "tempo": 98.627,
+            "popularity": 60.0
+        },
+        {
+            "name": "\u00c9lan",
+            "uri": "spotify:track:1yQdozAHO0cK9OFIsrCs0S",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "artists": [
+                "Nightwish"
+            ],
+            "energy": 0.582,
+            "liveness": 0.139,
+            "speechiness": 0.0301,
+            "acousticness": 0.0103,
+            "instrumentalness": 0.000178,
+            "danceability": 0.575,
+            "loudness": -9.476,
+            "valence": 0.297,
+            "tempo": 127.94,
+            "popularity": 55.0
+        },
+        {
+            "name": "Guys My Age",
+            "uri": "spotify:track:0Xm8tw6qikotb8FAOZ2ks7",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "indie poptimism",
+                "pixie",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Hey Violet"
+            ],
+            "energy": 0.663,
+            "liveness": 0.0659,
+            "speechiness": 0.0352,
+            "acousticness": 0.106,
+            "instrumentalness": 0.0,
+            "danceability": 0.69,
+            "loudness": -5.248,
+            "valence": 0.285,
+            "tempo": 122.041,
+            "popularity": 63.0
+        },
+        {
+            "name": "New Divide",
+            "uri": "spotify:track:6Wx88Mv6b9ofjKMKkdwOJd",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "post-grunge",
+                "rap metal"
+            ],
+            "artists": [
+                "Linkin Park"
+            ],
+            "energy": 0.808,
+            "liveness": 0.0983,
+            "speechiness": 0.0362,
+            "acousticness": 0.000235,
+            "instrumentalness": 0.0,
+            "danceability": 0.493,
+            "loudness": -3.365,
+            "valence": 0.38,
+            "tempo": 117.971,
+            "popularity": 68.0
+        },
+        {
+            "name": "Roses",
+            "uri": "spotify:track:4A92qdxWEIojASeyffiaWn",
+            "genres": [
+                "contemporary country",
+                "indonesian jazz",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Kelsea Ballerini"
+            ],
+            "energy": 0.832,
+            "liveness": 0.367,
+            "speechiness": 0.043,
+            "acousticness": 0.00223,
+            "instrumentalness": 0.0,
+            "danceability": 0.614,
+            "loudness": -5.527,
+            "valence": 0.378,
+            "tempo": 105.063,
+            "popularity": 46.0
+        },
+        {
+            "name": "Not On Drugs - Ali Payami Remix",
+            "uri": "spotify:track:5loFfxDBNUsYCmdnhqw3qg",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "metropopolis",
+                "pop",
+                "post-teen pop",
+                "r&b",
+                "swedish electropop",
+                "swedish pop",
+                "swedish synthpop",
+                "tropical house"
+            ],
+            "artists": [
+                "Tove Lo",
+                "Ali Payami"
+            ],
+            "energy": 0.798,
+            "liveness": 0.0985,
+            "speechiness": 0.0587,
+            "acousticness": 0.0609,
+            "instrumentalness": 0.0,
+            "danceability": 0.509,
+            "loudness": -5.738,
+            "valence": 0.341,
+            "tempo": 116.966,
+            "popularity": 29.0
+        },
+        {
+            "name": "Miss Me More",
+            "uri": "spotify:track:5NfJGBAL9mgFPRQxKJmiX2",
+            "genres": [
+                "contemporary country",
+                "indonesian jazz",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Kelsea Ballerini"
+            ],
+            "energy": 0.72,
+            "liveness": 0.0834,
+            "speechiness": 0.0527,
+            "acousticness": 0.014,
+            "instrumentalness": 0.0,
+            "danceability": 0.643,
+            "loudness": -7.146,
+            "valence": 0.491,
+            "tempo": 96.028,
+            "popularity": 74.0
+        },
+        {
+            "name": "None Of My Business",
+            "uri": "spotify:track:2SPEg45ZaUFJCg9GwNmRvw",
+            "genres": [
+                "australian pop",
+                "dance pop",
+                "electropop",
+                "pop",
+                "post-teen pop",
+                "talent show",
+                "viral pop"
+            ],
+            "artists": [
+                "Cher Lloyd"
+            ],
+            "energy": 0.488,
+            "liveness": 0.0823,
+            "speechiness": 0.0462,
+            "acousticness": 0.428,
+            "instrumentalness": 0.0,
+            "danceability": 0.793,
+            "loudness": -5.807,
+            "valence": 0.5,
+            "tempo": 133.957,
+            "popularity": 67.0
+        },
+        {
+            "name": "Do It Again",
+            "uri": "spotify:track:72Bz4ciRZPBcVSw0nrZDHi",
+            "genres": [
+                "dance pop",
+                "deep pop r&b",
+                "pop",
+                "pop rap",
+                "post-teen pop",
+                "r&b",
+                "urban contemporary",
+                "dance pop",
+                "pop",
+                "pop rap",
+                "r&b",
+                "rap",
+                "hip hop",
+                "pop",
+                "pop rap",
+                "rap",
+                "trap music"
+            ],
+            "artists": [
+                "Pia Mia",
+                "Chris Brown",
+                "Tyga"
+            ],
+            "energy": 0.559,
+            "liveness": 0.088,
+            "speechiness": 0.0515,
+            "acousticness": 0.0299,
+            "instrumentalness": 0.0,
+            "danceability": 0.714,
+            "loudness": -6.543,
+            "valence": 0.411,
+            "tempo": 95.979,
+            "popularity": 75.0
+        },
+        {
+            "name": "My Way",
+            "uri": "spotify:track:3gJ6t0HKTMto4Aq3sXJVk2",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Ava Max"
+            ],
+            "energy": 0.621,
+            "liveness": 0.0901,
+            "speechiness": 0.0412,
+            "acousticness": 0.0623,
+            "instrumentalness": 0.0,
+            "danceability": 0.685,
+            "loudness": -4.877,
+            "valence": 0.396,
+            "tempo": 100.004,
+            "popularity": 64.0
+        },
+        {
+            "name": "O.D.D.",
+            "uri": "spotify:track:1HuIahUPUXCx7Kz4rgMXFU",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "indie poptimism",
+                "pixie",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Hey Violet"
+            ],
+            "energy": 0.611,
+            "liveness": 0.149,
+            "speechiness": 0.0464,
+            "acousticness": 0.00935,
+            "instrumentalness": 1.04e-06,
+            "danceability": 0.553,
+            "loudness": -6.468,
+            "valence": 0.369,
+            "tempo": 154.094,
+            "popularity": 60.0
+        },
+        {
+            "name": "Hate My Life",
+            "uri": "spotify:track:5zcLnqZbAjDGXX7HNcT1rE",
+            "genres": [
+                "alternative metal",
+                "canadian metal",
+                "canadian rock",
+                "nu metal",
+                "post-grunge",
+                "rap rock",
+                "wrestling"
+            ],
+            "artists": [
+                "Theory of a Deadman"
+            ],
+            "energy": 0.828,
+            "liveness": 0.266,
+            "speechiness": 0.033,
+            "acousticness": 0.0162,
+            "instrumentalness": 0.0,
+            "danceability": 0.508,
+            "loudness": -4.065,
+            "valence": 0.449,
+            "tempo": 125.868,
+            "popularity": 58.0
+        },
+        {
+            "name": "Panic Switch",
+            "uri": "spotify:track:597i9UhHbW8hHgBUp8Tm54",
+            "genres": [
+                "alternative metal",
+                "alternative rock",
+                "dance-punk",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "la indie",
+                "modern rock",
+                "post-grunge",
+                "rock"
+            ],
+            "artists": [
+                "Silversun Pickups"
+            ],
+            "energy": 0.885,
+            "liveness": 0.228,
+            "speechiness": 0.0725,
+            "acousticness": 0.000202,
+            "instrumentalness": 0.0121,
+            "danceability": 0.163,
+            "loudness": -4.623,
+            "valence": 0.549,
+            "tempo": 198.556,
+            "popularity": 56.0
+        },
+        {
+            "name": "Dirty Little Secret",
+            "uri": "spotify:track:5lDriBxJd22IhOH9zTcFrV",
+            "genres": [
+                "modern rock",
+                "neo mellow",
+                "pop",
+                "pop punk",
+                "pop rock",
+                "post-grunge"
+            ],
+            "artists": [
+                "The All-American Rejects"
+            ],
+            "energy": 0.942,
+            "liveness": 0.667,
+            "speechiness": 0.0466,
+            "acousticness": 0.0004,
+            "instrumentalness": 2.65e-06,
+            "danceability": 0.453,
+            "loudness": -4.256,
+            "valence": 0.457,
+            "tempo": 143.85,
+            "popularity": 68.0
+        },
+        {
+            "name": "Hope",
+            "uri": "spotify:track:4BiiOzZCrXEzHRLYcYFiD5",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "tropical house",
+                "swedish pop"
+            ],
+            "artists": [
+                "The Chainsmokers",
+                "Winona Oak"
+            ],
+            "energy": 0.699,
+            "liveness": 0.0814,
+            "speechiness": 0.0958,
+            "acousticness": 0.488,
+            "instrumentalness": 3.6e-06,
+            "danceability": 0.773,
+            "loudness": -5.982,
+            "valence": 0.513,
+            "tempo": 104.941,
+            "popularity": 78.0
+        },
+        {
+            "name": "Ain't My Fault",
+            "uri": "spotify:track:0ADG9OgdVTL7fgREP75BrZ",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "post-teen pop",
+                "scandipop",
+                "swedish electropop",
+                "swedish pop",
+                "tropical house"
+            ],
+            "artists": [
+                "Zara Larsson"
+            ],
+            "energy": 0.782,
+            "liveness": 0.285,
+            "speechiness": 0.0296,
+            "acousticness": 0.00778,
+            "instrumentalness": 0.0,
+            "danceability": 0.576,
+            "loudness": -4.825,
+            "valence": 0.355,
+            "tempo": 141.153,
+            "popularity": 72.0
+        },
+        {
+            "name": "Bad Things (with Camila Cabello)",
+            "uri": "spotify:track:1PSBzsahR2AKwLJgx8ehBj",
+            "genres": [
+                "hip hop",
+                "pop rap",
+                "rap",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "artists": [
+                "Machine Gun Kelly",
+                "Camila Cabello"
+            ],
+            "energy": 0.691,
+            "liveness": 0.185,
+            "speechiness": 0.146,
+            "acousticness": 0.214,
+            "instrumentalness": 0.0,
+            "danceability": 0.697,
+            "loudness": -4.757,
+            "valence": 0.305,
+            "tempo": 137.853,
+            "popularity": 73.0
+        },
+        {
+            "name": "Live Your Life (feat. Rihanna)",
+            "uri": "spotify:track:3jlbL2OTD5YmIunYzgQTAN",
+            "genres": [
+                "atl hip hop",
+                "dance pop",
+                "dirty south rap",
+                "gangster rap",
+                "hip hop",
+                "pop rap",
+                "rap",
+                "southern hip hop",
+                "trap music",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b",
+                "urban contemporary"
+            ],
+            "artists": [
+                "T.I.",
+                "Rihanna"
+            ],
+            "energy": 0.862,
+            "liveness": 0.211,
+            "speechiness": 0.255,
+            "acousticness": 0.071,
+            "instrumentalness": 0.0,
+            "danceability": 0.375,
+            "loudness": -3.363,
+            "valence": 0.478,
+            "tempo": 159.841,
+            "popularity": 74.0
+        },
+        {
+            "name": "Capital M-E",
+            "uri": "spotify:track:1VppmZKCjqa8qqkdHV76Iu",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk",
+                "pop rock",
+                "screamo"
+            ],
+            "artists": [
+                "Taking Back Sunday"
+            ],
+            "energy": 0.958,
+            "liveness": 0.0896,
+            "speechiness": 0.0736,
+            "acousticness": 9.38e-05,
+            "instrumentalness": 0.0451,
+            "danceability": 0.508,
+            "loudness": -4.622,
+            "valence": 0.643,
+            "tempo": 130.147,
+            "popularity": 30.0
+        },
+        {
+            "name": "Never Be the Same",
+            "uri": "spotify:track:4eWQlBRaTjPPUlzacqEeoQ",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "artists": [
+                "Camila Cabello"
+            ],
+            "energy": 0.713,
+            "liveness": 0.137,
+            "speechiness": 0.0747,
+            "acousticness": 0.181,
+            "instrumentalness": 0.000637,
+            "danceability": 0.637,
+            "loudness": -4.333,
+            "valence": 0.243,
+            "tempo": 129.923,
+            "popularity": 77.0
+        },
+        {
+            "name": "Let You Go",
+            "uri": "spotify:track:1beqtQO0aIc1dWsXr97Iji",
+            "genres": [
+                "hip hop",
+                "pop rap",
+                "rap"
+            ],
+            "artists": [
+                "Machine Gun Kelly"
+            ],
+            "energy": 0.819,
+            "liveness": 0.161,
+            "speechiness": 0.101,
+            "acousticness": 0.197,
+            "instrumentalness": 0.0,
+            "danceability": 0.601,
+            "loudness": -3.835,
+            "valence": 0.21,
+            "tempo": 170.117,
+            "popularity": 62.0
+        },
+        {
+            "name": "Not On Drugs",
+            "uri": "spotify:track:2zbHn4d6tUNQNSLAwS813T",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "metropopolis",
+                "pop",
+                "post-teen pop",
+                "r&b",
+                "swedish electropop",
+                "swedish pop",
+                "swedish synthpop",
+                "tropical house"
+            ],
+            "artists": [
+                "Tove Lo"
+            ],
+            "energy": 0.635,
+            "liveness": 0.135,
+            "speechiness": 0.0374,
+            "acousticness": 0.00629,
+            "instrumentalness": 0.0,
+            "danceability": 0.7,
+            "loudness": -6.019,
+            "valence": 0.594,
+            "tempo": 124.953,
+            "popularity": 37.0
+        },
+        {
+            "name": "Hoodie",
+            "uri": "spotify:track:410smJMzhna1ADC2ldqVHu",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "indie poptimism",
+                "pixie",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Hey Violet"
+            ],
+            "energy": 0.699,
+            "liveness": 0.391,
+            "speechiness": 0.0445,
+            "acousticness": 0.0126,
+            "instrumentalness": 6.16e-06,
+            "danceability": 0.688,
+            "loudness": -5.0,
+            "valence": 0.385,
+            "tempo": 94.935,
+            "popularity": 65.0
+        },
+        {
+            "name": "Paris",
+            "uri": "spotify:track:15vzANxN8G9wWfwAJLLMCg",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "tropical house"
+            ],
+            "artists": [
+                "The Chainsmokers"
+            ],
+            "energy": 0.644,
+            "liveness": 0.0888,
+            "speechiness": 0.031,
+            "acousticness": 0.0243,
+            "instrumentalness": 0.0,
+            "danceability": 0.646,
+            "loudness": -6.763,
+            "valence": 0.251,
+            "tempo": 99.999,
+            "popularity": 76.0
+        },
+        {
+            "name": "Catch & Release",
+            "uri": "spotify:track:3zo5wxTKJwHvRi48gsYGaJ",
+            "genres": [
+                "alternative metal",
+                "alternative rock",
+                "dance-punk",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "la indie",
+                "modern rock",
+                "post-grunge",
+                "rock"
+            ],
+            "artists": [
+                "Silversun Pickups"
+            ],
+            "energy": 0.512,
+            "liveness": 0.0958,
+            "speechiness": 0.0257,
+            "acousticness": 0.0119,
+            "instrumentalness": 0.00119,
+            "danceability": 0.643,
+            "loudness": -8.205,
+            "valence": 0.466,
+            "tempo": 115.195,
+            "popularity": 42.0
+        },
+        {
+            "name": "One More Night",
+            "uri": "spotify:track:4XNrMwGx1SqP01sqkGTDmo",
+            "genres": [
+                "pop"
+            ],
+            "artists": [
+                "Maroon 5"
+            ],
+            "energy": 0.8,
+            "liveness": 0.0834,
+            "speechiness": 0.0339,
+            "acousticness": 0.0563,
+            "instrumentalness": 0.0,
+            "danceability": 0.71,
+            "loudness": -3.439,
+            "valence": 0.635,
+            "tempo": 93.01,
+            "popularity": 65.0
+        },
+        {
+            "name": "So Am I",
+            "uri": "spotify:track:0uUNN1nSoUx1A4fkDCWDQ7",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Ava Max"
+            ],
+            "energy": 0.677,
+            "liveness": 0.133,
+            "speechiness": 0.0464,
+            "acousticness": 0.0754,
+            "instrumentalness": 0.0,
+            "danceability": 0.684,
+            "loudness": -4.034,
+            "valence": 0.595,
+            "tempo": 130.141,
+            "popularity": 90.0
+        },
+        {
+            "name": "Bad Hombres, Nasty Women Mix (feat. \"Weird Al\" Yankovic)",
+            "uri": "spotify:track:2fdbbsLCHGdzTuwQ3QUPzY",
+            "genres": [
+                "antiviral pop",
+                "comic",
+                "antiviral pop",
+                "comedy rock",
+                "comic"
+            ],
+            "artists": [
+                "The Gregory Brothers",
+                "\"Weird Al\" Yankovic"
+            ],
+            "energy": 0.883,
+            "liveness": 0.255,
+            "speechiness": 0.132,
+            "acousticness": 0.153,
+            "instrumentalness": 0.0,
+            "danceability": 0.696,
+            "loudness": -3.919,
+            "valence": 0.892,
+            "tempo": 147.967,
+            "popularity": 26.0
+        },
+        {
+            "name": "Unapologetically",
+            "uri": "spotify:track:6DeMC9qUOznRorpgNW6dYe",
+            "genres": [
+                "contemporary country",
+                "indonesian jazz",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Kelsea Ballerini"
+            ],
+            "energy": 0.816,
+            "liveness": 0.0488,
+            "speechiness": 0.0468,
+            "acousticness": 0.0177,
+            "instrumentalness": 0.0,
+            "danceability": 0.537,
+            "loudness": -5.303,
+            "valence": 0.525,
+            "tempo": 170.876,
+            "popularity": 51.0
+        },
+        {
+            "name": "In the End",
+            "uri": "spotify:track:60a0Rd6pjrkxjPbaKzXjfq",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "post-grunge",
+                "rap metal"
+            ],
+            "artists": [
+                "Linkin Park"
+            ],
+            "energy": 0.853,
+            "liveness": 0.108,
+            "speechiness": 0.0498,
+            "acousticness": 0.0103,
+            "instrumentalness": 0.0,
+            "danceability": 0.542,
+            "loudness": -6.407,
+            "valence": 0.37,
+            "tempo": 105.256,
+            "popularity": 82.0
+        },
+        {
+            "name": "Revival",
+            "uri": "spotify:track:7oIGPzZ1TGlFbdG4nDI3uo",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Selena Gomez"
+            ],
+            "energy": 0.732,
+            "liveness": 0.184,
+            "speechiness": 0.0862,
+            "acousticness": 0.128,
+            "instrumentalness": 0.0,
+            "danceability": 0.684,
+            "loudness": -4.966,
+            "valence": 0.527,
+            "tempo": 124.888,
+            "popularity": 45.0
+        },
+        {
+            "name": "Give Me Novacaine / She's a Rebel",
+            "uri": "spotify:track:11I3KKHv7g2pXiuqRDabRA",
+            "genres": [
+                "permanent wave",
+                "pop punk",
+                "punk",
+                "rock"
+            ],
+            "artists": [
+                "Green Day"
+            ],
+            "energy": 0.949,
+            "liveness": 0.0569,
+            "speechiness": 0.0784,
+            "acousticness": 0.00185,
+            "instrumentalness": 1.78e-05,
+            "danceability": 0.312,
+            "loudness": -3.533,
+            "valence": 0.65,
+            "tempo": 154.795,
+            "popularity": 55.0
+        },
+        {
+            "name": "Crawling",
+            "uri": "spotify:track:57BrRMwf9LrcmuOsyGilwr",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "post-grunge",
+                "rap metal"
+            ],
+            "artists": [
+                "Linkin Park"
+            ],
+            "energy": 0.702,
+            "liveness": 0.536,
+            "speechiness": 0.0337,
+            "acousticness": 0.0466,
+            "instrumentalness": 3.2e-06,
+            "danceability": 0.58,
+            "loudness": -5.565,
+            "valence": 0.299,
+            "tempo": 105.076,
+            "popularity": 72.0
+        },
+        {
+            "name": "1985",
+            "uri": "spotify:track:5oQcOu1omDykbIPSdSQQNJ",
+            "genres": [
+                "comic",
+                "pop punk",
+                "pop rock",
+                "post-grunge"
+            ],
+            "artists": [
+                "Bowling For Soup"
+            ],
+            "energy": 0.887,
+            "liveness": 0.337,
+            "speechiness": 0.0598,
+            "acousticness": 0.000242,
+            "instrumentalness": 0.0,
+            "danceability": 0.606,
+            "loudness": -4.404,
+            "valence": 0.903,
+            "tempo": 119.974,
+            "popularity": 68.0
+        },
+        {
+            "name": "Trump Goes Hard",
+            "uri": "spotify:track:1rUSMFiAcKBDZOgmNgLJrJ",
+            "genres": [
+                "antiviral pop",
+                "comic"
+            ],
+            "artists": [
+                "The Gregory Brothers"
+            ],
+            "energy": 0.674,
+            "liveness": 0.341,
+            "speechiness": 0.171,
+            "acousticness": 0.359,
+            "instrumentalness": 0.0,
+            "danceability": 0.768,
+            "loudness": -9.623,
+            "valence": 0.524,
+            "tempo": 143.926,
+            "popularity": 27.0
+        },
+        {
+            "name": "human",
+            "uri": "spotify:track:1zVhMuH7agsRe6XkljIY4U",
+            "genres": [
+                "dance pop",
+                "neo mellow",
+                "pop",
+                "post-teen pop",
+                "viral pop"
+            ],
+            "artists": [
+                "Christina Perri"
+            ],
+            "energy": 0.489,
+            "liveness": 0.114,
+            "speechiness": 0.0368,
+            "acousticness": 0.132,
+            "instrumentalness": 0.000643,
+            "danceability": 0.439,
+            "loudness": -6.286,
+            "valence": 0.253,
+            "tempo": 143.808,
+            "popularity": 69.0
+        },
+        {
+            "name": "Timebomb",
+            "uri": "spotify:track:2m37E8EVwXvQ5e3JkURoAe",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "metropopolis",
+                "pop",
+                "post-teen pop",
+                "r&b",
+                "swedish electropop",
+                "swedish pop",
+                "swedish synthpop",
+                "tropical house"
+            ],
+            "artists": [
+                "Tove Lo"
+            ],
+            "energy": 0.834,
+            "liveness": 0.218,
+            "speechiness": 0.0348,
+            "acousticness": 0.0133,
+            "instrumentalness": 0.0,
+            "danceability": 0.522,
+            "loudness": -5.536,
+            "valence": 0.215,
+            "tempo": 139.994,
+            "popularity": 30.0
+        },
+        {
+            "name": "Machine Heart",
+            "uri": "spotify:track:19WNVv6GaJMI19Qka6RfEJ",
+            "genres": [
+                "contemporary country",
+                "indonesian jazz",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Kelsea Ballerini"
+            ],
+            "energy": 0.625,
+            "liveness": 0.11,
+            "speechiness": 0.0341,
+            "acousticness": 0.165,
+            "instrumentalness": 0.0,
+            "danceability": 0.614,
+            "loudness": -5.814,
+            "valence": 0.278,
+            "tempo": 115.003,
+            "popularity": 44.0
+        },
+        {
+            "name": "Talking Body",
+            "uri": "spotify:track:2tpfxAXiI52znho4WE3XFA",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "metropopolis",
+                "pop",
+                "post-teen pop",
+                "r&b",
+                "swedish electropop",
+                "swedish pop",
+                "swedish synthpop",
+                "tropical house"
+            ],
+            "artists": [
+                "Tove Lo"
+            ],
+            "energy": 0.761,
+            "liveness": 0.0823,
+            "speechiness": 0.0338,
+            "acousticness": 0.0966,
+            "instrumentalness": 0.0,
+            "danceability": 0.736,
+            "loudness": -5.449,
+            "valence": 0.114,
+            "tempo": 119.999,
+            "popularity": 66.0
+        },
+        {
+            "name": "Funeral",
+            "uri": "spotify:track:75gU1E0ou9Kf8GBVwGs1Xk",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "post-teen pop",
+                "scandipop",
+                "swedish electropop",
+                "swedish pop",
+                "tropical house"
+            ],
+            "artists": [
+                "Zara Larsson"
+            ],
+            "energy": 0.637,
+            "liveness": 0.129,
+            "speechiness": 0.0526,
+            "acousticness": 0.0898,
+            "instrumentalness": 5.83e-06,
+            "danceability": 0.53,
+            "loudness": -6.307,
+            "valence": 0.343,
+            "tempo": 119.844,
+            "popularity": 55.0
+        },
+        {
+            "name": "Numb / Encore",
+            "uri": "spotify:track:5sNESr6pQfIhL3krM8CtZn",
+            "genres": [
+                "east coast hip hop",
+                "gangster rap",
+                "hip hop",
+                "pop rap",
+                "rap",
+                "alternative metal",
+                "nu metal",
+                "post-grunge",
+                "rap metal"
+            ],
+            "artists": [
+                "JAY Z",
+                "Linkin Park"
+            ],
+            "energy": 0.793,
+            "liveness": 0.582,
+            "speechiness": 0.166,
+            "acousticness": 0.0603,
+            "instrumentalness": 0.0,
+            "danceability": 0.687,
+            "loudness": -4.254,
+            "valence": 0.751,
+            "tempo": 107.045,
+            "popularity": 74.0
+        }
+    ],
+    "long_term": [
+        {
+            "name": "Sweet but Psycho",
+            "uri": "spotify:track:25sgk305KZfyuqVBQIahim",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Ava Max"
+            ],
+            "energy": 0.704,
+            "liveness": 0.166,
+            "speechiness": 0.0476,
+            "acousticness": 0.0691,
+            "instrumentalness": 0.0,
+            "danceability": 0.719,
+            "loudness": -4.724,
+            "valence": 0.628,
+            "tempo": 133.002,
+            "popularity": 91.0
+        },
+        {
+            "name": "Gimme Sympathy",
+            "uri": "spotify:track:1blxMGAKo9uttR9bHsXCOV",
+            "genres": [
+                "alternative dance",
+                "canadian indie",
+                "canadian pop",
+                "canadian rock",
+                "dance-punk",
+                "electropop",
+                "folk-pop",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "metropopolis",
+                "modern rock",
+                "neo-synthpop",
+                "new rave",
+                "shimmer pop"
+            ],
+            "artists": [
+                "Metric"
+            ],
+            "energy": 0.886,
+            "liveness": 0.11,
+            "speechiness": 0.0752,
+            "acousticness": 0.00832,
+            "instrumentalness": 0.00164,
+            "danceability": 0.47,
+            "loudness": -6.147,
+            "valence": 0.119,
+            "tempo": 139.046,
+            "popularity": 50.0
+        },
+        {
+            "name": "Crawling",
+            "uri": "spotify:track:57BrRMwf9LrcmuOsyGilwr",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "post-grunge",
+                "rap metal"
+            ],
+            "artists": [
+                "Linkin Park"
+            ],
+            "energy": 0.702,
+            "liveness": 0.536,
+            "speechiness": 0.0337,
+            "acousticness": 0.0466,
+            "instrumentalness": 3.2e-06,
+            "danceability": 0.58,
+            "loudness": -5.565,
+            "valence": 0.299,
+            "tempo": 105.076,
+            "popularity": 72.0
+        },
+        {
+            "name": "Let You Go",
+            "uri": "spotify:track:1beqtQO0aIc1dWsXr97Iji",
+            "genres": [
+                "hip hop",
+                "pop rap",
+                "rap"
+            ],
+            "artists": [
+                "Machine Gun Kelly"
+            ],
+            "energy": 0.819,
+            "liveness": 0.161,
+            "speechiness": 0.101,
+            "acousticness": 0.197,
+            "instrumentalness": 0.0,
+            "danceability": 0.601,
+            "loudness": -3.835,
+            "valence": 0.21,
+            "tempo": 170.117,
+            "popularity": 62.0
+        },
+        {
+            "name": "No Worry Birdie",
+            "uri": "spotify:track:1GG5oSQX7qwnmmDCTU83qW",
+            "genres": [
+                "nerdcore"
+            ],
+            "artists": [
+                "The Grammar Club"
+            ],
+            "energy": 0.734,
+            "liveness": 0.121,
+            "speechiness": 0.0362,
+            "acousticness": 0.0112,
+            "instrumentalness": 2.7e-05,
+            "danceability": 0.851,
+            "loudness": -7.32,
+            "valence": 0.975,
+            "tempo": 124.993,
+            "popularity": 3.0
+        },
+        {
+            "name": "Asshole",
+            "uri": "spotify:track:2fmlkxGNnUnIn4Ucc5P4ZX",
+            "genres": [
+                "detroit hip hop",
+                "g funk",
+                "hip hop",
+                "rap",
+                "piano rock",
+                "viral pop"
+            ],
+            "artists": [
+                "Eminem",
+                "Skylar Grey"
+            ],
+            "energy": 0.906,
+            "liveness": 0.782,
+            "speechiness": 0.349,
+            "acousticness": 0.471,
+            "instrumentalness": 0.0,
+            "danceability": 0.534,
+            "loudness": -2.316,
+            "valence": 0.499,
+            "tempo": 174.058,
+            "popularity": 38.0
+        },
+        {
+            "name": "Paris",
+            "uri": "spotify:track:15vzANxN8G9wWfwAJLLMCg",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "tropical house"
+            ],
+            "artists": [
+                "The Chainsmokers"
+            ],
+            "energy": 0.644,
+            "liveness": 0.0888,
+            "speechiness": 0.031,
+            "acousticness": 0.0243,
+            "instrumentalness": 0.0,
+            "danceability": 0.646,
+            "loudness": -6.763,
+            "valence": 0.251,
+            "tempo": 99.999,
+            "popularity": 76.0
+        },
+        {
+            "name": "Never Be the Same",
+            "uri": "spotify:track:4eWQlBRaTjPPUlzacqEeoQ",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "artists": [
+                "Camila Cabello"
+            ],
+            "energy": 0.713,
+            "liveness": 0.137,
+            "speechiness": 0.0747,
+            "acousticness": 0.181,
+            "instrumentalness": 0.000637,
+            "danceability": 0.637,
+            "loudness": -4.333,
+            "valence": 0.243,
+            "tempo": 129.923,
+            "popularity": 77.0
+        },
+        {
+            "name": "Out My Mind",
+            "uri": "spotify:track:68QnuY9T46WanVU7ueKRdp",
+            "genres": [],
+            "artists": [
+                "ScottDW"
+            ],
+            "energy": 0.927,
+            "liveness": 0.104,
+            "speechiness": 0.0448,
+            "acousticness": 0.108,
+            "instrumentalness": 0.0,
+            "danceability": 0.641,
+            "loudness": -3.411,
+            "valence": 0.917,
+            "tempo": 127.968,
+            "popularity": 30.0
+        },
+        {
+            "name": "No Love",
+            "uri": "spotify:track:7bHT9osSq1rwT2yaImzqCi",
+            "genres": [
+                "detroit hip hop",
+                "g funk",
+                "hip hop",
+                "rap",
+                "hip hop",
+                "new orleans rap",
+                "pop",
+                "pop rap",
+                "rap",
+                "trap music"
+            ],
+            "artists": [
+                "Eminem",
+                "Lil Wayne"
+            ],
+            "energy": 0.932,
+            "liveness": 0.177,
+            "speechiness": 0.255,
+            "acousticness": 0.119,
+            "instrumentalness": 0.0,
+            "danceability": 0.522,
+            "loudness": -2.87,
+            "valence": 0.33,
+            "tempo": 129.473,
+            "popularity": 70.0
+        },
+        {
+            "name": "Always Wrong",
+            "uri": "spotify:track:1S1RR28aETyfTirA37p65B",
+            "genres": [
+                "christian rock",
+                "dreamo",
+                "folk-pop",
+                "indie pop",
+                "piano rock"
+            ],
+            "artists": [
+                "Eisley"
+            ],
+            "energy": 0.828,
+            "liveness": 0.107,
+            "speechiness": 0.029,
+            "acousticness": 0.000733,
+            "instrumentalness": 0.00152,
+            "danceability": 0.519,
+            "loudness": -5.227,
+            "valence": 0.331,
+            "tempo": 129.942,
+            "popularity": 28.0
+        },
+        {
+            "name": "High Hopes",
+            "uri": "spotify:track:1rqqCSm0Qe4I9rUvWncaom",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "artists": [
+                "Panic! At The Disco"
+            ],
+            "energy": 0.904,
+            "liveness": 0.064,
+            "speechiness": 0.0618,
+            "acousticness": 0.193,
+            "instrumentalness": 0.0,
+            "danceability": 0.579,
+            "loudness": -2.729,
+            "valence": 0.681,
+            "tempo": 82.014,
+            "popularity": 89.0
+        },
+        {
+            "name": "Speechless",
+            "uri": "spotify:track:2PjDWdGvvbLQfRRTQIZPmv",
+            "genres": [
+                "dance pop",
+                "pop"
+            ],
+            "artists": [
+                "Lady Gaga"
+            ],
+            "energy": 0.724,
+            "liveness": 0.355,
+            "speechiness": 0.0416,
+            "acousticness": 0.398,
+            "instrumentalness": 0.0,
+            "danceability": 0.302,
+            "loudness": -4.034,
+            "valence": 0.394,
+            "tempo": 144.235,
+            "popularity": 51.0
+        },
+        {
+            "name": "Sloppy Seconds",
+            "uri": "spotify:track:0Vwfd6fxFrL3kCnZSJ9vid",
+            "genres": [
+                "abstract hip hop",
+                "comic",
+                "indie pop rap",
+                "pop rap"
+            ],
+            "artists": [
+                "Watsky"
+            ],
+            "energy": 0.716,
+            "liveness": 0.0926,
+            "speechiness": 0.0609,
+            "acousticness": 0.207,
+            "instrumentalness": 3.51e-06,
+            "danceability": 0.74,
+            "loudness": -5.796,
+            "valence": 0.804,
+            "tempo": 117.977,
+            "popularity": 56.0
+        },
+        {
+            "name": "Gone In September",
+            "uri": "spotify:track:1j4UohqBF9V77wcuyvXi3R",
+            "genres": [
+                "dance pop",
+                "pop",
+                "pop rap"
+            ],
+            "artists": [
+                "Mike Posner"
+            ],
+            "energy": 0.582,
+            "liveness": 0.0722,
+            "speechiness": 0.0284,
+            "acousticness": 0.109,
+            "instrumentalness": 0.0,
+            "danceability": 0.723,
+            "loudness": -5.61,
+            "valence": 0.577,
+            "tempo": 98.016,
+            "popularity": 33.0
+        },
+        {
+            "name": "Bad Things (with Camila Cabello)",
+            "uri": "spotify:track:1PSBzsahR2AKwLJgx8ehBj",
+            "genres": [
+                "hip hop",
+                "pop rap",
+                "rap",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "artists": [
+                "Machine Gun Kelly",
+                "Camila Cabello"
+            ],
+            "energy": 0.691,
+            "liveness": 0.185,
+            "speechiness": 0.146,
+            "acousticness": 0.214,
+            "instrumentalness": 0.0,
+            "danceability": 0.697,
+            "loudness": -4.757,
+            "valence": 0.305,
+            "tempo": 137.853,
+            "popularity": 73.0
+        },
+        {
+            "name": "Sick Boy",
+            "uri": "spotify:track:08hm0V6cTsWDX62hW42sEv",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "tropical house"
+            ],
+            "artists": [
+                "The Chainsmokers"
+            ],
+            "energy": 0.58,
+            "liveness": 0.127,
+            "speechiness": 0.121,
+            "acousticness": 0.104,
+            "instrumentalness": 0.0,
+            "danceability": 0.548,
+            "loudness": -7.524,
+            "valence": 0.462,
+            "tempo": 180.066,
+            "popularity": 12.0
+        },
+        {
+            "name": "Knock the Dominoes",
+            "uri": "spotify:track:2RYx2yYWWXsKA0BslOWmdw",
+            "genres": [],
+            "artists": [
+                "Scott & Brendo"
+            ],
+            "energy": 0.809,
+            "liveness": 0.0835,
+            "speechiness": 0.0457,
+            "acousticness": 0.0141,
+            "instrumentalness": 6.01e-05,
+            "danceability": 0.781,
+            "loudness": -10.671,
+            "valence": 0.89,
+            "tempo": 110.012,
+            "popularity": 35.0
+        },
+        {
+            "name": "New Divide",
+            "uri": "spotify:track:6Wx88Mv6b9ofjKMKkdwOJd",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "post-grunge",
+                "rap metal"
+            ],
+            "artists": [
+                "Linkin Park"
+            ],
+            "energy": 0.808,
+            "liveness": 0.0983,
+            "speechiness": 0.0362,
+            "acousticness": 0.000235,
+            "instrumentalness": 0.0,
+            "danceability": 0.493,
+            "loudness": -3.365,
+            "valence": 0.38,
+            "tempo": 117.971,
+            "popularity": 68.0
+        },
+        {
+            "name": "Are You Satisfied?",
+            "uri": "spotify:track:6lKRMylSZMtA7EqPl0pcdI",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "indie poptimism",
+                "metropopolis",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "uk alternative pop"
+            ],
+            "artists": [
+                "MARINA"
+            ],
+            "energy": 0.712,
+            "liveness": 0.0755,
+            "speechiness": 0.0412,
+            "acousticness": 0.303,
+            "instrumentalness": 0.0,
+            "danceability": 0.669,
+            "loudness": -4.992,
+            "valence": 0.843,
+            "tempo": 124.009,
+            "popularity": 49.0
+        },
+        {
+            "name": "R.I.P.",
+            "uri": "spotify:track:35BspUdHJEuqWx6aCzMG5U",
+            "genres": [
+                "dance pop",
+                "electropowerpop",
+                "pop punk",
+                "pop rap",
+                "post-teen pop"
+            ],
+            "artists": [
+                "3OH!3"
+            ],
+            "energy": 0.701,
+            "liveness": 0.106,
+            "speechiness": 0.0407,
+            "acousticness": 0.131,
+            "instrumentalness": 0.0,
+            "danceability": 0.659,
+            "loudness": -5.56,
+            "valence": 0.394,
+            "tempo": 130.018,
+            "popularity": 39.0
+        },
+        {
+            "name": "Dan Bilzerian",
+            "uri": "spotify:track:5QfQKhvdcxPgp68O0S39FV",
+            "genres": [
+                "dance pop",
+                "hip hop",
+                "pop",
+                "pop rap",
+                "r&b",
+                "rap",
+                "southern hip hop",
+                "trap music",
+                "urban contemporary",
+                "atl hip hop",
+                "pop rap",
+                "rap",
+                "southern hip hop",
+                "trap music"
+            ],
+            "artists": [
+                "T-Pain",
+                "Lil Yachty"
+            ],
+            "energy": 0.789,
+            "liveness": 0.0632,
+            "speechiness": 0.0626,
+            "acousticness": 0.119,
+            "instrumentalness": 0.0,
+            "danceability": 0.793,
+            "loudness": -3.962,
+            "valence": 0.606,
+            "tempo": 149.99,
+            "popularity": 62.0
+        },
+        {
+            "name": "Closer",
+            "uri": "spotify:track:7BKLCZ1jbUBVqRi2FVlTVw",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "tropical house",
+                "dance pop",
+                "electropop",
+                "etherpop",
+                "indie poptimism",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "The Chainsmokers",
+                "Halsey"
+            ],
+            "energy": 0.524,
+            "liveness": 0.111,
+            "speechiness": 0.0338,
+            "acousticness": 0.414,
+            "instrumentalness": 0.0,
+            "danceability": 0.748,
+            "loudness": -5.599,
+            "valence": 0.661,
+            "tempo": 95.01,
+            "popularity": 84.0
+        },
+        {
+            "name": "Learn To Let Go",
+            "uri": "spotify:track:1g1TeDflB6atAy7HKwrzXu",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "pop",
+                "pop rap",
+                "post-teen pop",
+                "r&b"
+            ],
+            "artists": [
+                "Kesha"
+            ],
+            "energy": 0.847,
+            "liveness": 0.293,
+            "speechiness": 0.039,
+            "acousticness": 0.00369,
+            "instrumentalness": 6.66e-05,
+            "danceability": 0.515,
+            "loudness": -2.951,
+            "valence": 0.645,
+            "tempo": 168.104,
+            "popularity": 57.0
+        },
+        {
+            "name": "The Kids Aren't Alright",
+            "uri": "spotify:track:3x7NGlfDKQYN2wnwEnL7r9",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "artists": [
+                "Fall Out Boy"
+            ],
+            "energy": 0.761,
+            "liveness": 0.298,
+            "speechiness": 0.0321,
+            "acousticness": 0.00021,
+            "instrumentalness": 0.245,
+            "danceability": 0.61,
+            "loudness": -4.149,
+            "valence": 0.365,
+            "tempo": 115.995,
+            "popularity": 63.0
+        },
+        {
+            "name": "It Ain\u2019t Me (with Selena Gomez)",
+            "uri": "spotify:track:12GEpg2XOPyqk03JZEZnJs",
+            "genres": [
+                "edm",
+                "pop",
+                "tropical house",
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Kygo",
+                "Selena Gomez"
+            ],
+            "energy": 0.533,
+            "liveness": 0.0864,
+            "speechiness": 0.0706,
+            "acousticness": 0.119,
+            "instrumentalness": 0.0,
+            "danceability": 0.64,
+            "loudness": -6.596,
+            "valence": 0.515,
+            "tempo": 99.968,
+            "popularity": 69.0
+        },
+        {
+            "name": "Mountain Sound",
+            "uri": "spotify:track:60ZGteAEtPCnGE6zevgUcd",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "metropopolis",
+                "modern rock",
+                "pop",
+                "stomp and holler"
+            ],
+            "artists": [
+                "Of Monsters and Men"
+            ],
+            "energy": 0.896,
+            "liveness": 0.14,
+            "speechiness": 0.0351,
+            "acousticness": 0.0513,
+            "instrumentalness": 0.00396,
+            "danceability": 0.395,
+            "loudness": -4.262,
+            "valence": 0.35,
+            "tempo": 101.867,
+            "popularity": 60.0
+        },
+        {
+            "name": "Beggin For Thread",
+            "uri": "spotify:track:4PvD06Pmbm2rHG2JjSlElF",
+            "genres": [
+                "alternative r&b",
+                "dance pop",
+                "electropop",
+                "indie poptimism",
+                "indie r&b",
+                "indietronica",
+                "pop",
+                "r&b",
+                "tropical house",
+                "vapor soul"
+            ],
+            "artists": [
+                "BANKS"
+            ],
+            "energy": 0.696,
+            "liveness": 0.255,
+            "speechiness": 0.0278,
+            "acousticness": 0.00101,
+            "instrumentalness": 0.0735,
+            "danceability": 0.597,
+            "loudness": -6.196,
+            "valence": 0.397,
+            "tempo": 107.96,
+            "popularity": 60.0
+        },
+        {
+            "name": "Bad Guy",
+            "uri": "spotify:track:5SpWTzTFzy2UiZWaEWCHWn",
+            "genres": [
+                "detroit hip hop",
+                "g funk",
+                "hip hop",
+                "rap"
+            ],
+            "artists": [
+                "Eminem"
+            ],
+            "energy": 0.797,
+            "liveness": 0.257,
+            "speechiness": 0.448,
+            "acousticness": 0.064,
+            "instrumentalness": 0.0,
+            "danceability": 0.612,
+            "loudness": -3.648,
+            "valence": 0.358,
+            "tempo": 81.086,
+            "popularity": 47.0
+        },
+        {
+            "name": "Dazzle",
+            "uri": "spotify:track:2KYyhbWmfbW4z8eMhFzme4",
+            "genres": [
+                "electropop",
+                "indie poptimism",
+                "pop"
+            ],
+            "artists": [
+                "Oh Wonder"
+            ],
+            "energy": 0.422,
+            "liveness": 0.154,
+            "speechiness": 0.0508,
+            "acousticness": 0.587,
+            "instrumentalness": 2.78e-06,
+            "danceability": 0.646,
+            "loudness": -8.106,
+            "valence": 0.614,
+            "tempo": 111.696,
+            "popularity": 53.0
+        },
+        {
+            "name": "Double Vision",
+            "uri": "spotify:track:3o2ESAMet1zR1aASlzrIxO",
+            "genres": [
+                "dance pop",
+                "electropowerpop",
+                "pop punk",
+                "pop rap",
+                "post-teen pop"
+            ],
+            "artists": [
+                "3OH!3"
+            ],
+            "energy": 0.888,
+            "liveness": 0.413,
+            "speechiness": 0.0587,
+            "acousticness": 0.0018,
+            "instrumentalness": 0.0,
+            "danceability": 0.581,
+            "loudness": -3.198,
+            "valence": 0.629,
+            "tempo": 120.041,
+            "popularity": 49.0
+        },
+        {
+            "name": "E.T.",
+            "uri": "spotify:track:4kkeuVl6gF3RMqE4Nn5W3E",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Katy Perry"
+            ],
+            "energy": 0.863,
+            "liveness": 0.389,
+            "speechiness": 0.0773,
+            "acousticness": 0.0178,
+            "instrumentalness": 0.0,
+            "danceability": 0.602,
+            "loudness": -5.423,
+            "valence": 0.732,
+            "tempo": 150.183,
+            "popularity": 52.0
+        },
+        {
+            "name": "Touchin On My",
+            "uri": "spotify:track:1LjHre9uHSLMuUrKsl6ppX",
+            "genres": [
+                "dance pop",
+                "electropowerpop",
+                "pop punk",
+                "pop rap",
+                "post-teen pop"
+            ],
+            "artists": [
+                "3OH!3"
+            ],
+            "energy": 0.876,
+            "liveness": 0.251,
+            "speechiness": 0.139,
+            "acousticness": 0.03,
+            "instrumentalness": 0.0,
+            "danceability": 0.538,
+            "loudness": -3.559,
+            "valence": 0.527,
+            "tempo": 83.949,
+            "popularity": 52.0
+        },
+        {
+            "name": "Welcome To Heartbreak",
+            "uri": "spotify:track:3F18I7LhWKxlf1PytSoTBH",
+            "genres": [
+                "chicago rap",
+                "pop rap",
+                "rap",
+                "hip hop",
+                "pop rap",
+                "rap"
+            ],
+            "artists": [
+                "Kanye West",
+                "Kid Cudi"
+            ],
+            "energy": 0.452,
+            "liveness": 0.111,
+            "speechiness": 0.0341,
+            "acousticness": 0.0969,
+            "instrumentalness": 0.579,
+            "danceability": 0.667,
+            "loudness": -10.99,
+            "valence": 0.0734,
+            "tempo": 95.982,
+            "popularity": 59.0
+        },
+        {
+            "name": "Fast Lane",
+            "uri": "spotify:track:4md6fziqSOy3yryjDQAZFF",
+            "genres": [
+                "detroit hip hop",
+                "gangster rap",
+                "hip hop",
+                "pop rap",
+                "rap"
+            ],
+            "artists": [
+                "Bad Meets Evil"
+            ],
+            "energy": 0.862,
+            "liveness": 0.291,
+            "speechiness": 0.251,
+            "acousticness": 0.0451,
+            "instrumentalness": 1.71e-06,
+            "danceability": 0.614,
+            "loudness": -3.794,
+            "valence": 0.353,
+            "tempo": 116.017,
+            "popularity": 0.0
+        },
+        {
+            "name": "Country Girl (Shake It For Me)",
+            "uri": "spotify:track:0yD66650JxhqKbW76C2qCo",
+            "genres": [
+                "contemporary country",
+                "country",
+                "country road"
+            ],
+            "artists": [
+                "Luke Bryan"
+            ],
+            "energy": 0.904,
+            "liveness": 0.0834,
+            "speechiness": 0.0462,
+            "acousticness": 0.0293,
+            "instrumentalness": 0.0,
+            "danceability": 0.645,
+            "loudness": -4.532,
+            "valence": 0.671,
+            "tempo": 105.97,
+            "popularity": 72.0
+        },
+        {
+            "name": "Treacherous",
+            "uri": "spotify:track:0XfOV7qY3834QpFVwOb6CC",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Taylor Swift"
+            ],
+            "energy": 0.609,
+            "liveness": 0.144,
+            "speechiness": 0.0322,
+            "acousticness": 0.0852,
+            "instrumentalness": 5.25e-06,
+            "danceability": 0.7,
+            "loudness": -8.212,
+            "valence": 0.392,
+            "tempo": 109.98,
+            "popularity": 51.0
+        },
+        {
+            "name": "Fourth Of July",
+            "uri": "spotify:track:1vrjcPplEuenckUzGGp2UR",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "artists": [
+                "Fall Out Boy"
+            ],
+            "energy": 0.974,
+            "liveness": 0.428,
+            "speechiness": 0.0971,
+            "acousticness": 0.141,
+            "instrumentalness": 0.00532,
+            "danceability": 0.483,
+            "loudness": -3.368,
+            "valence": 0.562,
+            "tempo": 160.065,
+            "popularity": 61.0
+        },
+        {
+            "name": "Telescope Eyes",
+            "uri": "spotify:track:7y1ScaTfRogQATFTHTqOqN",
+            "genres": [
+                "christian rock",
+                "dreamo",
+                "folk-pop",
+                "indie pop",
+                "piano rock"
+            ],
+            "artists": [
+                "Eisley"
+            ],
+            "energy": 0.783,
+            "liveness": 0.278,
+            "speechiness": 0.0344,
+            "acousticness": 0.134,
+            "instrumentalness": 0.0,
+            "danceability": 0.374,
+            "loudness": -5.111,
+            "valence": 0.576,
+            "tempo": 202.064,
+            "popularity": 28.0
+        },
+        {
+            "name": "RAP DEVIL",
+            "uri": "spotify:track:63TyoT9Ee03rQxv8xmdJ2l",
+            "genres": [
+                "hip hop",
+                "pop rap",
+                "rap"
+            ],
+            "artists": [
+                "Machine Gun Kelly"
+            ],
+            "energy": 0.839,
+            "liveness": 0.239,
+            "speechiness": 0.227,
+            "acousticness": 0.217,
+            "instrumentalness": 3e-06,
+            "danceability": 0.895,
+            "loudness": -4.512,
+            "valence": 0.756,
+            "tempo": 149.951,
+            "popularity": 69.0
+        },
+        {
+            "name": "Cooler Than Me - Single Mix",
+            "uri": "spotify:track:2V4bv1fNWfTcyRJKmej6Sj",
+            "genres": [
+                "dance pop",
+                "pop",
+                "pop rap",
+                "filter house",
+                "nu disco"
+            ],
+            "artists": [
+                "Mike Posner",
+                "Gigamesh"
+            ],
+            "energy": 0.82,
+            "liveness": 0.704,
+            "speechiness": 0.0475,
+            "acousticness": 0.179,
+            "instrumentalness": 0.0,
+            "danceability": 0.768,
+            "loudness": -4.63,
+            "valence": 0.625,
+            "tempo": 129.969,
+            "popularity": 71.0
+        },
+        {
+            "name": "Capital M-E",
+            "uri": "spotify:track:1VppmZKCjqa8qqkdHV76Iu",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk",
+                "pop rock",
+                "screamo"
+            ],
+            "artists": [
+                "Taking Back Sunday"
+            ],
+            "energy": 0.958,
+            "liveness": 0.0896,
+            "speechiness": 0.0736,
+            "acousticness": 9.38e-05,
+            "instrumentalness": 0.0451,
+            "danceability": 0.508,
+            "loudness": -4.622,
+            "valence": 0.643,
+            "tempo": 130.147,
+            "popularity": 30.0
+        },
+        {
+            "name": "Runnin'",
+            "uri": "spotify:track:4x3qqSA4cP49oZQXPLnDBe",
+            "genres": [
+                "australian pop",
+                "dance pop",
+                "idol",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Adam Lambert"
+            ],
+            "energy": 0.868,
+            "liveness": 0.151,
+            "speechiness": 0.0837,
+            "acousticness": 0.0082,
+            "instrumentalness": 0.0,
+            "danceability": 0.408,
+            "loudness": -4.438,
+            "valence": 0.387,
+            "tempo": 83.469,
+            "popularity": 61.0
+        },
+        {
+            "name": "Last Friday Night (T.G.I.F.)",
+            "uri": "spotify:track:3avYqdwHKEq8beXbeWCKqJ",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "artists": [
+                "Katy Perry"
+            ],
+            "energy": 0.812,
+            "liveness": 0.667,
+            "speechiness": 0.0409,
+            "acousticness": 0.00125,
+            "instrumentalness": 3.01e-05,
+            "danceability": 0.652,
+            "loudness": -3.797,
+            "valence": 0.72,
+            "tempo": 126.023,
+            "popularity": 62.0
+        },
+        {
+            "name": "Confident",
+            "uri": "spotify:track:0Mn3amMRMoabaoTf1Publ4",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "artists": [
+                "Demi Lovato"
+            ],
+            "energy": 0.763,
+            "liveness": 0.116,
+            "speechiness": 0.0669,
+            "acousticness": 0.00182,
+            "instrumentalness": 0.000159,
+            "danceability": 0.606,
+            "loudness": -6.197,
+            "valence": 0.309,
+            "tempo": 130.018,
+            "popularity": 75.0
+        },
+        {
+            "name": "Ain't My Fault",
+            "uri": "spotify:track:0ADG9OgdVTL7fgREP75BrZ",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "post-teen pop",
+                "scandipop",
+                "swedish electropop",
+                "swedish pop",
+                "tropical house"
+            ],
+            "artists": [
+                "Zara Larsson"
+            ],
+            "energy": 0.782,
+            "liveness": 0.285,
+            "speechiness": 0.0296,
+            "acousticness": 0.00778,
+            "instrumentalness": 0.0,
+            "danceability": 0.576,
+            "loudness": -4.825,
+            "valence": 0.355,
+            "tempo": 141.153,
+            "popularity": 72.0
+        },
+        {
+            "name": "Stay (with Alessia Cara)",
+            "uri": "spotify:track:6uBhi9gBXWjanegOb2Phh0",
+            "genres": [
+                "complextro",
+                "dance pop",
+                "edm",
+                "electro house",
+                "german techno",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "canadian contemporary r&b",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "artists": [
+                "Zedd",
+                "Alessia Cara"
+            ],
+            "energy": 0.622,
+            "liveness": 0.116,
+            "speechiness": 0.0622,
+            "acousticness": 0.253,
+            "instrumentalness": 0.0,
+            "danceability": 0.69,
+            "loudness": -5.025,
+            "valence": 0.544,
+            "tempo": 102.04,
+            "popularity": 79.0
+        },
+        {
+            "name": "All The Things She Said",
+            "uri": "spotify:track:4bJygwUKrRgq1stlNXcgMg",
+            "genres": [
+                "dance pop",
+                "girl group"
+            ],
+            "artists": [
+                "t.A.T.u."
+            ],
+            "energy": 0.848,
+            "liveness": 0.105,
+            "speechiness": 0.0483,
+            "acousticness": 0.0356,
+            "instrumentalness": 0.00761,
+            "danceability": 0.52,
+            "loudness": -5.756,
+            "valence": 0.402,
+            "tempo": 179.978,
+            "popularity": 67.0
+        },
+        {
+            "name": "Reminder",
+            "uri": "spotify:track:37F0uwRSrdzkBiuj0D5UHI",
+            "genres": [
+                "canadian contemporary r&b",
+                "canadian pop",
+                "pop",
+                "rap"
+            ],
+            "artists": [
+                "The Weeknd"
+            ],
+            "energy": 0.505,
+            "liveness": 0.164,
+            "speechiness": 0.192,
+            "acousticness": 0.142,
+            "instrumentalness": 0.0,
+            "danceability": 0.705,
+            "loudness": -6.923,
+            "valence": 0.391,
+            "tempo": 160.043,
+            "popularity": 72.0
+        },
+        {
+            "name": "Woman",
+            "uri": "spotify:track:1kJtfldK9F7XmsSiSNlbth",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "pop",
+                "pop rap",
+                "post-teen pop",
+                "r&b"
+            ],
+            "artists": [
+                "Kesha",
+                "The Dap-Kings Horns"
+            ],
+            "energy": 0.765,
+            "liveness": 0.667,
+            "speechiness": 0.0389,
+            "acousticness": 0.0438,
+            "instrumentalness": 0.0416,
+            "danceability": 0.743,
+            "loudness": -3.586,
+            "valence": 0.338,
+            "tempo": 114.991,
+            "popularity": 65.0
+        }
+    ]
+}

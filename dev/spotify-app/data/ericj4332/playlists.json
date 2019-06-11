@@ -1,0 +1,142 @@
+[
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37i9dQZEVXcPhvfOxgO4Ww"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcPhvfOxgO4Ww",
+        "id": "37i9dQZEVXcPhvfOxgO4Ww",
+        "images": [
+            {
+                "height": null,
+                "url": "https://pl.scdn.co/images/pl/default/6c1b670566c90cb89c7bf3d2917c0fdaca58d90a",
+                "width": null
+            }
+        ],
+        "name": "Discover Weekly",
+        "owner": {
+            "display_name": "Spotify",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+            },
+            "href": "https://api.spotify.com/v1/users/spotify",
+            "id": "spotify",
+            "type": "user",
+            "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MjYwMDIwODAsMDAwMDAwMDBjZWU4ZGE3NzdhODc5MTgwOGFmNWNmYTllMTcwNTExMg==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcPhvfOxgO4Ww/tracks",
+            "total": 30
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZEVXcPhvfOxgO4Ww"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4fpCWaHOned"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4fpCWaHOned",
+        "id": "37i9dQZF1DX4fpCWaHOned",
+        "images": [
+            {
+                "height": null,
+                "url": "https://pl.scdn.co/images/pl/default/edc5bd3507b3b005f6683d40759b91b2f917c417",
+                "width": null
+            }
+        ],
+        "name": "Confidence Boost",
+        "owner": {
+            "display_name": "Spotify",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+            },
+            "href": "https://api.spotify.com/v1/users/spotify",
+            "id": "spotify",
+            "type": "user",
+            "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTU2MDIxNzU2OCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4fpCWaHOned/tracks",
+            "total": 60
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX4fpCWaHOned"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/7lg3hAp16pxIffNEnH422y"
+        },
+        "href": "https://api.spotify.com/v1/playlists/7lg3hAp16pxIffNEnH422y",
+        "id": "7lg3hAp16pxIffNEnH422y",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/42a61a60d7595bf845a166b372590f5d83a0617d",
+                "width": 640
+            }
+        ],
+        "name": "Liked from Radio",
+        "owner": {
+            "display_name": "Eric Jorgenson",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/ericj4332"
+            },
+            "href": "https://api.spotify.com/v1/users/ericj4332",
+            "id": "ericj4332",
+            "type": "user",
+            "uri": "spotify:user:ericj4332"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NSxkNzJjNzc0ZTYyMWU1OTA1ZTcwYTFmNGQ5N2Y4MTJlNjZjOTU2Yzg4",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/7lg3hAp16pxIffNEnH422y/tracks",
+            "total": 3
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:7lg3hAp16pxIffNEnH422y"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/56bgbvCQdpxKRuTZwC02Z6"
+        },
+        "href": "https://api.spotify.com/v1/playlists/56bgbvCQdpxKRuTZwC02Z6",
+        "id": "56bgbvCQdpxKRuTZwC02Z6",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/fa6f046bf6fe2c03ccb30003448494ec88acdd58",
+                "width": 640
+            }
+        ],
+        "name": "*",
+        "owner": {
+            "display_name": "Eric Jorgenson",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/ericj4332"
+            },
+            "href": "https://api.spotify.com/v1/users/ericj4332",
+            "id": "ericj4332",
+            "type": "user",
+            "uri": "spotify:user:ericj4332"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NiwzYzE0OWU3MjcyNTMwYzg3ODQ0NzkxZmM3MWQ5YjNiMzlmY2E3ZjFk",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/56bgbvCQdpxKRuTZwC02Z6/tracks",
+            "total": 3
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:56bgbvCQdpxKRuTZwC02Z6"
+    }
+]

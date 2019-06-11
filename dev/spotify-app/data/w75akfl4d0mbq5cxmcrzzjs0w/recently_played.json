@@ -1,0 +1,1186 @@
+[
+    {
+        "name": "Mice On Venus",
+        "uri": "spotify:track:5fqjfiMOFapIb8uFcxBStH",
+        "date": "2019-06-07T15:32:58.511Z",
+        "genres": [
+            "deep chiptune",
+            "minecraft",
+            "video game music"
+        ],
+        "artists": [
+            "C418"
+        ],
+        "energy": 0.0284,
+        "liveness": 0.0594,
+        "speechiness": 0.049,
+        "acousticness": 0.962,
+        "instrumentalness": 0.0111,
+        "danceability": 0.616,
+        "loudness": -17.645,
+        "valence": 0.0781,
+        "tempo": 110.848,
+        "popularity": 54.0
+    },
+    {
+        "name": "\u00c9quinoxe",
+        "uri": "spotify:track:37WtwAa4PzRprHMp7Esdds",
+        "date": "2019-06-07T15:30:47.586Z",
+        "genres": [
+            "deep chiptune",
+            "minecraft",
+            "video game music"
+        ],
+        "artists": [
+            "C418"
+        ],
+        "energy": 0.101,
+        "liveness": 0.0927,
+        "speechiness": 0.0343,
+        "acousticness": 0.919,
+        "instrumentalness": 0.391,
+        "danceability": 0.436,
+        "loudness": -18.343,
+        "valence": 0.253,
+        "tempo": 91.141,
+        "popularity": 51.0
+    },
+    {
+        "name": "Oxyg\u00e8ne",
+        "uri": "spotify:track:3sbcAG3y97g63yDSVMf38o",
+        "date": "2019-06-07T15:28:52.697Z",
+        "genres": [
+            "deep chiptune",
+            "minecraft",
+            "video game music"
+        ],
+        "artists": [
+            "C418"
+        ],
+        "energy": 0.00832,
+        "liveness": 0.0828,
+        "speechiness": 0.0416,
+        "acousticness": 0.569,
+        "instrumentalness": 0.816,
+        "danceability": 0.158,
+        "loudness": -30.666,
+        "valence": 0.0313,
+        "tempo": 107.295,
+        "popularity": 51.0
+    },
+    {
+        "name": "Minecraft",
+        "uri": "spotify:track:6xwhCiWXREsAIQVZqHswVw",
+        "date": "2019-06-07T15:27:47.570Z",
+        "genres": [
+            "deep chiptune",
+            "minecraft",
+            "video game music"
+        ],
+        "artists": [
+            "C418"
+        ],
+        "energy": 0.0154,
+        "liveness": 0.0662,
+        "speechiness": 0.0445,
+        "acousticness": 0.98,
+        "instrumentalness": 0.636,
+        "danceability": 0.267,
+        "loudness": -22.922,
+        "valence": 0.108,
+        "tempo": 141.012,
+        "popularity": 61.0
+    },
+    {
+        "name": "Haggstrom",
+        "uri": "spotify:track:4RROfcxQXFIwW0ugcZfdC4",
+        "date": "2019-06-07T15:23:33.624Z",
+        "genres": [
+            "deep chiptune",
+            "minecraft",
+            "video game music"
+        ],
+        "artists": [
+            "C418"
+        ],
+        "energy": 0.179,
+        "liveness": 0.0685,
+        "speechiness": 0.064,
+        "acousticness": 0.971,
+        "instrumentalness": 0.821,
+        "danceability": 0.771,
+        "loudness": -16.702,
+        "valence": 0.0374,
+        "tempo": 112.018,
+        "popularity": 54.0
+    },
+    {
+        "name": "Moog City",
+        "uri": "spotify:track:4Ar3oSp4bAw5gz22F70GM7",
+        "date": "2019-06-07T15:20:09.413Z",
+        "genres": [
+            "deep chiptune",
+            "minecraft",
+            "video game music"
+        ],
+        "artists": [
+            "C418"
+        ],
+        "energy": 0.157,
+        "liveness": 0.138,
+        "speechiness": 0.0373,
+        "acousticness": 0.935,
+        "instrumentalness": 0.622,
+        "danceability": 0.461,
+        "loudness": -20.962,
+        "valence": 0.142,
+        "tempo": 131.987,
+        "popularity": 53.0
+    },
+    {
+        "name": "Living Mice",
+        "uri": "spotify:track:4x79cjezqX3yd15rSrAVFF",
+        "date": "2019-06-07T15:17:29.605Z",
+        "genres": [
+            "deep chiptune",
+            "minecraft",
+            "video game music"
+        ],
+        "artists": [
+            "C418"
+        ],
+        "energy": 0.0573,
+        "liveness": 0.0484,
+        "speechiness": 0.0403,
+        "acousticness": 0.883,
+        "instrumentalness": 0.609,
+        "danceability": 0.431,
+        "loudness": -22.465,
+        "valence": 0.0395,
+        "tempo": 74.97,
+        "popularity": 55.0
+    },
+    {
+        "name": "Death",
+        "uri": "spotify:track:4B6A1T91lF1IRKkBVwUzWe",
+        "date": "2019-06-07T15:14:25.423Z",
+        "genres": [
+            "deep chiptune",
+            "minecraft",
+            "video game music"
+        ],
+        "artists": [
+            "C418"
+        ],
+        "energy": 0.198,
+        "liveness": 0.359,
+        "speechiness": 0.835,
+        "acousticness": 0.837,
+        "instrumentalness": 0.00549,
+        "danceability": 0.539,
+        "loudness": -31.238,
+        "valence": 0.21,
+        "tempo": 58.309,
+        "popularity": 50.0
+    },
+    {
+        "name": "Subwoofer Lullaby",
+        "uri": "spotify:track:1OJxI8lIWRqBvouJxW1nzN",
+        "date": "2019-06-07T15:13:44.028Z",
+        "genres": [
+            "deep chiptune",
+            "minecraft",
+            "video game music"
+        ],
+        "artists": [
+            "C418"
+        ],
+        "energy": 0.0141,
+        "liveness": 0.104,
+        "speechiness": 0.039,
+        "acousticness": 0.921,
+        "instrumentalness": 0.919,
+        "danceability": 0.272,
+        "loudness": -23.72,
+        "valence": 0.0384,
+        "tempo": 73.966,
+        "popularity": 59.0
+    },
+    {
+        "name": "Loudness & Clarity",
+        "uri": "spotify:track:06l7kGMHbWqzo2S7GA5NFo",
+        "date": "2019-06-07T15:10:09.865Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.596,
+        "liveness": 0.124,
+        "speechiness": 0.0733,
+        "acousticness": 0.00156,
+        "instrumentalness": 0.0499,
+        "danceability": 0.664,
+        "loudness": -8.284,
+        "valence": 0.179,
+        "tempo": 95.003,
+        "popularity": 40.0
+    },
+    {
+        "name": "Butterfly",
+        "uri": "spotify:track:38glJVKbXDvLm1wqxYCV7B",
+        "date": "2019-06-07T14:55:43.060Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud",
+            "Jeff Kaale"
+        ],
+        "energy": 0.593,
+        "liveness": 0.0957,
+        "speechiness": 0.0278,
+        "acousticness": 0.0592,
+        "instrumentalness": 0.0411,
+        "danceability": 0.659,
+        "loudness": -7.168,
+        "valence": 0.528,
+        "tempo": 83.511,
+        "popularity": 29.0
+    },
+    {
+        "name": "Harmony",
+        "uri": "spotify:track:3PJGivzoffVQfHzXMw0AkC",
+        "date": "2019-06-07T08:24:32.631Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.375,
+        "liveness": 0.219,
+        "speechiness": 0.0284,
+        "acousticness": 0.329,
+        "instrumentalness": 0.925,
+        "danceability": 0.602,
+        "loudness": -13.834,
+        "valence": 0.243,
+        "tempo": 80.017,
+        "popularity": 30.0
+    },
+    {
+        "name": "Vibe With Me",
+        "uri": "spotify:track:0Uhqvi6l8E59jtb2YZasf0",
+        "date": "2019-06-07T08:21:36.567Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.83,
+        "liveness": 0.343,
+        "speechiness": 0.0443,
+        "acousticness": 0.000771,
+        "instrumentalness": 1.01e-06,
+        "danceability": 0.619,
+        "loudness": -5.845,
+        "valence": 0.611,
+        "tempo": 148.021,
+        "popularity": 45.0
+    },
+    {
+        "name": "Loudness & Clarity",
+        "uri": "spotify:track:06l7kGMHbWqzo2S7GA5NFo",
+        "date": "2019-06-07T08:18:42.647Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.596,
+        "liveness": 0.124,
+        "speechiness": 0.0733,
+        "acousticness": 0.00156,
+        "instrumentalness": 0.0499,
+        "danceability": 0.664,
+        "loudness": -8.284,
+        "valence": 0.179,
+        "tempo": 95.003,
+        "popularity": 40.0
+    },
+    {
+        "name": "Sit Next to Me",
+        "uri": "spotify:track:4BdGO1CaObRD4La9l5Zanz",
+        "date": "2019-06-07T08:15:00.735Z",
+        "genres": [
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "pop",
+            "rock"
+        ],
+        "artists": [
+            "Foster The People"
+        ],
+        "energy": 0.738,
+        "liveness": 0.689,
+        "speechiness": 0.0292,
+        "acousticness": 0.117,
+        "instrumentalness": 0.000384,
+        "danceability": 0.638,
+        "loudness": -4.976,
+        "valence": 0.657,
+        "tempo": 97.021,
+        "popularity": 74.0
+    },
+    {
+        "name": "Loudness & Clarity",
+        "uri": "spotify:track:06l7kGMHbWqzo2S7GA5NFo",
+        "date": "2019-06-07T08:10:09.600Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.596,
+        "liveness": 0.124,
+        "speechiness": 0.0733,
+        "acousticness": 0.00156,
+        "instrumentalness": 0.0499,
+        "danceability": 0.664,
+        "loudness": -8.284,
+        "valence": 0.179,
+        "tempo": 95.003,
+        "popularity": 40.0
+    },
+    {
+        "name": "Interdimensional Portal Leading to a Cute Place (with Snail's House)",
+        "uri": "spotify:track:1HW1arhhmKY3jI7QyARvsf",
+        "date": "2019-06-07T08:08:57.457Z",
+        "genres": [
+            "kawaii future bass",
+            "lo-fi beats",
+            "future funk",
+            "kawaii future bass",
+            "otacore"
+        ],
+        "artists": [
+            "In Love With a Ghost",
+            "Snail's House"
+        ],
+        "energy": 0.396,
+        "liveness": 0.353,
+        "speechiness": 0.0978,
+        "acousticness": 0.889,
+        "instrumentalness": 0.117,
+        "danceability": 0.93,
+        "loudness": -10.88,
+        "valence": 0.573,
+        "tempo": 121.253,
+        "popularity": 39.0
+    },
+    {
+        "name": "Loudness & Clarity",
+        "uri": "spotify:track:06l7kGMHbWqzo2S7GA5NFo",
+        "date": "2019-06-07T08:06:27.657Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.596,
+        "liveness": 0.124,
+        "speechiness": 0.0733,
+        "acousticness": 0.00156,
+        "instrumentalness": 0.0499,
+        "danceability": 0.664,
+        "loudness": -8.284,
+        "valence": 0.179,
+        "tempo": 95.003,
+        "popularity": 40.0
+    },
+    {
+        "name": "Call You Home - Faul & Wad Ad Remix",
+        "uri": "spotify:track:76pb7byVgncOfaeFzHqs5M",
+        "date": "2019-06-07T08:03:35.533Z",
+        "genres": [
+            "uk pop",
+            "tropical house"
+        ],
+        "artists": [
+            "Kelvin Jones",
+            "Faul & Wad Ad"
+        ],
+        "energy": 0.499,
+        "liveness": 0.0685,
+        "speechiness": 0.0382,
+        "acousticness": 0.839,
+        "instrumentalness": 0.113,
+        "danceability": 0.805,
+        "loudness": -10.678,
+        "valence": 0.509,
+        "tempo": 102.996,
+        "popularity": 53.0
+    },
+    {
+        "name": "Loudness & Clarity",
+        "uri": "spotify:track:06l7kGMHbWqzo2S7GA5NFo",
+        "date": "2019-06-07T08:01:35.488Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.596,
+        "liveness": 0.124,
+        "speechiness": 0.0733,
+        "acousticness": 0.00156,
+        "instrumentalness": 0.0499,
+        "danceability": 0.664,
+        "loudness": -8.284,
+        "valence": 0.179,
+        "tempo": 95.003,
+        "popularity": 40.0
+    },
+    {
+        "name": "Butterfly",
+        "uri": "spotify:track:38glJVKbXDvLm1wqxYCV7B",
+        "date": "2019-06-07T07:57:09.645Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud",
+            "Jeff Kaale"
+        ],
+        "energy": 0.593,
+        "liveness": 0.0957,
+        "speechiness": 0.0278,
+        "acousticness": 0.0592,
+        "instrumentalness": 0.0411,
+        "danceability": 0.659,
+        "loudness": -7.168,
+        "valence": 0.528,
+        "tempo": 83.511,
+        "popularity": 29.0
+    },
+    {
+        "name": "Vibe With Me",
+        "uri": "spotify:track:0Uhqvi6l8E59jtb2YZasf0",
+        "date": "2019-06-07T07:56:06.841Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.83,
+        "liveness": 0.343,
+        "speechiness": 0.0443,
+        "acousticness": 0.000771,
+        "instrumentalness": 1.01e-06,
+        "danceability": 0.619,
+        "loudness": -5.845,
+        "valence": 0.611,
+        "tempo": 148.021,
+        "popularity": 45.0
+    },
+    {
+        "name": "Loudness & Clarity",
+        "uri": "spotify:track:06l7kGMHbWqzo2S7GA5NFo",
+        "date": "2019-06-07T07:53:23.935Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.596,
+        "liveness": 0.124,
+        "speechiness": 0.0733,
+        "acousticness": 0.00156,
+        "instrumentalness": 0.0499,
+        "danceability": 0.664,
+        "loudness": -8.284,
+        "valence": 0.179,
+        "tempo": 95.003,
+        "popularity": 40.0
+    },
+    {
+        "name": "Harmony",
+        "uri": "spotify:track:3PJGivzoffVQfHzXMw0AkC",
+        "date": "2019-06-07T01:06:36.724Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.375,
+        "liveness": 0.219,
+        "speechiness": 0.0284,
+        "acousticness": 0.329,
+        "instrumentalness": 0.925,
+        "danceability": 0.602,
+        "loudness": -13.834,
+        "valence": 0.243,
+        "tempo": 80.017,
+        "popularity": 30.0
+    },
+    {
+        "name": "Harmony",
+        "uri": "spotify:track:3PJGivzoffVQfHzXMw0AkC",
+        "date": "2019-06-07T01:04:40.643Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.375,
+        "liveness": 0.219,
+        "speechiness": 0.0284,
+        "acousticness": 0.329,
+        "instrumentalness": 0.925,
+        "danceability": 0.602,
+        "loudness": -13.834,
+        "valence": 0.243,
+        "tempo": 80.017,
+        "popularity": 30.0
+    },
+    {
+        "name": "Vibe With Me",
+        "uri": "spotify:track:0Uhqvi6l8E59jtb2YZasf0",
+        "date": "2019-06-07T01:01:45.756Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.83,
+        "liveness": 0.343,
+        "speechiness": 0.0443,
+        "acousticness": 0.000771,
+        "instrumentalness": 1.01e-06,
+        "danceability": 0.619,
+        "loudness": -5.845,
+        "valence": 0.611,
+        "tempo": 148.021,
+        "popularity": 45.0
+    },
+    {
+        "name": "Loudness & Clarity",
+        "uri": "spotify:track:06l7kGMHbWqzo2S7GA5NFo",
+        "date": "2019-06-07T01:00:42.766Z",
+        "genres": [
+            "chillhop"
+        ],
+        "artists": [
+            "Joakim Karud"
+        ],
+        "energy": 0.596,
+        "liveness": 0.124,
+        "speechiness": 0.0733,
+        "acousticness": 0.00156,
+        "instrumentalness": 0.0499,
+        "danceability": 0.664,
+        "loudness": -8.284,
+        "valence": 0.179,
+        "tempo": 95.003,
+        "popularity": 40.0
+    },
+    {
+        "name": "Strawberries & Cigarettes",
+        "uri": "spotify:track:3afkJSKX0EAMsJXTZnDXXJ",
+        "date": "2019-06-05T01:10:56.987Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "viral pop"
+        ],
+        "artists": [
+            "Troye Sivan"
+        ],
+        "energy": 0.537,
+        "liveness": 0.076,
+        "speechiness": 0.0832,
+        "acousticness": 0.162,
+        "instrumentalness": 0.0,
+        "danceability": 0.578,
+        "loudness": -8.676,
+        "valence": 0.25,
+        "tempo": 83.909,
+        "popularity": 67.0
+    },
+    {
+        "name": "Tokyo Diamond Eyes",
+        "uri": "spotify:track:7iWOkjWZjtLxuDbFDGDjSO",
+        "date": "2019-06-05T01:07:35.233Z",
+        "genres": [
+            "indie pop",
+            "indie poptimism",
+            "indietronica",
+            "modern alternative rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Night Riots"
+        ],
+        "energy": 0.846,
+        "liveness": 0.547,
+        "speechiness": 0.0414,
+        "acousticness": 0.0972,
+        "instrumentalness": 1.23e-06,
+        "danceability": 0.549,
+        "loudness": -5.011,
+        "valence": 0.622,
+        "tempo": 165.97,
+        "popularity": 44.0
+    },
+    {
+        "name": "Stumblin' Home",
+        "uri": "spotify:track:01oyRIMjNlMSN00ETiVduQ",
+        "date": "2019-06-05T01:04:46.977Z",
+        "genres": [
+            "hopebeat",
+            "indie pop",
+            "indie poptimism",
+            "indie rockism",
+            "indietronica",
+            "la indie",
+            "la pop",
+            "metropopolis",
+            "modern rock"
+        ],
+        "artists": [
+            "Smallpools"
+        ],
+        "energy": 0.836,
+        "liveness": 0.0891,
+        "speechiness": 0.071,
+        "acousticness": 0.0793,
+        "instrumentalness": 0.000379,
+        "danceability": 0.672,
+        "loudness": -3.959,
+        "valence": 0.781,
+        "tempo": 104.068,
+        "popularity": 54.0
+    },
+    {
+        "name": "Coloring Outside The Lines",
+        "uri": "spotify:track:2cyfSwcJRd5ikvj34eokdN",
+        "date": "2019-06-05T01:01:46.759Z",
+        "genres": [
+            "electropop",
+            "indie pop",
+            "indie poptimism",
+            "indietronica",
+            "modern rock",
+            "nyc pop",
+            "pop"
+        ],
+        "artists": [
+            "MisterWives"
+        ],
+        "energy": 0.826,
+        "liveness": 0.524,
+        "speechiness": 0.0537,
+        "acousticness": 0.0228,
+        "instrumentalness": 4.61e-05,
+        "danceability": 0.657,
+        "loudness": -4.27,
+        "valence": 0.63,
+        "tempo": 110.972,
+        "popularity": 56.0
+    },
+    {
+        "name": "Rollercoaster",
+        "uri": "spotify:track:5L95vS64rG1YMIFm1hLjyZ",
+        "date": "2019-06-05T00:57:55.540Z",
+        "genres": [
+            "dance pop",
+            "indie pop",
+            "indie poptimism",
+            "indietronica",
+            "modern rock"
+        ],
+        "artists": [
+            "Bleachers"
+        ],
+        "energy": 0.79,
+        "liveness": 0.148,
+        "speechiness": 0.0538,
+        "acousticness": 0.00205,
+        "instrumentalness": 0.000309,
+        "danceability": 0.421,
+        "loudness": -6.227,
+        "valence": 0.279,
+        "tempo": 162.024,
+        "popularity": 63.0
+    },
+    {
+        "name": "I'm Nothing Without You",
+        "uri": "spotify:track:3hOp6BckddbR4PwEZfXYm3",
+        "date": "2019-06-05T00:54:45.937Z",
+        "genres": [
+            "la indie"
+        ],
+        "artists": [
+            "Dylan Gardner"
+        ],
+        "energy": 0.835,
+        "liveness": 0.336,
+        "speechiness": 0.0299,
+        "acousticness": 0.00864,
+        "instrumentalness": 6.1e-06,
+        "danceability": 0.568,
+        "loudness": -5.766,
+        "valence": 0.448,
+        "tempo": 99.977,
+        "popularity": 36.0
+    },
+    {
+        "name": "Passenger Side",
+        "uri": "spotify:track:3reay7NBijCy7n8xVLpDL8",
+        "date": "2019-06-05T00:51:04.653Z",
+        "genres": [
+            "hopebeat",
+            "indie pop",
+            "indie poptimism",
+            "indie rockism",
+            "indietronica",
+            "la indie",
+            "la pop",
+            "metropopolis",
+            "modern rock"
+        ],
+        "artists": [
+            "Smallpools"
+        ],
+        "energy": 0.801,
+        "liveness": 0.0865,
+        "speechiness": 0.0995,
+        "acousticness": 0.00601,
+        "instrumentalness": 8.2e-05,
+        "danceability": 0.585,
+        "loudness": -5.406,
+        "valence": 0.283,
+        "tempo": 101.987,
+        "popularity": 57.0
+    },
+    {
+        "name": "Twisted Tongue",
+        "uri": "spotify:track:7JZzh5uLVSpPzp5IGtlph9",
+        "date": "2019-06-05T00:47:22.513Z",
+        "genres": [
+            "electropop",
+            "indie pop",
+            "indie poptimism",
+            "indietronica",
+            "modern rock",
+            "nyc pop",
+            "pop"
+        ],
+        "artists": [
+            "MisterWives"
+        ],
+        "energy": 0.791,
+        "liveness": 0.0372,
+        "speechiness": 0.0586,
+        "acousticness": 0.0364,
+        "instrumentalness": 0.0,
+        "danceability": 0.652,
+        "loudness": -4.957,
+        "valence": 0.734,
+        "tempo": 139.95,
+        "popularity": 38.0
+    },
+    {
+        "name": "Lighthouse",
+        "uri": "spotify:track:4UKEpddo00hQuGqLEi4rCg",
+        "date": "2019-06-05T00:43:59.925Z",
+        "genres": [
+            "columbus ohio indie",
+            "deep new americana"
+        ],
+        "artists": [
+            "Doc Robinson"
+        ],
+        "energy": 0.686,
+        "liveness": 0.144,
+        "speechiness": 0.0383,
+        "acousticness": 0.38,
+        "instrumentalness": 0.406,
+        "danceability": 0.5,
+        "loudness": -10.679,
+        "valence": 0.862,
+        "tempo": 191.602,
+        "popularity": 25.0
+    },
+    {
+        "name": "Sit Next to Me",
+        "uri": "spotify:track:4BdGO1CaObRD4La9l5Zanz",
+        "date": "2019-06-05T00:39:57.112Z",
+        "genres": [
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "pop",
+            "rock"
+        ],
+        "artists": [
+            "Foster The People"
+        ],
+        "energy": 0.738,
+        "liveness": 0.689,
+        "speechiness": 0.0292,
+        "acousticness": 0.117,
+        "instrumentalness": 0.000384,
+        "danceability": 0.638,
+        "loudness": -4.976,
+        "valence": 0.657,
+        "tempo": 97.021,
+        "popularity": 74.0
+    },
+    {
+        "name": "San Francisco",
+        "uri": "spotify:track:2eQOMQkStoRUQyq6HGh1iG",
+        "date": "2019-06-05T00:35:52.609Z",
+        "genres": [
+            "folk-pop",
+            "indie pop",
+            "indie poptimism",
+            "indietronica",
+            "modern rock",
+            "shimmer pop",
+            "stomp and holler"
+        ],
+        "artists": [
+            "The Mowgli's"
+        ],
+        "energy": 0.857,
+        "liveness": 0.0767,
+        "speechiness": 0.0604,
+        "acousticness": 0.0184,
+        "instrumentalness": 0.0,
+        "danceability": 0.254,
+        "loudness": -4.213,
+        "valence": 0.293,
+        "tempo": 92.328,
+        "popularity": 57.0
+    },
+    {
+        "name": "Twisted Tongue",
+        "uri": "spotify:track:7JZzh5uLVSpPzp5IGtlph9",
+        "date": "2019-06-03T18:23:55.237Z",
+        "genres": [
+            "electropop",
+            "indie pop",
+            "indie poptimism",
+            "indietronica",
+            "modern rock",
+            "nyc pop",
+            "pop"
+        ],
+        "artists": [
+            "MisterWives"
+        ],
+        "energy": 0.791,
+        "liveness": 0.0372,
+        "speechiness": 0.0586,
+        "acousticness": 0.0364,
+        "instrumentalness": 0.0,
+        "danceability": 0.652,
+        "loudness": -4.957,
+        "valence": 0.734,
+        "tempo": 139.95,
+        "popularity": 38.0
+    },
+    {
+        "name": "Lighthouse",
+        "uri": "spotify:track:4UKEpddo00hQuGqLEi4rCg",
+        "date": "2019-06-03T17:27:45.324Z",
+        "genres": [
+            "columbus ohio indie",
+            "deep new americana"
+        ],
+        "artists": [
+            "Doc Robinson"
+        ],
+        "energy": 0.686,
+        "liveness": 0.144,
+        "speechiness": 0.0383,
+        "acousticness": 0.38,
+        "instrumentalness": 0.406,
+        "danceability": 0.5,
+        "loudness": -10.679,
+        "valence": 0.862,
+        "tempo": 191.602,
+        "popularity": 25.0
+    },
+    {
+        "name": "Sit Next to Me",
+        "uri": "spotify:track:4BdGO1CaObRD4La9l5Zanz",
+        "date": "2019-06-03T17:23:42.596Z",
+        "genres": [
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "pop",
+            "rock"
+        ],
+        "artists": [
+            "Foster The People"
+        ],
+        "energy": 0.738,
+        "liveness": 0.689,
+        "speechiness": 0.0292,
+        "acousticness": 0.117,
+        "instrumentalness": 0.000384,
+        "danceability": 0.638,
+        "loudness": -4.976,
+        "valence": 0.657,
+        "tempo": 97.021,
+        "popularity": 74.0
+    },
+    {
+        "name": "San Francisco",
+        "uri": "spotify:track:2eQOMQkStoRUQyq6HGh1iG",
+        "date": "2019-06-03T17:19:38.915Z",
+        "genres": [
+            "folk-pop",
+            "indie pop",
+            "indie poptimism",
+            "indietronica",
+            "modern rock",
+            "shimmer pop",
+            "stomp and holler"
+        ],
+        "artists": [
+            "The Mowgli's"
+        ],
+        "energy": 0.857,
+        "liveness": 0.0767,
+        "speechiness": 0.0604,
+        "acousticness": 0.0184,
+        "instrumentalness": 0.0,
+        "danceability": 0.254,
+        "loudness": -4.213,
+        "valence": 0.293,
+        "tempo": 92.328,
+        "popularity": 57.0
+    },
+    {
+        "name": "Lighthouse",
+        "uri": "spotify:track:4UKEpddo00hQuGqLEi4rCg",
+        "date": "2019-06-03T16:40:25.709Z",
+        "genres": [
+            "columbus ohio indie",
+            "deep new americana"
+        ],
+        "artists": [
+            "Doc Robinson"
+        ],
+        "energy": 0.686,
+        "liveness": 0.144,
+        "speechiness": 0.0383,
+        "acousticness": 0.38,
+        "instrumentalness": 0.406,
+        "danceability": 0.5,
+        "loudness": -10.679,
+        "valence": 0.862,
+        "tempo": 191.602,
+        "popularity": 25.0
+    },
+    {
+        "name": "Sit Next to Me",
+        "uri": "spotify:track:4BdGO1CaObRD4La9l5Zanz",
+        "date": "2019-06-03T08:23:18.947Z",
+        "genres": [
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "pop",
+            "rock"
+        ],
+        "artists": [
+            "Foster The People"
+        ],
+        "energy": 0.738,
+        "liveness": 0.689,
+        "speechiness": 0.0292,
+        "acousticness": 0.117,
+        "instrumentalness": 0.000384,
+        "danceability": 0.638,
+        "loudness": -4.976,
+        "valence": 0.657,
+        "tempo": 97.021,
+        "popularity": 74.0
+    },
+    {
+        "name": "Strawberries & Cigarettes",
+        "uri": "spotify:track:3afkJSKX0EAMsJXTZnDXXJ",
+        "date": "2019-06-03T08:15:28.188Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "viral pop"
+        ],
+        "artists": [
+            "Troye Sivan"
+        ],
+        "energy": 0.537,
+        "liveness": 0.076,
+        "speechiness": 0.0832,
+        "acousticness": 0.162,
+        "instrumentalness": 0.0,
+        "danceability": 0.578,
+        "loudness": -8.676,
+        "valence": 0.25,
+        "tempo": 83.909,
+        "popularity": 67.0
+    },
+    {
+        "name": "Stumblin' Home",
+        "uri": "spotify:track:01oyRIMjNlMSN00ETiVduQ",
+        "date": "2019-06-03T08:10:32.578Z",
+        "genres": [
+            "hopebeat",
+            "indie pop",
+            "indie poptimism",
+            "indie rockism",
+            "indietronica",
+            "la indie",
+            "la pop",
+            "metropopolis",
+            "modern rock"
+        ],
+        "artists": [
+            "Smallpools"
+        ],
+        "energy": 0.836,
+        "liveness": 0.0891,
+        "speechiness": 0.071,
+        "acousticness": 0.0793,
+        "instrumentalness": 0.000379,
+        "danceability": 0.672,
+        "loudness": -3.959,
+        "valence": 0.781,
+        "tempo": 104.068,
+        "popularity": 54.0
+    },
+    {
+        "name": "Coloring Outside The Lines",
+        "uri": "spotify:track:2cyfSwcJRd5ikvj34eokdN",
+        "date": "2019-06-03T08:07:06.967Z",
+        "genres": [
+            "electropop",
+            "indie pop",
+            "indie poptimism",
+            "indietronica",
+            "modern rock",
+            "nyc pop",
+            "pop"
+        ],
+        "artists": [
+            "MisterWives"
+        ],
+        "energy": 0.826,
+        "liveness": 0.524,
+        "speechiness": 0.0537,
+        "acousticness": 0.0228,
+        "instrumentalness": 4.61e-05,
+        "danceability": 0.657,
+        "loudness": -4.27,
+        "valence": 0.63,
+        "tempo": 110.972,
+        "popularity": 56.0
+    },
+    {
+        "name": "Rollercoaster",
+        "uri": "spotify:track:5L95vS64rG1YMIFm1hLjyZ",
+        "date": "2019-06-03T08:03:15.149Z",
+        "genres": [
+            "dance pop",
+            "indie pop",
+            "indie poptimism",
+            "indietronica",
+            "modern rock"
+        ],
+        "artists": [
+            "Bleachers"
+        ],
+        "energy": 0.79,
+        "liveness": 0.148,
+        "speechiness": 0.0538,
+        "acousticness": 0.00205,
+        "instrumentalness": 0.000309,
+        "danceability": 0.421,
+        "loudness": -6.227,
+        "valence": 0.279,
+        "tempo": 162.024,
+        "popularity": 63.0
+    },
+    {
+        "name": "I'm Nothing Without You",
+        "uri": "spotify:track:3hOp6BckddbR4PwEZfXYm3",
+        "date": "2019-06-03T08:00:05.618Z",
+        "genres": [
+            "la indie"
+        ],
+        "artists": [
+            "Dylan Gardner"
+        ],
+        "energy": 0.835,
+        "liveness": 0.336,
+        "speechiness": 0.0299,
+        "acousticness": 0.00864,
+        "instrumentalness": 6.1e-06,
+        "danceability": 0.568,
+        "loudness": -5.766,
+        "valence": 0.448,
+        "tempo": 99.977,
+        "popularity": 36.0
+    },
+    {
+        "name": "Passenger Side",
+        "uri": "spotify:track:3reay7NBijCy7n8xVLpDL8",
+        "date": "2019-06-03T07:56:24.635Z",
+        "genres": [
+            "hopebeat",
+            "indie pop",
+            "indie poptimism",
+            "indie rockism",
+            "indietronica",
+            "la indie",
+            "la pop",
+            "metropopolis",
+            "modern rock"
+        ],
+        "artists": [
+            "Smallpools"
+        ],
+        "energy": 0.801,
+        "liveness": 0.0865,
+        "speechiness": 0.0995,
+        "acousticness": 0.00601,
+        "instrumentalness": 8.2e-05,
+        "danceability": 0.585,
+        "loudness": -5.406,
+        "valence": 0.283,
+        "tempo": 101.987,
+        "popularity": 57.0
+    }
+]

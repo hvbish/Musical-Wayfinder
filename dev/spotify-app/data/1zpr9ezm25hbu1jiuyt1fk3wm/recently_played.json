@@ -1,0 +1,1251 @@
+[
+    {
+        "name": "How Long?",
+        "uri": "spotify:track:5jd6XPyXSY4jQVG3SlXP1b",
+        "date": "2019-06-07T18:17:44.860Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.39,
+        "liveness": 0.127,
+        "speechiness": 0.0392,
+        "acousticness": 0.502,
+        "instrumentalness": 4.81e-05,
+        "danceability": 0.864,
+        "loudness": -7.438,
+        "valence": 0.811,
+        "tempo": 103.948,
+        "popularity": 68.0
+    },
+    {
+        "name": "Harmony Hall",
+        "uri": "spotify:track:39exKIvycQDgs4T6uXdyu0",
+        "date": "2019-06-07T18:15:50.249Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.76,
+        "liveness": 0.0917,
+        "speechiness": 0.0479,
+        "acousticness": 0.475,
+        "instrumentalness": 0.000129,
+        "danceability": 0.653,
+        "loudness": -6.086,
+        "valence": 0.6,
+        "tempo": 98.008,
+        "popularity": 72.0
+    },
+    {
+        "name": "Boy With Luv (feat. Halsey)",
+        "uri": "spotify:track:5KawlOMHjWeUjQtnuRs22c",
+        "date": "2019-06-05T06:15:27.036Z",
+        "genres": [
+            "k-pop",
+            "k-pop boy group",
+            "dance pop",
+            "electropop",
+            "etherpop",
+            "indie poptimism",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "BTS",
+            "Halsey"
+        ],
+        "energy": 0.862,
+        "liveness": 0.192,
+        "speechiness": 0.0965,
+        "acousticness": 0.0923,
+        "instrumentalness": 0.0,
+        "danceability": 0.645,
+        "loudness": -4.757,
+        "valence": 0.798,
+        "tempo": 119.991,
+        "popularity": 92.0
+    },
+    {
+        "name": "How Long?",
+        "uri": "spotify:track:5jd6XPyXSY4jQVG3SlXP1b",
+        "date": "2019-06-05T06:12:02.213Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.39,
+        "liveness": 0.127,
+        "speechiness": 0.0392,
+        "acousticness": 0.502,
+        "instrumentalness": 4.81e-05,
+        "danceability": 0.864,
+        "loudness": -7.438,
+        "valence": 0.811,
+        "tempo": 103.948,
+        "popularity": 68.0
+    },
+    {
+        "name": "How Long?",
+        "uri": "spotify:track:5jd6XPyXSY4jQVG3SlXP1b",
+        "date": "2019-06-02T23:35:44.186Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.39,
+        "liveness": 0.127,
+        "speechiness": 0.0392,
+        "acousticness": 0.502,
+        "instrumentalness": 4.81e-05,
+        "danceability": 0.864,
+        "loudness": -7.438,
+        "valence": 0.811,
+        "tempo": 103.948,
+        "popularity": 68.0
+    },
+    {
+        "name": "This Life",
+        "uri": "spotify:track:4dRqYKhLVujxiBXcq50YzG",
+        "date": "2019-06-02T23:35:06.865Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.712,
+        "liveness": 0.0561,
+        "speechiness": 0.1,
+        "acousticness": 0.228,
+        "instrumentalness": 3.39e-06,
+        "danceability": 0.62,
+        "loudness": -6.434,
+        "valence": 0.83,
+        "tempo": 170.234,
+        "popularity": 73.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-06-02T23:30:37.644Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "This Life",
+        "uri": "spotify:track:4dRqYKhLVujxiBXcq50YzG",
+        "date": "2019-06-02T19:22:38.200Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.712,
+        "liveness": 0.0561,
+        "speechiness": 0.1,
+        "acousticness": 0.228,
+        "instrumentalness": 3.39e-06,
+        "danceability": 0.62,
+        "loudness": -6.434,
+        "valence": 0.83,
+        "tempo": 170.234,
+        "popularity": 73.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-06-02T19:21:36.979Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Harmony Hall",
+        "uri": "spotify:track:39exKIvycQDgs4T6uXdyu0",
+        "date": "2019-06-02T19:19:54.409Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.76,
+        "liveness": 0.0917,
+        "speechiness": 0.0479,
+        "acousticness": 0.475,
+        "instrumentalness": 0.000129,
+        "danceability": 0.653,
+        "loudness": -6.086,
+        "valence": 0.6,
+        "tempo": 98.008,
+        "popularity": 72.0
+    },
+    {
+        "name": "Harmony Hall",
+        "uri": "spotify:track:39exKIvycQDgs4T6uXdyu0",
+        "date": "2019-06-01T18:43:45.826Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.76,
+        "liveness": 0.0917,
+        "speechiness": 0.0479,
+        "acousticness": 0.475,
+        "instrumentalness": 0.000129,
+        "danceability": 0.653,
+        "loudness": -6.086,
+        "valence": 0.6,
+        "tempo": 98.008,
+        "popularity": 72.0
+    },
+    {
+        "name": "Tia Tamera (feat. Rico Nasty)",
+        "uri": "spotify:track:6mbWdNBDGL4joR1EHRUZg1",
+        "date": "2019-06-01T18:40:55.664Z",
+        "genres": [
+            "alternative r&b",
+            "electropop",
+            "escape room",
+            "la indie",
+            "pop",
+            "dmv rap",
+            "escape room",
+            "pop",
+            "trap queen"
+        ],
+        "artists": [
+            "Doja Cat",
+            "Rico Nasty"
+        ],
+        "energy": 0.675,
+        "liveness": 0.182,
+        "speechiness": 0.0931,
+        "acousticness": 0.017,
+        "instrumentalness": 0.0,
+        "danceability": 0.814,
+        "loudness": -4.594,
+        "valence": 0.407,
+        "tempo": 119.867,
+        "popularity": 68.0
+    },
+    {
+        "name": "Harmony Hall",
+        "uri": "spotify:track:39exKIvycQDgs4T6uXdyu0",
+        "date": "2019-06-01T00:30:20.756Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.76,
+        "liveness": 0.0917,
+        "speechiness": 0.0479,
+        "acousticness": 0.475,
+        "instrumentalness": 0.000129,
+        "danceability": 0.653,
+        "loudness": -6.086,
+        "valence": 0.6,
+        "tempo": 98.008,
+        "popularity": 72.0
+    },
+    {
+        "name": "you should see me in a crown",
+        "uri": "spotify:track:3XF5xLJHOQQRbWya6hBp7d",
+        "date": "2019-06-01T00:26:49.369Z",
+        "genres": [
+            "electropop",
+            "pop"
+        ],
+        "artists": [
+            "Billie Eilish"
+        ],
+        "energy": 0.533,
+        "liveness": 0.139,
+        "speechiness": 0.186,
+        "acousticness": 0.462,
+        "instrumentalness": 0.219,
+        "danceability": 0.678,
+        "loudness": -10.485,
+        "valence": 0.323,
+        "tempo": 150.455,
+        "popularity": 87.0
+    },
+    {
+        "name": "bad guy",
+        "uri": "spotify:track:2Fxmhks0bxGSBdJ92vM42m",
+        "date": "2019-06-01T00:23:47.919Z",
+        "genres": [
+            "electropop",
+            "pop"
+        ],
+        "artists": [
+            "Billie Eilish"
+        ],
+        "energy": 0.425,
+        "liveness": 0.1,
+        "speechiness": 0.375,
+        "acousticness": 0.328,
+        "instrumentalness": 0.13,
+        "danceability": 0.701,
+        "loudness": -10.965,
+        "valence": 0.562,
+        "tempo": 135.128,
+        "popularity": 100.0
+    },
+    {
+        "name": "Boy With Luv (feat. Halsey)",
+        "uri": "spotify:track:5KawlOMHjWeUjQtnuRs22c",
+        "date": "2019-06-01T00:20:31.954Z",
+        "genres": [
+            "k-pop",
+            "k-pop boy group",
+            "dance pop",
+            "electropop",
+            "etherpop",
+            "indie poptimism",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "BTS",
+            "Halsey"
+        ],
+        "energy": 0.862,
+        "liveness": 0.192,
+        "speechiness": 0.0965,
+        "acousticness": 0.0923,
+        "instrumentalness": 0.0,
+        "danceability": 0.645,
+        "loudness": -4.757,
+        "valence": 0.798,
+        "tempo": 119.991,
+        "popularity": 92.0
+    },
+    {
+        "name": "How Long?",
+        "uri": "spotify:track:5jd6XPyXSY4jQVG3SlXP1b",
+        "date": "2019-06-01T00:16:41.702Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.39,
+        "liveness": 0.127,
+        "speechiness": 0.0392,
+        "acousticness": 0.502,
+        "instrumentalness": 4.81e-05,
+        "danceability": 0.864,
+        "loudness": -7.438,
+        "valence": 0.811,
+        "tempo": 103.948,
+        "popularity": 68.0
+    },
+    {
+        "name": "This Life",
+        "uri": "spotify:track:4dRqYKhLVujxiBXcq50YzG",
+        "date": "2019-06-01T00:13:08.954Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.712,
+        "liveness": 0.0561,
+        "speechiness": 0.1,
+        "acousticness": 0.228,
+        "instrumentalness": 3.39e-06,
+        "danceability": 0.62,
+        "loudness": -6.434,
+        "valence": 0.83,
+        "tempo": 170.234,
+        "popularity": 73.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-31T23:48:11.596Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-31T23:46:28.641Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-31T23:44:45.512Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-31T20:23:53.585Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-31T20:22:10.424Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-31T20:20:27.079Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-31T20:18:43.682Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-31T20:17:00.489Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-31T20:15:16.843Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "She Bad",
+        "uri": "spotify:track:0CfmNX2TXk7yoJqHJiixnp",
+        "date": "2019-05-31T17:33:24.470Z",
+        "genres": [
+            "pop",
+            "rap",
+            "cali rap",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "southern hip hop",
+            "trap music"
+        ],
+        "artists": [
+            "Cardi B",
+            "YG"
+        ],
+        "energy": 0.504,
+        "liveness": 0.0963,
+        "speechiness": 0.266,
+        "acousticness": 0.0183,
+        "instrumentalness": 0.0,
+        "danceability": 0.791,
+        "loudness": -7.864,
+        "valence": 0.355,
+        "tempo": 159.949,
+        "popularity": 67.0
+    },
+    {
+        "name": "Press",
+        "uri": "spotify:track:6dPyzkyZwoj9LqjQXOFdVv",
+        "date": "2019-05-31T17:29:55.727Z",
+        "genres": [
+            "pop",
+            "rap"
+        ],
+        "artists": [
+            "Cardi B"
+        ],
+        "energy": 0.525,
+        "liveness": 0.137,
+        "speechiness": 0.305,
+        "acousticness": 0.029,
+        "instrumentalness": 5.68e-06,
+        "danceability": 0.888,
+        "loudness": -5.665,
+        "valence": 0.243,
+        "tempo": 133.983,
+        "popularity": 82.0
+    },
+    {
+        "name": "Bartier Cardi (feat. 21 Savage)",
+        "uri": "spotify:track:0dIoGTQXDh1wVnhIiSyYEa",
+        "date": "2019-05-31T17:27:31.698Z",
+        "genres": [
+            "pop",
+            "rap",
+            "atl hip hop",
+            "rap",
+            "trap music"
+        ],
+        "artists": [
+            "Cardi B",
+            "21 Savage"
+        ],
+        "energy": 0.524,
+        "liveness": 0.383,
+        "speechiness": 0.181,
+        "acousticness": 0.00111,
+        "instrumentalness": 0.000678,
+        "danceability": 0.908,
+        "loudness": -7.955,
+        "valence": 0.109,
+        "tempo": 138.015,
+        "popularity": 73.0
+    },
+    {
+        "name": "Press",
+        "uri": "spotify:track:6dPyzkyZwoj9LqjQXOFdVv",
+        "date": "2019-05-31T17:23:25.392Z",
+        "genres": [
+            "pop",
+            "rap"
+        ],
+        "artists": [
+            "Cardi B"
+        ],
+        "energy": 0.525,
+        "liveness": 0.137,
+        "speechiness": 0.305,
+        "acousticness": 0.029,
+        "instrumentalness": 5.68e-06,
+        "danceability": 0.888,
+        "loudness": -5.665,
+        "valence": 0.243,
+        "tempo": 133.983,
+        "popularity": 82.0
+    },
+    {
+        "name": "This Life",
+        "uri": "spotify:track:4dRqYKhLVujxiBXcq50YzG",
+        "date": "2019-05-30T17:58:37.441Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.712,
+        "liveness": 0.0561,
+        "speechiness": 0.1,
+        "acousticness": 0.228,
+        "instrumentalness": 3.39e-06,
+        "danceability": 0.62,
+        "loudness": -6.434,
+        "valence": 0.83,
+        "tempo": 170.234,
+        "popularity": 73.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-30T17:54:09.090Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Boy With Luv (feat. Halsey)",
+        "uri": "spotify:track:5KawlOMHjWeUjQtnuRs22c",
+        "date": "2019-05-30T07:17:15.346Z",
+        "genres": [
+            "k-pop",
+            "k-pop boy group",
+            "dance pop",
+            "electropop",
+            "etherpop",
+            "indie poptimism",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "BTS",
+            "Halsey"
+        ],
+        "energy": 0.862,
+        "liveness": 0.192,
+        "speechiness": 0.0965,
+        "acousticness": 0.0923,
+        "instrumentalness": 0.0,
+        "danceability": 0.645,
+        "loudness": -4.757,
+        "valence": 0.798,
+        "tempo": 119.991,
+        "popularity": 92.0
+    },
+    {
+        "name": "How Long?",
+        "uri": "spotify:track:5jd6XPyXSY4jQVG3SlXP1b",
+        "date": "2019-05-30T07:13:24.192Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.39,
+        "liveness": 0.127,
+        "speechiness": 0.0392,
+        "acousticness": 0.502,
+        "instrumentalness": 4.81e-05,
+        "danceability": 0.864,
+        "loudness": -7.438,
+        "valence": 0.811,
+        "tempo": 103.948,
+        "popularity": 68.0
+    },
+    {
+        "name": "This Life",
+        "uri": "spotify:track:4dRqYKhLVujxiBXcq50YzG",
+        "date": "2019-05-30T07:09:52.316Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.712,
+        "liveness": 0.0561,
+        "speechiness": 0.1,
+        "acousticness": 0.228,
+        "instrumentalness": 3.39e-06,
+        "danceability": 0.62,
+        "loudness": -6.434,
+        "valence": 0.83,
+        "tempo": 170.234,
+        "popularity": 73.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-30T07:05:21.553Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Hoy Se Bebe - Bachata Version",
+        "uri": "spotify:track:1HZoz1TYEyPbSD2Sn5nE3N",
+        "date": "2019-05-30T07:02:52.939Z",
+        "genres": [
+            "bachata",
+            "cubaton",
+            "latin",
+            "tropical"
+        ],
+        "artists": [
+            "Grupo Extra"
+        ],
+        "energy": 0.809,
+        "liveness": 0.0736,
+        "speechiness": 0.0401,
+        "acousticness": 0.0436,
+        "instrumentalness": 0.0,
+        "danceability": 0.733,
+        "loudness": -3.906,
+        "valence": 0.908,
+        "tempo": 159.886,
+        "popularity": 42.0
+    },
+    {
+        "name": "Culpa al Coraz\u00f3n",
+        "uri": "spotify:track:0Kt035u0yJBkOnM1BYPpI6",
+        "date": "2019-05-30T06:58:37.153Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "latin pop",
+            "pop",
+            "tropical"
+        ],
+        "artists": [
+            "Prince Royce"
+        ],
+        "energy": 0.649,
+        "liveness": 0.0973,
+        "speechiness": 0.0372,
+        "acousticness": 0.465,
+        "instrumentalness": 0.0,
+        "danceability": 0.839,
+        "loudness": -6.121,
+        "valence": 0.904,
+        "tempo": 122.99,
+        "popularity": 61.0
+    },
+    {
+        "name": "Criminal",
+        "uri": "spotify:track:6Za3190Sbw39BBC77WSS1C",
+        "date": "2019-05-30T06:54:55.396Z",
+        "genres": [
+            "latin",
+            "reggaeton",
+            "tropical",
+            "reggaeton",
+            "trap latino"
+        ],
+        "artists": [
+            "Natti Natasha",
+            "Ozuna"
+        ],
+        "energy": 0.813,
+        "liveness": 0.255,
+        "speechiness": 0.0561,
+        "acousticness": 0.03,
+        "instrumentalness": 9.33e-05,
+        "danceability": 0.814,
+        "loudness": -3.023,
+        "valence": 0.839,
+        "tempo": 79.997,
+        "popularity": 79.0
+    },
+    {
+        "name": "Que Venga Otra Mujer / Me Gusta Esa Hembra",
+        "uri": "spotify:track:34UzmMdpfYxgglZJVsw4k9",
+        "date": "2019-05-30T06:50:44.894Z",
+        "genres": [],
+        "artists": [
+            "Froilan Jay"
+        ],
+        "energy": 0.666,
+        "liveness": 0.07,
+        "speechiness": 0.0412,
+        "acousticness": 0.169,
+        "instrumentalness": 6.24e-06,
+        "danceability": 0.804,
+        "loudness": -7.206,
+        "valence": 0.966,
+        "tempo": 132.022,
+        "popularity": 5.0
+    },
+    {
+        "name": "How Long?",
+        "uri": "spotify:track:5jd6XPyXSY4jQVG3SlXP1b",
+        "date": "2019-05-29T20:19:09.560Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.39,
+        "liveness": 0.127,
+        "speechiness": 0.0392,
+        "acousticness": 0.502,
+        "instrumentalness": 4.81e-05,
+        "danceability": 0.864,
+        "loudness": -7.438,
+        "valence": 0.811,
+        "tempo": 103.948,
+        "popularity": 68.0
+    },
+    {
+        "name": "This Life",
+        "uri": "spotify:track:4dRqYKhLVujxiBXcq50YzG",
+        "date": "2019-05-29T20:15:54.030Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.712,
+        "liveness": 0.0561,
+        "speechiness": 0.1,
+        "acousticness": 0.228,
+        "instrumentalness": 3.39e-06,
+        "danceability": 0.62,
+        "loudness": -6.434,
+        "valence": 0.83,
+        "tempo": 170.234,
+        "popularity": 73.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-29T20:11:25.721Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Harmony Hall",
+        "uri": "spotify:track:39exKIvycQDgs4T6uXdyu0",
+        "date": "2019-05-29T20:09:42.881Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.76,
+        "liveness": 0.0917,
+        "speechiness": 0.0479,
+        "acousticness": 0.475,
+        "instrumentalness": 0.000129,
+        "danceability": 0.653,
+        "loudness": -6.086,
+        "valence": 0.6,
+        "tempo": 98.008,
+        "popularity": 72.0
+    },
+    {
+        "name": "Que Venga Otra Mujer / Me Gusta Esa Hembra",
+        "uri": "spotify:track:34UzmMdpfYxgglZJVsw4k9",
+        "date": "2019-05-29T20:04:17.638Z",
+        "genres": [],
+        "artists": [
+            "Froilan Jay"
+        ],
+        "energy": 0.666,
+        "liveness": 0.07,
+        "speechiness": 0.0412,
+        "acousticness": 0.169,
+        "instrumentalness": 6.24e-06,
+        "danceability": 0.804,
+        "loudness": -7.206,
+        "valence": 0.966,
+        "tempo": 132.022,
+        "popularity": 5.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-28T20:07:49.147Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-28T20:07:14.770Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-28T20:05:31.684Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-28T20:03:48.280Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    }
+]

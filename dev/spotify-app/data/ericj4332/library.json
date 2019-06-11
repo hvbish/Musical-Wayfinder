@@ -1,0 +1,3405 @@
+[
+    {
+        "name": "Fire N Gold",
+        "uri": "spotify:track:7xAdO0zdl7lGf0ecg4IGhQ",
+        "date": "2019-04-01T22:35:58Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "indie cafe pop",
+            "indie poptimism",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "talent show",
+            "viral pop"
+        ],
+        "artists": [
+            "Bea Miller"
+        ],
+        "energy": 0.869,
+        "liveness": 0.324,
+        "speechiness": 0.0471,
+        "acousticness": 0.00463,
+        "instrumentalness": 0.0,
+        "danceability": 0.539,
+        "loudness": -5.341,
+        "valence": 0.362,
+        "tempo": 143.987,
+        "popularity": 59.0
+    },
+    {
+        "name": "O.D.D.",
+        "uri": "spotify:track:1HuIahUPUXCx7Kz4rgMXFU",
+        "date": "2019-03-18T21:40:19Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "indie poptimism",
+            "pixie",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Hey Violet"
+        ],
+        "energy": 0.611,
+        "liveness": 0.149,
+        "speechiness": 0.0464,
+        "acousticness": 0.00935,
+        "instrumentalness": 1.04e-06,
+        "danceability": 0.553,
+        "loudness": -6.468,
+        "valence": 0.369,
+        "tempo": 154.094,
+        "popularity": 60.0
+    },
+    {
+        "name": "Sweet but Psycho",
+        "uri": "spotify:track:25sgk305KZfyuqVBQIahim",
+        "date": "2019-03-14T02:18:35Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Ava Max"
+        ],
+        "energy": 0.704,
+        "liveness": 0.166,
+        "speechiness": 0.0476,
+        "acousticness": 0.0691,
+        "instrumentalness": 0.0,
+        "danceability": 0.719,
+        "loudness": -4.724,
+        "valence": 0.628,
+        "tempo": 133.002,
+        "popularity": 91.0
+    },
+    {
+        "name": "That Green Gentleman (Things Have Changed)",
+        "uri": "spotify:track:2d1D1E8M48hHE99u6BO8RN",
+        "date": "2019-01-30T02:35:49Z",
+        "genres": [
+            "emo",
+            "modern rock",
+            "pop punk"
+        ],
+        "artists": [
+            "Panic! At The Disco"
+        ],
+        "energy": 0.796,
+        "liveness": 0.177,
+        "speechiness": 0.0333,
+        "acousticness": 0.103,
+        "instrumentalness": 0.0,
+        "danceability": 0.536,
+        "loudness": -6.32,
+        "valence": 0.397,
+        "tempo": 95.98,
+        "popularity": 55.0
+    },
+    {
+        "name": "Never Be the Same",
+        "uri": "spotify:track:4eWQlBRaTjPPUlzacqEeoQ",
+        "date": "2019-01-14T19:58:55Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Camila Cabello"
+        ],
+        "energy": 0.713,
+        "liveness": 0.137,
+        "speechiness": 0.0747,
+        "acousticness": 0.181,
+        "instrumentalness": 0.000637,
+        "danceability": 0.637,
+        "loudness": -4.333,
+        "valence": 0.243,
+        "tempo": 129.923,
+        "popularity": 77.0
+    },
+    {
+        "name": "Get over Yourself",
+        "uri": "spotify:track:0sr84SDJ9VN4EB7p2mWGur",
+        "date": "2019-01-13T06:16:43Z",
+        "genres": [
+            "contemporary country",
+            "indonesian jazz",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Kelsea Ballerini"
+        ],
+        "energy": 0.787,
+        "liveness": 0.154,
+        "speechiness": 0.0778,
+        "acousticness": 0.0307,
+        "instrumentalness": 0.0,
+        "danceability": 0.523,
+        "loudness": -7.909,
+        "valence": 0.505,
+        "tempo": 84.072,
+        "popularity": 52.0
+    },
+    {
+        "name": "Speechless",
+        "uri": "spotify:track:2PjDWdGvvbLQfRRTQIZPmv",
+        "date": "2019-01-04T22:41:09Z",
+        "genres": [
+            "dance pop",
+            "pop"
+        ],
+        "artists": [
+            "Lady Gaga"
+        ],
+        "energy": 0.724,
+        "liveness": 0.355,
+        "speechiness": 0.0416,
+        "acousticness": 0.398,
+        "instrumentalness": 0.0,
+        "danceability": 0.302,
+        "loudness": -4.034,
+        "valence": 0.394,
+        "tempo": 144.235,
+        "popularity": 51.0
+    },
+    {
+        "name": "Timebomb",
+        "uri": "spotify:track:2m37E8EVwXvQ5e3JkURoAe",
+        "date": "2019-01-04T01:35:52Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "metropopolis",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "swedish electropop",
+            "swedish pop",
+            "swedish synthpop",
+            "tropical house"
+        ],
+        "artists": [
+            "Tove Lo"
+        ],
+        "energy": 0.834,
+        "liveness": 0.218,
+        "speechiness": 0.0348,
+        "acousticness": 0.0133,
+        "instrumentalness": 0.0,
+        "danceability": 0.522,
+        "loudness": -5.536,
+        "valence": 0.215,
+        "tempo": 139.994,
+        "popularity": 30.0
+    },
+    {
+        "name": "Slow Down",
+        "uri": "spotify:track:7E9XQbKJbkFwcGwjSF9Qlk",
+        "date": "2018-12-24T17:35:53Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Selena Gomez"
+        ],
+        "energy": 0.82,
+        "liveness": 0.615,
+        "speechiness": 0.146,
+        "acousticness": 0.0791,
+        "instrumentalness": 0.0,
+        "danceability": 0.722,
+        "loudness": -3.793,
+        "valence": 0.713,
+        "tempo": 127.941,
+        "popularity": 48.0
+    },
+    {
+        "name": "Sober",
+        "uri": "spotify:track:3MJYHwhJIA99vVSjBtg16j",
+        "date": "2018-11-27T03:07:26Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Selena Gomez"
+        ],
+        "energy": 0.741,
+        "liveness": 0.104,
+        "speechiness": 0.0788,
+        "acousticness": 0.171,
+        "instrumentalness": 0.0,
+        "danceability": 0.573,
+        "loudness": -3.22,
+        "valence": 0.526,
+        "tempo": 92.021,
+        "popularity": 46.0
+    },
+    {
+        "name": "Numb",
+        "uri": "spotify:track:2nLtzopw4rPReszdYBJU6h",
+        "date": "2018-11-12T06:21:24Z",
+        "genres": [
+            "alternative metal",
+            "nu metal",
+            "post-grunge",
+            "rap metal"
+        ],
+        "artists": [
+            "Linkin Park"
+        ],
+        "energy": 0.863,
+        "liveness": 0.639,
+        "speechiness": 0.0381,
+        "acousticness": 0.0046,
+        "instrumentalness": 0.0,
+        "danceability": 0.496,
+        "loudness": -4.153,
+        "valence": 0.243,
+        "tempo": 110.018,
+        "popularity": 80.0
+    },
+    {
+        "name": "Numb / Encore",
+        "uri": "spotify:track:5sNESr6pQfIhL3krM8CtZn",
+        "date": "2018-11-11T19:31:45Z",
+        "genres": [
+            "east coast hip hop",
+            "gangster rap",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "alternative metal",
+            "nu metal",
+            "post-grunge",
+            "rap metal"
+        ],
+        "artists": [
+            "JAY Z",
+            "Linkin Park"
+        ],
+        "energy": 0.793,
+        "liveness": 0.582,
+        "speechiness": 0.166,
+        "acousticness": 0.0603,
+        "instrumentalness": 0.0,
+        "danceability": 0.687,
+        "loudness": -4.254,
+        "valence": 0.751,
+        "tempo": 107.045,
+        "popularity": 74.0
+    },
+    {
+        "name": "American Idiot",
+        "uri": "spotify:track:6nTiIhLmQ3FWhvrGafw2zj",
+        "date": "2018-11-10T01:50:44Z",
+        "genres": [
+            "permanent wave",
+            "pop punk",
+            "punk",
+            "rock"
+        ],
+        "artists": [
+            "Green Day"
+        ],
+        "energy": 0.988,
+        "liveness": 0.368,
+        "speechiness": 0.0639,
+        "acousticness": 2.64e-05,
+        "instrumentalness": 7.86e-05,
+        "danceability": 0.38,
+        "loudness": -2.042,
+        "valence": 0.769,
+        "tempo": 186.113,
+        "popularity": 76.0
+    },
+    {
+        "name": "I Don't Wanna Be In Love (Dance Floor Anthem)",
+        "uri": "spotify:track:36UVZPoK8a1Oxh13cY8kOp",
+        "date": "2018-11-03T02:55:22Z",
+        "genres": [
+            "alternative metal",
+            "pop punk",
+            "post-grunge"
+        ],
+        "artists": [
+            "Good Charlotte"
+        ],
+        "energy": 0.884,
+        "liveness": 0.187,
+        "speechiness": 0.0428,
+        "acousticness": 0.0226,
+        "instrumentalness": 0.0,
+        "danceability": 0.64,
+        "loudness": -2.609,
+        "valence": 0.573,
+        "tempo": 124.968,
+        "popularity": 55.0
+    },
+    {
+        "name": "Give Me Novacaine / She's a Rebel",
+        "uri": "spotify:track:11I3KKHv7g2pXiuqRDabRA",
+        "date": "2018-10-29T05:24:17Z",
+        "genres": [
+            "permanent wave",
+            "pop punk",
+            "punk",
+            "rock"
+        ],
+        "artists": [
+            "Green Day"
+        ],
+        "energy": 0.949,
+        "liveness": 0.0569,
+        "speechiness": 0.0784,
+        "acousticness": 0.00185,
+        "instrumentalness": 1.78e-05,
+        "danceability": 0.312,
+        "loudness": -3.533,
+        "valence": 0.65,
+        "tempo": 154.795,
+        "popularity": 55.0
+    },
+    {
+        "name": "Are We the Waiting / St. Jimmy",
+        "uri": "spotify:track:5MqV2o7iLd0lNREZ7SYL05",
+        "date": "2018-10-29T05:10:50Z",
+        "genres": [
+            "permanent wave",
+            "pop punk",
+            "punk",
+            "rock"
+        ],
+        "artists": [
+            "Green Day"
+        ],
+        "energy": 0.909,
+        "liveness": 0.0933,
+        "speechiness": 0.0618,
+        "acousticness": 0.00016,
+        "instrumentalness": 4.76e-06,
+        "danceability": 0.276,
+        "loudness": -3.664,
+        "valence": 0.344,
+        "tempo": 138.497,
+        "popularity": 53.0
+    },
+    {
+        "name": "21 Guns",
+        "uri": "spotify:track:6V9YrF673stT4rfEk6bgzw",
+        "date": "2018-10-24T20:36:48Z",
+        "genres": [
+            "permanent wave",
+            "pop punk",
+            "punk",
+            "rock"
+        ],
+        "artists": [
+            "Green Day"
+        ],
+        "energy": 0.719,
+        "liveness": 0.454,
+        "speechiness": 0.0364,
+        "acousticness": 0.048,
+        "instrumentalness": 0.0,
+        "danceability": 0.26,
+        "loudness": -4.765,
+        "valence": 0.419,
+        "tempo": 159.072,
+        "popularity": 41.0
+    },
+    {
+        "name": "Blue Jeans - RAC Mix",
+        "uri": "spotify:track:7JVNRVPeXFAOdMrxOHNjVv",
+        "date": "2018-10-18T05:00:21Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "alternative dance",
+            "chillwave",
+            "electropop",
+            "indie pop",
+            "indie poptimism",
+            "indietronica",
+            "metropopolis",
+            "modern rock",
+            "nu disco",
+            "shimmer pop",
+            "vapor soul"
+        ],
+        "artists": [
+            "Lana Del Rey",
+            "RAC"
+        ],
+        "energy": 0.829,
+        "liveness": 0.0982,
+        "speechiness": 0.0623,
+        "acousticness": 0.421,
+        "instrumentalness": 0.00394,
+        "danceability": 0.687,
+        "loudness": -3.821,
+        "valence": 0.433,
+        "tempo": 117.975,
+        "popularity": 48.0
+    },
+    {
+        "name": "Let You Go",
+        "uri": "spotify:track:1beqtQO0aIc1dWsXr97Iji",
+        "date": "2018-10-15T22:45:37Z",
+        "genres": [
+            "hip hop",
+            "pop rap",
+            "rap"
+        ],
+        "artists": [
+            "Machine Gun Kelly"
+        ],
+        "energy": 0.819,
+        "liveness": 0.161,
+        "speechiness": 0.101,
+        "acousticness": 0.197,
+        "instrumentalness": 0.0,
+        "danceability": 0.601,
+        "loudness": -3.835,
+        "valence": 0.21,
+        "tempo": 170.117,
+        "popularity": 62.0
+    },
+    {
+        "name": "Burn It to the Ground",
+        "uri": "spotify:track:3B8NyX2Wyl3rNSQ5goyTOX",
+        "date": "2018-10-09T07:53:00Z",
+        "genres": [
+            "alternative metal",
+            "canadian rock",
+            "nu metal",
+            "post-grunge"
+        ],
+        "artists": [
+            "Nickelback"
+        ],
+        "energy": 0.922,
+        "liveness": 0.363,
+        "speechiness": 0.0744,
+        "acousticness": 0.000247,
+        "instrumentalness": 0.388,
+        "danceability": 0.617,
+        "loudness": -3.474,
+        "valence": 0.6,
+        "tempo": 132.059,
+        "popularity": 38.0
+    },
+    {
+        "name": "RAP DEVIL",
+        "uri": "spotify:track:63TyoT9Ee03rQxv8xmdJ2l",
+        "date": "2018-10-09T01:38:51Z",
+        "genres": [
+            "hip hop",
+            "pop rap",
+            "rap"
+        ],
+        "artists": [
+            "Machine Gun Kelly"
+        ],
+        "energy": 0.839,
+        "liveness": 0.239,
+        "speechiness": 0.227,
+        "acousticness": 0.217,
+        "instrumentalness": 3e-06,
+        "danceability": 0.895,
+        "loudness": -4.512,
+        "valence": 0.756,
+        "tempo": 149.951,
+        "popularity": 69.0
+    },
+    {
+        "name": "Runnin'",
+        "uri": "spotify:track:4x3qqSA4cP49oZQXPLnDBe",
+        "date": "2018-10-01T20:47:03Z",
+        "genres": [
+            "australian pop",
+            "dance pop",
+            "idol",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Adam Lambert"
+        ],
+        "energy": 0.868,
+        "liveness": 0.151,
+        "speechiness": 0.0837,
+        "acousticness": 0.0082,
+        "instrumentalness": 0.0,
+        "danceability": 0.408,
+        "loudness": -4.438,
+        "valence": 0.387,
+        "tempo": 83.469,
+        "popularity": 61.0
+    },
+    {
+        "name": "Are You Satisfied?",
+        "uri": "spotify:track:6lKRMylSZMtA7EqPl0pcdI",
+        "date": "2018-08-27T03:41:49Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "indie poptimism",
+            "metropopolis",
+            "pop",
+            "post-teen pop",
+            "tropical house",
+            "uk alternative pop"
+        ],
+        "artists": [
+            "MARINA"
+        ],
+        "energy": 0.712,
+        "liveness": 0.0755,
+        "speechiness": 0.0412,
+        "acousticness": 0.303,
+        "instrumentalness": 0.0,
+        "danceability": 0.669,
+        "loudness": -4.992,
+        "valence": 0.843,
+        "tempo": 124.009,
+        "popularity": 49.0
+    },
+    {
+        "name": "Side Effects (feat. Emily Warren)",
+        "uri": "spotify:track:5yNEdBlZMxpcVtGKz5NFk5",
+        "date": "2018-08-25T04:24:04Z",
+        "genres": [
+            "dance pop",
+            "edm",
+            "electropop",
+            "pop",
+            "tropical house",
+            "electropop",
+            "indie cafe pop",
+            "indie electro-pop",
+            "nyc pop"
+        ],
+        "artists": [
+            "The Chainsmokers",
+            "Emily Warren"
+        ],
+        "energy": 0.71,
+        "liveness": 0.55,
+        "speechiness": 0.0324,
+        "acousticness": 0.00277,
+        "instrumentalness": 0.0,
+        "danceability": 0.673,
+        "loudness": -6.744,
+        "valence": 0.54,
+        "tempo": 110.017,
+        "popularity": 19.0
+    },
+    {
+        "name": "Turn Me Up",
+        "uri": "spotify:track:0i6MFSVoW9FRPwEau74Wrq",
+        "date": "2018-08-18T18:15:18Z",
+        "genres": [
+            "canadian pop",
+            "dance pop",
+            "electropop",
+            "indie poptimism",
+            "pop",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Carly Rae Jepsen"
+        ],
+        "energy": 0.825,
+        "liveness": 0.15,
+        "speechiness": 0.108,
+        "acousticness": 0.117,
+        "instrumentalness": 0.0,
+        "danceability": 0.652,
+        "loudness": -5.435,
+        "valence": 0.577,
+        "tempo": 124.031,
+        "popularity": 39.0
+    },
+    {
+        "name": "Stay (with Alessia Cara)",
+        "uri": "spotify:track:6uBhi9gBXWjanegOb2Phh0",
+        "date": "2018-07-26T19:49:27Z",
+        "genres": [
+            "complextro",
+            "dance pop",
+            "edm",
+            "electro house",
+            "german techno",
+            "pop",
+            "post-teen pop",
+            "tropical house",
+            "canadian contemporary r&b",
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Zedd",
+            "Alessia Cara"
+        ],
+        "energy": 0.622,
+        "liveness": 0.116,
+        "speechiness": 0.0622,
+        "acousticness": 0.253,
+        "instrumentalness": 0.0,
+        "danceability": 0.69,
+        "loudness": -5.025,
+        "valence": 0.544,
+        "tempo": 102.04,
+        "popularity": 79.0
+    },
+    {
+        "name": "Honest",
+        "uri": "spotify:track:6KjbNLbRjuoa8rEq5yNA6H",
+        "date": "2018-07-20T00:02:23Z",
+        "genres": [
+            "dance pop",
+            "edm",
+            "electropop",
+            "pop",
+            "tropical house"
+        ],
+        "artists": [
+            "The Chainsmokers"
+        ],
+        "energy": 0.514,
+        "liveness": 0.385,
+        "speechiness": 0.0465,
+        "acousticness": 0.0121,
+        "instrumentalness": 8.5e-05,
+        "danceability": 0.673,
+        "loudness": -10.772,
+        "valence": 0.312,
+        "tempo": 100.035,
+        "popularity": 63.0
+    },
+    {
+        "name": "Welcome To Heartbreak",
+        "uri": "spotify:track:3F18I7LhWKxlf1PytSoTBH",
+        "date": "2018-05-15T23:25:13Z",
+        "genres": [
+            "chicago rap",
+            "pop rap",
+            "rap",
+            "hip hop",
+            "pop rap",
+            "rap"
+        ],
+        "artists": [
+            "Kanye West",
+            "Kid Cudi"
+        ],
+        "energy": 0.452,
+        "liveness": 0.111,
+        "speechiness": 0.0341,
+        "acousticness": 0.0969,
+        "instrumentalness": 0.579,
+        "danceability": 0.667,
+        "loudness": -10.99,
+        "valence": 0.0734,
+        "tempo": 95.982,
+        "popularity": 59.0
+    },
+    {
+        "name": "Pearl",
+        "uri": "spotify:track:4LqZ9jJ8dfuwfYYiOt0DUr",
+        "date": "2018-05-02T02:30:11Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Katy Perry"
+        ],
+        "energy": 0.584,
+        "liveness": 0.311,
+        "speechiness": 0.0375,
+        "acousticness": 0.103,
+        "instrumentalness": 0.0,
+        "danceability": 0.557,
+        "loudness": -6.275,
+        "valence": 0.22,
+        "tempo": 116.098,
+        "popularity": 32.0
+    },
+    {
+        "name": "I Kissed a Boy",
+        "uri": "spotify:track:2jH08qC95wHfb7jTbJWcIZ",
+        "date": "2018-04-29T16:36:24Z",
+        "genres": [],
+        "artists": [
+            "Jupither"
+        ],
+        "energy": 0.844,
+        "liveness": 0.628,
+        "speechiness": 0.126,
+        "acousticness": 0.000246,
+        "instrumentalness": 0.0,
+        "danceability": 0.565,
+        "loudness": -3.3,
+        "valence": 0.514,
+        "tempo": 129.973,
+        "popularity": 45.0
+    },
+    {
+        "name": "No Love",
+        "uri": "spotify:track:7bHT9osSq1rwT2yaImzqCi",
+        "date": "2018-04-23T22:05:27Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap",
+            "hip hop",
+            "new orleans rap",
+            "pop",
+            "pop rap",
+            "rap",
+            "trap music"
+        ],
+        "artists": [
+            "Eminem",
+            "Lil Wayne"
+        ],
+        "energy": 0.932,
+        "liveness": 0.177,
+        "speechiness": 0.255,
+        "acousticness": 0.119,
+        "instrumentalness": 0.0,
+        "danceability": 0.522,
+        "loudness": -2.87,
+        "valence": 0.33,
+        "tempo": 129.473,
+        "popularity": 70.0
+    },
+    {
+        "name": "Mountain Sound",
+        "uri": "spotify:track:60ZGteAEtPCnGE6zevgUcd",
+        "date": "2018-04-13T23:58:12Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "metropopolis",
+            "modern rock",
+            "pop",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Of Monsters and Men"
+        ],
+        "energy": 0.896,
+        "liveness": 0.14,
+        "speechiness": 0.0351,
+        "acousticness": 0.0513,
+        "instrumentalness": 0.00396,
+        "danceability": 0.395,
+        "loudness": -4.262,
+        "valence": 0.35,
+        "tempo": 101.867,
+        "popularity": 60.0
+    },
+    {
+        "name": "R.N.S.",
+        "uri": "spotify:track:0cG6z63opd1xEcaKaC1CKw",
+        "date": "2018-03-26T21:35:26Z",
+        "genres": [
+            "hardcore hip hop",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "southern hip hop"
+        ],
+        "artists": [
+            "Slaughterhouse"
+        ],
+        "energy": 0.76,
+        "liveness": 0.306,
+        "speechiness": 0.172,
+        "acousticness": 0.042,
+        "instrumentalness": 0.0,
+        "danceability": 0.658,
+        "loudness": -3.578,
+        "valence": 0.205,
+        "tempo": 143.997,
+        "popularity": 46.0
+    },
+    {
+        "name": "E.T.",
+        "uri": "spotify:track:4kkeuVl6gF3RMqE4Nn5W3E",
+        "date": "2018-03-25T18:39:00Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Katy Perry"
+        ],
+        "energy": 0.863,
+        "liveness": 0.389,
+        "speechiness": 0.0773,
+        "acousticness": 0.0178,
+        "instrumentalness": 0.0,
+        "danceability": 0.602,
+        "loudness": -5.423,
+        "valence": 0.732,
+        "tempo": 150.183,
+        "popularity": 52.0
+    },
+    {
+        "name": "Sucker For Pain (with Wiz Khalifa, Imagine Dragons, Logic & Ty Dolla $ign feat. X Ambassadors)",
+        "uri": "spotify:track:4dASQiO1Eoo3RJvt74FtXB",
+        "date": "2018-03-02T05:01:57Z",
+        "genres": [
+            "hip hop",
+            "new orleans rap",
+            "pop",
+            "pop rap",
+            "rap",
+            "trap music",
+            "hip hop",
+            "pittsburgh rap",
+            "pop",
+            "pop rap",
+            "rap",
+            "southern hip hop",
+            "trap music",
+            "modern rock",
+            "rock",
+            "conscious hip hop",
+            "dmv rap",
+            "pop rap",
+            "rap",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "r&b",
+            "rap",
+            "trap music",
+            "modern alternative rock",
+            "modern rock",
+            "pop",
+            "pop rock",
+            "stomp pop"
+        ],
+        "artists": [
+            "Lil Wayne",
+            "Wiz Khalifa",
+            "Imagine Dragons",
+            "Logic",
+            "Ty Dolla $ign",
+            "X Ambassadors"
+        ],
+        "energy": 0.786,
+        "liveness": 0.65,
+        "speechiness": 0.317,
+        "acousticness": 0.255,
+        "instrumentalness": 0.0,
+        "danceability": 0.502,
+        "loudness": -4.378,
+        "valence": 0.739,
+        "tempo": 169.021,
+        "popularity": 77.0
+    },
+    {
+        "name": "Island Girl",
+        "uri": "spotify:track:2u3UJ9KyduTnbi9yUVGYfW",
+        "date": "2018-02-24T00:29:41Z",
+        "genres": [
+            "glam rock",
+            "mellow gold",
+            "piano rock",
+            "rock",
+            "soft rock"
+        ],
+        "artists": [
+            "Elton John"
+        ],
+        "energy": 0.889,
+        "liveness": 0.18,
+        "speechiness": 0.0661,
+        "acousticness": 0.113,
+        "instrumentalness": 2.98e-06,
+        "danceability": 0.703,
+        "loudness": -8.44,
+        "valence": 0.47,
+        "tempo": 139.92,
+        "popularity": 43.0
+    },
+    {
+        "name": "Phonin' It In (feat. Jesse Dangerously & Weedlord Boner-Hitler)",
+        "uri": "spotify:track:3aOPX2Gr90yX5UmJlJ6k2a",
+        "date": "2018-02-12T02:26:26Z",
+        "genres": [
+            "nerdcore"
+        ],
+        "artists": [
+            "The Grammar Club"
+        ],
+        "energy": 0.916,
+        "liveness": 0.233,
+        "speechiness": 0.122,
+        "acousticness": 0.00719,
+        "instrumentalness": 0.0,
+        "danceability": 0.739,
+        "loudness": -4.987,
+        "valence": 0.794,
+        "tempo": 99.962,
+        "popularity": 5.0
+    },
+    {
+        "name": "Four Fine Walls (feat. Adam Warrock)",
+        "uri": "spotify:track:6YE63bNCEJC0oXgHucSycs",
+        "date": "2018-02-12T02:26:26Z",
+        "genres": [
+            "nerdcore"
+        ],
+        "artists": [
+            "The Grammar Club"
+        ],
+        "energy": 0.858,
+        "liveness": 0.105,
+        "speechiness": 0.131,
+        "acousticness": 0.0243,
+        "instrumentalness": 0.0,
+        "danceability": 0.771,
+        "loudness": -5.166,
+        "valence": 0.821,
+        "tempo": 106.003,
+        "popularity": 3.0
+    },
+    {
+        "name": "Last Good Day (feat. Wheelie Cyberman)",
+        "uri": "spotify:track:7mSdlYgaLFZRaSEWfOmUQz",
+        "date": "2018-02-12T02:26:26Z",
+        "genres": [
+            "nerdcore"
+        ],
+        "artists": [
+            "The Grammar Club"
+        ],
+        "energy": 0.872,
+        "liveness": 0.0887,
+        "speechiness": 0.122,
+        "acousticness": 0.0403,
+        "instrumentalness": 1.8e-05,
+        "danceability": 0.726,
+        "loudness": -6.601,
+        "valence": 0.939,
+        "tempo": 159.94,
+        "popularity": 3.0
+    },
+    {
+        "name": "Fast Lane",
+        "uri": "spotify:track:4md6fziqSOy3yryjDQAZFF",
+        "date": "2018-02-09T23:47:02Z",
+        "genres": [
+            "detroit hip hop",
+            "gangster rap",
+            "hip hop",
+            "pop rap",
+            "rap"
+        ],
+        "artists": [
+            "Bad Meets Evil"
+        ],
+        "energy": 0.862,
+        "liveness": 0.291,
+        "speechiness": 0.251,
+        "acousticness": 0.0451,
+        "instrumentalness": 1.71e-06,
+        "danceability": 0.614,
+        "loudness": -3.794,
+        "valence": 0.353,
+        "tempo": 116.017,
+        "popularity": 0.0
+    },
+    {
+        "name": "Talking to Myself",
+        "uri": "spotify:track:3pJJciHZvWQ6U1ETxNxoi9",
+        "date": "2018-02-09T00:27:49Z",
+        "genres": [
+            "abstract hip hop",
+            "comic",
+            "indie pop rap",
+            "pop rap"
+        ],
+        "artists": [
+            "Watsky"
+        ],
+        "energy": 0.647,
+        "liveness": 0.106,
+        "speechiness": 0.0793,
+        "acousticness": 0.409,
+        "instrumentalness": 0.125,
+        "danceability": 0.693,
+        "loudness": -9.417,
+        "valence": 0.34,
+        "tempo": 151.948,
+        "popularity": 48.0
+    },
+    {
+        "name": "Moral Of The Story",
+        "uri": "spotify:track:3oRLZ8I6wjEhY31iA60eF2",
+        "date": "2018-02-09T00:27:46Z",
+        "genres": [
+            "abstract hip hop",
+            "comic",
+            "indie pop rap",
+            "pop rap"
+        ],
+        "artists": [
+            "Watsky"
+        ],
+        "energy": 0.624,
+        "liveness": 0.161,
+        "speechiness": 0.215,
+        "acousticness": 0.0704,
+        "instrumentalness": 0.0,
+        "danceability": 0.708,
+        "loudness": -5.721,
+        "valence": 0.502,
+        "tempo": 78.028,
+        "popularity": 51.0
+    },
+    {
+        "name": "Tear The Roof Off (feat. Watsky)",
+        "uri": "spotify:track:1HRfk33rb6Td8NqQsZ2wC8",
+        "date": "2018-02-09T00:27:40Z",
+        "genres": [
+            "australian hip hop",
+            "pop rap",
+            "abstract hip hop",
+            "comic",
+            "indie pop rap",
+            "pop rap"
+        ],
+        "artists": [
+            "Bliss n Eso",
+            "Watsky"
+        ],
+        "energy": 0.89,
+        "liveness": 0.166,
+        "speechiness": 0.249,
+        "acousticness": 0.161,
+        "instrumentalness": 0.0,
+        "danceability": 0.736,
+        "loudness": -5.07,
+        "valence": 0.679,
+        "tempo": 142.101,
+        "popularity": 56.0
+    },
+    {
+        "name": "Whoa Whoa Whoa",
+        "uri": "spotify:track:3UYhSPI2lVFfbnC6usruPj",
+        "date": "2018-02-09T00:27:36Z",
+        "genres": [
+            "abstract hip hop",
+            "comic",
+            "indie pop rap",
+            "pop rap"
+        ],
+        "artists": [
+            "Watsky"
+        ],
+        "energy": 0.873,
+        "liveness": 0.25,
+        "speechiness": 0.244,
+        "acousticness": 0.16,
+        "instrumentalness": 4.85e-05,
+        "danceability": 0.735,
+        "loudness": -7.372,
+        "valence": 0.38,
+        "tempo": 149.888,
+        "popularity": 55.0
+    },
+    {
+        "name": "Tiny Glowing Screens, Part 2",
+        "uri": "spotify:track:54T03oRpJn36vaglmAgcGw",
+        "date": "2018-02-08T08:02:18Z",
+        "genres": [
+            "abstract hip hop",
+            "comic",
+            "indie pop rap",
+            "pop rap"
+        ],
+        "artists": [
+            "Watsky"
+        ],
+        "energy": 0.709,
+        "liveness": 0.11,
+        "speechiness": 0.743,
+        "acousticness": 0.895,
+        "instrumentalness": 0.0,
+        "danceability": 0.593,
+        "loudness": -10.076,
+        "valence": 0.403,
+        "tempo": 72.483,
+        "popularity": 44.0
+    },
+    {
+        "name": "Sloppy Seconds",
+        "uri": "spotify:track:0Vwfd6fxFrL3kCnZSJ9vid",
+        "date": "2018-01-29T23:12:12Z",
+        "genres": [
+            "abstract hip hop",
+            "comic",
+            "indie pop rap",
+            "pop rap"
+        ],
+        "artists": [
+            "Watsky"
+        ],
+        "energy": 0.716,
+        "liveness": 0.0926,
+        "speechiness": 0.0609,
+        "acousticness": 0.207,
+        "instrumentalness": 3.51e-06,
+        "danceability": 0.74,
+        "loudness": -5.796,
+        "valence": 0.804,
+        "tempo": 117.977,
+        "popularity": 56.0
+    },
+    {
+        "name": "Reminder",
+        "uri": "spotify:track:37F0uwRSrdzkBiuj0D5UHI",
+        "date": "2018-01-19T00:41:23Z",
+        "genres": [
+            "canadian contemporary r&b",
+            "canadian pop",
+            "pop",
+            "rap"
+        ],
+        "artists": [
+            "The Weeknd"
+        ],
+        "energy": 0.505,
+        "liveness": 0.164,
+        "speechiness": 0.192,
+        "acousticness": 0.142,
+        "instrumentalness": 0.0,
+        "danceability": 0.705,
+        "loudness": -6.923,
+        "valence": 0.391,
+        "tempo": 160.043,
+        "popularity": 72.0
+    },
+    {
+        "name": "I Got You",
+        "uri": "spotify:track:6DOBk1Pxe7q8YFI9Ozbrb3",
+        "date": "2017-12-28T07:41:54Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Bebe Rexha"
+        ],
+        "energy": 0.889,
+        "liveness": 0.0933,
+        "speechiness": 0.0519,
+        "acousticness": 0.0481,
+        "instrumentalness": 3.56e-06,
+        "danceability": 0.606,
+        "loudness": -4.782,
+        "valence": 0.337,
+        "tempo": 97.988,
+        "popularity": 57.0
+    },
+    {
+        "name": "You Don't Know About Me (R3hab Remix)",
+        "uri": "spotify:track:5UzrHG9CEDqnTdo5pVh6Es",
+        "date": "2017-12-08T01:38:30Z",
+        "genres": [
+            "electropop",
+            "folk-pop",
+            "indie cafe pop",
+            "indie electro-pop",
+            "indie poptimism",
+            "indie r&b",
+            "la pop",
+            "pop",
+            "vapor soul",
+            "big room",
+            "dance pop",
+            "dutch house",
+            "edm",
+            "electro house",
+            "pop",
+            "pop edm",
+            "progressive electro house",
+            "tropical house"
+        ],
+        "artists": [
+            "Ella Vos",
+            "R3HAB"
+        ],
+        "energy": 0.452,
+        "liveness": 0.113,
+        "speechiness": 0.0339,
+        "acousticness": 0.299,
+        "instrumentalness": 0.0,
+        "danceability": 0.665,
+        "loudness": -7.81,
+        "valence": 0.424,
+        "tempo": 159.938,
+        "popularity": 51.0
+    },
+    {
+        "name": "Bastards",
+        "uri": "spotify:track:318EGw5ZZB8U5MdMWQwxZQ",
+        "date": "2017-11-26T07:48:20Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "pop rap",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Kesha"
+        ],
+        "energy": 0.339,
+        "liveness": 0.1,
+        "speechiness": 0.0281,
+        "acousticness": 0.173,
+        "instrumentalness": 0.0,
+        "danceability": 0.498,
+        "loudness": -9.047,
+        "valence": 0.305,
+        "tempo": 78.899,
+        "popularity": 50.0
+    },
+    {
+        "name": "Finding You",
+        "uri": "spotify:track:1Himp3M7IH46qw2yBN1Fxy",
+        "date": "2017-11-26T07:46:52Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "pop rap",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Kesha"
+        ],
+        "energy": 0.738,
+        "liveness": 0.133,
+        "speechiness": 0.0562,
+        "acousticness": 0.14,
+        "instrumentalness": 4.67e-05,
+        "danceability": 0.404,
+        "loudness": -3.985,
+        "valence": 0.367,
+        "tempo": 199.661,
+        "popularity": 48.0
+    },
+    {
+        "name": "Havana",
+        "uri": "spotify:track:0ofbQMrRDsUaVKq2mGLEAb",
+        "date": "2017-11-23T11:28:40Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "atl hip hop",
+            "atl trap",
+            "gangster rap",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "trap music"
+        ],
+        "artists": [
+            "Camila Cabello",
+            "Young Thug"
+        ],
+        "energy": 0.517,
+        "liveness": 0.104,
+        "speechiness": 0.0312,
+        "acousticness": 0.186,
+        "instrumentalness": 3.8e-05,
+        "danceability": 0.768,
+        "loudness": -4.323,
+        "valence": 0.418,
+        "tempo": 104.992,
+        "popularity": 29.0
+    },
+    {
+        "name": "Highwayman",
+        "uri": "spotify:track:3BmcfKWiJOfURa9PI1jFr4",
+        "date": "2017-11-11T01:57:21Z",
+        "genres": [
+            "nashville sound",
+            "outlaw country",
+            "traditional country"
+        ],
+        "artists": [
+            "The Highwaymen"
+        ],
+        "energy": 0.443,
+        "liveness": 0.128,
+        "speechiness": 0.0443,
+        "acousticness": 0.483,
+        "instrumentalness": 0.0122,
+        "danceability": 0.674,
+        "loudness": -13.101,
+        "valence": 0.449,
+        "tempo": 101.331,
+        "popularity": 32.0
+    },
+    {
+        "name": "Learn To Let Go",
+        "uri": "spotify:track:1g1TeDflB6atAy7HKwrzXu",
+        "date": "2017-11-03T23:32:56Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "pop rap",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Kesha"
+        ],
+        "energy": 0.847,
+        "liveness": 0.293,
+        "speechiness": 0.039,
+        "acousticness": 0.00369,
+        "instrumentalness": 6.66e-05,
+        "danceability": 0.515,
+        "loudness": -2.951,
+        "valence": 0.645,
+        "tempo": 168.104,
+        "popularity": 57.0
+    },
+    {
+        "name": "Sugar (feat. Francesco Yates)",
+        "uri": "spotify:track:5tf1VVWniHgryyumXyJM7w",
+        "date": "2017-10-18T05:57:35Z",
+        "genres": [
+            "dance pop",
+            "deep euro house",
+            "deep house",
+            "edm",
+            "german dance",
+            "pop",
+            "tropical house",
+            "canadian pop"
+        ],
+        "artists": [
+            "Robin Schulz",
+            "Francesco Yates"
+        ],
+        "energy": 0.815,
+        "liveness": 0.163,
+        "speechiness": 0.0581,
+        "acousticness": 0.0185,
+        "instrumentalness": 0.0,
+        "danceability": 0.636,
+        "loudness": -5.098,
+        "valence": 0.636,
+        "tempo": 123.063,
+        "popularity": 76.0
+    },
+    {
+        "name": "Flower Power - Tribute to Girls' Generation",
+        "uri": "spotify:track:7rJG4Csj8I0dkxmXZEO7yk",
+        "date": "2017-10-09T22:10:42Z",
+        "genres": [],
+        "artists": [
+            "Global Mogul Music"
+        ],
+        "energy": 0.506,
+        "liveness": 0.491,
+        "speechiness": 0.0346,
+        "acousticness": 0.00487,
+        "instrumentalness": 0.0,
+        "danceability": 0.65,
+        "loudness": -7.548,
+        "valence": 0.591,
+        "tempo": 117.974,
+        "popularity": 0.0
+    },
+    {
+        "name": "Feel It Still",
+        "uri": "spotify:track:7FESgYLcOufHqKlwrvJN60",
+        "date": "2017-10-09T21:48:16Z",
+        "genres": [
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Portugal. The Man"
+        ],
+        "energy": 0.798,
+        "liveness": 0.0733,
+        "speechiness": 0.0613,
+        "acousticness": 0.0406,
+        "instrumentalness": 6.31e-05,
+        "danceability": 0.78,
+        "loudness": -5.151,
+        "valence": 0.771,
+        "tempo": 78.969,
+        "popularity": 68.0
+    },
+    {
+        "name": "Someday",
+        "uri": "spotify:track:4PkJ7c9y1CwpuVOiJODnCZ",
+        "date": "2017-10-09T01:25:02Z",
+        "genres": [
+            "alternative metal",
+            "canadian rock",
+            "nu metal",
+            "post-grunge"
+        ],
+        "artists": [
+            "Nickelback"
+        ],
+        "energy": 0.858,
+        "liveness": 0.226,
+        "speechiness": 0.0391,
+        "acousticness": 0.000616,
+        "instrumentalness": 0.000247,
+        "danceability": 0.455,
+        "loudness": -5.659,
+        "valence": 0.597,
+        "tempo": 163.118,
+        "popularity": 66.0
+    },
+    {
+        "name": "Treacherous",
+        "uri": "spotify:track:0XfOV7qY3834QpFVwOb6CC",
+        "date": "2017-10-09T00:14:28Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Taylor Swift"
+        ],
+        "energy": 0.609,
+        "liveness": 0.144,
+        "speechiness": 0.0322,
+        "acousticness": 0.0852,
+        "instrumentalness": 5.25e-06,
+        "danceability": 0.7,
+        "loudness": -8.212,
+        "valence": 0.392,
+        "tempo": 109.98,
+        "popularity": 51.0
+    },
+    {
+        "name": "Your Love Is a Song",
+        "uri": "spotify:track:4YTShxytC89hv8rsmGk1a2",
+        "date": "2017-09-27T18:42:25Z",
+        "genres": [
+            "ccm",
+            "christian alternative rock",
+            "christian music",
+            "christian rock",
+            "neo mellow",
+            "pop rock",
+            "post-grunge",
+            "worship"
+        ],
+        "artists": [
+            "Switchfoot"
+        ],
+        "energy": 0.524,
+        "liveness": 0.207,
+        "speechiness": 0.0282,
+        "acousticness": 0.0305,
+        "instrumentalness": 0.00012,
+        "danceability": 0.519,
+        "loudness": -4.082,
+        "valence": 0.357,
+        "tempo": 80.013,
+        "popularity": 29.0
+    },
+    {
+        "name": "Out My Mind",
+        "uri": "spotify:track:68QnuY9T46WanVU7ueKRdp",
+        "date": "2017-09-24T16:42:47Z",
+        "genres": [],
+        "artists": [
+            "ScottDW"
+        ],
+        "energy": 0.927,
+        "liveness": 0.104,
+        "speechiness": 0.0448,
+        "acousticness": 0.108,
+        "instrumentalness": 0.0,
+        "danceability": 0.641,
+        "loudness": -3.411,
+        "valence": 0.917,
+        "tempo": 127.968,
+        "popularity": 30.0
+    },
+    {
+        "name": "This Is How We Roll",
+        "uri": "spotify:track:2TR7A4ulH9R1PNwMyd8o8U",
+        "date": "2017-09-19T08:03:31Z",
+        "genres": [
+            "contemporary country",
+            "country",
+            "country pop",
+            "country road",
+            "modern country rock",
+            "contemporary country",
+            "country",
+            "country road"
+        ],
+        "artists": [
+            "Florida Georgia Line",
+            "Luke Bryan"
+        ],
+        "energy": 0.931,
+        "liveness": 0.405,
+        "speechiness": 0.0367,
+        "acousticness": 0.016,
+        "instrumentalness": 0.0,
+        "danceability": 0.555,
+        "loudness": -2.969,
+        "valence": 0.723,
+        "tempo": 132.085,
+        "popularity": 69.0
+    },
+    {
+        "name": "Young Dumb And In Love",
+        "uri": "spotify:track:6974nIUf5ft2mhhGfTRBSR",
+        "date": "2017-09-03T20:23:10Z",
+        "genres": [
+            "acoustic pop",
+            "folk-pop",
+            "indiecoustica",
+            "neo mellow",
+            "pop rock"
+        ],
+        "artists": [
+            "Mat Kearney"
+        ],
+        "energy": 0.903,
+        "liveness": 0.235,
+        "speechiness": 0.212,
+        "acousticness": 0.0289,
+        "instrumentalness": 0.00138,
+        "danceability": 0.485,
+        "loudness": -4.41,
+        "valence": 0.461,
+        "tempo": 129.859,
+        "popularity": 29.0
+    },
+    {
+        "name": "Nights With You",
+        "uri": "spotify:track:5q5gzmbBS5yQzos2BvVr1t",
+        "date": "2017-08-21T06:46:02Z",
+        "genres": [
+            "dance pop",
+            "danish pop",
+            "electropop",
+            "pop",
+            "tropical house"
+        ],
+        "artists": [
+            "M\u00d8"
+        ],
+        "energy": 0.671,
+        "liveness": 0.375,
+        "speechiness": 0.1,
+        "acousticness": 0.401,
+        "instrumentalness": 1.16e-05,
+        "danceability": 0.763,
+        "loudness": -4.029,
+        "valence": 0.602,
+        "tempo": 120.06,
+        "popularity": 64.0
+    },
+    {
+        "name": "Woman",
+        "uri": "spotify:track:1kJtfldK9F7XmsSiSNlbth",
+        "date": "2017-08-15T20:29:03Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "pop rap",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Kesha",
+            "The Dap-Kings Horns"
+        ],
+        "energy": 0.765,
+        "liveness": 0.667,
+        "speechiness": 0.0389,
+        "acousticness": 0.0438,
+        "instrumentalness": 0.0416,
+        "danceability": 0.743,
+        "loudness": -3.586,
+        "valence": 0.338,
+        "tempo": 114.991,
+        "popularity": 65.0
+    },
+    {
+        "name": "Hunt You Down",
+        "uri": "spotify:track:5HJ2psjlq5wyxtUA43Ylgy",
+        "date": "2017-08-14T21:00:58Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "pop rap",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Kesha"
+        ],
+        "energy": 0.946,
+        "liveness": 0.0863,
+        "speechiness": 0.119,
+        "acousticness": 0.0671,
+        "instrumentalness": 0.0,
+        "danceability": 0.584,
+        "loudness": -3.576,
+        "valence": 0.395,
+        "tempo": 105.906,
+        "popularity": 49.0
+    },
+    {
+        "name": "Cold Water",
+        "uri": "spotify:track:7zsXy7vlHdItvUSH8EwQss",
+        "date": "2017-08-12T21:50:25Z",
+        "genres": [
+            "dance pop",
+            "edm",
+            "electro house",
+            "moombahton",
+            "pop",
+            "pop rap",
+            "tropical house",
+            "canadian pop",
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "dance pop",
+            "danish pop",
+            "electropop",
+            "pop",
+            "tropical house"
+        ],
+        "artists": [
+            "Major Lazer",
+            "Justin Bieber",
+            "M\u00d8"
+        ],
+        "energy": 0.797,
+        "liveness": 0.187,
+        "speechiness": 0.0534,
+        "acousticness": 0.055,
+        "instrumentalness": 0.0,
+        "danceability": 0.602,
+        "loudness": -5.084,
+        "valence": 0.492,
+        "tempo": 92.928,
+        "popularity": 69.0
+    },
+    {
+        "name": "Asshole",
+        "uri": "spotify:track:0OOv1XGVVzUgTIzomIHfR0",
+        "date": "2017-08-02T22:19:45Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap",
+            "piano rock",
+            "viral pop"
+        ],
+        "artists": [
+            "Eminem",
+            "Skylar Grey"
+        ],
+        "energy": 0.906,
+        "liveness": 0.782,
+        "speechiness": 0.349,
+        "acousticness": 0.471,
+        "instrumentalness": 0.0,
+        "danceability": 0.534,
+        "loudness": -2.316,
+        "valence": 0.499,
+        "tempo": 174.058,
+        "popularity": 55.0
+    },
+    {
+        "name": "Call on Me - Ryan Riback Remix",
+        "uri": "spotify:track:2L6orAlH8tBhiFTumIfMyF",
+        "date": "2017-08-01T05:13:28Z",
+        "genres": [
+            "aussietronica",
+            "melbourne bounce"
+        ],
+        "artists": [
+            "Starley",
+            "Ryan Riback"
+        ],
+        "energy": 0.838,
+        "liveness": 0.159,
+        "speechiness": 0.0362,
+        "acousticness": 0.0604,
+        "instrumentalness": 0.000611,
+        "danceability": 0.67,
+        "loudness": -4.031,
+        "valence": 0.717,
+        "tempo": 104.998,
+        "popularity": 69.0
+    },
+    {
+        "name": "This Is What You Came For",
+        "uri": "spotify:track:0azC730Exh71aQlOt9Zj3y",
+        "date": "2017-07-27T07:01:29Z",
+        "genres": [
+            "edm",
+            "electro house",
+            "house",
+            "pop",
+            "progressive house",
+            "uk dance",
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "urban contemporary"
+        ],
+        "artists": [
+            "Calvin Harris",
+            "Rihanna"
+        ],
+        "energy": 0.928,
+        "liveness": 0.148,
+        "speechiness": 0.0331,
+        "acousticness": 0.199,
+        "instrumentalness": 0.124,
+        "danceability": 0.63,
+        "loudness": -2.787,
+        "valence": 0.465,
+        "tempo": 123.963,
+        "popularity": 78.0
+    },
+    {
+        "name": "New Rules",
+        "uri": "spotify:track:6tF92PMv01Ug9Dh8Rmy6nH",
+        "date": "2017-07-27T06:34:54Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "uk pop"
+        ],
+        "artists": [
+            "Dua Lipa"
+        ],
+        "energy": 0.7,
+        "liveness": 0.153,
+        "speechiness": 0.0694,
+        "acousticness": 0.00261,
+        "instrumentalness": 1.56e-05,
+        "danceability": 0.762,
+        "loudness": -6.021,
+        "valence": 0.608,
+        "tempo": 116.073,
+        "popularity": 58.0
+    },
+    {
+        "name": "The Greatest",
+        "uri": "spotify:track:3XIIOCu6B8PuGq5j61asEM",
+        "date": "2017-07-11T22:01:49Z",
+        "genres": [
+            "australian dance",
+            "australian pop",
+            "pop",
+            "conscious hip hop",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "west coast rap"
+        ],
+        "artists": [
+            "Sia",
+            "Kendrick Lamar"
+        ],
+        "energy": 0.723,
+        "liveness": 0.0507,
+        "speechiness": 0.268,
+        "acousticness": 0.0109,
+        "instrumentalness": 0.00047,
+        "danceability": 0.666,
+        "loudness": -6.164,
+        "valence": 0.739,
+        "tempo": 192.024,
+        "popularity": 18.0
+    },
+    {
+        "name": "Love Myself - KREAM Remix",
+        "uri": "spotify:track:0Qydhjycb5IFm02W6zJ2Tn",
+        "date": "2017-07-11T20:13:59Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Hailee Steinfeld",
+            "Daniel Slettebakken",
+            "Ian Spurrier",
+            "K'ream"
+        ],
+        "energy": 0.772,
+        "liveness": 0.0538,
+        "speechiness": 0.0896,
+        "acousticness": 0.00634,
+        "instrumentalness": 1.65e-05,
+        "danceability": 0.772,
+        "loudness": -4.756,
+        "valence": 0.284,
+        "tempo": 124.971,
+        "popularity": 43.0
+    },
+    {
+        "name": "Starving",
+        "uri": "spotify:track:4Ce37cRWvM1vIGGynKcs22",
+        "date": "2017-07-11T20:08:50Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "pop",
+            "pop edm",
+            "complextro",
+            "dance pop",
+            "edm",
+            "electro house",
+            "german techno",
+            "pop",
+            "post-teen pop",
+            "tropical house"
+        ],
+        "artists": [
+            "Hailee Steinfeld",
+            "Grey",
+            "Zedd"
+        ],
+        "energy": 0.615,
+        "liveness": 0.105,
+        "speechiness": 0.0647,
+        "acousticness": 0.378,
+        "instrumentalness": 0.0,
+        "danceability": 0.729,
+        "loudness": -4.238,
+        "valence": 0.508,
+        "tempo": 99.989,
+        "popularity": 83.0
+    },
+    {
+        "name": "Work from Home",
+        "uri": "spotify:track:0SJPThTy7ynySPF4euczx7",
+        "date": "2017-07-10T20:55:20Z",
+        "genres": [
+            "dance pop",
+            "girl group",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "talent show",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "r&b",
+            "rap",
+            "trap music"
+        ],
+        "artists": [
+            "Fifth Harmony",
+            "Ty Dolla $ign"
+        ],
+        "energy": 0.631,
+        "liveness": 0.0858,
+        "speechiness": 0.0444,
+        "acousticness": 0.102,
+        "instrumentalness": 7.39e-06,
+        "danceability": 0.803,
+        "loudness": -4.213,
+        "valence": 0.659,
+        "tempo": 104.999,
+        "popularity": 16.0
+    },
+    {
+        "name": "First Time",
+        "uri": "spotify:track:2Gl0FzuLxflY6nPifJp5Dr",
+        "date": "2017-07-09T02:06:51Z",
+        "genres": [
+            "edm",
+            "pop",
+            "tropical house",
+            "dance pop",
+            "edm",
+            "electropop",
+            "metropopolis",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "tropical house"
+        ],
+        "artists": [
+            "Kygo",
+            "Ellie Goulding"
+        ],
+        "energy": 0.592,
+        "liveness": 0.099,
+        "speechiness": 0.112,
+        "acousticness": 0.197,
+        "instrumentalness": 0.0,
+        "danceability": 0.633,
+        "loudness": -7.245,
+        "valence": 0.679,
+        "tempo": 90.066,
+        "popularity": 72.0
+    },
+    {
+        "name": "Lullaby",
+        "uri": "spotify:track:2vBiZ7nBe0OqTZKWGP0s4K",
+        "date": "2017-07-07T00:58:31Z",
+        "genres": [
+            "alternative metal",
+            "canadian rock",
+            "nu metal",
+            "post-grunge"
+        ],
+        "artists": [
+            "Nickelback"
+        ],
+        "energy": 0.832,
+        "liveness": 0.0859,
+        "speechiness": 0.032,
+        "acousticness": 0.000372,
+        "instrumentalness": 0.0,
+        "danceability": 0.508,
+        "loudness": -4.395,
+        "valence": 0.404,
+        "tempo": 136.004,
+        "popularity": 63.0
+    },
+    {
+        "name": "31 Minutes to Takeoff",
+        "uri": "spotify:track:3pYRy0671hMY9qUSGzLNme",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.422,
+        "liveness": 0.066,
+        "speechiness": 0.0312,
+        "acousticness": 0.851,
+        "instrumentalness": 5.48e-06,
+        "danceability": 0.686,
+        "loudness": -11.767,
+        "valence": 0.34,
+        "tempo": 120.062,
+        "popularity": 25.0
+    },
+    {
+        "name": "Please Don't Go",
+        "uri": "spotify:track:6jg5SRvdGxvJ0DzNV0UqEK",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.882,
+        "liveness": 0.13,
+        "speechiness": 0.0311,
+        "acousticness": 0.00296,
+        "instrumentalness": 0.0544,
+        "danceability": 0.699,
+        "loudness": -3.896,
+        "valence": 0.657,
+        "tempo": 120.016,
+        "popularity": 61.0
+    },
+    {
+        "name": "Bow Chicka Wow Wow",
+        "uri": "spotify:track:4BHWe17hBiYtvgBT2KTRv3",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.648,
+        "liveness": 0.0523,
+        "speechiness": 0.0443,
+        "acousticness": 0.408,
+        "instrumentalness": 0.0,
+        "danceability": 0.614,
+        "loudness": -5.454,
+        "valence": 0.585,
+        "tempo": 73.49,
+        "popularity": 42.0
+    },
+    {
+        "name": "Cooler Than Me - Single Mix",
+        "uri": "spotify:track:2V4bv1fNWfTcyRJKmej6Sj",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap",
+            "filter house",
+            "nu disco"
+        ],
+        "artists": [
+            "Mike Posner",
+            "Gigamesh"
+        ],
+        "energy": 0.82,
+        "liveness": 0.704,
+        "speechiness": 0.0475,
+        "acousticness": 0.179,
+        "instrumentalness": 0.0,
+        "danceability": 0.768,
+        "loudness": -4.63,
+        "valence": 0.625,
+        "tempo": 129.969,
+        "popularity": 71.0
+    },
+    {
+        "name": "D\u00e9j\u00e0 Vu",
+        "uri": "spotify:track:5Ybe4JAWElVRR2QkqaOV3A",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.671,
+        "liveness": 0.0684,
+        "speechiness": 0.0636,
+        "acousticness": 0.0844,
+        "instrumentalness": 1.13e-05,
+        "danceability": 0.786,
+        "loudness": -6.298,
+        "valence": 0.52,
+        "tempo": 92.982,
+        "popularity": 33.0
+    },
+    {
+        "name": "Do U Wanna?",
+        "uri": "spotify:track:5oN8yt71rUZCzNZul7Q2YO",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.638,
+        "liveness": 0.112,
+        "speechiness": 0.091,
+        "acousticness": 0.0359,
+        "instrumentalness": 2.27e-06,
+        "danceability": 0.752,
+        "loudness": -5.614,
+        "valence": 0.934,
+        "tempo": 171.975,
+        "popularity": 31.0
+    },
+    {
+        "name": "Cheated",
+        "uri": "spotify:track:5V8hNaEcbKMqhtidlW74of",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.688,
+        "liveness": 0.147,
+        "speechiness": 0.0328,
+        "acousticness": 0.043,
+        "instrumentalness": 0.000527,
+        "danceability": 0.711,
+        "loudness": -4.69,
+        "valence": 0.231,
+        "tempo": 119.977,
+        "popularity": 38.0
+    },
+    {
+        "name": "Gone In September",
+        "uri": "spotify:track:1j4UohqBF9V77wcuyvXi3R",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.582,
+        "liveness": 0.0722,
+        "speechiness": 0.0284,
+        "acousticness": 0.109,
+        "instrumentalness": 0.0,
+        "danceability": 0.723,
+        "loudness": -5.61,
+        "valence": 0.577,
+        "tempo": 98.016,
+        "popularity": 33.0
+    },
+    {
+        "name": "Save Your Goodbye",
+        "uri": "spotify:track:3VJIPd9TQyJVlFETIbni04",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.752,
+        "liveness": 0.141,
+        "speechiness": 0.0338,
+        "acousticness": 0.167,
+        "instrumentalness": 0.000419,
+        "danceability": 0.644,
+        "loudness": -8.942,
+        "valence": 0.602,
+        "tempo": 114.012,
+        "popularity": 36.0
+    },
+    {
+        "name": "Synthesizer",
+        "uri": "spotify:track:6iIeKftqGCaHFmapAQsUcv",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.628,
+        "liveness": 0.113,
+        "speechiness": 0.0795,
+        "acousticness": 0.00273,
+        "instrumentalness": 0.0205,
+        "danceability": 0.585,
+        "loudness": -9.106,
+        "valence": 0.37,
+        "tempo": 172.007,
+        "popularity": 25.0
+    },
+    {
+        "name": "Delta 1406",
+        "uri": "spotify:track:2Od3Imc5PJeZhRPeIhpgN6",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.616,
+        "liveness": 0.121,
+        "speechiness": 0.0451,
+        "acousticness": 0.0138,
+        "instrumentalness": 0.000461,
+        "danceability": 0.688,
+        "loudness": -7.334,
+        "valence": 0.205,
+        "tempo": 87.043,
+        "popularity": 27.0
+    },
+    {
+        "name": "Falling",
+        "uri": "spotify:track:5AXktLAga8g9NtML1BxUeJ",
+        "date": "2017-04-08T23:01:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "pop rap"
+        ],
+        "artists": [
+            "Mike Posner"
+        ],
+        "energy": 0.665,
+        "liveness": 0.167,
+        "speechiness": 0.0368,
+        "acousticness": 0.264,
+        "instrumentalness": 1.03e-05,
+        "danceability": 0.612,
+        "loudness": -7.919,
+        "valence": 0.325,
+        "tempo": 134.998,
+        "popularity": 29.0
+    },
+    {
+        "name": "Ain't My Fault",
+        "uri": "spotify:track:4nA0biSjtvOL41Hd9MBXqR",
+        "date": "2017-03-07T22:35:01Z",
+        "genres": [
+            "dance pop",
+            "edm",
+            "electropop",
+            "pop",
+            "post-teen pop",
+            "scandipop",
+            "swedish electropop",
+            "swedish pop",
+            "tropical house"
+        ],
+        "artists": [
+            "Zara Larsson"
+        ],
+        "energy": 0.782,
+        "liveness": 0.285,
+        "speechiness": 0.0296,
+        "acousticness": 0.00778,
+        "instrumentalness": 0.0,
+        "danceability": 0.576,
+        "loudness": -4.825,
+        "valence": 0.355,
+        "tempo": 141.153,
+        "popularity": 15.0
+    },
+    {
+        "name": "Confident",
+        "uri": "spotify:track:0Mn3amMRMoabaoTf1Publ4",
+        "date": "2017-01-31T02:30:33Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Demi Lovato"
+        ],
+        "energy": 0.763,
+        "liveness": 0.116,
+        "speechiness": 0.0669,
+        "acousticness": 0.00182,
+        "instrumentalness": 0.000159,
+        "danceability": 0.606,
+        "loudness": -6.197,
+        "valence": 0.309,
+        "tempo": 130.018,
+        "popularity": 75.0
+    },
+    {
+        "name": "Teenage Dream",
+        "uri": "spotify:track:5jzKL4BDMClWqRguW5qZvh",
+        "date": "2016-11-19T22:52:01Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Katy Perry"
+        ],
+        "energy": 0.798,
+        "liveness": 0.134,
+        "speechiness": 0.0361,
+        "acousticness": 0.0162,
+        "instrumentalness": 2.34e-06,
+        "danceability": 0.719,
+        "loudness": -4.582,
+        "valence": 0.591,
+        "tempo": 120.011,
+        "popularity": 60.0
+    },
+    {
+        "name": "California Gurls",
+        "uri": "spotify:track:6KOEK6SeCEZOQkLj5M1PxH",
+        "date": "2016-11-19T22:52:01Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "g funk",
+            "gangster rap",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "west coast rap"
+        ],
+        "artists": [
+            "Katy Perry",
+            "Snoop Dogg"
+        ],
+        "energy": 0.753,
+        "liveness": 0.18,
+        "speechiness": 0.0536,
+        "acousticness": 0.0038,
+        "instrumentalness": 0.0,
+        "danceability": 0.788,
+        "loudness": -3.71,
+        "valence": 0.403,
+        "tempo": 125.005,
+        "popularity": 59.0
+    },
+    {
+        "name": "Firework",
+        "uri": "spotify:track:4r6eNCsrZnQWJzzvFh4nlg",
+        "date": "2016-11-19T22:52:01Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Katy Perry"
+        ],
+        "energy": 0.832,
+        "liveness": 0.113,
+        "speechiness": 0.049,
+        "acousticness": 0.141,
+        "instrumentalness": 0.0,
+        "danceability": 0.638,
+        "loudness": -5.039,
+        "valence": 0.648,
+        "tempo": 124.071,
+        "popularity": 60.0
+    },
+    {
+        "name": "Peacock",
+        "uri": "spotify:track:3y3Hucw52QpjtHUeOKTkaO",
+        "date": "2016-11-19T22:52:01Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Katy Perry"
+        ],
+        "energy": 0.751,
+        "liveness": 0.166,
+        "speechiness": 0.0421,
+        "acousticness": 0.0502,
+        "instrumentalness": 0.0,
+        "danceability": 0.816,
+        "loudness": -3.132,
+        "valence": 0.945,
+        "tempo": 139.981,
+        "popularity": 39.0
+    },
+    {
+        "name": "Circle The Drain",
+        "uri": "spotify:track:3mMetrzTw1nIp0q0Y3jRQu",
+        "date": "2016-11-19T22:52:01Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Katy Perry"
+        ],
+        "energy": 0.784,
+        "liveness": 0.0834,
+        "speechiness": 0.0788,
+        "acousticness": 0.00591,
+        "instrumentalness": 0.0,
+        "danceability": 0.696,
+        "loudness": -3.932,
+        "valence": 0.753,
+        "tempo": 134.942,
+        "popularity": 33.0
+    },
+    {
+        "name": "The One That Got Away",
+        "uri": "spotify:track:6hkOqJ5mE093AQf2lbZnsG",
+        "date": "2016-11-19T22:52:01Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Katy Perry"
+        ],
+        "energy": 0.795,
+        "liveness": 0.156,
+        "speechiness": 0.0355,
+        "acousticness": 0.000812,
+        "instrumentalness": 1.02e-06,
+        "danceability": 0.691,
+        "loudness": -4.021,
+        "valence": 0.876,
+        "tempo": 133.971,
+        "popularity": 60.0
+    },
+    {
+        "name": "Who Am I Living For?",
+        "uri": "spotify:track:1TNpOGtWl40V6PKyayJsuX",
+        "date": "2016-11-19T22:52:01Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Katy Perry"
+        ],
+        "energy": 0.644,
+        "liveness": 0.128,
+        "speechiness": 0.0401,
+        "acousticness": 0.0372,
+        "instrumentalness": 0.0,
+        "danceability": 0.721,
+        "loudness": -6.395,
+        "valence": 0.516,
+        "tempo": 120.011,
+        "popularity": 32.0
+    },
+    {
+        "name": "Hummingbird Heartbeat",
+        "uri": "spotify:track:6p3eoH9Za3u7a5KQ5WtsKK",
+        "date": "2016-11-19T22:52:01Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Katy Perry"
+        ],
+        "energy": 0.899,
+        "liveness": 0.0957,
+        "speechiness": 0.107,
+        "acousticness": 0.00245,
+        "instrumentalness": 0.0,
+        "danceability": 0.595,
+        "loudness": -2.935,
+        "valence": 0.594,
+        "tempo": 121.99,
+        "popularity": 34.0
+    },
+    {
+        "name": "Not Like The Movies",
+        "uri": "spotify:track:6SGuypiccRLrrmejsTApBG",
+        "date": "2016-11-19T22:52:01Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Katy Perry"
+        ],
+        "energy": 0.48,
+        "liveness": 0.111,
+        "speechiness": 0.0975,
+        "acousticness": 0.869,
+        "instrumentalness": 2.72e-06,
+        "danceability": 0.403,
+        "loudness": -7.79,
+        "valence": 0.253,
+        "tempo": 182.756,
+        "popularity": 39.0
+    },
+    {
+        "name": "Starships",
+        "uri": "spotify:track:59RSrxkSKSixEWBAIvE5Wa",
+        "date": "2016-11-03T17:05:59Z",
+        "genres": [
+            "dance pop",
+            "hip pop",
+            "pop",
+            "pop rap",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Nicki Minaj"
+        ],
+        "energy": 0.716,
+        "liveness": 0.251,
+        "speechiness": 0.075,
+        "acousticness": 0.135,
+        "instrumentalness": 0.0,
+        "danceability": 0.747,
+        "loudness": -2.457,
+        "valence": 0.751,
+        "tempo": 125.008,
+        "popularity": 64.0
+    },
+    {
+        "name": "Touchin On My",
+        "uri": "spotify:track:1LjHre9uHSLMuUrKsl6ppX",
+        "date": "2016-09-26T18:17:20Z",
+        "genres": [
+            "dance pop",
+            "electropowerpop",
+            "pop punk",
+            "pop rap",
+            "post-teen pop"
+        ],
+        "artists": [
+            "3OH!3"
+        ],
+        "energy": 0.876,
+        "liveness": 0.251,
+        "speechiness": 0.139,
+        "acousticness": 0.03,
+        "instrumentalness": 0.0,
+        "danceability": 0.538,
+        "loudness": -3.559,
+        "valence": 0.527,
+        "tempo": 83.949,
+        "popularity": 52.0
+    },
+    {
+        "name": "Ma Ya Hi (Dragostea Din Tei) (feat. Lucas Prata)",
+        "uri": "spotify:track:5tBGVvb39pTM6D9nFBwlRo",
+        "date": "2016-09-23T19:15:51Z",
+        "genres": [
+            "bubblegum dance",
+            "eurodance",
+            "europop"
+        ],
+        "artists": [
+            "O-Zone",
+            "Lucas Prata"
+        ],
+        "energy": 0.938,
+        "liveness": 0.0558,
+        "speechiness": 0.0365,
+        "acousticness": 0.182,
+        "instrumentalness": 0.0,
+        "danceability": 0.741,
+        "loudness": -4.188,
+        "valence": 0.863,
+        "tempo": 130.01,
+        "popularity": 39.0
+    },
+    {
+        "name": "Lean On",
+        "uri": "spotify:track:4KcVVhAaHxqtX2ANt4b3tc",
+        "date": "2016-09-23T16:31:24Z",
+        "genres": [
+            "dance pop",
+            "edm",
+            "electro house",
+            "moombahton",
+            "pop",
+            "pop rap",
+            "tropical house",
+            "dance pop",
+            "danish pop",
+            "electropop",
+            "pop",
+            "tropical house",
+            "dance pop",
+            "edm",
+            "electro house",
+            "electronic trap",
+            "pop",
+            "tropical house"
+        ],
+        "artists": [
+            "Major Lazer",
+            "M\u00d8",
+            "DJ Snake"
+        ],
+        "energy": 0.79,
+        "liveness": 0.485,
+        "speechiness": 0.0574,
+        "acousticness": 0.00339,
+        "instrumentalness": 0.000868,
+        "danceability": 0.713,
+        "loudness": -4.602,
+        "valence": 0.308,
+        "tempo": 98.011,
+        "popularity": 10.0
+    },
+    {
+        "name": "Rock Bottom",
+        "uri": "spotify:track:2qxaR31Te4xDR2yO6LqM8z",
+        "date": "2016-09-23T16:25:19Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "dance pop",
+            "pop",
+            "post-teen pop"
+        ],
+        "artists": [
+            "Hailee Steinfeld",
+            "DNCE"
+        ],
+        "energy": 0.706,
+        "liveness": 0.053,
+        "speechiness": 0.0602,
+        "acousticness": 0.313,
+        "instrumentalness": 0.0,
+        "danceability": 0.612,
+        "loudness": -5.036,
+        "valence": 0.724,
+        "tempo": 157.964,
+        "popularity": 69.0
+    },
+    {
+        "name": "Paparazzi",
+        "uri": "spotify:track:16Me2jlMlTX4xsps2j71mC",
+        "date": "2016-08-22T17:49:42Z",
+        "genres": [
+            "dance pop",
+            "pop"
+        ],
+        "artists": [
+            "Lady Gaga"
+        ],
+        "energy": 0.688,
+        "liveness": 0.0852,
+        "speechiness": 0.0535,
+        "acousticness": 0.0947,
+        "instrumentalness": 0.0,
+        "danceability": 0.755,
+        "loudness": -3.97,
+        "valence": 0.429,
+        "tempo": 114.928,
+        "popularity": 61.0
+    },
+    {
+        "name": "R.I.P.",
+        "uri": "spotify:track:35BspUdHJEuqWx6aCzMG5U",
+        "date": "2016-08-09T05:50:52Z",
+        "genres": [
+            "dance pop",
+            "electropowerpop",
+            "pop punk",
+            "pop rap",
+            "post-teen pop"
+        ],
+        "artists": [
+            "3OH!3"
+        ],
+        "energy": 0.701,
+        "liveness": 0.106,
+        "speechiness": 0.0407,
+        "acousticness": 0.131,
+        "instrumentalness": 0.0,
+        "danceability": 0.659,
+        "loudness": -5.56,
+        "valence": 0.394,
+        "tempo": 130.018,
+        "popularity": 39.0
+    },
+    {
+        "name": "Parking Lot - Skit",
+        "uri": "spotify:track:7BneCfYRPXAJsEXRdVzEfV",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.83,
+        "liveness": 0.785,
+        "speechiness": 0.366,
+        "acousticness": 0.528,
+        "instrumentalness": 0.0383,
+        "danceability": 0.425,
+        "loudness": -8.808,
+        "valence": 0.126,
+        "tempo": 141.179,
+        "popularity": 47.0
+    },
+    {
+        "name": "So Much Better",
+        "uri": "spotify:track:6dJRP4pXk4SOzWfhfHL3Or",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.858,
+        "liveness": 0.628,
+        "speechiness": 0.25,
+        "acousticness": 0.252,
+        "instrumentalness": 0.0,
+        "danceability": 0.719,
+        "loudness": -1.366,
+        "valence": 0.616,
+        "tempo": 84.497,
+        "popularity": 54.0
+    },
+    {
+        "name": "Survival",
+        "uri": "spotify:track:3stOygN0I7CIvkEB2LJGbv",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.899,
+        "liveness": 0.126,
+        "speechiness": 0.21,
+        "acousticness": 0.0038,
+        "instrumentalness": 0.0,
+        "danceability": 0.459,
+        "loudness": -2.978,
+        "valence": 0.437,
+        "tempo": 176.384,
+        "popularity": 67.0
+    },
+    {
+        "name": "Legacy",
+        "uri": "spotify:track:1mavQ4WCzXSeL2Dm5DS4GQ",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.899,
+        "liveness": 0.197,
+        "speechiness": 0.474,
+        "acousticness": 0.276,
+        "instrumentalness": 0.0,
+        "danceability": 0.664,
+        "loudness": -3.711,
+        "valence": 0.534,
+        "tempo": 164.125,
+        "popularity": 65.0
+    },
+    {
+        "name": "Berzerk",
+        "uri": "spotify:track:6Xk7PnitV9jCRorWt2LiVZ",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.872,
+        "liveness": 0.26,
+        "speechiness": 0.333,
+        "acousticness": 0.0217,
+        "instrumentalness": 0.0,
+        "danceability": 0.739,
+        "loudness": -4.059,
+        "valence": 0.684,
+        "tempo": 95.084,
+        "popularity": 67.0
+    },
+    {
+        "name": "Brainless",
+        "uri": "spotify:track:5k7wy2Ek7y6kSQ4fER7w0E",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.935,
+        "liveness": 0.323,
+        "speechiness": 0.385,
+        "acousticness": 0.186,
+        "instrumentalness": 0.0,
+        "danceability": 0.7,
+        "loudness": -1.449,
+        "valence": 0.589,
+        "tempo": 172.092,
+        "popularity": 55.0
+    },
+    {
+        "name": "Stronger Than I Was",
+        "uri": "spotify:track:6MtI49ggHHumUTONlvMQlq",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.602,
+        "liveness": 0.148,
+        "speechiness": 0.107,
+        "acousticness": 0.121,
+        "instrumentalness": 0.0,
+        "danceability": 0.781,
+        "loudness": -5.426,
+        "valence": 0.324,
+        "tempo": 121.998,
+        "popularity": 55.0
+    },
+    {
+        "name": "The Monster",
+        "uri": "spotify:track:4WgvTITBJbEfCJHguiE7QS",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap",
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "urban contemporary"
+        ],
+        "artists": [
+            "Eminem",
+            "Rihanna"
+        ],
+        "energy": 0.853,
+        "liveness": 0.12,
+        "speechiness": 0.0715,
+        "acousticness": 0.0525,
+        "instrumentalness": 0.0,
+        "danceability": 0.781,
+        "loudness": -3.68,
+        "valence": 0.624,
+        "tempo": 110.049,
+        "popularity": 58.0
+    },
+    {
+        "name": "So Far...",
+        "uri": "spotify:track:0nzsCN9rtXdugPoiIT49Kj",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.934,
+        "liveness": 0.223,
+        "speechiness": 0.365,
+        "acousticness": 0.202,
+        "instrumentalness": 0.0,
+        "danceability": 0.852,
+        "loudness": -3.497,
+        "valence": 0.708,
+        "tempo": 98.016,
+        "popularity": 53.0
+    },
+    {
+        "name": "Love Game",
+        "uri": "spotify:track:0iMN420Q45isZVNlAqzPTW",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "west coast rap"
+        ],
+        "artists": [
+            "Eminem",
+            "Kendrick Lamar"
+        ],
+        "energy": 0.941,
+        "liveness": 0.585,
+        "speechiness": 0.18,
+        "acousticness": 0.359,
+        "instrumentalness": 0.0,
+        "danceability": 0.766,
+        "loudness": -2.546,
+        "valence": 0.707,
+        "tempo": 105.519,
+        "popularity": 56.0
+    },
+    {
+        "name": "Headlights",
+        "uri": "spotify:track:222dTwr5XeEgAzEtsrQA0R",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap",
+            "chamber pop"
+        ],
+        "artists": [
+            "Eminem",
+            "Nate Ruess"
+        ],
+        "energy": 0.782,
+        "liveness": 0.803,
+        "speechiness": 0.158,
+        "acousticness": 0.152,
+        "instrumentalness": 0.0,
+        "danceability": 0.688,
+        "loudness": -3.683,
+        "valence": 0.453,
+        "tempo": 146.324,
+        "popularity": 62.0
+    },
+    {
+        "name": "Evil Twin",
+        "uri": "spotify:track:3E1BkJEsRK7VsSNzijilGm",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.91,
+        "liveness": 0.0834,
+        "speechiness": 0.363,
+        "acousticness": 0.0529,
+        "instrumentalness": 0.0,
+        "danceability": 0.648,
+        "loudness": -4.762,
+        "valence": 0.783,
+        "tempo": 83.091,
+        "popularity": 51.0
+    },
+    {
+        "name": "Baby",
+        "uri": "spotify:track:5sGzBBWPe4YC2YoW7lBYph",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.89,
+        "liveness": 0.108,
+        "speechiness": 0.343,
+        "acousticness": 0.581,
+        "instrumentalness": 0.0,
+        "danceability": 0.777,
+        "loudness": -5.066,
+        "valence": 0.829,
+        "tempo": 93.861,
+        "popularity": 50.0
+    },
+    {
+        "name": "Desperation",
+        "uri": "spotify:track:01zPnSlKCw9WLbY0kvNep0",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap",
+            "modern blues rock"
+        ],
+        "artists": [
+            "Eminem",
+            "Jamie N Commons"
+        ],
+        "energy": 0.923,
+        "liveness": 0.065,
+        "speechiness": 0.248,
+        "acousticness": 0.176,
+        "instrumentalness": 0.0,
+        "danceability": 0.709,
+        "loudness": -2.449,
+        "valence": 0.662,
+        "tempo": 143.992,
+        "popularity": 51.0
+    },
+    {
+        "name": "Groundhog Day",
+        "uri": "spotify:track:3fCRPhzGYSd4y6K1qjFcIp",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.791,
+        "liveness": 0.71,
+        "speechiness": 0.24,
+        "acousticness": 0.322,
+        "instrumentalness": 0.0,
+        "danceability": 0.732,
+        "loudness": -1.865,
+        "valence": 0.56,
+        "tempo": 81.972,
+        "popularity": 50.0
+    },
+    {
+        "name": "Beautiful Pain",
+        "uri": "spotify:track:7hiBhOh4s8G0xmGYBAjyuw",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap",
+            "australian dance",
+            "australian pop",
+            "pop"
+        ],
+        "artists": [
+            "Eminem",
+            "Sia"
+        ],
+        "energy": 0.815,
+        "liveness": 0.154,
+        "speechiness": 0.459,
+        "acousticness": 0.0616,
+        "instrumentalness": 0.0,
+        "danceability": 0.685,
+        "loudness": -4.494,
+        "valence": 0.4,
+        "tempo": 165.369,
+        "popularity": 63.0
+    },
+    {
+        "name": "Wicked Ways",
+        "uri": "spotify:track:4dfAUJI1QesmK5HfK9gtYs",
+        "date": "2016-07-15T06:29:40Z",
+        "genres": [
+            "detroit hip hop",
+            "g funk",
+            "hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Eminem"
+        ],
+        "energy": 0.787,
+        "liveness": 0.58,
+        "speechiness": 0.401,
+        "acousticness": 0.0497,
+        "instrumentalness": 0.0,
+        "danceability": 0.714,
+        "loudness": -6.769,
+        "valence": 0.131,
+        "tempo": 138.017,
+        "popularity": 55.0
+    },
+    {
+        "name": "Losing Touch",
+        "uri": "spotify:track:4xDov3LqBL5j7opAPb0PoD",
+        "date": "2016-06-15T06:00:55Z",
+        "genres": [
+            "indie rock",
+            "modern rock",
+            "permanent wave",
+            "rock"
+        ],
+        "artists": [
+            "The Killers"
+        ],
+        "energy": 0.88,
+        "liveness": 0.393,
+        "speechiness": 0.0476,
+        "acousticness": 0.0341,
+        "instrumentalness": 9.75e-05,
+        "danceability": 0.542,
+        "loudness": -4.081,
+        "valence": 0.434,
+        "tempo": 117.986,
+        "popularity": 3.0
+    },
+    {
+        "name": "Human",
+        "uri": "spotify:track:7KEajVD9AUG68onXRSFZTv",
+        "date": "2016-06-15T06:00:55Z",
+        "genres": [
+            "indie rock",
+            "modern rock",
+            "permanent wave",
+            "rock"
+        ],
+        "artists": [
+            "The Killers"
+        ],
+        "energy": 0.824,
+        "liveness": 0.0999,
+        "speechiness": 0.0776,
+        "acousticness": 0.0018,
+        "instrumentalness": 0.000542,
+        "danceability": 0.557,
+        "loudness": -6.947,
+        "valence": 0.611,
+        "tempo": 135.446,
+        "popularity": 13.0
+    },
+    {
+        "name": "Spaceman",
+        "uri": "spotify:track:5ubUprLRov5UPDCS2UP4cb",
+        "date": "2016-06-15T06:00:55Z",
+        "genres": [
+            "indie rock",
+            "modern rock",
+            "permanent wave",
+            "rock"
+        ],
+        "artists": [
+            "The Killers"
+        ],
+        "energy": 0.918,
+        "liveness": 0.123,
+        "speechiness": 0.059,
+        "acousticness": 0.00198,
+        "instrumentalness": 0.000677,
+        "danceability": 0.517,
+        "loudness": -3.957,
+        "valence": 0.83,
+        "tempo": 151.979,
+        "popularity": 7.0
+    },
+    {
+        "name": "Joy Ride",
+        "uri": "spotify:track:07SgR5jvYFyVDHa6uv8Fh0",
+        "date": "2016-06-15T06:00:55Z",
+        "genres": [
+            "indie rock",
+            "modern rock",
+            "permanent wave",
+            "rock"
+        ],
+        "artists": [
+            "The Killers"
+        ],
+        "energy": 0.93,
+        "liveness": 0.147,
+        "speechiness": 0.0312,
+        "acousticness": 0.0401,
+        "instrumentalness": 0.000713,
+        "danceability": 0.686,
+        "loudness": -3.524,
+        "valence": 0.782,
+        "tempo": 117.035,
+        "popularity": 0.0
+    },
+    {
+        "name": "A Dustland Fairytale",
+        "uri": "spotify:track:1MrqlDkxsrMsxHni2Yb9Tx",
+        "date": "2016-06-15T06:00:55Z",
+        "genres": [
+            "indie rock",
+            "modern rock",
+            "permanent wave",
+            "rock"
+        ],
+        "artists": [
+            "The Killers"
+        ],
+        "energy": 0.87,
+        "liveness": 0.0936,
+        "speechiness": 0.057,
+        "acousticness": 0.0533,
+        "instrumentalness": 3.7e-06,
+        "danceability": 0.441,
+        "loudness": -4.845,
+        "valence": 0.274,
+        "tempo": 134.469,
+        "popularity": 4.0
+    },
+    {
+        "name": "This Is Your Life",
+        "uri": "spotify:track:4T3fEhOYsYTwtxzA7TQBkf",
+        "date": "2016-06-15T06:00:55Z",
+        "genres": [
+            "indie rock",
+            "modern rock",
+            "permanent wave",
+            "rock"
+        ],
+        "artists": [
+            "The Killers"
+        ],
+        "energy": 0.92,
+        "liveness": 0.253,
+        "speechiness": 0.0305,
+        "acousticness": 0.0142,
+        "instrumentalness": 0.000206,
+        "danceability": 0.619,
+        "loudness": -4.374,
+        "valence": 0.424,
+        "tempo": 99.985,
+        "popularity": 3.0
+    },
+    {
+        "name": "I Can't Stay",
+        "uri": "spotify:track:36GPL4a7IHf0C6DdBpoifS",
+        "date": "2016-06-15T06:00:55Z",
+        "genres": [
+            "indie rock",
+            "modern rock",
+            "permanent wave",
+            "rock"
+        ],
+        "artists": [
+            "The Killers"
+        ],
+        "energy": 0.844,
+        "liveness": 0.178,
+        "speechiness": 0.0984,
+        "acousticness": 0.196,
+        "instrumentalness": 0.0,
+        "danceability": 0.587,
+        "loudness": -7.061,
+        "valence": 0.652,
+        "tempo": 94.014,
+        "popularity": 3.0
+    },
+    {
+        "name": "Neon Tiger",
+        "uri": "spotify:track:5wXsFe8dNMHOau3WyfKuVZ",
+        "date": "2016-06-15T06:00:55Z",
+        "genres": [
+            "indie rock",
+            "modern rock",
+            "permanent wave",
+            "rock"
+        ],
+        "artists": [
+            "The Killers"
+        ],
+        "energy": 0.813,
+        "liveness": 0.378,
+        "speechiness": 0.039,
+        "acousticness": 0.0672,
+        "instrumentalness": 0.0,
+        "danceability": 0.388,
+        "loudness": -5.364,
+        "valence": 0.501,
+        "tempo": 173.913,
+        "popularity": 0.0
+    },
+    {
+        "name": "Goodnight, Travel Well",
+        "uri": "spotify:track:0HfMp4RGDgjvrWX3j0VZnJ",
+        "date": "2016-06-15T06:00:55Z",
+        "genres": [
+            "indie rock",
+            "modern rock",
+            "permanent wave",
+            "rock"
+        ],
+        "artists": [
+            "The Killers"
+        ],
+        "energy": 0.52,
+        "liveness": 0.101,
+        "speechiness": 0.0359,
+        "acousticness": 0.0187,
+        "instrumentalness": 0.36,
+        "danceability": 0.38,
+        "loudness": -8.494,
+        "valence": 0.0801,
+        "tempo": 128.044,
+        "popularity": 0.0
+    }
+]

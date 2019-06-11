@@ -1,0 +1,14 @@
+#top-artists {
+  width: 20em;
+  height: 20em;
+  border: 2px inset gray;
+  margin-bottom: 1em;
+}
+
+button {
+  padding: .5em 2em;
+}​
+
+#toggle-button {
+  background-color: #4CAF50;
+}

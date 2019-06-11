@@ -1,0 +1,21 @@
+{
+    "display_name": "Eric Jorgenson",
+    "external_urls": {
+        "spotify": "https://open.spotify.com/user/ericj4332"
+    },
+    "followers": {
+        "href": null,
+        "total": 5
+    },
+    "href": "https://api.spotify.com/v1/users/ericj4332",
+    "id": "ericj4332",
+    "images": [
+        {
+            "height": null,
+            "url": "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=10202959080954484&height=200&width=200&ext=1562779026&hash=AeSYPmlTHkTGur3D",
+            "width": null
+        }
+    ],
+    "type": "user",
+    "uri": "spotify:user:ericj4332"
+}

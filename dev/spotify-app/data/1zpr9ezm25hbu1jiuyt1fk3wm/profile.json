@@ -1,0 +1,15 @@
+{
+    "display_name": "Leah",
+    "external_urls": {
+        "spotify": "https://open.spotify.com/user/1zpr9ezm25hbu1jiuyt1fk3wm"
+    },
+    "followers": {
+        "href": null,
+        "total": 1
+    },
+    "href": "https://api.spotify.com/v1/users/1zpr9ezm25hbu1jiuyt1fk3wm",
+    "id": "1zpr9ezm25hbu1jiuyt1fk3wm",
+    "images": [],
+    "type": "user",
+    "uri": "spotify:user:1zpr9ezm25hbu1jiuyt1fk3wm"
+}

@@ -1,0 +1,1018 @@
+{
+    "short_term": [
+        {
+            "name": "Vampire Weekend",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "popularity": 81,
+            "uri": "spotify:artist:5BvJzeQpmsdsFp4HGUYUEx"
+        },
+        {
+            "name": "Grupo Extra",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "popularity": 61,
+            "uri": "spotify:artist:4L5SLCIDWPPNGzrLraYCOS"
+        },
+        {
+            "name": "Cardi B",
+            "genres": [
+                "pop",
+                "rap"
+            ],
+            "popularity": 93,
+            "uri": "spotify:artist:4kYSro6naA4h99UJvo89HB"
+        },
+        {
+            "name": "Doja Cat",
+            "genres": [
+                "alternative r&b",
+                "electropop",
+                "escape room",
+                "la indie",
+                "pop"
+            ],
+            "popularity": 70,
+            "uri": "spotify:artist:5cj0lLjcoR7YOSnhnX0Po5"
+        }
+    ],
+    "medium_term": [
+        {
+            "name": "Vampire Weekend",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "popularity": 81,
+            "uri": "spotify:artist:5BvJzeQpmsdsFp4HGUYUEx"
+        },
+        {
+            "name": "Grupo Extra",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "popularity": 61,
+            "uri": "spotify:artist:4L5SLCIDWPPNGzrLraYCOS"
+        },
+        {
+            "name": "Hozier",
+            "genres": [
+                "folk-pop",
+                "irish singer-songwriter",
+                "pop"
+            ],
+            "popularity": 82,
+            "uri": "spotify:artist:2FXC3k01G6Gw61bmprjgqS"
+        },
+        {
+            "name": "Doja Cat",
+            "genres": [
+                "alternative r&b",
+                "electropop",
+                "escape room",
+                "la indie",
+                "pop"
+            ],
+            "popularity": 70,
+            "uri": "spotify:artist:5cj0lLjcoR7YOSnhnX0Po5"
+        },
+        {
+            "name": "Sylvan Esso",
+            "genres": [
+                "art pop",
+                "chamber pop",
+                "electropop",
+                "etherpop",
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indietronica",
+                "shimmer pop"
+            ],
+            "popularity": 64,
+            "uri": "spotify:artist:39vA9YljbnOApXKniLWBZv"
+        },
+        {
+            "name": "Kelela",
+            "genres": [
+                "alternative r&b",
+                "art pop",
+                "electropop",
+                "escape room",
+                "hyperpop",
+                "indie r&b",
+                "indietronica",
+                "r&b"
+            ],
+            "popularity": 58,
+            "uri": "spotify:artist:1U0sIzpRtDkvu1hXXzxh60"
+        },
+        {
+            "name": "Janelle Mon\u00e1e",
+            "genres": [
+                "alternative r&b",
+                "atl hip hop",
+                "dance pop",
+                "electropop",
+                "escape room",
+                "neo soul",
+                "pop",
+                "r&b"
+            ],
+            "popularity": 73,
+            "uri": "spotify:artist:6ueGR6SWhUJfvEhqkvMsVs"
+        },
+        {
+            "name": "Beyonc\u00e9",
+            "genres": [
+                "dance pop",
+                "pop",
+                "r&b"
+            ],
+            "popularity": 92,
+            "uri": "spotify:artist:6vWDO969PvNqNYHIOW5v0m"
+        },
+        {
+            "name": "TWICE",
+            "genres": [
+                "k-pop",
+                "k-pop girl group"
+            ],
+            "popularity": 81,
+            "uri": "spotify:artist:7n2Ycct7Beij7Dj7meI4X0"
+        },
+        {
+            "name": "Cher",
+            "genres": [
+                "dance pop",
+                "hollywood",
+                "new wave pop",
+                "pop"
+            ],
+            "popularity": 74,
+            "uri": "spotify:artist:72OaDtakiy6yFqkt4TsiFt"
+        },
+        {
+            "name": "Romeo Santos",
+            "genres": [
+                "bachata",
+                "latin",
+                "tropical"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:5lwmRuXgjX8xIwlnauTZIP"
+        },
+        {
+            "name": "Billie Eilish",
+            "genres": [
+                "electropop",
+                "pop"
+            ],
+            "popularity": 100,
+            "uri": "spotify:artist:6qqNVTkY8uBg9cP3Jd7DAH"
+        },
+        {
+            "name": "Cardi B",
+            "genres": [
+                "pop",
+                "rap"
+            ],
+            "popularity": 93,
+            "uri": "spotify:artist:4kYSro6naA4h99UJvo89HB"
+        },
+        {
+            "name": "Queen",
+            "genres": [
+                "glam rock",
+                "rock"
+            ],
+            "popularity": 93,
+            "uri": "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        {
+            "name": "Sufjan Stevens",
+            "genres": [
+                "chamber pop",
+                "folk-pop",
+                "freak folk",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock",
+                "singer-songwriter",
+                "stomp and holler"
+            ],
+            "popularity": 73,
+            "uri": "spotify:artist:4MXUO7sVCaFgFjoTI5ox5c"
+        },
+        {
+            "name": "Aventura",
+            "genres": [
+                "bachata",
+                "latin",
+                "latin hip hop",
+                "latin pop",
+                "tropical"
+            ],
+            "popularity": 79,
+            "uri": "spotify:artist:1qto4hHid1P71emI6Fd8xi"
+        },
+        {
+            "name": "Solange",
+            "genres": [
+                "alternative r&b",
+                "escape room",
+                "hip pop",
+                "neo soul",
+                "pop",
+                "r&b",
+                "urban contemporary"
+            ],
+            "popularity": 72,
+            "uri": "spotify:artist:2auiVi8sUZo17dLy1HwrTU"
+        },
+        {
+            "name": "Prince Royce",
+            "genres": [
+                "bachata",
+                "latin",
+                "latin pop",
+                "pop",
+                "tropical"
+            ],
+            "popularity": 82,
+            "uri": "spotify:artist:3MHaV05u0io8fQbZ2XPtlC"
+        },
+        {
+            "name": "DaniLeigh",
+            "genres": [
+                "deep pop r&b",
+                "pop",
+                "r&b"
+            ],
+            "popularity": 67,
+            "uri": "spotify:artist:0XIKGBo9PnK1ApI5tZA60d"
+        },
+        {
+            "name": "Lily James",
+            "genres": [
+                "hollywood"
+            ],
+            "popularity": 71,
+            "uri": "spotify:artist:7gWjOPetXNCBqlVe6axl8K"
+        },
+        {
+            "name": "Kehlani",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "popularity": 83,
+            "uri": "spotify:artist:0cGUm45nv7Z6M6qdXYQGTX"
+        },
+        {
+            "name": "Fleetwood Mac",
+            "genres": [
+                "album rock",
+                "mellow gold",
+                "rock",
+                "soft rock",
+                "yacht rock"
+            ],
+            "popularity": 83,
+            "uri": "spotify:artist:08GQAI4eElDnROBrJRGE0X"
+        },
+        {
+            "name": "Kacey Musgraves",
+            "genres": [
+                "contemporary country",
+                "country dawn",
+                "dance pop"
+            ],
+            "popularity": 78,
+            "uri": "spotify:artist:70kkdajctXSbqSMJbQO424"
+        },
+        {
+            "name": "Lizzo",
+            "genres": [
+                "dance pop",
+                "escape room",
+                "minnesota hip hop",
+                "pop",
+                "trap queen"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:56oDRnqbIiwx4mymNEv7dS"
+        },
+        {
+            "name": "BTS",
+            "genres": [
+                "k-pop",
+                "k-pop boy group"
+            ],
+            "popularity": 94,
+            "uri": "spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX"
+        },
+        {
+            "name": "Hailee Steinfeld",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 84,
+            "uri": "spotify:artist:5p7f24Rk5HkUZsaS3BLG5F"
+        },
+        {
+            "name": "Shawn Mendes",
+            "genres": [
+                "canadian pop",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "viral pop"
+            ],
+            "popularity": 93,
+            "uri": "spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"
+        },
+        {
+            "name": "Taylor Swift",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 92,
+            "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+        },
+        {
+            "name": "Nicki Minaj",
+            "genres": [
+                "dance pop",
+                "hip pop",
+                "pop",
+                "pop rap",
+                "post-teen pop",
+                "r&b"
+            ],
+            "popularity": 92,
+            "uri": "spotify:artist:0hCNtLu0JehylgoiP8L4Gh"
+        },
+        {
+            "name": "Ariana Grande",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 96,
+            "uri": "spotify:artist:66CXWjxzNUsdJxJ2JdwvnR"
+        },
+        {
+            "name": "Kewin Cosmos",
+            "genres": [
+                "bachata",
+                "latin",
+                "tropical"
+            ],
+            "popularity": 52,
+            "uri": "spotify:artist:1nf6gLEC45OmoJFIxU7aUT"
+        },
+        {
+            "name": "Why Don't We",
+            "genres": [
+                "boy band",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "teen pop"
+            ],
+            "popularity": 82,
+            "uri": "spotify:artist:2jnIB6XdLvnJUeNTy5A0J2"
+        },
+        {
+            "name": "Dani J",
+            "genres": [
+                "latin",
+                "tropical"
+            ],
+            "popularity": 56,
+            "uri": "spotify:artist:3TEhIeweC59okLmqFu6LWv"
+        },
+        {
+            "name": "Monchy & Alexandra",
+            "genres": [
+                "bachata",
+                "latin",
+                "tropical"
+            ],
+            "popularity": 63,
+            "uri": "spotify:artist:3rs3EOlJ8jyPpdGiQ9Mhub"
+        },
+        {
+            "name": "Bazzi",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 86,
+            "uri": "spotify:artist:4GvEc3ANtPPjt1ZJllr5Zl"
+        },
+        {
+            "name": "Khalid",
+            "genres": [
+                "pop"
+            ],
+            "popularity": 97,
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+    ],
+    "long_term": [
+        {
+            "name": "Vampire Weekend",
+            "genres": [
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock"
+            ],
+            "popularity": 81,
+            "uri": "spotify:artist:5BvJzeQpmsdsFp4HGUYUEx"
+        },
+        {
+            "name": "Grupo Extra",
+            "genres": [
+                "bachata",
+                "cubaton",
+                "latin",
+                "tropical"
+            ],
+            "popularity": 61,
+            "uri": "spotify:artist:4L5SLCIDWPPNGzrLraYCOS"
+        },
+        {
+            "name": "Beyonc\u00e9",
+            "genres": [
+                "dance pop",
+                "pop",
+                "r&b"
+            ],
+            "popularity": 92,
+            "uri": "spotify:artist:6vWDO969PvNqNYHIOW5v0m"
+        },
+        {
+            "name": "Sufjan Stevens",
+            "genres": [
+                "chamber pop",
+                "folk-pop",
+                "freak folk",
+                "indie folk",
+                "indie pop",
+                "indie rock",
+                "modern rock",
+                "singer-songwriter",
+                "stomp and holler"
+            ],
+            "popularity": 73,
+            "uri": "spotify:artist:4MXUO7sVCaFgFjoTI5ox5c"
+        },
+        {
+            "name": "Doja Cat",
+            "genres": [
+                "alternative r&b",
+                "electropop",
+                "escape room",
+                "la indie",
+                "pop"
+            ],
+            "popularity": 70,
+            "uri": "spotify:artist:5cj0lLjcoR7YOSnhnX0Po5"
+        },
+        {
+            "name": "Cardi B",
+            "genres": [
+                "pop",
+                "rap"
+            ],
+            "popularity": 93,
+            "uri": "spotify:artist:4kYSro6naA4h99UJvo89HB"
+        },
+        {
+            "name": "Hozier",
+            "genres": [
+                "folk-pop",
+                "irish singer-songwriter",
+                "pop"
+            ],
+            "popularity": 82,
+            "uri": "spotify:artist:2FXC3k01G6Gw61bmprjgqS"
+        },
+        {
+            "name": "Cher",
+            "genres": [
+                "dance pop",
+                "hollywood",
+                "new wave pop",
+                "pop"
+            ],
+            "popularity": 74,
+            "uri": "spotify:artist:72OaDtakiy6yFqkt4TsiFt"
+        },
+        {
+            "name": "TWICE",
+            "genres": [
+                "k-pop",
+                "k-pop girl group"
+            ],
+            "popularity": 81,
+            "uri": "spotify:artist:7n2Ycct7Beij7Dj7meI4X0"
+        },
+        {
+            "name": "Chance the Rapper",
+            "genres": [
+                "chicago rap",
+                "conscious hip hop",
+                "hip hop",
+                "pop",
+                "pop rap",
+                "rap"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+        },
+        {
+            "name": "Sylvan Esso",
+            "genres": [
+                "art pop",
+                "chamber pop",
+                "electropop",
+                "etherpop",
+                "folk-pop",
+                "indie folk",
+                "indie pop",
+                "indietronica",
+                "shimmer pop"
+            ],
+            "popularity": 64,
+            "uri": "spotify:artist:39vA9YljbnOApXKniLWBZv"
+        },
+        {
+            "name": "Kelela",
+            "genres": [
+                "alternative r&b",
+                "art pop",
+                "electropop",
+                "escape room",
+                "hyperpop",
+                "indie r&b",
+                "indietronica",
+                "r&b"
+            ],
+            "popularity": 58,
+            "uri": "spotify:artist:1U0sIzpRtDkvu1hXXzxh60"
+        },
+        {
+            "name": "Lily James",
+            "genres": [
+                "hollywood"
+            ],
+            "popularity": 71,
+            "uri": "spotify:artist:7gWjOPetXNCBqlVe6axl8K"
+        },
+        {
+            "name": "Kehlani",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "popularity": 83,
+            "uri": "spotify:artist:0cGUm45nv7Z6M6qdXYQGTX"
+        },
+        {
+            "name": "Prince Royce",
+            "genres": [
+                "bachata",
+                "latin",
+                "latin pop",
+                "pop",
+                "tropical"
+            ],
+            "popularity": 82,
+            "uri": "spotify:artist:3MHaV05u0io8fQbZ2XPtlC"
+        },
+        {
+            "name": "Paul Simon",
+            "genres": [
+                "classic rock",
+                "folk",
+                "folk rock",
+                "folk-pop",
+                "mellow gold",
+                "permanent wave",
+                "rock",
+                "roots rock",
+                "singer-songwriter",
+                "soft rock"
+            ],
+            "popularity": 74,
+            "uri": "spotify:artist:2CvCyf1gEVhI0mX6aFXmVI"
+        },
+        {
+            "name": "Janelle Mon\u00e1e",
+            "genres": [
+                "alternative r&b",
+                "atl hip hop",
+                "dance pop",
+                "electropop",
+                "escape room",
+                "neo soul",
+                "pop",
+                "r&b"
+            ],
+            "popularity": 73,
+            "uri": "spotify:artist:6ueGR6SWhUJfvEhqkvMsVs"
+        },
+        {
+            "name": "Cobra Starship",
+            "genres": [
+                "dance pop",
+                "emo",
+                "neon pop punk",
+                "pop",
+                "pop punk",
+                "pop rap",
+                "post-teen pop"
+            ],
+            "popularity": 61,
+            "uri": "spotify:artist:2aYJ5LAta2ScCdfLhKgZOY"
+        },
+        {
+            "name": "Romeo Santos",
+            "genres": [
+                "bachata",
+                "latin",
+                "tropical"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:5lwmRuXgjX8xIwlnauTZIP"
+        },
+        {
+            "name": "The Carters",
+            "genres": [
+                "pop",
+                "r&b",
+                "urban contemporary"
+            ],
+            "popularity": 68,
+            "uri": "spotify:artist:4fpTMHe34LC5t3h5ztK8qu"
+        },
+        {
+            "name": "Billie Eilish",
+            "genres": [
+                "electropop",
+                "pop"
+            ],
+            "popularity": 100,
+            "uri": "spotify:artist:6qqNVTkY8uBg9cP3Jd7DAH"
+        },
+        {
+            "name": "Amadou & Mariam",
+            "genres": [
+                "afrobeat",
+                "afropop",
+                "mande pop",
+                "world"
+            ],
+            "popularity": 54,
+            "uri": "spotify:artist:3KH7WsR2JZQ94Ik8SyabU6"
+        },
+        {
+            "name": "Aventura",
+            "genres": [
+                "bachata",
+                "latin",
+                "latin hip hop",
+                "latin pop",
+                "tropical"
+            ],
+            "popularity": 79,
+            "uri": "spotify:artist:1qto4hHid1P71emI6Fd8xi"
+        },
+        {
+            "name": "Queen",
+            "genres": [
+                "glam rock",
+                "rock"
+            ],
+            "popularity": 93,
+            "uri": "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        {
+            "name": "Juanes",
+            "genres": [
+                "colombian pop",
+                "cumbia",
+                "dance pop",
+                "latin",
+                "latin pop",
+                "mexican pop",
+                "pop",
+                "rock en espanol",
+                "tropical"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:0UWZUmn7sybxMCqrw9tGa7"
+        },
+        {
+            "name": "ABBA",
+            "genres": [
+                "europop",
+                "swedish pop"
+            ],
+            "popularity": 81,
+            "uri": "spotify:artist:0LcJLqbBmaGUft1e9Mm8HV"
+        },
+        {
+            "name": "Johnny Mathis",
+            "genres": [
+                "adult standards",
+                "brill building pop",
+                "christmas",
+                "easy listening",
+                "lounge",
+                "mellow gold",
+                "operatic pop",
+                "vocal jazz"
+            ],
+            "popularity": 59,
+            "uri": "spotify:artist:21LGsW7bziR4Ledx7WZ1Wf"
+        },
+        {
+            "name": "Ariana Grande",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 96,
+            "uri": "spotify:artist:66CXWjxzNUsdJxJ2JdwvnR"
+        },
+        {
+            "name": "Solange",
+            "genres": [
+                "alternative r&b",
+                "escape room",
+                "hip pop",
+                "neo soul",
+                "pop",
+                "r&b",
+                "urban contemporary"
+            ],
+            "popularity": 72,
+            "uri": "spotify:artist:2auiVi8sUZo17dLy1HwrTU"
+        },
+        {
+            "name": "DaniLeigh",
+            "genres": [
+                "deep pop r&b",
+                "pop",
+                "r&b"
+            ],
+            "popularity": 67,
+            "uri": "spotify:artist:0XIKGBo9PnK1ApI5tZA60d"
+        },
+        {
+            "name": "Adam Pascal",
+            "genres": [
+                "broadway",
+                "hollywood",
+                "show tunes"
+            ],
+            "popularity": 60,
+            "uri": "spotify:artist:0bvwPCit9Yh0yVdLKGnXRi"
+        },
+        {
+            "name": "Fleetwood Mac",
+            "genres": [
+                "album rock",
+                "mellow gold",
+                "rock",
+                "soft rock",
+                "yacht rock"
+            ],
+            "popularity": 83,
+            "uri": "spotify:artist:08GQAI4eElDnROBrJRGE0X"
+        },
+        {
+            "name": "Kacey Musgraves",
+            "genres": [
+                "contemporary country",
+                "country dawn",
+                "dance pop"
+            ],
+            "popularity": 78,
+            "uri": "spotify:artist:70kkdajctXSbqSMJbQO424"
+        },
+        {
+            "name": "Lizzo",
+            "genres": [
+                "dance pop",
+                "escape room",
+                "minnesota hip hop",
+                "pop",
+                "trap queen"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:56oDRnqbIiwx4mymNEv7dS"
+        },
+        {
+            "name": "BTS",
+            "genres": [
+                "k-pop",
+                "k-pop boy group"
+            ],
+            "popularity": 94,
+            "uri": "spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX"
+        },
+        {
+            "name": "BLACKPINK",
+            "genres": [
+                "k-pop",
+                "k-pop girl group"
+            ],
+            "popularity": 88,
+            "uri": "spotify:artist:41MozSoPIsD1dJM0CLPjZF"
+        },
+        {
+            "name": "Ozuna",
+            "genres": [
+                "reggaeton",
+                "trap latino"
+            ],
+            "popularity": 96,
+            "uri": "spotify:artist:1i8SpTcr7yvPOmcqrbnVXY"
+        },
+        {
+            "name": "Taylor Swift",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 92,
+            "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+        },
+        {
+            "name": "Nicki Minaj",
+            "genres": [
+                "dance pop",
+                "hip pop",
+                "pop",
+                "pop rap",
+                "post-teen pop",
+                "r&b"
+            ],
+            "popularity": 92,
+            "uri": "spotify:artist:0hCNtLu0JehylgoiP8L4Gh"
+        },
+        {
+            "name": "Hailee Steinfeld",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 84,
+            "uri": "spotify:artist:5p7f24Rk5HkUZsaS3BLG5F"
+        },
+        {
+            "name": "Shawn Mendes",
+            "genres": [
+                "canadian pop",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "viral pop"
+            ],
+            "popularity": 93,
+            "uri": "spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"
+        },
+        {
+            "name": "Chayanne",
+            "genres": [
+                "latin",
+                "latin pop",
+                "tropical"
+            ],
+            "popularity": 74,
+            "uri": "spotify:artist:1JbemQ1fPt2YmSLjAFhPBv"
+        },
+        {
+            "name": "Daddy Yankee",
+            "genres": [
+                "latin",
+                "latin hip hop",
+                "pop",
+                "reggaeton",
+                "tropical"
+            ],
+            "popularity": 95,
+            "uri": "spotify:artist:4VMYDCV2IEDYJArk749S6m"
+        },
+        {
+            "name": "Kewin Cosmos",
+            "genres": [
+                "bachata",
+                "latin",
+                "tropical"
+            ],
+            "popularity": 52,
+            "uri": "spotify:artist:1nf6gLEC45OmoJFIxU7aUT"
+        },
+        {
+            "name": "Panic! At The Disco",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "popularity": 90,
+            "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK"
+        },
+        {
+            "name": "Why Don't We",
+            "genres": [
+                "boy band",
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "teen pop"
+            ],
+            "popularity": 82,
+            "uri": "spotify:artist:2jnIB6XdLvnJUeNTy5A0J2"
+        },
+        {
+            "name": "Dani J",
+            "genres": [
+                "latin",
+                "tropical"
+            ],
+            "popularity": 56,
+            "uri": "spotify:artist:3TEhIeweC59okLmqFu6LWv"
+        },
+        {
+            "name": "Monchy & Alexandra",
+            "genres": [
+                "bachata",
+                "latin",
+                "tropical"
+            ],
+            "popularity": 63,
+            "uri": "spotify:artist:3rs3EOlJ8jyPpdGiQ9Mhub"
+        },
+        {
+            "name": "Bazzi",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 86,
+            "uri": "spotify:artist:4GvEc3ANtPPjt1ZJllr5Zl"
+        },
+        {
+            "name": "Calvin Harris",
+            "genres": [
+                "edm",
+                "electro house",
+                "house",
+                "pop",
+                "progressive house",
+                "uk dance"
+            ],
+            "popularity": 90,
+            "uri": "spotify:artist:7CajNmpbOovFoOoasH2HaY"
+        }
+    ]
+}

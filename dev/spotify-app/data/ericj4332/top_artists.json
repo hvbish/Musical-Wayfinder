@@ -1,0 +1,1284 @@
+{
+    "short_term": [
+        {
+            "name": "Nightwish",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "popularity": 69,
+            "uri": "spotify:artist:2NPduAUeLVsfIauhRwuft1"
+        },
+        {
+            "name": "Metric",
+            "genres": [
+                "alternative dance",
+                "canadian indie",
+                "canadian pop",
+                "canadian rock",
+                "dance-punk",
+                "electropop",
+                "folk-pop",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "metropopolis",
+                "modern rock",
+                "neo-synthpop",
+                "new rave",
+                "shimmer pop"
+            ],
+            "popularity": 64,
+            "uri": "spotify:artist:1rCIEwPp5OnXW0ornlSsRl"
+        },
+        {
+            "name": "The Weeknd",
+            "genres": [
+                "canadian contemporary r&b",
+                "canadian pop",
+                "pop",
+                "rap"
+            ],
+            "popularity": 91,
+            "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+        },
+        {
+            "name": "Taylor Swift",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 92,
+            "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+        },
+        {
+            "name": "Panic! At The Disco",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "popularity": 90,
+            "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK"
+        },
+        {
+            "name": "Within Temptation",
+            "genres": [
+                "dutch metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "symphonic metal"
+            ],
+            "popularity": 68,
+            "uri": "spotify:artist:3hE8S8ohRErocpkY7uJW4a"
+        },
+        {
+            "name": "The Lonely Island",
+            "genres": [
+                "comic"
+            ],
+            "popularity": 70,
+            "uri": "spotify:artist:1f5GqyOPo0CkotzzRwviBu"
+        },
+        {
+            "name": "Linkin Park",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "post-grunge",
+                "rap metal"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:6XyY86QOPPrYVGvF9ch6wz"
+        }
+    ],
+    "medium_term": [
+        {
+            "name": "Kelsea Ballerini",
+            "genres": [
+                "contemporary country",
+                "indonesian jazz",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 78,
+            "uri": "spotify:artist:3RqBeV12Tt7A8xH3zBDDUF"
+        },
+        {
+            "name": "Panic! At The Disco",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "popularity": 90,
+            "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK"
+        },
+        {
+            "name": "Ava Max",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 85,
+            "uri": "spotify:artist:4npEfmQ6YuiwW1GpUmaq3F"
+        },
+        {
+            "name": "Linkin Park",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "post-grunge",
+                "rap metal"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:6XyY86QOPPrYVGvF9ch6wz"
+        },
+        {
+            "name": "Green Day",
+            "genres": [
+                "permanent wave",
+                "pop punk",
+                "punk",
+                "rock"
+            ],
+            "popularity": 83,
+            "uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+        },
+        {
+            "name": "Hey Violet",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "indie poptimism",
+                "pixie",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 64,
+            "uri": "spotify:artist:4JNfz6aO9ZFz0gp5GY88am"
+        },
+        {
+            "name": "Nightwish",
+            "genres": [
+                "finnish metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "progressive metal",
+                "symphonic metal"
+            ],
+            "popularity": 69,
+            "uri": "spotify:artist:2NPduAUeLVsfIauhRwuft1"
+        },
+        {
+            "name": "Metric",
+            "genres": [
+                "alternative dance",
+                "canadian indie",
+                "canadian pop",
+                "canadian rock",
+                "dance-punk",
+                "electropop",
+                "folk-pop",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "metropopolis",
+                "modern rock",
+                "neo-synthpop",
+                "new rave",
+                "shimmer pop"
+            ],
+            "popularity": 64,
+            "uri": "spotify:artist:1rCIEwPp5OnXW0ornlSsRl"
+        },
+        {
+            "name": "The Lonely Island",
+            "genres": [
+                "comic"
+            ],
+            "popularity": 70,
+            "uri": "spotify:artist:1f5GqyOPo0CkotzzRwviBu"
+        },
+        {
+            "name": "Lady Gaga",
+            "genres": [
+                "dance pop",
+                "pop"
+            ],
+            "popularity": 91,
+            "uri": "spotify:artist:1HY2Jd0NmPuamShAr6KMms"
+        },
+        {
+            "name": "Tove Lo",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "metropopolis",
+                "pop",
+                "post-teen pop",
+                "r&b",
+                "swedish electropop",
+                "swedish pop",
+                "swedish synthpop",
+                "tropical house"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:4NHQUGzhtTLFvgF5SZesLK"
+        },
+        {
+            "name": "Theory of a Deadman",
+            "genres": [
+                "alternative metal",
+                "canadian metal",
+                "canadian rock",
+                "nu metal",
+                "post-grunge",
+                "rap rock",
+                "wrestling"
+            ],
+            "popularity": 71,
+            "uri": "spotify:artist:74eX4C98E4FCrAMl39qRsJ"
+        },
+        {
+            "name": "Machine Gun Kelly",
+            "genres": [
+                "hip hop",
+                "pop rap",
+                "rap"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:6TIYQ3jFPwQSRmorSezPxX"
+        },
+        {
+            "name": "The Chainsmokers",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "tropical house"
+            ],
+            "popularity": 91,
+            "uri": "spotify:artist:69GGBxA162lTqCwzJG5jLp"
+        },
+        {
+            "name": "Nickelback",
+            "genres": [
+                "alternative metal",
+                "canadian rock",
+                "nu metal",
+                "post-grunge"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:6deZN1bslXzeGvOLaLMOIF"
+        },
+        {
+            "name": "Selena Gomez",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 89,
+            "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
+        },
+        {
+            "name": "The Weeknd",
+            "genres": [
+                "canadian contemporary r&b",
+                "canadian pop",
+                "pop",
+                "rap"
+            ],
+            "popularity": 91,
+            "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+        },
+        {
+            "name": "Zara Larsson",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "post-teen pop",
+                "scandipop",
+                "swedish electropop",
+                "swedish pop",
+                "tropical house"
+            ],
+            "popularity": 84,
+            "uri": "spotify:artist:1Xylc3o4UrD53lo9CvFvVg"
+        },
+        {
+            "name": "for KING & COUNTRY",
+            "genres": [
+                "anthem worship",
+                "ccm",
+                "christian alternative rock",
+                "christian indie",
+                "christian music",
+                "world worship",
+                "worship"
+            ],
+            "popularity": 69,
+            "uri": "spotify:artist:3sDbKMebVH2VYcRSl7u1VC"
+        },
+        {
+            "name": "Silversun Pickups",
+            "genres": [
+                "alternative metal",
+                "alternative rock",
+                "dance-punk",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "la indie",
+                "modern rock",
+                "post-grunge",
+                "rock"
+            ],
+            "popularity": 65,
+            "uri": "spotify:artist:6qyi8X6MdP1lu6B1K6yh3h"
+        },
+        {
+            "name": "Camila Cabello",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:4nDoRrQiYLoBzwC5BhVJzF"
+        },
+        {
+            "name": "The All-American Rejects",
+            "genres": [
+                "modern rock",
+                "neo mellow",
+                "pop",
+                "pop punk",
+                "pop rock",
+                "post-grunge"
+            ],
+            "popularity": 72,
+            "uri": "spotify:artist:3vAaWhdBR38Q02ohXqaNHT"
+        },
+        {
+            "name": "The Killers",
+            "genres": [
+                "indie rock",
+                "modern rock",
+                "permanent wave",
+                "rock"
+            ],
+            "popularity": 81,
+            "uri": "spotify:artist:0C0XlULifJtAgn6ZNCW2eu"
+        },
+        {
+            "name": "The Gregory Brothers",
+            "genres": [
+                "antiviral pop",
+                "comic"
+            ],
+            "popularity": 61,
+            "uri": "spotify:artist:0V8tQXWkKPD5SxsB2moGew"
+        },
+        {
+            "name": "Selena Gomez & The Scene",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "viral pop"
+            ],
+            "popularity": 70,
+            "uri": "spotify:artist:6dJeKm76NjfXBNTpHmOhfO"
+        },
+        {
+            "name": "Eminem",
+            "genres": [
+                "detroit hip hop",
+                "g funk",
+                "hip hop",
+                "rap"
+            ],
+            "popularity": 95,
+            "uri": "spotify:artist:7dGJo4pcD2V6oG8kP0tJRR"
+        },
+        {
+            "name": "T.I.",
+            "genres": [
+                "atl hip hop",
+                "dance pop",
+                "dirty south rap",
+                "gangster rap",
+                "hip hop",
+                "pop rap",
+                "rap",
+                "southern hip hop",
+                "trap music"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:4OBJLual30L7gRl5UkeRcT"
+        },
+        {
+            "name": "3OH!3",
+            "genres": [
+                "dance pop",
+                "electropowerpop",
+                "pop punk",
+                "pop rap",
+                "post-teen pop"
+            ],
+            "popularity": 66,
+            "uri": "spotify:artist:0FWzNDaEu9jdgcYTbcOa4F"
+        },
+        {
+            "name": "Taylor Swift",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 92,
+            "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+        },
+        {
+            "name": "Three Days Grace",
+            "genres": [
+                "alternative metal",
+                "canadian metal",
+                "canadian rock",
+                "nu metal",
+                "pop punk",
+                "post-grunge"
+            ],
+            "popularity": 79,
+            "uri": "spotify:artist:2xiIXseIJcq3nG7C8fHeBj"
+        },
+        {
+            "name": "Bebe Rexha",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 89,
+            "uri": "spotify:artist:64M6ah0SkkRsnPGtGiRAbb"
+        },
+        {
+            "name": "Flyleaf",
+            "genres": [
+                "alternative metal",
+                "christian alternative rock",
+                "christian rock",
+                "nu metal",
+                "pop emo",
+                "post-grunge",
+                "rap rock"
+            ],
+            "popularity": 62,
+            "uri": "spotify:artist:4IliztYDlfMvzQzbx50o60"
+        },
+        {
+            "name": "Bowling For Soup",
+            "genres": [
+                "comic",
+                "pop punk",
+                "pop rock",
+                "post-grunge"
+            ],
+            "popularity": 67,
+            "uri": "spotify:artist:5ND0mGcL9SKSjWIjPd0xIb"
+        },
+        {
+            "name": "Kesha",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "pop",
+                "pop rap",
+                "post-teen pop",
+                "r&b"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:6LqNN22kT3074XbTVUrhzX"
+        },
+        {
+            "name": "My Darkest Days",
+            "genres": [
+                "alternative metal",
+                "christian rock",
+                "nu metal",
+                "post-grunge"
+            ],
+            "popularity": 63,
+            "uri": "spotify:artist:64g59lHsc4g2jMFokrKDGW"
+        },
+        {
+            "name": "Katy Perry",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 88,
+            "uri": "spotify:artist:6jJ0s89eD6GaHleKKya26X"
+        },
+        {
+            "name": "Ariana Grande",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 96,
+            "uri": "spotify:artist:66CXWjxzNUsdJxJ2JdwvnR"
+        },
+        {
+            "name": "Bea Miller",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "indie cafe pop",
+                "indie poptimism",
+                "pop",
+                "post-teen pop",
+                "r&b",
+                "talent show",
+                "viral pop"
+            ],
+            "popularity": 76,
+            "uri": "spotify:artist:1o2NpYGqHiCq7FoiYdyd1x"
+        },
+        {
+            "name": "Mike Posner",
+            "genres": [
+                "dance pop",
+                "pop",
+                "pop rap"
+            ],
+            "popularity": 76,
+            "uri": "spotify:artist:2KsP6tYLJlTBvSUxnwlVWa"
+        },
+        {
+            "name": "Watsky",
+            "genres": [
+                "abstract hip hop",
+                "comic",
+                "indie pop rap",
+                "pop rap"
+            ],
+            "popularity": 63,
+            "uri": "spotify:artist:3mJ9GlkLzj8Ka7Z7EQaCMi"
+        },
+        {
+            "name": "Miley Cyrus",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 88,
+            "uri": "spotify:artist:5YGY8feqx7naU7z4HrwZM6"
+        },
+        {
+            "name": "3 Doors Down",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "pop punk",
+                "pop rock",
+                "post-grunge"
+            ],
+            "popularity": 75,
+            "uri": "spotify:artist:2RTUTCvo6onsAnheUk3aL9"
+        },
+        {
+            "name": "Framing Hanley",
+            "genres": [
+                "alternative metal",
+                "christian rock",
+                "nu metal",
+                "pop punk",
+                "post-grunge",
+                "screamo"
+            ],
+            "popularity": 59,
+            "uri": "spotify:artist:3niqfoc7C6lIeCNVz8iZYE"
+        },
+        {
+            "name": "Good Charlotte",
+            "genres": [
+                "alternative metal",
+                "pop punk",
+                "post-grunge"
+            ],
+            "popularity": 71,
+            "uri": "spotify:artist:5aYyPjAsLj7UzANzdupwnS"
+        },
+        {
+            "name": "Maroon 5",
+            "genres": [
+                "pop"
+            ],
+            "popularity": 89,
+            "uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP"
+        },
+        {
+            "name": "Within Temptation",
+            "genres": [
+                "dutch metal",
+                "gothic metal",
+                "gothic symphonic metal",
+                "power metal",
+                "symphonic metal"
+            ],
+            "popularity": 68,
+            "uri": "spotify:artist:3hE8S8ohRErocpkY7uJW4a"
+        },
+        {
+            "name": "BANKS",
+            "genres": [
+                "alternative r&b",
+                "dance pop",
+                "electropop",
+                "indie poptimism",
+                "indie r&b",
+                "indietronica",
+                "pop",
+                "r&b",
+                "tropical house",
+                "vapor soul"
+            ],
+            "popularity": 69,
+            "uri": "spotify:artist:2xe8IXgCTpwHE3eA9hTs4n"
+        },
+        {
+            "name": "Carly Rae Jepsen",
+            "genres": [
+                "canadian pop",
+                "dance pop",
+                "electropop",
+                "indie poptimism",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:6sFIWsNpZYqfjUpaCgueju"
+        },
+        {
+            "name": "The Saturdays",
+            "genres": [
+                "bubblegum dance",
+                "dance pop",
+                "electropop",
+                "europop",
+                "girl group",
+                "pop",
+                "post-teen pop",
+                "talent show",
+                "tropical house",
+                "uk pop"
+            ],
+            "popularity": 63,
+            "uri": "spotify:artist:15qI5w4XJFLRMwOp2VrlD5"
+        },
+        {
+            "name": "Le Youth",
+            "genres": [
+                "deep groove house",
+                "house",
+                "nu disco",
+                "tropical house"
+            ],
+            "popularity": 58,
+            "uri": "spotify:artist:1Zz6NBe8UIZjm88TvehFtx"
+        }
+    ],
+    "long_term": [
+        {
+            "name": "Eminem",
+            "genres": [
+                "detroit hip hop",
+                "g funk",
+                "hip hop",
+                "rap"
+            ],
+            "popularity": 95,
+            "uri": "spotify:artist:7dGJo4pcD2V6oG8kP0tJRR"
+        },
+        {
+            "name": "The Chainsmokers",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "tropical house"
+            ],
+            "popularity": 91,
+            "uri": "spotify:artist:69GGBxA162lTqCwzJG5jLp"
+        },
+        {
+            "name": "Machine Gun Kelly",
+            "genres": [
+                "hip hop",
+                "pop rap",
+                "rap"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:6TIYQ3jFPwQSRmorSezPxX"
+        },
+        {
+            "name": "3OH!3",
+            "genres": [
+                "dance pop",
+                "electropowerpop",
+                "pop punk",
+                "pop rap",
+                "post-teen pop"
+            ],
+            "popularity": 66,
+            "uri": "spotify:artist:0FWzNDaEu9jdgcYTbcOa4F"
+        },
+        {
+            "name": "Kesha",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "pop",
+                "pop rap",
+                "post-teen pop",
+                "r&b"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:6LqNN22kT3074XbTVUrhzX"
+        },
+        {
+            "name": "Lady Gaga",
+            "genres": [
+                "dance pop",
+                "pop"
+            ],
+            "popularity": 91,
+            "uri": "spotify:artist:1HY2Jd0NmPuamShAr6KMms"
+        },
+        {
+            "name": "Fall Out Boy",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX"
+        },
+        {
+            "name": "Taylor Swift",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 92,
+            "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+        },
+        {
+            "name": "Nickelback",
+            "genres": [
+                "alternative metal",
+                "canadian rock",
+                "nu metal",
+                "post-grunge"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:6deZN1bslXzeGvOLaLMOIF"
+        },
+        {
+            "name": "Lana Del Rey",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "pop"
+            ],
+            "popularity": 86,
+            "uri": "spotify:artist:00FQb4jTyendYWaN8pK0wa"
+        },
+        {
+            "name": "Katy Perry",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 88,
+            "uri": "spotify:artist:6jJ0s89eD6GaHleKKya26X"
+        },
+        {
+            "name": "Metric",
+            "genres": [
+                "alternative dance",
+                "canadian indie",
+                "canadian pop",
+                "canadian rock",
+                "dance-punk",
+                "electropop",
+                "folk-pop",
+                "garage rock",
+                "indie pop",
+                "indie rock",
+                "indietronica",
+                "metropopolis",
+                "modern rock",
+                "neo-synthpop",
+                "new rave",
+                "shimmer pop"
+            ],
+            "popularity": 64,
+            "uri": "spotify:artist:1rCIEwPp5OnXW0ornlSsRl"
+        },
+        {
+            "name": "Green Day",
+            "genres": [
+                "permanent wave",
+                "pop punk",
+                "punk",
+                "rock"
+            ],
+            "popularity": 83,
+            "uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+        },
+        {
+            "name": "Linkin Park",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "post-grunge",
+                "rap metal"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:6XyY86QOPPrYVGvF9ch6wz"
+        },
+        {
+            "name": "Watsky",
+            "genres": [
+                "abstract hip hop",
+                "comic",
+                "indie pop rap",
+                "pop rap"
+            ],
+            "popularity": 63,
+            "uri": "spotify:artist:3mJ9GlkLzj8Ka7Z7EQaCMi"
+        },
+        {
+            "name": "Mike Posner",
+            "genres": [
+                "dance pop",
+                "pop",
+                "pop rap"
+            ],
+            "popularity": 76,
+            "uri": "spotify:artist:2KsP6tYLJlTBvSUxnwlVWa"
+        },
+        {
+            "name": "Tove Lo",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "metropopolis",
+                "pop",
+                "post-teen pop",
+                "r&b",
+                "swedish electropop",
+                "swedish pop",
+                "swedish synthpop",
+                "tropical house"
+            ],
+            "popularity": 80,
+            "uri": "spotify:artist:4NHQUGzhtTLFvgF5SZesLK"
+        },
+        {
+            "name": "Bebe Rexha",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 89,
+            "uri": "spotify:artist:64M6ah0SkkRsnPGtGiRAbb"
+        },
+        {
+            "name": "The Weeknd",
+            "genres": [
+                "canadian contemporary r&b",
+                "canadian pop",
+                "pop",
+                "rap"
+            ],
+            "popularity": 91,
+            "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+        },
+        {
+            "name": "Train",
+            "genres": [
+                "neo mellow",
+                "pop",
+                "pop rock"
+            ],
+            "popularity": 78,
+            "uri": "spotify:artist:3FUY2gzHeIiaesXtOAdB7A"
+        },
+        {
+            "name": "Demi Lovato",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "popularity": 86,
+            "uri": "spotify:artist:6S2OmqARrzebs0tKUEyXyp"
+        },
+        {
+            "name": "ScottDW",
+            "genres": [],
+            "popularity": 31,
+            "uri": "spotify:artist:50sgxBSvczSUuQeU53NDmu"
+        },
+        {
+            "name": "Zara Larsson",
+            "genres": [
+                "dance pop",
+                "edm",
+                "electropop",
+                "pop",
+                "post-teen pop",
+                "scandipop",
+                "swedish electropop",
+                "swedish pop",
+                "tropical house"
+            ],
+            "popularity": 84,
+            "uri": "spotify:artist:1Xylc3o4UrD53lo9CvFvVg"
+        },
+        {
+            "name": "Camila Cabello",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "r&b"
+            ],
+            "popularity": 87,
+            "uri": "spotify:artist:4nDoRrQiYLoBzwC5BhVJzF"
+        },
+        {
+            "name": "The Dandy Warhols",
+            "genres": [
+                "alternative rock",
+                "britpop",
+                "dance-punk",
+                "garage rock",
+                "indie rock",
+                "modern rock",
+                "rock"
+            ],
+            "popularity": 59,
+            "uri": "spotify:artist:7siPLyFwRFYQkKgWKJ5Sod"
+        },
+        {
+            "name": "Eisley",
+            "genres": [
+                "christian rock",
+                "dreamo",
+                "folk-pop",
+                "indie pop",
+                "piano rock"
+            ],
+            "popularity": 42,
+            "uri": "spotify:artist:2IL35FbYiOta150uSYBCEg"
+        },
+        {
+            "name": "My Chemical Romance",
+            "genres": [
+                "emo",
+                "pop punk"
+            ],
+            "popularity": 79,
+            "uri": "spotify:artist:7FBcuc1gsnv6Y1nwFtNRCb"
+        },
+        {
+            "name": "Imagine Dragons",
+            "genres": [
+                "modern rock",
+                "rock"
+            ],
+            "popularity": 92,
+            "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q"
+        },
+        {
+            "name": "MARINA",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "indie poptimism",
+                "metropopolis",
+                "pop",
+                "post-teen pop",
+                "tropical house",
+                "uk alternative pop"
+            ],
+            "popularity": 78,
+            "uri": "spotify:artist:6CwfuxIqcltXDGjfZsMd9A"
+        },
+        {
+            "name": "Selena Gomez",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 89,
+            "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
+        },
+        {
+            "name": "Owl City",
+            "genres": [
+                "modern rock",
+                "pop",
+                "pop rock",
+                "post-teen pop"
+            ],
+            "popularity": 73,
+            "uri": "spotify:artist:07QEuhtrNmmZ0zEcqE9SF6"
+        },
+        {
+            "name": "Selena Gomez & The Scene",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop",
+                "viral pop"
+            ],
+            "popularity": 70,
+            "uri": "spotify:artist:6dJeKm76NjfXBNTpHmOhfO"
+        },
+        {
+            "name": "Panic! At The Disco",
+            "genres": [
+                "emo",
+                "modern rock",
+                "pop punk"
+            ],
+            "popularity": 90,
+            "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK"
+        },
+        {
+            "name": "Karmin",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "pop",
+                "post-teen pop",
+                "viral pop"
+            ],
+            "popularity": 59,
+            "uri": "spotify:artist:4M0DLz8te9Q1lNIXBBwvfG"
+        },
+        {
+            "name": "Kelsea Ballerini",
+            "genres": [
+                "contemporary country",
+                "indonesian jazz",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 78,
+            "uri": "spotify:artist:3RqBeV12Tt7A8xH3zBDDUF"
+        },
+        {
+            "name": "Adam Lambert",
+            "genres": [
+                "australian pop",
+                "dance pop",
+                "idol",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 67,
+            "uri": "spotify:artist:6prmLEyn4LfHlD9NnXWlf7"
+        },
+        {
+            "name": "The Killers",
+            "genres": [
+                "indie rock",
+                "modern rock",
+                "permanent wave",
+                "rock"
+            ],
+            "popularity": 81,
+            "uri": "spotify:artist:0C0XlULifJtAgn6ZNCW2eu"
+        },
+        {
+            "name": "Good Charlotte",
+            "genres": [
+                "alternative metal",
+                "pop punk",
+                "post-grunge"
+            ],
+            "popularity": 71,
+            "uri": "spotify:artist:5aYyPjAsLj7UzANzdupwnS"
+        },
+        {
+            "name": "Cobra Starship",
+            "genres": [
+                "dance pop",
+                "emo",
+                "neon pop punk",
+                "pop",
+                "pop punk",
+                "pop rap",
+                "post-teen pop"
+            ],
+            "popularity": 61,
+            "uri": "spotify:artist:2aYJ5LAta2ScCdfLhKgZOY"
+        },
+        {
+            "name": "Carolina Liar",
+            "genres": [
+                "modern alternative rock",
+                "neo mellow",
+                "pop rock"
+            ],
+            "popularity": 50,
+            "uri": "spotify:artist:0OuSnRyi1OkLPkR4AqzJwi"
+        },
+        {
+            "name": "Hollywood Undead",
+            "genres": [
+                "alternative metal",
+                "nu metal",
+                "pop punk",
+                "post-grunge",
+                "rap metal",
+                "rap rock",
+                "screamo"
+            ],
+            "popularity": 75,
+            "uri": "spotify:artist:0CEFCo8288kQU7mJi25s6E"
+        },
+        {
+            "name": "The Grammar Club",
+            "genres": [
+                "nerdcore"
+            ],
+            "popularity": 14,
+            "uri": "spotify:artist:2jOeBMyUZcdKfY0VgDrxa7"
+        },
+        {
+            "name": "Miley Cyrus",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 88,
+            "uri": "spotify:artist:5YGY8feqx7naU7z4HrwZM6"
+        },
+        {
+            "name": "La Roux",
+            "genres": [
+                "alternative dance",
+                "dance pop",
+                "electropop",
+                "indietronica",
+                "neo-synthpop",
+                "new rave",
+                "pop"
+            ],
+            "popularity": 63,
+            "uri": "spotify:artist:3K2zB87GZv1krx031en5VA"
+        },
+        {
+            "name": "Twenty One Pilots",
+            "genres": [
+                "pop punk",
+                "rock"
+            ],
+            "popularity": 88,
+            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+        },
+        {
+            "name": "Ava Max",
+            "genres": [
+                "dance pop",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 85,
+            "uri": "spotify:artist:4npEfmQ6YuiwW1GpUmaq3F"
+        },
+        {
+            "name": "Jonathan Coulton",
+            "genres": [
+                "comic",
+                "pop rock"
+            ],
+            "popularity": 50,
+            "uri": "spotify:artist:292sg99iIOc93zcd30r4Oz"
+        },
+        {
+            "name": "Bad Meets Evil",
+            "genres": [
+                "detroit hip hop",
+                "gangster rap",
+                "hip hop",
+                "pop rap",
+                "rap"
+            ],
+            "popularity": 64,
+            "uri": "spotify:artist:77IURH5NC56Jn09QHi76is"
+        },
+        {
+            "name": "Hey Violet",
+            "genres": [
+                "dance pop",
+                "electropop",
+                "indie poptimism",
+                "pixie",
+                "pop",
+                "post-teen pop"
+            ],
+            "popularity": 64,
+            "uri": "spotify:artist:4JNfz6aO9ZFz0gp5GY88am"
+        },
+        {
+            "name": "The All-American Rejects",
+            "genres": [
+                "modern rock",
+                "neo mellow",
+                "pop",
+                "pop punk",
+                "pop rock",
+                "post-grunge"
+            ],
+            "popularity": 72,
+            "uri": "spotify:artist:3vAaWhdBR38Q02ohXqaNHT"
+        }
+    ]
+}

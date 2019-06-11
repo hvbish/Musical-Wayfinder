@@ -1,0 +1,21 @@
+{
+    "display_name": "Wildstorm1",
+    "external_urls": {
+        "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+    },
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+    "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+    "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+    "images": [
+        {
+            "height": null,
+            "url": "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=189494778630205&height=200&width=200&ext=1562809496&hash=AeTb9-GI4ihQvxmP",
+            "width": null
+        }
+    ],
+    "type": "user",
+    "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+}

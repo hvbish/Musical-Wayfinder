@@ -1,0 +1,497 @@
+[
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/63faX4WrZ1V5ozFNWs1K3r"
+        },
+        "href": "https://api.spotify.com/v1/playlists/63faX4WrZ1V5ozFNWs1K3r",
+        "id": "63faX4WrZ1V5ozFNWs1K3r",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/37b3e45e78ede560660d8ebbc7feb6f1133c058ed60e501851398a593f899fc38abac77e109ea166e6e7503b5cfecadee375777521e030f196d92331fd3581b5eb280ad8036ebba6e7be38a05cf1793a",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/37b3e45e78ede560660d8ebbc7feb6f1133c058ed60e501851398a593f899fc38abac77e109ea166e6e7503b5cfecadee375777521e030f196d92331fd3581b5eb280ad8036ebba6e7be38a05cf1793a",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/37b3e45e78ede560660d8ebbc7feb6f1133c058ed60e501851398a593f899fc38abac77e109ea166e6e7503b5cfecadee375777521e030f196d92331fd3581b5eb280ad8036ebba6e7be38a05cf1793a",
+                "width": 60
+            }
+        ],
+        "name": "HomeworkStuff",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTYsYmM5NjUzZjZiZmU2ODNlZjVjMjI1OWM4ZjJiNGM2NTM5ZTY4YWE1OA==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/63faX4WrZ1V5ozFNWs1K3r/tracks",
+            "total": 13
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:63faX4WrZ1V5ozFNWs1K3r"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/6NtYDRJHv7JqK8YZyIvITb"
+        },
+        "href": "https://api.spotify.com/v1/playlists/6NtYDRJHv7JqK8YZyIvITb",
+        "id": "6NtYDRJHv7JqK8YZyIvITb",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/6af5ce94627ad636d5d41b5206d527a13347dac7a286d3d076c91966f748537bacfc39e101b9d08fc422effe173e541bdf8b7af4d6fe2f8e21e92d15e980e3b13f0bf7348ec8835f5150f1547dcb8e41",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/6af5ce94627ad636d5d41b5206d527a13347dac7a286d3d076c91966f748537bacfc39e101b9d08fc422effe173e541bdf8b7af4d6fe2f8e21e92d15e980e3b13f0bf7348ec8835f5150f1547dcb8e41",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/6af5ce94627ad636d5d41b5206d527a13347dac7a286d3d076c91966f748537bacfc39e101b9d08fc422effe173e541bdf8b7af4d6fe2f8e21e92d15e980e3b13f0bf7348ec8835f5150f1547dcb8e41",
+                "width": 60
+            }
+        ],
+        "name": "Current Vibes",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MjMsYjY5MGRmNjA3ZDE4YjQ1YzQ2NTdlNmIzMjJhYjUzM2E3Yjg2MTNiMA==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/6NtYDRJHv7JqK8YZyIvITb/tracks",
+            "total": 11
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:6NtYDRJHv7JqK8YZyIvITb"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/56W1zmDPazWmd6M2NtnUZm"
+        },
+        "href": "https://api.spotify.com/v1/playlists/56W1zmDPazWmd6M2NtnUZm",
+        "id": "56W1zmDPazWmd6M2NtnUZm",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/3efc0f573fec8acaefe7b5cdf7004d03939b0c349da9875d652fae1e5cc6144a91a9b3eeea898473be710159e354ddc4a03c717c4cddae79cfe20774f412ea352157939ee96dd73591efdb99776852a3",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/3efc0f573fec8acaefe7b5cdf7004d03939b0c349da9875d652fae1e5cc6144a91a9b3eeea898473be710159e354ddc4a03c717c4cddae79cfe20774f412ea352157939ee96dd73591efdb99776852a3",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/3efc0f573fec8acaefe7b5cdf7004d03939b0c349da9875d652fae1e5cc6144a91a9b3eeea898473be710159e354ddc4a03c717c4cddae79cfe20774f412ea352157939ee96dd73591efdb99776852a3",
+                "width": 60
+            }
+        ],
+        "name": "MishmashJams",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTQ2LDhmNmE0MzNiOWU2MmRkMmU2NDIzOGRmNDg2OTRjYjk4ODE2Njg5ZDE=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/56W1zmDPazWmd6M2NtnUZm/tracks",
+            "total": 142
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:56W1zmDPazWmd6M2NtnUZm"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/1J0JorKwkouUDcdpAMgn1P"
+        },
+        "href": "https://api.spotify.com/v1/playlists/1J0JorKwkouUDcdpAMgn1P",
+        "id": "1J0JorKwkouUDcdpAMgn1P",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/29eec05d64a1d063a74605d79f0dd8b2beae938c850ca894294c86541caff45eaf439f75a74b30da94d5d973378b563c3299ae8c41200194f7d69d4ae07ebc39f68fe2f19808b6cbfb6e23327457a26d",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/29eec05d64a1d063a74605d79f0dd8b2beae938c850ca894294c86541caff45eaf439f75a74b30da94d5d973378b563c3299ae8c41200194f7d69d4ae07ebc39f68fe2f19808b6cbfb6e23327457a26d",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/29eec05d64a1d063a74605d79f0dd8b2beae938c850ca894294c86541caff45eaf439f75a74b30da94d5d973378b563c3299ae8c41200194f7d69d4ae07ebc39f68fe2f19808b6cbfb6e23327457a26d",
+                "width": 60
+            }
+        ],
+        "name": "2019Jams",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "NjksNDViZjhmN2E0ZTc3Yzg1Zjk0M2M5MTY1YzY4MGJjYzhhZTMzMGU2Ng==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/1J0JorKwkouUDcdpAMgn1P/tracks",
+            "total": 62
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:1J0JorKwkouUDcdpAMgn1P"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/5LQhLzY0bNtsyzjeFKpOhz"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5LQhLzY0bNtsyzjeFKpOhz",
+        "id": "5LQhLzY0bNtsyzjeFKpOhz",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/77b7604fa82ffcda4d4c2924668f8cbddfe707eba01b167833bc5f17e6a8be6604dd50bb05d16e24a9d3fbbc7d3c8783ea76c6e2212c64eee49276d7d8c12f5eab56fd3463682e6362864619aa1938b9",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/77b7604fa82ffcda4d4c2924668f8cbddfe707eba01b167833bc5f17e6a8be6604dd50bb05d16e24a9d3fbbc7d3c8783ea76c6e2212c64eee49276d7d8c12f5eab56fd3463682e6362864619aa1938b9",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/77b7604fa82ffcda4d4c2924668f8cbddfe707eba01b167833bc5f17e6a8be6604dd50bb05d16e24a9d3fbbc7d3c8783ea76c6e2212c64eee49276d7d8c12f5eab56fd3463682e6362864619aa1938b9",
+                "width": 60
+            }
+        ],
+        "name": "2018Jams",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTMyLDUzZmJlNjgzNDM0MGY0ZGNjOGVhZjE4MjA4MTFhN2EwMTFiNTI4MTY=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/5LQhLzY0bNtsyzjeFKpOhz/tracks",
+            "total": 131
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5LQhLzY0bNtsyzjeFKpOhz"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/14oXH1uRbkgR8XEQmD17nE"
+        },
+        "href": "https://api.spotify.com/v1/playlists/14oXH1uRbkgR8XEQmD17nE",
+        "id": "14oXH1uRbkgR8XEQmD17nE",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/18e01f9e092834a494f564fe03b4c629319715b338d195606d0c8e6845b5d32ba192958e9e631ddb81050f4cb667f5419ea1e4d6331da91ce8729c92f88ede05eaeb94faaea95302915553ca0afb44bc",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/18e01f9e092834a494f564fe03b4c629319715b338d195606d0c8e6845b5d32ba192958e9e631ddb81050f4cb667f5419ea1e4d6331da91ce8729c92f88ede05eaeb94faaea95302915553ca0afb44bc",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/18e01f9e092834a494f564fe03b4c629319715b338d195606d0c8e6845b5d32ba192958e9e631ddb81050f4cb667f5419ea1e4d6331da91ce8729c92f88ede05eaeb94faaea95302915553ca0afb44bc",
+                "width": 60
+            }
+        ],
+        "name": "MainCollection",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTQxLDZkNGM3YTY4MDg0ODlhMmI4YTZkOGIyNWIwZDdiYzZlNDQyMDRiNzk=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/14oXH1uRbkgR8XEQmD17nE/tracks",
+            "total": 135
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:14oXH1uRbkgR8XEQmD17nE"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/0rT1oljgR8AEk1fsaVxBA5"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0rT1oljgR8AEk1fsaVxBA5",
+        "id": "0rT1oljgR8AEk1fsaVxBA5",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/04cf767a8745ab656484d6d143ea4984f3b19ad62b2a17c803bbd2ca3bde52043dfc3f6bf09b3a91951c0d40baac8f446366bbbc82c732e375e6c3a9f7eb62e4dcd93921cd7ed88a8fa4d3f5f7e6f49a",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/04cf767a8745ab656484d6d143ea4984f3b19ad62b2a17c803bbd2ca3bde52043dfc3f6bf09b3a91951c0d40baac8f446366bbbc82c732e375e6c3a9f7eb62e4dcd93921cd7ed88a8fa4d3f5f7e6f49a",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/04cf767a8745ab656484d6d143ea4984f3b19ad62b2a17c803bbd2ca3bde52043dfc3f6bf09b3a91951c0d40baac8f446366bbbc82c732e375e6c3a9f7eb62e4dcd93921cd7ed88a8fa4d3f5f7e6f49a",
+                "width": 60
+            }
+        ],
+        "name": "EDMJams",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MjgsZTkxZDM1MzM1YjE3YjRhZjc2ZmQ0YmIzNDZhYmRkNzIyNTlhNjJjNg==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/0rT1oljgR8AEk1fsaVxBA5/tracks",
+            "total": 25
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0rT1oljgR8AEk1fsaVxBA5"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/1SsUqwtrdn2UAU0iuY0kNC"
+        },
+        "href": "https://api.spotify.com/v1/playlists/1SsUqwtrdn2UAU0iuY0kNC",
+        "id": "1SsUqwtrdn2UAU0iuY0kNC",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/06f45e8d77e989904cc888e37b5c5741e527342e41dd5422d56d86074cef318b47eda0dc779a1cd1ed7e14bee9c495ac2955bc7c81498e61a07a719ff1b86a0703c340d187b155111c2ef97829124e40",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/06f45e8d77e989904cc888e37b5c5741e527342e41dd5422d56d86074cef318b47eda0dc779a1cd1ed7e14bee9c495ac2955bc7c81498e61a07a719ff1b86a0703c340d187b155111c2ef97829124e40",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/06f45e8d77e989904cc888e37b5c5741e527342e41dd5422d56d86074cef318b47eda0dc779a1cd1ed7e14bee9c495ac2955bc7c81498e61a07a719ff1b86a0703c340d187b155111c2ef97829124e40",
+                "width": 60
+            }
+        ],
+        "name": "ElectroSwingJams",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MjksZjYwODQ5ZDI4YjExNmZiYjQ4M2VlMTM5ZGRjZTRhYjgyMmFlOTRlNA==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/1SsUqwtrdn2UAU0iuY0kNC/tracks",
+            "total": 22
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:1SsUqwtrdn2UAU0iuY0kNC"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/315XcCtuPihA7BYqU3FLW9"
+        },
+        "href": "https://api.spotify.com/v1/playlists/315XcCtuPihA7BYqU3FLW9",
+        "id": "315XcCtuPihA7BYqU3FLW9",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/1ec831ea31fe477dd6092016c702856b4c81697f437abdde94fe569a8428d1169bcb2bce73626fd28e11abe5828b7cf8601947c39db98c16917ba28fe1d40227cfccd6a4297de6cfd93a4230302069e3",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/1ec831ea31fe477dd6092016c702856b4c81697f437abdde94fe569a8428d1169bcb2bce73626fd28e11abe5828b7cf8601947c39db98c16917ba28fe1d40227cfccd6a4297de6cfd93a4230302069e3",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/1ec831ea31fe477dd6092016c702856b4c81697f437abdde94fe569a8428d1169bcb2bce73626fd28e11abe5828b7cf8601947c39db98c16917ba28fe1d40227cfccd6a4297de6cfd93a4230302069e3",
+                "width": 60
+            }
+        ],
+        "name": "Soundtrack Jams",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTA4LDBlOTNlNjY4MjEwYzk4MGY0YTcxNWU0YzE0MDgwMjdjMjlkNGI2ZTE=",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/315XcCtuPihA7BYqU3FLW9/tracks",
+            "total": 120
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:315XcCtuPihA7BYqU3FLW9"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/6zvBNOAfxeJKdh1zNimrWN"
+        },
+        "href": "https://api.spotify.com/v1/playlists/6zvBNOAfxeJKdh1zNimrWN",
+        "id": "6zvBNOAfxeJKdh1zNimrWN",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/1cac76dac451311df60bc651e7ee78b22a02540c707bff141998267feefe8a03eb4cc6728283518cc1443d15f4c39fafa9eb7dc2e9fb6252739a72f5e42dad30c115c93558b089835ff845028fd1ec27",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/1cac76dac451311df60bc651e7ee78b22a02540c707bff141998267feefe8a03eb4cc6728283518cc1443d15f4c39fafa9eb7dc2e9fb6252739a72f5e42dad30c115c93558b089835ff845028fd1ec27",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/1cac76dac451311df60bc651e7ee78b22a02540c707bff141998267feefe8a03eb4cc6728283518cc1443d15f4c39fafa9eb7dc2e9fb6252739a72f5e42dad30c115c93558b089835ff845028fd1ec27",
+                "width": 60
+            }
+        ],
+        "name": "Drag Queen Music ",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTgsY2IxZGViZTQ3MzRmYTE2MWMwNjk0ZmJkZWVlMTAwNGY0ZjJhMmY0Yg==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/6zvBNOAfxeJKdh1zNimrWN/tracks",
+            "total": 16
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:6zvBNOAfxeJKdh1zNimrWN"
+    },
+    {
+        "collaborative": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/530GLcqxtmOqtoguNXMw4z"
+        },
+        "href": "https://api.spotify.com/v1/playlists/530GLcqxtmOqtoguNXMw4z",
+        "id": "530GLcqxtmOqtoguNXMw4z",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://mosaic.scdn.co/640/544a7c30d555859f8dccbb8b1d40a7c2140ff3325b64ee28b78445dd58288862c7d3b4304e7ac5617d868687c3c7d8dd5dfd9b322370492c9553af0791bb06c07ca08b452c2851eeca7950e3777b39fd",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://mosaic.scdn.co/300/544a7c30d555859f8dccbb8b1d40a7c2140ff3325b64ee28b78445dd58288862c7d3b4304e7ac5617d868687c3c7d8dd5dfd9b322370492c9553af0791bb06c07ca08b452c2851eeca7950e3777b39fd",
+                "width": 300
+            },
+            {
+                "height": 60,
+                "url": "https://mosaic.scdn.co/60/544a7c30d555859f8dccbb8b1d40a7c2140ff3325b64ee28b78445dd58288862c7d3b4304e7ac5617d868687c3c7d8dd5dfd9b322370492c9553af0791bb06c07ca08b452c2851eeca7950e3777b39fd",
+                "width": 60
+            }
+        ],
+        "name": "Japanese Jazz",
+        "owner": {
+            "display_name": "Wildstorm1",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/user/w75akfl4d0mbq5cxmcrzzjs0w"
+            },
+            "href": "https://api.spotify.com/v1/users/w75akfl4d0mbq5cxmcrzzjs0w",
+            "id": "w75akfl4d0mbq5cxmcrzzjs0w",
+            "type": "user",
+            "uri": "spotify:user:w75akfl4d0mbq5cxmcrzzjs0w"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "NDksYTEwMGZjZDZmMGU3NzBmZjQwYTFhOTAxNmJlNGFjYWM4MmQ2NWFiMg==",
+        "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/530GLcqxtmOqtoguNXMw4z/tracks",
+            "total": 17
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:530GLcqxtmOqtoguNXMw4z"
+    }
+]

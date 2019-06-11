@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Burj Khalifa",
+		"height": "350",
+		"windows": 5
+	},
+	{
+		"name": "Shanghai Tower",
+		"height": "263.34",
+		"windows": 20
+	},
+	{
+		"name": "Abraj Al-Bait Clock Tower",
+		"height": "254.04",
+		"windows": 18
+	},
+	{
+		"name": "Ping An Finance Centre",
+		"height": "253.20",
+		"windows": 37
+	},
+	{
+		"name": "Lotte World Tower",
+		"height": "230.16",
+		"windows": 13
+	}
+]

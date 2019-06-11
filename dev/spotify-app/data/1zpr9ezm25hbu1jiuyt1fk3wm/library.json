@@ -1,0 +1,5334 @@
+[
+    {
+        "name": "If You're Over Me",
+        "uri": "spotify:track:01k24g94i1JvkFLQmVEdCd",
+        "date": "2019-05-26T19:42:29Z",
+        "genres": [
+            "dance pop",
+            "gauze pop",
+            "pop",
+            "post-teen pop",
+            "tropical house",
+            "uk pop"
+        ],
+        "artists": [
+            "Years & Years"
+        ],
+        "energy": 0.853,
+        "liveness": 0.062,
+        "speechiness": 0.0904,
+        "acousticness": 0.0615,
+        "instrumentalness": 0.0,
+        "danceability": 0.647,
+        "loudness": -4.516,
+        "valence": 0.618,
+        "tempo": 103.846,
+        "popularity": 74.0
+    },
+    {
+        "name": "Hold You Now (feat. Danielle Haim)",
+        "uri": "spotify:track:15E2P2ToSLNnZvcOEQra6a",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend",
+            "Danielle Haim"
+        ],
+        "energy": 0.457,
+        "liveness": 0.413,
+        "speechiness": 0.0382,
+        "acousticness": 0.0817,
+        "instrumentalness": 0.0,
+        "danceability": 0.284,
+        "loudness": -9.239,
+        "valence": 0.293,
+        "tempo": 86.88,
+        "popularity": 68.0
+    },
+    {
+        "name": "Harmony Hall",
+        "uri": "spotify:track:39exKIvycQDgs4T6uXdyu0",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.76,
+        "liveness": 0.0917,
+        "speechiness": 0.0479,
+        "acousticness": 0.475,
+        "instrumentalness": 0.000129,
+        "danceability": 0.653,
+        "loudness": -6.086,
+        "valence": 0.6,
+        "tempo": 98.008,
+        "popularity": 72.0
+    },
+    {
+        "name": "Bambina",
+        "uri": "spotify:track:528bxUV84T4T8HHBFSpcaV",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.538,
+        "liveness": 0.203,
+        "speechiness": 0.124,
+        "acousticness": 0.266,
+        "instrumentalness": 0.000187,
+        "danceability": 0.511,
+        "loudness": -6.185,
+        "valence": 0.425,
+        "tempo": 148.648,
+        "popularity": 68.0
+    },
+    {
+        "name": "This Life",
+        "uri": "spotify:track:4dRqYKhLVujxiBXcq50YzG",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.712,
+        "liveness": 0.0561,
+        "speechiness": 0.1,
+        "acousticness": 0.228,
+        "instrumentalness": 3.39e-06,
+        "danceability": 0.62,
+        "loudness": -6.434,
+        "valence": 0.83,
+        "tempo": 170.234,
+        "popularity": 73.0
+    },
+    {
+        "name": "Big Blue",
+        "uri": "spotify:track:3VORkvig6GJheAu4x3I3oC",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.306,
+        "liveness": 0.0992,
+        "speechiness": 0.0631,
+        "acousticness": 0.818,
+        "instrumentalness": 0.00798,
+        "danceability": 0.691,
+        "loudness": -9.65,
+        "valence": 0.413,
+        "tempo": 149.965,
+        "popularity": 67.0
+    },
+    {
+        "name": "How Long?",
+        "uri": "spotify:track:5jd6XPyXSY4jQVG3SlXP1b",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.39,
+        "liveness": 0.127,
+        "speechiness": 0.0392,
+        "acousticness": 0.502,
+        "instrumentalness": 4.81e-05,
+        "danceability": 0.864,
+        "loudness": -7.438,
+        "valence": 0.811,
+        "tempo": 103.948,
+        "popularity": 68.0
+    },
+    {
+        "name": "Unbearably White",
+        "uri": "spotify:track:2FjoCQaBoiEKs3FCvD0HkR",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.422,
+        "liveness": 0.0608,
+        "speechiness": 0.0571,
+        "acousticness": 0.219,
+        "instrumentalness": 0.0198,
+        "danceability": 0.531,
+        "loudness": -7.081,
+        "valence": 0.579,
+        "tempo": 188.056,
+        "popularity": 67.0
+    },
+    {
+        "name": "Rich Man",
+        "uri": "spotify:track:2WaaqcSdsLliuWTnmY4rLC",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.397,
+        "liveness": 0.129,
+        "speechiness": 0.0675,
+        "acousticness": 0.795,
+        "instrumentalness": 0.00138,
+        "danceability": 0.499,
+        "loudness": -9.957,
+        "valence": 0.187,
+        "tempo": 176.12,
+        "popularity": 66.0
+    },
+    {
+        "name": "Married in a Gold Rush (feat. Danielle Haim)",
+        "uri": "spotify:track:4Ww4jdVXTyvSnryNTtReRJ",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend",
+            "Danielle Haim"
+        ],
+        "energy": 0.439,
+        "liveness": 0.139,
+        "speechiness": 0.0942,
+        "acousticness": 0.829,
+        "instrumentalness": 0.000213,
+        "danceability": 0.733,
+        "loudness": -8.109,
+        "valence": 0.686,
+        "tempo": 104.882,
+        "popularity": 66.0
+    },
+    {
+        "name": "My Mistake",
+        "uri": "spotify:track:2G5ZpNvgSOOcBCpLcOfvJy",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.326,
+        "liveness": 0.366,
+        "speechiness": 0.0652,
+        "acousticness": 0.847,
+        "instrumentalness": 0.0279,
+        "danceability": 0.522,
+        "loudness": -11.17,
+        "valence": 0.108,
+        "tempo": 79.79,
+        "popularity": 64.0
+    },
+    {
+        "name": "Sympathy",
+        "uri": "spotify:track:2YegRTu9IjiUg4VWfnXyM3",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.777,
+        "liveness": 0.193,
+        "speechiness": 0.0568,
+        "acousticness": 0.0199,
+        "instrumentalness": 0.0023,
+        "danceability": 0.708,
+        "loudness": -5.507,
+        "valence": 0.661,
+        "tempo": 119.968,
+        "popularity": 67.0
+    },
+    {
+        "name": "Sunflower (feat. Steve Lacy)",
+        "uri": "spotify:track:53KFMdxzi8IJDewiql1Qo3",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "alternative r&b"
+        ],
+        "artists": [
+            "Vampire Weekend",
+            "Steve Lacy"
+        ],
+        "energy": 0.576,
+        "liveness": 0.141,
+        "speechiness": 0.0567,
+        "acousticness": 0.406,
+        "instrumentalness": 0.00824,
+        "danceability": 0.863,
+        "loudness": -5.691,
+        "valence": 0.932,
+        "tempo": 100.03,
+        "popularity": 68.0
+    },
+    {
+        "name": "Flower Moon (feat. Steve Lacy)",
+        "uri": "spotify:track:3ujuDsiyBLAXAB6dtNwpGu",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "alternative r&b"
+        ],
+        "artists": [
+            "Vampire Weekend",
+            "Steve Lacy"
+        ],
+        "energy": 0.759,
+        "liveness": 0.15,
+        "speechiness": 0.0614,
+        "acousticness": 0.529,
+        "instrumentalness": 0.00068,
+        "danceability": 0.726,
+        "loudness": -7.151,
+        "valence": 0.393,
+        "tempo": 110.05,
+        "popularity": 66.0
+    },
+    {
+        "name": "2021",
+        "uri": "spotify:track:6UryEVkqPDLliZOG4UmFi9",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.284,
+        "liveness": 0.0987,
+        "speechiness": 0.0427,
+        "acousticness": 0.867,
+        "instrumentalness": 0.00105,
+        "danceability": 0.815,
+        "loudness": -7.057,
+        "valence": 0.449,
+        "tempo": 73.785,
+        "popularity": 64.0
+    },
+    {
+        "name": "We Belong Together (feat. Danielle Haim)",
+        "uri": "spotify:track:1MkiAWVcbxZ7NzMuAuWqJS",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend",
+            "Danielle Haim"
+        ],
+        "energy": 0.568,
+        "liveness": 0.263,
+        "speechiness": 0.0249,
+        "acousticness": 0.429,
+        "instrumentalness": 0.0,
+        "danceability": 0.679,
+        "loudness": -6.452,
+        "valence": 0.601,
+        "tempo": 82.998,
+        "popularity": 63.0
+    },
+    {
+        "name": "Stranger",
+        "uri": "spotify:track:5c2fEICoqVYuTjAGEieB2F",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.586,
+        "liveness": 0.128,
+        "speechiness": 0.0781,
+        "acousticness": 0.431,
+        "instrumentalness": 0.000128,
+        "danceability": 0.487,
+        "loudness": -6.365,
+        "valence": 0.525,
+        "tempo": 81.258,
+        "popularity": 63.0
+    },
+    {
+        "name": "Spring Snow",
+        "uri": "spotify:track:1ze0Z3ZnIDITxj13NRok4z",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.579,
+        "liveness": 0.153,
+        "speechiness": 0.045,
+        "acousticness": 0.754,
+        "instrumentalness": 0.219,
+        "danceability": 0.815,
+        "loudness": -9.742,
+        "valence": 0.607,
+        "tempo": 118.045,
+        "popularity": 62.0
+    },
+    {
+        "name": "Jerusalem, New York, Berlin",
+        "uri": "spotify:track:7lQgoAWAFAo0XW7dW2TL1y",
+        "date": "2019-05-23T19:07:43Z",
+        "genres": [
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock"
+        ],
+        "artists": [
+            "Vampire Weekend"
+        ],
+        "energy": 0.199,
+        "liveness": 0.229,
+        "speechiness": 0.0574,
+        "acousticness": 0.917,
+        "instrumentalness": 0.0,
+        "danceability": 0.562,
+        "loudness": -10.4,
+        "valence": 0.4,
+        "tempo": 134.039,
+        "popularity": 64.0
+    },
+    {
+        "name": "Pray You Catch Me",
+        "uri": "spotify:track:7rLDARtJALM7QdiJDMXW7m",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.215,
+        "liveness": 0.401,
+        "speechiness": 0.037,
+        "acousticness": 0.632,
+        "instrumentalness": 0.0717,
+        "danceability": 0.25,
+        "loudness": -13.676,
+        "valence": 0.0746,
+        "tempo": 174.824,
+        "popularity": 70.0
+    },
+    {
+        "name": "Hold Up",
+        "uri": "spotify:track:0rzNMzZsubFcXSEh7dnem7",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.397,
+        "liveness": 0.521,
+        "speechiness": 0.405,
+        "acousticness": 0.745,
+        "instrumentalness": 0.0,
+        "danceability": 0.524,
+        "loudness": -11.936,
+        "valence": 0.552,
+        "tempo": 80.744,
+        "popularity": 78.0
+    },
+    {
+        "name": "Don't Hurt Yourself (feat. Jack White)",
+        "uri": "spotify:track:78eouBKVRyhbSzJwChr6QM",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b",
+            "alternative rock",
+            "blues-rock",
+            "garage rock",
+            "indie rock",
+            "modern blues rock",
+            "modern rock",
+            "punk blues",
+            "rock"
+        ],
+        "artists": [
+            "Beyonc\u00e9",
+            "Jack White"
+        ],
+        "energy": 0.686,
+        "liveness": 0.184,
+        "speechiness": 0.21,
+        "acousticness": 0.0105,
+        "instrumentalness": 1.36e-06,
+        "danceability": 0.614,
+        "loudness": -6.483,
+        "valence": 0.645,
+        "tempo": 136.537,
+        "popularity": 72.0
+    },
+    {
+        "name": "Sorry",
+        "uri": "spotify:track:0lnIJmgcUpEpe4AZACjayW",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.598,
+        "liveness": 0.253,
+        "speechiness": 0.0535,
+        "acousticness": 0.00175,
+        "instrumentalness": 4.44e-06,
+        "danceability": 0.775,
+        "loudness": -7.274,
+        "valence": 0.356,
+        "tempo": 129.988,
+        "popularity": 77.0
+    },
+    {
+        "name": "6 Inch (feat. The Weeknd)",
+        "uri": "spotify:track:0pxNyJJiL2zZZ5GgJ4JhsQ",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b",
+            "canadian contemporary r&b",
+            "canadian pop",
+            "pop",
+            "rap"
+        ],
+        "artists": [
+            "Beyonc\u00e9",
+            "The Weeknd"
+        ],
+        "energy": 0.637,
+        "liveness": 0.11,
+        "speechiness": 0.0632,
+        "acousticness": 0.0433,
+        "instrumentalness": 3.89e-06,
+        "danceability": 0.516,
+        "loudness": -8.832,
+        "valence": 0.324,
+        "tempo": 138.011,
+        "popularity": 73.0
+    },
+    {
+        "name": "Daddy Lessons",
+        "uri": "spotify:track:71OvX5NNLrmz7rpq1ANTQn",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.503,
+        "liveness": 0.349,
+        "speechiness": 0.216,
+        "acousticness": 0.273,
+        "instrumentalness": 0.0,
+        "danceability": 0.643,
+        "loudness": -8.37,
+        "valence": 0.598,
+        "tempo": 90.886,
+        "popularity": 73.0
+    },
+    {
+        "name": "Love Drought",
+        "uri": "spotify:track:2RQAG0wQt35UzAPEyVJFWN",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.535,
+        "liveness": 0.126,
+        "speechiness": 0.0426,
+        "acousticness": 0.0209,
+        "instrumentalness": 0.64,
+        "danceability": 0.455,
+        "loudness": -10.602,
+        "valence": 0.216,
+        "tempo": 157.01,
+        "popularity": 70.0
+    },
+    {
+        "name": "Sandcastles",
+        "uri": "spotify:track:2FNPJWVdGxYhWaotd6rULS",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.357,
+        "liveness": 0.19,
+        "speechiness": 0.0348,
+        "acousticness": 0.866,
+        "instrumentalness": 1.76e-05,
+        "danceability": 0.33,
+        "loudness": -10.171,
+        "valence": 0.101,
+        "tempo": 84.119,
+        "popularity": 70.0
+    },
+    {
+        "name": "Forward (feat. James Blake)",
+        "uri": "spotify:track:2bOWJIYSbhwg2NMQq1QMYH",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b",
+            "indie r&b",
+            "uk alternative pop"
+        ],
+        "artists": [
+            "Beyonc\u00e9",
+            "James Blake"
+        ],
+        "energy": 0.133,
+        "liveness": 0.107,
+        "speechiness": 0.0474,
+        "acousticness": 0.947,
+        "instrumentalness": 0.0591,
+        "danceability": 0.387,
+        "loudness": -15.633,
+        "valence": 0.0498,
+        "tempo": 124.397,
+        "popularity": 66.0
+    },
+    {
+        "name": "Freedom (feat. Kendrick Lamar)",
+        "uri": "spotify:track:7aBxcRw77817BrkdPChAGY",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b",
+            "conscious hip hop",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "west coast rap"
+        ],
+        "artists": [
+            "Beyonc\u00e9",
+            "Kendrick Lamar"
+        ],
+        "energy": 0.803,
+        "liveness": 0.683,
+        "speechiness": 0.305,
+        "acousticness": 0.0376,
+        "instrumentalness": 0.0,
+        "danceability": 0.437,
+        "loudness": -6.412,
+        "valence": 0.406,
+        "tempo": 84.378,
+        "popularity": 71.0
+    },
+    {
+        "name": "All Night",
+        "uri": "spotify:track:7oAuqs6akGnPU3Tb00ZmyM",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.573,
+        "liveness": 0.0933,
+        "speechiness": 0.085,
+        "acousticness": 0.392,
+        "instrumentalness": 2.16e-05,
+        "danceability": 0.574,
+        "loudness": -7.079,
+        "valence": 0.626,
+        "tempo": 136.304,
+        "popularity": 72.0
+    },
+    {
+        "name": "Formation",
+        "uri": "spotify:track:6g0Orsxv6glTJCt4cHsRsQ",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.621,
+        "liveness": 0.196,
+        "speechiness": 0.237,
+        "acousticness": 0.00532,
+        "instrumentalness": 0.0,
+        "danceability": 0.896,
+        "loudness": -6.857,
+        "valence": 0.818,
+        "tempo": 121.966,
+        "popularity": 78.0
+    },
+    {
+        "name": "Sorry - Original Demo",
+        "uri": "spotify:track:6eR1N0EBHiDkGDzegX99d3",
+        "date": "2019-04-27T06:38:30Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.26,
+        "liveness": 0.128,
+        "speechiness": 0.125,
+        "acousticness": 0.942,
+        "instrumentalness": 5.09e-06,
+        "danceability": 0.546,
+        "loudness": -12.573,
+        "valence": 0.421,
+        "tempo": 155.033,
+        "popularity": 69.0
+    },
+    {
+        "name": "Welcome - Homecoming Live",
+        "uri": "spotify:track:7Hz87DF2VCuSVS2iO1z0Nr",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.831,
+        "liveness": 0.7,
+        "speechiness": 0.375,
+        "acousticness": 0.144,
+        "instrumentalness": 0.576,
+        "danceability": 0.6,
+        "loudness": -12.294,
+        "valence": 0.123,
+        "tempo": 170.104,
+        "popularity": 66.0
+    },
+    {
+        "name": "Crazy In Love - Homecoming Live",
+        "uri": "spotify:track:10OaEuICuFoKLq48NoMblA",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.769,
+        "liveness": 0.327,
+        "speechiness": 0.158,
+        "acousticness": 0.000263,
+        "instrumentalness": 0.000458,
+        "danceability": 0.401,
+        "loudness": -8.319,
+        "valence": 0.402,
+        "tempo": 99.226,
+        "popularity": 71.0
+    },
+    {
+        "name": "Freedom - Homecoming Live",
+        "uri": "spotify:track:2NTp1e0sRMHiw368rfCGvE",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.813,
+        "liveness": 0.406,
+        "speechiness": 0.114,
+        "acousticness": 0.00174,
+        "instrumentalness": 1.09e-05,
+        "danceability": 0.485,
+        "loudness": -7.528,
+        "valence": 0.403,
+        "tempo": 85.16,
+        "popularity": 70.0
+    },
+    {
+        "name": "Lift Ev'ry Voice and Sing - Homecoming Live",
+        "uri": "spotify:track:0QRxJvOohS8yiGC1n98uFM",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.409,
+        "liveness": 0.683,
+        "speechiness": 0.0417,
+        "acousticness": 0.124,
+        "instrumentalness": 1.82e-06,
+        "danceability": 0.127,
+        "loudness": -13.089,
+        "valence": 0.0782,
+        "tempo": 79.904,
+        "popularity": 67.0
+    },
+    {
+        "name": "Formation - Homecoming Live",
+        "uri": "spotify:track:6oHexA34fw1WfswjIEA1hd",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.871,
+        "liveness": 0.956,
+        "speechiness": 0.433,
+        "acousticness": 0.0237,
+        "instrumentalness": 0.0,
+        "danceability": 0.677,
+        "loudness": -9.134,
+        "valence": 0.419,
+        "tempo": 121.904,
+        "popularity": 71.0
+    },
+    {
+        "name": "So Much Damn Swag - Interlude - Homecoming Live",
+        "uri": "spotify:track:6pLlQE4Ypn9zQBCe16UskF",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.336,
+        "liveness": 0.891,
+        "speechiness": 0.892,
+        "acousticness": 0.994,
+        "instrumentalness": 0.011,
+        "danceability": 0.512,
+        "loudness": -27.432,
+        "valence": 0.543,
+        "tempo": 69.318,
+        "popularity": 64.0
+    },
+    {
+        "name": "Sorry - Homecoming Live",
+        "uri": "spotify:track:1GWk2MHsycvbyOFaWFiOMk",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.729,
+        "liveness": 0.966,
+        "speechiness": 0.481,
+        "acousticness": 0.00981,
+        "instrumentalness": 0.0,
+        "danceability": 0.418,
+        "loudness": -11.479,
+        "valence": 0.193,
+        "tempo": 129.254,
+        "popularity": 69.0
+    },
+    {
+        "name": "Kitty Kat - Homecoming Live",
+        "uri": "spotify:track:6YyMbzAUPJLaGcldbEKmXB",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.551,
+        "liveness": 0.731,
+        "speechiness": 0.465,
+        "acousticness": 0.257,
+        "instrumentalness": 1.14e-06,
+        "danceability": 0.456,
+        "loudness": -15.779,
+        "valence": 0.489,
+        "tempo": 123.718,
+        "popularity": 65.0
+    },
+    {
+        "name": "Bow Down - Homecoming Live",
+        "uri": "spotify:track:5yZEkyUXbyFCHzrQTH5Ssw",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.866,
+        "liveness": 0.432,
+        "speechiness": 0.128,
+        "acousticness": 0.0332,
+        "instrumentalness": 0.0,
+        "danceability": 0.389,
+        "loudness": -7.544,
+        "valence": 0.377,
+        "tempo": 141.851,
+        "popularity": 69.0
+    },
+    {
+        "name": "I Been On - Homecoming Live",
+        "uri": "spotify:track:76raxY6tmyR6mi9xcWCFk7",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.676,
+        "liveness": 0.721,
+        "speechiness": 0.0762,
+        "acousticness": 0.018,
+        "instrumentalness": 0.0474,
+        "danceability": 0.555,
+        "loudness": -11.151,
+        "valence": 0.14,
+        "tempo": 95.174,
+        "popularity": 68.0
+    },
+    {
+        "name": "Drunk in Love - Homecoming Live",
+        "uri": "spotify:track:4LzdggfUuKAK5zypoKnueZ",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.836,
+        "liveness": 0.33,
+        "speechiness": 0.282,
+        "acousticness": 0.0197,
+        "instrumentalness": 7.38e-06,
+        "danceability": 0.341,
+        "loudness": -8.933,
+        "valence": 0.572,
+        "tempo": 141.236,
+        "popularity": 69.0
+    },
+    {
+        "name": "Diva - Homecoming Live",
+        "uri": "spotify:track:7eOG24Nx7j4nI3f9nOZTOi",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.845,
+        "liveness": 0.387,
+        "speechiness": 0.164,
+        "acousticness": 0.0276,
+        "instrumentalness": 0.00029,
+        "danceability": 0.574,
+        "loudness": -7.406,
+        "valence": 0.486,
+        "tempo": 145.921,
+        "popularity": 71.0
+    },
+    {
+        "name": "Flawless / Feeling Myself - Homecoming Live",
+        "uri": "spotify:track:6ma6Oe9PrzJsckdCebJoFM",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.764,
+        "liveness": 0.776,
+        "speechiness": 0.215,
+        "acousticness": 0.079,
+        "instrumentalness": 2.1e-06,
+        "danceability": 0.587,
+        "loudness": -9.322,
+        "valence": 0.446,
+        "tempo": 137.013,
+        "popularity": 68.0
+    },
+    {
+        "name": "Top Off - Homecoming Live",
+        "uri": "spotify:track:6GuC3CHgZ9ieTQ97kanZdO",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.692,
+        "liveness": 0.69,
+        "speechiness": 0.223,
+        "acousticness": 0.0298,
+        "instrumentalness": 0.0,
+        "danceability": 0.598,
+        "loudness": -9.48,
+        "valence": 0.537,
+        "tempo": 129.819,
+        "popularity": 67.0
+    },
+    {
+        "name": "7/11 - Homecoming Live",
+        "uri": "spotify:track:09B7V52vjEWVsSr5f1OfoL",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.732,
+        "liveness": 0.969,
+        "speechiness": 0.18,
+        "acousticness": 0.0158,
+        "instrumentalness": 0.0,
+        "danceability": 0.587,
+        "loudness": -9.208,
+        "valence": 0.383,
+        "tempo": 136.084,
+        "popularity": 67.0
+    },
+    {
+        "name": "Bug A Boo Roll Call - Interlude - Homecoming Live",
+        "uri": "spotify:track:4SOMdd14MtsvtfzsYtmqcR",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.255,
+        "liveness": 0.0747,
+        "speechiness": 0.596,
+        "acousticness": 0.133,
+        "instrumentalness": 1.75e-05,
+        "danceability": 0.726,
+        "loudness": -18.138,
+        "valence": 0.445,
+        "tempo": 90.056,
+        "popularity": 62.0
+    },
+    {
+        "name": "Party - Homecoming Live",
+        "uri": "spotify:track:3oDyaLtPpORasVR7atUHIa",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.618,
+        "liveness": 0.428,
+        "speechiness": 0.339,
+        "acousticness": 0.0138,
+        "instrumentalness": 0.147,
+        "danceability": 0.581,
+        "loudness": -11.109,
+        "valence": 0.385,
+        "tempo": 149.832,
+        "popularity": 66.0
+    },
+    {
+        "name": "Don't Hurt Yourself - Homecoming Live",
+        "uri": "spotify:track:2NbffhNltorifsuY5doB1l",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.808,
+        "liveness": 0.537,
+        "speechiness": 0.142,
+        "acousticness": 0.000951,
+        "instrumentalness": 1.04e-05,
+        "danceability": 0.304,
+        "loudness": -8.711,
+        "valence": 0.106,
+        "tempo": 137.947,
+        "popularity": 66.0
+    },
+    {
+        "name": "I Care - Homecoming Live",
+        "uri": "spotify:track:62vR9bMq3tP0lfyrMtpujE",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.821,
+        "liveness": 0.721,
+        "speechiness": 0.145,
+        "acousticness": 0.0143,
+        "instrumentalness": 0.0,
+        "danceability": 0.418,
+        "loudness": -6.96,
+        "valence": 0.184,
+        "tempo": 88.31,
+        "popularity": 66.0
+    },
+    {
+        "name": "Partition - Homecoming Live",
+        "uri": "spotify:track:1XTQkWboabpxxyR7iMKsEJ",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.487,
+        "liveness": 0.698,
+        "speechiness": 0.0461,
+        "acousticness": 0.0101,
+        "instrumentalness": 0.0039,
+        "danceability": 0.452,
+        "loudness": -11.767,
+        "valence": 0.103,
+        "tempo": 123.43,
+        "popularity": 66.0
+    },
+    {
+        "name": "Yonc\u00e9 - Homecoming Live",
+        "uri": "spotify:track:6UjGaeKbCidE98bpLgwIym",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.628,
+        "liveness": 0.31,
+        "speechiness": 0.454,
+        "acousticness": 0.0649,
+        "instrumentalness": 0.0,
+        "danceability": 0.685,
+        "loudness": -12.981,
+        "valence": 0.409,
+        "tempo": 88.007,
+        "popularity": 68.0
+    },
+    {
+        "name": "Mi Gente - Homecoming Live",
+        "uri": "spotify:track:2iGIBnofyVatf7cjtyIGlI",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b",
+            "latin",
+            "pop",
+            "reggaeton"
+        ],
+        "artists": [
+            "Beyonc\u00e9",
+            "J Balvin"
+        ],
+        "energy": 0.741,
+        "liveness": 0.426,
+        "speechiness": 0.0553,
+        "acousticness": 0.00232,
+        "instrumentalness": 1.48e-06,
+        "danceability": 0.667,
+        "loudness": -10.832,
+        "valence": 0.638,
+        "tempo": 104.848,
+        "popularity": 69.0
+    },
+    {
+        "name": "Baby Boy - Homecoming Live",
+        "uri": "spotify:track:06iMNM7Q9kX93yBKXb7K8H",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.817,
+        "liveness": 0.467,
+        "speechiness": 0.102,
+        "acousticness": 0.00646,
+        "instrumentalness": 0.0,
+        "danceability": 0.702,
+        "loudness": -8.644,
+        "valence": 0.694,
+        "tempo": 100.003,
+        "popularity": 68.0
+    },
+    {
+        "name": "You Don't Love Me (No, No, No) - Homecoming Live",
+        "uri": "spotify:track:6u0WV2PHrzRjLO8BtRpme7",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.485,
+        "liveness": 0.647,
+        "speechiness": 0.0299,
+        "acousticness": 0.000688,
+        "instrumentalness": 0.0,
+        "danceability": 0.496,
+        "loudness": -9.339,
+        "valence": 0.555,
+        "tempo": 80.108,
+        "popularity": 66.0
+    },
+    {
+        "name": "Hold Up - Homecoming Live",
+        "uri": "spotify:track:7oGFmPGaF5txE4cjL4HyR4",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.636,
+        "liveness": 0.672,
+        "speechiness": 0.504,
+        "acousticness": 0.149,
+        "instrumentalness": 1.06e-06,
+        "danceability": 0.519,
+        "loudness": -11.539,
+        "valence": 0.922,
+        "tempo": 81.167,
+        "popularity": 67.0
+    },
+    {
+        "name": "Countdown - Homecoming Live",
+        "uri": "spotify:track:2k0mXTwotQpZKIOIhGwekv",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.805,
+        "liveness": 0.557,
+        "speechiness": 0.293,
+        "acousticness": 0.00413,
+        "instrumentalness": 0.0,
+        "danceability": 0.57,
+        "loudness": -9.217,
+        "valence": 0.443,
+        "tempo": 167.334,
+        "popularity": 68.0
+    },
+    {
+        "name": "Check On It - Homecoming Live",
+        "uri": "spotify:track:632ikkYPSHSHA5udZeuKvk",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.884,
+        "liveness": 0.943,
+        "speechiness": 0.369,
+        "acousticness": 0.00294,
+        "instrumentalness": 0.0,
+        "danceability": 0.519,
+        "loudness": -8.077,
+        "valence": 0.693,
+        "tempo": 167.345,
+        "popularity": 67.0
+    },
+    {
+        "name": "Deja Vu (feat. Jay-Z) - Homecoming Live",
+        "uri": "spotify:track:7Id9WVdUZXIK1jchXxvRH3",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b",
+            "east coast hip hop",
+            "gangster rap",
+            "hip hop",
+            "pop rap",
+            "rap"
+        ],
+        "artists": [
+            "Beyonc\u00e9",
+            "JAY Z"
+        ],
+        "energy": 0.684,
+        "liveness": 0.7,
+        "speechiness": 0.141,
+        "acousticness": 0.00534,
+        "instrumentalness": 2.66e-06,
+        "danceability": 0.771,
+        "loudness": -8.742,
+        "valence": 0.154,
+        "tempo": 105.968,
+        "popularity": 67.0
+    },
+    {
+        "name": "The Bzzzz Drumline - Interlude - Homecoming Live",
+        "uri": "spotify:track:5IIK4FDTsmQwkNqVuKJgi7",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.84,
+        "liveness": 0.373,
+        "speechiness": 0.309,
+        "acousticness": 0.0338,
+        "instrumentalness": 0.0648,
+        "danceability": 0.555,
+        "loudness": -11.97,
+        "valence": 0.238,
+        "tempo": 134.521,
+        "popularity": 62.0
+    },
+    {
+        "name": "Run the World (Girls) - Homecoming Live",
+        "uri": "spotify:track:6Ssx5QXWAsjruGKCQwf9Jp",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.891,
+        "liveness": 0.778,
+        "speechiness": 0.181,
+        "acousticness": 0.00271,
+        "instrumentalness": 0.000153,
+        "danceability": 0.663,
+        "loudness": -8.775,
+        "valence": 0.483,
+        "tempo": 126.546,
+        "popularity": 66.0
+    },
+    {
+        "name": "Lose My Breath (feat. Kelly Rowland & Michelle Williams) - Homecoming Live",
+        "uri": "spotify:track:716IzgeD9yjfCiZuG9aG4i",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b",
+            "atl hip hop",
+            "dance pop",
+            "deep pop r&b",
+            "hip pop",
+            "neo soul",
+            "pop",
+            "pop rap",
+            "post-teen pop",
+            "r&b",
+            "urban contemporary",
+            "gospel r&b",
+            "hip pop",
+            "r&b",
+            "urban contemporary"
+        ],
+        "artists": [
+            "Beyonc\u00e9",
+            "Kelly Rowland",
+            "Michelle Williams"
+        ],
+        "energy": 0.892,
+        "liveness": 0.575,
+        "speechiness": 0.207,
+        "acousticness": 0.0351,
+        "instrumentalness": 0.000212,
+        "danceability": 0.721,
+        "loudness": -8.606,
+        "valence": 0.416,
+        "tempo": 118.982,
+        "popularity": 65.0
+    },
+    {
+        "name": "Say My Name (feat. Kelly Rowland & Michelle Williams) - Homecoming Live",
+        "uri": "spotify:track:1q0xjWLQOnAbfQa3XzhyYc",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b",
+            "atl hip hop",
+            "dance pop",
+            "deep pop r&b",
+            "hip pop",
+            "neo soul",
+            "pop",
+            "pop rap",
+            "post-teen pop",
+            "r&b",
+            "urban contemporary",
+            "gospel r&b",
+            "hip pop",
+            "r&b",
+            "urban contemporary"
+        ],
+        "artists": [
+            "Beyonc\u00e9",
+            "Kelly Rowland",
+            "Michelle Williams"
+        ],
+        "energy": 0.666,
+        "liveness": 0.503,
+        "speechiness": 0.11,
+        "acousticness": 0.0285,
+        "instrumentalness": 0.0,
+        "danceability": 0.492,
+        "loudness": -7.338,
+        "valence": 0.304,
+        "tempo": 138.668,
+        "popularity": 66.0
+    },
+    {
+        "name": "Soldier (feat. Kelly Rowland & Michelle Williams) - Homecoming Live",
+        "uri": "spotify:track:2PEtWLQmzJuGzQFkkZIdP3",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b",
+            "atl hip hop",
+            "dance pop",
+            "deep pop r&b",
+            "hip pop",
+            "neo soul",
+            "pop",
+            "pop rap",
+            "post-teen pop",
+            "r&b",
+            "urban contemporary",
+            "gospel r&b",
+            "hip pop",
+            "r&b",
+            "urban contemporary"
+        ],
+        "artists": [
+            "Beyonc\u00e9",
+            "Kelly Rowland",
+            "Michelle Williams"
+        ],
+        "energy": 0.82,
+        "liveness": 0.846,
+        "speechiness": 0.531,
+        "acousticness": 0.013,
+        "instrumentalness": 0.0,
+        "danceability": 0.493,
+        "loudness": -8.333,
+        "valence": 0.47,
+        "tempo": 155.232,
+        "popularity": 65.0
+    },
+    {
+        "name": "Get Me Bodied - Homecoming Live",
+        "uri": "spotify:track:7Bd6JQ2Evmeuw4cPYUtcEz",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.935,
+        "liveness": 0.379,
+        "speechiness": 0.344,
+        "acousticness": 0.011,
+        "instrumentalness": 0.0,
+        "danceability": 0.822,
+        "loudness": -7.741,
+        "valence": 0.396,
+        "tempo": 97.02,
+        "popularity": 65.0
+    },
+    {
+        "name": "Single Ladies (Put a Ring on It) - Homecoming Live",
+        "uri": "spotify:track:071lw34NhXIV26mskQZ4MB",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.93,
+        "liveness": 0.956,
+        "speechiness": 0.168,
+        "acousticness": 0.00563,
+        "instrumentalness": 0.0,
+        "danceability": 0.639,
+        "loudness": -6.626,
+        "valence": 0.573,
+        "tempo": 96.944,
+        "popularity": 65.0
+    },
+    {
+        "name": "Lift Ev'ry Voice and Sing (feat. Blue Ivy) - Blue's Version - Homecoming Live",
+        "uri": "spotify:track:7uro2suZC8IiPIcTSiqhRQ",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9",
+            "Blue Ivy"
+        ],
+        "energy": 0.425,
+        "liveness": 0.697,
+        "speechiness": 0.943,
+        "acousticness": 0.963,
+        "instrumentalness": 7.76e-06,
+        "danceability": 0.593,
+        "loudness": -20.286,
+        "valence": 0.439,
+        "tempo": 133.506,
+        "popularity": 58.0
+    },
+    {
+        "name": "Love On Top - Homecoming Live",
+        "uri": "spotify:track:7idYtPogV73zodBoWqvxkf",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.855,
+        "liveness": 0.897,
+        "speechiness": 0.627,
+        "acousticness": 0.0515,
+        "instrumentalness": 0.0,
+        "danceability": 0.317,
+        "loudness": -8.415,
+        "valence": 0.184,
+        "tempo": 175.724,
+        "popularity": 63.0
+    },
+    {
+        "name": "Shining (Thank You) - Homecoming Live",
+        "uri": "spotify:track:74ADo1aVXYrzDDwwNcENns",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.928,
+        "liveness": 0.941,
+        "speechiness": 0.206,
+        "acousticness": 0.00285,
+        "instrumentalness": 0.00036,
+        "danceability": 0.414,
+        "loudness": -9.326,
+        "valence": 0.466,
+        "tempo": 104.855,
+        "popularity": 59.0
+    },
+    {
+        "name": "Before I Let Go - Homecoming Live Bonus Track",
+        "uri": "spotify:track:7LikBkHerFGZ58QHVOKp1t",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.842,
+        "liveness": 0.341,
+        "speechiness": 0.0984,
+        "acousticness": 0.0686,
+        "instrumentalness": 0.0,
+        "danceability": 0.713,
+        "loudness": -5.424,
+        "valence": 0.435,
+        "tempo": 102.968,
+        "popularity": 75.0
+    },
+    {
+        "name": "I Been On - Homecoming Live Bonus Track",
+        "uri": "spotify:track:4M0zSSz4blcDv8g4apuVfJ",
+        "date": "2019-04-23T15:47:41Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "r&b"
+        ],
+        "artists": [
+            "Beyonc\u00e9"
+        ],
+        "energy": 0.743,
+        "liveness": 0.269,
+        "speechiness": 0.0552,
+        "acousticness": 0.0134,
+        "instrumentalness": 0.000606,
+        "danceability": 0.656,
+        "loudness": -6.413,
+        "valence": 0.196,
+        "tempo": 95.327,
+        "popularity": 61.0
+    },
+    {
+        "name": "Sound",
+        "uri": "spotify:track:4R0N3Ba0QMWeuG57THGTF9",
+        "date": "2019-04-10T01:12:13Z",
+        "genres": [
+            "art pop",
+            "chamber pop",
+            "electropop",
+            "etherpop",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indietronica",
+            "shimmer pop"
+        ],
+        "artists": [
+            "Sylvan Esso"
+        ],
+        "energy": 0.617,
+        "liveness": 0.168,
+        "speechiness": 0.705,
+        "acousticness": 0.615,
+        "instrumentalness": 0.0097,
+        "danceability": 0.663,
+        "loudness": -16.473,
+        "valence": 0.184,
+        "tempo": 107.452,
+        "popularity": 42.0
+    },
+    {
+        "name": "The Glow",
+        "uri": "spotify:track:73NGLYW9j5rbizafcDTvMG",
+        "date": "2019-04-10T01:12:13Z",
+        "genres": [
+            "art pop",
+            "chamber pop",
+            "electropop",
+            "etherpop",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indietronica",
+            "shimmer pop"
+        ],
+        "artists": [
+            "Sylvan Esso"
+        ],
+        "energy": 0.919,
+        "liveness": 0.0984,
+        "speechiness": 0.0537,
+        "acousticness": 0.00841,
+        "instrumentalness": 0.000723,
+        "danceability": 0.458,
+        "loudness": -4.259,
+        "valence": 0.565,
+        "tempo": 164.049,
+        "popularity": 44.0
+    },
+    {
+        "name": "Die Young",
+        "uri": "spotify:track:1BRwuvjhkgezmv1gcI6lT6",
+        "date": "2019-04-10T01:12:13Z",
+        "genres": [
+            "art pop",
+            "chamber pop",
+            "electropop",
+            "etherpop",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indietronica",
+            "shimmer pop"
+        ],
+        "artists": [
+            "Sylvan Esso"
+        ],
+        "energy": 0.555,
+        "liveness": 0.103,
+        "speechiness": 0.0328,
+        "acousticness": 0.361,
+        "instrumentalness": 0.00684,
+        "danceability": 0.698,
+        "loudness": -6.436,
+        "valence": 0.471,
+        "tempo": 101.964,
+        "popularity": 60.0
+    },
+    {
+        "name": "Radio",
+        "uri": "spotify:track:0idjTHGhGRBdWTmsalq3tF",
+        "date": "2019-04-10T01:12:13Z",
+        "genres": [
+            "art pop",
+            "chamber pop",
+            "electropop",
+            "etherpop",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indietronica",
+            "shimmer pop"
+        ],
+        "artists": [
+            "Sylvan Esso"
+        ],
+        "energy": 0.896,
+        "liveness": 0.23,
+        "speechiness": 0.0341,
+        "acousticness": 0.61,
+        "instrumentalness": 0.0157,
+        "danceability": 0.573,
+        "loudness": -6.462,
+        "valence": 0.549,
+        "tempo": 120.006,
+        "popularity": 55.0
+    },
+    {
+        "name": "Kick Jump Twist",
+        "uri": "spotify:track:5pXVT8Ev8ICTv1bQzMTCKr",
+        "date": "2019-04-10T01:12:13Z",
+        "genres": [
+            "art pop",
+            "chamber pop",
+            "electropop",
+            "etherpop",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indietronica",
+            "shimmer pop"
+        ],
+        "artists": [
+            "Sylvan Esso"
+        ],
+        "energy": 0.75,
+        "liveness": 0.0901,
+        "speechiness": 0.314,
+        "acousticness": 0.0415,
+        "instrumentalness": 0.00148,
+        "danceability": 0.775,
+        "loudness": -6.774,
+        "valence": 0.432,
+        "tempo": 139.827,
+        "popularity": 46.0
+    },
+    {
+        "name": "Song",
+        "uri": "spotify:track:0Ok2mjpVc7Uw9k3QQM3u1r",
+        "date": "2019-04-10T01:12:13Z",
+        "genres": [
+            "art pop",
+            "chamber pop",
+            "electropop",
+            "etherpop",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indietronica",
+            "shimmer pop"
+        ],
+        "artists": [
+            "Sylvan Esso"
+        ],
+        "energy": 0.807,
+        "liveness": 0.095,
+        "speechiness": 0.0472,
+        "acousticness": 0.223,
+        "instrumentalness": 0.0401,
+        "danceability": 0.697,
+        "loudness": -5.845,
+        "valence": 0.782,
+        "tempo": 152.969,
+        "popularity": 43.0
+    },
+    {
+        "name": "Just Dancing",
+        "uri": "spotify:track:660w8RvCS8lOwl5r2GcJ0A",
+        "date": "2019-04-10T01:12:13Z",
+        "genres": [
+            "art pop",
+            "chamber pop",
+            "electropop",
+            "etherpop",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indietronica",
+            "shimmer pop"
+        ],
+        "artists": [
+            "Sylvan Esso"
+        ],
+        "energy": 0.521,
+        "liveness": 0.0615,
+        "speechiness": 0.0357,
+        "acousticness": 0.0929,
+        "instrumentalness": 0.000569,
+        "danceability": 0.807,
+        "loudness": -7.379,
+        "valence": 0.449,
+        "tempo": 119.986,
+        "popularity": 48.0
+    },
+    {
+        "name": "Signal",
+        "uri": "spotify:track:7fBRThswHqbzvIwL65hcPx",
+        "date": "2019-04-10T01:12:13Z",
+        "genres": [
+            "art pop",
+            "chamber pop",
+            "electropop",
+            "etherpop",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indietronica",
+            "shimmer pop"
+        ],
+        "artists": [
+            "Sylvan Esso"
+        ],
+        "energy": 0.579,
+        "liveness": 0.181,
+        "speechiness": 0.0323,
+        "acousticness": 0.126,
+        "instrumentalness": 1.79e-06,
+        "danceability": 0.494,
+        "loudness": -6.513,
+        "valence": 0.181,
+        "tempo": 87.937,
+        "popularity": 47.0
+    },
+    {
+        "name": "Slack Jaw",
+        "uri": "spotify:track:1Y9EQOGTAeHwVyIcX3Dsi4",
+        "date": "2019-04-10T01:12:13Z",
+        "genres": [
+            "art pop",
+            "chamber pop",
+            "electropop",
+            "etherpop",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indietronica",
+            "shimmer pop"
+        ],
+        "artists": [
+            "Sylvan Esso"
+        ],
+        "energy": 0.101,
+        "liveness": 0.0899,
+        "speechiness": 0.105,
+        "acousticness": 0.743,
+        "instrumentalness": 0.0,
+        "danceability": 0.527,
+        "loudness": -15.126,
+        "valence": 0.334,
+        "tempo": 136.86,
+        "popularity": 54.0
+    },
+    {
+        "name": "Rewind",
+        "uri": "spotify:track:4iLHRFw2wijgu82PCAzFfQ",
+        "date": "2019-04-10T01:12:13Z",
+        "genres": [
+            "art pop",
+            "chamber pop",
+            "electropop",
+            "etherpop",
+            "folk-pop",
+            "indie folk",
+            "indie pop",
+            "indietronica",
+            "shimmer pop"
+        ],
+        "artists": [
+            "Sylvan Esso"
+        ],
+        "energy": 0.605,
+        "liveness": 0.0692,
+        "speechiness": 0.321,
+        "acousticness": 0.842,
+        "instrumentalness": 0.00253,
+        "danceability": 0.492,
+        "loudness": -7.582,
+        "valence": 0.488,
+        "tempo": 81.019,
+        "popularity": 45.0
+    },
+    {
+        "name": "Intro",
+        "uri": "spotify:track:4YyFPFJMrJcWdsdLPmgpiG",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical"
+        ],
+        "artists": [
+            "Romeo Santos"
+        ],
+        "energy": 0.208,
+        "liveness": 0.13,
+        "speechiness": 0.175,
+        "acousticness": 0.933,
+        "instrumentalness": 0.0,
+        "danceability": 0.462,
+        "loudness": -12.624,
+        "valence": 0.42,
+        "tempo": 90.238,
+        "popularity": 60.0
+    },
+    {
+        "name": "Canalla",
+        "uri": "spotify:track:4XEXrp37kZXpQTB2r5vWbS",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical"
+        ],
+        "artists": [
+            "Romeo Santos",
+            "El Chaval de la Bachata"
+        ],
+        "energy": 0.875,
+        "liveness": 0.145,
+        "speechiness": 0.0453,
+        "acousticness": 0.148,
+        "instrumentalness": 0.0,
+        "danceability": 0.878,
+        "loudness": -1.457,
+        "valence": 0.902,
+        "tempo": 130.027,
+        "popularity": 66.0
+    },
+    {
+        "name": "Payasos",
+        "uri": "spotify:track:1soECbw2IFdWt5W8Rb4uG7",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical",
+            "bachata",
+            "dominican pop",
+            "latin",
+            "salsa",
+            "tropical"
+        ],
+        "artists": [
+            "Romeo Santos",
+            "Frank Reyes"
+        ],
+        "energy": 0.698,
+        "liveness": 0.347,
+        "speechiness": 0.0447,
+        "acousticness": 0.245,
+        "instrumentalness": 0.0,
+        "danceability": 0.855,
+        "loudness": -4.511,
+        "valence": 0.906,
+        "tempo": 124.057,
+        "popularity": 66.0
+    },
+    {
+        "name": "La Demanda",
+        "uri": "spotify:track:3zVibdZHsVH05p5Crux6xX",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical",
+            "bachata",
+            "dominican pop",
+            "latin",
+            "tropical"
+        ],
+        "artists": [
+            "Romeo Santos",
+            "Raulin Rodriguez"
+        ],
+        "energy": 0.712,
+        "liveness": 0.311,
+        "speechiness": 0.0397,
+        "acousticness": 0.102,
+        "instrumentalness": 1.22e-06,
+        "danceability": 0.865,
+        "loudness": -4.519,
+        "valence": 0.951,
+        "tempo": 122.021,
+        "popularity": 66.0
+    },
+    {
+        "name": "Millonario",
+        "uri": "spotify:track:0pB0CN0dxKKmZghn4gpLhj",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical",
+            "bachata",
+            "dominican pop",
+            "latin",
+            "tropical"
+        ],
+        "artists": [
+            "Romeo Santos",
+            "Elvis Martinez"
+        ],
+        "energy": 0.665,
+        "liveness": 0.117,
+        "speechiness": 0.0493,
+        "acousticness": 0.206,
+        "instrumentalness": 0.0,
+        "danceability": 0.891,
+        "loudness": -4.186,
+        "valence": 0.928,
+        "tempo": 125.013,
+        "popularity": 64.0
+    },
+    {
+        "name": "El Beso Que No Le Di",
+        "uri": "spotify:track:2kcc5humLS6PKOI9rwvXex",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical",
+            "bachata",
+            "latin"
+        ],
+        "artists": [
+            "Romeo Santos",
+            "Kiko Rodriguez"
+        ],
+        "energy": 0.725,
+        "liveness": 0.0928,
+        "speechiness": 0.044,
+        "acousticness": 0.0611,
+        "instrumentalness": 6.1e-06,
+        "danceability": 0.899,
+        "loudness": -3.831,
+        "valence": 0.961,
+        "tempo": 128.034,
+        "popularity": 65.0
+    },
+    {
+        "name": "ileso",
+        "uri": "spotify:track:2zHgz7X52WqdckhjMJj6mt",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical",
+            "bachata",
+            "dominican pop",
+            "latin",
+            "tropical"
+        ],
+        "artists": [
+            "Romeo Santos",
+            "Teodoro Reyes"
+        ],
+        "energy": 0.827,
+        "liveness": 0.0945,
+        "speechiness": 0.032,
+        "acousticness": 0.125,
+        "instrumentalness": 4.23e-05,
+        "danceability": 0.747,
+        "loudness": -3.019,
+        "valence": 0.958,
+        "tempo": 151.014,
+        "popularity": 63.0
+    },
+    {
+        "name": "Amor Enterrado",
+        "uri": "spotify:track:3cdTfwai1PtCGOd9DIBMNU",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical",
+            "bachata",
+            "dominican pop",
+            "latin",
+            "salsa",
+            "tropical"
+        ],
+        "artists": [
+            "Romeo Santos",
+            "Joe Veras"
+        ],
+        "energy": 0.681,
+        "liveness": 0.0827,
+        "speechiness": 0.0349,
+        "acousticness": 0.219,
+        "instrumentalness": 0.0,
+        "danceability": 0.863,
+        "loudness": -2.801,
+        "valence": 0.963,
+        "tempo": 117.976,
+        "popularity": 63.0
+    },
+    {
+        "name": "Me Quedo",
+        "uri": "spotify:track:301E9bwin8Gh2PCp0doIDz",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical",
+            "bachata",
+            "dominican pop",
+            "latin",
+            "tropical"
+        ],
+        "artists": [
+            "Romeo Santos",
+            "Zacarias Ferreira"
+        ],
+        "energy": 0.75,
+        "liveness": 0.27,
+        "speechiness": 0.0341,
+        "acousticness": 0.242,
+        "instrumentalness": 0.0,
+        "danceability": 0.838,
+        "loudness": -3.09,
+        "valence": 0.887,
+        "tempo": 128.052,
+        "popularity": 65.0
+    },
+    {
+        "name": "Los \u00daltimos",
+        "uri": "spotify:track:6Y9P646HsmJtZEE2zmgHeF",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical",
+            "bachata",
+            "dominican pop",
+            "latin",
+            "salsa",
+            "tropical"
+        ],
+        "artists": [
+            "Romeo Santos",
+            "Luis Vargas"
+        ],
+        "energy": 0.656,
+        "liveness": 0.108,
+        "speechiness": 0.0528,
+        "acousticness": 0.294,
+        "instrumentalness": 2.26e-06,
+        "danceability": 0.903,
+        "loudness": -3.953,
+        "valence": 0.868,
+        "tempo": 122.057,
+        "popularity": 62.0
+    },
+    {
+        "name": "A\u00f1os Luz",
+        "uri": "spotify:track:6hwmqR7uQhytLnJzt1RVPF",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical",
+            "bachata",
+            "latin",
+            "tropical"
+        ],
+        "artists": [
+            "Romeo Santos",
+            "Monchy & Alexandra"
+        ],
+        "energy": 0.641,
+        "liveness": 0.123,
+        "speechiness": 0.032,
+        "acousticness": 0.205,
+        "instrumentalness": 0.0,
+        "danceability": 0.838,
+        "loudness": -4.301,
+        "valence": 0.915,
+        "tempo": 127.989,
+        "popularity": 63.0
+    },
+    {
+        "name": "Bellas (feat. Romeo Santos)",
+        "uri": "spotify:track:146PlmOKiTMNagToKXRoku",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "tropical"
+        ],
+        "artists": [
+            "Anthony \"El Mayimbe\" Santos",
+            "Romeo Santos"
+        ],
+        "energy": 0.761,
+        "liveness": 0.115,
+        "speechiness": 0.0466,
+        "acousticness": 0.148,
+        "instrumentalness": 7.45e-06,
+        "danceability": 0.895,
+        "loudness": -3.619,
+        "valence": 0.953,
+        "tempo": 129.985,
+        "popularity": 7.0
+    },
+    {
+        "name": "Inmortal",
+        "uri": "spotify:track:2swZ0X1njeU32SNJeBKIfW",
+        "date": "2019-04-05T06:38:40Z",
+        "genres": [
+            "bachata",
+            "latin",
+            "latin hip hop",
+            "latin pop",
+            "tropical"
+        ],
+        "artists": [
+            "Aventura"
+        ],
+        "energy": 0.775,
+        "liveness": 0.0651,
+        "speechiness": 0.0349,
+        "acousticness": 0.178,
+        "instrumentalness": 0.0,
+        "danceability": 0.77,
+        "loudness": -4.65,
+        "valence": 0.848,
+        "tempo": 124.015,
+        "popularity": 77.0
+    },
+    {
+        "name": "Dancing Queen",
+        "uri": "spotify:track:5vQabTPJCm71G9LoVpVIVY",
+        "date": "2019-04-03T15:49:33Z",
+        "genres": [
+            "dance pop",
+            "hollywood",
+            "new wave pop",
+            "pop"
+        ],
+        "artists": [
+            "Cher"
+        ],
+        "energy": 0.942,
+        "liveness": 0.338,
+        "speechiness": 0.0543,
+        "acousticness": 0.111,
+        "instrumentalness": 1.05e-06,
+        "danceability": 0.601,
+        "loudness": -3.865,
+        "valence": 0.418,
+        "tempo": 103.28,
+        "popularity": 48.0
+    },
+    {
+        "name": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+        "uri": "spotify:track:78IHA9UJHnvQdCwbp3P5Vu",
+        "date": "2019-04-03T15:49:33Z",
+        "genres": [
+            "dance pop",
+            "hollywood",
+            "new wave pop",
+            "pop"
+        ],
+        "artists": [
+            "Cher"
+        ],
+        "energy": 0.695,
+        "liveness": 0.492,
+        "speechiness": 0.0423,
+        "acousticness": 0.0147,
+        "instrumentalness": 0.0,
+        "danceability": 0.616,
+        "loudness": -5.733,
+        "valence": 0.382,
+        "tempo": 119.01,
+        "popularity": 48.0
+    },
+    {
+        "name": "The Name of the Game",
+        "uri": "spotify:track:4uggRFfXTB6W3EtvHTh7mC",
+        "date": "2019-04-03T15:49:33Z",
+        "genres": [
+            "dance pop",
+            "hollywood",
+            "new wave pop",
+            "pop"
+        ],
+        "artists": [
+            "Cher"
+        ],
+        "energy": 0.654,
+        "liveness": 0.14,
+        "speechiness": 0.0287,
+        "acousticness": 0.249,
+        "instrumentalness": 0.0,
+        "danceability": 0.666,
+        "loudness": -5.219,
+        "valence": 0.625,
+        "tempo": 80.97,
+        "popularity": 43.0
+    },
+    {
+        "name": "SOS",
+        "uri": "spotify:track:63WWeKBfOuoijGLgCD03Ws",
+        "date": "2019-04-03T15:49:33Z",
+        "genres": [
+            "dance pop",
+            "hollywood",
+            "new wave pop",
+            "pop"
+        ],
+        "artists": [
+            "Cher"
+        ],
+        "energy": 0.743,
+        "liveness": 0.092,
+        "speechiness": 0.0336,
+        "acousticness": 0.144,
+        "instrumentalness": 0.0,
+        "danceability": 0.496,
+        "loudness": -4.227,
+        "valence": 0.568,
+        "tempo": 122.352,
+        "popularity": 47.0
+    },
+    {
+        "name": "Mamma Mia",
+        "uri": "spotify:track:1IYfJ5FEmyQe3N57BE5P8x",
+        "date": "2019-04-03T15:49:33Z",
+        "genres": [
+            "dance pop",
+            "hollywood",
+            "new wave pop",
+            "pop"
+        ],
+        "artists": [
+            "Cher"
+        ],
+        "energy": 0.886,
+        "liveness": 0.101,
+        "speechiness": 0.027,
+        "acousticness": 0.167,
+        "instrumentalness": 0.0,
+        "danceability": 0.646,
+        "loudness": -4.3,
+        "valence": 0.762,
+        "tempo": 136.982,
+        "popularity": 46.0
+    },
+    {
+        "name": "Chiquitita",
+        "uri": "spotify:track:71EHULNBt1J1DJMpBQH3Xc",
+        "date": "2019-04-03T15:49:33Z",
+        "genres": [
+            "dance pop",
+            "hollywood",
+            "new wave pop",
+            "pop"
+        ],
+        "artists": [
+            "Cher"
+        ],
+        "energy": 0.64,
+        "liveness": 0.137,
+        "speechiness": 0.0364,
+        "acousticness": 0.555,
+        "instrumentalness": 2.15e-06,
+        "danceability": 0.651,
+        "loudness": -7.683,
+        "valence": 0.456,
+        "tempo": 86.994,
+        "popularity": 46.0
+    },
+    {
+        "name": "Fernando",
+        "uri": "spotify:track:1jTPgK0J8zKcdbD6qUoiN0",
+        "date": "2019-04-03T15:49:33Z",
+        "genres": [
+            "dance pop",
+            "hollywood",
+            "new wave pop",
+            "pop"
+        ],
+        "artists": [
+            "Cher"
+        ],
+        "energy": 0.663,
+        "liveness": 0.251,
+        "speechiness": 0.0271,
+        "acousticness": 0.484,
+        "instrumentalness": 0.0,
+        "danceability": 0.404,
+        "loudness": -5.574,
+        "valence": 0.569,
+        "tempo": 111.03,
+        "popularity": 52.0
+    },
+    {
+        "name": "The Winner Takes It All",
+        "uri": "spotify:track:3T5X9UDD29mFzJeRQtUfst",
+        "date": "2019-04-03T15:49:33Z",
+        "genres": [
+            "dance pop",
+            "hollywood",
+            "new wave pop",
+            "pop"
+        ],
+        "artists": [
+            "Cher"
+        ],
+        "energy": 0.674,
+        "liveness": 0.324,
+        "speechiness": 0.0393,
+        "acousticness": 0.139,
+        "instrumentalness": 0.0,
+        "danceability": 0.535,
+        "loudness": -7.037,
+        "valence": 0.234,
+        "tempo": 127.792,
+        "popularity": 46.0
+    },
+    {
+        "name": "One of Us",
+        "uri": "spotify:track:1jTAc5Xy381b7BKsUesNsj",
+        "date": "2019-04-03T15:49:33Z",
+        "genres": [
+            "dance pop",
+            "hollywood",
+            "new wave pop",
+            "pop"
+        ],
+        "artists": [
+            "Cher"
+        ],
+        "energy": 0.195,
+        "liveness": 0.12,
+        "speechiness": 0.0297,
+        "acousticness": 0.874,
+        "instrumentalness": 0.0,
+        "danceability": 0.346,
+        "loudness": -9.601,
+        "valence": 0.223,
+        "tempo": 84.537,
+        "popularity": 44.0
+    },
+    {
+        "name": "Missing U",
+        "uri": "spotify:track:5mE2RcGPPbE4gNoLB6FYPf",
+        "date": "2019-03-31T00:23:31Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "scandipop",
+            "swedish electropop",
+            "swedish pop"
+        ],
+        "artists": [
+            "Robyn"
+        ],
+        "energy": 0.666,
+        "liveness": 0.139,
+        "speechiness": 0.0463,
+        "acousticness": 0.0472,
+        "instrumentalness": 0.000119,
+        "danceability": 0.702,
+        "loudness": -8.307,
+        "valence": 0.109,
+        "tempo": 119.93,
+        "popularity": 56.0
+    },
+    {
+        "name": "Human Being",
+        "uri": "spotify:track:19QVXLLwMiIHAGjZHIWmDP",
+        "date": "2019-03-31T00:23:31Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "scandipop",
+            "swedish electropop",
+            "swedish pop",
+            "swedish indie pop"
+        ],
+        "artists": [
+            "Robyn",
+            "Zhala"
+        ],
+        "energy": 0.566,
+        "liveness": 0.0891,
+        "speechiness": 0.0365,
+        "acousticness": 0.679,
+        "instrumentalness": 0.524,
+        "danceability": 0.729,
+        "loudness": -10.114,
+        "valence": 0.244,
+        "tempo": 110.424,
+        "popularity": 44.0
+    },
+    {
+        "name": "Because It's In The Music",
+        "uri": "spotify:track:5nqHzhn3SDVtQ89kkaYsg8",
+        "date": "2019-03-31T00:23:31Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "scandipop",
+            "swedish electropop",
+            "swedish pop"
+        ],
+        "artists": [
+            "Robyn"
+        ],
+        "energy": 0.611,
+        "liveness": 0.167,
+        "speechiness": 0.0543,
+        "acousticness": 0.0306,
+        "instrumentalness": 1.08e-05,
+        "danceability": 0.764,
+        "loudness": -6.514,
+        "valence": 0.12,
+        "tempo": 109.826,
+        "popularity": 45.0
+    },
+    {
+        "name": "Baby Forgive Me",
+        "uri": "spotify:track:5zmzse0TEG4GtlRrUBJOXK",
+        "date": "2019-03-31T00:23:31Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "scandipop",
+            "swedish electropop",
+            "swedish pop"
+        ],
+        "artists": [
+            "Robyn"
+        ],
+        "energy": 0.442,
+        "liveness": 0.127,
+        "speechiness": 0.0415,
+        "acousticness": 0.773,
+        "instrumentalness": 0.536,
+        "danceability": 0.683,
+        "loudness": -14.771,
+        "valence": 0.14,
+        "tempo": 105.624,
+        "popularity": 45.0
+    },
+    {
+        "name": "Send To Robin Immediately",
+        "uri": "spotify:track:4eubZoLt0CrH3xxhw4oa5B",
+        "date": "2019-03-31T00:23:31Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "scandipop",
+            "swedish electropop",
+            "swedish pop"
+        ],
+        "artists": [
+            "Robyn"
+        ],
+        "energy": 0.48,
+        "liveness": 0.101,
+        "speechiness": 0.0652,
+        "acousticness": 0.548,
+        "instrumentalness": 0.398,
+        "danceability": 0.328,
+        "loudness": -12.185,
+        "valence": 0.152,
+        "tempo": 107.94,
+        "popularity": 43.0
+    },
+    {
+        "name": "Honey",
+        "uri": "spotify:track:3olYZQTYOLYNImERBnZZqm",
+        "date": "2019-03-31T00:23:31Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "scandipop",
+            "swedish electropop",
+            "swedish pop"
+        ],
+        "artists": [
+            "Robyn"
+        ],
+        "energy": 0.604,
+        "liveness": 0.119,
+        "speechiness": 0.101,
+        "acousticness": 0.0179,
+        "instrumentalness": 0.000589,
+        "danceability": 0.652,
+        "loudness": -8.666,
+        "valence": 0.068,
+        "tempo": 115.953,
+        "popularity": 50.0
+    },
+    {
+        "name": "Between The Lines",
+        "uri": "spotify:track:3mV4SpsS5ORnkSgjWo9sTV",
+        "date": "2019-03-31T00:23:31Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "scandipop",
+            "swedish electropop",
+            "swedish pop"
+        ],
+        "artists": [
+            "Robyn"
+        ],
+        "energy": 0.451,
+        "liveness": 0.0816,
+        "speechiness": 0.141,
+        "acousticness": 0.102,
+        "instrumentalness": 0.000222,
+        "danceability": 0.892,
+        "loudness": -9.393,
+        "valence": 0.468,
+        "tempo": 111.988,
+        "popularity": 46.0
+    },
+    {
+        "name": "Beach2k20",
+        "uri": "spotify:track:5rWmqRULJjFTHiA3thJ5XF",
+        "date": "2019-03-31T00:23:31Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "scandipop",
+            "swedish electropop",
+            "swedish pop"
+        ],
+        "artists": [
+            "Robyn"
+        ],
+        "energy": 0.512,
+        "liveness": 0.0673,
+        "speechiness": 0.0662,
+        "acousticness": 0.0243,
+        "instrumentalness": 0.147,
+        "danceability": 0.824,
+        "loudness": -10.834,
+        "valence": 0.596,
+        "tempo": 121.317,
+        "popularity": 41.0
+    },
+    {
+        "name": "Ever Again",
+        "uri": "spotify:track:2E5e4J3nm1LMHkqTS21Dlq",
+        "date": "2019-03-31T00:23:31Z",
+        "genres": [
+            "dance pop",
+            "electropop",
+            "pop",
+            "scandipop",
+            "swedish electropop",
+            "swedish pop"
+        ],
+        "artists": [
+            "Robyn"
+        ],
+        "energy": 0.539,
+        "liveness": 0.0887,
+        "speechiness": 0.0866,
+        "acousticness": 0.0229,
+        "instrumentalness": 0.000276,
+        "danceability": 0.942,
+        "loudness": -10.442,
+        "valence": 0.727,
+        "tempo": 125.035,
+        "popularity": 54.0
+    },
+    {
+        "name": "Footsteps (feat. Musiq Soulchild)",
+        "uri": "spotify:track:4k6hX9RKD096K1NCjjJZLc",
+        "date": "2019-02-22T16:47:43Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "dance pop",
+            "hip hop",
+            "hip pop",
+            "indie r&b",
+            "neo soul",
+            "r&b",
+            "urban contemporary"
+        ],
+        "artists": [
+            "Kehlani",
+            "Musiq Soulchild"
+        ],
+        "energy": 0.638,
+        "liveness": 0.371,
+        "speechiness": 0.209,
+        "acousticness": 0.817,
+        "instrumentalness": 0.0,
+        "danceability": 0.42,
+        "loudness": -4.212,
+        "valence": 0.478,
+        "tempo": 88.546,
+        "popularity": 66.0
+    },
+    {
+        "name": "Too Deep",
+        "uri": "spotify:track:0aSW5EMeNnQSMJQ8QN3zIW",
+        "date": "2019-02-22T16:47:43Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Kehlani"
+        ],
+        "energy": 0.638,
+        "liveness": 0.099,
+        "speechiness": 0.0796,
+        "acousticness": 0.614,
+        "instrumentalness": 0.0,
+        "danceability": 0.516,
+        "loudness": -6.673,
+        "valence": 0.642,
+        "tempo": 180.216,
+        "popularity": 61.0
+    },
+    {
+        "name": "Nunya (feat. Dom Kennedy)",
+        "uri": "spotify:track:0tkmYNfaEaH9HpR59ApRtE",
+        "date": "2019-02-22T16:47:43Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "cali rap",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "southern hip hop",
+            "trap music",
+            "underground hip hop",
+            "west coast trap"
+        ],
+        "artists": [
+            "Kehlani",
+            "Dom Kennedy"
+        ],
+        "energy": 0.71,
+        "liveness": 0.381,
+        "speechiness": 0.21,
+        "acousticness": 0.39,
+        "instrumentalness": 0.0,
+        "danceability": 0.675,
+        "loudness": -4.027,
+        "valence": 0.574,
+        "tempo": 97.98,
+        "popularity": 68.0
+    },
+    {
+        "name": "Morning Glory",
+        "uri": "spotify:track:0kas95RruYRVqrOb07rgkh",
+        "date": "2019-02-22T16:47:43Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Kehlani"
+        ],
+        "energy": 0.833,
+        "liveness": 0.122,
+        "speechiness": 0.118,
+        "acousticness": 0.0158,
+        "instrumentalness": 0.0,
+        "danceability": 0.589,
+        "loudness": -4.494,
+        "valence": 0.653,
+        "tempo": 172.037,
+        "popularity": 60.0
+    },
+    {
+        "name": "Feels",
+        "uri": "spotify:track:4BOikd4oZjOYMde9AXfrTo",
+        "date": "2019-02-22T16:47:43Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Kehlani"
+        ],
+        "energy": 0.609,
+        "liveness": 0.133,
+        "speechiness": 0.184,
+        "acousticness": 0.259,
+        "instrumentalness": 4.1e-05,
+        "danceability": 0.369,
+        "loudness": -4.477,
+        "valence": 0.381,
+        "tempo": 80.362,
+        "popularity": 70.0
+    },
+    {
+        "name": "Nights Like This (feat. Ty Dolla $ign)",
+        "uri": "spotify:track:6ZRuF2n1CQxyxxAAWsKJOy",
+        "date": "2019-02-22T16:47:43Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "r&b",
+            "rap",
+            "trap music"
+        ],
+        "artists": [
+            "Kehlani",
+            "Ty Dolla $ign"
+        ],
+        "energy": 0.725,
+        "liveness": 0.154,
+        "speechiness": 0.15,
+        "acousticness": 0.367,
+        "instrumentalness": 0.0,
+        "danceability": 0.61,
+        "loudness": -5.131,
+        "valence": 0.291,
+        "tempo": 146.163,
+        "popularity": 82.0
+    },
+    {
+        "name": "RPG (feat. 6lack)",
+        "uri": "spotify:track:1EGrDTfEuAiRzRdxlblpET",
+        "date": "2019-02-22T16:47:43Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b",
+            "alternative r&b",
+            "atl hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "trap music"
+        ],
+        "artists": [
+            "Kehlani",
+            "6LACK"
+        ],
+        "energy": 0.534,
+        "liveness": 0.0917,
+        "speechiness": 0.287,
+        "acousticness": 0.402,
+        "instrumentalness": 0.0,
+        "danceability": 0.758,
+        "loudness": -7.368,
+        "valence": 0.719,
+        "tempo": 132.94,
+        "popularity": 67.0
+    },
+    {
+        "name": "Butterfly",
+        "uri": "spotify:track:32s2Dn9EVvO2f85MrpRoBV",
+        "date": "2019-02-22T16:47:43Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Kehlani"
+        ],
+        "energy": 0.345,
+        "liveness": 0.166,
+        "speechiness": 0.0709,
+        "acousticness": 0.886,
+        "instrumentalness": 0.0,
+        "danceability": 0.583,
+        "loudness": -8.044,
+        "valence": 0.701,
+        "tempo": 79.107,
+        "popularity": 62.0
+    },
+    {
+        "name": "Love Language",
+        "uri": "spotify:track:4jM3c9KLTO9iZPm9A7neiL",
+        "date": "2019-02-22T16:47:43Z",
+        "genres": [
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "r&b"
+        ],
+        "artists": [
+            "Kehlani"
+        ],
+        "energy": 0.586,
+        "liveness": 0.0866,
+        "speechiness": 0.0838,
+        "acousticness": 0.124,
+        "instrumentalness": 0.0,
+        "danceability": 0.582,
+        "loudness": -4.369,
+        "valence": 0.698,
+        "tempo": 89.599,
+        "popularity": 62.0
+    },
+    {
+        "name": "Take Me to Church",
+        "uri": "spotify:track:1CS7Sd1u5tWkstBhpssyjP",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.664,
+        "liveness": 0.116,
+        "speechiness": 0.0464,
+        "acousticness": 0.634,
+        "instrumentalness": 0.0,
+        "danceability": 0.566,
+        "loudness": -5.303,
+        "valence": 0.437,
+        "tempo": 128.945,
+        "popularity": 74.0
+    },
+    {
+        "name": "Angel of Small Death and the Codeine Scene",
+        "uri": "spotify:track:6JmSfynzr6E0QllQZNEXEb",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.64,
+        "liveness": 0.12,
+        "speechiness": 0.0506,
+        "acousticness": 0.201,
+        "instrumentalness": 7.25e-05,
+        "danceability": 0.364,
+        "loudness": -5.757,
+        "valence": 0.386,
+        "tempo": 93.507,
+        "popularity": 58.0
+    },
+    {
+        "name": "Jackie and Wilson",
+        "uri": "spotify:track:4JpazKcfOhbwqZrsYhzHee",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.727,
+        "liveness": 0.0937,
+        "speechiness": 0.0388,
+        "acousticness": 0.0579,
+        "instrumentalness": 7.52e-06,
+        "danceability": 0.555,
+        "loudness": -4.202,
+        "valence": 0.739,
+        "tempo": 82.142,
+        "popularity": 64.0
+    },
+    {
+        "name": "Someone New",
+        "uri": "spotify:track:2DNXgvkyv35vTWvdgjs7qn",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.533,
+        "liveness": 0.332,
+        "speechiness": 0.0473,
+        "acousticness": 0.429,
+        "instrumentalness": 3.66e-06,
+        "danceability": 0.443,
+        "loudness": -5.956,
+        "valence": 0.596,
+        "tempo": 183.791,
+        "popularity": 68.0
+    },
+    {
+        "name": "To Be Alone",
+        "uri": "spotify:track:1XJQ7xI6jzcZybuHemxsPP",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.443,
+        "liveness": 0.141,
+        "speechiness": 0.0259,
+        "acousticness": 0.403,
+        "instrumentalness": 0.000183,
+        "danceability": 0.559,
+        "loudness": -6.52,
+        "valence": 0.264,
+        "tempo": 67.05,
+        "popularity": 56.0
+    },
+    {
+        "name": "From Eden",
+        "uri": "spotify:track:5aRZk9oWIYUB5alrTs8TTV",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.673,
+        "liveness": 0.118,
+        "speechiness": 0.0509,
+        "acousticness": 0.584,
+        "instrumentalness": 2.44e-05,
+        "danceability": 0.399,
+        "loudness": -5.506,
+        "valence": 0.285,
+        "tempo": 142.255,
+        "popularity": 63.0
+    },
+    {
+        "name": "In a Week (feat. Karen Cowley)",
+        "uri": "spotify:track:28jCwARf1gYfHtTHmJJNHQ",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier",
+            "Karen Cowley"
+        ],
+        "energy": 0.269,
+        "liveness": 0.139,
+        "speechiness": 0.0311,
+        "acousticness": 0.791,
+        "instrumentalness": 7.51e-06,
+        "danceability": 0.465,
+        "loudness": -12.14,
+        "valence": 0.184,
+        "tempo": 131.391,
+        "popularity": 56.0
+    },
+    {
+        "name": "Sedated",
+        "uri": "spotify:track:3Ub5gDJTOGWr2AlDcScUIr",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.592,
+        "liveness": 0.102,
+        "speechiness": 0.027,
+        "acousticness": 0.184,
+        "instrumentalness": 1.86e-05,
+        "danceability": 0.66,
+        "loudness": -5.215,
+        "valence": 0.256,
+        "tempo": 86.069,
+        "popularity": 56.0
+    },
+    {
+        "name": "Work Song",
+        "uri": "spotify:track:5TgEJ62DOzBpGxZ7WRsrqb",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.363,
+        "liveness": 0.112,
+        "speechiness": 0.0608,
+        "acousticness": 0.749,
+        "instrumentalness": 0.0,
+        "danceability": 0.531,
+        "loudness": -7.672,
+        "valence": 0.259,
+        "tempo": 121.412,
+        "popularity": 67.0
+    },
+    {
+        "name": "Like Real People Do",
+        "uri": "spotify:track:57V4uc2b2diZ4RPHXWecb9",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.179,
+        "liveness": 0.106,
+        "speechiness": 0.0309,
+        "acousticness": 0.921,
+        "instrumentalness": 0.393,
+        "danceability": 0.539,
+        "loudness": -14.33,
+        "valence": 0.145,
+        "tempo": 140.01,
+        "popularity": 64.0
+    },
+    {
+        "name": "It Will Come Back",
+        "uri": "spotify:track:1iugFsBigGHtRwvFVDG9oo",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.446,
+        "liveness": 0.159,
+        "speechiness": 0.0338,
+        "acousticness": 0.382,
+        "instrumentalness": 4.83e-06,
+        "danceability": 0.5,
+        "loudness": -7.7,
+        "valence": 0.154,
+        "tempo": 86.425,
+        "popularity": 56.0
+    },
+    {
+        "name": "Foreigner's God",
+        "uri": "spotify:track:094As2ygiOxXxzcyAna3Lk",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.445,
+        "liveness": 0.111,
+        "speechiness": 0.0294,
+        "acousticness": 0.161,
+        "instrumentalness": 0.000466,
+        "danceability": 0.502,
+        "loudness": -7.622,
+        "valence": 0.377,
+        "tempo": 88.866,
+        "popularity": 56.0
+    },
+    {
+        "name": "Cherry Wine - Live",
+        "uri": "spotify:track:1C042FLYy7rP3MfnkOcnha",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.11,
+        "liveness": 0.0962,
+        "speechiness": 0.0388,
+        "acousticness": 0.951,
+        "instrumentalness": 0.00236,
+        "danceability": 0.415,
+        "loudness": -14.901,
+        "valence": 0.234,
+        "tempo": 81.876,
+        "popularity": 68.0
+    },
+    {
+        "name": "In the Woods Somewhere",
+        "uri": "spotify:track:5Pkn31exSVgFbfDAH961QC",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.426,
+        "liveness": 0.115,
+        "speechiness": 0.0295,
+        "acousticness": 0.782,
+        "instrumentalness": 0.11,
+        "danceability": 0.354,
+        "loudness": -8.704,
+        "valence": 0.185,
+        "tempo": 98.062,
+        "popularity": 54.0
+    },
+    {
+        "name": "Run",
+        "uri": "spotify:track:2AEKTA8tQnXUullpmN8NkL",
+        "date": "2019-02-16T15:11:53Z",
+        "genres": [
+            "folk-pop",
+            "irish singer-songwriter",
+            "pop"
+        ],
+        "artists": [
+            "Hozier"
+        ],
+        "energy": 0.393,
+        "liveness": 0.105,
+        "speechiness": 0.0319,
+        "acousticness": 0.509,
+        "instrumentalness": 0.0623,
+        "danceability": 0.373,
+        "loudness": -8.462,
+        "valence": 0.272,
+        "tempo": 71.749,
+        "popularity": 54.0
+    },
+    {
+        "name": "Slow Burn",
+        "uri": "spotify:track:6ET9kf9riLETWs9lePUEAI",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.43,
+        "liveness": 0.0869,
+        "speechiness": 0.0295,
+        "acousticness": 0.462,
+        "instrumentalness": 0.000191,
+        "danceability": 0.555,
+        "loudness": -9.105,
+        "valence": 0.274,
+        "tempo": 147.613,
+        "popularity": 70.0
+    },
+    {
+        "name": "Lonely Weekend",
+        "uri": "spotify:track:3420nZEhm99I1bLc6Yx4XH",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.808,
+        "liveness": 0.167,
+        "speechiness": 0.0296,
+        "acousticness": 0.579,
+        "instrumentalness": 7.16e-06,
+        "danceability": 0.699,
+        "loudness": -5.926,
+        "valence": 0.794,
+        "tempo": 111.977,
+        "popularity": 64.0
+    },
+    {
+        "name": "Butterflies",
+        "uri": "spotify:track:30VHURM5NOfoZmqp2iKawS",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.614,
+        "liveness": 0.178,
+        "speechiness": 0.0306,
+        "acousticness": 0.252,
+        "instrumentalness": 1.95e-05,
+        "danceability": 0.689,
+        "loudness": -6.137,
+        "valence": 0.411,
+        "tempo": 141.97,
+        "popularity": 72.0
+    },
+    {
+        "name": "Oh, What A World",
+        "uri": "spotify:track:5ToJzoVfLYyF7ohMOBNObi",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.536,
+        "liveness": 0.111,
+        "speechiness": 0.0259,
+        "acousticness": 0.642,
+        "instrumentalness": 0.00143,
+        "danceability": 0.503,
+        "loudness": -7.229,
+        "valence": 0.21,
+        "tempo": 90.966,
+        "popularity": 66.0
+    },
+    {
+        "name": "Mother",
+        "uri": "spotify:track:4FjkZp6GD6baaxqUYTqIJo",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.147,
+        "liveness": 0.176,
+        "speechiness": 0.103,
+        "acousticness": 0.903,
+        "instrumentalness": 0.0,
+        "danceability": 0.557,
+        "loudness": -14.173,
+        "valence": 0.482,
+        "tempo": 55.513,
+        "popularity": 61.0
+    },
+    {
+        "name": "Love Is A Wild Thing",
+        "uri": "spotify:track:5F5lmpwXkxAJtvZqEguTRo",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.631,
+        "liveness": 0.0931,
+        "speechiness": 0.0352,
+        "acousticness": 0.266,
+        "instrumentalness": 7.2e-06,
+        "danceability": 0.623,
+        "loudness": -7.52,
+        "valence": 0.273,
+        "tempo": 121.973,
+        "popularity": 63.0
+    },
+    {
+        "name": "Space Cowboy",
+        "uri": "spotify:track:5bum4HbCDFoB9wpsc0sQky",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.429,
+        "liveness": 0.105,
+        "speechiness": 0.028,
+        "acousticness": 0.718,
+        "instrumentalness": 0.0163,
+        "danceability": 0.447,
+        "loudness": -7.36,
+        "valence": 0.074,
+        "tempo": 116.521,
+        "popularity": 67.0
+    },
+    {
+        "name": "Happy & Sad",
+        "uri": "spotify:track:04MoJkJzCoU9ukeewv5Vzu",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.657,
+        "liveness": 0.111,
+        "speechiness": 0.0333,
+        "acousticness": 0.249,
+        "instrumentalness": 0.0,
+        "danceability": 0.642,
+        "loudness": -5.246,
+        "valence": 0.658,
+        "tempo": 90.0,
+        "popularity": 66.0
+    },
+    {
+        "name": "Velvet Elvis",
+        "uri": "spotify:track:65krgqLiZqW12PZAUQ9l2x",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.616,
+        "liveness": 0.0427,
+        "speechiness": 0.032,
+        "acousticness": 0.173,
+        "instrumentalness": 0.0,
+        "danceability": 0.677,
+        "loudness": -5.241,
+        "valence": 0.736,
+        "tempo": 89.988,
+        "popularity": 64.0
+    },
+    {
+        "name": "Wonder Woman",
+        "uri": "spotify:track:38UCGIpo273uGgdBXbi992",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.653,
+        "liveness": 0.0826,
+        "speechiness": 0.0269,
+        "acousticness": 0.11,
+        "instrumentalness": 1.58e-05,
+        "danceability": 0.669,
+        "loudness": -5.675,
+        "valence": 0.528,
+        "tempo": 104.995,
+        "popularity": 63.0
+    },
+    {
+        "name": "High Horse",
+        "uri": "spotify:track:2U2Z1IXnmJIvlknWizFykZ",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.674,
+        "liveness": 0.0531,
+        "speechiness": 0.0363,
+        "acousticness": 0.0325,
+        "instrumentalness": 3.55e-06,
+        "danceability": 0.725,
+        "loudness": -5.254,
+        "valence": 0.773,
+        "tempo": 120.057,
+        "popularity": 70.0
+    },
+    {
+        "name": "Golden Hour",
+        "uri": "spotify:track:0pMfPzdRiPAoSM9yWF4OcT",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.555,
+        "liveness": 0.11,
+        "speechiness": 0.0274,
+        "acousticness": 0.0952,
+        "instrumentalness": 0.0,
+        "danceability": 0.611,
+        "loudness": -6.372,
+        "valence": 0.413,
+        "tempo": 88.969,
+        "popularity": 69.0
+    },
+    {
+        "name": "Rainbow",
+        "uri": "spotify:track:79qxwHypONUt3AFq0WPpT9",
+        "date": "2019-02-01T01:37:47Z",
+        "genres": [
+            "contemporary country",
+            "country dawn",
+            "dance pop"
+        ],
+        "artists": [
+            "Kacey Musgraves"
+        ],
+        "energy": 0.197,
+        "liveness": 0.107,
+        "speechiness": 0.0329,
+        "acousticness": 0.88,
+        "instrumentalness": 0.0,
+        "danceability": 0.581,
+        "loudness": -7.697,
+        "valence": 0.349,
+        "tempo": 130.367,
+        "popularity": 72.0
+    },
+    {
+        "name": "What's Up Danger (with Black Caviar)",
+        "uri": "spotify:track:5zsHmE2gO3RefVsPyw2e3T",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "nyc rap",
+            "electro house"
+        ],
+        "artists": [
+            "Blackway",
+            "Black Caviar"
+        ],
+        "energy": 0.755,
+        "liveness": 0.121,
+        "speechiness": 0.0417,
+        "acousticness": 0.00363,
+        "instrumentalness": 0.000795,
+        "danceability": 0.701,
+        "loudness": -5.82,
+        "valence": 0.116,
+        "tempo": 95.036,
+        "popularity": 74.0
+    },
+    {
+        "name": "Sunflower - Spider-Man: Into the Spider-Verse",
+        "uri": "spotify:track:3KkXRkHbMCARz0aVfEt68P",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "pop",
+            "rap",
+            "trap music"
+        ],
+        "artists": [
+            "Post Malone",
+            "Swae Lee"
+        ],
+        "energy": 0.479,
+        "liveness": 0.0703,
+        "speechiness": 0.0466,
+        "acousticness": 0.556,
+        "instrumentalness": 0.0,
+        "danceability": 0.76,
+        "loudness": -5.574,
+        "valence": 0.913,
+        "tempo": 89.911,
+        "popularity": 94.0
+    },
+    {
+        "name": "Way Up",
+        "uri": "spotify:track:7cFFhb9Wz2ZXLSpEk2VDKd",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "trap music"
+        ],
+        "artists": [
+            "Jaden"
+        ],
+        "energy": 0.941,
+        "liveness": 0.196,
+        "speechiness": 0.145,
+        "acousticness": 0.03,
+        "instrumentalness": 8.41e-06,
+        "danceability": 0.585,
+        "loudness": -3.278,
+        "valence": 0.45,
+        "tempo": 130.024,
+        "popularity": 70.0
+    },
+    {
+        "name": "Familia (with Anuel Aa, feat. Bantu) - Spider-Man: Into the Spider-Verse",
+        "uri": "spotify:track:4Uy3kNxW2kB8AEoXljEcth",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "dance pop",
+            "hip pop",
+            "pop",
+            "pop rap",
+            "post-teen pop",
+            "r&b",
+            "reggaeton flow",
+            "trap latino"
+        ],
+        "artists": [
+            "Nicki Minaj",
+            "Anuel Aa",
+            "Bantu"
+        ],
+        "energy": 0.881,
+        "liveness": 0.347,
+        "speechiness": 0.137,
+        "acousticness": 0.0166,
+        "instrumentalness": 2.3e-06,
+        "danceability": 0.766,
+        "loudness": -5.158,
+        "valence": 0.674,
+        "tempo": 112.027,
+        "popularity": 73.0
+    },
+    {
+        "name": "Invincible",
+        "uri": "spotify:track:6VS7wKwtvL2FvTupYSWZ9e",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "hip hop",
+            "pop",
+            "pop rap",
+            "portland hip hop",
+            "rap"
+        ],
+        "artists": [
+            "Amin\u00e9"
+        ],
+        "energy": 0.6,
+        "liveness": 0.104,
+        "speechiness": 0.29,
+        "acousticness": 0.141,
+        "instrumentalness": 0.000218,
+        "danceability": 0.724,
+        "loudness": -4.391,
+        "valence": 0.466,
+        "tempo": 86.984,
+        "popularity": 71.0
+    },
+    {
+        "name": "Start a Riot",
+        "uri": "spotify:track:6V81K1OcvYgHEnCA6A2Qx9",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "alternative r&b",
+            "escape room",
+            "underground hip hop",
+            "pop rap"
+        ],
+        "artists": [
+            "Duckwrth",
+            "Shaboozey"
+        ],
+        "energy": 0.727,
+        "liveness": 0.0882,
+        "speechiness": 0.206,
+        "acousticness": 0.0128,
+        "instrumentalness": 0.0,
+        "danceability": 0.728,
+        "loudness": -3.585,
+        "valence": 0.89,
+        "tempo": 143.144,
+        "popularity": 70.0
+    },
+    {
+        "name": "Hide (feat. Seezyn)",
+        "uri": "spotify:track:6rz0dTA0PdhXImFV5EjM0w",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "chicago rap"
+        ],
+        "artists": [
+            "Juice WRLD",
+            "Seezyn"
+        ],
+        "energy": 0.639,
+        "liveness": 0.157,
+        "speechiness": 0.0752,
+        "acousticness": 0.0622,
+        "instrumentalness": 0.0,
+        "danceability": 0.715,
+        "loudness": -5.017,
+        "valence": 0.151,
+        "tempo": 149.996,
+        "popularity": 78.0
+    },
+    {
+        "name": "Memories",
+        "uri": "spotify:track:2CWOMDYFK4Ef3867nEhnVM",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "trap soul",
+            "underground hip hop"
+        ],
+        "artists": [
+            "Thutmose"
+        ],
+        "energy": 0.651,
+        "liveness": 0.183,
+        "speechiness": 0.0554,
+        "acousticness": 0.0519,
+        "instrumentalness": 0.0,
+        "danceability": 0.567,
+        "loudness": -7.146,
+        "valence": 0.519,
+        "tempo": 93.989,
+        "popularity": 68.0
+    },
+    {
+        "name": "Save The Day (feat. Coi Leray & LouGotCash)",
+        "uri": "spotify:track:0vkzRCT7wzqWCFJw5TN1MQ",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "miami hip hop",
+            "trap music",
+            "underground hip hop",
+            "atl hip hop",
+            "deep pop r&b",
+            "pop",
+            "pop rap",
+            "r&b",
+            "rap",
+            "trap music",
+            "urban contemporary",
+            "trap queen",
+            "vapor trap"
+        ],
+        "artists": [
+            "Ski Mask The Slump God",
+            "Jacquees",
+            "Coi Leray",
+            "LouGotCash"
+        ],
+        "energy": 0.751,
+        "liveness": 0.0853,
+        "speechiness": 0.0788,
+        "acousticness": 0.00391,
+        "instrumentalness": 0.0,
+        "danceability": 0.871,
+        "loudness": -8.042,
+        "valence": 0.787,
+        "tempo": 139.984,
+        "popularity": 66.0
+    },
+    {
+        "name": "Let Go",
+        "uri": "spotify:track:5F2AuFzEiuAQD0JVNjVJQz",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "dmv rap"
+        ],
+        "artists": [
+            "Beau Young Prince"
+        ],
+        "energy": 0.725,
+        "liveness": 0.109,
+        "speechiness": 0.0576,
+        "acousticness": 0.463,
+        "instrumentalness": 5.91e-06,
+        "danceability": 0.764,
+        "loudness": -8.812,
+        "valence": 0.0794,
+        "tempo": 100.063,
+        "popularity": 67.0
+    },
+    {
+        "name": "Scared of the Dark (feat. XXXTENTACION)",
+        "uri": "spotify:track:3vWzyGTu6Ovo1GdrcJqH6e",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "hip hop",
+            "new orleans rap",
+            "pop",
+            "pop rap",
+            "rap",
+            "trap music",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "r&b",
+            "rap",
+            "trap music",
+            "emo rap",
+            "miami hip hop"
+        ],
+        "artists": [
+            "Lil Wayne",
+            "Ty Dolla $ign",
+            "XXXTENTACION"
+        ],
+        "energy": 0.623,
+        "liveness": 0.247,
+        "speechiness": 0.0718,
+        "acousticness": 0.0468,
+        "instrumentalness": 0.0,
+        "danceability": 0.443,
+        "loudness": -6.717,
+        "valence": 0.156,
+        "tempo": 79.365,
+        "popularity": 74.0
+    },
+    {
+        "name": "Elevate (feat. Denzel Curry, YBN Cordae, SwaVay, Trevor Rich)",
+        "uri": "spotify:track:6kiauSlWtddVQx4JwJx51p",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "dark trap",
+            "drill",
+            "hip hop",
+            "miami hip hop",
+            "rap",
+            "trap music",
+            "underground hip hop",
+            "dmv rap",
+            "pop rap",
+            "rap",
+            "trap music",
+            "underground hip hop",
+            "vapor trap",
+            "atl hip hop"
+        ],
+        "artists": [
+            "DJ Khalil",
+            "Denzel Curry",
+            "YBN Cordae",
+            "Swavay",
+            "Trevor Rich"
+        ],
+        "energy": 0.935,
+        "liveness": 0.514,
+        "speechiness": 0.293,
+        "acousticness": 0.176,
+        "instrumentalness": 0.0,
+        "danceability": 0.58,
+        "loudness": -4.847,
+        "valence": 0.666,
+        "tempo": 129.173,
+        "popularity": 70.0
+    },
+    {
+        "name": "Home",
+        "uri": "spotify:track:7pBsquIkbED6W6uSQJGbkn",
+        "date": "2019-01-27T05:50:09Z",
+        "genres": [
+            "conscious hip hop",
+            "escape room",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "southern hip hop",
+            "underground hip hop",
+            "epicore"
+        ],
+        "artists": [
+            "Vince Staples",
+            "Richie Kohan"
+        ],
+        "energy": 0.736,
+        "liveness": 0.11,
+        "speechiness": 0.0555,
+        "acousticness": 0.00608,
+        "instrumentalness": 0.109,
+        "danceability": 0.604,
+        "loudness": -5.596,
+        "valence": 0.345,
+        "tempo": 118.012,
+        "popularity": 69.0
+    },
+    {
+        "name": "Frontline",
+        "uri": "spotify:track:6b3KUNSmJL1qIfi1hF1G6Y",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.325,
+        "liveness": 0.0648,
+        "speechiness": 0.0432,
+        "acousticness": 0.241,
+        "instrumentalness": 1.11e-06,
+        "danceability": 0.438,
+        "loudness": -9.206,
+        "valence": 0.142,
+        "tempo": 141.504,
+        "popularity": 47.0
+    },
+    {
+        "name": "Waitin",
+        "uri": "spotify:track:3HsP8NGJvDdZqdlv9OyORj",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.504,
+        "liveness": 0.0855,
+        "speechiness": 0.0421,
+        "acousticness": 0.0492,
+        "instrumentalness": 0.0,
+        "danceability": 0.669,
+        "loudness": -9.942,
+        "valence": 0.154,
+        "tempo": 121.97,
+        "popularity": 42.0
+    },
+    {
+        "name": "Take Me Apart",
+        "uri": "spotify:track:64MHnMvyOiNJU9tmUOBjeV",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.54,
+        "liveness": 0.122,
+        "speechiness": 0.0407,
+        "acousticness": 0.354,
+        "instrumentalness": 0.000116,
+        "danceability": 0.489,
+        "loudness": -9.885,
+        "valence": 0.121,
+        "tempo": 145.926,
+        "popularity": 38.0
+    },
+    {
+        "name": "Enough",
+        "uri": "spotify:track:73SDA3uGllgkNKrMNT1FNK",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.664,
+        "liveness": 0.14,
+        "speechiness": 0.0414,
+        "acousticness": 0.189,
+        "instrumentalness": 0.00344,
+        "danceability": 0.412,
+        "loudness": -8.819,
+        "valence": 0.239,
+        "tempo": 108.833,
+        "popularity": 35.0
+    },
+    {
+        "name": "Jupiter",
+        "uri": "spotify:track:4PY7KuxSdMKwyWLu21A00Z",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.253,
+        "liveness": 0.355,
+        "speechiness": 0.0336,
+        "acousticness": 0.83,
+        "instrumentalness": 0.000713,
+        "danceability": 0.194,
+        "loudness": -13.663,
+        "valence": 0.266,
+        "tempo": 69.371,
+        "popularity": 38.0
+    },
+    {
+        "name": "Better",
+        "uri": "spotify:track:0ts84OMi1c1ugEv7yRBqX2",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.178,
+        "liveness": 0.107,
+        "speechiness": 0.029,
+        "acousticness": 0.819,
+        "instrumentalness": 1.88e-05,
+        "danceability": 0.637,
+        "loudness": -11.555,
+        "valence": 0.333,
+        "tempo": 99.921,
+        "popularity": 37.0
+    },
+    {
+        "name": "LMK",
+        "uri": "spotify:track:1D7NJhUyFsFpjIwXMiVO1R",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.61,
+        "liveness": 0.16,
+        "speechiness": 0.033,
+        "acousticness": 0.091,
+        "instrumentalness": 0.0,
+        "danceability": 0.595,
+        "loudness": -7.007,
+        "valence": 0.504,
+        "tempo": 99.529,
+        "popularity": 49.0
+    },
+    {
+        "name": "Truth Or Dare",
+        "uri": "spotify:track:3pMwo7Y6vWquLxWXOBJQd0",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.513,
+        "liveness": 0.139,
+        "speechiness": 0.13,
+        "acousticness": 0.196,
+        "instrumentalness": 0.0593,
+        "danceability": 0.618,
+        "loudness": -6.58,
+        "valence": 0.245,
+        "tempo": 96.964,
+        "popularity": 35.0
+    },
+    {
+        "name": "S.O.S.",
+        "uri": "spotify:track:61P6gN03VsjKR96QAPubci",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.41,
+        "liveness": 0.0826,
+        "speechiness": 0.0757,
+        "acousticness": 0.303,
+        "instrumentalness": 9.88e-05,
+        "danceability": 0.619,
+        "loudness": -9.525,
+        "valence": 0.186,
+        "tempo": 79.012,
+        "popularity": 37.0
+    },
+    {
+        "name": "Blue Light",
+        "uri": "spotify:track:12qI9nJMNUd4DkPq26LytN",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.637,
+        "liveness": 0.34,
+        "speechiness": 0.056,
+        "acousticness": 0.13,
+        "instrumentalness": 0.0113,
+        "danceability": 0.556,
+        "loudness": -9.238,
+        "valence": 0.271,
+        "tempo": 123.139,
+        "popularity": 38.0
+    },
+    {
+        "name": "Onanon",
+        "uri": "spotify:track:1IMXP55WFCNNKWN1iyjhim",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.554,
+        "liveness": 0.131,
+        "speechiness": 0.0673,
+        "acousticness": 0.343,
+        "instrumentalness": 0.00362,
+        "danceability": 0.451,
+        "loudness": -8.162,
+        "valence": 0.204,
+        "tempo": 127.394,
+        "popularity": 36.0
+    },
+    {
+        "name": "Turn To Dust",
+        "uri": "spotify:track:6TiZRho24MdxqKQKrNITi2",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.263,
+        "liveness": 0.111,
+        "speechiness": 0.0332,
+        "acousticness": 0.759,
+        "instrumentalness": 9.08e-05,
+        "danceability": 0.448,
+        "loudness": -12.393,
+        "valence": 0.132,
+        "tempo": 123.732,
+        "popularity": 34.0
+    },
+    {
+        "name": "Bluff",
+        "uri": "spotify:track:3j7zwRLw8QEbYoOhSE0AOd",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.158,
+        "liveness": 0.134,
+        "speechiness": 0.0457,
+        "acousticness": 0.566,
+        "instrumentalness": 0.0,
+        "danceability": 0.496,
+        "loudness": -13.768,
+        "valence": 0.361,
+        "tempo": 78.572,
+        "popularity": 41.0
+    },
+    {
+        "name": "Altadena",
+        "uri": "spotify:track:0u2lumqwdITUiJFZuygCYL",
+        "date": "2019-01-21T10:18:07Z",
+        "genres": [
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "hyperpop",
+            "indie r&b",
+            "indietronica",
+            "r&b"
+        ],
+        "artists": [
+            "Kelela"
+        ],
+        "energy": 0.273,
+        "liveness": 0.0776,
+        "speechiness": 0.038,
+        "acousticness": 0.814,
+        "instrumentalness": 2.43e-05,
+        "danceability": 0.37,
+        "loudness": -11.762,
+        "valence": 0.164,
+        "tempo": 87.674,
+        "popularity": 35.0
+    },
+    {
+        "name": "Death with Dignity",
+        "uri": "spotify:track:4fpEuKIzTLmMJnYwFU0oqr",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.16,
+        "liveness": 0.113,
+        "speechiness": 0.0395,
+        "acousticness": 0.986,
+        "instrumentalness": 0.017,
+        "danceability": 0.51,
+        "loudness": -21.03,
+        "valence": 0.383,
+        "tempo": 170.063,
+        "popularity": 61.0
+    },
+    {
+        "name": "Should Have Known Better",
+        "uri": "spotify:track:5I6y1KWmUoV5YCaIEcs1qs",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.172,
+        "liveness": 0.124,
+        "speechiness": 0.0318,
+        "acousticness": 0.979,
+        "instrumentalness": 0.275,
+        "danceability": 0.571,
+        "loudness": -20.7,
+        "valence": 0.297,
+        "tempo": 90.972,
+        "popularity": 61.0
+    },
+    {
+        "name": "All of Me Wants All of You",
+        "uri": "spotify:track:4dl77NeP009biypEUuEs8u",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.282,
+        "liveness": 0.115,
+        "speechiness": 0.0481,
+        "acousticness": 0.969,
+        "instrumentalness": 0.00174,
+        "danceability": 0.437,
+        "loudness": -17.455,
+        "valence": 0.163,
+        "tempo": 143.934,
+        "popularity": 52.0
+    },
+    {
+        "name": "Drawn to the Blood",
+        "uri": "spotify:track:4D0R0cPruef7gbtp91aFVT",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.0913,
+        "liveness": 0.105,
+        "speechiness": 0.0385,
+        "acousticness": 0.953,
+        "instrumentalness": 0.418,
+        "danceability": 0.551,
+        "loudness": -22.134,
+        "valence": 0.0611,
+        "tempo": 124.005,
+        "popularity": 49.0
+    },
+    {
+        "name": "Eugene",
+        "uri": "spotify:track:161iDrAGFqkzeXSaxworBs",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.12,
+        "liveness": 0.285,
+        "speechiness": 0.0433,
+        "acousticness": 0.973,
+        "instrumentalness": 0.303,
+        "danceability": 0.555,
+        "loudness": -24.043,
+        "valence": 0.672,
+        "tempo": 84.293,
+        "popularity": 51.0
+    },
+    {
+        "name": "Fourth of July",
+        "uri": "spotify:track:4K3RZJ8sWPbv0IedcnEfw6",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.104,
+        "liveness": 0.119,
+        "speechiness": 0.0459,
+        "acousticness": 0.973,
+        "instrumentalness": 0.354,
+        "danceability": 0.441,
+        "loudness": -22.399,
+        "valence": 0.156,
+        "tempo": 120.266,
+        "popularity": 56.0
+    },
+    {
+        "name": "The Only Thing",
+        "uri": "spotify:track:6Rt6KwuF7I8ZkdZG2G0bYr",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.145,
+        "liveness": 0.108,
+        "speechiness": 0.0392,
+        "acousticness": 0.987,
+        "instrumentalness": 0.0643,
+        "danceability": 0.519,
+        "loudness": -19.581,
+        "valence": 0.487,
+        "tempo": 158.975,
+        "popularity": 64.0
+    },
+    {
+        "name": "Carrie & Lowell",
+        "uri": "spotify:track:5puPIY11QYhuuQJ9T7vND0",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.248,
+        "liveness": 0.118,
+        "speechiness": 0.0458,
+        "acousticness": 0.962,
+        "instrumentalness": 0.575,
+        "danceability": 0.551,
+        "loudness": -23.095,
+        "valence": 0.266,
+        "tempo": 98.972,
+        "popularity": 48.0
+    },
+    {
+        "name": "John My Beloved",
+        "uri": "spotify:track:2OBgZrayUVupeEtt1eu2V4",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.0715,
+        "liveness": 0.139,
+        "speechiness": 0.04,
+        "acousticness": 0.962,
+        "instrumentalness": 2.87e-06,
+        "danceability": 0.582,
+        "loudness": -23.017,
+        "valence": 0.235,
+        "tempo": 120.053,
+        "popularity": 50.0
+    },
+    {
+        "name": "No Shade in the Shadow of The Cross",
+        "uri": "spotify:track:5LQecKwQNqdf2uKdrJN04v",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.121,
+        "liveness": 0.112,
+        "speechiness": 0.0329,
+        "acousticness": 0.945,
+        "instrumentalness": 0.00148,
+        "danceability": 0.405,
+        "loudness": -23.169,
+        "valence": 0.347,
+        "tempo": 82.721,
+        "popularity": 49.0
+    },
+    {
+        "name": "Blue Bucket of Gold",
+        "uri": "spotify:track:34oRN9NqGLPCrnC7SGrLZa",
+        "date": "2019-01-18T04:14:45Z",
+        "genres": [
+            "chamber pop",
+            "folk-pop",
+            "freak folk",
+            "indie folk",
+            "indie pop",
+            "indie rock",
+            "modern rock",
+            "singer-songwriter",
+            "stomp and holler"
+        ],
+        "artists": [
+            "Sufjan Stevens"
+        ],
+        "energy": 0.0918,
+        "liveness": 0.161,
+        "speechiness": 0.0319,
+        "acousticness": 0.942,
+        "instrumentalness": 0.0224,
+        "danceability": 0.306,
+        "loudness": -23.005,
+        "valence": 0.124,
+        "tempo": 74.925,
+        "popularity": 47.0
+    },
+    {
+        "name": "All We Got (feat. Kanye West & Chicago Children's Choir)",
+        "uri": "spotify:track:3ZLyt2ndLFBh148XRYjYYZ",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "chicago rap",
+            "pop rap",
+            "rap",
+            "american choir",
+            "children's choir"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Kanye West",
+            "Chicago Children's Choir"
+        ],
+        "energy": 0.544,
+        "liveness": 0.0835,
+        "speechiness": 0.462,
+        "acousticness": 0.308,
+        "instrumentalness": 1.89e-06,
+        "danceability": 0.531,
+        "loudness": -8.615,
+        "valence": 0.398,
+        "tempo": 131.921,
+        "popularity": 65.0
+    },
+    {
+        "name": "No Problem (feat. Lil Wayne & 2 Chainz)",
+        "uri": "spotify:track:0v9Wz8o0BT8DU38R4ddjeH",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "hip hop",
+            "new orleans rap",
+            "pop",
+            "pop rap",
+            "rap",
+            "trap music",
+            "atl hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "southern hip hop",
+            "trap music"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Lil Wayne",
+            "2 Chainz"
+        ],
+        "energy": 0.795,
+        "liveness": 0.123,
+        "speechiness": 0.174,
+        "acousticness": 0.156,
+        "instrumentalness": 0.0,
+        "danceability": 0.652,
+        "loudness": -5.192,
+        "valence": 0.788,
+        "tempo": 135.018,
+        "popularity": 73.0
+    },
+    {
+        "name": "Summer Friends (feat. Jeremih & Francis & The Lights)",
+        "uri": "spotify:track:2fl0B0OaXjWbjHCQFx2O8W",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "chicago rap",
+            "dance pop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "r&b",
+            "rap",
+            "southern hip hop",
+            "trap music",
+            "urban contemporary",
+            "alternative r&b"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Jeremih",
+            "Francis and the Lights"
+        ],
+        "energy": 0.426,
+        "liveness": 0.115,
+        "speechiness": 0.302,
+        "acousticness": 0.675,
+        "instrumentalness": 1.03e-05,
+        "danceability": 0.693,
+        "loudness": -12.476,
+        "valence": 0.477,
+        "tempo": 144.796,
+        "popularity": 64.0
+    },
+    {
+        "name": "D.R.A.M. Sings Special",
+        "uri": "spotify:track:6VndlbaMjAscnEeqrVkMN2",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap"
+        ],
+        "artists": [
+            "Chance the Rapper"
+        ],
+        "energy": 0.205,
+        "liveness": 0.139,
+        "speechiness": 0.0415,
+        "acousticness": 0.939,
+        "instrumentalness": 0.0919,
+        "danceability": 0.41,
+        "loudness": -12.842,
+        "valence": 0.208,
+        "tempo": 147.85,
+        "popularity": 58.0
+    },
+    {
+        "name": "Blessings (feat. Jamila Woods)",
+        "uri": "spotify:track:2VQc9orzwE6a5qFfy54P6e",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "alternative r&b",
+            "art pop",
+            "electropop",
+            "escape room",
+            "indie r&b",
+            "r&b"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Jamila Woods"
+        ],
+        "energy": 0.343,
+        "liveness": 0.102,
+        "speechiness": 0.38,
+        "acousticness": 0.723,
+        "instrumentalness": 5.48e-06,
+        "danceability": 0.714,
+        "loudness": -7.641,
+        "valence": 0.372,
+        "tempo": 72.348,
+        "popularity": 63.0
+    },
+    {
+        "name": "Same Drugs",
+        "uri": "spotify:track:6m9qPYXmhge2QhBLfFKnVF",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap"
+        ],
+        "artists": [
+            "Chance the Rapper"
+        ],
+        "energy": 0.293,
+        "liveness": 0.0936,
+        "speechiness": 0.0555,
+        "acousticness": 0.947,
+        "instrumentalness": 9.95e-06,
+        "danceability": 0.461,
+        "loudness": -9.52,
+        "valence": 0.531,
+        "tempo": 180.297,
+        "popularity": 69.0
+    },
+    {
+        "name": "Mixtape (feat. Young Thug & Lil Yachty)",
+        "uri": "spotify:track:0WCbhE2evMrIwRM0DlMy9k",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "atl hip hop",
+            "atl trap",
+            "gangster rap",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "southern hip hop",
+            "trap music",
+            "atl hip hop",
+            "pop rap",
+            "rap",
+            "southern hip hop",
+            "trap music"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Young Thug",
+            "Lil Yachty"
+        ],
+        "energy": 0.43,
+        "liveness": 0.0977,
+        "speechiness": 0.281,
+        "acousticness": 0.0498,
+        "instrumentalness": 1.59e-05,
+        "danceability": 0.838,
+        "loudness": -5.868,
+        "valence": 0.126,
+        "tempo": 126.981,
+        "popularity": 60.0
+    },
+    {
+        "name": "Angels (feat. Saba)",
+        "uri": "spotify:track:0jx8zY5JQsS4YEQcfkoc5C",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "alternative r&b",
+            "chicago rap",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "underground hip hop"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Saba"
+        ],
+        "energy": 0.647,
+        "liveness": 0.37,
+        "speechiness": 0.376,
+        "acousticness": 0.294,
+        "instrumentalness": 0.0,
+        "danceability": 0.771,
+        "loudness": -5.127,
+        "valence": 0.678,
+        "tempo": 155.914,
+        "popularity": 65.0
+    },
+    {
+        "name": "Juke Jam (feat. Justin Bieber & Towkio)",
+        "uri": "spotify:track:3eze1OsZ1rqeXkKStNfTmi",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "canadian pop",
+            "dance pop",
+            "pop",
+            "post-teen pop",
+            "chicago rap"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Justin Bieber",
+            "Towkio"
+        ],
+        "energy": 0.397,
+        "liveness": 0.0853,
+        "speechiness": 0.324,
+        "acousticness": 0.716,
+        "instrumentalness": 0.0,
+        "danceability": 0.505,
+        "loudness": -9.349,
+        "valence": 0.558,
+        "tempo": 95.063,
+        "popularity": 71.0
+    },
+    {
+        "name": "All Night (feat. Knox Fortune)",
+        "uri": "spotify:track:60xaS8mYBKUW4VQQ666N0T",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Knox Fortune"
+        ],
+        "energy": 0.777,
+        "liveness": 0.151,
+        "speechiness": 0.195,
+        "acousticness": 0.0358,
+        "instrumentalness": 0.0,
+        "danceability": 0.704,
+        "loudness": -5.729,
+        "valence": 0.392,
+        "tempo": 111.921,
+        "popularity": 70.0
+    },
+    {
+        "name": "How Great (feat. Jay Electronica & My cousin Nicole)",
+        "uri": "spotify:track:0OT0cCKbSmSMRvyWeqEFBq",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "alternative hip hop",
+            "conscious hip hop",
+            "hip hop",
+            "southern hip hop"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Jay Electronica",
+            "My cousin Nicole"
+        ],
+        "energy": 0.483,
+        "liveness": 0.553,
+        "speechiness": 0.315,
+        "acousticness": 0.477,
+        "instrumentalness": 0.0,
+        "danceability": 0.439,
+        "loudness": -9.449,
+        "valence": 0.292,
+        "tempo": 78.442,
+        "popularity": 57.0
+    },
+    {
+        "name": "Smoke Break (feat. Future)",
+        "uri": "spotify:track:1Uq3IOIy1CUlHUgP6vWpum",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "atl hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "southern hip hop",
+            "trap music"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Future"
+        ],
+        "energy": 0.453,
+        "liveness": 0.143,
+        "speechiness": 0.196,
+        "acousticness": 0.257,
+        "instrumentalness": 0.0,
+        "danceability": 0.705,
+        "loudness": -8.174,
+        "valence": 0.283,
+        "tempo": 124.942,
+        "popularity": 65.0
+    },
+    {
+        "name": "Finish Line / Drown (feat. T-Pain, Kirk Franklin, Eryn Allen Kane & Noname)",
+        "uri": "spotify:track:2AgnbuzvnfPvq1sAYNB4pj",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "dance pop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "r&b",
+            "rap",
+            "southern hip hop",
+            "trap music",
+            "urban contemporary",
+            "gospel",
+            "gospel r&b",
+            "alternative r&b",
+            "indie r&b",
+            "neo r&b",
+            "alternative r&b",
+            "chicago rap",
+            "escape room",
+            "hip hop",
+            "pop rap",
+            "rap",
+            "underground hip hop"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "T-Pain",
+            "Kirk Franklin",
+            "Eryn Allen Kane",
+            "Noname"
+        ],
+        "energy": 0.609,
+        "liveness": 0.0724,
+        "speechiness": 0.377,
+        "acousticness": 0.617,
+        "instrumentalness": 0.0,
+        "danceability": 0.456,
+        "loudness": -6.439,
+        "valence": 0.41,
+        "tempo": 86.368,
+        "popularity": 61.0
+    },
+    {
+        "name": "Blessings (feat. Ty Dolla $ign, Anderson .Paak, BJ The Chicago Kid, Raury & Jamila Woods)",
+        "uri": "spotify:track:5IdQEHgtmj9th3OkfQKhf8",
+        "date": "2018-11-25T01:36:29Z",
+        "genres": [
+            "chicago rap",
+            "conscious hip hop",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "rap",
+            "hip hop",
+            "pop",
+            "pop rap",
+            "r&b",
+            "rap",
+            "trap music",
+            "escape room",
+            "alternative r&b",
+            "chicago rap",
+            "hip hop",
+            "indie r&b",
+            "neo soul",
+            "pop rap",
+            "r&b",
+            "rap",
+            "southern hip hop",
+            "underground hip hop",
+            "underground hip hop"
+        ],
+        "artists": [
+            "Chance the Rapper",
+            "Ty Dolla $ign",
+            "Anderson .Paak",
+            "BJ The Chicago Kid",
+            "Raury"
+        ],
+        "energy": 0.462,
+        "liveness": 0.199,
+        "speechiness": 0.124,
+        "acousticness": 0.891,
+        "instrumentalness": 0.0,
+        "danceability": 0.381,
+        "loudness": -8.014,
+        "valence": 0.542,
+        "tempo": 80.08,
+        "popularity": 60.0
+    }
+]
