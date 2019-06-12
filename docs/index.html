@@ -71,10 +71,10 @@ p { margin: 0 0 10px 0; }
       <img src="wayfinder.png" style="width: 80%;">
     </div>
     <p>
-    The Musical Wayfinder dashboard. A scatter plot of user library songs (a) and the genres that the library is composedof (b) are the main views of the data. Dropdown menus (c) allow the user to select the axes of the two scatter plots. A timeline(d) of the user's library allows the user to see when they added songs to their library. A legend (e) shows the color mapping ofthe umbrella genres that each song and genre are classified into. Bars show the relative abundances of those umbrella genresin the user's library. A brush filter can be used to select a time range in the time line. This interaction updates the songs andgenres shown in the scatter plots as well as the size of the bars in the legend to reflect the library composition over the selectedtime range.
+    The Musical Wayfinder dashboard. A scatter plot of user library songs (a) and the genres that the library is composedof (b) are the main views of the data. Dropdown menus (c) allow the user to select the axes of the two scatter plots. A timeline(d) of the user's library allows the user to see when they added songs to their library. A legend (e) shows the color mapping ofthe umbrella genres that each song and genre are classified into. Bars show the relative abundances of those umbrella genresin the user's library. A brush filter can be used to select a time range in the time line. This interaction updates the songs andgenres shown in the scatter plots as well as the size of the bars in the legend to reflect the library composition over the selected time range.
     </p>
     <p>
-      Please find more information about our vizualation through our paper <a href="deliverables/paper.pdf">here</a> and our poster <a href="deliverables/poster.pdf">here</a>.
+      Please find more information about our visualization through our paper <a href="deliverables/paper.pdf">here</a> and our poster <a href="deliverables/poster.pdf">here</a>.
     </p>
   </section>
 
@@ -84,6 +84,68 @@ p { margin: 0 0 10px 0; }
       We present the Musical Wayfinder, an interactive visualization intended to bridge that gap between us and our music. This tool allows the user to track their musical tastes through time, investigate the musical attributes of > 3,000 genres catalogued by Spotify, and discover where their personal library falls within that vast musical landscape. We discuss the development and implementation of this tool, and the insights it can provide.
     </p>
 
+  </section>
+
+  <section>
+      <h2>Interactions</h2>
+      <h3> Scatter Plots </h3>
+      <p>
+        <strong>Hover</strong> over a point on either scatter plot to see information about an individual song or genre.
+      </p>
+      <p>
+        <strong>Select</strong> which axes to plot by clicking on the "X-Axis" and "Y-Axis" dropdown menus and selecting an option.
+      </p>
+      <p>
+        <strong>Click</strong> on a point to embed a preview of a song or an entire playlist representing a genre.
+      </p>
+      <p>
+        <strong>Control+Click</strong> / <strong>Command+Click</strong> on a point to select/deselect it. 
+        Performing this action on a song will show you when you added it to your library in the timeline and all of the genres it belongs to in the genre plot.
+        Performing this action on a genre will show you when you added songs from that genre in the timeline and all of the songs that belong to it.
+      </p>
+      <h3> Timeline </h3>
+      <p>
+        <strong>Click and drag</strong> over a region in the timeline to have the visualization reflect your library in a certain time range.
+      </p>
+      <p>
+        <strong>Click and drag</strong> on the ends of a time selection to resize your selection.
+      </p>
+      <h3> Legend </h3>
+      <p>
+        <strong>Hover</strong> over an umbrella genre to highlight it in the timeline.
+      </p>
+      <p>
+        <strong>Click</strong> on an umbrella genre to remove / add it back into the data under consideration.
+      </p>
+      <h3>My Genres / All Genres</h3>
+      <p>
+        <strong>Click</strong> on either the "My Genres" or the "All Genres" button to toggle displaying either just
+        the genres in your library / your current selection, or displaying all of the genres that Spotify catalogues.
+      </p>
+      <h3>Top Tracks / Artists</h3>
+      <p>
+        <strong>Click</strong> on a track or artist in the lists to select/deselect to make a selection on them. <strong>If a track or arist does not appear</strong>, it may not be in your saved tracks
+        on Spotify.
+      </p>
+      <h3>Lost?</h3>
+      <p>
+        <strong>Click</strong> on the reset button to reset all plots to their default view.
+      </p>
+  </section>
+
+  <section>
+    <h2>Example interaction</h2>
+
+    By brushing on the timeline, users can gain insight into how their library has evolved over time. 
+    Selecting a region early in time reveals the genres that the user was initially exposed to (left). 
+    Selecting a more recent region at the end of the timeline reveals that the genres the user is adding to their library have become more varied (middle). 
+    A user can gain discoverwhat new genres that have added by hovering over them 
+    (a). A tooltip shows the name of the genre, its average song attribute values, and the number of songs of that genre in the current time selection. 
+    Clicking on the genre (b) produces a playlist created by Spotify that represent that genre (right).
+
+    <div style="text-align: center">
+        <img src="insight_1.png" style="width: 80%;">
+    </div>
   </section>
 
   <section>
