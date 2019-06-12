@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xml:lang="en" lang="en">
 <head>
-  <title>CSE512 | A3 [Add: title]</title>
+  <title>CSE512 | Musical Wayfinder: A look into your Spotify library</title>
   <style media="all">
 * { padding: 0; margin: 0; }
  body {
@@ -57,7 +57,7 @@ p { margin: 0 0 10px 0; }
 <body>
 <div class="content">
    <section class="title">
-    <a href="/">Musical Wayfinder</a>
+    <a href="/">Musical Wayfinder: A look into your Spotify library</a>
   </section>
 
    <section>
@@ -67,20 +67,51 @@ p { margin: 0 0 10px 0; }
   </section>
 
    <section>
-    <em>[Add: a summary figure of your project. Be sure to include relevant captions, too.]</em>
-    <p><em>[Add: links to your paper and poster.]</em></p>
+    <div style="text-align: center">
+      <img src="wayfinder.png" style="width: 80%;">
+    </div>
+    <p>
+    The Musical Wayfinder dashboard. A scatter plot of user library songs (a) and the genres that the library is composedof (b) are the main views of the data. Dropdown menus (c) allow the user to select the axes of the two scatter plots. A timeline(d) of the user's library allows the user to see when they added songs to their library. A legend (e) shows the color mapping ofthe umbrella genres that each song and genre are classified into. Bars show the relative abundances of those umbrella genresin the user's library. A brush filter can be used to select a time range in the time line. This interaction updates the songs andgenres shown in the scatter plots as well as the size of the bars in the legend to reflect the library composition over the selectedtime range.
+    </p>
+    <p>
+      Please find more information about our vizualation through our paper <a href="deliverables/paper.pdf">here</a> and our poster <a href="deliverables/poster.pdf">here</a>.
+    </p>
   </section>
 
   <section>
     <h2>Abstract</h2>
-    <em>[Add: a short description of your project, ideally within 150 words.]</em>
+    <p>
+      We present the Musical Wayfinder, an interactive visualization intended to bridge that gap between us and our music. This tool allows the user to track their musical tastes through time, investigate the musical attributes of > 3,000 genres catalogued by Spotify, and discover where their personal library falls within that vast musical landscape. We discuss the development and implementation of this tool, and the insights it can provide.
+    </p>
+
   </section>
 
   <section>
     <h2>Running Instructions</h2>
-    <em>[Add: running instructions for the software and other optional materials.]</em>
+    <p>The Musical Wayfinder is built to work with any user's Spotify library. You can find an example
+        <a href="example/">here</a> that uses the library of one of the authors. We also provide a web application
+        that allows you to give us permission, with authentication through Spotify, to scrape your library data
+        and generate a visualization for you. You can find that application <a href="http://students.washington.edu/stevengs/cse512/">
+        here</a>. 
+    </p>
 
-    <p>Please see an example <a href="example/">here</a>.</p>
+    <p>
+      Additionally, you can download and run the application yourself by cloning our GitHub repository and starting
+      the application locally. You will need to run the following commands in a bash shell that has a Python 3 executable
+      accesible to it with <a href="http://flask.pocoo.org/">Flask</a> installed. You can obtain Flask by running <code>python3 -m pip install flask</code>.
+    </p>
+    <pre>
+    <code>
+      $ git clone https://github.com/cse512-19s/FP-Musical-Wayfinder.git
+      $ cd FP-Musical-Wayfinder/dev/spotify-app
+      $ export BASE_URL=http://127.0.0.1
+      $ export PORT=5000
+      $ export FLASK_APP=main.py
+      $ flask run
+    </code>
+    </pre>
+
+    You can then access the log-in page at <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a>.
   </section>
 
   <div class="footer">
